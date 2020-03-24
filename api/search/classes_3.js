@@ -12,6 +12,6 @@ var searchData=
   ['drawablelistitems',['DrawableListItems',['../classtouchgfx_1_1_drawable_list_items.html',1,'touchgfx']]],
   ['drawablelistitemsinterface',['DrawableListItemsInterface',['../classtouchgfx_1_1_drawable_list_items_interface.html',1,'touchgfx']]],
   ['drawingsurface',['DrawingSurface',['../structtouchgfx_1_1_drawing_surface.html',1,'touchgfx']]],
-  ['drawtexturemapscanlinebase',['DrawTextureMapScanLineBase',['../classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base.html',1,'LCD::DrawTextureMapScanLineBase'],['../class_draw_texture_map_scan_line_base.html',1,'DrawTextureMapScanLineBase']]],
+  ['drawtexturemapscanlinebase',['DrawTextureMapScanLineBase',['../classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base.html',1,'touchgfx::LCD']]],
   ['dynamicbitmapdata',['DynamicBitmapData',['../structtouchgfx_1_1_bitmap_1_1_dynamic_bitmap_data.html',1,'touchgfx::Bitmap']]]
 ];

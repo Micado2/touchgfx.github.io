@@ -1,18 +1,40 @@
+/*
+@ @licstart  The following is the entire license notice for the
+JavaScript code in this file.
+
+Copyright (C) 1997-2017 by Dimitri van Heesch
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along
+with this program; if not, write to the Free Software Foundation, Inc.,
+51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+@licend  The above is the entire license notice
+for the JavaScript code in this file
+*/
 var NAVTREE =
 [
-  [ "TouchGFX", "index.html", [
+  [ "API", "index.html", [
+    [ "TouchGFX API Documentation", "index.html", null ],
     [ "Changelog", "page_changelog.html", null ],
     [ "Globals", "global.html", null ],
-    [ "Namespaces", null, [
-      [ "Namespace List", "namespaces.html", "namespaces" ],
-      [ "Namespace Members", "namespacemembers.html", [
-        [ "All", "namespacemembers.html", null ],
-        [ "Functions", "namespacemembers_func.html", null ],
-        [ "Variables", "namespacemembers_vars.html", null ],
-        [ "Typedefs", "namespacemembers_type.html", null ],
-        [ "Enumerations", "namespacemembers_enum.html", null ],
-        [ "Enumerator", "namespacemembers_eval.html", null ]
-      ] ]
+    [ "Deprecated List", "deprecated.html", null ],
+    [ "Namespace Members", "namespacemembers.html", [
+      [ "All", "namespacemembers.html", null ],
+      [ "Functions", "namespacemembers_func.html", null ],
+      [ "Variables", "namespacemembers_vars.html", null ],
+      [ "Typedefs", "namespacemembers_type.html", null ],
+      [ "Enumerations", "namespacemembers_enum.html", null ],
+      [ "Enumerator", "namespacemembers_eval.html", null ]
     ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
@@ -26,27 +48,37 @@ var NAVTREE =
         [ "Enumerations", "functions_enum.html", null ],
         [ "Enumerator", "functions_eval.html", null ]
       ] ]
+    ] ],
+    [ "Files", "files.html", [
+      [ "File List", "files.html", "files_dup" ],
+      [ "File Members", "globals.html", [
+        [ "All", "globals.html", null ],
+        [ "Functions", "globals_func.html", null ],
+        [ "Variables", "globals_vars.html", null ],
+        [ "Macros", "globals_defs.html", null ]
+      ] ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"annotated.html",
-"classtouchgfx_1_1_analog_clock_a4a961f66de874690f3d237b37f5c217f.html#a4a961f66de874690f3d237b37f5c217f",
-"classtouchgfx_1_1_button_with_label_a0eb923ba086bc6ff8ebfe15136124200.html#a0eb923ba086bc6ff8ebfe15136124200",
-"classtouchgfx_1_1_debug_printer.html#a88661c8eb3b441bc9472f11853003cfe",
-"classtouchgfx_1_1_font_ab7557766f3635c2176177a5c4c37ddc9.html#ab7557766f3635c2176177a5c4c37ddc9",
-"classtouchgfx_1_1_image_button_style.html#afa87169c3487db96edd4ba250dd4ff46",
-"classtouchgfx_1_1_l_c_d2_debug_printer.html",
-"classtouchgfx_1_1_l_c_d8bpp___r_g_b_a2222_a0654f4f804d2c5c521c9025cb1f3db05.html#a0654f4f804d2c5c521c9025cb1f3db05",
-"classtouchgfx_1_1_no_d_m_a_a2812f095fbf1c9c4114303ce79121d3d.html#a2812f095fbf1c9c4114303ce79121d3d",
-"classtouchgfx_1_1_painter_r_g_b565_l8_bitmap_a4c19bd631f876ccfea12d1b9e5b05778.html#a4c19bd631f876ccfea12d1b9e5b05778",
-"classtouchgfx_1_1_scalable_image_a68c6bf110411fb1a76d2a68dfb5e505d.html#a68c6bf110411fb1a76d2a68dfb5e505d",
-"classtouchgfx_1_1_shape.html",
-"classtouchgfx_1_1_text_provider_a10ee411d76a9c7f43475ae6419e8264b.html#a10ee411d76a9c7f43475ae6419e8264b",
-"classtouchgfx_1_1_wildcard_text_button_style.html#a9b92ab3a023aff21da63d43442fe6d8b",
-"structtouchgfx_1_1_callback_3_01dest__type_00_01void_00_01void_00_01void_01_4.html"
+"_abstract_button_8hpp.html",
+"_types_8hpp.html",
+"classtouchgfx_1_1_abstract_progress_indicator.html#a088cf0717c3adb46df00038640925e84",
+"classtouchgfx_1_1_box_with_border.html#a302926ead4ee8a161627575d2666a7f2",
+"classtouchgfx_1_1_container.html#add539b68574f09b364f0b4e6a312b9b0",
+"classtouchgfx_1_1_fade_animator.html#a6463cdfc7a7c5cd573fe1e5ba59ebd61",
+"classtouchgfx_1_1_i2_c.html#ab5be7e5a13ea77d59aac45d21dceb6a0",
+"classtouchgfx_1_1_l_c_d1bpp.html#a6fae0e318d1bd778915adc33449736ae",
+"classtouchgfx_1_1_l_c_d8bpp___a_r_g_b2222.html#a6f2684edfd970891aa198c65b5624c73",
+"classtouchgfx_1_1_modal_window.html#ab9f3e889d3be296f75d22c995bb06778",
+"classtouchgfx_1_1_painter_r_g_b565_bitmap.html#a2e0420f68fa01ef7219a0bc2aa792169",
+"classtouchgfx_1_1_screen.html#a7a8ad1a2e43c28cb3ac5741c40f3df69",
+"classtouchgfx_1_1_slide_menu.html#a532414231f960f77c5f47a6e10f788d1",
+"classtouchgfx_1_1_texture_mapper.html#a5a49678e9f043c0bf4025d108d89701a",
+"classtouchgfx_1_1_zoom_animation_image.html#a808e5cd4979462d3bbe3070d7d147444aa9d96a3c6709d303b0359c70ca8183f5",
+"structtouchgfx_1_1_blit_op.html#adce4424fb37fc57f2b9831ca30ee2018"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

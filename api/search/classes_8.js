@@ -6,6 +6,5 @@ var searchData=
   ['image',['Image',['../classtouchgfx_1_1_image.html',1,'touchgfx']]],
   ['imagebuttonstyle',['ImageButtonStyle',['../classtouchgfx_1_1_image_button_style.html',1,'touchgfx']]],
   ['imageprogress',['ImageProgress',['../classtouchgfx_1_1_image_progress.html',1,'touchgfx']]],
-  ['internalflashfont',['InternalFlashFont',['../classtouchgfx_1_1_internal_flash_font.html',1,'touchgfx']]],
-  ['iterator',['iterator',['../classtouchgfx_1_1_scanline_1_1iterator.html',1,'touchgfx::Scanline']]]
+  ['internalflashfont',['InternalFlashFont',['../classtouchgfx_1_1_internal_flash_font.html',1,'touchgfx']]]
 ];

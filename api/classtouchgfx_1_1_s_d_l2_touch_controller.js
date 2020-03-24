@@ -1,5 +1,5 @@
 var classtouchgfx_1_1_s_d_l2_touch_controller =
 [
-    [ "init", "classtouchgfx_1_1_s_d_l2_touch_controller_a02fd73d861ef2e4aabb38c0c9ff82947.html#a02fd73d861ef2e4aabb38c0c9ff82947", null ],
-    [ "sampleTouch", "classtouchgfx_1_1_s_d_l2_touch_controller_af19043429abd96b8e09cf7e60d3b7e7d.html#af19043429abd96b8e09cf7e60d3b7e7d", null ]
+    [ "init", "classtouchgfx_1_1_s_d_l2_touch_controller.html#a9339772ec5ac9fa929938109207f2863", null ],
+    [ "sampleTouch", "classtouchgfx_1_1_s_d_l2_touch_controller.html#a77c76eba28e9dea3038e89cf1abf05c9", null ]
 ];

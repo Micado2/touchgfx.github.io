@@ -1,6 +1,6 @@
 var classtouchgfx_1_1_no_touch_controller =
 [
-    [ "~NoTouchController", "classtouchgfx_1_1_no_touch_controller_a3620fe563a5f009f30ecb94f6f1576f6.html#a3620fe563a5f009f30ecb94f6f1576f6", null ],
-    [ "init", "classtouchgfx_1_1_no_touch_controller_a02fd73d861ef2e4aabb38c0c9ff82947.html#a02fd73d861ef2e4aabb38c0c9ff82947", null ],
-    [ "sampleTouch", "classtouchgfx_1_1_no_touch_controller_af19043429abd96b8e09cf7e60d3b7e7d.html#af19043429abd96b8e09cf7e60d3b7e7d", null ]
+    [ "~NoTouchController", "classtouchgfx_1_1_no_touch_controller.html#a28bf18c48f003e8b83b29d09a1f65b61", null ],
+    [ "init", "classtouchgfx_1_1_no_touch_controller.html#a9339772ec5ac9fa929938109207f2863", null ],
+    [ "sampleTouch", "classtouchgfx_1_1_no_touch_controller.html#a77c76eba28e9dea3038e89cf1abf05c9", null ]
 ];

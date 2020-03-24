@@ -1,11 +1,11 @@
 var classtouchgfx_1_1_shape =
 [
-    [ "~Shape", "classtouchgfx_1_1_shape_ae6889ccfcaea0ae2daa8235452ced6d7.html#ae6889ccfcaea0ae2daa8235452ced6d7", null ],
-    [ "getCacheX", "classtouchgfx_1_1_shape_ad8601b57d446eb716ae10fb3edae45fd.html#ad8601b57d446eb716ae10fb3edae45fd", null ],
-    [ "getCacheY", "classtouchgfx_1_1_shape_afa06ad6aa88c281518131a5b4cb9e278.html#afa06ad6aa88c281518131a5b4cb9e278", null ],
-    [ "getCornerX", "classtouchgfx_1_1_shape_a60c807332f2e074e73c6ba49d346fc51.html#a60c807332f2e074e73c6ba49d346fc51", null ],
-    [ "getCornerY", "classtouchgfx_1_1_shape_a4b4b3eeec75dc8c0c593e3448f425daf.html#a4b4b3eeec75dc8c0c593e3448f425daf", null ],
-    [ "getNumPoints", "classtouchgfx_1_1_shape_a479e450f0d237835e2f6dfde9c7f3e4f.html#a479e450f0d237835e2f6dfde9c7f3e4f", null ],
-    [ "setCache", "classtouchgfx_1_1_shape_afd0a785d330d176ebb7587af2d9eff1e.html#afd0a785d330d176ebb7587af2d9eff1e", null ],
-    [ "setCorner", "classtouchgfx_1_1_shape_ad6efc45ecab7b00b4300624ed25610a6.html#ad6efc45ecab7b00b4300624ed25610a6", null ]
+    [ "~Shape", "classtouchgfx_1_1_shape.html#ae7755ce81583b9f776b857856f7cc218", null ],
+    [ "getCacheX", "classtouchgfx_1_1_shape.html#ae09d33c7ac410f6ebdee6d0ff55f213b", null ],
+    [ "getCacheY", "classtouchgfx_1_1_shape.html#a14311e1da04623eb3e893a8d69a55337", null ],
+    [ "getCornerX", "classtouchgfx_1_1_shape.html#a64a8df749198b6e5d01a4e2ae4596cdc", null ],
+    [ "getCornerY", "classtouchgfx_1_1_shape.html#aefa8ec9af9e27b6b7896f4143c9eee57", null ],
+    [ "getNumPoints", "classtouchgfx_1_1_shape.html#a8deaca6b17721df8ee9de43665db688b", null ],
+    [ "setCache", "classtouchgfx_1_1_shape.html#a3117cd86c8bff74a8a9f9b9b47e063c2", null ],
+    [ "setCorner", "classtouchgfx_1_1_shape.html#a9b192e75fdb9d782cf587f59267afb1a", null ]
 ];

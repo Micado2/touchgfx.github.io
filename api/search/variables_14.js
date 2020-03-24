@@ -1,7 +1,6 @@
 var searchData=
 [
   ['u',['U',['../structtouchgfx_1_1_point3_d.html#a0960ce8ee4607f26fa67f51c52f1877c',1,'touchgfx::Point3D']]],
-  ['uncached_5findicator',['UNCACHED_INDICATOR',['../classtouchgfx_1_1_drawable.html#a7f2f309a6dd8bb5391db49cedc5bd944',1,'touchgfx::Drawable']]],
   ['unicode',['unicode',['../structtouchgfx_1_1_glyph_node.html#a4fcc473965356b820eb657882271e290',1,'touchgfx::GlyphNode']]],
   ['unicodeprevchar',['unicodePrevChar',['../structtouchgfx_1_1_kerning_node.html#aca2e846c807f4a4d1d24fc5fa42c3ef3',1,'touchgfx::KerningNode']]],
   ['uoverz',['UOverZ',['../structtouchgfx_1_1_gradients.html#aff40c16d4c16e0f2e0a962587bbc645a',1,'touchgfx::Gradients::UOverZ()'],['../structtouchgfx_1_1_edge.html#a99915b4fd8726bfa7cd9e8ed4aed2e3d',1,'touchgfx::Edge::UOverZ()']]],

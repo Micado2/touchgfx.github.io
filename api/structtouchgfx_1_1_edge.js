@@ -1,8 +1,8 @@
 var structtouchgfx_1_1_edge =
 [
-    [ "Edge", "structtouchgfx_1_1_edge_aa682b15251f2e7cb8f104b764790fbf6.html#aa682b15251f2e7cb8f104b764790fbf6", null ],
-    [ "step", "structtouchgfx_1_1_edge_a6452a9d7c9fcabeb40bb5d8495300090.html#a6452a9d7c9fcabeb40bb5d8495300090", null ],
-    [ "step", "structtouchgfx_1_1_edge_ac7aad6bdc187de043b91cdb4fa400ca9.html#ac7aad6bdc187de043b91cdb4fa400ca9", null ],
+    [ "Edge", "structtouchgfx_1_1_edge.html#aa682b15251f2e7cb8f104b764790fbf6", null ],
+    [ "step", "structtouchgfx_1_1_edge.html#a6452a9d7c9fcabeb40bb5d8495300090", null ],
+    [ "step", "structtouchgfx_1_1_edge.html#ac7aad6bdc187de043b91cdb4fa400ca9", null ],
     [ "denominator", "structtouchgfx_1_1_edge.html#abca868beb61d97cdaccf83c03409cfb4", null ],
     [ "errorTerm", "structtouchgfx_1_1_edge.html#ab6c9d47292a631ae554fe1d363e1b996", null ],
     [ "height", "structtouchgfx_1_1_edge.html#ad12fc34ce789bce6c8a05d8a17138534", null ],

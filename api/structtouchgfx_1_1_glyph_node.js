@@ -1,11 +1,11 @@
 var structtouchgfx_1_1_glyph_node =
 [
-    [ "advance", "structtouchgfx_1_1_glyph_node_a87285c2cde778f5b87eae17dc7185e2f.html#a87285c2cde778f5b87eae17dc7185e2f", null ],
-    [ "height", "structtouchgfx_1_1_glyph_node_a46fe706ea0a584a19e609dd70088216e.html#a46fe706ea0a584a19e609dd70088216e", null ],
-    [ "kerningTablePos", "structtouchgfx_1_1_glyph_node_a2019f300763913e40944298e6078ce32.html#a2019f300763913e40944298e6078ce32", null ],
-    [ "setTop", "structtouchgfx_1_1_glyph_node_af8697af2c67a1d302aa2dfaa97fa0428.html#af8697af2c67a1d302aa2dfaa97fa0428", null ],
-    [ "top", "structtouchgfx_1_1_glyph_node_a4dd359d4e8f8311ed84e011f15121bf6.html#a4dd359d4e8f8311ed84e011f15121bf6", null ],
-    [ "width", "structtouchgfx_1_1_glyph_node_a0d8a45021e31889e4278f1fe473f5ce8.html#a0d8a45021e31889e4278f1fe473f5ce8", null ],
+    [ "advance", "structtouchgfx_1_1_glyph_node.html#a87285c2cde778f5b87eae17dc7185e2f", null ],
+    [ "height", "structtouchgfx_1_1_glyph_node.html#a46fe706ea0a584a19e609dd70088216e", null ],
+    [ "kerningTablePos", "structtouchgfx_1_1_glyph_node.html#a2019f300763913e40944298e6078ce32", null ],
+    [ "setTop", "structtouchgfx_1_1_glyph_node.html#af8697af2c67a1d302aa2dfaa97fa0428", null ],
+    [ "top", "structtouchgfx_1_1_glyph_node.html#a4dd359d4e8f8311ed84e011f15121bf6", null ],
+    [ "width", "structtouchgfx_1_1_glyph_node.html#a0d8a45021e31889e4278f1fe473f5ce8", null ],
     [ "_advance", "structtouchgfx_1_1_glyph_node.html#a59e7df45d34265d0d5d1772ad752ae90", null ],
     [ "_height", "structtouchgfx_1_1_glyph_node.html#a6c8a35db87d40abef7d3e79fc14f75e8", null ],
     [ "_kerningTablePos", "structtouchgfx_1_1_glyph_node.html#aa63769ad930f14e6a21de503e5a4e41d", null ],

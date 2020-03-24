@@ -1,8 +1,8 @@
 var classtouchgfx_1_1_flash_data_reader =
 [
     [ "~FlashDataReader", "classtouchgfx_1_1_flash_data_reader.html#ab161d20a5e229e50fd4d83580a5556c4", null ],
-    [ "addressIsAddressable", "classtouchgfx_1_1_flash_data_reader_ac35350ac12fc7c817b17e66d1d44ea5f.html#ac35350ac12fc7c817b17e66d1d44ea5f", null ],
-    [ "copyData", "classtouchgfx_1_1_flash_data_reader_adcbf6705af5a71cae397b9c41727f9c1.html#adcbf6705af5a71cae397b9c41727f9c1", null ],
-    [ "startFlashLineRead", "classtouchgfx_1_1_flash_data_reader_ac4766670eda12dd81112da399c382f4c.html#ac4766670eda12dd81112da399c382f4c", null ],
-    [ "waitFlashReadComplete", "classtouchgfx_1_1_flash_data_reader_ae03f3016755abdfb5d828d1887482ba8.html#ae03f3016755abdfb5d828d1887482ba8", null ]
+    [ "addressIsAddressable", "classtouchgfx_1_1_flash_data_reader.html#a5287a73ada8ccc5bca31548baba2c999", null ],
+    [ "copyData", "classtouchgfx_1_1_flash_data_reader.html#a1cade7078935082c74a7282c4f2bd7c8", null ],
+    [ "startFlashLineRead", "classtouchgfx_1_1_flash_data_reader.html#aaf2cdf788d658cfb589bf7eb3a14fe46", null ],
+    [ "waitFlashReadComplete", "classtouchgfx_1_1_flash_data_reader.html#aa52aafd5b648d8918fd75da254ce495e", null ]
 ];

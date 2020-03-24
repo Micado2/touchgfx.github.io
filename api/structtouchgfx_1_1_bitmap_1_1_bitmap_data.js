@@ -1,6 +1,6 @@
 var structtouchgfx_1_1_bitmap_1_1_bitmap_data =
 [
-    [ "getFormat", "structtouchgfx_1_1_bitmap_1_1_bitmap_data_a9b4dcecd682ddcacfcb2d3e2069601a5.html#a9b4dcecd682ddcacfcb2d3e2069601a5", null ],
+    [ "getFormat", "structtouchgfx_1_1_bitmap_1_1_bitmap_data.html#a9b4dcecd682ddcacfcb2d3e2069601a5", null ],
     [ "data", "structtouchgfx_1_1_bitmap_1_1_bitmap_data.html#ac34b748bf4881f46ff60c3bade8b439c", null ],
     [ "extraData", "structtouchgfx_1_1_bitmap_1_1_bitmap_data.html#a26a2ae68d3b9edd3fa151d0705b557df", null ],
     [ "format_hi", "structtouchgfx_1_1_bitmap_1_1_bitmap_data.html#aa000b83ee980e184eb1f10d367b538f3", null ],

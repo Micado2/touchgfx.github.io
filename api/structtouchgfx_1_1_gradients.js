@@ -1,6 +1,6 @@
 var structtouchgfx_1_1_gradients =
 [
-    [ "Gradients", "structtouchgfx_1_1_gradients_a08c07e419d16fced37c6ed38ecc3a635.html#a08c07e419d16fced37c6ed38ecc3a635", null ],
+    [ "Gradients", "structtouchgfx_1_1_gradients.html#a08c07e419d16fced37c6ed38ecc3a635", null ],
     [ "dOneOverZdX", "structtouchgfx_1_1_gradients.html#a800af7fc99033e792adf923df3b6cdda", null ],
     [ "dOneOverZdY", "structtouchgfx_1_1_gradients.html#ae60d3feaca2ed777c5b0d774a5b51250", null ],
     [ "dUdXModifier", "structtouchgfx_1_1_gradients.html#ae4ac9c4c219e6b492ea60ec4fa75b66e", null ],

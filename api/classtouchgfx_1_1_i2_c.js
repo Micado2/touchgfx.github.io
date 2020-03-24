@@ -1,9 +1,9 @@
 var classtouchgfx_1_1_i2_c =
 [
-    [ "I2C", "classtouchgfx_1_1_i2_c_ac42349230fe5c49cedb877bf2e6ddb2b.html#ac42349230fe5c49cedb877bf2e6ddb2b", null ],
-    [ "~I2C", "classtouchgfx_1_1_i2_c_a5e8de52dfe92f3e5452f87a48001d850.html#a5e8de52dfe92f3e5452f87a48001d850", null ],
-    [ "init", "classtouchgfx_1_1_i2_c_a3d26ddb3e5608cbc4d20a481a97cc498.html#a3d26ddb3e5608cbc4d20a481a97cc498", null ],
-    [ "readRegister", "classtouchgfx_1_1_i2_c_a52146b994fdde0ebb0b5f058d11231fb.html#a52146b994fdde0ebb0b5f058d11231fb", null ],
-    [ "writeRegister", "classtouchgfx_1_1_i2_c_a33347af46de627ace9b175454bfd744b.html#a33347af46de627ace9b175454bfd744b", null ],
+    [ "I2C", "classtouchgfx_1_1_i2_c.html#ac42349230fe5c49cedb877bf2e6ddb2b", null ],
+    [ "~I2C", "classtouchgfx_1_1_i2_c.html#af1f85f538bc0e5aecef19aee51d2f84a", null ],
+    [ "init", "classtouchgfx_1_1_i2_c.html#ab5be7e5a13ea77d59aac45d21dceb6a0", null ],
+    [ "readRegister", "classtouchgfx_1_1_i2_c.html#a8f295df6dcfd27c547f1786d2426ccbd", null ],
+    [ "writeRegister", "classtouchgfx_1_1_i2_c.html#ac9e53da9543d1e886bcd6be8a41483e1", null ],
     [ "channel", "classtouchgfx_1_1_i2_c.html#a715f5cb061d11eb75981741eda4dafcd", null ]
 ];

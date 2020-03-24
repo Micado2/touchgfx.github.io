@@ -1,8 +1,15 @@
 var searchData=
 [
-  ['scale',['SCALE',['../classtouchgfx_1_1_animation_texture_mapper_ae6a9b0a82a3e96d2e83b7340b15ece87.html#ae6a9b0a82a3e96d2e83b7340b15ece87a593be05a10070b4e7e0856e20590eaaf',1,'touchgfx::AnimationTextureMapper']]],
-  ['south',['SOUTH',['../namespacetouchgfx_ae187b1dc398c8bed979d3fc2569d2b92.html#ae187b1dc398c8bed979d3fc2569d2b92a8ef5c0bce69283a9986011a63eea8a6b',1,'touchgfx']]],
-  ['square_5fcap_5fending',['SQUARE_CAP_ENDING',['../classtouchgfx_1_1_line_aa870de4cdd8581e413fcde0df090f57e.html#aa870de4cdd8581e413fcde0df090f57ea2877c683637722171631e649a70b70a1',1,'touchgfx::Line']]],
-  ['swipe_5fhorizontal',['SWIPE_HORIZONTAL',['../classtouchgfx_1_1_gesture_event_ab211a5d4a1af43df18c3466b5ac123c5.html#ab211a5d4a1af43df18c3466b5ac123c5a1fd3f71c0ff36ee71ad3808b2567d6ee',1,'touchgfx::GestureEvent']]],
-  ['swipe_5fvertical',['SWIPE_VERTICAL',['../classtouchgfx_1_1_gesture_event_ab211a5d4a1af43df18c3466b5ac123c5.html#ab211a5d4a1af43df18c3466b5ac123c5a5ee0ffe22cff5fd9545a140f297e8868',1,'touchgfx::GestureEvent']]]
+  ['refresh_5fstrategy_5fdefault',['REFRESH_STRATEGY_DEFAULT',['../classtouchgfx_1_1_h_a_l.html#a7f86838885c94deaae0ddbf8efab2cf4a3c95f830eb73d08211afe676080d18b5',1,'touchgfx::HAL']]],
+  ['refresh_5fstrategy_5foptim_5fsingle_5fbuffer_5ftft_5fctrl',['REFRESH_STRATEGY_OPTIM_SINGLE_BUFFER_TFT_CTRL',['../classtouchgfx_1_1_h_a_l.html#a7f86838885c94deaae0ddbf8efab2cf4ab08914e9037d6b98fb2606a4483ed8a0',1,'touchgfx::HAL']]],
+  ['refresh_5fstrategy_5fpartial_5fframebuffer',['REFRESH_STRATEGY_PARTIAL_FRAMEBUFFER',['../classtouchgfx_1_1_h_a_l.html#a7f86838885c94deaae0ddbf8efab2cf4ad6eaee7a49c2ae7399ac220c1055ebdb',1,'touchgfx::HAL']]],
+  ['released',['RELEASED',['../classtouchgfx_1_1_click_event.html#ac490bd373e5d33a5a257bf0c1fd443cbaa38d18fe73a7fc82c112b6917d0b5cd0',1,'touchgfx::ClickEvent']]],
+  ['render_5ftime',['RENDER_TIME',['../classtouchgfx_1_1_g_p_i_o.html#adcdad68201b23094026d1e32a99c059fad4c2e9a35a4faf30ee7fb0011c9e94c0',1,'touchgfx::GPIO']]],
+  ['rgb565',['RGB565',['../classtouchgfx_1_1_bitmap.html#a23d1a7c7cf0f6da45ca389904e644d55a183737a1f19f772782bc5e24cfd662e7',1,'touchgfx::Bitmap']]],
+  ['rgb888',['RGB888',['../classtouchgfx_1_1_bitmap.html#a23d1a7c7cf0f6da45ca389904e644d55acbcf87c79628b8c7fed02f39f7cbd15f',1,'touchgfx::Bitmap']]],
+  ['rgba2222',['RGBA2222',['../classtouchgfx_1_1_bitmap.html#a23d1a7c7cf0f6da45ca389904e644d55a6fddcb6a1db9c9d4b9c4a1a9ee27f409',1,'touchgfx::Bitmap']]],
+  ['right',['RIGHT',['../classtouchgfx_1_1_abstract_direction_progress.html#a8ef30fa9c08e08c8706653571f9f5b81aec8379af7490bb9eaaf579cf17876f38',1,'touchgfx::AbstractDirectionProgress']]],
+  ['rotate0',['rotate0',['../namespacetouchgfx.html#aaf854447c39c56bbaf8275faddd3476da21cafed113f5ae767193f61c10efee6c',1,'touchgfx']]],
+  ['rotate90',['rotate90',['../namespacetouchgfx.html#aaf854447c39c56bbaf8275faddd3476dafc36e6f095cc07c9aa1fa0de8dbefbfd',1,'touchgfx']]],
+  ['round_5fcap_5fending',['ROUND_CAP_ENDING',['../classtouchgfx_1_1_line.html#aa870de4cdd8581e413fcde0df090f57ea8dac9eab53ee94a47642c599d89b40f0',1,'touchgfx::Line']]]
 ];

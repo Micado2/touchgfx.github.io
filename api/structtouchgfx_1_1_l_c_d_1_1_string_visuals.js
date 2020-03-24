@@ -1,7 +1,7 @@
 var structtouchgfx_1_1_l_c_d_1_1_string_visuals =
 [
-    [ "StringVisuals", "structtouchgfx_1_1_l_c_d_1_1_string_visuals_aa272ebe335a846edd8f9e7efb0f5be05.html#aa272ebe335a846edd8f9e7efb0f5be05", null ],
-    [ "StringVisuals", "structtouchgfx_1_1_l_c_d_1_1_string_visuals_ad1446a04db9ab57801536aceac2afd0f.html#ad1446a04db9ab57801536aceac2afd0f", null ],
+    [ "StringVisuals", "structtouchgfx_1_1_l_c_d_1_1_string_visuals.html#aa272ebe335a846edd8f9e7efb0f5be05", null ],
+    [ "StringVisuals", "structtouchgfx_1_1_l_c_d_1_1_string_visuals.html#ad1446a04db9ab57801536aceac2afd0f", null ],
     [ "alignment", "structtouchgfx_1_1_l_c_d_1_1_string_visuals.html#af12690c11c1927663c4bc54faa181183", null ],
     [ "alpha", "structtouchgfx_1_1_l_c_d_1_1_string_visuals.html#acf5bb76caa419c0fa231dbd66c881084", null ],
     [ "color", "structtouchgfx_1_1_l_c_d_1_1_string_visuals.html#a4f5b95d48bc5f29034d5794ef85a5072", null ],

@@ -1,6 +1,6 @@
 var classtouchgfx_1_1_generic_callback_3_01void_01_4 =
 [
-    [ "~GenericCallback", "classtouchgfx_1_1_generic_callback_3_01void_01_4_a7c065e68f8724233469e609cb1c9c91e.html#a7c065e68f8724233469e609cb1c9c91e", null ],
-    [ "execute", "classtouchgfx_1_1_generic_callback_3_01void_01_4_ae2b70401778c70a119399aa55b570c74.html#ae2b70401778c70a119399aa55b570c74", null ],
-    [ "isValid", "classtouchgfx_1_1_generic_callback_3_01void_01_4_ab9dc28721f02420a86c91223aec82bbf.html#ab9dc28721f02420a86c91223aec82bbf", null ]
+    [ "~GenericCallback", "classtouchgfx_1_1_generic_callback_3_01void_01_4.html#a415e22032e9f1abad04ac86ad1c6f615", null ],
+    [ "execute", "classtouchgfx_1_1_generic_callback_3_01void_01_4.html#ad202bdf85b060603989ff7dcb1be7072", null ],
+    [ "isValid", "classtouchgfx_1_1_generic_callback_3_01void_01_4.html#a84d80615491ecea423f99490445b73ae", null ]
 ];

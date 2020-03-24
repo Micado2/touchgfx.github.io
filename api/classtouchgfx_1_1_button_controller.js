@@ -1,7 +1,7 @@
 var classtouchgfx_1_1_button_controller =
 [
-    [ "~ButtonController", "classtouchgfx_1_1_button_controller_aff4f4485753f9f6e2bc088820d8f481a.html#aff4f4485753f9f6e2bc088820d8f481a", null ],
-    [ "init", "classtouchgfx_1_1_button_controller_a3d26ddb3e5608cbc4d20a481a97cc498.html#a3d26ddb3e5608cbc4d20a481a97cc498", null ],
-    [ "reset", "classtouchgfx_1_1_button_controller_ad20897c5c8bd47f5d4005989bead0e55.html#ad20897c5c8bd47f5d4005989bead0e55", null ],
-    [ "sample", "classtouchgfx_1_1_button_controller_a2850d76bc1f671ccf2b18d1b4b1e5402.html#a2850d76bc1f671ccf2b18d1b4b1e5402", null ]
+    [ "~ButtonController", "classtouchgfx_1_1_button_controller.html#acc8d1b822e8decfd15b33fdd19146f3b", null ],
+    [ "init", "classtouchgfx_1_1_button_controller.html#ab5be7e5a13ea77d59aac45d21dceb6a0", null ],
+    [ "reset", "classtouchgfx_1_1_button_controller.html#a7b0e029102ad38f4b814c6523aedb53d", null ],
+    [ "sample", "classtouchgfx_1_1_button_controller.html#a1c0f359b396f2b0b2b8445c9a1b5f8be", null ]
 ];

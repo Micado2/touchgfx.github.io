@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['cachedabsx',['cachedAbsX',['../classtouchgfx_1_1_drawable.html#a7aff8c1145252ea2527966e56382467c',1,'touchgfx::Drawable']]],
-  ['cachedabsy',['cachedAbsY',['../classtouchgfx_1_1_drawable.html#ad44dd2b00b84d8c7920171e24b9df31e',1,'touchgfx::Drawable']]],
   ['cacheddirtyareas',['cachedDirtyAreas',['../classtouchgfx_1_1_application.html#a445362194264a9d0f9e6372b01a8475d',1,'touchgfx::Application']]],
-  ['cachedvisiblerect',['cachedVisibleRect',['../classtouchgfx_1_1_drawable.html#a07e54c3d18560c2eaf05b1543466a94f',1,'touchgfx::Drawable']]],
   ['callback',['callback',['../structtouchgfx_1_1_keyboard_1_1_callback_area.html#ae5ff2d18de827886d384218af5a93690',1,'touchgfx::Keyboard::CallbackArea']]],
   ['callbackareaarray',['callbackAreaArray',['../structtouchgfx_1_1_keyboard_1_1_layout.html#a15f4cff99e0d31ae9946fb0e913fffab',1,'touchgfx::Keyboard::Layout']]],
   ['cameradistance',['cameraDistance',['../classtouchgfx_1_1_texture_mapper.html#a136b2fc24027dfa0965e9b01ab5790aa',1,'touchgfx::TextureMapper']]],
@@ -23,7 +20,6 @@ var searchData=
   ['colorpressed',['colorPressed',['../classtouchgfx_1_1_text_button_style.html#a9b92ab3a023aff21da63d43442fe6d8b',1,'touchgfx::TextButtonStyle::colorPressed()'],['../classtouchgfx_1_1_two_wildcard_text_button_style.html#a9b92ab3a023aff21da63d43442fe6d8b',1,'touchgfx::TwoWildcardTextButtonStyle::colorPressed()'],['../classtouchgfx_1_1_wildcard_text_button_style.html#a9b92ab3a023aff21da63d43442fe6d8b',1,'touchgfx::WildcardTextButtonStyle::colorPressed()'],['../classtouchgfx_1_1_button_with_label.html#a9b92ab3a023aff21da63d43442fe6d8b',1,'touchgfx::ButtonWithLabel::colorPressed()']]],
   ['colorreleased',['colorReleased',['../classtouchgfx_1_1_text_button_style.html#aba695edf072fae0ffc664a25f48503d7',1,'touchgfx::TextButtonStyle::colorReleased()'],['../classtouchgfx_1_1_two_wildcard_text_button_style.html#aba695edf072fae0ffc664a25f48503d7',1,'touchgfx::TwoWildcardTextButtonStyle::colorReleased()'],['../classtouchgfx_1_1_wildcard_text_button_style.html#aba695edf072fae0ffc664a25f48503d7',1,'touchgfx::WildcardTextButtonStyle::colorReleased()']]],
   ['container',['container',['../classtouchgfx_1_1_image_progress.html#a32a4ee533403291992a44e952d2aabe7',1,'touchgfx::ImageProgress::container()'],['../classtouchgfx_1_1_screen.html#a32a4ee533403291992a44e952d2aabe7',1,'touchgfx::Screen::container()']]],
-  ['cover',['cover',['../structtouchgfx_1_1_cell.html#a06794a86dcd4bd852cd27d7d4691ce86',1,'touchgfx::Cell']]],
   ['currentanimationstate',['currentAnimationState',['../classtouchgfx_1_1_scroll_base.html#a194de5d3f5e94ebd44b18ae6cfcf0fa4',1,'touchgfx::ScrollBase']]],
   ['currenthour',['currentHour',['../classtouchgfx_1_1_abstract_clock.html#a58ba52cb4d715396d7dc127eb72a757e',1,'touchgfx::AbstractClock']]],
   ['currentminute',['currentMinute',['../classtouchgfx_1_1_abstract_clock.html#ae8b40bb038f00a4756e75a7aab4189b7',1,'touchgfx::AbstractClock']]],

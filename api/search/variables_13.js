@@ -13,8 +13,8 @@ var searchData=
   ['textbuffer',['textBuffer',['../classtouchgfx_1_1_text_progress.html#a521d249dc451e4b904c84073f27cf265',1,'touchgfx::TextProgress']]],
   ['textdirection',['textDirection',['../structtouchgfx_1_1_l_c_d_1_1_string_visuals.html#a76af35a1e25b3a48ab864c275768d2fb',1,'touchgfx::LCD::StringVisuals']]],
   ['textheightincludingspacing',['textHeightIncludingSpacing',['../classtouchgfx_1_1_button_with_label.html#ad06e172f650cabbb78830a298c8d8b45',1,'touchgfx::ButtonWithLabel']]],
-  ['texturemapperanimationendedcallback',['textureMapperAnimationEndedCallback',['../classtouchgfx_1_1_animation_texture_mapper.html#ae82a084e33fc283df98d359f0cf65506',1,'touchgfx::AnimationTextureMapper']]],
-  ['texturemapperanimationstepcallback',['textureMapperAnimationStepCallback',['../classtouchgfx_1_1_animation_texture_mapper.html#a591a52d3768f03342c69c0b0195dfa4b',1,'touchgfx::AnimationTextureMapper']]],
+  ['texturemapperanimationendedcallback',['textureMapperAnimationEndedCallback',['../classtouchgfx_1_1_animation_texture_mapper.html#ac5204701572ec25a607e3b2bb1a018d4',1,'touchgfx::AnimationTextureMapper']]],
+  ['texturemapperanimationstepcallback',['textureMapperAnimationStepCallback',['../classtouchgfx_1_1_animation_texture_mapper.html#a119376ba4117351376ed1c90dd4ffd0d',1,'touchgfx::AnimationTextureMapper']]],
   ['tick_5finterval_5fms',['TICK_INTERVAL_MS',['../classtouchgfx_1_1_application.html#a160d7a6f71ed82ae7bd81307c0cb5149',1,'touchgfx::Application']]],
   ['tickssinceupdate',['ticksSinceUpdate',['../classtouchgfx_1_1_animated_image.html#a7ad9675e7b1ea43eb2d65c5387435240',1,'touchgfx::AnimatedImage']]],
   ['tiledimage',['tiledImage',['../classtouchgfx_1_1_tiled_image_button_style.html#aabd9b2ad051d395f09b241210c867d84',1,'touchgfx::TiledImageButtonStyle']]],
@@ -26,6 +26,6 @@ var searchData=
   ['transitionhandled',['transitionHandled',['../classtouchgfx_1_1_application.html#adf387ac2f1760791c05f2dc901d8698c',1,'touchgfx::Application']]],
   ['transitionstorage',['transitionStorage',['../classtouchgfx_1_1_m_v_p_heap.html#a80803f9b1ead82458700390ccc17f44e',1,'touchgfx::MVPHeap']]],
   ['twowildcardtext',['twoWildcardText',['../classtouchgfx_1_1_two_wildcard_text_button_style.html#ab1facd7b1bf007b38d8b5faa81d99d75',1,'touchgfx::TwoWildcardTextButtonStyle']]],
-  ['typed_5ftext_5finvalid',['TYPED_TEXT_INVALID',['../namespacetouchgfx_afacec4ce50e46612f64f4d0906e95aca.html#afacec4ce50e46612f64f4d0906e95aca',1,'touchgfx']]],
+  ['typed_5ftext_5finvalid',['TYPED_TEXT_INVALID',['../namespacetouchgfx.html#afacec4ce50e46612f64f4d0906e95aca',1,'touchgfx']]],
   ['typedtext',['typedText',['../classtouchgfx_1_1_button_with_label.html#a9d9a225af451ae961007a9843f5cbcf5',1,'touchgfx::ButtonWithLabel::typedText()'],['../classtouchgfx_1_1_text_area.html#a9d9a225af451ae961007a9843f5cbcf5',1,'touchgfx::TextArea::typedText()']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['y_5frotation',['Y_ROTATION',['../classtouchgfx_1_1_animation_texture_mapper_ae6a9b0a82a3e96d2e83b7340b15ece87.html#ae6a9b0a82a3e96d2e83b7340b15ece87af109d3c18fab334923cac1e244708248',1,'touchgfx::AnimationTextureMapper']]]
+  ['vertical',['VERTICAL',['../classtouchgfx_1_1_slider.html#acf9436c8845d567c1d065d7a76dff47ba1a88641fcd39f2ed3e58a18526e97138',1,'touchgfx::Slider']]]
 ];

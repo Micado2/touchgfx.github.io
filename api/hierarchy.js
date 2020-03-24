@@ -57,7 +57,6 @@ var hierarchy =
     [ "Bitmap::CacheTableEntry", "structtouchgfx_1_1_bitmap_1_1_cache_table_entry.html", null ],
     [ "Keyboard::CallbackArea", "structtouchgfx_1_1_keyboard_1_1_callback_area.html", null ],
     [ "Canvas", "classtouchgfx_1_1_canvas.html", null ],
-    [ "Cell", "structtouchgfx_1_1_cell.html", null ],
     [ "Color", "classtouchgfx_1_1_color.html", null ],
     [ "colortype", "structtouchgfx_1_1colortype.html", null ],
     [ "CWRUtil", "structtouchgfx_1_1_c_w_r_util.html", null ],
@@ -144,7 +143,6 @@ var hierarchy =
         [ "CoverTransition< templateDirection >::FullSolidRect", "classtouchgfx_1_1_cover_transition_1_1_full_solid_rect.html", null ],
         [ "Image", "classtouchgfx_1_1_image.html", [
           [ "AnimatedImage", "classtouchgfx_1_1_animated_image.html", null ],
-          [ "CacheableContainer::CachedImage", "classtouchgfx_1_1_cacheable_container_1_1_cached_image.html", null ],
           [ "TiledImage", "classtouchgfx_1_1_tiled_image.html", null ]
         ] ],
         [ "PixelDataWidget", "classtouchgfx_1_1_pixel_data_widget.html", null ],
@@ -166,7 +164,6 @@ var hierarchy =
     ] ],
     [ "DrawingSurface", "structtouchgfx_1_1_drawing_surface.html", null ],
     [ "LCD::DrawTextureMapScanLineBase", "classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base.html", null ],
-    [ "DrawTextureMapScanLineBase", "class_draw_texture_map_scan_line_base.html", null ],
     [ "Bitmap::DynamicBitmapData", "structtouchgfx_1_1_bitmap_1_1_dynamic_bitmap_data.html", null ],
     [ "EasingEquations", "classtouchgfx_1_1_easing_equations.html", null ],
     [ "Edge", "structtouchgfx_1_1_edge.html", null ],
@@ -190,25 +187,25 @@ var hierarchy =
     [ "GenericCallback< T1, T2, T3 >", "classtouchgfx_1_1_generic_callback.html", [
       [ "Callback< dest_type, T1, T2, T3 >", "structtouchgfx_1_1_callback.html", null ]
     ] ],
-    [ "GenericCallback< const T &, const touchgfx::ClickEvent &>", "classtouchgfx_1_1_generic_callback.html", null ],
+    [ "GenericCallback< const T &, const touchgfx::ClickEvent & >", "classtouchgfx_1_1_generic_callback.html", null ],
     [ "GenericCallback< const touchgfx::AbstractButton & >", "classtouchgfx_1_1_generic_callback.html", null ],
     [ "GenericCallback< const touchgfx::AbstractButton &, void, void >", "classtouchgfx_1_1_generic_callback.html", [
       [ "Callback< touchgfx::RadioButtonGroup, const touchgfx::AbstractButton & >", "structtouchgfx_1_1_callback.html", null ],
-      [ "Callback< touchgfx::SlideMenu, const touchgfx::AbstractButton &>", "structtouchgfx_1_1_callback.html", null ]
+      [ "Callback< touchgfx::SlideMenu, const touchgfx::AbstractButton & >", "structtouchgfx_1_1_callback.html", null ]
     ] ],
     [ "GenericCallback< const touchgfx::AbstractButtonContainer & >", "classtouchgfx_1_1_generic_callback.html", null ],
-    [ "GenericCallback< const touchgfx::AnimatedImage &>", "classtouchgfx_1_1_generic_callback.html", null ],
+    [ "GenericCallback< const touchgfx::AnimatedImage & >", "classtouchgfx_1_1_generic_callback.html", null ],
     [ "GenericCallback< const touchgfx::AnimationTextureMapper & >", "classtouchgfx_1_1_generic_callback.html", null ],
-    [ "GenericCallback< const touchgfx::DragEvent &>", "classtouchgfx_1_1_generic_callback.html", null ],
+    [ "GenericCallback< const touchgfx::DragEvent & >", "classtouchgfx_1_1_generic_callback.html", null ],
     [ "GenericCallback< const touchgfx::FadeAnimator< T > & >", "classtouchgfx_1_1_generic_callback.html", null ],
     [ "GenericCallback< const touchgfx::MoveAnimator< T > & >", "classtouchgfx_1_1_generic_callback.html", null ],
     [ "GenericCallback< const touchgfx::MoveAnimator< touchgfx::Container > & >", "classtouchgfx_1_1_generic_callback.html", null ],
     [ "GenericCallback< const touchgfx::MoveAnimator< touchgfx::Container > &, void, void >", "classtouchgfx_1_1_generic_callback.html", [
-      [ "Callback< touchgfx::SlideMenu, const touchgfx::MoveAnimator< touchgfx::Container > &>", "structtouchgfx_1_1_callback.html", null ]
+      [ "Callback< touchgfx::SlideMenu, const touchgfx::MoveAnimator< touchgfx::Container > & >", "structtouchgfx_1_1_callback.html", null ]
     ] ],
     [ "GenericCallback< const touchgfx::SlideMenu & >", "classtouchgfx_1_1_generic_callback.html", null ],
     [ "GenericCallback< const touchgfx::Slider &, int >", "classtouchgfx_1_1_generic_callback.html", null ],
-    [ "GenericCallback< const touchgfx::ZoomAnimationImage &>", "classtouchgfx_1_1_generic_callback.html", null ],
+    [ "GenericCallback< const touchgfx::ZoomAnimationImage & >", "classtouchgfx_1_1_generic_callback.html", null ],
     [ "GenericCallback< int16_t >", "classtouchgfx_1_1_generic_callback.html", null ],
     [ "GenericCallback< T1 >", "classtouchgfx_1_1_generic_callback.html", [
       [ "Callback< dest_type, T1, void, void >", "structtouchgfx_1_1_callback_3_01dest__type_00_01_t1_00_01void_00_01void_01_4.html", null ]
@@ -219,8 +216,8 @@ var hierarchy =
     [ "GenericCallback< T1, T2, void >", "classtouchgfx_1_1_generic_callback_3_01_t1_00_01_t2_00_01void_01_4.html", null ],
     [ "GenericCallback< T1, void, void >", "classtouchgfx_1_1_generic_callback_3_01_t1_00_01void_00_01void_01_4.html", null ],
     [ "GenericCallback< touchgfx::Drawable &, void, void >", "classtouchgfx_1_1_generic_callback.html", [
-      [ "Callback< touchgfx::CoverTransition, touchgfx::Drawable &>", "structtouchgfx_1_1_callback.html", null ],
-      [ "Callback< touchgfx::SlideTransition, touchgfx::Drawable &>", "structtouchgfx_1_1_callback.html", null ]
+      [ "Callback< touchgfx::CoverTransition, touchgfx::Drawable & >", "structtouchgfx_1_1_callback.html", null ],
+      [ "Callback< touchgfx::SlideTransition, touchgfx::Drawable & >", "structtouchgfx_1_1_callback.html", null ]
     ] ],
     [ "GenericCallback< touchgfx::DrawableListItemsInterface *, int16_t, int16_t >", "classtouchgfx_1_1_generic_callback.html", null ],
     [ "GenericCallback< Unicode::UnicodeChar >", "classtouchgfx_1_1_generic_callback.html", null ],
@@ -236,8 +233,6 @@ var hierarchy =
       [ "HALSDL2", "classtouchgfx_1_1_h_a_l_s_d_l2.html", null ]
     ] ],
     [ "I2C", "classtouchgfx_1_1_i2_c.html", null ],
-    [ "Scanline::iterator", "classtouchgfx_1_1_scanline_1_1iterator.html", null ],
-    [ "JSMOCHelper", "classtouchgfx_1_1_j_s_m_o_c_helper.html", null ],
     [ "KerningNode", "structtouchgfx_1_1_kerning_node.html", null ],
     [ "Keyboard::Key", "structtouchgfx_1_1_keyboard_1_1_key.html", null ],
     [ "Keyboard::KeyMapping", "structtouchgfx_1_1_keyboard_1_1_key_mapping.html", null ],
@@ -261,7 +256,6 @@ var hierarchy =
     [ "MCUInstrumentation", "classtouchgfx_1_1_m_c_u_instrumentation.html", null ],
     [ "MVPHeap", "classtouchgfx_1_1_m_v_p_heap.html", null ],
     [ "OSWrappers", "classtouchgfx_1_1_o_s_wrappers.html", null ],
-    [ "Outline", "classtouchgfx_1_1_outline.html", null ],
     [ "Pair< T1, T2 >", "structtouchgfx_1_1_pair.html", null ],
     [ "Pair< int16_t, int16_t >", "structtouchgfx_1_1_pair.html", null ],
     [ "Point", "structtouchgfx_1_1_point.html", null ],
@@ -275,16 +269,29 @@ var hierarchy =
       [ "Vector4", "classtouchgfx_1_1_vector4.html", null ]
     ] ],
     [ "RadioButtonGroup< CAPACITY >", "classtouchgfx_1_1_radio_button_group.html", null ],
-    [ "Rasterizer", "classtouchgfx_1_1_rasterizer.html", null ],
     [ "Rect", "classtouchgfx_1_1_rect.html", null ],
-    [ "Renderer", "classtouchgfx_1_1_renderer.html", null ],
-    [ "RenderingBuffer", "classtouchgfx_1_1_rendering_buffer.html", null ],
-    [ "Scanline", "classtouchgfx_1_1_scanline.html", null ],
     [ "Screen", "classtouchgfx_1_1_screen.html", [
       [ "View< T >", "classtouchgfx_1_1_view.html", null ]
     ] ],
     [ "AbstractShape::ShapePoint< T >", "structtouchgfx_1_1_abstract_shape_1_1_shape_point.html", null ],
     [ "LCD::StringVisuals", "structtouchgfx_1_1_l_c_d_1_1_string_visuals.html", null ],
+    [ "T", null, [
+      [ "AnimatedImageButtonStyle< T >", "classtouchgfx_1_1_animated_image_button_style.html", null ],
+      [ "BoxWithBorderButtonStyle< T >", "classtouchgfx_1_1_box_with_border_button_style.html", null ],
+      [ "ClickListener< T >", "classtouchgfx_1_1_click_listener.html", null ],
+      [ "Draggable< T >", "classtouchgfx_1_1_draggable.html", [
+        [ "Snapper< T >", "classtouchgfx_1_1_snapper.html", null ]
+      ] ],
+      [ "FadeAnimator< T >", "classtouchgfx_1_1_fade_animator.html", null ],
+      [ "IconButtonStyle< T >", "classtouchgfx_1_1_icon_button_style.html", null ],
+      [ "ImageButtonStyle< T >", "classtouchgfx_1_1_image_button_style.html", null ],
+      [ "MoveAnimator< T >", "classtouchgfx_1_1_move_animator.html", null ],
+      [ "PreRenderable< T >", "classtouchgfx_1_1_pre_renderable.html", null ],
+      [ "TextButtonStyle< T >", "classtouchgfx_1_1_text_button_style.html", null ],
+      [ "TiledImageButtonStyle< T >", "classtouchgfx_1_1_tiled_image_button_style.html", null ],
+      [ "TwoWildcardTextButtonStyle< T >", "classtouchgfx_1_1_two_wildcard_text_button_style.html", null ],
+      [ "WildcardTextButtonStyle< T >", "classtouchgfx_1_1_wildcard_text_button_style.html", null ]
+    ] ],
     [ "TextProvider", "classtouchgfx_1_1_text_provider.html", null ],
     [ "Texts", "classtouchgfx_1_1_texts.html", null ],
     [ "TextureSurface", "structtouchgfx_1_1_texture_surface.html", null ],
@@ -310,22 +317,5 @@ var hierarchy =
     [ "Unicode", "classtouchgfx_1_1_unicode.html", null ],
     [ "Vector< T, capacity >", "classtouchgfx_1_1_vector.html", null ],
     [ "Vector< touchgfx::Drawable *, MAX_TIMER_WIDGETS >", "classtouchgfx_1_1_vector.html", null ],
-    [ "Vector< touchgfx::Rect, 8 >", "classtouchgfx_1_1_vector.html", null ],
-    [ "T", null, [
-      [ "AnimatedImageButtonStyle< T >", "classtouchgfx_1_1_animated_image_button_style.html", null ],
-      [ "BoxWithBorderButtonStyle< T >", "classtouchgfx_1_1_box_with_border_button_style.html", null ],
-      [ "ClickListener< T >", "classtouchgfx_1_1_click_listener.html", null ],
-      [ "Draggable< T >", "classtouchgfx_1_1_draggable.html", [
-        [ "Snapper< T >", "classtouchgfx_1_1_snapper.html", null ]
-      ] ],
-      [ "FadeAnimator< T >", "classtouchgfx_1_1_fade_animator.html", null ],
-      [ "IconButtonStyle< T >", "classtouchgfx_1_1_icon_button_style.html", null ],
-      [ "ImageButtonStyle< T >", "classtouchgfx_1_1_image_button_style.html", null ],
-      [ "MoveAnimator< T >", "classtouchgfx_1_1_move_animator.html", null ],
-      [ "PreRenderable< T >", "classtouchgfx_1_1_pre_renderable.html", null ],
-      [ "TextButtonStyle< T >", "classtouchgfx_1_1_text_button_style.html", null ],
-      [ "TiledImageButtonStyle< T >", "classtouchgfx_1_1_tiled_image_button_style.html", null ],
-      [ "TwoWildcardTextButtonStyle< T >", "classtouchgfx_1_1_two_wildcard_text_button_style.html", null ],
-      [ "WildcardTextButtonStyle< T >", "classtouchgfx_1_1_wildcard_text_button_style.html", null ]
-    ] ]
+    [ "Vector< touchgfx::Rect, 8 >", "classtouchgfx_1_1_vector.html", null ]
 ];

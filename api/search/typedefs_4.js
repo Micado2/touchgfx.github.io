@@ -1,15 +1,15 @@
 var searchData=
 [
-  ['iconclickbutton',['IconClickButton',['../namespacetouchgfx.html#a4ebd7f39baead536dc790212836fcc31',1,'touchgfx']]],
-  ['iconimageclickbutton',['IconImageClickButton',['../namespacetouchgfx.html#a4024cf191ca58664d2d5d25898a89da3',1,'touchgfx']]],
-  ['iconimagerepeatbutton',['IconImageRepeatButton',['../namespacetouchgfx.html#acaf7247ec9bac5c275a1f72c1d2bcd33',1,'touchgfx']]],
-  ['iconimagetogglebutton',['IconImageToggleButton',['../namespacetouchgfx.html#ae1abd6ecd82254f81ce82e9d8c9ab299',1,'touchgfx']]],
-  ['iconimagetouchbutton',['IconImageTouchButton',['../namespacetouchgfx.html#a503e4be508ba54b3609d62392169db81',1,'touchgfx']]],
-  ['iconrepeatbutton',['IconRepeatButton',['../namespacetouchgfx.html#aee9cd5ba1f69bda53ae89af9f58afc26',1,'touchgfx']]],
-  ['icontogglebutton',['IconToggleButton',['../namespacetouchgfx.html#a2c84b2d45499246ae8fad21370b4b122',1,'touchgfx']]],
-  ['icontouchbutton',['IconTouchButton',['../namespacetouchgfx.html#a4db580b6a052ef103dcddf4de14e6ab9',1,'touchgfx']]],
-  ['imageclickbutton',['ImageClickButton',['../namespacetouchgfx.html#a9f21c2b5e9bbd533fb506aab07b35a03',1,'touchgfx']]],
-  ['imagerepeatbutton',['ImageRepeatButton',['../namespacetouchgfx.html#af99277221c2f98f5cc8350e05d032f18',1,'touchgfx']]],
-  ['imagetogglebutton',['ImageToggleButton',['../namespacetouchgfx.html#ac0410c8f38b33bada49eb8482449fd72',1,'touchgfx']]],
-  ['imagetouchbutton',['ImageTouchButton',['../namespacetouchgfx.html#a54f117bf74ff6d7e8a9b4f57a0505c67',1,'touchgfx']]]
+  ['iconclickbutton',['IconClickButton',['../namespacetouchgfx.html#a6148c804c507610bdf8cb15b98d476ce',1,'touchgfx']]],
+  ['iconimageclickbutton',['IconImageClickButton',['../namespacetouchgfx.html#a139f19ef698b0d2931460c134dd73328',1,'touchgfx']]],
+  ['iconimagerepeatbutton',['IconImageRepeatButton',['../namespacetouchgfx.html#a07b115ef98acaa8207a6894a7207b390',1,'touchgfx']]],
+  ['iconimagetogglebutton',['IconImageToggleButton',['../namespacetouchgfx.html#a85e42426903101415f4f46f92c366eaf',1,'touchgfx']]],
+  ['iconimagetouchbutton',['IconImageTouchButton',['../namespacetouchgfx.html#a2d800260689d38e33c04840ad6320fe4',1,'touchgfx']]],
+  ['iconrepeatbutton',['IconRepeatButton',['../namespacetouchgfx.html#a8144ec70c9df6d6429720babed4fdab4',1,'touchgfx']]],
+  ['icontogglebutton',['IconToggleButton',['../namespacetouchgfx.html#a4a1aabcfac72725a6d3ac847e545c9ce',1,'touchgfx']]],
+  ['icontouchbutton',['IconTouchButton',['../namespacetouchgfx.html#ac9ee7bb36ca4e9dd5990895873c8b80b',1,'touchgfx']]],
+  ['imageclickbutton',['ImageClickButton',['../namespacetouchgfx.html#a2b5cd1e5d2f423cadbb7a907a306aef6',1,'touchgfx']]],
+  ['imagerepeatbutton',['ImageRepeatButton',['../namespacetouchgfx.html#ac148a45982ed663e78f9a8eec71aa4c2',1,'touchgfx']]],
+  ['imagetogglebutton',['ImageToggleButton',['../namespacetouchgfx.html#ae480764e8e6b170654c6da6ad0804db7',1,'touchgfx']]],
+  ['imagetouchbutton',['ImageTouchButton',['../namespacetouchgfx.html#abea5346fd36ae4ee3e9ae0a6c4dd68a5',1,'touchgfx']]]
 ];

@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['radiobuttonclicked',['radioButtonClicked',['../classtouchgfx_1_1_radio_button_group.html#a67251c16d973d3af9fd8c0a4b5f906a8',1,'touchgfx::RadioButtonGroup']]],
-  ['radiobuttondeselectedcallback',['radioButtonDeselectedCallback',['../classtouchgfx_1_1_radio_button_group.html#a877274c0ce492a112c4612287bfe3af1',1,'touchgfx::RadioButtonGroup']]],
+  ['radiobuttonclicked',['radioButtonClicked',['../classtouchgfx_1_1_radio_button_group.html#a5284ef741f3b2d6fb24b75adef818ebd',1,'touchgfx::RadioButtonGroup']]],
+  ['radiobuttondeselectedcallback',['radioButtonDeselectedCallback',['../classtouchgfx_1_1_radio_button_group.html#a4b7363ffd67ee7c8969cd792bf3c9a28',1,'touchgfx::RadioButtonGroup']]],
   ['radiobuttons',['radioButtons',['../classtouchgfx_1_1_radio_button_group.html#a4343f5eaba2a84132535671831a2f6e3',1,'touchgfx::RadioButtonGroup']]],
-  ['radiobuttonselectedcallback',['radioButtonSelectedCallback',['../classtouchgfx_1_1_radio_button_group.html#a72aeaf82051b99a43504f69bf5b2e998',1,'touchgfx::RadioButtonGroup']]],
-  ['radiobuttonunselected',['radioButtonUnselected',['../classtouchgfx_1_1_radio_button_group.html#a2fa896018abde08656780b5a58774bfb',1,'touchgfx::RadioButtonGroup']]],
+  ['radiobuttonselectedcallback',['radioButtonSelectedCallback',['../classtouchgfx_1_1_radio_button_group.html#a7624fb8256b30b6f93485d7b04dabf54',1,'touchgfx::RadioButtonGroup']]],
+  ['radiobuttonunselected',['radioButtonUnselected',['../classtouchgfx_1_1_radio_button_group.html#ade6d475d6a5b0377b5693010f59a44dc',1,'touchgfx::RadioButtonGroup']]],
   ['rangemax',['rangeMax',['../classtouchgfx_1_1_abstract_progress_indicator.html#a5553b7a635fade12e38c22ac71243d6a',1,'touchgfx::AbstractProgressIndicator']]],
   ['rangemin',['rangeMin',['../classtouchgfx_1_1_abstract_progress_indicator.html#a35a6e5daec1e31c6e6090c9a377a5c43',1,'touchgfx::AbstractProgressIndicator']]],
   ['rangesteps',['rangeSteps',['../classtouchgfx_1_1_abstract_progress_indicator.html#a7de050eed4e279fd8c867b40e856c005',1,'touchgfx::AbstractProgressIndicator']]],
@@ -16,7 +16,7 @@ var searchData=
   ['renderingvariant_5fformatshift',['RenderingVariant_FormatShift',['../namespacetouchgfx.html#a51612bd8ebe029bdd953b1833734f0b1',1,'touchgfx']]],
   ['renderingvariant_5fnearestneighbor',['RenderingVariant_NearestNeighbor',['../namespacetouchgfx.html#a00354a4b51770bf9f6169337679e32c9',1,'touchgfx']]],
   ['renderingvariant_5fnoalpha',['RenderingVariant_NoAlpha',['../namespacetouchgfx.html#a84b33f5f7d880271fc1945f3782bc73d',1,'touchgfx']]],
-  ['reportassolid',['reportAsSolid',['../classtouchgfx_1_1_box_a51951e3fc00f07eca17ec5d2c9069bfd.html#a51951e3fc00f07eca17ec5d2c9069bfd',1,'touchgfx::Box']]],
+  ['reportassolid',['reportAsSolid',['../classtouchgfx_1_1_box.html#a51951e3fc00f07eca17ec5d2c9069bfd',1,'touchgfx::Box']]],
   ['reverse',['reverse',['../classtouchgfx_1_1_animated_image.html#a455cbdac659b075dec33e2da705aaa20',1,'touchgfx::AnimatedImage']]],
   ['right',['RIGHT',['../namespacetouchgfx.html#ab3b7d9f870c0dfe80f74bd66e378a3da',1,'touchgfx']]],
   ['rmask',['RMASK',['../classtouchgfx_1_1_abstract_painter_r_g_b565.html#aaa8bbe7908ea4f9e5a0b631b3d2159eb',1,'touchgfx::AbstractPainterRGB565']]],

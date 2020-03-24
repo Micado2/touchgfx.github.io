@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['textrotation',['TextRotation',['../namespacetouchgfx_a8bda0f94681b0c86828e3b0dc4ad6389.html#a8bda0f94681b0c86828e3b0dc4ad6389',1,'touchgfx']]]
+  ['textrotation',['TextRotation',['../namespacetouchgfx.html#aa8b32c1e049cf804b50921f8c847866b',1,'touchgfx']]]
 ];

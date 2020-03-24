@@ -1,5 +1,5 @@
 var classtouchgfx_1_1_font_provider =
 [
-    [ "~FontProvider", "classtouchgfx_1_1_font_provider_ad4d7f8bb0cc09d2a4f38ad50fadbd908.html#ad4d7f8bb0cc09d2a4f38ad50fadbd908", null ],
-    [ "getFont", "classtouchgfx_1_1_font_provider_a59c2a2ecf5cc324d9e6dcf43688fbb6d.html#a59c2a2ecf5cc324d9e6dcf43688fbb6d", null ]
+    [ "~FontProvider", "classtouchgfx_1_1_font_provider.html#af991d91d62b99c1f18d6a4cc39d0f4d3", null ],
+    [ "getFont", "classtouchgfx_1_1_font_provider.html#a4b12f81d0efad03a6112497e4bcdbb96", null ]
 ];

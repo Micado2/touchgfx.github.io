@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['bitmapid',['BitmapId',['../namespacetouchgfx.html#a6decc8ec2b8e5d7e8fdf46161378766e',1,'touchgfx']]],
-  ['boxclickbutton',['BoxClickButton',['../namespacetouchgfx.html#aea8ba0e5216d542fc0290eb83218de90',1,'touchgfx']]],
-  ['boxrepeatbutton',['BoxRepeatButton',['../namespacetouchgfx.html#a17d4bdcf9510308ac2599dc10a6bc6ef',1,'touchgfx']]],
-  ['boxtogglebutton',['BoxToggleButton',['../namespacetouchgfx.html#a51de6771dddd14d0ea4701fbec7a65d8',1,'touchgfx']]],
-  ['boxtouchbutton',['BoxTouchButton',['../namespacetouchgfx.html#a787899740b7b2cdc071ad2f1606e1121',1,'touchgfx']]]
+  ['bitmapid',['BitmapId',['../namespacetouchgfx.html#a3923435f6df64396b2203d60ddfa89e4',1,'touchgfx']]],
+  ['boxclickbutton',['BoxClickButton',['../namespacetouchgfx.html#a7db83f30e1e693a2e77fed7fd0852749',1,'touchgfx']]],
+  ['boxrepeatbutton',['BoxRepeatButton',['../namespacetouchgfx.html#a2b88694b337747e66e928ea00a1803fb',1,'touchgfx']]],
+  ['boxtogglebutton',['BoxToggleButton',['../namespacetouchgfx.html#a14305302809e62aa0c43e3eeecb737f0',1,'touchgfx']]],
+  ['boxtouchbutton',['BoxTouchButton',['../namespacetouchgfx.html#a1ad0b3aa6628a79d66e81d64cc899c84',1,'touchgfx']]]
 ];
