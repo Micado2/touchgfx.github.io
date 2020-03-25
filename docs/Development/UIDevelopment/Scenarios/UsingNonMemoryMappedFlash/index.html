@@ -13,28 +13,28 @@
 <link data-react-helmet="true" rel="shortcut icon" href="/img/favicon.png">
 
 
-<link rel="stylesheet" href="/styles.86a00677.css">
+<link rel="stylesheet" href="/styles.cdb1878b.css">
 
 
-<link rel="preload" href="/styles.c1f46f7c.js" as="script">
+<link rel="preload" href="/styles.1c1f777e.js" as="script">
 
-<link rel="preload" href="/runtime~main.bb1167bb.js" as="script">
+<link rel="preload" href="/runtime~main.32eaa3d1.js" as="script">
 
-<link rel="preload" href="/main.377f7f85.js" as="script">
+<link rel="preload" href="/main.7ad872cd.js" as="script">
 
-<link rel="preload" href="/common.b0a3c383.js" as="script">
+<link rel="preload" href="/common.48678e5d.js" as="script">
 
-<link rel="preload" href="/2.04e9b442.js" as="script">
+<link rel="preload" href="/2.cad651cd.js" as="script">
 
-<link rel="preload" href="/3.858973c4.js" as="script">
+<link rel="preload" href="/3.ad199b58.js" as="script">
 
-<link rel="preload" href="/1be78505.c4ee2f32.js" as="script">
+<link rel="preload" href="/1be78505.1fe71d7b.js" as="script">
 
-<link rel="preload" href="/20ac7829.9d296cfa.js" as="script">
+<link rel="preload" href="/20ac7829.e3e211d1.js" as="script">
 
-<link rel="preload" href="/17896441.049c3937.js" as="script">
+<link rel="preload" href="/17896441.7735bfb7.js" as="script">
 
-<link rel="preload" href="/9ca6e4a9.a62bbe21.js" as="script">
+<link rel="preload" href="/9ca6e4a9.45ef7bb6.js" as="script">
 
 </head>
 <body>
@@ -65,7 +65,8 @@ TextureMapper showing a rotating logo:</p><div class="figure"><a href="/img/Deve
 the application. The images are referenced in a table called the
 bitmap_database. This table is located in the file
 BitmapDatabase.cpp. Here is the table from the above example (some details removed):</p><div class="code-header"><div><h5>BitmapDatabase.cpp</h5></div></div><div class="mdxCodeBlock_iHAB"><pre class="prism-code language-cpp codeBlock_19pQ"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><code class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token keyword" style="font-style:italic">extern</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">const</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">unsigned</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">char</span><span class="token plain"> _blue_buttons_round_edge_small</span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token keyword" style="font-style:italic">extern</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">const</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">unsigned</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">char</span><span class="token plain"> _blue_buttons_round_edge_small_pressed</span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token keyword" style="font-style:italic">extern</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">const</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">unsigned</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">char</span><span class="token plain"> _blue_logo_touchgfx_logo</span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain" style="display:inline-block">
-</span></div><div class="token-line docusaurus-highlight-code-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token keyword" style="font-style:italic">const</span><span class="token plain"> touchgfx</span><span class="token operator" style="color:rgb(137, 221, 255)">::</span><span class="token plain">Bitmap</span><span class="token operator" style="color:rgb(137, 221, 255)">::</span><span class="token plain">BitmapData bitmap_database</span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"> _blue_buttons_round_edge_small</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"> _blue_buttons_round_edge_small_pressed</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"> _blue_logo_touchgfx_logo</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span></div></code></pre></div><p>The arrays declared first are the arrays containing the pixels of the
+</span></div><div class="token-line docusaurus-highlight-code-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token keyword" style="font-style:italic">const</span><span class="token plain"> touchgfx</span><span class="token operator" style="color:rgb(137, 221, 255)">::</span><span class="token plain">Bitmap</span><span class="token operator" style="color:rgb(137, 221, 255)">::</span><span class="token plain">BitmapData bitmap_database</span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"> _blue_buttons_round_edge_small</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"> _blue_buttons_round_edge_small_pressed</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"> _blue_logo_touchgfx_logo</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain" style="display:inline-block">
+</span></div></code></pre></div><p>The arrays declared first are the arrays containing the pixels of the
 individual bitmaps. These arrays are defined in other .cpp files. The
 bitmap_database array is holding the addresses of these
 arrays. TouchGFX uses this array to find the address of the pixels of
@@ -89,28 +90,28 @@ read the pixels from the address found in the <code>bitmap_database</code>
 table. This address will be in the range 0x24000000 - 0x24100000 and
 the read will result in an exception.</p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="linking-images-to-ram"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#linking-images-to-ram" title="Direct link to heading">#</a>Linking images to RAM</h2><p>If your available RAM is big enough to hold all the images (in the
 above example that is more than 147.136 bytes) then you do not need to
-use the bitmap cache to copy the images.</p><p>The strategy is as follows:</p><ul><li>Select a fixed address and range in RAM for the images</li><li>Remove that range from the RAM area in the linker script</li><li>Create a new area IMAGES with the selected address and size</li><li>Place the ExtFlashSection in IMAGES area</li><li>Link the application and check the .map file</li><li>Create the images.bin file from the application.elf</li><li>Before TouchGFX is started, copy the whole images.bin file from the SD-card to the selected address in RAM</li></ul><p>This solution is simple, but has some drawbacks:</p><ul><li>The available RAM must be big enough to hold all the images</li><li>Start up time will be larger because of the copying from the SD-card (megabytes can take seconds)</li></ul></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/Development/UIDevelopment/Scenarios/CreatingDynamicL8Images"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« Creating Dynamic L8 Images</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/miscellaneous/known-issues"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">Known Issues »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#copying-bitmap-data-from-flash-to-cache" class="contents__link">Copying bitmap data from flash to cache</a></li><li><a href="#the-bitmapdatabase-table" class="contents__link">The BitmapDatabase table</a></li><li><a href="#linker-script-modifications" class="contents__link">Linker script modifications</a></li><li><a href="#modifying-the-blockcopy-function" class="contents__link">Modifying the BlockCopy function</a></li><li><a href="#linking-images-to-ram" class="contents__link">Linking images to RAM</a></li></ul></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center">Copyright © 2020 ST Microelectronics</div></div></footer>
+use the bitmap cache to copy the images.</p><p>The strategy is as follows:</p><ul><li>Select a fixed address and range in RAM for the images</li><li>Remove that range from the RAM area in the linker script</li><li>Create a new area IMAGES with the selected address and size</li><li>Place the ExtFlashSection in IMAGES area</li><li>Link the application and check the .map file</li><li>Create the images.bin file from the application.elf</li><li>Before TouchGFX is started, copy the whole images.bin file from the SD-card to the selected address in RAM</li></ul><p>This solution is simple, but has some drawbacks:</p><ul><li>The available RAM must be big enough to hold all the images</li><li>Start up time will be larger because of the copying from the SD-card (megabytes can take seconds)</li></ul></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/Development/UIDevelopment/Scenarios/CreatingDynamicL8Images"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« Creating Dynamic L8 Images</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/miscellaneous/known-issues"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">Known Issues »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#copying-bitmap-data-from-flash-to-cache" class="contents__link">Copying bitmap data from flash to cache</a></li><li><a href="#the-bitmapdatabase-table" class="contents__link">The BitmapDatabase table</a></li><li><a href="#linker-script-modifications" class="contents__link">Linker script modifications</a></li><li><a href="#modifying-the-blockcopy-function" class="contents__link">Modifying the BlockCopy function</a></li><li><a href="#linking-images-to-ram" class="contents__link">Linking images to RAM</a></li></ul></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center"><div>Copyright © 2020 ST Microelectronics</div></div></div></footer>
 </div>
 
-<script src="/styles.c1f46f7c.js"></script>
+<script src="/styles.1c1f777e.js"></script>
 
-<script src="/runtime~main.bb1167bb.js"></script>
+<script src="/runtime~main.32eaa3d1.js"></script>
 
-<script src="/main.377f7f85.js"></script>
+<script src="/main.7ad872cd.js"></script>
 
-<script src="/common.b0a3c383.js"></script>
+<script src="/common.48678e5d.js"></script>
 
-<script src="/2.04e9b442.js"></script>
+<script src="/2.cad651cd.js"></script>
 
-<script src="/3.858973c4.js"></script>
+<script src="/3.ad199b58.js"></script>
 
-<script src="/1be78505.c4ee2f32.js"></script>
+<script src="/1be78505.1fe71d7b.js"></script>
 
-<script src="/20ac7829.9d296cfa.js"></script>
+<script src="/20ac7829.e3e211d1.js"></script>
 
-<script src="/17896441.049c3937.js"></script>
+<script src="/17896441.7735bfb7.js"></script>
 
-<script src="/9ca6e4a9.a62bbe21.js"></script>
+<script src="/9ca6e4a9.45ef7bb6.js"></script>
 
 
 </body>

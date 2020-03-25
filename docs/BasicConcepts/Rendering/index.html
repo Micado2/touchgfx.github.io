@@ -13,28 +13,28 @@
 <link data-react-helmet="true" rel="shortcut icon" href="/img/favicon.png">
 
 
-<link rel="stylesheet" href="/styles.86a00677.css">
+<link rel="stylesheet" href="/styles.cdb1878b.css">
 
 
-<link rel="preload" href="/styles.c1f46f7c.js" as="script">
+<link rel="preload" href="/styles.1c1f777e.js" as="script">
 
-<link rel="preload" href="/runtime~main.bb1167bb.js" as="script">
+<link rel="preload" href="/runtime~main.32eaa3d1.js" as="script">
 
-<link rel="preload" href="/main.377f7f85.js" as="script">
+<link rel="preload" href="/main.7ad872cd.js" as="script">
 
-<link rel="preload" href="/common.b0a3c383.js" as="script">
+<link rel="preload" href="/common.48678e5d.js" as="script">
 
-<link rel="preload" href="/2.04e9b442.js" as="script">
+<link rel="preload" href="/2.cad651cd.js" as="script">
 
-<link rel="preload" href="/3.858973c4.js" as="script">
+<link rel="preload" href="/3.ad199b58.js" as="script">
 
-<link rel="preload" href="/1be78505.c4ee2f32.js" as="script">
+<link rel="preload" href="/1be78505.1fe71d7b.js" as="script">
 
-<link rel="preload" href="/20ac7829.9d296cfa.js" as="script">
+<link rel="preload" href="/20ac7829.e3e211d1.js" as="script">
 
-<link rel="preload" href="/17896441.049c3937.js" as="script">
+<link rel="preload" href="/17896441.7735bfb7.js" as="script">
 
-<link rel="preload" href="/71ab02b3.a1b78c22.js" as="script">
+<link rel="preload" href="/71ab02b3.3cffb90f.js" as="script">
 
 </head>
 <body>
@@ -108,7 +108,8 @@ functions can be reimplemented in the Screens in the
 application. This can e.g. be used to perform an action whenever the
 user touches the screen no matter where if the touch is on a Widget.</li></ul><p>The Screen class has the following event handlers. These are called by
 the graphics engine when the corresponding external event has been
-collected:</p><div class="code-header"><div><h5>framework/include/touchgfx/Screen.hpp</h5></div></div><div class="mdxCodeBlock_iHAB"><pre class="prism-code language-cpp codeBlock_19pQ"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><code class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token keyword" style="font-style:italic">virtual</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">void</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">handleClickEvent</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token keyword" style="font-style:italic">const</span><span class="token plain"> ClickEvent</span><span class="token operator" style="color:rgb(137, 221, 255)">&amp;</span><span class="token plain"> evt</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain" style="display:inline-block">
+collected:</p><div class="code-header"><div><h5>framework/include/touchgfx/Screen.hpp</h5></div></div><div class="mdxCodeBlock_iHAB"><pre class="prism-code language-cpp codeBlock_19pQ"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><code class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token plain" style="display:inline-block">
+</span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token keyword" style="font-style:italic">virtual</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">void</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">handleClickEvent</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token keyword" style="font-style:italic">const</span><span class="token plain"> ClickEvent</span><span class="token operator" style="color:rgb(137, 221, 255)">&amp;</span><span class="token plain"> evt</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain" style="display:inline-block">
 </span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token keyword" style="font-style:italic">virtual</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">void</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">handleDragEvent</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token keyword" style="font-style:italic">const</span><span class="token plain"> DragEvent</span><span class="token operator" style="color:rgb(137, 221, 255)">&amp;</span><span class="token plain"> evt</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain" style="display:inline-block">
 </span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token keyword" style="font-style:italic">virtual</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">void</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">handleGestureEvent</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token keyword" style="font-style:italic">const</span><span class="token plain"> GestureEvent</span><span class="token operator" style="color:rgb(137, 221, 255)">&amp;</span><span class="token plain"> evt</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain" style="display:inline-block">
 </span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token keyword" style="font-style:italic">virtual</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">void</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">handleTickEvent</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain" style="display:inline-block">
@@ -209,28 +210,28 @@ finished when the retransmission starts again: </p><div class="figure noshadow">
 that is being transmitted is rendered completely. Otherwise the
 display will show the unfinished framebuffer.</p><p>In the next section we will discuss the rendering time for the
 individual Widgets. This will help the programmer to write applications
-of high performance.</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/BasicConcepts/GraphicsEngine"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« Graphics Engine</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/BasicConcepts/Performance"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">Performance »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#collect" class="contents__link">Collect</a></li><li><a href="#update" class="contents__link">Update</a><ul><li><a href="#time-based-updates" class="contents__link">Time based updates</a></li><li><a href="#requesting-a-redraw" class="contents__link">Requesting a redraw</a></li></ul></li><li><a href="#render" class="contents__link">Render</a></li><li><a href="#wait" class="contents__link">Wait</a></li><li><a href="#handling-the-framebuffers" class="contents__link">Handling the framebuffers</a><ul><li><a href="#two-framebuffers" class="contents__link">Two framebuffers</a></li><li><a href="#one-framebuffer" class="contents__link">One framebuffer</a></li></ul></li></ul></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center">Copyright © 2020 ST Microelectronics</div></div></footer>
+of high performance.</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/BasicConcepts/GraphicsEngine"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« Graphics Engine</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/BasicConcepts/Performance"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">Performance »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#collect" class="contents__link">Collect</a></li><li><a href="#update" class="contents__link">Update</a><ul><li><a href="#time-based-updates" class="contents__link">Time based updates</a></li><li><a href="#requesting-a-redraw" class="contents__link">Requesting a redraw</a></li></ul></li><li><a href="#render" class="contents__link">Render</a></li><li><a href="#wait" class="contents__link">Wait</a></li><li><a href="#handling-the-framebuffers" class="contents__link">Handling the framebuffers</a><ul><li><a href="#two-framebuffers" class="contents__link">Two framebuffers</a></li><li><a href="#one-framebuffer" class="contents__link">One framebuffer</a></li></ul></li></ul></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center"><div>Copyright © 2020 ST Microelectronics</div></div></div></footer>
 </div>
 
-<script src="/styles.c1f46f7c.js"></script>
+<script src="/styles.1c1f777e.js"></script>
 
-<script src="/runtime~main.bb1167bb.js"></script>
+<script src="/runtime~main.32eaa3d1.js"></script>
 
-<script src="/main.377f7f85.js"></script>
+<script src="/main.7ad872cd.js"></script>
 
-<script src="/common.b0a3c383.js"></script>
+<script src="/common.48678e5d.js"></script>
 
-<script src="/2.04e9b442.js"></script>
+<script src="/2.cad651cd.js"></script>
 
-<script src="/3.858973c4.js"></script>
+<script src="/3.ad199b58.js"></script>
 
-<script src="/1be78505.c4ee2f32.js"></script>
+<script src="/1be78505.1fe71d7b.js"></script>
 
-<script src="/20ac7829.9d296cfa.js"></script>
+<script src="/20ac7829.e3e211d1.js"></script>
 
-<script src="/17896441.049c3937.js"></script>
+<script src="/17896441.7735bfb7.js"></script>
 
-<script src="/71ab02b3.a1b78c22.js"></script>
+<script src="/71ab02b3.3cffb90f.js"></script>
 
 
 </body>

@@ -13,28 +13,28 @@
 <link data-react-helmet="true" rel="shortcut icon" href="/img/favicon.png">
 
 
-<link rel="stylesheet" href="/styles.86a00677.css">
+<link rel="stylesheet" href="/styles.cdb1878b.css">
 
 
-<link rel="preload" href="/styles.c1f46f7c.js" as="script">
+<link rel="preload" href="/styles.1c1f777e.js" as="script">
 
-<link rel="preload" href="/runtime~main.bb1167bb.js" as="script">
+<link rel="preload" href="/runtime~main.32eaa3d1.js" as="script">
 
-<link rel="preload" href="/main.377f7f85.js" as="script">
+<link rel="preload" href="/main.7ad872cd.js" as="script">
 
-<link rel="preload" href="/common.b0a3c383.js" as="script">
+<link rel="preload" href="/common.48678e5d.js" as="script">
 
-<link rel="preload" href="/2.04e9b442.js" as="script">
+<link rel="preload" href="/2.cad651cd.js" as="script">
 
-<link rel="preload" href="/3.858973c4.js" as="script">
+<link rel="preload" href="/3.ad199b58.js" as="script">
 
-<link rel="preload" href="/1be78505.c4ee2f32.js" as="script">
+<link rel="preload" href="/1be78505.1fe71d7b.js" as="script">
 
-<link rel="preload" href="/20ac7829.9d296cfa.js" as="script">
+<link rel="preload" href="/20ac7829.e3e211d1.js" as="script">
 
-<link rel="preload" href="/17896441.049c3937.js" as="script">
+<link rel="preload" href="/17896441.7735bfb7.js" as="script">
 
-<link rel="preload" href="/f60b5397.69439176.js" as="script">
+<link rel="preload" href="/f60b5397.c40d20e7.js" as="script">
 
 </head>
 <body>
@@ -47,28 +47,28 @@ An example setup of a button, with position, images and added to the scene model
 The <a target="_blank" href="/api/classtouchgfx_1_1_l_c_d_a21fc0988883bc392096c8eb21b0710b7.html#a21fc0988883bc392096c8eb21b0710b7">drawPartialBitmap</a> method for instance utilizes the underlying hardware (Chrom-ART if available) to draw the bitmap.</p><p>One can utilize these API drawing methods when extending the scene model with new types of widgets. See the section on creating your own <a href="/docs/Development/UIDevelopment/TouchGFXEngineFeatures/CustomWidgets">custom widget</a>.</p><p>The implementation of the drawing API methods is platform specific and highly optimized for each specific MCU.</p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="main-loop"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#main-loop" title="Direct link to heading">#</a>Main Loop</h2><p>The workings of many game engines, graphics engines and in particular TouchGFX can be thought of as an infinite loop.</p><p>Within the main loop of TouchGFX there are three main activities</p><ul><li><strong>Collect events</strong>
 Collect events from the touch screen, presses of physical buttons, messages from backend system, ...</li><li><strong>Update scene model</strong>
 React to the collected events, updating the positions, animations, colors, images, ... of the model</li><li><strong>Render scene model</strong>
-Redraw the parts of the model that has been updated and make them appear on the display</li></ul><p>A diagrammatic version of the main loop is</p><div class="figure noshadow"><a href="/img/BasicConcepts/engine_cycle.png" target="_blank"><img width="320" src="/img/BasicConcepts/engine_cycle.png"></a><p>Main loop</p></div><p>Each execution of the main loop is denoted a tick of the application.</p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="platform-adaptibility"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#platform-adaptibility" title="Direct link to heading">#</a>Platform adaptibility</h2><p>As TouchGFX is designed for running on all STM32 embedded setups the above activities can be tailored.</p><ul><li>The collection of events is handled by a dedicated abstraction layer. The tailoring of this layer is the subject of the section on <a href="/docs/Development/TouchGFXHALDevelopment/TouchGFXHALDevelopmentIntroduction">TouchGFX AL Development</a>.</li><li>The updating of the model is completely up to the application. The details on how to do this update is the subject of <a href="/docs/Development/UIDevelopment/UIDevelopmentIntroduction">UI Development</a>.</li><li>The rendering of graphics to the framebuffer is handled by TouchGFX and will in general not need to be customized. The transferring of the pixels in the framebuffer to the display is platform specific, see the section on ###TODO for how to customize this to specific platforms.</li></ul><p>Read on to get more specifics on the main loop of TouchGFX.</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/BasicConcepts/Framebuffer"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« Framebuffer</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/BasicConcepts/Rendering"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">Main Loop »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#scene-model" class="contents__link">Scene model</a></li><li><a href="#manipulate-the-model" class="contents__link">Manipulate the model</a></li><li><a href="#issue-drawing-commands" class="contents__link">Issue drawing commands</a></li><li><a href="#main-loop" class="contents__link">Main Loop</a></li><li><a href="#platform-adaptibility" class="contents__link">Platform adaptibility</a></li></ul></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center">Copyright © 2020 ST Microelectronics</div></div></footer>
+Redraw the parts of the model that has been updated and make them appear on the display</li></ul><p>A diagrammatic version of the main loop is</p><div class="figure noshadow"><a href="/img/BasicConcepts/engine_cycle.png" target="_blank"><img width="320" src="/img/BasicConcepts/engine_cycle.png"></a><p>Main loop</p></div><p>Each execution of the main loop is denoted a tick of the application.</p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="platform-adaptibility"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#platform-adaptibility" title="Direct link to heading">#</a>Platform adaptibility</h2><p>As TouchGFX is designed for running on all STM32 embedded setups the above activities can be tailored.</p><ul><li>The collection of events is handled by a dedicated abstraction layer. The tailoring of this layer is the subject of the section on <a href="/docs/Development/TouchGFXHALDevelopment/TouchGFXHALDevelopmentIntroduction">TouchGFX AL Development</a>.</li><li>The updating of the model is completely up to the application. The details on how to do this update is the subject of <a href="/docs/Development/UIDevelopment/UIDevelopmentIntroduction">UI Development</a>.</li><li>The rendering of graphics to the framebuffer is handled by TouchGFX and will in general not need to be customized. The transferring of the pixels in the framebuffer to the display is platform specific, see the section on ###TODO for how to customize this to specific platforms.</li></ul><p>Read on to get more specifics on the main loop of TouchGFX.</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/BasicConcepts/Framebuffer"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« Framebuffer</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/BasicConcepts/Rendering"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">Main Loop »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#scene-model" class="contents__link">Scene model</a></li><li><a href="#manipulate-the-model" class="contents__link">Manipulate the model</a></li><li><a href="#issue-drawing-commands" class="contents__link">Issue drawing commands</a></li><li><a href="#main-loop" class="contents__link">Main Loop</a></li><li><a href="#platform-adaptibility" class="contents__link">Platform adaptibility</a></li></ul></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center"><div>Copyright © 2020 ST Microelectronics</div></div></div></footer>
 </div>
 
-<script src="/styles.c1f46f7c.js"></script>
+<script src="/styles.1c1f777e.js"></script>
 
-<script src="/runtime~main.bb1167bb.js"></script>
+<script src="/runtime~main.32eaa3d1.js"></script>
 
-<script src="/main.377f7f85.js"></script>
+<script src="/main.7ad872cd.js"></script>
 
-<script src="/common.b0a3c383.js"></script>
+<script src="/common.48678e5d.js"></script>
 
-<script src="/2.04e9b442.js"></script>
+<script src="/2.cad651cd.js"></script>
 
-<script src="/3.858973c4.js"></script>
+<script src="/3.ad199b58.js"></script>
 
-<script src="/1be78505.c4ee2f32.js"></script>
+<script src="/1be78505.1fe71d7b.js"></script>
 
-<script src="/20ac7829.9d296cfa.js"></script>
+<script src="/20ac7829.e3e211d1.js"></script>
 
-<script src="/17896441.049c3937.js"></script>
+<script src="/17896441.7735bfb7.js"></script>
 
-<script src="/f60b5397.69439176.js"></script>
+<script src="/f60b5397.c40d20e7.js"></script>
 
 
 </body>

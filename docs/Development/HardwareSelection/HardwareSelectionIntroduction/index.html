@@ -13,28 +13,28 @@
 <link data-react-helmet="true" rel="shortcut icon" href="/img/favicon.png">
 
 
-<link rel="stylesheet" href="/styles.86a00677.css">
+<link rel="stylesheet" href="/styles.cdb1878b.css">
 
 
-<link rel="preload" href="/styles.c1f46f7c.js" as="script">
+<link rel="preload" href="/styles.1c1f777e.js" as="script">
 
-<link rel="preload" href="/runtime~main.bb1167bb.js" as="script">
+<link rel="preload" href="/runtime~main.32eaa3d1.js" as="script">
 
-<link rel="preload" href="/main.377f7f85.js" as="script">
+<link rel="preload" href="/main.7ad872cd.js" as="script">
 
-<link rel="preload" href="/common.b0a3c383.js" as="script">
+<link rel="preload" href="/common.48678e5d.js" as="script">
 
-<link rel="preload" href="/2.04e9b442.js" as="script">
+<link rel="preload" href="/2.cad651cd.js" as="script">
 
-<link rel="preload" href="/3.858973c4.js" as="script">
+<link rel="preload" href="/3.ad199b58.js" as="script">
 
-<link rel="preload" href="/1be78505.c4ee2f32.js" as="script">
+<link rel="preload" href="/1be78505.1fe71d7b.js" as="script">
 
-<link rel="preload" href="/20ac7829.9d296cfa.js" as="script">
+<link rel="preload" href="/20ac7829.e3e211d1.js" as="script">
 
-<link rel="preload" href="/17896441.049c3937.js" as="script">
+<link rel="preload" href="/17896441.7735bfb7.js" as="script">
 
-<link rel="preload" href="/55e05688.3bb2ea12.js" as="script">
+<link rel="preload" href="/55e05688.62a19985.js" as="script">
 
 </head>
 <body>
@@ -58,28 +58,28 @@ Choosing the right display can be difficult as there are many options, many leve
 There are great differences in backlight and colors for various display models, so obtain a sample of the desired display and see if the color representation is acceptable. Also note that colors will often look slightly different on the display compared to what the graphics designers see on their PC monitor.
 Most displays provide either 18 or 24 bit color depth, whereas the TouchGFX frame buffer is maybe 16-bit. Some MCUs will upscale to 24-bit when outputting, but if there is only 16-bit output we recommend wiring any excess color input pins of the display (least significant) to ground. 18 bit displays are preferred over 24 bit, as the loss of brightness from unused bits is smaller. But even with 24-bit displays the loss is only 3% so it is hardly noticable in practice.
 Consider viewing angle requirements for your product. Some displays have at least one poor viewing angle.
-Consider the scanline direction and mounting orientation of the display. TouchGFX supports a 90 degree rotation so you can run landscape mode UIs on a portrait mode display or vice versa, but there are no builtin mechanism for e.g. turning the UI upside down. Some displays support several mounting orientations though.</p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="choosing-touch-input"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#choosing-touch-input" title="Direct link to heading">#</a>Choosing touch input</h2><p>Basically there are two types of touch input: capacitive and resistive touch. They behave quite differently and are also at different price points so it is worth considering which to choose.</p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="resistive-touch"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#resistive-touch" title="Direct link to heading">#</a>Resistive touch</h3><p>Resistive touch reacts to physical pressure being applied to the display, and can be actuated by anything (finger, pen, stylus). It is a cheaper technology than capacitive, and the touch readings are typically done by doing A/D conversions on analog pins of the MCU. Resistive touch works poorly with gesture recognition (dragging, swiping) because it relies on uniform pressure being applied while doing the interaction, and that is not what users will typically do in practice. Also it has a tendency of requiring more force to actuate than at least some users have come to expect. Finally, a resistive touch film is normally not completely transparent and therefore your display will loose some brightness and will not appear as crisp and clear as a capacitive touch displays.</p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="capacitive-touch"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#capacitive-touch" title="Direct link to heading">#</a>Capacitive touch</h3><p>When using capacitive touch, there will be a small dedicated touch controller IC typically mounted on the display tail. The MCU communicates with the touch controller using I2C or SPI. Capacitive touch is sensitive to being touched as opposed to applying pressure which means that it is much better suited for gesture recognition and in general feels more natural for smartphone users compared with resistive touch. Capacitive touch displays normally requires that the object touching the screen is a finger. This has advantages such as being able to wipe the screen with a cloth without risking to click anything but also has drawbacks such as it cannot be operated using gloves. Note that capacitive displays are more sensitive to electromagnetic interface, power supply variations and environment changes. We recommend consulting with your display vendor for details on how to cope with this.</p><p>Based on the above we recommend resistive touch displays only on very price sensitive applications where touch interaction is mainly click-based, with little or no gesture input or in cases where the touch actuation is done by something else than a finger.</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/Development/DevelopmentIntroduction"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« Introduction</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/Development/HardwareSelection/HardwareComponents/HardwareSelectionMCU"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">MCU »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#required-components" class="contents__link">Required components</a></li><li><a href="#microcontroller" class="contents__link">Microcontroller</a><ul><li><a href="#internal-memory-requirements" class="contents__link">Internal memory requirements</a></li></ul></li><li><a href="#frame-buffer-memory" class="contents__link">Frame buffer memory</a></li><li><a href="#non-volatile-storage" class="contents__link">Non-volatile storage</a><ul><li><a href="#memory-requirements" class="contents__link">Memory requirements</a></li></ul></li><li><a href="#platform-compatibility" class="contents__link">Platform Compatibility</a></li><li><a href="#choosing-touch-input" class="contents__link">Choosing touch input</a><ul><li><a href="#resistive-touch" class="contents__link">Resistive touch</a></li><li><a href="#capacitive-touch" class="contents__link">Capacitive touch</a></li></ul></li></ul></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center">Copyright © 2020 ST Microelectronics</div></div></footer>
+Consider the scanline direction and mounting orientation of the display. TouchGFX supports a 90 degree rotation so you can run landscape mode UIs on a portrait mode display or vice versa, but there are no builtin mechanism for e.g. turning the UI upside down. Some displays support several mounting orientations though.</p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="choosing-touch-input"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#choosing-touch-input" title="Direct link to heading">#</a>Choosing touch input</h2><p>Basically there are two types of touch input: capacitive and resistive touch. They behave quite differently and are also at different price points so it is worth considering which to choose.</p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="resistive-touch"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#resistive-touch" title="Direct link to heading">#</a>Resistive touch</h3><p>Resistive touch reacts to physical pressure being applied to the display, and can be actuated by anything (finger, pen, stylus). It is a cheaper technology than capacitive, and the touch readings are typically done by doing A/D conversions on analog pins of the MCU. Resistive touch works poorly with gesture recognition (dragging, swiping) because it relies on uniform pressure being applied while doing the interaction, and that is not what users will typically do in practice. Also it has a tendency of requiring more force to actuate than at least some users have come to expect. Finally, a resistive touch film is normally not completely transparent and therefore your display will loose some brightness and will not appear as crisp and clear as a capacitive touch displays.</p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="capacitive-touch"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#capacitive-touch" title="Direct link to heading">#</a>Capacitive touch</h3><p>When using capacitive touch, there will be a small dedicated touch controller IC typically mounted on the display tail. The MCU communicates with the touch controller using I2C or SPI. Capacitive touch is sensitive to being touched as opposed to applying pressure which means that it is much better suited for gesture recognition and in general feels more natural for smartphone users compared with resistive touch. Capacitive touch displays normally requires that the object touching the screen is a finger. This has advantages such as being able to wipe the screen with a cloth without risking to click anything but also has drawbacks such as it cannot be operated using gloves. Note that capacitive displays are more sensitive to electromagnetic interface, power supply variations and environment changes. We recommend consulting with your display vendor for details on how to cope with this.</p><p>Based on the above we recommend resistive touch displays only on very price sensitive applications where touch interaction is mainly click-based, with little or no gesture input or in cases where the touch actuation is done by something else than a finger.</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/Development/DevelopmentIntroduction"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« Introduction</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/Development/HardwareSelection/HardwareComponents/HardwareSelectionMCU"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">MCU »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#required-components" class="contents__link">Required components</a></li><li><a href="#microcontroller" class="contents__link">Microcontroller</a><ul><li><a href="#internal-memory-requirements" class="contents__link">Internal memory requirements</a></li></ul></li><li><a href="#frame-buffer-memory" class="contents__link">Frame buffer memory</a></li><li><a href="#non-volatile-storage" class="contents__link">Non-volatile storage</a><ul><li><a href="#memory-requirements" class="contents__link">Memory requirements</a></li></ul></li><li><a href="#platform-compatibility" class="contents__link">Platform Compatibility</a></li><li><a href="#choosing-touch-input" class="contents__link">Choosing touch input</a><ul><li><a href="#resistive-touch" class="contents__link">Resistive touch</a></li><li><a href="#capacitive-touch" class="contents__link">Capacitive touch</a></li></ul></li></ul></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center"><div>Copyright © 2020 ST Microelectronics</div></div></div></footer>
 </div>
 
-<script src="/styles.c1f46f7c.js"></script>
+<script src="/styles.1c1f777e.js"></script>
 
-<script src="/runtime~main.bb1167bb.js"></script>
+<script src="/runtime~main.32eaa3d1.js"></script>
 
-<script src="/main.377f7f85.js"></script>
+<script src="/main.7ad872cd.js"></script>
 
-<script src="/common.b0a3c383.js"></script>
+<script src="/common.48678e5d.js"></script>
 
-<script src="/2.04e9b442.js"></script>
+<script src="/2.cad651cd.js"></script>
 
-<script src="/3.858973c4.js"></script>
+<script src="/3.ad199b58.js"></script>
 
-<script src="/1be78505.c4ee2f32.js"></script>
+<script src="/1be78505.1fe71d7b.js"></script>
 
-<script src="/20ac7829.9d296cfa.js"></script>
+<script src="/20ac7829.e3e211d1.js"></script>
 
-<script src="/17896441.049c3937.js"></script>
+<script src="/17896441.7735bfb7.js"></script>
 
-<script src="/55e05688.3bb2ea12.js"></script>
+<script src="/55e05688.62a19985.js"></script>
 
 
 </body>

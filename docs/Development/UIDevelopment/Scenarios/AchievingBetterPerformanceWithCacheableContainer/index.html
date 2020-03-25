@@ -13,28 +13,28 @@
 <link data-react-helmet="true" rel="shortcut icon" href="/img/favicon.png">
 
 
-<link rel="stylesheet" href="/styles.86a00677.css">
+<link rel="stylesheet" href="/styles.cdb1878b.css">
 
 
-<link rel="preload" href="/styles.c1f46f7c.js" as="script">
+<link rel="preload" href="/styles.1c1f777e.js" as="script">
 
-<link rel="preload" href="/runtime~main.bb1167bb.js" as="script">
+<link rel="preload" href="/runtime~main.32eaa3d1.js" as="script">
 
-<link rel="preload" href="/main.377f7f85.js" as="script">
+<link rel="preload" href="/main.7ad872cd.js" as="script">
 
-<link rel="preload" href="/common.b0a3c383.js" as="script">
+<link rel="preload" href="/common.48678e5d.js" as="script">
 
-<link rel="preload" href="/2.04e9b442.js" as="script">
+<link rel="preload" href="/2.cad651cd.js" as="script">
 
-<link rel="preload" href="/3.858973c4.js" as="script">
+<link rel="preload" href="/3.ad199b58.js" as="script">
 
-<link rel="preload" href="/1be78505.c4ee2f32.js" as="script">
+<link rel="preload" href="/1be78505.1fe71d7b.js" as="script">
 
-<link rel="preload" href="/20ac7829.9d296cfa.js" as="script">
+<link rel="preload" href="/20ac7829.e3e211d1.js" as="script">
 
-<link rel="preload" href="/17896441.049c3937.js" as="script">
+<link rel="preload" href="/17896441.7735bfb7.js" as="script">
 
-<link rel="preload" href="/fecb2aa9.802df171.js" as="script">
+<link rel="preload" href="/fecb2aa9.6ee7ced3.js" as="script">
 
 </head>
 <body>
@@ -121,28 +121,28 @@ moves) can improve the render time dramatically when the subject is
 computationally complex and does not change between animation
 steps. In the event that the cache must update (e.g. a watch face when
 the time is updated) the contents of the cache can be recomputed at
-certain points during the animation controlled by the application.</p><div class="highlight highlight-further-reading"><div class="highlight-heading"><h5><div class="highlight-icon"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></div>Further reading</h5></div><div class="highlight-content"><li><a href="/docs/Development/UIDevelopment/TouchGFXEngineFeatures/DynamicBitmaps">Dynamic Bitmaps</a></li><li><a href="/docs/Development/UIDevelopment/Scenarios/LoadingImagesAtRuntime">Dynamic Bitmaps: Load images at runtime</a></li></div></div></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/Development/UIDevelopment/UIComponents/GeneralUIComponentPerformance"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« General UI Component Performance</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/Development/UIDevelopment/Scenarios/LoadingImagesAtRuntime"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">Loading Images at Runtime »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#performance-impact" class="contents__link">Performance Impact</a></li><li><a href="#test-application" class="contents__link">Test Application</a></li><li><a href="#performance-of-redrawing-complex-containers" class="contents__link">Performance of Redrawing Complex Containers</a></li><li><a href="#improving-performance-through-caching" class="contents__link">Improving Performance Through Caching</a></li><li><a href="#conclusion" class="contents__link">Conclusion</a></li></ul></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center">Copyright © 2020 ST Microelectronics</div></div></footer>
+certain points during the animation controlled by the application.</p><div class="highlight highlight-further-reading"><div class="highlight-heading"><h5><div class="highlight-icon"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></div>Further reading</h5></div><div class="highlight-content"><li><a href="/docs/Development/UIDevelopment/TouchGFXEngineFeatures/DynamicBitmaps">Dynamic Bitmaps</a></li><li><a href="/docs/Development/UIDevelopment/Scenarios/LoadingImagesAtRuntime">Dynamic Bitmaps: Load images at runtime</a></li></div></div></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/Development/UIDevelopment/UIComponents/GeneralUIComponentPerformance"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« General UI Component Performance</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/Development/UIDevelopment/Scenarios/LoadingImagesAtRuntime"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">Loading Images at Runtime »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#performance-impact" class="contents__link">Performance Impact</a></li><li><a href="#test-application" class="contents__link">Test Application</a></li><li><a href="#performance-of-redrawing-complex-containers" class="contents__link">Performance of Redrawing Complex Containers</a></li><li><a href="#improving-performance-through-caching" class="contents__link">Improving Performance Through Caching</a></li><li><a href="#conclusion" class="contents__link">Conclusion</a></li></ul></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center"><div>Copyright © 2020 ST Microelectronics</div></div></div></footer>
 </div>
 
-<script src="/styles.c1f46f7c.js"></script>
+<script src="/styles.1c1f777e.js"></script>
 
-<script src="/runtime~main.bb1167bb.js"></script>
+<script src="/runtime~main.32eaa3d1.js"></script>
 
-<script src="/main.377f7f85.js"></script>
+<script src="/main.7ad872cd.js"></script>
 
-<script src="/common.b0a3c383.js"></script>
+<script src="/common.48678e5d.js"></script>
 
-<script src="/2.04e9b442.js"></script>
+<script src="/2.cad651cd.js"></script>
 
-<script src="/3.858973c4.js"></script>
+<script src="/3.ad199b58.js"></script>
 
-<script src="/1be78505.c4ee2f32.js"></script>
+<script src="/1be78505.1fe71d7b.js"></script>
 
-<script src="/20ac7829.9d296cfa.js"></script>
+<script src="/20ac7829.e3e211d1.js"></script>
 
-<script src="/17896441.049c3937.js"></script>
+<script src="/17896441.7735bfb7.js"></script>
 
-<script src="/fecb2aa9.802df171.js"></script>
+<script src="/fecb2aa9.6ee7ced3.js"></script>
 
 
 </body>
