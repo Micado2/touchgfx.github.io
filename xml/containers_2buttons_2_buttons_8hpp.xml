@@ -1,0 +1,608 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="containers_2buttons_2_buttons_8hpp" kind="file" language="C++">
+    <compoundname>Buttons.hpp</compoundname>
+    <includes refid="_click_button_trigger_8hpp" local="no">touchgfx/containers/buttons/ClickButtonTrigger.hpp</includes>
+    <includes refid="_repeat_button_trigger_8hpp" local="no">touchgfx/containers/buttons/RepeatButtonTrigger.hpp</includes>
+    <includes refid="_toggle_button_trigger_8hpp" local="no">touchgfx/containers/buttons/ToggleButtonTrigger.hpp</includes>
+    <includes refid="_touch_button_trigger_8hpp" local="no">touchgfx/containers/buttons/TouchButtonTrigger.hpp</includes>
+    <includes refid="_animated_image_button_style_8hpp" local="no">touchgfx/containers/buttons/AnimatedImageButtonStyle.hpp</includes>
+    <includes refid="_box_with_border_button_style_8hpp" local="no">touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp</includes>
+    <includes refid="_icon_button_style_8hpp" local="no">touchgfx/containers/buttons/IconButtonStyle.hpp</includes>
+    <includes refid="_image_button_style_8hpp" local="no">touchgfx/containers/buttons/ImageButtonStyle.hpp</includes>
+    <includes refid="_text_button_style_8hpp" local="no">touchgfx/containers/buttons/TextButtonStyle.hpp</includes>
+    <includes refid="_tiled_image_button_style_8hpp" local="no">touchgfx/containers/buttons/TiledImageButtonStyle.hpp</includes>
+    <includes refid="_two_wildcard_text_button_style_8hpp" local="no">touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp</includes>
+    <includes refid="_wildcard_text_button_style_8hpp" local="no">touchgfx/containers/buttons/WildcardTextButtonStyle.hpp</includes>
+    <incdepgraph>
+      <node id="1658">
+        <label>touchgfx/Application.hpp</label>
+        <link refid="_application_8hpp"/>
+        <childnode refid="1659" relation="include">
+        </childnode>
+        <childnode refid="1664" relation="include">
+        </childnode>
+        <childnode refid="1666" relation="include">
+        </childnode>
+        <childnode refid="1667" relation="include">
+        </childnode>
+        <childnode refid="1660" relation="include">
+        </childnode>
+        <childnode refid="1668" relation="include">
+        </childnode>
+      </node>
+      <node id="1676">
+        <label>touchgfx/TextureMapTypes.hpp</label>
+        <link refid="_texture_map_types_8hpp"/>
+        <childnode refid="1660" relation="include">
+        </childnode>
+      </node>
+      <node id="1670">
+        <label>stdarg.h</label>
+      </node>
+      <node id="1707">
+        <label>platform/driver/button/ButtonController.hpp</label>
+        <link refid="_button_controller_8hpp"/>
+        <childnode refid="1660" relation="include">
+        </childnode>
+      </node>
+      <node id="1654">
+        <label>touchgfx/containers/buttons/AbstractButtonContainer.hpp</label>
+        <link refid="_abstract_button_container_8hpp"/>
+        <childnode refid="1655" relation="include">
+        </childnode>
+      </node>
+      <node id="1680">
+        <label>touchgfx/containers/buttons/RepeatButtonTrigger.hpp</label>
+        <link refid="_repeat_button_trigger_8hpp"/>
+        <childnode refid="1654" relation="include">
+        </childnode>
+      </node>
+      <node id="1684">
+        <label>touchgfx/widgets/AnimatedImage.hpp</label>
+        <link refid="_animated_image_8hpp"/>
+        <childnode refid="1685" relation="include">
+        </childnode>
+      </node>
+      <node id="1678">
+        <label>windows.h</label>
+      </node>
+      <node id="1661">
+        <label>assert.h</label>
+      </node>
+      <node id="1656">
+        <label>touchgfx/Callback.hpp</label>
+        <link refid="_callback_8hpp"/>
+      </node>
+      <node id="1659">
+        <label>touchgfx/UIEventListener.hpp</label>
+        <link refid="_u_i_event_listener_8hpp"/>
+        <childnode refid="1660" relation="include">
+        </childnode>
+      </node>
+      <node id="1662">
+        <label>stdint.h</label>
+      </node>
+      <node id="1675">
+        <label>touchgfx/TextProvider.hpp</label>
+        <link refid="_text_provider_8hpp"/>
+        <childnode refid="1670" relation="include">
+        </childnode>
+        <childnode refid="1673" relation="include">
+        </childnode>
+        <childnode refid="1674" relation="include">
+        </childnode>
+      </node>
+      <node id="1681">
+        <label>touchgfx/containers/buttons/ToggleButtonTrigger.hpp</label>
+        <link refid="_toggle_button_trigger_8hpp"/>
+        <childnode refid="1654" relation="include">
+        </childnode>
+      </node>
+      <node id="1672">
+        <label>cassert</label>
+      </node>
+      <node id="1668">
+        <label>touchgfx/transitions/Transition.hpp</label>
+        <link refid="_transition_8hpp"/>
+        <childnode refid="1660" relation="include">
+        </childnode>
+        <childnode refid="1669" relation="include">
+        </childnode>
+      </node>
+      <node id="1708">
+        <label>platform/driver/touch/TouchController.hpp</label>
+        <link refid="_touch_controller_8hpp"/>
+        <childnode refid="1660" relation="include">
+        </childnode>
+      </node>
+      <node id="1652">
+        <label>touchgfx/containers/buttons/Buttons.hpp</label>
+        <link refid="containers_2buttons_2_buttons_8hpp"/>
+        <childnode refid="1653" relation="include">
+        </childnode>
+        <childnode refid="1680" relation="include">
+        </childnode>
+        <childnode refid="1681" relation="include">
+        </childnode>
+        <childnode refid="1682" relation="include">
+        </childnode>
+        <childnode refid="1683" relation="include">
+        </childnode>
+        <childnode refid="1687" relation="include">
+        </childnode>
+        <childnode refid="1689" relation="include">
+        </childnode>
+        <childnode refid="1690" relation="include">
+        </childnode>
+        <childnode refid="1691" relation="include">
+        </childnode>
+        <childnode refid="1696" relation="include">
+        </childnode>
+        <childnode refid="1698" relation="include">
+        </childnode>
+        <childnode refid="1709" relation="include">
+        </childnode>
+      </node>
+      <node id="1664">
+        <label>touchgfx/events/ClickEvent.hpp</label>
+        <link refid="_click_event_8hpp"/>
+        <childnode refid="1665" relation="include">
+        </childnode>
+        <childnode refid="1660" relation="include">
+        </childnode>
+      </node>
+      <node id="1693">
+        <label>touchgfx/FontManager.hpp</label>
+        <link refid="_font_manager_8hpp"/>
+        <childnode refid="1673" relation="include">
+        </childnode>
+      </node>
+      <node id="1701">
+        <label>touchgfx/hal/BlitOp.hpp</label>
+        <link refid="_blit_op_8hpp"/>
+        <childnode refid="1660" relation="include">
+        </childnode>
+      </node>
+      <node id="1655">
+        <label>touchgfx/containers/Container.hpp</label>
+        <link refid="_container_8hpp"/>
+        <childnode refid="1656" relation="include">
+        </childnode>
+        <childnode refid="1657" relation="include">
+        </childnode>
+      </node>
+      <node id="1660">
+        <label>touchgfx/hal/Types.hpp</label>
+        <link refid="_types_8hpp"/>
+        <childnode refid="1661" relation="include">
+        </childnode>
+        <childnode refid="1662" relation="include">
+        </childnode>
+        <childnode refid="1663" relation="include">
+        </childnode>
+      </node>
+      <node id="1697">
+        <label>touchgfx/widgets/TiledImage.hpp</label>
+        <link refid="_tiled_image_8hpp"/>
+        <childnode refid="1671" relation="include">
+        </childnode>
+        <childnode refid="1660" relation="include">
+        </childnode>
+        <childnode refid="1669" relation="include">
+        </childnode>
+        <childnode refid="1685" relation="include">
+        </childnode>
+        <childnode refid="1686" relation="include">
+        </childnode>
+      </node>
+      <node id="1706">
+        <label>platform/core/MCUInstrumentation.hpp</label>
+        <link refid="_m_c_u_instrumentation_8hpp"/>
+        <childnode refid="1662" relation="include">
+        </childnode>
+      </node>
+      <node id="1677">
+        <label>touchgfx/Utils.hpp</label>
+        <link refid="_utils_8hpp"/>
+        <childnode refid="1670" relation="include">
+        </childnode>
+        <childnode refid="1678" relation="include">
+        </childnode>
+        <childnode refid="1679" relation="include">
+        </childnode>
+        <childnode refid="1671" relation="include">
+        </childnode>
+        <childnode refid="1660" relation="include">
+        </childnode>
+      </node>
+      <node id="1702">
+        <label>touchgfx/hal/DMA.hpp</label>
+        <link refid="_d_m_a_8hpp"/>
+        <childnode refid="1703" relation="include">
+        </childnode>
+        <childnode refid="1701" relation="include">
+        </childnode>
+      </node>
+      <node id="1690">
+        <label>touchgfx/containers/buttons/ImageButtonStyle.hpp</label>
+        <link refid="_image_button_style_8hpp"/>
+        <childnode refid="1685" relation="include">
+        </childnode>
+      </node>
+      <node id="1696">
+        <label>touchgfx/containers/buttons/TiledImageButtonStyle.hpp</label>
+        <link refid="_tiled_image_button_style_8hpp"/>
+        <childnode refid="1697" relation="include">
+        </childnode>
+      </node>
+      <node id="1663">
+        <label>touchgfx/hal/Config.hpp</label>
+        <link refid="_config_8hpp"/>
+      </node>
+      <node id="1705">
+        <label>touchgfx/hal/Gestures.hpp</label>
+        <link refid="_gestures_8hpp"/>
+        <childnode refid="1659" relation="include">
+        </childnode>
+        <childnode refid="1664" relation="include">
+        </childnode>
+        <childnode refid="1666" relation="include">
+        </childnode>
+        <childnode refid="1667" relation="include">
+        </childnode>
+        <childnode refid="1660" relation="include">
+        </childnode>
+      </node>
+      <node id="1695">
+        <label>touchgfx/Texts.hpp</label>
+        <link refid="_texts_8hpp"/>
+        <childnode refid="1674" relation="include">
+        </childnode>
+      </node>
+      <node id="1704">
+        <label>touchgfx/hal/FrameBufferAllocator.hpp</label>
+        <link refid="_frame_buffer_allocator_8hpp"/>
+        <childnode refid="1677" relation="include">
+        </childnode>
+      </node>
+      <node id="1667">
+        <label>touchgfx/events/GestureEvent.hpp</label>
+        <link refid="_gesture_event_8hpp"/>
+        <childnode refid="1665" relation="include">
+        </childnode>
+        <childnode refid="1660" relation="include">
+        </childnode>
+      </node>
+      <node id="1698">
+        <label>touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp</label>
+        <link refid="_two_wildcard_text_button_style_8hpp"/>
+        <childnode refid="1699" relation="include">
+        </childnode>
+      </node>
+      <node id="1694">
+        <label>touchgfx/TypedText.hpp</label>
+        <link refid="_typed_text_8hpp"/>
+        <childnode refid="1672" relation="include">
+        </childnode>
+        <childnode refid="1673" relation="include">
+        </childnode>
+        <childnode refid="1695" relation="include">
+        </childnode>
+        <childnode refid="1660" relation="include">
+        </childnode>
+      </node>
+      <node id="1685">
+        <label>touchgfx/widgets/Image.hpp</label>
+        <link refid="_image_8hpp"/>
+        <childnode refid="1671" relation="include">
+        </childnode>
+        <childnode refid="1660" relation="include">
+        </childnode>
+        <childnode refid="1669" relation="include">
+        </childnode>
+        <childnode refid="1686" relation="include">
+        </childnode>
+      </node>
+      <node id="1666">
+        <label>touchgfx/events/DragEvent.hpp</label>
+        <link refid="_drag_event_8hpp"/>
+        <childnode refid="1665" relation="include">
+        </childnode>
+        <childnode refid="1660" relation="include">
+        </childnode>
+      </node>
+      <node id="1671">
+        <label>touchgfx/Bitmap.hpp</label>
+        <link refid="_bitmap_8hpp"/>
+        <childnode refid="1672" relation="include">
+        </childnode>
+        <childnode refid="1660" relation="include">
+        </childnode>
+      </node>
+      <node id="1674">
+        <label>touchgfx/Unicode.hpp</label>
+        <link refid="_unicode_8hpp"/>
+        <childnode refid="1670" relation="include">
+        </childnode>
+        <childnode refid="1660" relation="include">
+        </childnode>
+      </node>
+      <node id="1703">
+        <label>touchgfx/hal/Atomic.hpp</label>
+        <link refid="_atomic_8hpp"/>
+      </node>
+      <node id="1686">
+        <label>touchgfx/widgets/Widget.hpp</label>
+        <link refid="_widget_8hpp"/>
+        <childnode refid="1661" relation="include">
+        </childnode>
+        <childnode refid="1657" relation="include">
+        </childnode>
+      </node>
+      <node id="1665">
+        <label>touchgfx/Event.hpp</label>
+        <link refid="_event_8hpp"/>
+      </node>
+      <node id="1709">
+        <label>touchgfx/containers/buttons/WildcardTextButtonStyle.hpp</label>
+        <link refid="_wildcard_text_button_style_8hpp"/>
+        <childnode refid="1699" relation="include">
+        </childnode>
+      </node>
+      <node id="1653">
+        <label>touchgfx/containers/buttons/ClickButtonTrigger.hpp</label>
+        <link refid="_click_button_trigger_8hpp"/>
+        <childnode refid="1654" relation="include">
+        </childnode>
+      </node>
+      <node id="1673">
+        <label>touchgfx/Font.hpp</label>
+        <link refid="_font_8hpp"/>
+        <childnode refid="1674" relation="include">
+        </childnode>
+        <childnode refid="1660" relation="include">
+        </childnode>
+      </node>
+      <node id="1688">
+        <label>touchgfx/widgets/BoxWithBorder.hpp</label>
+        <link refid="_box_with_border_8hpp"/>
+        <childnode refid="1671" relation="include">
+        </childnode>
+        <childnode refid="1686" relation="include">
+        </childnode>
+      </node>
+      <node id="1691">
+        <label>touchgfx/containers/buttons/TextButtonStyle.hpp</label>
+        <link refid="_text_button_style_8hpp"/>
+        <childnode refid="1692" relation="include">
+        </childnode>
+      </node>
+      <node id="1699">
+        <label>touchgfx/widgets/TextAreaWithWildcard.hpp</label>
+        <link refid="_text_area_with_wildcard_8hpp"/>
+        <childnode refid="1675" relation="include">
+        </childnode>
+        <childnode refid="1700" relation="include">
+        </childnode>
+        <childnode refid="1692" relation="include">
+        </childnode>
+      </node>
+      <node id="1657">
+        <label>touchgfx/Drawable.hpp</label>
+        <link refid="_drawable_8hpp"/>
+        <childnode refid="1658" relation="include">
+        </childnode>
+        <childnode refid="1656" relation="include">
+        </childnode>
+        <childnode refid="1677" relation="include">
+        </childnode>
+        <childnode refid="1664" relation="include">
+        </childnode>
+        <childnode refid="1666" relation="include">
+        </childnode>
+        <childnode refid="1667" relation="include">
+        </childnode>
+        <childnode refid="1660" relation="include">
+        </childnode>
+      </node>
+      <node id="1689">
+        <label>touchgfx/containers/buttons/IconButtonStyle.hpp</label>
+        <link refid="_icon_button_style_8hpp"/>
+        <childnode refid="1685" relation="include">
+        </childnode>
+      </node>
+      <node id="1683">
+        <label>touchgfx/containers/buttons/AnimatedImageButtonStyle.hpp</label>
+        <link refid="_animated_image_button_style_8hpp"/>
+        <childnode refid="1684" relation="include">
+        </childnode>
+      </node>
+      <node id="1692">
+        <label>touchgfx/widgets/TextArea.hpp</label>
+        <link refid="_text_area_8hpp"/>
+        <childnode refid="1673" relation="include">
+        </childnode>
+        <childnode refid="1693" relation="include">
+        </childnode>
+        <childnode refid="1694" relation="include">
+        </childnode>
+        <childnode refid="1674" relation="include">
+        </childnode>
+        <childnode refid="1660" relation="include">
+        </childnode>
+        <childnode refid="1669" relation="include">
+        </childnode>
+        <childnode refid="1686" relation="include">
+        </childnode>
+      </node>
+      <node id="1669">
+        <label>touchgfx/lcd/LCD.hpp</label>
+        <link refid="_l_c_d_8hpp"/>
+        <childnode refid="1670" relation="include">
+        </childnode>
+        <childnode refid="1671" relation="include">
+        </childnode>
+        <childnode refid="1673" relation="include">
+        </childnode>
+        <childnode refid="1675" relation="include">
+        </childnode>
+        <childnode refid="1676" relation="include">
+        </childnode>
+        <childnode refid="1674" relation="include">
+        </childnode>
+        <childnode refid="1677" relation="include">
+        </childnode>
+        <childnode refid="1660" relation="include">
+        </childnode>
+      </node>
+      <node id="1687">
+        <label>touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp</label>
+        <link refid="_box_with_border_button_style_8hpp"/>
+        <childnode refid="1688" relation="include">
+        </childnode>
+      </node>
+      <node id="1682">
+        <label>touchgfx/containers/buttons/TouchButtonTrigger.hpp</label>
+        <link refid="_touch_button_trigger_8hpp"/>
+        <childnode refid="1654" relation="include">
+        </childnode>
+      </node>
+      <node id="1679">
+        <label>stdio.h</label>
+      </node>
+      <node id="1700">
+        <label>touchgfx/hal/HAL.hpp</label>
+        <link refid="_h_a_l_8hpp"/>
+        <childnode refid="1671" relation="include">
+        </childnode>
+        <childnode refid="1657" relation="include">
+        </childnode>
+        <childnode refid="1674" relation="include">
+        </childnode>
+        <childnode refid="1701" relation="include">
+        </childnode>
+        <childnode refid="1702" relation="include">
+        </childnode>
+        <childnode refid="1704" relation="include">
+        </childnode>
+        <childnode refid="1705" relation="include">
+        </childnode>
+        <childnode refid="1660" relation="include">
+        </childnode>
+        <childnode refid="1669" relation="include">
+        </childnode>
+        <childnode refid="1706" relation="include">
+        </childnode>
+        <childnode refid="1707" relation="include">
+        </childnode>
+        <childnode refid="1708" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacetouchgfx">touchgfx</innernamespace>
+    <briefdescription>
+<para>Declares the various FlexButton styles by combining often used template classes. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>BUTTONS_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BUTTONS_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_click_button_trigger_8hpp" kindref="compound">touchgfx/containers/buttons/ClickButtonTrigger.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_repeat_button_trigger_8hpp" kindref="compound">touchgfx/containers/buttons/RepeatButtonTrigger.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_toggle_button_trigger_8hpp" kindref="compound">touchgfx/containers/buttons/ToggleButtonTrigger.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_touch_button_trigger_8hpp" kindref="compound">touchgfx/containers/buttons/TouchButtonTrigger.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_animated_image_button_style_8hpp" kindref="compound">touchgfx/containers/buttons/AnimatedImageButtonStyle.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_box_with_border_button_style_8hpp" kindref="compound">touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_icon_button_style_8hpp" kindref="compound">touchgfx/containers/buttons/IconButtonStyle.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_image_button_style_8hpp" kindref="compound">touchgfx/containers/buttons/ImageButtonStyle.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_text_button_style_8hpp" kindref="compound">touchgfx/containers/buttons/TextButtonStyle.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_tiled_image_button_style_8hpp" kindref="compound">touchgfx/containers/buttons/TiledImageButtonStyle.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_two_wildcard_text_button_style_8hpp" kindref="compound">touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_wildcard_text_button_style_8hpp" kindref="compound">touchgfx/containers/buttons/WildcardTextButtonStyle.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetouchgfx" kindref="compound">touchgfx</ref></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>BoxWithBorderButtonStyle&lt;ClickButtonTrigger&gt;<sp/><ref refid="namespacetouchgfx_1a7db83f30e1e693a2e77fed7fd0852749" kindref="member">BoxClickButton</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>BoxWithBorderButtonStyle&lt;RepeatButtonTrigger&gt;<sp/><ref refid="namespacetouchgfx_1a2b88694b337747e66e928ea00a1803fb" kindref="member">BoxRepeatButton</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>BoxWithBorderButtonStyle&lt;ToggleButtonTrigger&gt;<sp/><ref refid="namespacetouchgfx_1a14305302809e62aa0c43e3eeecb737f0" kindref="member">BoxToggleButton</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>BoxWithBorderButtonStyle&lt;TouchButtonTrigger&gt;<sp/><ref refid="namespacetouchgfx_1a1ad0b3aa6628a79d66e81d64cc899c84" kindref="member">BoxTouchButton</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>ImageButtonStyle&lt;ClickButtonTrigger&gt;<sp/><ref refid="namespacetouchgfx_1a2b5cd1e5d2f423cadbb7a907a306aef6" kindref="member">ImageClickButton</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>ImageButtonStyle&lt;RepeatButtonTrigger&gt;<sp/><ref refid="namespacetouchgfx_1ac148a45982ed663e78f9a8eec71aa4c2" kindref="member">ImageRepeatButton</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>ImageButtonStyle&lt;TouchButtonTrigger&gt;<sp/><ref refid="namespacetouchgfx_1abea5346fd36ae4ee3e9ae0a6c4dd68a5" kindref="member">ImageTouchButton</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>ImageButtonStyle&lt;ToggleButtonTrigger&gt;<sp/><ref refid="namespacetouchgfx_1ae480764e8e6b170654c6da6ad0804db7" kindref="member">ImageToggleButton</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>IconButtonStyle&lt;ClickButtonTrigger&gt;<sp/><ref refid="namespacetouchgfx_1a6148c804c507610bdf8cb15b98d476ce" kindref="member">IconClickButton</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>IconButtonStyle&lt;RepeatButtonTrigger&gt;<sp/><ref refid="namespacetouchgfx_1a8144ec70c9df6d6429720babed4fdab4" kindref="member">IconRepeatButton</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>IconButtonStyle&lt;TouchButtonTrigger&gt;<sp/><ref refid="namespacetouchgfx_1ac9ee7bb36ca4e9dd5990895873c8b80b" kindref="member">IconTouchButton</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>IconButtonStyle&lt;ToggleButtonTrigger&gt;<sp/><ref refid="namespacetouchgfx_1a4a1aabcfac72725a6d3ac847e545c9ce" kindref="member">IconToggleButton</ref>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>ImageButtonStyle&lt;IconButtonStyle&lt;ClickButtonTrigger&gt;<sp/>&gt;<sp/><ref refid="namespacetouchgfx_1a139f19ef698b0d2931460c134dd73328" kindref="member">IconImageClickButton</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>ImageButtonStyle&lt;IconButtonStyle&lt;RepeatButtonTrigger&gt;<sp/>&gt;<sp/><ref refid="namespacetouchgfx_1a07b115ef98acaa8207a6894a7207b390" kindref="member">IconImageRepeatButton</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>ImageButtonStyle&lt;IconButtonStyle&lt;TouchButtonTrigger&gt;<sp/>&gt;<sp/><ref refid="namespacetouchgfx_1a2d800260689d38e33c04840ad6320fe4" kindref="member">IconImageTouchButton</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>ImageButtonStyle&lt;IconButtonStyle&lt;ToggleButtonTrigger&gt;<sp/>&gt;<sp/><ref refid="namespacetouchgfx_1a85e42426903101415f4f46f92c366eaf" kindref="member">IconImageToggleButton</ref>;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>TextButtonStyle&lt;ClickButtonTrigger&gt;<sp/><ref refid="namespacetouchgfx_1a063c0f8a65eb979059af6d79f2784fa2" kindref="member">TextClickButton</ref>;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>TextButtonStyle&lt;RepeatButtonTrigger&gt;<sp/><ref refid="namespacetouchgfx_1a7f84d8ce19e87bfc029a602f56e13503" kindref="member">TextRepeatButton</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>TextButtonStyle&lt;TouchButtonTrigger&gt;<sp/><ref refid="namespacetouchgfx_1afeebcac7e905c4dd74a8e836dbcba56d" kindref="member">TextTouchButton</ref>;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>TextButtonStyle&lt;ToggleButtonTrigger&gt;<sp/><ref refid="namespacetouchgfx_1af5d4cb1a8a9c07fcd4d6678c19330f00" kindref="member">TextToggleButton</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>TiledImageButtonStyle&lt;ClickButtonTrigger&gt;<sp/><ref refid="namespacetouchgfx_1aaf3d4ca7a5e1b33f09ed50b9a444a29c" kindref="member">TiledImageClickButton</ref>;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>TiledImageButtonStyle&lt;RepeatButtonTrigger&gt;<sp/><ref refid="namespacetouchgfx_1aabc6ff9f744574747231b9d7e9682bd0" kindref="member">TiledImageRepeatButton</ref>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>TiledImageButtonStyle&lt;TouchButtonTrigger&gt;<sp/><ref refid="namespacetouchgfx_1abe09029718246fd48fd4a0e60bc3dd66" kindref="member">TiledImageTouchButton</ref>;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>TiledImageButtonStyle&lt;ToggleButtonTrigger&gt;<sp/><ref refid="namespacetouchgfx_1a7fedf869a4ce73b3b77b01cda46f5d0b" kindref="member">TiledImageToggleButton</ref>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>WildcardTextButtonStyle&lt;ClickButtonTrigger&gt;<sp/><ref refid="namespacetouchgfx_1a10766619db16e85d3688056de5e12c3c" kindref="member">WildcardTextClickButton</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>WildcardTextButtonStyle&lt;RepeatButtonTrigger&gt;<sp/><ref refid="namespacetouchgfx_1a6be18a993ceabd26c4ac696f311e990c" kindref="member">WildcardTextRepeatButton</ref>;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>WildcardTextButtonStyle&lt;TouchButtonTrigger&gt;<sp/><ref refid="namespacetouchgfx_1a62d0ba9e982019e6e6c362623fa8c0f5" kindref="member">WildcardTextTouchButton</ref>;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>WildcardTextButtonStyle&lt;ToggleButtonTrigger&gt;<sp/><ref refid="namespacetouchgfx_1ab264d15e137042e648c39b3267f1b58a" kindref="member">WildcardTextToggleButton</ref>;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>TwoWildcardTextButtonStyle&lt;ClickButtonTrigger&gt;<sp/><ref refid="namespacetouchgfx_1a464ea5053e32813bb2a3c06e690655e7" kindref="member">TwoWildcardTextClickButton</ref>;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>TwoWildcardTextButtonStyle&lt;RepeatButtonTrigger&gt;<sp/><ref refid="namespacetouchgfx_1a4b0b6f0c36d3f9bd19f42e22ca05048f" kindref="member">TwoWildcardTextRepeatButton</ref>;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>TwoWildcardTextButtonStyle&lt;TouchButtonTrigger&gt;<sp/><ref refid="namespacetouchgfx_1a56e73ca1db6ed2bcbe778f10368c2c13" kindref="member">TwoWildcardTextTouchButton</ref>;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>TwoWildcardTextButtonStyle&lt;ToggleButtonTrigger&gt;<sp/><ref refid="namespacetouchgfx_1ad4af5d93a70d44bc89dc1f3ea8f52134" kindref="member">TwoWildcardTextToggleButton</ref>;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>AnimatedImageButtonStyle&lt;ClickButtonTrigger&gt;<sp/><ref refid="namespacetouchgfx_1a16af254bb0b808c1eebf9191d5c57bc5" kindref="member">AnimatedImageClickButton</ref>;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>AnimatedImageButtonStyle&lt;RepeatButtonTrigger&gt;<sp/><ref refid="namespacetouchgfx_1a58000bdf1adf331c2b084aeb8dbf2ee9" kindref="member">AnimatedImageRepeatButton</ref>;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>AnimatedImageButtonStyle&lt;TouchButtonTrigger&gt;<sp/><ref refid="namespacetouchgfx_1a3fd42304667731a27ca28a407160347e" kindref="member">AnimatedImageTouchButton</ref>;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>AnimatedImageButtonStyle&lt;ToggleButtonTrigger&gt;<sp/><ref refid="namespacetouchgfx_1a520d4e1a9c641a32eabc0ac92658c32e" kindref="member">AnimatedImageToggleButton</ref>;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>touchgfx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>BUTTONS_HPP</highlight></codeline>
+    </programlisting>
+    <location file="touchgfx/containers/buttons/Buttons.hpp"/>
+  </compounddef>
+</doxygen>

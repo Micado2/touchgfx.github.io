@@ -1,0 +1,517 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_move_animator" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::MoveAnimator</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">T</basecompoundref>
+    <includes local="no">MoveAnimator.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_move_animator_1a809d906690778e3509bb616ca6656fb2" prot="protected" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t moveAnimationCounter</definition>
+        <argsstring></argsstring>
+        <name>moveAnimationCounter</name>
+        <briefdescription>
+<para>Counter that is equal to the current step in the animation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/mixins/MoveAnimator.hpp" line="214" column="1" bodyfile="touchgfx/mixins/MoveAnimator.hpp" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_move_animator_1ab0f2e6bc1928eb1ef917f661d90545c4" prot="protected" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t moveAnimationDelay</definition>
+        <argsstring></argsstring>
+        <name>moveAnimationDelay</name>
+        <briefdescription>
+<para>The delay applied before animation start. Expressed in ticks. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/mixins/MoveAnimator.hpp" line="215" column="1" bodyfile="touchgfx/mixins/MoveAnimator.hpp" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_move_animator_1aad05c884615de165e011280abd596504" prot="protected" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t moveAnimationDuration</definition>
+        <argsstring></argsstring>
+        <name>moveAnimationDuration</name>
+        <briefdescription>
+<para>The complete duration of the actual animation. Expressed in ticks. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/mixins/MoveAnimator.hpp" line="216" column="1" bodyfile="touchgfx/mixins/MoveAnimator.hpp" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_move_animator_1a74dda14c410e37e67275fdd41485e86a" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_generic_callback" kindref="compound">GenericCallback</ref>&lt; const <ref refid="classtouchgfx_1_1_move_animator" kindref="compound">MoveAnimator</ref>&lt; T &gt; &amp; &gt; *</type>
+        <definition>GenericCallback&lt;const MoveAnimator&lt;T&gt;&amp;&gt;* moveAnimationEndedCallback</definition>
+        <argsstring></argsstring>
+        <name>moveAnimationEndedCallback</name>
+        <briefdescription>
+<para>Animation ended <ref refid="structtouchgfx_1_1_callback" kindref="compound">Callback</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/mixins/MoveAnimator.hpp" line="224" column="1" bodyfile="touchgfx/mixins/MoveAnimator.hpp" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_move_animator_1aff844c3eca7c91b5c780496d8c124dd7" prot="protected" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t moveAnimationEndX</definition>
+        <argsstring></argsstring>
+        <name>moveAnimationEndX</name>
+        <briefdescription>
+<para>The X value at the end of the animation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/mixins/MoveAnimator.hpp" line="219" column="1" bodyfile="touchgfx/mixins/MoveAnimator.hpp" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_move_animator_1adc89a58d63a51e4afb3539ab9810b286" prot="protected" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t moveAnimationEndY</definition>
+        <argsstring></argsstring>
+        <name>moveAnimationEndY</name>
+        <briefdescription>
+<para>The Y value at the end of the animation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/mixins/MoveAnimator.hpp" line="220" column="1" bodyfile="touchgfx/mixins/MoveAnimator.hpp" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_move_animator_1aac3947dffad43863c027a21e91f558af" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool moveAnimationRunning</definition>
+        <argsstring></argsstring>
+        <name>moveAnimationRunning</name>
+        <briefdescription>
+<para>True if the animation is running. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/mixins/MoveAnimator.hpp" line="213" column="1" bodyfile="touchgfx/mixins/MoveAnimator.hpp" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_move_animator_1ae0b607fcd28dac6997ad0b64d4de0857" prot="protected" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t moveAnimationStartX</definition>
+        <argsstring></argsstring>
+        <name>moveAnimationStartX</name>
+        <briefdescription>
+<para>The X value at the beginning of the animation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/mixins/MoveAnimator.hpp" line="217" column="1" bodyfile="touchgfx/mixins/MoveAnimator.hpp" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_move_animator_1a66bd30c4f2f62a9ee0160640a4ad1651" prot="protected" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t moveAnimationStartY</definition>
+        <argsstring></argsstring>
+        <name>moveAnimationStartY</name>
+        <briefdescription>
+<para>The Y value at the beginning of the animation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/mixins/MoveAnimator.hpp" line="218" column="1" bodyfile="touchgfx/mixins/MoveAnimator.hpp" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_move_animator_1a1cc442703c0fc6d63f00e1b48afc25f4" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacetouchgfx_1a067e5cd30b7258d54a37d6a0d1423d68" kindref="member">EasingEquation</ref></type>
+        <definition>EasingEquation moveAnimationXEquation</definition>
+        <argsstring></argsstring>
+        <name>moveAnimationXEquation</name>
+        <briefdescription>
+<para>EasingEquation expressing the development of the X value during the animation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/mixins/MoveAnimator.hpp" line="221" column="1" bodyfile="touchgfx/mixins/MoveAnimator.hpp" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_move_animator_1a083cb35f2e9d65c46e5409b2842afe35" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacetouchgfx_1a067e5cd30b7258d54a37d6a0d1423d68" kindref="member">EasingEquation</ref></type>
+        <definition>EasingEquation moveAnimationYEquation</definition>
+        <argsstring></argsstring>
+        <name>moveAnimationYEquation</name>
+        <briefdescription>
+<para>EasingEquation expressing the development of the Y value during the animation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/mixins/MoveAnimator.hpp" line="222" column="1" bodyfile="touchgfx/mixins/MoveAnimator.hpp" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_move_animator_1a805d8c1b2dc8c93d1e3ec9bd1cf8804e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void cancelMoveAnimation</definition>
+        <argsstring>()</argsstring>
+        <name>cancelMoveAnimation</name>
+        <briefdescription>
+<para>Cancel move animation and leave the <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> in its current position. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the animation is not running, nothing is done. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/mixins/MoveAnimator.hpp" line="155" column="1" bodyfile="touchgfx/mixins/MoveAnimator.hpp" bodystart="155" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_move_animator_1a0ef7fd50258ef194f62ad5bcca2ee53b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void clearMoveAnimationEndedAction</definition>
+        <argsstring>()</argsstring>
+        <name>clearMoveAnimationEndedAction</name>
+        <briefdescription>
+<para>Clears the move animation ended action previously set by setMoveAnimationEndedAction. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The effect is that any action set using <ref refid="classtouchgfx_1_1_move_animator_1a0cb75e94215ee33726e5bf11391e9eec" kindref="member">setMoveAnimationEndedAction()</ref> will not be executed.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_move_animator_1a0cb75e94215ee33726e5bf11391e9eec" kindref="member">setMoveAnimationEndedAction</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/mixins/MoveAnimator.hpp" line="60" column="1" bodyfile="touchgfx/mixins/MoveAnimator.hpp" bodystart="60" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_move_animator_1aae601d981f07c6d67294d558a86a004c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>uint16_t</type>
+        <definition>virtual uint16_t getMoveAnimationDelay</definition>
+        <argsstring>() const</argsstring>
+        <name>getMoveAnimationDelay</name>
+        <briefdescription>
+<para>Gets the current animation delay. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current animation delay.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_move_animator_1a80f478d293064c17f104c42ed755a296" kindref="member">setMoveAnimationDelay</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/mixins/MoveAnimator.hpp" line="84" column="1" bodyfile="touchgfx/mixins/MoveAnimator.hpp" bodystart="84" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_move_animator_1a00d66623739e227cfabd9eeca74f0be6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool isMoveAnimationRunning</definition>
+        <argsstring>() const</argsstring>
+        <name>isMoveAnimationRunning</name>
+        <briefdescription>
+<para>Gets whether or not the move animation is running. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if the move animation is running. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/mixins/MoveAnimator.hpp" line="106" column="1" bodyfile="touchgfx/mixins/MoveAnimator.hpp" bodystart="106" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_move_animator_1a05ead6c4ed5f33502d94a26a3fdd8faa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool isRunning</definition>
+        <argsstring>() const</argsstring>
+        <name>isRunning</name>
+        <briefdescription>
+<para>Gets whether or not the move animation is running. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if the move animation is running.</para>
+</simplesect>
+<xrefsect id="deprecated_1_deprecated000020"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="classtouchgfx_1_1_move_animator_1a00d66623739e227cfabd9eeca74f0be6" kindref="member">isMoveAnimationRunning()</ref> </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/mixins/MoveAnimator.hpp" line="96" column="1" bodyfile="touchgfx/mixins/MoveAnimator.hpp" bodystart="96" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_move_animator_1af5a089b794ba8e715ed86d5d0ecbd91a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MoveAnimator</definition>
+        <argsstring>()</argsstring>
+        <name>MoveAnimator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/mixins/MoveAnimator.hpp" line="27" column="1" bodyfile="touchgfx/mixins/MoveAnimator.hpp" bodystart="27" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_move_animator_1a80f478d293064c17f104c42ed755a296" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setMoveAnimationDelay</definition>
+        <argsstring>(uint16_t delay)</argsstring>
+        <name>setMoveAnimationDelay</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>delay</declname>
+        </param>
+        <briefdescription>
+<para>Sets a delay on animations done by the <ref refid="classtouchgfx_1_1_move_animator" kindref="compound">MoveAnimator</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>delay</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The delay in ticks.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_move_animator_1aae601d981f07c6d67294d558a86a004c" kindref="member">getMoveAnimationDelay</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/mixins/MoveAnimator.hpp" line="72" column="1" bodyfile="touchgfx/mixins/MoveAnimator.hpp" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_move_animator_1a0cb75e94215ee33726e5bf11391e9eec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setMoveAnimationEndedAction</definition>
+        <argsstring>(GenericCallback&lt; const MoveAnimator&lt; T &gt; &amp; &gt; &amp;callback)</argsstring>
+        <name>setMoveAnimationEndedAction</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_generic_callback" kindref="compound">GenericCallback</ref>&lt; const <ref refid="classtouchgfx_1_1_move_animator" kindref="compound">MoveAnimator</ref>&lt; T &gt; &amp; &gt; &amp;</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>Associates an action to be performed when the animation ends. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The callback to be executed. The callback will be given a reference to the <ref refid="classtouchgfx_1_1_move_animator" kindref="compound">MoveAnimator</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_move_animator_1a0ef7fd50258ef194f62ad5bcca2ee53b" kindref="member">clearMoveAnimationEndedAction</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/mixins/MoveAnimator.hpp" line="48" column="1" bodyfile="touchgfx/mixins/MoveAnimator.hpp" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_move_animator_1a90ff0629b6a9e5ec7cb9e882bf9a5e20" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void startMoveAnimation</definition>
+        <argsstring>(int16_t endX, int16_t endY, uint16_t duration, EasingEquation xProgressionEquation=&amp;EasingEquations::linearEaseNone, EasingEquation yProgressionEquation=&amp;EasingEquations::linearEaseNone)</argsstring>
+        <name>startMoveAnimation</name>
+        <param>
+          <type>int16_t</type>
+          <declname>endX</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>endY</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>duration</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1a067e5cd30b7258d54a37d6a0d1423d68" kindref="member">EasingEquation</ref></type>
+          <declname>xProgressionEquation</declname>
+          <defval>&amp;<ref refid="classtouchgfx_1_1_easing_equations_1ae67a00d2c3a1434ba2af423add367b10" kindref="member">EasingEquations::linearEaseNone</ref></defval>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1a067e5cd30b7258d54a37d6a0d1423d68" kindref="member">EasingEquation</ref></type>
+          <declname>yProgressionEquation</declname>
+          <defval>&amp;<ref refid="classtouchgfx_1_1_easing_equations_1ae67a00d2c3a1434ba2af423add367b10" kindref="member">EasingEquations::linearEaseNone</ref></defval>
+        </param>
+        <briefdescription>
+<para>Starts the move animation from the current position to the specified end position. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The development of the position (X, Y) during the animation is described by the supplied <ref refid="classtouchgfx_1_1_easing_equations" kindref="compound">EasingEquations</ref>. If no easing equation is given, the movement is performed linear.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>endX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The X position at animation end. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>endY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Y position at animation end. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>duration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The duration of the animation measured in ticks. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xProgressionEquation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(Optional) The equation that describes the development of the X position during the animation. Default is <ref refid="classtouchgfx_1_1_easing_equations_1ae67a00d2c3a1434ba2af423add367b10" kindref="member">EasingEquations::linearEaseNone</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>yProgressionEquation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(Optional) The equation that describes the development of the Y position during the animation. Default is <ref refid="classtouchgfx_1_1_easing_equations_1ae67a00d2c3a1434ba2af423add367b10" kindref="member">EasingEquations::linearEaseNone</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/mixins/MoveAnimator.hpp" line="127" column="1" bodyfile="touchgfx/mixins/MoveAnimator.hpp" bodystart="127" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_move_animator_1ab2dbbd9257fc6dfb1c5d33b9a7bd7aae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~MoveAnimator</definition>
+        <argsstring>()</argsstring>
+        <name>~MoveAnimator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/mixins/MoveAnimator.hpp" line="36" column="1" bodyfile="touchgfx/mixins/MoveAnimator.hpp" bodystart="36" bodyend="38"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_move_animator_1a1af635cee0f186c3d0fcea60bac14355" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void handleTickEvent</definition>
+        <argsstring>()</argsstring>
+        <name>handleTickEvent</name>
+        <briefdescription>
+<para>The tick handler that handles the actual animation steps. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/mixins/MoveAnimator.hpp" line="166" column="1" bodyfile="touchgfx/mixins/MoveAnimator.hpp" bodystart="166" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_move_animator_1ad942e4ce3d0689451f4c00446103b908" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void nextMoveAnimationStep</definition>
+        <argsstring>()</argsstring>
+        <name>nextMoveAnimationStep</name>
+        <briefdescription>
+<para>Execute next step in move animation and stop the timer if the animation has finished. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/mixins/MoveAnimator.hpp" line="174" column="1" bodyfile="touchgfx/mixins/MoveAnimator.hpp" bodystart="174" bodyend="210"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A <ref refid="classtouchgfx_1_1_move_animator" kindref="compound">MoveAnimator</ref> makes the template class T able to animate a movement from its current position to a specified end position. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The speed of the movement in both the X and Y direction can be controlled by supplying <ref refid="classtouchgfx_1_1_easing_equations" kindref="compound">EasingEquations</ref>. The <ref refid="classtouchgfx_1_1_move_animator" kindref="compound">MoveAnimator</ref> performs a callback when the animation has finished.</para>
+<para>This mixin can be used on any <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref>. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1044">
+        <label>T</label>
+      </node>
+      <node id="1043">
+        <label>MoveAnimator&lt; T &gt;</label>
+        <link refid="classtouchgfx_1_1_move_animator"/>
+        <childnode refid="1044" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1046">
+        <label>T</label>
+      </node>
+      <node id="1045">
+        <label>MoveAnimator&lt; T &gt;</label>
+        <link refid="classtouchgfx_1_1_move_animator"/>
+        <childnode refid="1046" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1047" relation="usage">
+          <edgelabel>moveAnimationEndedCallback</edgelabel>
+        </childnode>
+      </node>
+      <node id="1047">
+        <label>GenericCallback&lt; const touchgfx::MoveAnimator&lt; T &gt; &amp; &gt;</label>
+        <link refid="classtouchgfx_1_1_generic_callback"/>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/mixins/MoveAnimator.hpp" line="25" column="1" bodyfile="touchgfx/mixins/MoveAnimator.hpp" bodystart="24" bodyend="225"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_move_animator_1a805d8c1b2dc8c93d1e3ec9bd1cf8804e" prot="public" virt="non-virtual"><scope>touchgfx::MoveAnimator</scope><name>cancelMoveAnimation</name></member>
+      <member refid="classtouchgfx_1_1_move_animator_1a0ef7fd50258ef194f62ad5bcca2ee53b" prot="public" virt="non-virtual"><scope>touchgfx::MoveAnimator</scope><name>clearMoveAnimationEndedAction</name></member>
+      <member refid="classtouchgfx_1_1_move_animator_1aae601d981f07c6d67294d558a86a004c" prot="public" virt="virtual"><scope>touchgfx::MoveAnimator</scope><name>getMoveAnimationDelay</name></member>
+      <member refid="classtouchgfx_1_1_move_animator_1a1af635cee0f186c3d0fcea60bac14355" prot="protected" virt="virtual"><scope>touchgfx::MoveAnimator</scope><name>handleTickEvent</name></member>
+      <member refid="classtouchgfx_1_1_move_animator_1a00d66623739e227cfabd9eeca74f0be6" prot="public" virt="virtual"><scope>touchgfx::MoveAnimator</scope><name>isMoveAnimationRunning</name></member>
+      <member refid="classtouchgfx_1_1_move_animator_1a05ead6c4ed5f33502d94a26a3fdd8faa" prot="public" virt="virtual"><scope>touchgfx::MoveAnimator</scope><name>isRunning</name></member>
+      <member refid="classtouchgfx_1_1_move_animator_1a809d906690778e3509bb616ca6656fb2" prot="protected" virt="non-virtual"><scope>touchgfx::MoveAnimator</scope><name>moveAnimationCounter</name></member>
+      <member refid="classtouchgfx_1_1_move_animator_1ab0f2e6bc1928eb1ef917f661d90545c4" prot="protected" virt="non-virtual"><scope>touchgfx::MoveAnimator</scope><name>moveAnimationDelay</name></member>
+      <member refid="classtouchgfx_1_1_move_animator_1aad05c884615de165e011280abd596504" prot="protected" virt="non-virtual"><scope>touchgfx::MoveAnimator</scope><name>moveAnimationDuration</name></member>
+      <member refid="classtouchgfx_1_1_move_animator_1a74dda14c410e37e67275fdd41485e86a" prot="protected" virt="non-virtual"><scope>touchgfx::MoveAnimator</scope><name>moveAnimationEndedCallback</name></member>
+      <member refid="classtouchgfx_1_1_move_animator_1aff844c3eca7c91b5c780496d8c124dd7" prot="protected" virt="non-virtual"><scope>touchgfx::MoveAnimator</scope><name>moveAnimationEndX</name></member>
+      <member refid="classtouchgfx_1_1_move_animator_1adc89a58d63a51e4afb3539ab9810b286" prot="protected" virt="non-virtual"><scope>touchgfx::MoveAnimator</scope><name>moveAnimationEndY</name></member>
+      <member refid="classtouchgfx_1_1_move_animator_1aac3947dffad43863c027a21e91f558af" prot="protected" virt="non-virtual"><scope>touchgfx::MoveAnimator</scope><name>moveAnimationRunning</name></member>
+      <member refid="classtouchgfx_1_1_move_animator_1ae0b607fcd28dac6997ad0b64d4de0857" prot="protected" virt="non-virtual"><scope>touchgfx::MoveAnimator</scope><name>moveAnimationStartX</name></member>
+      <member refid="classtouchgfx_1_1_move_animator_1a66bd30c4f2f62a9ee0160640a4ad1651" prot="protected" virt="non-virtual"><scope>touchgfx::MoveAnimator</scope><name>moveAnimationStartY</name></member>
+      <member refid="classtouchgfx_1_1_move_animator_1a1cc442703c0fc6d63f00e1b48afc25f4" prot="protected" virt="non-virtual"><scope>touchgfx::MoveAnimator</scope><name>moveAnimationXEquation</name></member>
+      <member refid="classtouchgfx_1_1_move_animator_1a083cb35f2e9d65c46e5409b2842afe35" prot="protected" virt="non-virtual"><scope>touchgfx::MoveAnimator</scope><name>moveAnimationYEquation</name></member>
+      <member refid="classtouchgfx_1_1_move_animator_1af5a089b794ba8e715ed86d5d0ecbd91a" prot="public" virt="non-virtual"><scope>touchgfx::MoveAnimator</scope><name>MoveAnimator</name></member>
+      <member refid="classtouchgfx_1_1_move_animator_1ad942e4ce3d0689451f4c00446103b908" prot="protected" virt="non-virtual"><scope>touchgfx::MoveAnimator</scope><name>nextMoveAnimationStep</name></member>
+      <member refid="classtouchgfx_1_1_move_animator_1a80f478d293064c17f104c42ed755a296" prot="public" virt="virtual"><scope>touchgfx::MoveAnimator</scope><name>setMoveAnimationDelay</name></member>
+      <member refid="classtouchgfx_1_1_move_animator_1a0cb75e94215ee33726e5bf11391e9eec" prot="public" virt="non-virtual"><scope>touchgfx::MoveAnimator</scope><name>setMoveAnimationEndedAction</name></member>
+      <member refid="classtouchgfx_1_1_move_animator_1a90ff0629b6a9e5ec7cb9e882bf9a5e20" prot="public" virt="non-virtual"><scope>touchgfx::MoveAnimator</scope><name>startMoveAnimation</name></member>
+      <member refid="classtouchgfx_1_1_move_animator_1ab2dbbd9257fc6dfb1c5d33b9a7bd7aae" prot="public" virt="virtual"><scope>touchgfx::MoveAnimator</scope><name>~MoveAnimator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

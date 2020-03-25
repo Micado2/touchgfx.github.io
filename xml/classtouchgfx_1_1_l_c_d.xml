@@ -1,0 +1,3148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_l_c_d" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>touchgfx::LCD</compoundname>
+    <derivedcompoundref refid="classtouchgfx_1_1_l_c_d16bpp" prot="public" virt="non-virtual">LCD16bpp</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash" prot="public" virt="non-virtual">LCD16bppSerialFlash</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_l_c_d1bpp" prot="public" virt="non-virtual">LCD1bpp</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_l_c_d24bpp" prot="public" virt="non-virtual">LCD24bpp</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_l_c_d2bpp" prot="public" virt="non-virtual">LCD2bpp</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_l_c_d32bpp" prot="public" virt="non-virtual">LCD32bpp</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_l_c_d4bpp" prot="public" virt="non-virtual">LCD4bpp</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_l_c_d8bpp___a_b_g_r2222" prot="public" virt="non-virtual">LCD8bpp_ABGR2222</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_l_c_d8bpp___a_r_g_b2222" prot="public" virt="non-virtual">LCD8bpp_ARGB2222</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_l_c_d8bpp___b_g_r_a2222" prot="public" virt="non-virtual">LCD8bpp_BGRA2222</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_l_c_d8bpp___r_g_b_a2222" prot="public" virt="non-virtual">LCD8bpp_RGBA2222</derivedcompoundref>
+    <includes local="no">LCD.hpp</includes>
+    <innerclass refid="classtouchgfx_1_1_l_c_d_1_1_draw_string_internal_struct" prot="private">touchgfx::LCD::DrawStringInternalStruct</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base" prot="protected">touchgfx::LCD::DrawTextureMapScanLineBase</innerclass>
+    <innerclass refid="structtouchgfx_1_1_l_c_d_1_1_string_visuals" prot="public">touchgfx::LCD::StringVisuals</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d_1_1_wide_text_internal_struct" prot="private">touchgfx::LCD::WideTextInternalStruct</innerclass>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classtouchgfx_1_1_l_c_d_1a7293d1613ef0b0f2b34600dda7e479a2" prot="private" static="no">
+        <type>void(LCD::*</type>
+        <definition>typedef void(LCD::* DrawStringFunctionPointer) (const Rect &amp;widgetArea, const Rect &amp;invalidatedArea, const StringVisuals &amp;stringVisuals, const Unicode::UnicodeChar *format, va_list _pArg)</definition>
+        <argsstring>)(const Rect &amp;widgetArea, const Rect &amp;invalidatedArea, const StringVisuals &amp;stringVisuals, const Unicode::UnicodeChar *format, va_list _pArg)</argsstring>
+        <name>DrawStringFunctionPointer</name>
+        <briefdescription>
+<para>Defines an alias representing the argument. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="848" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="848" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classtouchgfx_1_1_l_c_d_1ae0a681be49719dc2ad8e683111910632" prot="private" static="no">
+        <type>void(LCD::*</type>
+        <definition>typedef void(LCD::* DrawStringInternalFunctionPointer) (int16_t &amp;offset, const Font *font, const TextDirection textDirection, TextProvider &amp;widthTextProvider, const int numChars, const bool useEllipsis, DrawStringInternalStruct const  *data)</definition>
+        <argsstring>)(int16_t &amp;offset, const Font *font, const TextDirection textDirection, TextProvider &amp;widthTextProvider, const int numChars, const bool useEllipsis, DrawStringInternalStruct const *data)</argsstring>
+        <name>DrawStringInternalFunctionPointer</name>
+        <briefdescription>
+<para>Defines an alias representing the data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="869" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="869" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_l_c_d_1a8abbfc784700d0c6ca5d2c46d3a7c022" prot="protected" static="yes" mutable="no">
+        <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+        <definition>colortype defaultColor</definition>
+        <argsstring></argsstring>
+        <name>defaultColor</name>
+        <briefdescription>
+<para>Default <ref refid="classtouchgfx_1_1_color" kindref="compound">Color</ref> to use when displaying transparency-only elements, e.g. A4 bitmaps. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="471" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="471" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_l_c_d_1af5a21958de35f2ab56be1f202d548ffa" prot="protected" static="yes" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t newLine</definition>
+        <argsstring></argsstring>
+        <name>newLine</name>
+        <initializer>= 10</initializer>
+        <briefdescription>
+<para>NewLine value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="469" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="469" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classtouchgfx_1_1_l_c_d_1ad564b94b59dc295de3dfc4415d95cca8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Font</definition>
+        <argsstring></argsstring>
+        <name>Font</name>
+        <briefdescription>
+<para>A font. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="824" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="824" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classtouchgfx_1_1_l_c_d_1ab64413b065c3156bc9e104f663d10e96" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class TextArea</definition>
+        <argsstring></argsstring>
+        <name>TextArea</name>
+        <briefdescription>
+<para>A text area. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="826" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="826" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classtouchgfx_1_1_l_c_d_1a9a078dbe79f831e90a304129dcabad15" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class TextAreaWithWildcardBase</definition>
+        <argsstring></argsstring>
+        <name>TextAreaWithWildcardBase</name>
+        <briefdescription>
+<para>A text area with wildcard base. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="828" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="828" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_l_c_d_1ae454d635f52a3ac709f6a3c2fca4c75b" prot="private" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base" kindref="compound">DrawTextureMapScanLineBase</ref> *</type>
+        <definition>DrawTextureMapScanLineBase* textureMapperClass</definition>
+        <argsstring></argsstring>
+        <name>textureMapperClass</name>
+        <briefdescription>
+<para>Used during faster <ref refid="classtouchgfx_1_1_texture_mapper" kindref="compound">TextureMapper</ref> rendering. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="846" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="846" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_l_c_d_1ad873554f7095d72458989cc0028b35c3" prot="private" static="yes" mutable="no">
+        <type>DrawStringFunctionPointer</type>
+        <definition>DrawStringFunctionPointer drawStringFunction</definition>
+        <argsstring></argsstring>
+        <name>drawStringFunction</name>
+        <briefdescription>
+<para>The draw string function, either LTR or RTL. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="849" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="849" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1a166dd8002f9b8e95cc605f2242c65418" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>uint8_t</type>
+        <definition>virtual uint8_t bitDepth</definition>
+        <argsstring>() const =0</argsstring>
+        <name>bitDepth</name>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d1bpp_1a9453b7ca5b528302f69afddd98aae21e">bitDepth</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___r_g_b_a2222_1a9453b7ca5b528302f69afddd98aae21e">bitDepth</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___b_g_r_a2222_1a9453b7ca5b528302f69afddd98aae21e">bitDepth</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___a_r_g_b2222_1a9453b7ca5b528302f69afddd98aae21e">bitDepth</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___a_b_g_r2222_1a9453b7ca5b528302f69afddd98aae21e">bitDepth</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d32bpp_1a9453b7ca5b528302f69afddd98aae21e">bitDepth</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d24bpp_1a9453b7ca5b528302f69afddd98aae21e">bitDepth</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d16bpp_1a9453b7ca5b528302f69afddd98aae21e">bitDepth</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d4bpp_1a9453b7ca5b528302f69afddd98aae21e">bitDepth</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d2bpp_1a9453b7ca5b528302f69afddd98aae21e">bitDepth</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a9453b7ca5b528302f69afddd98aae21e">bitDepth</reimplementedby>
+        <briefdescription>
+<para>Number of bits per pixel used by the display. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The number of bits per pixel. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="311" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1a972c8ab781314774d82a3fa2c08f9f2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void blitCopy</definition>
+        <argsstring>(const uint16_t *sourceData, const Rect &amp;source, const Rect &amp;blitRect, uint8_t alpha, bool hasTransparentPixels)=0</argsstring>
+        <name>blitCopy</name>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d1bpp_1aa9d494e3f6530fd2548ca464e79abb36">blitCopy</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___r_g_b_a2222_1aa9d494e3f6530fd2548ca464e79abb36">blitCopy</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___b_g_r_a2222_1aa9d494e3f6530fd2548ca464e79abb36">blitCopy</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___a_r_g_b2222_1aa9d494e3f6530fd2548ca464e79abb36">blitCopy</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___a_b_g_r2222_1aa9d494e3f6530fd2548ca464e79abb36">blitCopy</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d32bpp_1aa9d494e3f6530fd2548ca464e79abb36">blitCopy</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d24bpp_1aa9d494e3f6530fd2548ca464e79abb36">blitCopy</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d16bpp_1aa9d494e3f6530fd2548ca464e79abb36">blitCopy</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d4bpp_1aa9d494e3f6530fd2548ca464e79abb36">blitCopy</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d2bpp_1aa9d494e3f6530fd2548ca464e79abb36">blitCopy</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1aa9d494e3f6530fd2548ca464e79abb36">blitCopy</reimplementedby>
+        <param>
+          <type>const uint16_t *</type>
+          <declname>sourceData</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>blitRect</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>hasTransparentPixels</declname>
+        </param>
+        <briefdescription>
+<para>Blits (directly copies) a block of data to the framebuffer, performing alpha blending (and tranparency keying) as specified. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Performs a software blend if <ref refid="classtouchgfx_1_1_h_a_l" kindref="compound">HAL</ref> does not support BLIT_COPY_WITH_ALPHA and alpha != 255 (solid).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sourceData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source array pointer (points to the beginning of the data). The sourceData must be stored in a format suitable for the selected display. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position and dimensions of the source. The x and y of this rect should both be 0. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>blitRect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A rectangle describing what region of the <emphasis>sourceData</emphasis> is to be copied to the framebuffer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alpha value to use for blending ranging from 0=invisible to 255=solid=no blending. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hasTransparentPixels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, this data copy contains transparent pixels and require hardware support for that to be enabled. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1a185d987bf49db055b63cb6f85b81a07a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void blitCopy</definition>
+        <argsstring>(const uint8_t *sourceData, Bitmap::BitmapFormat sourceFormat, const Rect &amp;source, const Rect &amp;blitRect, uint8_t alpha, bool hasTransparentPixels)=0</argsstring>
+        <name>blitCopy</name>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d1bpp_1acefc1872d8b5c24cb76ec00d13ad6de7">blitCopy</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___r_g_b_a2222_1acefc1872d8b5c24cb76ec00d13ad6de7">blitCopy</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___b_g_r_a2222_1acefc1872d8b5c24cb76ec00d13ad6de7">blitCopy</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___a_r_g_b2222_1acefc1872d8b5c24cb76ec00d13ad6de7">blitCopy</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___a_b_g_r2222_1acefc1872d8b5c24cb76ec00d13ad6de7">blitCopy</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d32bpp_1acefc1872d8b5c24cb76ec00d13ad6de7">blitCopy</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d24bpp_1acefc1872d8b5c24cb76ec00d13ad6de7">blitCopy</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d16bpp_1acefc1872d8b5c24cb76ec00d13ad6de7">blitCopy</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d4bpp_1acefc1872d8b5c24cb76ec00d13ad6de7">blitCopy</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d2bpp_1acefc1872d8b5c24cb76ec00d13ad6de7">blitCopy</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1acefc1872d8b5c24cb76ec00d13ad6de7">blitCopy</reimplementedby>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>sourceData</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_bitmap_1a23d1a7c7cf0f6da45ca389904e644d55" kindref="member">Bitmap::BitmapFormat</ref></type>
+          <declname>sourceFormat</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>blitRect</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>hasTransparentPixels</declname>
+        </param>
+        <briefdescription>
+<para>Blits (directly copies) a block of data to the framebuffer, performing alpha blending (and tranparency keying) as specified. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Performs a software blend if <ref refid="classtouchgfx_1_1_h_a_l" kindref="compound">HAL</ref> does not support BLIT_COPY_WITH_ALPHA and alpha &lt; 255 (solid).</para>
+<para>If the display does not support the specified <emphasis>sourceFormat</emphasis>, an <emphasis>assert</emphasis> will be raised.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sourceData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source array pointer (points to the beginning of the data). The sourceData must be stored in a format suitable for the selected display. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sourceFormat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bitmap format used in the source data. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position and dimensions of the source. The x and y of this rect should both be 0. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>blitRect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A rectangle describing what region of the <emphasis>sourceData</emphasis> is to be copied to the framebuffer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alpha value to use for blending ranging from 0=invisible to 255=solid=no blending. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hasTransparentPixels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, this data copy contains transparent pixels and require hardware support for that to be enabled. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="116" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1a2816380d9d77221efa560d515d69dbd6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint16_t *</type>
+        <definition>uint16_t* copyFrameBufferRegionToMemory</definition>
+        <argsstring>(const Rect &amp;region, const BitmapId bitmapId=BITMAP_ANIMATION_STORAGE)</argsstring>
+        <name>copyFrameBufferRegionToMemory</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>region</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacetouchgfx_1a3923435f6df64396b2203d60ddfa89e4" kindref="member">BitmapId</ref></type>
+          <declname>bitmapId</declname>
+          <defval><ref refid="namespacetouchgfx_1a7c409435de8407b33db91d345bd1e2e1" kindref="member">BITMAP_ANIMATION_STORAGE</ref></defval>
+        </param>
+        <briefdescription>
+<para>Copies part of the framebuffer to the data section of a bitmap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The bitmap must be a dynamic bitmap or animation storage (BITMAP_ANIMATION_STORAGE). Only the part specified with by parameter <emphasis>region</emphasis> is copied.</para>
+<para>If <emphasis>region</emphasis> has negative x/y coordinates of if width/height exceeds those of the given bitmap, only the visible and legal part of the framebuffer is copied. The rest of the bitmap image is left untouched.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>region</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The part of the framebuffer to copy. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bitmapId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(Optional) The bitmap to store the data in. Default is to use Animation Storage.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pointer to the copy.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_l_c_d_1a972c8ab781314774d82a3fa2c08f9f2d" kindref="member">blitCopy</ref></para>
+</simplesect>
+<simplesect kind="note"><para>There is only one instance of animation storage. The content of the bitmap data (or animation storage) outside the given region is left untouched. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="138" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="138" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1a2227644ebace590ce402956e85acb295" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>uint16_t *</type>
+        <definition>virtual uint16_t* copyFrameBufferRegionToMemory</definition>
+        <argsstring>(const Rect &amp;visRegion, const Rect &amp;absRegion, const BitmapId bitmapId)=0</argsstring>
+        <name>copyFrameBufferRegionToMemory</name>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d1bpp_1a6b117c2cdc5ba3c678a0962b0470dbaf">copyFrameBufferRegionToMemory</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___r_g_b_a2222_1a6b117c2cdc5ba3c678a0962b0470dbaf">copyFrameBufferRegionToMemory</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___b_g_r_a2222_1a6b117c2cdc5ba3c678a0962b0470dbaf">copyFrameBufferRegionToMemory</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___a_r_g_b2222_1a6b117c2cdc5ba3c678a0962b0470dbaf">copyFrameBufferRegionToMemory</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___a_b_g_r2222_1a6b117c2cdc5ba3c678a0962b0470dbaf">copyFrameBufferRegionToMemory</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d32bpp_1a6b117c2cdc5ba3c678a0962b0470dbaf">copyFrameBufferRegionToMemory</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d24bpp_1a6b117c2cdc5ba3c678a0962b0470dbaf">copyFrameBufferRegionToMemory</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d16bpp_1a6b117c2cdc5ba3c678a0962b0470dbaf">copyFrameBufferRegionToMemory</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d4bpp_1a6b117c2cdc5ba3c678a0962b0470dbaf">copyFrameBufferRegionToMemory</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d2bpp_1a6b117c2cdc5ba3c678a0962b0470dbaf">copyFrameBufferRegionToMemory</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a6b117c2cdc5ba3c678a0962b0470dbaf">copyFrameBufferRegionToMemory</reimplementedby>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>visRegion</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>absRegion</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacetouchgfx_1a3923435f6df64396b2203d60ddfa89e4" kindref="member">BitmapId</ref></type>
+          <declname>bitmapId</declname>
+        </param>
+        <briefdescription>
+<para>Copies part of the framebuffer to the data section of a bitmap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The bitmap must be a dynamic bitmap or animation storage (BITMAP_ANIMATION_STORAGE). The two regions given are the visible region and the absolute region on screen. This is used to copy only a part of the framebuffer. This might be the case if a <ref refid="classtouchgfx_1_1_snapshot_widget" kindref="compound">SnapshotWidget</ref> is placed inside a <ref refid="classtouchgfx_1_1_container" kindref="compound">Container</ref> where parts of the SnapshowWidget is outside the area defined by the <ref refid="classtouchgfx_1_1_container" kindref="compound">Container</ref>. The visible region must be completely inside the absolute region.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>visRegion</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The visible region. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>absRegion</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The absolute region. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bitmapId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier for the bitmap.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Null if it fails, else a pointer to the data in the given bitmap.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_l_c_d_1a972c8ab781314774d82a3fa2c08f9f2d" kindref="member">blitCopy</ref></para>
+</simplesect>
+<simplesect kind="note"><para>There is only one instance of animation storage. The content of the bitmap data /animation storage outside the given region is left untouched. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="162" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1ae9353837bf0e0315d22707167e699834" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawBorder</definition>
+        <argsstring>(const Rect &amp;rect, uint16_t lineWidth, colortype color, uint8_t alpha=255)</argsstring>
+        <name>drawBorder</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>rect</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>lineWidth</declname>
+        </param>
+        <param>
+          <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>alpha</declname>
+          <defval>255</defval>
+        </param>
+        <briefdescription>
+<para>Draws a rectangle width the specified line width, color and opacity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rectangle x, y, width, height in absolute coordinates. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lineWidth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The width of the line. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color to use. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(Optional) The rectangle opacity, from 0=invisible to 255=solid.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="deprecated_1_deprecated000017"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="classtouchgfx_1_1_l_c_d_1a813b79e2a2eaada463ca4766259d2975" kindref="member">fillRect()</ref> </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="233" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1a70ffc766e161d075b1960cbd5c002553" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawHorizontalLine</definition>
+        <argsstring>(int16_t x, int16_t y, uint16_t width, uint16_t lineWidth, colortype color, uint8_t alpha=255)</argsstring>
+        <name>drawHorizontalLine</name>
+        <param>
+          <type>int16_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>lineWidth</declname>
+        </param>
+        <param>
+          <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>alpha</declname>
+          <defval>255</defval>
+        </param>
+        <briefdescription>
+<para>Draws a horizontal line with the specified color and opacity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>By default the line will be drawn as a solid line. The line can be drawn with transparency by specifying alpha from 0=invisible to 255=solid.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate of the starting point in absolute display coordinates. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate of the starting point in absolute display coordinates. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of the line. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lineWidth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The width of the line. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color to use. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(Optional) The rectangle opacity, from 0=invisible to 255=solid.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="deprecated_1_deprecated000014"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="classtouchgfx_1_1_l_c_d_1a813b79e2a2eaada463ca4766259d2975" kindref="member">fillRect()</ref> </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="191" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1a1fcbaa593af61d290572f3cc6cadb4b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void drawPartialBitmap</definition>
+        <argsstring>(const Bitmap &amp;bitmap, int16_t x, int16_t y, const Rect &amp;rect, uint8_t alpha=255, bool useOptimized=true)=0</argsstring>
+        <name>drawPartialBitmap</name>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d1bpp_1a6fae0e318d1bd778915adc33449736ae">drawPartialBitmap</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___r_g_b_a2222_1a6fae0e318d1bd778915adc33449736ae">drawPartialBitmap</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___b_g_r_a2222_1a6fae0e318d1bd778915adc33449736ae">drawPartialBitmap</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___a_r_g_b2222_1a6fae0e318d1bd778915adc33449736ae">drawPartialBitmap</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___a_b_g_r2222_1a6fae0e318d1bd778915adc33449736ae">drawPartialBitmap</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d32bpp_1a6fae0e318d1bd778915adc33449736ae">drawPartialBitmap</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d24bpp_1a6fae0e318d1bd778915adc33449736ae">drawPartialBitmap</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d16bpp_1a6fae0e318d1bd778915adc33449736ae">drawPartialBitmap</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d4bpp_1a6fae0e318d1bd778915adc33449736ae">drawPartialBitmap</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d2bpp_1a6fae0e318d1bd778915adc33449736ae">drawPartialBitmap</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a6fae0e318d1bd778915adc33449736ae">drawPartialBitmap</reimplementedby>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> &amp;</type>
+          <declname>bitmap</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>rect</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>alpha</declname>
+          <defval>255</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>useOptimized</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Draws all (or a part) of a <emphasis>bitmap</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The coordinates of the corner of the bitmap is given in (<emphasis>x</emphasis>, <emphasis>y</emphasis>) and <emphasis>rect</emphasis> describes which part of the <emphasis>bitmap</emphasis> should be drawn. The bitmap can be drawn as it is or more or less transparent depending on the value of <emphasis>alpha</emphasis>. The value of <emphasis>alpha</emphasis> is independent of the transparency of the individual pixels of the given <emphasis>bitmap</emphasis>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bitmap to draw. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The absolute x coordinate to place (0, 0) of the bitmap on the screen. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The absolute y coordinate to place (0, 0) of the bitmap on the screen. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A rectangle describing what region of the bitmap is to be drawn. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(Optional) Optional alpha value ranging from 0=invisible to 255=solid. Default is 255 (solid). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>useOptimized</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(Optional) if false, do not attempt to substitute (parts of) this bitmap with faster fillrects. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1a645bd5f27f0c9cb9c2f876ebfa74adcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawRect</definition>
+        <argsstring>(const Rect &amp;rect, colortype color, uint8_t alpha=255)</argsstring>
+        <name>drawRect</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>rect</declname>
+        </param>
+        <param>
+          <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>alpha</declname>
+          <defval>255</defval>
+        </param>
+        <briefdescription>
+<para>Draws a rectangle using the specified line color and opacity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the same as calling drawBorder with a line width of 1.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rectangle to draw in absolute display coordinates. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color to use. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(Optional) The rectangle opacity, from 0=invisible to 255=solid.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="deprecated_1_deprecated000016"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="classtouchgfx_1_1_l_c_d_1a813b79e2a2eaada463ca4766259d2975" kindref="member">fillRect()</ref> </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="221" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1a4dc878f2656170e7c650deb9691dfe0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawString</definition>
+        <argsstring>(Rect widgetArea, const Rect &amp;invalidatedArea, const StringVisuals &amp;stringVisuals, const Unicode::UnicodeChar *format,...)</argsstring>
+        <name>drawString</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref></type>
+          <declname>widgetArea</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>invalidatedArea</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structtouchgfx_1_1_l_c_d_1_1_string_visuals" kindref="compound">StringVisuals</ref> &amp;</type>
+          <declname>stringVisuals</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref> *</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Draws the specified <ref refid="classtouchgfx_1_1_unicode" kindref="compound">Unicode</ref> string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Breaks line on newline.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>widgetArea</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The area covered by the drawing widget in absolute coordinates. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>invalidatedArea</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The (sub)region of the widget area to draw, expressed relative to the widget area. If the widgetArea is x=10, y=10, width=20, height=20 and invalidatedArea is x=5, y=5, width=6, height=6 the widgetArea drawn on the <ref refid="classtouchgfx_1_1_l_c_d" kindref="compound">LCD</ref> is x=15, y=15, width=6, height=6. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stringVisuals</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string visuals (font, alignment, line space, color) with which to draw this string. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to a null-terminated text string with optional additional wildcard arguments. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>...</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variable arguments providing additional information. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="300" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1a981b316e67cd1d1c904b2cc9ccbdc3e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawTextureMapTriangle</definition>
+        <argsstring>(const DrawingSurface &amp;dest, const Point3D *vertices, const TextureSurface &amp;texture, const Rect &amp;absoluteRect, const Rect &amp;dirtyAreaAbsolute, RenderingVariant renderVariant, uint8_t alpha=255, uint16_t subDivisionSize=12)</argsstring>
+        <name>drawTextureMapTriangle</name>
+        <param>
+          <type>const <ref refid="structtouchgfx_1_1_drawing_surface" kindref="compound">DrawingSurface</ref> &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structtouchgfx_1_1_point3_d" kindref="compound">Point3D</ref> *</type>
+          <declname>vertices</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structtouchgfx_1_1_texture_surface" kindref="compound">TextureSurface</ref> &amp;</type>
+          <declname>texture</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>absoluteRect</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>dirtyAreaAbsolute</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1ad59e90505ec56c2331c99dffd08b686c" kindref="member">RenderingVariant</ref></type>
+          <declname>renderVariant</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>alpha</declname>
+          <defval>255</defval>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>subDivisionSize</declname>
+          <defval>12</defval>
+        </param>
+        <briefdescription>
+<para>Texture map triangle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Draw a perspective correct texture mapped triangle. The vertices describes the surface, the x,y,z coordinates and the u,v coordinates of the texture. The texture contains the image data to be drawn The triangle line will be placed and clipped using the absolute and dirty rectangles The alpha will determine how the triangle should be alpha blended. The subDivisionSize will determine the size of the piecewise affine texture mapped portions of the triangle.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The description of where the texture is drawn - can be used to issue a draw off screen. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vertices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The vertices of the triangle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>texture</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The texture. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>absoluteRect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The containing rectangle in absolute coordinates. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dirtyAreaAbsolute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The dirty area in absolute coordinates. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>renderVariant</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The render variant - includes the algorithm and the pixel format. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(Optional) the alpha. Default is 255 (solid). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>subDivisionSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(Optional) the size of the subdivisions of the scan line. Default is 12. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="420" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1a27329d16c48dadcd5597192891312d0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawVerticalLine</definition>
+        <argsstring>(int16_t x, int16_t y, uint16_t height, uint16_t lineWidth, colortype color, uint8_t alpha=255)</argsstring>
+        <name>drawVerticalLine</name>
+        <param>
+          <type>int16_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>lineWidth</declname>
+        </param>
+        <param>
+          <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>alpha</declname>
+          <defval>255</defval>
+        </param>
+        <briefdescription>
+<para>Draws a vertical line with the specified color and opacity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>By default the line will be drawn as a solid line. The line can be drawn with transparency by specifying alpha from 0=invisible to 255=solid.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate of the starting point in absolute display coordinates. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate of the starting point in absolute display coordinates. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of the line. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lineWidth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The width of the line. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color to use. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(Optional) The rectangle opacity, from 0=invisible to 255=solid.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="deprecated_1_deprecated000015"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="classtouchgfx_1_1_l_c_d_1a813b79e2a2eaada463ca4766259d2975" kindref="member">fillRect()</ref> </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="209" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1a813b79e2a2eaada463ca4766259d2975" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void fillRect</definition>
+        <argsstring>(const Rect &amp;rect, colortype color, uint8_t alpha=255)=0</argsstring>
+        <name>fillRect</name>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d1bpp_1a3cfe25e2c90807ec57cdd32e1753af70">fillRect</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___r_g_b_a2222_1a3cfe25e2c90807ec57cdd32e1753af70">fillRect</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___b_g_r_a2222_1a3cfe25e2c90807ec57cdd32e1753af70">fillRect</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___a_r_g_b2222_1a3cfe25e2c90807ec57cdd32e1753af70">fillRect</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___a_b_g_r2222_1a3cfe25e2c90807ec57cdd32e1753af70">fillRect</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d32bpp_1a3cfe25e2c90807ec57cdd32e1753af70">fillRect</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d24bpp_1a3cfe25e2c90807ec57cdd32e1753af70">fillRect</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d16bpp_1a3cfe25e2c90807ec57cdd32e1753af70">fillRect</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d4bpp_1a3cfe25e2c90807ec57cdd32e1753af70">fillRect</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d2bpp_1a3cfe25e2c90807ec57cdd32e1753af70">fillRect</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a3cfe25e2c90807ec57cdd32e1753af70">fillRect</reimplementedby>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>rect</declname>
+        </param>
+        <param>
+          <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>alpha</declname>
+          <defval>255</defval>
+        </param>
+        <briefdescription>
+<para>Draws a filled rectangle in the framebuffer in the specified color and opacity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>By default the rectangle will be drawn as a solid box. The rectangle can be drawn with transparancy by specifying alpha from 0=invisible to 255=solid.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rectangle to draw in absolute display coordinates. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rectangle color. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(Optional) The rectangle opacity, from 0=invisible to 255=solid. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="173" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1ada15a74dcecaad464123a916cc9e81eb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classtouchgfx_1_1_bitmap_1a23d1a7c7cf0f6da45ca389904e644d55" kindref="member">Bitmap::BitmapFormat</ref></type>
+        <definition>virtual Bitmap::BitmapFormat framebufferFormat</definition>
+        <argsstring>() const =0</argsstring>
+        <name>framebufferFormat</name>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d1bpp_1abf1f7914f08534da2cfbcb1f3678d04e">framebufferFormat</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___r_g_b_a2222_1abf1f7914f08534da2cfbcb1f3678d04e">framebufferFormat</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___b_g_r_a2222_1abf1f7914f08534da2cfbcb1f3678d04e">framebufferFormat</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___a_r_g_b2222_1abf1f7914f08534da2cfbcb1f3678d04e">framebufferFormat</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___a_b_g_r2222_1abf1f7914f08534da2cfbcb1f3678d04e">framebufferFormat</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d32bpp_1abf1f7914f08534da2cfbcb1f3678d04e">framebufferFormat</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d24bpp_1abf1f7914f08534da2cfbcb1f3678d04e">framebufferFormat</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d16bpp_1abf1f7914f08534da2cfbcb1f3678d04e">framebufferFormat</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d4bpp_1abf1f7914f08534da2cfbcb1f3678d04e">framebufferFormat</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d2bpp_1abf1f7914f08534da2cfbcb1f3678d04e">framebufferFormat</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1abf1f7914f08534da2cfbcb1f3678d04e">framebufferFormat</reimplementedby>
+        <briefdescription>
+<para>Framebuffer format used by the display. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A <ref refid="classtouchgfx_1_1_bitmap_1a23d1a7c7cf0f6da45ca389904e644d55" kindref="member">Bitmap::BitmapFormat</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="318" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1aad6cf0ceaa812e7329fb1ba360d4178b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>uint16_t</type>
+        <definition>virtual uint16_t framebufferStride</definition>
+        <argsstring>() const =0</argsstring>
+        <name>framebufferStride</name>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d1bpp_1ab75ba1c386aac9a82b8aebcf1da40d77">framebufferStride</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___r_g_b_a2222_1ab75ba1c386aac9a82b8aebcf1da40d77">framebufferStride</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___b_g_r_a2222_1ab75ba1c386aac9a82b8aebcf1da40d77">framebufferStride</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___a_r_g_b2222_1ab75ba1c386aac9a82b8aebcf1da40d77">framebufferStride</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___a_b_g_r2222_1ab75ba1c386aac9a82b8aebcf1da40d77">framebufferStride</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d32bpp_1ab75ba1c386aac9a82b8aebcf1da40d77">framebufferStride</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d24bpp_1ab75ba1c386aac9a82b8aebcf1da40d77">framebufferStride</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d16bpp_1ab75ba1c386aac9a82b8aebcf1da40d77">framebufferStride</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d4bpp_1ab75ba1c386aac9a82b8aebcf1da40d77">framebufferStride</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d2bpp_1ab75ba1c386aac9a82b8aebcf1da40d77">framebufferStride</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ab75ba1c386aac9a82b8aebcf1da40d77">framebufferStride</reimplementedby>
+        <briefdescription>
+<para>Framebuffer stride in bytes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The distance (in bytes) from the start of one framebuffer row, to the next.</para>
+<para><simplesect kind="return"><para>The number of bytes in one framebuffer row. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="326" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1a0d36d0f505c5ee534b2794d06eb122a8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>uint8_t</type>
+        <definition>virtual uint8_t getBlueColor</definition>
+        <argsstring>(colortype color) const =0</argsstring>
+        <name>getBlueColor</name>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d1bpp_1a6f2684edfd970891aa198c65b5624c73">getBlueColor</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___r_g_b_a2222_1a6f2684edfd970891aa198c65b5624c73">getBlueColor</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___b_g_r_a2222_1a6f2684edfd970891aa198c65b5624c73">getBlueColor</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___a_r_g_b2222_1a6f2684edfd970891aa198c65b5624c73">getBlueColor</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___a_b_g_r2222_1a6f2684edfd970891aa198c65b5624c73">getBlueColor</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d32bpp_1a6f2684edfd970891aa198c65b5624c73">getBlueColor</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d24bpp_1a6f2684edfd970891aa198c65b5624c73">getBlueColor</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d16bpp_1a6f2684edfd970891aa198c65b5624c73">getBlueColor</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d4bpp_1a6f2684edfd970891aa198c65b5624c73">getBlueColor</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d2bpp_1a6f2684edfd970891aa198c65b5624c73">getBlueColor</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a6f2684edfd970891aa198c65b5624c73">getBlueColor</reimplementedby>
+        <param>
+          <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Gets the blue color part of a color. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>As this function must work for all color depths, it can be somewhat slow if used in speed critical sections. Consider finding the color in another way, if possible.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The 16 bit color value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The blue part of the color. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="373" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1a7a4cf10b0b68239f9e0ab49f05df98ec" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+        <definition>virtual colortype getColorFrom24BitRGB</definition>
+        <argsstring>(uint8_t red, uint8_t green, uint8_t blue) const =0</argsstring>
+        <name>getColorFrom24BitRGB</name>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d1bpp_1ad730e2cff09e2cb19690f90601cc3a3a">getColorFrom24BitRGB</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___r_g_b_a2222_1ad730e2cff09e2cb19690f90601cc3a3a">getColorFrom24BitRGB</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___b_g_r_a2222_1ad730e2cff09e2cb19690f90601cc3a3a">getColorFrom24BitRGB</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___a_r_g_b2222_1ad730e2cff09e2cb19690f90601cc3a3a">getColorFrom24BitRGB</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___a_b_g_r2222_1ad730e2cff09e2cb19690f90601cc3a3a">getColorFrom24BitRGB</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d32bpp_1ad730e2cff09e2cb19690f90601cc3a3a">getColorFrom24BitRGB</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d24bpp_1ad730e2cff09e2cb19690f90601cc3a3a">getColorFrom24BitRGB</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d16bpp_1ad730e2cff09e2cb19690f90601cc3a3a">getColorFrom24BitRGB</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d4bpp_1ad730e2cff09e2cb19690f90601cc3a3a">getColorFrom24BitRGB</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d2bpp_1ad730e2cff09e2cb19690f90601cc3a3a">getColorFrom24BitRGB</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ad730e2cff09e2cb19690f90601cc3a3a">getColorFrom24BitRGB</reimplementedby>
+        <param>
+          <type>uint8_t</type>
+          <declname>red</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>green</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>blue</declname>
+        </param>
+        <briefdescription>
+<para>Generates a color representation to be used on the <ref refid="classtouchgfx_1_1_l_c_d" kindref="compound">LCD</ref>, based on 24 bit RGB values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Depending on your chosen color bit depth, the color will be interpreted internally as either a 16 bit or 24 bit color value. This function can be safely used regardless of whether your application is configured for 16 or 24 bit colors.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>red</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the red part (0-255). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>green</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the green part (0-255). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>blue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the blue part (0-255).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The color representation depending on <ref refid="classtouchgfx_1_1_l_c_d" kindref="compound">LCD</ref> color format. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="340" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1a06519cd86f0159cf7f4b585c0fc97be9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+        <definition>colortype getDefaultColor</definition>
+        <argsstring>() const</argsstring>
+        <name>getDefaultColor</name>
+        <briefdescription>
+<para>Gets default color previously set using setDefaultColor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The default color.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_l_c_d_1ac42fdefb7af476d5d69a1f3d00c25eed" kindref="member">setDefaultColor</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="395" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="395" bodyend="398"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1a2b8dffe98b2173b4009624e9c44e9709" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>uint8_t</type>
+        <definition>virtual uint8_t getGreenColor</definition>
+        <argsstring>(colortype color) const =0</argsstring>
+        <name>getGreenColor</name>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d1bpp_1a061d3d6d30e0c5d0b80eb4521d7f5b29">getGreenColor</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___r_g_b_a2222_1a061d3d6d30e0c5d0b80eb4521d7f5b29">getGreenColor</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___b_g_r_a2222_1a061d3d6d30e0c5d0b80eb4521d7f5b29">getGreenColor</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___a_r_g_b2222_1a061d3d6d30e0c5d0b80eb4521d7f5b29">getGreenColor</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___a_b_g_r2222_1a061d3d6d30e0c5d0b80eb4521d7f5b29">getGreenColor</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d32bpp_1a061d3d6d30e0c5d0b80eb4521d7f5b29">getGreenColor</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d24bpp_1a061d3d6d30e0c5d0b80eb4521d7f5b29">getGreenColor</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d16bpp_1a061d3d6d30e0c5d0b80eb4521d7f5b29">getGreenColor</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d4bpp_1a061d3d6d30e0c5d0b80eb4521d7f5b29">getGreenColor</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d2bpp_1a061d3d6d30e0c5d0b80eb4521d7f5b29">getGreenColor</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a061d3d6d30e0c5d0b80eb4521d7f5b29">getGreenColor</reimplementedby>
+        <param>
+          <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Gets the green color part of a color. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>As this function must work for all color depths, it can be somewhat slow if used in speed critical sections. Consider finding the color in another way, if possible.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The 16 bit color value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The green part of the color. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="362" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1a7ead52bf45c6f3c1cb50718405f5123e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>uint8_t</type>
+        <definition>virtual uint8_t getRedColor</definition>
+        <argsstring>(colortype color) const =0</argsstring>
+        <name>getRedColor</name>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d1bpp_1a9f32461dd49591b2d4df8df7cffb9235">getRedColor</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___r_g_b_a2222_1a9f32461dd49591b2d4df8df7cffb9235">getRedColor</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___b_g_r_a2222_1a9f32461dd49591b2d4df8df7cffb9235">getRedColor</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___a_r_g_b2222_1a9f32461dd49591b2d4df8df7cffb9235">getRedColor</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___a_b_g_r2222_1a9f32461dd49591b2d4df8df7cffb9235">getRedColor</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d32bpp_1a9f32461dd49591b2d4df8df7cffb9235">getRedColor</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d24bpp_1a9f32461dd49591b2d4df8df7cffb9235">getRedColor</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d16bpp_1a9f32461dd49591b2d4df8df7cffb9235">getRedColor</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d4bpp_1a9f32461dd49591b2d4df8df7cffb9235">getRedColor</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d2bpp_1a9f32461dd49591b2d4df8df7cffb9235">getRedColor</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a9f32461dd49591b2d4df8df7cffb9235">getRedColor</reimplementedby>
+        <param>
+          <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Gets the red color part of a color. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>As this function must work for all color depths, it can be somewhat slow if used in speed critical sections. Consider finding the color in another way, if possible.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The red part of the color. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="351" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1a9339772ec5ac9fa929938109207f2863" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___r_g_b_a2222_1a9339772ec5ac9fa929938109207f2863">init</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___b_g_r_a2222_1a9339772ec5ac9fa929938109207f2863">init</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___a_r_g_b2222_1a9339772ec5ac9fa929938109207f2863">init</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___a_b_g_r2222_1a9339772ec5ac9fa929938109207f2863">init</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d32bpp_1a9339772ec5ac9fa929938109207f2863">init</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d24bpp_1a9339772ec5ac9fa929938109207f2863">init</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d16bpp_1a9339772ec5ac9fa929938109207f2863">init</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d4bpp_1a9339772ec5ac9fa929938109207f2863">init</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d2bpp_1a9339772ec5ac9fa929938109207f2863">init</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a9339772ec5ac9fa929938109207f2863">init</reimplementedby>
+        <briefdescription>
+<para>Performs initialization. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Can be called at any time to re-initialize the <ref refid="classtouchgfx_1_1_l_c_d" kindref="compound">LCD</ref> object.</para>
+<para><xrefsect id="deprecated_1_deprecated000013"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Put initialization code in constructor </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="54" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1ac42fdefb7af476d5d69a1f3d00c25eed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setDefaultColor</definition>
+        <argsstring>(colortype color)</argsstring>
+        <name>setDefaultColor</name>
+        <param>
+          <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Sets default color as used by alpha level only bitmap formats, e.g. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A4. The default color, if no color is set, is black.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_l_c_d_1a06519cd86f0159cf7f4b585c0fc97be9" kindref="member">getDefaultColor</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="383" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="383" bodyend="386"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1a50af83d0758f69f7c290e54cf1971ba8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~LCD</definition>
+        <argsstring>()</argsstring>
+        <name>~LCD</name>
+        <briefdescription>
+<para>Finalizes an instance of the <ref refid="classtouchgfx_1_1_l_c_d" kindref="compound">LCD</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="45" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="45" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1a01d10258588c00a9dbc319dec5bf438b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint8_t</type>
+        <definition>static FORCE_INLINE_FUNCTION uint8_t div255</definition>
+        <argsstring>(uint16_t num)</argsstring>
+        <name>div255</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+<para>Approximates an integer division of a 16bit value by 255. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Divides numerator num (e.g. the sum resulting from an alpha-blending operation) by 255.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The numerator to divide by 255.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The result of a division by 255. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="437" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="437" bodyend="440"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1a0494b479a5bedee50857441a3410c0f0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint32_t</type>
+        <definition>static FORCE_INLINE_FUNCTION uint32_t div255g</definition>
+        <argsstring>(uint32_t pixelxAlpha)</argsstring>
+        <name>div255g</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>pixelxAlpha</declname>
+        </param>
+        <briefdescription>
+<para>Divides the green component of pixelxAlpha by 255. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pixelxAlpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The green component of a 32bit ARGB pixel multiplied by an alpha factor.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pixelxAlpha with its green component divided by 255. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="463" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="463" bodyend="466"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1afacd4dbc6065589001a1724e20a72d89" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint32_t</type>
+        <definition>static FORCE_INLINE_FUNCTION uint32_t div255rb</definition>
+        <argsstring>(uint32_t pixelxAlpha)</argsstring>
+        <name>div255rb</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>pixelxAlpha</declname>
+        </param>
+        <briefdescription>
+<para>Divides the red and blue components of pixelxAlpha by 255. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pixelxAlpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The red and blue components of a 32bit ARGB pixel multiplied by an alpha factor.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pixelxAlpha with its red and blue components divided by 255. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="450" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="450" bodyend="453"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1a8eddc7eb104e8cec4bc1aced691bda33" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void drawGlyph</definition>
+        <argsstring>(uint16_t *wbuf, Rect widgetArea, int16_t x, int16_t y, uint16_t offsetX, uint16_t offsetY, const Rect &amp;invalidatedArea, const GlyphNode *glyph, const uint8_t *glyphData, uint8_t dataFormatA4, colortype color, uint8_t bitsPerPixel, uint8_t alpha, TextRotation rotation)=0</argsstring>
+        <name>drawGlyph</name>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d1bpp_1a737ec23fbe91b4dd49175706e66d575e">drawGlyph</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d2bpp_1a737ec23fbe91b4dd49175706e66d575e">drawGlyph</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d4bpp_1a737ec23fbe91b4dd49175706e66d575e">drawGlyph</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___r_g_b_a2222_1a1da4c8ce76a6aa932d0a153375284871">drawGlyph</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___b_g_r_a2222_1a1da4c8ce76a6aa932d0a153375284871">drawGlyph</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___a_r_g_b2222_1a1da4c8ce76a6aa932d0a153375284871">drawGlyph</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___a_b_g_r2222_1a1da4c8ce76a6aa932d0a153375284871">drawGlyph</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d24bpp_1ab63358c2c54412e73e4092b241bb7fcd">drawGlyph</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d16bpp_1ab63358c2c54412e73e4092b241bb7fcd">drawGlyph</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1af903b701e9856e78a870494bedaac857">drawGlyph</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d32bpp_1a737ec23fbe91b4dd49175706e66d575e">drawGlyph</reimplementedby>
+        <param>
+          <type>uint16_t *</type>
+          <declname>wbuf</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref></type>
+          <declname>widgetArea</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>offsetX</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>offsetY</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>invalidatedArea</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structtouchgfx_1_1_glyph_node" kindref="compound">GlyphNode</ref> *</type>
+          <declname>glyph</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>glyphData</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>dataFormatA4</declname>
+        </param>
+        <param>
+          <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>bitsPerPixel</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1aa8b32c1e049cf804b50921f8c847866b" kindref="member">TextRotation</ref></type>
+          <declname>rotation</declname>
+        </param>
+        <briefdescription>
+<para>Private version of draw-glyph with explicit destination buffer pointer argument. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>For all parameters (except the buffer pointer) see the public function <ref refid="classtouchgfx_1_1_l_c_d_1a4dc878f2656170e7c650deb9691dfe0d" kindref="member">drawString()</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">wbuf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination (frame) buffer to draw to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>widgetArea</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The canvas to draw the glyph inside. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Horizontal offset to start drawing the glyph. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vertical offset to start drawing the glyph. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offsetX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Horizontal offset in the glyph to start drawing from. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offsetY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vertical offset in the glyph to start drawing from. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>invalidatedArea</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The area to draw inside. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>glyph</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifications of the glyph to draw. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>glyphData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data containing the actual glyph (dense format) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dataFormatA4</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The glyph is saved using ST A4 format. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color of the glyph. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bitsPerPixel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit depth of the glyph. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The transparency of the glyph. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rotation to do before drawing the glyph. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="705" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1ae465f8bf4e968da70eb903e70998efda" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawStringLTR</definition>
+        <argsstring>(const Rect &amp;widgetArea, const Rect &amp;invalidatedArea, const StringVisuals &amp;visuals, const Unicode::UnicodeChar *format, va_list pArg)</argsstring>
+        <name>drawStringLTR</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>widgetArea</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>invalidatedArea</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structtouchgfx_1_1_l_c_d_1_1_string_visuals" kindref="compound">StringVisuals</ref> &amp;</type>
+          <declname>visuals</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref> *</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>va_list</type>
+          <declname>pArg</declname>
+        </param>
+        <briefdescription>
+<para>Draws the specified <ref refid="classtouchgfx_1_1_unicode" kindref="compound">Unicode</ref> string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Breaks line on newline. The string is assumed to contain only Latin characters written left-to-right.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>widgetArea</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The area covered by the drawing widget in absolute coordinates. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>invalidatedArea</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The (sub)region of the widget area to draw, expressed relative to the widget area. If the widgetArea is x=10, y=10, width=20, height=20 and invalidatedArea is x=5, y=5, width=6, height=6 the widgetArea drawn on the <ref refid="classtouchgfx_1_1_l_c_d" kindref="compound">LCD</ref> is x=15, y=15, width=6, height=6. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">visuals</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string visuals (font, alignment, line space, color) with which to draw this string. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to a null-terminated text string with optional additional wildcard arguments. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pArg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variable arguments providing additional information.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_l_c_d_1a4dc878f2656170e7c650deb9691dfe0d" kindref="member">drawString</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="761" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1a97f760546e5938c403d513353f1edd3c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawStringRTL</definition>
+        <argsstring>(const Rect &amp;widgetArea, const Rect &amp;invalidatedArea, const StringVisuals &amp;visuals, const Unicode::UnicodeChar *format, va_list pArg)</argsstring>
+        <name>drawStringRTL</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>widgetArea</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>invalidatedArea</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structtouchgfx_1_1_l_c_d_1_1_string_visuals" kindref="compound">StringVisuals</ref> &amp;</type>
+          <declname>visuals</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref> *</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>va_list</type>
+          <declname>pArg</declname>
+        </param>
+        <briefdescription>
+<para>Draws the specified <ref refid="classtouchgfx_1_1_unicode" kindref="compound">Unicode</ref> string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Breaks line on newline. The string can be either right-to-left or left-to-right and may contain sequences of Arabic / Hebrew and Latin characters.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>widgetArea</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The area covered by the drawing widget in absolute coordinates. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>invalidatedArea</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The (sub)region of the widget area to draw, expressed relative to the widget area. If the widgetArea is x=10, y=10, width=20, height=20 and invalidatedArea is x=5, y=5, width=6, height=6 the widgetArea drawn on the <ref refid="classtouchgfx_1_1_l_c_d" kindref="compound">LCD</ref> is x=15, y=15, width=6, height=6. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">visuals</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string visuals (font, alignment, line space, color) with which to draw this string. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to a null-terminated text string with optional additional wildcard arguments. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pArg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variable arguments providing additional information.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_l_c_d_1a4dc878f2656170e7c650deb9691dfe0d" kindref="member">drawString</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="787" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1a7b7d73f2ae2a81d2092f725124c82b11" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void drawTextureMapScanLine</definition>
+        <argsstring>(const DrawingSurface &amp;dest, const Gradients &amp;gradients, const Edge *leftEdge, const Edge *rightEdge, const TextureSurface &amp;texture, const Rect &amp;absoluteRect, const Rect &amp;dirtyAreaAbsolute, RenderingVariant renderVariant, uint8_t alpha, uint16_t subDivisionSize)</argsstring>
+        <name>drawTextureMapScanLine</name>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d1bpp_1a7b7d73f2ae2a81d2092f725124c82b11">drawTextureMapScanLine</reimplementedby>
+        <param>
+          <type>const <ref refid="structtouchgfx_1_1_drawing_surface" kindref="compound">DrawingSurface</ref> &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structtouchgfx_1_1_gradients" kindref="compound">Gradients</ref> &amp;</type>
+          <declname>gradients</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structtouchgfx_1_1_edge" kindref="compound">Edge</ref> *</type>
+          <declname>leftEdge</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structtouchgfx_1_1_edge" kindref="compound">Edge</ref> *</type>
+          <declname>rightEdge</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structtouchgfx_1_1_texture_surface" kindref="compound">TextureSurface</ref> &amp;</type>
+          <declname>texture</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>absoluteRect</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>dirtyAreaAbsolute</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1ad59e90505ec56c2331c99dffd08b686c" kindref="member">RenderingVariant</ref></type>
+          <declname>renderVariant</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>subDivisionSize</declname>
+        </param>
+        <briefdescription>
+<para>Draw scan line. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Draw one horizontal line of the texture map on screen. The scan line will be drawn using perspective correct texture mapping. The appearance of the line is determined by the left and right edge and the gradients structure. The edges contain the information about the x,y,z coordinates of the left and right side respectively and also information about the u,v coordinates of the texture map used. The gradients structure contains information about how to interpolate all the values across the scan line. The data drawn should be present in the texture argument.</para>
+<para>The scan line will be drawn using the additional arguments. The scan line will be placed and clipped using the absolute and dirty rectangles The alpha will determine how the scan line should be alpha blended. The subDivisionSize will determine the size of the piecewise affine texture mapped lines.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The description of where the texture is drawn - can be used to issue a draw off screen. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gradients</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The gradients using in interpolation across the scan line. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>leftEdge</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The left edge of the scan line. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rightEdge</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The right edge of the scan line. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>texture</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The texture. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>absoluteRect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The containing rectangle in absolute coordinates. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dirtyAreaAbsolute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The dirty area in absolute coordinates. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>renderVariant</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The render variant - includes the algorithm and the pixel format. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alpha. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>subDivisionSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the subdivisions of the scan line. A value of 1 will give a completely perspective correct texture mapped scan line. A large value will give an affine texture mapped scan line. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="684" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1ae883ce6179da962d7fac5d0f428ad34b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base" kindref="compound">DrawTextureMapScanLineBase</ref> *</type>
+        <definition>virtual DrawTextureMapScanLineBase* getTextureMapperDrawScanLine</definition>
+        <argsstring>(const TextureSurface &amp;texture, RenderingVariant renderVariant, uint8_t alpha)</argsstring>
+        <name>getTextureMapperDrawScanLine</name>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d2bpp_1ae883ce6179da962d7fac5d0f428ad34b">getTextureMapperDrawScanLine</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d4bpp_1ae883ce6179da962d7fac5d0f428ad34b">getTextureMapperDrawScanLine</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___r_g_b_a2222_1ae883ce6179da962d7fac5d0f428ad34b">getTextureMapperDrawScanLine</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___b_g_r_a2222_1ae883ce6179da962d7fac5d0f428ad34b">getTextureMapperDrawScanLine</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___a_r_g_b2222_1ae883ce6179da962d7fac5d0f428ad34b">getTextureMapperDrawScanLine</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8bpp___a_b_g_r2222_1ae883ce6179da962d7fac5d0f428ad34b">getTextureMapperDrawScanLine</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d24bpp_1ae883ce6179da962d7fac5d0f428ad34b">getTextureMapperDrawScanLine</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d16bpp_1ae883ce6179da962d7fac5d0f428ad34b">getTextureMapperDrawScanLine</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ae883ce6179da962d7fac5d0f428ad34b">getTextureMapperDrawScanLine</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d32bpp_1ae883ce6179da962d7fac5d0f428ad34b">getTextureMapperDrawScanLine</reimplementedby>
+        <param>
+          <type>const <ref refid="structtouchgfx_1_1_texture_surface" kindref="compound">TextureSurface</ref> &amp;</type>
+          <declname>texture</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1ad59e90505ec56c2331c99dffd08b686c" kindref="member">RenderingVariant</ref></type>
+          <declname>renderVariant</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+<para>Gets pointer to object that can draw a scan line which allows for highly specialized and optimized implementation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>texture</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The texture Surface. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>renderVariant</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The render variant. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The global alpha.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Null if it fails, else the pointer to the texture mapper draw scan line object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="652" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1a6b34e4cedff06f4ebd797e00778077d2" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint8_t</type>
+        <definition>static FORCE_INLINE_FUNCTION uint8_t getAlphaFromA4</definition>
+        <argsstring>(const uint16_t *data, uint32_t offset)</argsstring>
+        <name>getAlphaFromA4</name>
+        <param>
+          <type>const uint16_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>Gets alpha from A4 image at given offset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The value is scaled up from range 0-15 to 0- 255.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the start of the A4 data. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The offset into the A4 image.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The alpha from A4 (0-255). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="839" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="839" bodyend="843"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1aa5c143f2953d271f2adca01f501e97bc" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>static uint16_t getNumLines</definition>
+        <argsstring>(TextProvider &amp;textProvider, WideTextAction wideTextAction, TextDirection textDirection, const Font *font, int16_t width)</argsstring>
+        <name>getNumLines</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_text_provider" kindref="compound">TextProvider</ref> &amp;</type>
+          <declname>textProvider</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1ad7afabd7637aed4278f7e26434b860c7" kindref="member">WideTextAction</ref></type>
+          <declname>wideTextAction</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1abe2c7387a9ed6f7c793179053f152743" kindref="member">TextDirection</ref></type>
+          <declname>textDirection</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_font" kindref="compound">Font</ref> *</type>
+          <declname>font</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+<para>Gets number of lines for a given text taking word wrap into consideration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The font and width are required to find the number of lines in case word wrap is true.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">textProvider</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The text provider. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wideTextAction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The wide text action in case lines are longer than the width of the text area. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>textDirection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The text direction (LTR or RTL). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The font. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The width.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number lines. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="821" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1a98fc6d2a734cf2b2e0f6eb3bfdac5077" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int realX</definition>
+        <argsstring>(const Rect &amp;widgetArea, int16_t x, int16_t y, TextRotation rotation)</argsstring>
+        <name>realX</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>widgetArea</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1aa8b32c1e049cf804b50921f8c847866b" kindref="member">TextRotation</ref></type>
+          <declname>rotation</declname>
+        </param>
+        <briefdescription>
+<para>Find the real, absolute x coordinate of a point inside a widget with regards to rotation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">widgetArea</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The widget containing the point. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rotation to perform.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The absolute x coordinate after applying appropriate rotation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="727" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1a73ff793fafba8d3b4b2c81a1399b6923" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int realY</definition>
+        <argsstring>(const Rect &amp;widgetArea, int16_t x, int16_t y, TextRotation rotation)</argsstring>
+        <name>realY</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>widgetArea</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1aa8b32c1e049cf804b50921f8c847866b" kindref="member">TextRotation</ref></type>
+          <declname>rotation</declname>
+        </param>
+        <briefdescription>
+<para>Find the real, absolute y coordinate of a point inside a widget with regards to rotation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">widgetArea</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The widget containing the point. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rotation to perform.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The absolute y coordinate after applying appropriate rotation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="740" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1ac1a8020c07c7a5b64aceea2893b9d6ff" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void rotateRect</definition>
+        <argsstring>(Rect &amp;rect, const Rect &amp;canvas, const TextRotation rotation)</argsstring>
+        <name>rotateRect</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>rect</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>canvas</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacetouchgfx_1aa8b32c1e049cf804b50921f8c847866b" kindref="member">TextRotation</ref></type>
+          <declname>rotation</declname>
+        </param>
+        <briefdescription>
+<para>Rotate a rectangle inside another rectangle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rectangle to rotate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>canvas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rectangle containing the rect to rotate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rotation to perform on rect. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="714" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1aee926129c4f45b9e1b9691ff372e4ad9" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>static uint16_t stringWidth</definition>
+        <argsstring>(TextProvider &amp;textProvider, const Font &amp;font, const int numChars, TextDirection textDirection)</argsstring>
+        <name>stringWidth</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_text_provider" kindref="compound">TextProvider</ref> &amp;</type>
+          <declname>textProvider</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_font" kindref="compound">Font</ref> &amp;</type>
+          <declname>font</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>numChars</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1abe2c7387a9ed6f7c793179053f152743" kindref="member">TextDirection</ref></type>
+          <declname>textDirection</declname>
+        </param>
+        <briefdescription>
+<para>Find string width of the given number of ligatures read from the given <ref refid="classtouchgfx_1_1_text_provider" kindref="compound">TextProvider</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>After the introduction of Arabic, Thai, Hindi and other languages, ligatures are counted instead of characters. For Latin languages, number of characters equal number of ligatures.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">textProvider</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The text provider. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The font. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>numChars</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of characters (ligatures). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>textDirection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The text direction.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An int16_t. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="806" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1ab91626235ee315c84da89a97f94378d6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool drawStringInternal</definition>
+        <argsstring>(uint16_t *frameBuffer, Rect const *widgetArea, int16_t widgetRectY, int16_t &amp;offset, const Rect &amp;invalidatedArea, StringVisuals const *stringVisuals, const TextDirection textDirection, TextProvider &amp;textProvider, const int numChars, bool useEllipsis)</argsstring>
+        <name>drawStringInternal</name>
+        <param>
+          <type>uint16_t *</type>
+          <declname>frameBuffer</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> const *</type>
+          <declname>widgetArea</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>widgetRectY</declname>
+        </param>
+        <param>
+          <type>int16_t &amp;</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>invalidatedArea</declname>
+        </param>
+        <param>
+          <type><ref refid="structtouchgfx_1_1_l_c_d_1_1_string_visuals" kindref="compound">StringVisuals</ref> const *</type>
+          <declname>stringVisuals</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacetouchgfx_1abe2c7387a9ed6f7c793179053f152743" kindref="member">TextDirection</ref></type>
+          <declname>textDirection</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_text_provider" kindref="compound">TextProvider</ref> &amp;</type>
+          <declname>textProvider</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>numChars</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>useEllipsis</declname>
+        </param>
+        <briefdescription>
+<para>Draw string internal. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">frameBuffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If non-null, buffer for frame data. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>widgetArea</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The widget area. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>widgetRectY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The widget rectangle y coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The offset. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>invalidatedArea</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The invalidated area. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stringVisuals</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string visuals. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>textDirection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The text direction. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">textProvider</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The text provider. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>numChars</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of characters. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>useEllipsis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True to use ellipsis.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if it succeeds, false if it fails. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="931" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1ad8fb3432cb487cb339ebfaa0b3948c1b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawStringRTLInternal</definition>
+        <argsstring>(int16_t &amp;offset, const Font *font, const TextDirection textDirection, TextProvider &amp;widthTextProvider, const int numChars, const bool useEllipsis, DrawStringInternalStruct const *data)</argsstring>
+        <name>drawStringRTLInternal</name>
+        <param>
+          <type>int16_t &amp;</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_font" kindref="compound">Font</ref> *</type>
+          <declname>font</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacetouchgfx_1abe2c7387a9ed6f7c793179053f152743" kindref="member">TextDirection</ref></type>
+          <declname>textDirection</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_text_provider" kindref="compound">TextProvider</ref> &amp;</type>
+          <declname>widthTextProvider</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>numChars</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>useEllipsis</declname>
+        </param>
+        <param>
+          <type>DrawStringInternalStruct const *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Draw string RTL internal. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The offset. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The font. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>textDirection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The text direction. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">widthTextProvider</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The width text provider. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>numChars</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of characters. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>useEllipsis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True to use ellipsis. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The data. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="913" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1a5ae3d636be4f7f363b91547142dd0596" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool drawStringRTLLine</definition>
+        <argsstring>(int16_t &amp;offset, const Font *font, TextDirection textDirection, Unicode::UnicodeChar &amp;currChar, TextProvider &amp;textProvider, TextProvider &amp;widthTextProvider, DrawStringInternalFunctionPointer internalFunction, const int numChars, const bool useEllipsis, DrawStringInternalStruct const *data)</argsstring>
+        <name>drawStringRTLLine</name>
+        <param>
+          <type>int16_t &amp;</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_font" kindref="compound">Font</ref> *</type>
+          <declname>font</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1abe2c7387a9ed6f7c793179053f152743" kindref="member">TextDirection</ref></type>
+          <declname>textDirection</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref> &amp;</type>
+          <declname>currChar</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_text_provider" kindref="compound">TextProvider</ref> &amp;</type>
+          <declname>textProvider</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_text_provider" kindref="compound">TextProvider</ref> &amp;</type>
+          <declname>widthTextProvider</declname>
+        </param>
+        <param>
+          <type>DrawStringInternalFunctionPointer</type>
+          <declname>internalFunction</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>numChars</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>useEllipsis</declname>
+        </param>
+        <param>
+          <type>DrawStringInternalStruct const *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Draw string RTL line. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The offset. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The font. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>textDirection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The text direction. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">currChar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The curr character. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">textProvider</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The text provider. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">widthTextProvider</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The width text provider. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>internalFunction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The internal function. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>numChars</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of characters. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>useEllipsis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True to use ellipsis. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The data.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if it succeeds, false if it fails. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="887" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1a6abf85160a59aa0b0ea7a0854105a305" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawStringWidthInternal</definition>
+        <argsstring>(int16_t &amp;offset, const Font *font, const TextDirection textDirection, TextProvider &amp;textProvider, const int numChars, const bool useEllipsis, DrawStringInternalStruct const *data)</argsstring>
+        <name>drawStringWidthInternal</name>
+        <param>
+          <type>int16_t &amp;</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_font" kindref="compound">Font</ref> *</type>
+          <declname>font</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacetouchgfx_1abe2c7387a9ed6f7c793179053f152743" kindref="member">TextDirection</ref></type>
+          <declname>textDirection</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_text_provider" kindref="compound">TextProvider</ref> &amp;</type>
+          <declname>textProvider</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>numChars</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>useEllipsis</declname>
+        </param>
+        <param>
+          <type>DrawStringInternalStruct const *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Draw string width internal. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The offset. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The font. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>textDirection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The text direction. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">textProvider</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The text provider. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>numChars</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of characters. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>useEllipsis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True to use ellipsis. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The data. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="900" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class contains the various low-level drawing routines for drawing bitmaps, texts and rectangles/boxes. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Normally, these draw operations are called from widgets, which also keep track of logical states such as visibility etc.</para>
+<para>The <ref refid="classtouchgfx_1_1_l_c_d" kindref="compound">LCD</ref> class cannot be instantiated, instead use one of the subclasses which implements the <ref refid="classtouchgfx_1_1_l_c_d" kindref="compound">LCD</ref> drawing operations for a specific display configuration.</para>
+<para><simplesect kind="note"><para>All coordinates sent to functions in the <ref refid="classtouchgfx_1_1_l_c_d" kindref="compound">LCD</ref> class are expected to be in absolute coordinates, i.e. (0, 0) is upper left corner of the display. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="857">
+        <label>LCD2bpp</label>
+        <link refid="classtouchgfx_1_1_l_c_d2bpp"/>
+        <childnode refid="852" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="856">
+        <label>LCD24bpp</label>
+        <link refid="classtouchgfx_1_1_l_c_d24bpp"/>
+        <childnode refid="852" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="859">
+        <label>LCD4bpp</label>
+        <link refid="classtouchgfx_1_1_l_c_d4bpp"/>
+        <childnode refid="852" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="861">
+        <label>LCD8bpp_ARGB2222</label>
+        <link refid="classtouchgfx_1_1_l_c_d8bpp___a_r_g_b2222"/>
+        <childnode refid="852" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="853">
+        <label>LCD16bpp</label>
+        <link refid="classtouchgfx_1_1_l_c_d16bpp"/>
+        <childnode refid="852" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="852">
+        <label>LCD</label>
+        <link refid="classtouchgfx_1_1_l_c_d"/>
+      </node>
+      <node id="863">
+        <label>LCD8bpp_RGBA2222</label>
+        <link refid="classtouchgfx_1_1_l_c_d8bpp___r_g_b_a2222"/>
+        <childnode refid="852" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="854">
+        <label>LCD16bppSerialFlash</label>
+        <link refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash"/>
+        <childnode refid="852" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="862">
+        <label>LCD8bpp_BGRA2222</label>
+        <link refid="classtouchgfx_1_1_l_c_d8bpp___b_g_r_a2222"/>
+        <childnode refid="852" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="860">
+        <label>LCD8bpp_ABGR2222</label>
+        <link refid="classtouchgfx_1_1_l_c_d8bpp___a_b_g_r2222"/>
+        <childnode refid="852" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="858">
+        <label>LCD32bpp</label>
+        <link refid="classtouchgfx_1_1_l_c_d32bpp"/>
+        <childnode refid="852" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="855">
+        <label>LCD1bpp</label>
+        <link refid="classtouchgfx_1_1_l_c_d1bpp"/>
+        <childnode refid="852" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="864">
+        <label>LCD</label>
+        <link refid="classtouchgfx_1_1_l_c_d"/>
+        <childnode refid="865" relation="usage">
+          <edgelabel>defaultColor</edgelabel>
+        </childnode>
+      </node>
+      <node id="865">
+        <label>colortype</label>
+        <link refid="structtouchgfx_1_1colortype"/>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/lcd/LCD.hpp" line="42" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="41" bodyend="1044"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_l_c_d_1a166dd8002f9b8e95cc605f2242c65418" prot="public" virt="pure-virtual"><scope>touchgfx::LCD</scope><name>bitDepth</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a972c8ab781314774d82a3fa2c08f9f2d" prot="public" virt="pure-virtual"><scope>touchgfx::LCD</scope><name>blitCopy</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a185d987bf49db055b63cb6f85b81a07a" prot="public" virt="pure-virtual"><scope>touchgfx::LCD</scope><name>blitCopy</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a2816380d9d77221efa560d515d69dbd6" prot="public" virt="non-virtual"><scope>touchgfx::LCD</scope><name>copyFrameBufferRegionToMemory</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a2227644ebace590ce402956e85acb295" prot="public" virt="pure-virtual"><scope>touchgfx::LCD</scope><name>copyFrameBufferRegionToMemory</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a8abbfc784700d0c6ca5d2c46d3a7c022" prot="protected" virt="non-virtual"><scope>touchgfx::LCD</scope><name>defaultColor</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a01d10258588c00a9dbc319dec5bf438b" prot="public" virt="non-virtual"><scope>touchgfx::LCD</scope><name>div255</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a0494b479a5bedee50857441a3410c0f0" prot="public" virt="non-virtual"><scope>touchgfx::LCD</scope><name>div255g</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1afacd4dbc6065589001a1724e20a72d89" prot="public" virt="non-virtual"><scope>touchgfx::LCD</scope><name>div255rb</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1ae9353837bf0e0315d22707167e699834" prot="public" virt="non-virtual"><scope>touchgfx::LCD</scope><name>drawBorder</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a8eddc7eb104e8cec4bc1aced691bda33" prot="protected" virt="pure-virtual"><scope>touchgfx::LCD</scope><name>drawGlyph</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a70ffc766e161d075b1960cbd5c002553" prot="public" virt="non-virtual"><scope>touchgfx::LCD</scope><name>drawHorizontalLine</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a1fcbaa593af61d290572f3cc6cadb4b5" prot="public" virt="pure-virtual"><scope>touchgfx::LCD</scope><name>drawPartialBitmap</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a645bd5f27f0c9cb9c2f876ebfa74adcd" prot="public" virt="non-virtual"><scope>touchgfx::LCD</scope><name>drawRect</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a4dc878f2656170e7c650deb9691dfe0d" prot="public" virt="non-virtual"><scope>touchgfx::LCD</scope><name>drawString</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1ad873554f7095d72458989cc0028b35c3" prot="private" virt="non-virtual"><scope>touchgfx::LCD</scope><name>drawStringFunction</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a7293d1613ef0b0f2b34600dda7e479a2" prot="private" virt="non-virtual"><scope>touchgfx::LCD</scope><name>DrawStringFunctionPointer</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1ab91626235ee315c84da89a97f94378d6" prot="private" virt="non-virtual"><scope>touchgfx::LCD</scope><name>drawStringInternal</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1ae0a681be49719dc2ad8e683111910632" prot="private" virt="non-virtual"><scope>touchgfx::LCD</scope><name>DrawStringInternalFunctionPointer</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1ae465f8bf4e968da70eb903e70998efda" prot="protected" virt="non-virtual"><scope>touchgfx::LCD</scope><name>drawStringLTR</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a97f760546e5938c403d513353f1edd3c" prot="protected" virt="non-virtual"><scope>touchgfx::LCD</scope><name>drawStringRTL</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1ad8fb3432cb487cb339ebfaa0b3948c1b" prot="private" virt="non-virtual"><scope>touchgfx::LCD</scope><name>drawStringRTLInternal</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a5ae3d636be4f7f363b91547142dd0596" prot="private" virt="non-virtual"><scope>touchgfx::LCD</scope><name>drawStringRTLLine</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a6abf85160a59aa0b0ea7a0854105a305" prot="private" virt="non-virtual"><scope>touchgfx::LCD</scope><name>drawStringWidthInternal</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a7b7d73f2ae2a81d2092f725124c82b11" prot="protected" virt="virtual"><scope>touchgfx::LCD</scope><name>drawTextureMapScanLine</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a981b316e67cd1d1c904b2cc9ccbdc3e6" prot="public" virt="non-virtual"><scope>touchgfx::LCD</scope><name>drawTextureMapTriangle</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a27329d16c48dadcd5597192891312d0d" prot="public" virt="non-virtual"><scope>touchgfx::LCD</scope><name>drawVerticalLine</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a813b79e2a2eaada463ca4766259d2975" prot="public" virt="pure-virtual"><scope>touchgfx::LCD</scope><name>fillRect</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1ada15a74dcecaad464123a916cc9e81eb" prot="public" virt="pure-virtual"><scope>touchgfx::LCD</scope><name>framebufferFormat</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1aad6cf0ceaa812e7329fb1ba360d4178b" prot="public" virt="pure-virtual"><scope>touchgfx::LCD</scope><name>framebufferStride</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a6b34e4cedff06f4ebd797e00778077d2" prot="protected" virt="non-virtual"><scope>touchgfx::LCD</scope><name>getAlphaFromA4</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a0d36d0f505c5ee534b2794d06eb122a8" prot="public" virt="pure-virtual"><scope>touchgfx::LCD</scope><name>getBlueColor</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a7a4cf10b0b68239f9e0ab49f05df98ec" prot="public" virt="pure-virtual"><scope>touchgfx::LCD</scope><name>getColorFrom24BitRGB</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a06519cd86f0159cf7f4b585c0fc97be9" prot="public" virt="non-virtual"><scope>touchgfx::LCD</scope><name>getDefaultColor</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a2b8dffe98b2173b4009624e9c44e9709" prot="public" virt="pure-virtual"><scope>touchgfx::LCD</scope><name>getGreenColor</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1aa5c143f2953d271f2adca01f501e97bc" prot="protected" virt="non-virtual"><scope>touchgfx::LCD</scope><name>getNumLines</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a7ead52bf45c6f3c1cb50718405f5123e" prot="public" virt="pure-virtual"><scope>touchgfx::LCD</scope><name>getRedColor</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1ae883ce6179da962d7fac5d0f428ad34b" prot="protected" virt="virtual"><scope>touchgfx::LCD</scope><name>getTextureMapperDrawScanLine</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a9339772ec5ac9fa929938109207f2863" prot="public" virt="virtual"><scope>touchgfx::LCD</scope><name>init</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1af5a21958de35f2ab56be1f202d548ffa" prot="protected" virt="non-virtual"><scope>touchgfx::LCD</scope><name>newLine</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a98fc6d2a734cf2b2e0f6eb3bfdac5077" prot="protected" virt="non-virtual"><scope>touchgfx::LCD</scope><name>realX</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a73ff793fafba8d3b4b2c81a1399b6923" prot="protected" virt="non-virtual"><scope>touchgfx::LCD</scope><name>realY</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1ac1a8020c07c7a5b64aceea2893b9d6ff" prot="protected" virt="non-virtual"><scope>touchgfx::LCD</scope><name>rotateRect</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1ac42fdefb7af476d5d69a1f3d00c25eed" prot="public" virt="non-virtual"><scope>touchgfx::LCD</scope><name>setDefaultColor</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1aee926129c4f45b9e1b9691ff372e4ad9" prot="protected" virt="non-virtual"><scope>touchgfx::LCD</scope><name>stringWidth</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1ae454d635f52a3ac709f6a3c2fca4c75b" prot="private" virt="non-virtual"><scope>touchgfx::LCD</scope><name>textureMapperClass</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a50af83d0758f69f7c290e54cf1971ba8" prot="public" virt="virtual"><scope>touchgfx::LCD</scope><name>~LCD</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

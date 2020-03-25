@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="dir_5eae9ec9ab8b43310260374554d16087" kind="dir">
+    <compoundname>touchgfx/canvas_widget_renderer</compoundname>
+    <innerfile refid="_canvas_widget_renderer_8hpp">CanvasWidgetRenderer.hpp</innerfile>
+    <innerfile refid="_cell_8hpp">Cell.hpp</innerfile>
+    <innerfile refid="_outline_8hpp">Outline.hpp</innerfile>
+    <innerfile refid="_rasterizer_8hpp">Rasterizer.hpp</innerfile>
+    <innerfile refid="_renderer_8hpp">Renderer.hpp</innerfile>
+    <innerfile refid="_rendering_buffer_8hpp">RenderingBuffer.hpp</innerfile>
+    <innerfile refid="_scanline_8hpp">Scanline.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="touchgfx/canvas_widget_renderer/"/>
+  </compounddef>
+</doxygen>

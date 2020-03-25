@@ -1,0 +1,859 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_swipe_container" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::SwipeContainer</compoundname>
+    <basecompoundref refid="classtouchgfx_1_1_container" prot="public" virt="non-virtual">Container</basecompoundref>
+    <includes local="no">SwipeContainer.hpp</includes>
+    <innerclass refid="classtouchgfx_1_1_swipe_container_1_1_page_indicator" prot="private">touchgfx::SwipeContainer::PageIndicator</innerclass>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="classtouchgfx_1_1_swipe_container_1a808e5cd4979462d3bbe3070d7d147444" prot="private" static="no" strong="no">
+        <type></type>
+        <name>States</name>
+        <enumvalue id="classtouchgfx_1_1_swipe_container_1a808e5cd4979462d3bbe3070d7d147444a5859d5b76d31d8c5bbc9e2913c9f3aa5" prot="private">
+          <name>ANIMATE_SWIPE_CANCELLED_LEFT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtouchgfx_1_1_swipe_container_1a808e5cd4979462d3bbe3070d7d147444aa73746630dbb0fb642e9ac9a55f1b684" prot="private">
+          <name>ANIMATE_SWIPE_CANCELLED_RIGHT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtouchgfx_1_1_swipe_container_1a808e5cd4979462d3bbe3070d7d147444aef1c983bd429f084d90a94af795b6cfa" prot="private">
+          <name>ANIMATE_LEFT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtouchgfx_1_1_swipe_container_1a808e5cd4979462d3bbe3070d7d147444a98f0115109cae7bf6815a4782594aaf5" prot="private">
+          <name>ANIMATE_RIGHT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtouchgfx_1_1_swipe_container_1a808e5cd4979462d3bbe3070d7d147444a8896943db4557c56942719802df5d591" prot="private">
+          <name>NO_ANIMATION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SwipeContainer.hpp" line="120" column="1" bodyfile="touchgfx/containers/SwipeContainer.hpp" bodystart="119" bodyend="126"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_swipe_container_1a0d683e677d9ebabbd1909b4424719e6c" prot="private" static="yes" mutable="no">
+        <type>const int16_t</type>
+        <definition>const int16_t DRAG_CANCEL_THRESHOLD</definition>
+        <argsstring></argsstring>
+        <name>DRAG_CANCEL_THRESHOLD</name>
+        <initializer>= 3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SwipeContainer.hpp" line="117" column="1" bodyfile="touchgfx/containers/SwipeContainer.hpp" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_swipe_container_1aa232500c0da4944772934c0a0abb9a1d" prot="private" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t animateDistance</definition>
+        <argsstring></argsstring>
+        <name>animateDistance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SwipeContainer.hpp" line="132" column="1" bodyfile="touchgfx/containers/SwipeContainer.hpp" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_swipe_container_1a5012e585088b0f60cd914b1d780c4e20" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t animationCounter</definition>
+        <argsstring></argsstring>
+        <name>animationCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SwipeContainer.hpp" line="129" column="1" bodyfile="touchgfx/containers/SwipeContainer.hpp" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_swipe_container_1afab071b5ffe655a02fa7f6812ab2bfdf" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t currentPage</definition>
+        <argsstring></argsstring>
+        <name>currentPage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SwipeContainer.hpp" line="134" column="1" bodyfile="touchgfx/containers/SwipeContainer.hpp" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_swipe_container_1af1704b0a1a0fcb9721640eb243b15577" prot="private" static="no" mutable="no">
+        <type>enum touchgfx::SwipeContainer::States</type>
+        <definition>enum touchgfx::SwipeContainer::States  currentState</definition>
+        <argsstring></argsstring>
+        <name>currentState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SwipeContainer.hpp" line="126" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_swipe_container_1aee2ce1642f61876217b2b40a6d9808f1" prot="private" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t dragX</definition>
+        <argsstring></argsstring>
+        <name>dragX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SwipeContainer.hpp" line="131" column="1" bodyfile="touchgfx/containers/SwipeContainer.hpp" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_swipe_container_1ab39b2d61e0a2ec2258fe1a16391c8abc" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t endElasticWidth</definition>
+        <argsstring></argsstring>
+        <name>endElasticWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SwipeContainer.hpp" line="135" column="1" bodyfile="touchgfx/containers/SwipeContainer.hpp" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_swipe_container_1ab32f103b1567f0677811b61288a1243c" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t numberOfPages</definition>
+        <argsstring></argsstring>
+        <name>numberOfPages</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SwipeContainer.hpp" line="128" column="1" bodyfile="touchgfx/containers/SwipeContainer.hpp" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_swipe_container_1ae710515af234f36ba3d22145c77df368" prot="private" static="no" mutable="no">
+        <type>touchgfx::SwipeContainer::PageIndicator</type>
+        <definition> touchgfx::SwipeContainer::PageIndicator  pageIndicator</definition>
+        <argsstring></argsstring>
+        <name>pageIndicator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SwipeContainer.hpp" line="162" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_swipe_container_1ae262a58d99cc3c5cb0f6bd6afa9ed216" prot="private" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_list_layout" kindref="compound">ListLayout</ref></type>
+        <definition>ListLayout pages</definition>
+        <argsstring></argsstring>
+        <name>pages</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SwipeContainer.hpp" line="137" column="1" bodyfile="touchgfx/containers/SwipeContainer.hpp" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_swipe_container_1a9bc6f82da1c320650b515b625b1e75db" prot="private" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t startX</definition>
+        <argsstring></argsstring>
+        <name>startX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SwipeContainer.hpp" line="133" column="1" bodyfile="touchgfx/containers/SwipeContainer.hpp" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_swipe_container_1a0c1a11b1c03422a38b47e1d12a31ee0f" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t swipeCutoff</definition>
+        <argsstring></argsstring>
+        <name>swipeCutoff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SwipeContainer.hpp" line="130" column="1" bodyfile="touchgfx/containers/SwipeContainer.hpp" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_swipe_container_1ad731fe04f38ffd88e6f33fd5a0e5d9d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void add</definition>
+        <argsstring>(Drawable &amp;page)</argsstring>
+        <name>add</name>
+        <reimplements refid="classtouchgfx_1_1_container_1a302ad1a4da6fe171eb249828bd8dc7ab">add</reimplements>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> &amp;</type>
+          <declname>page</declname>
+        </param>
+        <briefdescription>
+<para>Adds a page to the container. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">page</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The page to add.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>All pages must have the same width and height. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SwipeContainer.hpp" line="39" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_swipe_container_1a3251976b03a8eb36c6aaa18ba0df1b71" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t getNumberOfPages</definition>
+        <argsstring>()</argsstring>
+        <name>getNumberOfPages</name>
+        <briefdescription>
+<para>Gets number of pages. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The number of pages. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SwipeContainer.hpp" line="104" column="1" bodyfile="touchgfx/containers/SwipeContainer.hpp" bodystart="104" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_swipe_container_1a7f1524b90bc90e5f6cf7ee47aae12123" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void handleClickEvent</definition>
+        <argsstring>(const ClickEvent &amp;evt)</argsstring>
+        <name>handleClickEvent</name>
+        <reimplements refid="classtouchgfx_1_1_drawable_1a7f1524b90bc90e5f6cf7ee47aae12123">handleClickEvent</reimplements>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_click_event" kindref="compound">ClickEvent</ref> &amp;</type>
+          <declname>evt</declname>
+        </param>
+        <briefdescription>
+<para>Defines the event handler interface for ClickEvents. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default implementation ignores the event. The event is only received if the <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> is touchable and visible.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>evt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classtouchgfx_1_1_click_event" kindref="compound">ClickEvent</ref> received from the <ref refid="classtouchgfx_1_1_h_a_l" kindref="compound">HAL</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SwipeContainer.hpp" line="28" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_swipe_container_1a06ae1946b2124cc94e26cfe18728debf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void handleDragEvent</definition>
+        <argsstring>(const DragEvent &amp;evt)</argsstring>
+        <name>handleDragEvent</name>
+        <reimplements refid="classtouchgfx_1_1_drawable_1a06ae1946b2124cc94e26cfe18728debf">handleDragEvent</reimplements>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_drag_event" kindref="compound">DragEvent</ref> &amp;</type>
+          <declname>evt</declname>
+        </param>
+        <briefdescription>
+<para>Defines the event handler interface for DragEvents. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default implementation ignores the event. The event is only received if the drawable is touchable and visible.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>evt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classtouchgfx_1_1_drag_event" kindref="compound">DragEvent</ref> received from the <ref refid="classtouchgfx_1_1_h_a_l" kindref="compound">HAL</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SwipeContainer.hpp" line="29" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_swipe_container_1a4db4945ecbc2303bf860e082409b8029" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void handleGestureEvent</definition>
+        <argsstring>(const GestureEvent &amp;evt)</argsstring>
+        <name>handleGestureEvent</name>
+        <reimplements refid="classtouchgfx_1_1_drawable_1a4db4945ecbc2303bf860e082409b8029">handleGestureEvent</reimplements>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_gesture_event" kindref="compound">GestureEvent</ref> &amp;</type>
+          <declname>evt</declname>
+        </param>
+        <briefdescription>
+<para>Defines the event handler interface for GestureEvents. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default implementation ignores the event. The event is only received if the <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> is touchable and visible.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>evt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classtouchgfx_1_1_gesture_event" kindref="compound">GestureEvent</ref> received from the <ref refid="classtouchgfx_1_1_h_a_l" kindref="compound">HAL</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SwipeContainer.hpp" line="30" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_swipe_container_1a1af635cee0f186c3d0fcea60bac14355" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void handleTickEvent</definition>
+        <argsstring>()</argsstring>
+        <name>handleTickEvent</name>
+        <reimplements refid="classtouchgfx_1_1_drawable_1a1af635cee0f186c3d0fcea60bac14355">handleTickEvent</reimplements>
+        <briefdescription>
+<para>Called periodically by the framework if the <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> instance has subscribed to timer ticks. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_application_1a5c54374756338ccf158b197f64470345" kindref="member">Application::registerTimerWidget</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SwipeContainer.hpp" line="27" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_swipe_container_1a0da696c82638b980a479c326ececa061" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void remove</definition>
+        <argsstring>(Drawable &amp;page)</argsstring>
+        <name>remove</name>
+        <reimplements refid="classtouchgfx_1_1_container_1a4d9056af30ab3c61da25a71023a341f2">remove</reimplements>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> &amp;</type>
+          <declname>page</declname>
+        </param>
+        <briefdescription>
+<para>Removes the page from the container. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">page</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The page to remove.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This is safe to call even if page is not a page (in which case nothing happens). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SwipeContainer.hpp" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_swipe_container_1a43fa67bbed0dcceea2ff361b9ee95007" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setEndSwipeElasticWidth</definition>
+        <argsstring>(uint16_t width)</argsstring>
+        <name>setEndSwipeElasticWidth</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+<para>When dragging either one of the end pages a part of the background will become visible until the user stop dragging and the end page swipes back to its position. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The width of this area is set by this method.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The width in pixels. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SwipeContainer.hpp" line="97" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_swipe_container_1a8f294f2370b14a477b3ffd934d13fe81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setPageIndicatorBitmaps</definition>
+        <argsstring>(const Bitmap &amp;normalPage, const Bitmap &amp;highlightedPage)</argsstring>
+        <name>setPageIndicatorBitmaps</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> &amp;</type>
+          <declname>normalPage</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> &amp;</type>
+          <declname>highlightedPage</declname>
+        </param>
+        <briefdescription>
+<para>Sets the bitmaps that are used by the page indicator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The bitmap for the normal page is repeated side-by-side and the bitmap for a highlighted page is put in the proper position.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>normalPage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The normal page. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>highlightedPage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The highlighted page. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SwipeContainer.hpp" line="88" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_swipe_container_1a8c71eb2ebdc3eb7ef98136c296ddfbf4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setPageIndicatorXY</definition>
+        <argsstring>(int16_t x, int16_t y)</argsstring>
+        <name>setPageIndicatorXY</name>
+        <param>
+          <type>int16_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Sets the x and y position of the page indicator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_swipe_container_1a4aac5abaa725f8c80a65380f535a707d" kindref="member">setPageIndicatorXYWithCenteredX</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SwipeContainer.hpp" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_swipe_container_1a4aac5abaa725f8c80a65380f535a707d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setPageIndicatorXYWithCenteredX</definition>
+        <argsstring>(int16_t x, int16_t y)</argsstring>
+        <name>setPageIndicatorXYWithCenteredX</name>
+        <param>
+          <type>int16_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Sets the x and y position of the page indicator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The value specified as x will be the center coordinate of the page indicators.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The center x coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This method should not be used until all pages have been added, the <ref refid="classtouchgfx_1_1_swipe_container_1a8f294f2370b14a477b3ffd934d13fe81" kindref="member">setPageIndicatorBitmaps()</ref> has been called and the page indicator therefore has the correct width. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SwipeContainer.hpp" line="78" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_swipe_container_1a5ab2097150a324b3fbee327d5ba8e7c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setSelectedPage</definition>
+        <argsstring>(uint8_t pageIndex)</argsstring>
+        <name>setSelectedPage</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>pageIndex</declname>
+        </param>
+        <briefdescription>
+<para>Sets the selected page. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pageIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Zero-based index of the page. Range from 0 to numberOfPages-1. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SwipeContainer.hpp" line="114" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_swipe_container_1a4fcb2d9c3cc3bd1afb0c7a887ec27ab5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setSwipeCutoff</definition>
+        <argsstring>(uint16_t cutoff)</argsstring>
+        <name>setSwipeCutoff</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>cutoff</declname>
+        </param>
+        <briefdescription>
+<para>Set the swipe cutoff which indicates how far you should drag a page before it results in a page change. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cutoff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cutoff in pixels. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SwipeContainer.hpp" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_swipe_container_1aa4307f39d040f32d4af63f3c636a9fed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SwipeContainer</definition>
+        <argsstring>()</argsstring>
+        <name>SwipeContainer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SwipeContainer.hpp" line="24" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_swipe_container_1ad8fd153556a0c15633c9b4227bd2246e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual ~SwipeContainer</definition>
+        <argsstring>()</argsstring>
+        <name>~SwipeContainer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SwipeContainer.hpp" line="25" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_swipe_container_1aa33849dd70529aa2fe368e10646bbe5c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void adjustPages</definition>
+        <argsstring>()</argsstring>
+        <name>adjustPages</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SwipeContainer.hpp" line="139" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_swipe_container_1a4807fbb187072b65ae3e0e8c36ec9350" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void animateLeft</definition>
+        <argsstring>()</argsstring>
+        <name>animateLeft</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SwipeContainer.hpp" line="143" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_swipe_container_1af5828df8c05c47418dcac6409055daf7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void animateRight</definition>
+        <argsstring>()</argsstring>
+        <name>animateRight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SwipeContainer.hpp" line="144" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_swipe_container_1a928184bde515eb248123961852f2b028" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void animateSwipeCancelledLeft</definition>
+        <argsstring>()</argsstring>
+        <name>animateSwipeCancelledLeft</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SwipeContainer.hpp" line="141" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_swipe_container_1afeef93b89470d34107d0a2c3b9931ece" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void animateSwipeCancelledRight</definition>
+        <argsstring>()</argsstring>
+        <name>animateSwipeCancelledRight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SwipeContainer.hpp" line="142" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A <ref refid="classtouchgfx_1_1_swipe_container" kindref="compound">SwipeContainer</ref> is a <ref refid="classtouchgfx_1_1_container" kindref="compound">Container</ref> with a horizontally laid out list of identically sized Drawables. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The bottom of the <ref refid="classtouchgfx_1_1_swipe_container" kindref="compound">SwipeContainer</ref> shows a page indicator to indicate the position in the horizontal list of items in the <ref refid="classtouchgfx_1_1_swipe_container" kindref="compound">SwipeContainer</ref>.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_list_layout" kindref="compound">ListLayout</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1535">
+        <label>Container</label>
+        <link refid="classtouchgfx_1_1_container"/>
+        <childnode refid="1536" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1536">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+      </node>
+      <node id="1534">
+        <label>SwipeContainer</label>
+        <link refid="classtouchgfx_1_1_swipe_container"/>
+        <childnode refid="1535" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1538">
+        <label>Container</label>
+        <link refid="classtouchgfx_1_1_container"/>
+        <childnode refid="1539" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1539" relation="usage">
+          <edgelabel>firstChild</edgelabel>
+        </childnode>
+      </node>
+      <node id="1540">
+        <label>Rect</label>
+        <link refid="classtouchgfx_1_1_rect"/>
+      </node>
+      <node id="1539">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+        <childnode refid="1540" relation="usage">
+          <edgelabel>rect</edgelabel>
+        </childnode>
+        <childnode refid="1539" relation="usage">
+          <edgelabel>nextSibling</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="1537">
+        <label>SwipeContainer</label>
+        <link refid="classtouchgfx_1_1_swipe_container"/>
+        <childnode refid="1538" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/containers/SwipeContainer.hpp" line="22" column="1" bodyfile="touchgfx/containers/SwipeContainer.hpp" bodystart="21" bodyend="163"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_swipe_container_1ad731fe04f38ffd88e6f33fd5a0e5d9d1" prot="public" virt="virtual"><scope>touchgfx::SwipeContainer</scope><name>add</name></member>
+      <member refid="classtouchgfx_1_1_swipe_container_1aa33849dd70529aa2fe368e10646bbe5c" prot="private" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>adjustPages</name></member>
+      <member refid="classtouchgfx_1_1_swipe_container_1a808e5cd4979462d3bbe3070d7d147444aef1c983bd429f084d90a94af795b6cfa" prot="private" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>ANIMATE_LEFT</name></member>
+      <member refid="classtouchgfx_1_1_swipe_container_1a808e5cd4979462d3bbe3070d7d147444a98f0115109cae7bf6815a4782594aaf5" prot="private" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>ANIMATE_RIGHT</name></member>
+      <member refid="classtouchgfx_1_1_swipe_container_1a808e5cd4979462d3bbe3070d7d147444a5859d5b76d31d8c5bbc9e2913c9f3aa5" prot="private" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>ANIMATE_SWIPE_CANCELLED_LEFT</name></member>
+      <member refid="classtouchgfx_1_1_swipe_container_1a808e5cd4979462d3bbe3070d7d147444aa73746630dbb0fb642e9ac9a55f1b684" prot="private" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>ANIMATE_SWIPE_CANCELLED_RIGHT</name></member>
+      <member refid="classtouchgfx_1_1_swipe_container_1aa232500c0da4944772934c0a0abb9a1d" prot="private" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>animateDistance</name></member>
+      <member refid="classtouchgfx_1_1_swipe_container_1a4807fbb187072b65ae3e0e8c36ec9350" prot="private" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>animateLeft</name></member>
+      <member refid="classtouchgfx_1_1_swipe_container_1af5828df8c05c47418dcac6409055daf7" prot="private" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>animateRight</name></member>
+      <member refid="classtouchgfx_1_1_swipe_container_1a928184bde515eb248123961852f2b028" prot="private" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>animateSwipeCancelledLeft</name></member>
+      <member refid="classtouchgfx_1_1_swipe_container_1afeef93b89470d34107d0a2c3b9931ece" prot="private" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>animateSwipeCancelledRight</name></member>
+      <member refid="classtouchgfx_1_1_swipe_container_1a5012e585088b0f60cd914b1d780c4e20" prot="private" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>animationCounter</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae2d939b2a9c253f0fb3bae3ec7be4e2f" prot="public" virt="virtual"><scope>touchgfx::SwipeContainer</scope><name>childGeometryChanged</name></member>
+      <member refid="classtouchgfx_1_1_container_1ac92243515043dff4fd93c987b894b017" prot="public" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>Container</name></member>
+      <member refid="classtouchgfx_1_1_container_1a0109ca3d59d6ced431a24313fef18803" prot="public" virt="virtual"><scope>touchgfx::SwipeContainer</scope><name>contains</name></member>
+      <member refid="classtouchgfx_1_1_swipe_container_1afab071b5ffe655a02fa7f6812ab2bfdf" prot="private" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>currentPage</name></member>
+      <member refid="classtouchgfx_1_1_swipe_container_1af1704b0a1a0fcb9721640eb243b15577" prot="private" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>currentState</name></member>
+      <member refid="classtouchgfx_1_1_swipe_container_1a0d683e677d9ebabbd1909b4424719e6c" prot="private" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>DRAG_CANCEL_THRESHOLD</name></member>
+      <member refid="classtouchgfx_1_1_swipe_container_1aee2ce1642f61876217b2b40a6d9808f1" prot="private" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>dragX</name></member>
+      <member refid="classtouchgfx_1_1_container_1a1277d4bddd51dbc604de265fb70ccbfd" prot="public" virt="virtual"><scope>touchgfx::SwipeContainer</scope><name>draw</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9cf3a85fa7554475fa42c97985bda6df" prot="public" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>Drawable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4a009ec2b654351679a0124e9055abdc" prot="public" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>drawToDynamicBitmap</name></member>
+      <member refid="classtouchgfx_1_1_swipe_container_1ab39b2d61e0a2ec2258fe1a16391c8abc" prot="private" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>endElasticWidth</name></member>
+      <member refid="classtouchgfx_1_1_container_1a15fc4ae5c33721f5f425b20640217f22" prot="protected" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>firstChild</name></member>
+      <member refid="classtouchgfx_1_1_container_1a2b224826cd4f0f674009c21d6821f525" prot="public" virt="virtual"><scope>touchgfx::SwipeContainer</scope><name>forEachChild</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa7737d9d49d7f55ec9bde8f2c9751b1d" prot="public" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>getAbsoluteRect</name></member>
+      <member refid="classtouchgfx_1_1_container_1a47e8a844fa50b171656f8355fd8e313b" prot="protected" virt="virtual"><scope>touchgfx::SwipeContainer</scope><name>getContainedArea</name></member>
+      <member refid="classtouchgfx_1_1_container_1a35ae5c9547dd1861f70b5e4f0f9b94b3" prot="public" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>getFirstChild</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ad00483821e06fe4d0d70222de4135d30" prot="public" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>getHeight</name></member>
+      <member refid="classtouchgfx_1_1_container_1a6bc8e89dc7f879221e9862fb27dc726f" prot="public" virt="virtual"><scope>touchgfx::SwipeContainer</scope><name>getLastChild</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a61c9b2bf703c49a6d238d354ddcaedb3" prot="public" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>getNextSibling</name></member>
+      <member refid="classtouchgfx_1_1_swipe_container_1a3251976b03a8eb36c6aaa18ba0df1b71" prot="public" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>getNumberOfPages</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a013e065d4d9a10dbfa0ddee9a35582a3" prot="public" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>getParent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af23a5bb7d473e16363a449c497586be3" prot="public" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>getRect</name></member>
+      <member refid="classtouchgfx_1_1_container_1a4dcdd780e93cc783a2ceeda00c6f3b51" prot="public" virt="virtual"><scope>touchgfx::SwipeContainer</scope><name>getSolidRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4783dfe657ff1b7a33261bda8c4b4266" prot="public" virt="virtual"><scope>touchgfx::SwipeContainer</scope><name>getSolidRectAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a83b8847f583b63e60aa4bf778261ddd7" prot="public" virt="virtual"><scope>touchgfx::SwipeContainer</scope><name>getVisibleRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1acae58162aaca6fc174416550f76668e7" prot="public" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>getWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac071e9b7ccf37179df7d29c6778b664c" prot="public" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>getX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a26752e6cff4607d0eec8768ef6d9032a" prot="public" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>getY</name></member>
+      <member refid="classtouchgfx_1_1_swipe_container_1a7f1524b90bc90e5f6cf7ee47aae12123" prot="public" virt="virtual"><scope>touchgfx::SwipeContainer</scope><name>handleClickEvent</name></member>
+      <member refid="classtouchgfx_1_1_swipe_container_1a06ae1946b2124cc94e26cfe18728debf" prot="public" virt="virtual"><scope>touchgfx::SwipeContainer</scope><name>handleDragEvent</name></member>
+      <member refid="classtouchgfx_1_1_swipe_container_1a4db4945ecbc2303bf860e082409b8029" prot="public" virt="virtual"><scope>touchgfx::SwipeContainer</scope><name>handleGestureEvent</name></member>
+      <member refid="classtouchgfx_1_1_swipe_container_1a1af635cee0f186c3d0fcea60bac14355" prot="public" virt="virtual"><scope>touchgfx::SwipeContainer</scope><name>handleTickEvent</name></member>
+      <member refid="classtouchgfx_1_1_container_1aca896b17460628dceeac8b01553b6a00" prot="public" virt="virtual"><scope>touchgfx::SwipeContainer</scope><name>insert</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2800b4c18c63e9e7b1f85a74ce6b80c3" prot="public" virt="virtual"><scope>touchgfx::SwipeContainer</scope><name>invalidate</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a130cf6e1bf2b9f04f48e659758fa75e2" prot="public" virt="virtual"><scope>touchgfx::SwipeContainer</scope><name>invalidateRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a01c717b9abc98d48673b79d691c2d28a" prot="public" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>isTouchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9d8a6cfb13917785c143e74d40e4e2be" prot="public" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>isVisible</name></member>
+      <member refid="classtouchgfx_1_1_container_1add539b68574f09b364f0b4e6a312b9b0" prot="protected" virt="virtual"><scope>touchgfx::SwipeContainer</scope><name>moveChildrenRelative</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af3590480070e2cf91580976f322d2c5e" prot="public" virt="virtual"><scope>touchgfx::SwipeContainer</scope><name>moveRelative</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aadc5abfad4d2fcc331cf8de8713dc00e" prot="public" virt="virtual"><scope>touchgfx::SwipeContainer</scope><name>moveTo</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0da4a00c3fbdea5740e52c7e04316c65" prot="protected" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>nextSibling</name></member>
+      <member refid="classtouchgfx_1_1_swipe_container_1a808e5cd4979462d3bbe3070d7d147444a8896943db4557c56942719802df5d591" prot="private" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>NO_ANIMATION</name></member>
+      <member refid="classtouchgfx_1_1_swipe_container_1ab32f103b1567f0677811b61288a1243c" prot="private" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>numberOfPages</name></member>
+      <member refid="classtouchgfx_1_1_swipe_container_1ae710515af234f36ba3d22145c77df368" prot="private" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>pageIndicator</name></member>
+      <member refid="classtouchgfx_1_1_swipe_container_1ae262a58d99cc3c5cb0f6bd6afa9ed216" prot="private" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>pages</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ab77c13cde2b01107dcbc5c2b584d422f" prot="protected" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>parent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2a955ddc316d002f566598f340eb2af9" prot="protected" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>rect</name></member>
+      <member refid="classtouchgfx_1_1_swipe_container_1a0da696c82638b980a479c326ececa061" prot="public" virt="virtual"><scope>touchgfx::SwipeContainer</scope><name>remove</name></member>
+      <member refid="classtouchgfx_1_1_container_1a4e62c805a8478320f1e650e6a635b31a" prot="public" virt="virtual"><scope>touchgfx::SwipeContainer</scope><name>removeAll</name></member>
+      <member refid="classtouchgfx_1_1_swipe_container_1a43fa67bbed0dcceea2ff361b9ee95007" prot="public" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>setEndSwipeElasticWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a47a6312407603de99247bb802dbd8a48" prot="public" virt="virtual"><scope>touchgfx::SwipeContainer</scope><name>setHeight</name></member>
+      <member refid="classtouchgfx_1_1_swipe_container_1a8f294f2370b14a477b3ffd934d13fe81" prot="public" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>setPageIndicatorBitmaps</name></member>
+      <member refid="classtouchgfx_1_1_swipe_container_1a8c71eb2ebdc3eb7ef98136c296ddfbf4" prot="public" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>setPageIndicatorXY</name></member>
+      <member refid="classtouchgfx_1_1_swipe_container_1a4aac5abaa725f8c80a65380f535a707d" prot="public" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>setPageIndicatorXYWithCenteredX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac218c371450d8ad2bed3e1b07965a41a" prot="public" virt="virtual"><scope>touchgfx::SwipeContainer</scope><name>setPosition</name></member>
+      <member refid="classtouchgfx_1_1_swipe_container_1a5ab2097150a324b3fbee327d5ba8e7c3" prot="public" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>setSelectedPage</name></member>
+      <member refid="classtouchgfx_1_1_swipe_container_1a4fcb2d9c3cc3bd1afb0c7a887ec27ab5" prot="public" virt="virtual"><scope>touchgfx::SwipeContainer</scope><name>setSwipeCutoff</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae4c38eadb852b153850ea7ded1f50a19" prot="public" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>setTouchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a71639c6634c5dcf6d1bb21b8b1b61f5b" prot="public" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>setVisible</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae74a37f71d23440fc8b0466ad8ecfe4b" prot="public" virt="virtual"><scope>touchgfx::SwipeContainer</scope><name>setWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9f6db7f34a74e991fc446fffb5703a53" prot="public" virt="virtual"><scope>touchgfx::SwipeContainer</scope><name>setX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6c86659dc1e7355c207e9c0aa18af167" prot="public" virt="virtual"><scope>touchgfx::SwipeContainer</scope><name>setXY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1b08d48e7e23a046f09e63089bc82bc1" prot="public" virt="virtual"><scope>touchgfx::SwipeContainer</scope><name>setY</name></member>
+      <member refid="classtouchgfx_1_1_swipe_container_1a9bc6f82da1c320650b515b625b1e75db" prot="private" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>startX</name></member>
+      <member refid="classtouchgfx_1_1_swipe_container_1a808e5cd4979462d3bbe3070d7d147444" prot="private" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>States</name></member>
+      <member refid="classtouchgfx_1_1_swipe_container_1aa4307f39d040f32d4af63f3c636a9fed" prot="public" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>SwipeContainer</name></member>
+      <member refid="classtouchgfx_1_1_swipe_container_1a0c1a11b1c03422a38b47e1d12a31ee0f" prot="private" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>swipeCutoff</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0d014de134cb9b9c1c361fcd726a5f34" prot="protected" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>touchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a48c1d14ac943dbfa4935ea39db950608" prot="public" virt="virtual"><scope>touchgfx::SwipeContainer</scope><name>translateRectToAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_container_1a23f8fdbaba5449e55efb7a14a96b657d" prot="public" virt="virtual"><scope>touchgfx::SwipeContainer</scope><name>unlink</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa54a57ae048476d840caf6d4d2c47aa3" prot="protected" virt="non-virtual"><scope>touchgfx::SwipeContainer</scope><name>visible</name></member>
+      <member refid="classtouchgfx_1_1_container_1a316105bb0065103f6190b08783144c33" prot="public" virt="virtual"><scope>touchgfx::SwipeContainer</scope><name>~Container</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6bb040a11ffc2bd641283cc0bc0d1346" prot="public" virt="virtual"><scope>touchgfx::SwipeContainer</scope><name>~Drawable</name></member>
+      <member refid="classtouchgfx_1_1_swipe_container_1ad8fd153556a0c15633c9b4227bd2246e" prot="public" virt="virtual"><scope>touchgfx::SwipeContainer</scope><name>~SwipeContainer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

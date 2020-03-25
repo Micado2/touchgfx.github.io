@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>TouchGFX API Documentation</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><anchor id="index_1Introduction"/> <heading level="1">Introduction</heading>
+</para>
+<para>Welcome to the TouchGFX Manual! The sections contained within embody the complete documentation of the TouchGFX graphics framework and the toolchain that supports it. If you are new to TouchGFX we recommended that you, as a start, read the following topics to get a solid understanding of the framework and how to get from source code to running application. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

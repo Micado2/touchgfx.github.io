@@ -1,0 +1,319 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_scroll_wheel" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::ScrollWheel</compoundname>
+    <basecompoundref refid="classtouchgfx_1_1_scroll_wheel_base" prot="public" virt="non-virtual">ScrollWheelBase</basecompoundref>
+    <includes local="no">ScrollWheel.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_scroll_wheel_1adb00eeb56d315d52ca530a319f808ed0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ScrollWheel</definition>
+        <argsstring>()</argsstring>
+        <name>ScrollWheel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/scrollers/ScrollWheel.hpp" line="28" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_scroll_wheel_1adf3a3108fbb96919fcff90cd1de02e5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setDrawables</definition>
+        <argsstring>(DrawableListItemsInterface &amp;drawableListItems, GenericCallback&lt; DrawableListItemsInterface *, int16_t, int16_t &gt; &amp;updateDrawableCallback)</argsstring>
+        <name>setDrawables</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_drawable_list_items_interface" kindref="compound">DrawableListItemsInterface</ref> &amp;</type>
+          <declname>drawableListItems</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_generic_callback" kindref="compound">GenericCallback</ref>&lt; <ref refid="classtouchgfx_1_1_drawable_list_items_interface" kindref="compound">DrawableListItemsInterface</ref> *, int16_t, int16_t &gt; &amp;</type>
+          <declname>updateDrawableCallback</declname>
+        </param>
+        <briefdescription>
+<para>Sets the drawables used by the scroll wheel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The drawables are updated through a callback will put the right data in the drawable.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">drawableListItems</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of drawables. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">updateDrawableCallback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The update drawable callback. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/scrollers/ScrollWheel.hpp" line="39" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_scroll_wheel_1a219e46dd5133913509d43b87fdca5b0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual ~ScrollWheel</definition>
+        <argsstring>()</argsstring>
+        <name>~ScrollWheel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/scrollers/ScrollWheel.hpp" line="30" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A scroll wheel is very much like the digit selector on a padlock with numbers. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The digits always snap into place and exactly one number is always the &quot;selected&quot; number. Thus, a scroll wheel is a list of identically styled drawables which can be scrolled through. One of the items in the list is the &quot;selected&quot; one, and scrolling through the list can be done in various ways. The <ref refid="classtouchgfx_1_1_scroll_wheel" kindref="compound">ScrollWheel</ref> uses the <ref refid="classtouchgfx_1_1_drawable_list" kindref="compound">DrawableList</ref> to make it possible to handle a huge number of items using only a limited number of drawables by reusing drawables that are no longer in view.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_scroll_wheel_base" kindref="compound">ScrollWheelBase</ref>, <ref refid="classtouchgfx_1_1_drawable_list" kindref="compound">DrawableList</ref>, <ref refid="classtouchgfx_1_1_scroll_wheel_with_selection_style" kindref="compound">ScrollWheelWithSelectionStyle</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1407">
+        <label>ScrollWheelBase</label>
+        <link refid="classtouchgfx_1_1_scroll_wheel_base"/>
+        <childnode refid="1408" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1409">
+        <label>Container</label>
+        <link refid="classtouchgfx_1_1_container"/>
+        <childnode refid="1410" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1406">
+        <label>ScrollWheel</label>
+        <link refid="classtouchgfx_1_1_scroll_wheel"/>
+        <childnode refid="1407" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1408">
+        <label>ScrollBase</label>
+        <link refid="classtouchgfx_1_1_scroll_base"/>
+        <childnode refid="1409" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1410">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1412">
+        <label>ScrollWheelBase</label>
+        <link refid="classtouchgfx_1_1_scroll_wheel_base"/>
+        <childnode refid="1413" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1419" relation="usage">
+          <edgelabel>animateToCallback</edgelabel>
+        </childnode>
+      </node>
+      <node id="1414">
+        <label>Container</label>
+        <link refid="classtouchgfx_1_1_container"/>
+        <childnode refid="1415" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1415" relation="usage">
+          <edgelabel>firstChild</edgelabel>
+        </childnode>
+      </node>
+      <node id="1416">
+        <label>Rect</label>
+        <link refid="classtouchgfx_1_1_rect"/>
+      </node>
+      <node id="1411">
+        <label>ScrollWheel</label>
+        <link refid="classtouchgfx_1_1_scroll_wheel"/>
+        <childnode refid="1412" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1413">
+        <label>ScrollBase</label>
+        <link refid="classtouchgfx_1_1_scroll_base"/>
+        <childnode refid="1414" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1417" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+        <childnode refid="1418" relation="usage">
+          <edgelabel>itemLockedInCallback</edgelabel>
+          <edgelabel>animationEndedCallback</edgelabel>
+        </childnode>
+        <childnode refid="1419" relation="usage">
+          <edgelabel>itemPressedCallback</edgelabel>
+          <edgelabel>itemSelectedCallback</edgelabel>
+        </childnode>
+      </node>
+      <node id="1419">
+        <label>GenericCallback&lt; int16_t &gt;</label>
+        <link refid="classtouchgfx_1_1_generic_callback"/>
+      </node>
+      <node id="1417">
+        <label>DrawableList</label>
+        <link refid="classtouchgfx_1_1_drawable_list"/>
+        <childnode refid="1414" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1415">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+        <childnode refid="1416" relation="usage">
+          <edgelabel>rect</edgelabel>
+        </childnode>
+        <childnode refid="1415" relation="usage">
+          <edgelabel>nextSibling</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="1418">
+        <label>GenericCallback&lt; T1, T2, T3 &gt;</label>
+        <link refid="classtouchgfx_1_1_generic_callback"/>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/containers/scrollers/ScrollWheel.hpp" line="26" column="1" bodyfile="touchgfx/containers/scrollers/ScrollWheel.hpp" bodystart="25" bodyend="40"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_container_1a302ad1a4da6fe171eb249828bd8dc7ab" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>add</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a9345fca127161fa9c8123c09d4804840" prot="public" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>allowHorizontalDrag</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a6c61d7069fd9c539ec87baba40080d9a" prot="public" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>allowVerticalDrag</name></member>
+      <member refid="classtouchgfx_1_1_scroll_wheel_base_1aaec231119805443d7d09e811ef357883" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>animateToCallback</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1adcb5a54424cd9ba1e6002fd3e4c51365" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>animateToItem</name></member>
+      <member refid="classtouchgfx_1_1_scroll_wheel_base_1a51b6c22e48f78fac06938d0583889b12" prot="protected" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>animateToPosition</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a8c8d699f77e19d867cfadeb034c8b069a1217ce86f38cfa7f9298b7e819b913b3" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>ANIMATING_DRAG</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a8c8d699f77e19d867cfadeb034c8b069a95de603e1bf00375884b3cb990bdf148" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>ANIMATING_GESTURE</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a66a0b1345d666cb8a001f675dfca7d91" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>animationEndedCallback</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a8c8d699f77e19d867cfadeb034c8b069" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>AnimationState</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae2d939b2a9c253f0fb3bae3ec7be4e2f" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>childGeometryChanged</name></member>
+      <member refid="classtouchgfx_1_1_container_1ac92243515043dff4fd93c987b894b017" prot="public" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>Container</name></member>
+      <member refid="classtouchgfx_1_1_container_1a0109ca3d59d6ced431a24313fef18803" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>contains</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a194de5d3f5e94ebd44b18ae6cfcf0fa4" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>currentAnimationState</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1aad47d7f688baa08710cf7a600600715c" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>defaultAnimationSteps</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a2091a09805f2a48f5fa29f1116687a65" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>distanceBeforeAlignedItem</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1af1f892da2694fb19a4acfea57bf73934" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>dragAcceleration</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a95111cfa798f9c3b9f0b3d160d9fdf37" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>draggableX</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1adbbed649be90e1b079efc04e9a6ff038" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>draggableY</name></member>
+      <member refid="classtouchgfx_1_1_container_1a1277d4bddd51dbc604de265fb70ccbfd" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>draw</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9cf3a85fa7554475fa42c97985bda6df" prot="public" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>Drawable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4a009ec2b654351679a0124e9055abdc" prot="public" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>drawToDynamicBitmap</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1aea6ddb8fc22377efc02098c18742881c" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>easingEquation</name></member>
+      <member refid="classtouchgfx_1_1_container_1a15fc4ae5c33721f5f425b20640217f22" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>firstChild</name></member>
+      <member refid="classtouchgfx_1_1_container_1a2b224826cd4f0f674009c21d6821f525" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>forEachChild</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1aeedc79e01b716a5149f9a904d8d3bdd8" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>gestureEnd</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a48057d3d16e84924be7f018d6d6a0d62" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>gestureStart</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1ab7e821a3359c99d0ea139d927118c0d0" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>gestureStep</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a6f9860595816ff876c1cd77f9217bd57" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>gestureStepsTotal</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa7737d9d49d7f55ec9bde8f2c9751b1d" prot="public" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>getAbsoluteRect</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a70b0c22bc19b9f91be53eeb47b6d3789" prot="public" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>getAnimationSteps</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1ae299a8effdc7c9e71c379cc5702d2dcb" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>getCircular</name></member>
+      <member refid="classtouchgfx_1_1_container_1a47e8a844fa50b171656f8355fd8e313b" prot="protected" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>getContainedArea</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1aef35cc6f5d30c90d7573977761a82b78" prot="public" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>getDragAcceleration</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1ad4bb43057c6efb10353f0c203c2a39a3" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>getDrawableMargin</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a7b09c5474988ad2db2b6c3aa6a81c884" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>getDrawableSize</name></member>
+      <member refid="classtouchgfx_1_1_container_1a35ae5c9547dd1861f70b5e4f0f9b94b3" prot="public" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>getFirstChild</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ad00483821e06fe4d0d70222de4135d30" prot="public" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>getHeight</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a356552e43f78402504061f0e52046068" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>getHorizontal</name></member>
+      <member refid="classtouchgfx_1_1_container_1a6bc8e89dc7f879221e9862fb27dc726f" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>getLastChild</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a2243fccb8ced6b2fbfcffe4f6c02f2ae" prot="public" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>getMaxSwipeItems</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a2feb21da02367f3b43436c67a1581e9a" prot="protected" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>getNearestAlignedOffset</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a61c9b2bf703c49a6d238d354ddcaedb3" prot="public" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>getNextSibling</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1acab2f7762bd7cf8bb6d728b247aa65d8" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>getNormalizedOffset</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a16d91ab32c3be9e2273e5197cce16f93" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>getNumberOfItems</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a7161b3b32a4fffdb615b05726e1e5451" prot="protected" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>getOffset</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a013e065d4d9a10dbfa0ddee9a35582a3" prot="public" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>getParent</name></member>
+      <member refid="classtouchgfx_1_1_scroll_wheel_base_1a1cc576df5f33738a23f6d4bfcaa79a77" prot="protected" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>getPositionForItem</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af23a5bb7d473e16363a449c497586be3" prot="public" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>getRect</name></member>
+      <member refid="classtouchgfx_1_1_scroll_wheel_base_1ad540b777ff5c1425b673d31bcfb78763" prot="public" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>getSelectedItem</name></member>
+      <member refid="classtouchgfx_1_1_scroll_wheel_base_1a248f1e7e492bd0261e3b2059255d2ac8" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>getSelectedItemOffset</name></member>
+      <member refid="classtouchgfx_1_1_container_1a4dcdd780e93cc783a2ceeda00c6f3b51" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>getSolidRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4783dfe657ff1b7a33261bda8c4b4266" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>getSolidRectAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a18c7e903f195c8e9d1e4c67f8cc021d1" prot="public" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>getSwipeAcceleration</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a83b8847f583b63e60aa4bf778261ddd7" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>getVisibleRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1acae58162aaca6fc174416550f76668e7" prot="public" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>getWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac071e9b7ccf37179df7d29c6778b664c" prot="public" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>getX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a26752e6cff4607d0eec8768ef6d9032a" prot="public" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>getY</name></member>
+      <member refid="classtouchgfx_1_1_scroll_wheel_base_1a7f1524b90bc90e5f6cf7ee47aae12123" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>handleClickEvent</name></member>
+      <member refid="classtouchgfx_1_1_scroll_wheel_base_1a06ae1946b2124cc94e26cfe18728debf" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>handleDragEvent</name></member>
+      <member refid="classtouchgfx_1_1_scroll_wheel_base_1a4db4945ecbc2303bf860e082409b8029" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>handleGestureEvent</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a1af635cee0f186c3d0fcea60bac14355" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>handleTickEvent</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a6365dca5a7d8ddb694726a53b55a4c27" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>initialize</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a4922d616fdd5cc49d40b031c8a4e0ca4" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>initialSwipeOffset</name></member>
+      <member refid="classtouchgfx_1_1_container_1aca896b17460628dceeac8b01553b6a00" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>insert</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2800b4c18c63e9e7b1f85a74ce6b80c3" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>invalidate</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a130cf6e1bf2b9f04f48e659758fa75e2" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>invalidateRect</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a90fefc123b84887f666430566c46b0d4" prot="public" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>isAnimating</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a01c717b9abc98d48673b79d691c2d28a" prot="public" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>isTouchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9d8a6cfb13917785c143e74d40e4e2be" prot="public" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>isVisible</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a962ca2dadc3317dd3719153e80c1e7ec" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>itemChanged</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a87c9bc9a26dc9b862e388b279ca9c439" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>itemLockedInCallback</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1afc6d601ea09ce1afb50bc99460a16a62" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>itemPressedCallback</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a9e680f4857fa8b8b25f609ad4fe8e6ad" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>itemSelectedCallback</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a53d0ae638304442044c170392aad66a8" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>itemSize</name></member>
+      <member refid="classtouchgfx_1_1_scroll_wheel_base_1ab192ec5acf86181c2390ca05e13d3af1" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>keepOffsetInsideLimits</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1aaf8e4e58000150100a9bbc954c004ac4" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>list</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a689f5d500f205fdbbd2db17373ef3010" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>maxSwipeItems</name></member>
+      <member refid="classtouchgfx_1_1_container_1add539b68574f09b364f0b4e6a312b9b0" prot="protected" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>moveChildrenRelative</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af3590480070e2cf91580976f322d2c5e" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>moveRelative</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aadc5abfad4d2fcc331cf8de8713dc00e" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>moveTo</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0da4a00c3fbdea5740e52c7e04316c65" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>nextSibling</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a8c8d699f77e19d867cfadeb034c8b069a8896943db4557c56942719802df5d591" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>NO_ANIMATION</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a6e11207fd80690c5404348774e8dc95b" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>numberOfDrawables</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ab77c13cde2b01107dcbc5c2b584d422f" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>parent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2a955ddc316d002f566598f340eb2af9" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>rect</name></member>
+      <member refid="classtouchgfx_1_1_container_1a4d9056af30ab3c61da25a71023a341f2" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>remove</name></member>
+      <member refid="classtouchgfx_1_1_container_1a4e62c805a8478320f1e650e6a635b31a" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>removeAll</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a8766dfd3c5e8520c58ef938d16f1d42c" prot="public" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>ScrollBase</name></member>
+      <member refid="classtouchgfx_1_1_scroll_wheel_1adb00eeb56d315d52ca530a319f808ed0" prot="public" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>ScrollWheel</name></member>
+      <member refid="classtouchgfx_1_1_scroll_wheel_base_1a137d671948dd976975785b257430e05d" prot="public" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>ScrollWheelBase</name></member>
+      <member refid="classtouchgfx_1_1_scroll_wheel_base_1ad9c84a17e8c2706d04e158fd09d85f4a" prot="public" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>setAnimateToCallback</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1adda6424954b51e9b0c1dc6a806099600" prot="public" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>setAnimationEndedCallback</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a230011b9276818889940b54ae4a501fb" prot="public" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>setAnimationSteps</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a34dac40f12e1f8b3fa4f49e4ddcdbaaf" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>setCircular</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a18616d1e5dec0eb9d6b9869d312d888b" prot="public" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>setDragAcceleration</name></member>
+      <member refid="classtouchgfx_1_1_scroll_wheel_1adf3a3108fbb96919fcff90cd1de02e5d" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>setDrawables</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a4e8b82f7d967d4fc41004941fa9f472b" prot="public" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>setDrawableSize</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a08cc9e7b587b4c005bd70622fb01bc1b" prot="public" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>setEasingEquation</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a47a6312407603de99247bb802dbd8a48" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>setHeight</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a9b2bb39354bf3ea61b2b3bb97d9460e8" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>setHorizontal</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a44a462fa4b0969b7e80b9416e8bf94e1" prot="public" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>setItemPressedCallback</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1ad60d125bdbd08f20dd1c265e311f8eb9" prot="public" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>setItemSelectedCallback</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1acddd195e078793eb9b2384eeac4a597b" prot="public" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>setMaxSwipeItems</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a235b1a730d5f266ab0bf384ec57a880a" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>setNumberOfItems</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a0044a2bf1bda2151d88682e23f1a758f" prot="protected" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>setOffset</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac218c371450d8ad2bed3e1b07965a41a" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>setPosition</name></member>
+      <member refid="classtouchgfx_1_1_scroll_wheel_base_1acf3c969c433a30c898c3573875573def" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>setSelectedItemOffset</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a66b6f50da9d56fbeb6307a37ffd8c2a2" prot="public" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>setSwipeAcceleration</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae4c38eadb852b153850ea7ded1f50a19" prot="public" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>setTouchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a71639c6634c5dcf6d1bb21b8b1b61f5b" prot="public" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>setVisible</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1ae74a37f71d23440fc8b0466ad8ecfe4b" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>setWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9f6db7f34a74e991fc446fffb5703a53" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>setX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6c86659dc1e7355c207e9c0aa18af167" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>setXY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1b08d48e7e23a046f09e63089bc82bc1" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>setY</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a84c1367b486680bcf22987540e217cfb" prot="public" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>stopAnimation</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a26442a67f9a69428238c56e1a3833a5b" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>swipeAcceleration</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0d014de134cb9b9c1c361fcd726a5f34" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>touchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a48c1d14ac943dbfa4935ea39db950608" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>translateRectToAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_container_1a23f8fdbaba5449e55efb7a14a96b657d" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>unlink</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa54a57ae048476d840caf6d4d2c47aa3" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>visible</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a1b9e1456f9175aeb8e09a5ffe6f2c8ae" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>xClick</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a72ecb237fb7f77ad236d412cb36e4882" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollWheel</scope><name>yClick</name></member>
+      <member refid="classtouchgfx_1_1_container_1a316105bb0065103f6190b08783144c33" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>~Container</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6bb040a11ffc2bd641283cc0bc0d1346" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>~Drawable</name></member>
+      <member refid="classtouchgfx_1_1_scroll_base_1a153b860c31de8e99c316950aafaa8571" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>~ScrollBase</name></member>
+      <member refid="classtouchgfx_1_1_scroll_wheel_1a219e46dd5133913509d43b87fdca5b0a" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>~ScrollWheel</name></member>
+      <member refid="classtouchgfx_1_1_scroll_wheel_base_1a861a0ef208eea6439ca4173e5003d050" prot="public" virt="virtual"><scope>touchgfx::ScrollWheel</scope><name>~ScrollWheelBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

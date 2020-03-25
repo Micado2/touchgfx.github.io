@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="deprecated" kind="page">
+    <compoundname>deprecated</compoundname>
+    <title>Deprecated List</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term>Member <ref refid="classtouchgfx_1_1_animated_image_1a40e5881f9c001c5cc38554084751adbc" kindref="member">AnimatedImage::isRunning</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000022"/>use <ref refid="classtouchgfx_1_1_animated_image_1a360d5f7e6f2d3882e0b18a3c6981c97d" kindref="member">isAnimatedImageRunning()</ref>  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classtouchgfx_1_1_application_1abc45d04e5f5ce1fbd68f920fcdb2d0e0" kindref="member">Application::draw</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000003"/>Use <ref refid="classtouchgfx_1_1_application_1a65fd8d8e7e3f7bbca6ad03b5347564d9" kindref="member">draw(Rect&amp;)</ref>  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classtouchgfx_1_1_bitmap_1abec1c22115b35c6b7c4a06518b8fa031" kindref="member">Bitmap::getAlphaData</ref>  () const</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000004"/>Use <ref refid="classtouchgfx_1_1_bitmap_1ab46c1bfade86388591fe95c79feb5280" kindref="member">getExtraData()</ref>  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classtouchgfx_1_1_bitmap_1a60f66ebef38073d427f131aee7759cbf" kindref="member">Bitmap::operator!=</ref>  (const <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> &amp;other) const</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000006"/>Simply compare the BitmapId of the bitmaps using <ref refid="classtouchgfx_1_1_bitmap_1ae0e55eb0de5be05ca3816dc18a17555b" kindref="member">getId()</ref>  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classtouchgfx_1_1_bitmap_1a61f2c4ffee553e6ea21a0a01321c3bde" kindref="member">Bitmap::operator==</ref>  (const <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> &amp;other) const</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000005"/>Simply compare the BitmapId of the bitmaps using <ref refid="classtouchgfx_1_1_bitmap_1ae0e55eb0de5be05ca3816dc18a17555b" kindref="member">getId()</ref>  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classtouchgfx_1_1_box_1a531b3f7bb74ad30504fc278165462799" kindref="member">Box::forceReportAsSolid</ref>  (bool solid)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000023"/>It breaks the invariant set in <ref refid="classtouchgfx_1_1_drawable_1ae7cd27bb574d3b85bd0ce5ce99e555ba" kindref="member">Drawable::getSolidRect()</ref>.  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classtouchgfx_1_1_box_1a51951e3fc00f07eca17ec5d2c9069bfd" kindref="member">Box::reportAsSolid</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000024"/>Used by <ref refid="classtouchgfx_1_1_box_1a531b3f7bb74ad30504fc278165462799" kindref="member">forceReportAsSolid()</ref> which breaks TouchGFX invariant.  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classtouchgfx_1_1_box_with_border_1ad0a5012b413a6d042bc1819238834f48" kindref="member">BoxWithBorder::BoxWithBorder</ref>  (uint16_t width, uint16_t height, colortype color, colortype borderColor, uint8_t borderSize, uint8_t alpha=255)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000025"/>Use standard constructor and set dimensions and colors afterwards.  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classtouchgfx_1_1_button_with_label_1a718d98b2df865ab5108672e5fcacf54a" kindref="member">ButtonWithLabel::setLabelColor</ref>  (colortype col, bool performInvalidate=false)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000026"/>The use of performInvalidate is expected to be removed  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classtouchgfx_1_1_button_with_label_1a43ab3e620fc777f3344d986a7d558fc8" kindref="member">ButtonWithLabel::setLabelColorPressed</ref>  (colortype col, bool performInvalidate=false)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000027"/>The use of performInvalidate is expected to be removed  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="structtouchgfx_1_1colortype_1ad03e8c3ddb5fa2f4d1fc39099bb79b95" kindref="member">colortype::operator uint16_t</ref>  () const</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000012"/>It is not safe for other than 16bpp displays.  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classtouchgfx_1_1_fade_animator_1a05ead6c4ed5f33502d94a26a3fdd8faa" kindref="member">FadeAnimator&lt; T &gt;::isRunning</ref>  () const</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000019"/>use <ref refid="classtouchgfx_1_1_fade_animator_1ae202b083aa64208a57a2a138307ecf94" kindref="member">isFadeAnimationRunning()</ref>  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classtouchgfx_1_1_h_a_l_1ad984d2d33fe2d3605b67427e5a34a47d" kindref="member">HAL::setFrameBufferStartAddress</ref>  (void *adr, uint16_t depth=16, bool useDoubleBuffering=true, bool useAnimationStorage=true)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000011"/>Use <ref refid="classtouchgfx_1_1_h_a_l_1a2a6fd92626168d79e8346658752027e6" kindref="member">setFrameBufferStartAddresses(void*,void*,void*)</ref>  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classtouchgfx_1_1_h_a_l_s_d_l2_1ac77022b9a52bdd38af7df0b409ea78da" kindref="member">HALSDL2::blitSetTransparencyKey</ref>  (uint16_t key)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000002"/>Transparancy key is no longer supported.  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classtouchgfx_1_1_image_1a52a68a4210633b01427a40d071026e29" kindref="member">Image::hasTransparentPixels</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000028"/>True if this object has transparent pixels  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classtouchgfx_1_1_l_c_d_1ae9353837bf0e0315d22707167e699834" kindref="member">LCD::drawBorder</ref>  (const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;rect, uint16_t lineWidth, colortype color, uint8_t alpha=255)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000017"/>Use <ref refid="classtouchgfx_1_1_l_c_d_1a813b79e2a2eaada463ca4766259d2975" kindref="member">fillRect()</ref>  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classtouchgfx_1_1_l_c_d_1a70ffc766e161d075b1960cbd5c002553" kindref="member">LCD::drawHorizontalLine</ref>  (int16_t x, int16_t y, uint16_t width, uint16_t lineWidth, colortype color, uint8_t alpha=255)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000014"/>Use <ref refid="classtouchgfx_1_1_l_c_d_1a813b79e2a2eaada463ca4766259d2975" kindref="member">fillRect()</ref>  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classtouchgfx_1_1_l_c_d_1a645bd5f27f0c9cb9c2f876ebfa74adcd" kindref="member">LCD::drawRect</ref>  (const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;rect, colortype color, uint8_t alpha=255)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000016"/>Use <ref refid="classtouchgfx_1_1_l_c_d_1a813b79e2a2eaada463ca4766259d2975" kindref="member">fillRect()</ref>  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classtouchgfx_1_1_l_c_d_1a27329d16c48dadcd5597192891312d0d" kindref="member">LCD::drawVerticalLine</ref>  (int16_t x, int16_t y, uint16_t height, uint16_t lineWidth, colortype color, uint8_t alpha=255)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000015"/>Use <ref refid="classtouchgfx_1_1_l_c_d_1a813b79e2a2eaada463ca4766259d2975" kindref="member">fillRect()</ref>  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classtouchgfx_1_1_l_c_d_1a9339772ec5ac9fa929938109207f2863" kindref="member">LCD::init</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000013"/>Put initialization code in constructor  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classtouchgfx_1_1_matrix4x4_1a824397d5c7401e48057b655f7b878513" kindref="member">Matrix4x4::identity</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000018"/>Use <ref refid="classtouchgfx_1_1_matrix4x4_1a6049cd05c3a4d5e7b7811d9bbaba31dd" kindref="member">Matrix4x4()</ref> instead.  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classtouchgfx_1_1_modal_window_1a89766efd1264a4485f466720c9070d85" kindref="member">ModalWindow::isShowing</ref>  () const</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000009"/>Use <ref refid="classtouchgfx_1_1_drawable_1a9d8a6cfb13917785c143e74d40e4e2be" kindref="member">isVisible()</ref> instead.  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classtouchgfx_1_1_move_animator_1a05ead6c4ed5f33502d94a26a3fdd8faa" kindref="member">MoveAnimator&lt; T &gt;::isRunning</ref>  () const</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000020"/>Use <ref refid="classtouchgfx_1_1_move_animator_1a00d66623739e227cfabd9eeca74f0be6" kindref="member">isMoveAnimationRunning()</ref>  </para>
+</listitem>
+<varlistentry><term>Class <ref refid="classtouchgfx_1_1_pre_renderable" kindref="compound">PreRenderable&lt; T &gt;</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000021"/>Consult <ref refid="classtouchgfx_1_1_cacheable_container" kindref="compound">CacheableContainer</ref> or <ref refid="classtouchgfx_1_1_snapshot_widget" kindref="compound">SnapshotWidget</ref>  </para>
+</listitem>
+<varlistentry><term>Class <ref refid="classtouchgfx_1_1_s_d_l_touch_controller" kindref="compound">SDLTouchController</ref>  </term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000001"/>Use <ref refid="classtouchgfx_1_1_s_d_l2_touch_controller" kindref="compound">SDL2TouchController</ref>  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classtouchgfx_1_1_toggle_button_trigger_1a9711a7877a0bfcdc59eb11eec50b55cf" kindref="member">ToggleButtonTrigger::getToggleCanceled</ref>  ()</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000008"/>Scheduled for removal  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classtouchgfx_1_1_toggle_button_trigger_1a8231f2938354a553a12d4bac133841a2" kindref="member">ToggleButtonTrigger::setToggleCanceled</ref>  (bool isToggleCanceled)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000007"/>Scheduled for removal  </para>
+</listitem>
+<varlistentry><term>Member <ref refid="classtouchgfx_1_1_zoom_animation_image_1a05ead6c4ed5f33502d94a26a3fdd8faa" kindref="member">ZoomAnimationImage::isRunning</ref>  () const</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000010"/>use <ref refid="classtouchgfx_1_1_zoom_animation_image_1aecc74d7f0b84cbf0061deaafa8585113" kindref="member">ZoomAnimationImage::isZoomAnimationRunning</ref> </para>
+</listitem>
+</variablelist>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

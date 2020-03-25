@@ -1,0 +1,913 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_text_area" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::TextArea</compoundname>
+    <basecompoundref refid="classtouchgfx_1_1_widget" prot="public" virt="non-virtual">Widget</basecompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_text_area_with_wildcard_base" prot="public" virt="non-virtual">TextAreaWithWildcardBase</derivedcompoundref>
+    <includes local="no">TextArea.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_text_area_1acf5bb76caa419c0fa231dbd66c881084" prot="protected" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t alpha</definition>
+        <argsstring></argsstring>
+        <name>alpha</name>
+        <briefdescription>
+<para>The alpha to use. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TextArea.hpp" line="339" column="1" bodyfile="touchgfx/widgets/TextArea.hpp" bodystart="339" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_text_area_1a4f5b95d48bc5f29034d5794ef85a5072" prot="protected" static="no" mutable="no">
+        <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+        <definition>colortype color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <briefdescription>
+<para>The color to use for the text. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TextArea.hpp" line="337" column="1" bodyfile="touchgfx/widgets/TextArea.hpp" bodystart="337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_text_area_1a7f173532f55bd02c1fed2cda6418587d" prot="protected" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t indentation</definition>
+        <argsstring></argsstring>
+        <name>indentation</name>
+        <briefdescription>
+<para>The indentation of the text inside the text area. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TextArea.hpp" line="340" column="1" bodyfile="touchgfx/widgets/TextArea.hpp" bodystart="340" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_text_area_1ade26dbb806465aa47f618f41ac88c63f" prot="protected" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t linespace</definition>
+        <argsstring></argsstring>
+        <name>linespace</name>
+        <briefdescription>
+<para>The extra space between lines of text, measured in pixels. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TextArea.hpp" line="338" column="1" bodyfile="touchgfx/widgets/TextArea.hpp" bodystart="338" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_text_area_1ace2060689312248614d3cf147b03358e" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacetouchgfx_1aa8b32c1e049cf804b50921f8c847866b" kindref="member">TextRotation</ref></type>
+        <definition>TextRotation rotation</definition>
+        <argsstring></argsstring>
+        <name>rotation</name>
+        <briefdescription>
+<para>The text rotation to use in steps of 90 degrees. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TextArea.hpp" line="341" column="1" bodyfile="touchgfx/widgets/TextArea.hpp" bodystart="341" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_text_area_1a9d9a225af451ae961007a9843f5cbcf5" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref></type>
+        <definition>TypedText typedText</definition>
+        <argsstring></argsstring>
+        <name>typedText</name>
+        <briefdescription>
+<para>The <ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref> to display. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TextArea.hpp" line="336" column="1" bodyfile="touchgfx/widgets/TextArea.hpp" bodystart="336" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_text_area_1a88688b079c9e2a780ee710f09d35c751" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacetouchgfx_1ad7afabd7637aed4278f7e26434b860c7" kindref="member">WideTextAction</ref></type>
+        <definition>WideTextAction wideTextAction</definition>
+        <argsstring></argsstring>
+        <name>wideTextAction</name>
+        <briefdescription>
+<para>What to do if the lines of text are wider than the text area. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TextArea.hpp" line="342" column="1" bodyfile="touchgfx/widgets/TextArea.hpp" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_text_area_1abb108f49dd3225ec7411ec9f286404f3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int16_t</type>
+        <definition>virtual int16_t calculateTextHeight</definition>
+        <argsstring>(const Unicode::UnicodeChar *format,...) const</argsstring>
+        <name>calculateTextHeight</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref> *</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Gets the total height needed by the text. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Determined by number of lines and linespace. The number of parameters passed after the format, must match the number of wildcards in the <ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The text containing &lt;placeholder&gt; wildcards. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>...</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variable arguments providing additional information.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the total height needed by the text. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TextArea.hpp" line="333" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_text_area_1ae97e6c021d3075099eb88a81b868b5c7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void draw</definition>
+        <argsstring>(const Rect &amp;area) const</argsstring>
+        <name>draw</name>
+        <reimplements refid="classtouchgfx_1_1_drawable_1a7e4c58d8817f4119459b70ec52c38ef4">draw</reimplements>
+        <reimplementedby refid="classtouchgfx_1_1_text_area_with_one_wildcard_1ae97e6c021d3075099eb88a81b868b5c7">draw</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_text_area_with_two_wildcards_1ae97e6c021d3075099eb88a81b868b5c7">draw</reimplementedby>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>invalidatedArea</declname>
+        </param>
+        <briefdescription>
+<para>Draw this drawable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It is a requirement that the draw implementation does not draw outside the region specified by invalidatedArea.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>invalidatedArea</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sub-region of this drawable that needs to be redrawn, expressed in coordinates relative to its parent (e.g. for a complete redraw, invalidatedArea will be (0, 0, width, height). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TextArea.hpp" line="196" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_text_area_1a302926ead4ee8a161627575d2666a7f2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t getAlpha</definition>
+        <argsstring>() const</argsstring>
+        <name>getAlpha</name>
+        <briefdescription>
+<para>Gets the current alpha value of the widget. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The alpha value is in range 255 (solid) to 0 (invisible).</para>
+<para><simplesect kind="return"><para>The current alpha value.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_text_area_1a40b4eaf63ab7df1422b403a5a384a0b3" kindref="member">setAlpha</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TextArea.hpp" line="74" column="1" bodyfile="touchgfx/widgets/TextArea.hpp" bodystart="74" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_text_area_1aeac6531763a7b698f2c7e99c2466e384" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+        <definition>colortype getColor</definition>
+        <argsstring>() const</argsstring>
+        <name>getColor</name>
+        <briefdescription>
+<para>Gets the color of the text. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If no color has been set, the default color, black, is returned.</para>
+<para><simplesect kind="return"><para>The color to used for drawing the text. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TextArea.hpp" line="58" column="1" bodyfile="touchgfx/widgets/TextArea.hpp" bodystart="58" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_text_area_1a7e01124c02070721f09c608e89e9b68d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t getIndentation</definition>
+        <argsstring>()</argsstring>
+        <name>getIndentation</name>
+        <briefdescription>
+<para>Gets the indentation of text inside the <ref refid="classtouchgfx_1_1_text_area" kindref="compound">TextArea</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The indentation.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_text_area_1a371f930ee677c79033f7dfe938848ee8" kindref="member">setIndentation</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TextArea.hpp" line="175" column="1" bodyfile="touchgfx/widgets/TextArea.hpp" bodystart="175" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_text_area_1aa7ccd759542a046bdeab600936fb7988" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t getLinespacing</definition>
+        <argsstring>() const</argsstring>
+        <name>getLinespacing</name>
+        <briefdescription>
+<para>Gets the line spacing of the <ref refid="classtouchgfx_1_1_text_area" kindref="compound">TextArea</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If no line spacing has been set, the line spacing is 0.</para>
+<para><simplesect kind="return"><para>The line spacing.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_text_area_1a43f2b92c15458408c9d7ad4ac16121b0" kindref="member">setLinespacing</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TextArea.hpp" line="132" column="1" bodyfile="touchgfx/widgets/TextArea.hpp" bodystart="132" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_text_area_1aedf2bb3f12e6bbc057537cb32e5ef3e4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetouchgfx_1aa8b32c1e049cf804b50921f8c847866b" kindref="member">TextRotation</ref></type>
+        <definition>TextRotation getRotation</definition>
+        <argsstring>() const</argsstring>
+        <name>getRotation</name>
+        <briefdescription>
+<para>Gets rotation of the text in the <ref refid="classtouchgfx_1_1_text_area" kindref="compound">TextArea</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The rotation of the text.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_text_area_1ae77085d0bd76f4eeae23d9f24c567384" kindref="member">setRotation</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TextArea.hpp" line="238" column="1" bodyfile="touchgfx/widgets/TextArea.hpp" bodystart="238" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_text_area_1a4dcdd780e93cc783a2ceeda00c6f3b51" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref></type>
+        <definition>virtual Rect getSolidRect</definition>
+        <argsstring>() const</argsstring>
+        <name>getSolidRect</name>
+        <reimplements refid="classtouchgfx_1_1_drawable_1ae7cd27bb574d3b85bd0ce5ce99e555ba">getSolidRect</reimplements>
+        <briefdescription>
+<para>Get (the largest possible) rectangle that is guaranteed to be solid (opaque). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This information is important, as any <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> underneath the solid area does not need to be drawn.</para>
+<para><simplesect kind="return"><para>The solid rectangle part of the <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref>.</para>
+</simplesect>
+<simplesect kind="note"><para>The rectangle returned must be relative to upper left corner of the <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref>, meaning that a completely solid widget should return the full size <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref>(0, 0, <ref refid="classtouchgfx_1_1_drawable_1acae58162aaca6fc174416550f76668e7" kindref="member">getWidth()</ref>, <ref refid="classtouchgfx_1_1_drawable_1ad00483821e06fe4d0d70222de4135d30" kindref="member">getHeight()</ref>). If no area can be guaranteed to be solid, an empty Rect(0, 0, 0, 0) must be returned. Failing to return the correct rectangle may result in errors on the display. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TextArea.hpp" line="37" column="1" bodyfile="touchgfx/widgets/TextArea.hpp" bodystart="37" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_text_area_1a733d4fab88e4bf60c5cd7900a2796f41" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int16_t</type>
+        <definition>virtual int16_t getTextHeight</definition>
+        <argsstring>()</argsstring>
+        <name>getTextHeight</name>
+        <reimplementedby refid="classtouchgfx_1_1_text_area_with_one_wildcard_1a733d4fab88e4bf60c5cd7900a2796f41">getTextHeight</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_text_area_with_two_wildcards_1a733d4fab88e4bf60c5cd7900a2796f41">getTextHeight</reimplementedby>
+        <briefdescription>
+<para>Gets the total height needed by the text, taking number of lines and line spacing into consideration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the total height needed by the text. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TextArea.hpp" line="186" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_text_area_1a47cb5b4519fe856a390ec95bbaa4c5b8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>uint16_t</type>
+        <definition>virtual uint16_t getTextWidth</definition>
+        <argsstring>() const</argsstring>
+        <name>getTextWidth</name>
+        <reimplementedby refid="classtouchgfx_1_1_text_area_with_one_wildcard_1a47cb5b4519fe856a390ec95bbaa4c5b8">getTextWidth</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_text_area_with_two_wildcards_1a47cb5b4519fe856a390ec95bbaa4c5b8">getTextWidth</reimplementedby>
+        <briefdescription>
+<para>Gets the width in pixels of the current associated text in the current selected language. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>In case of multi-lined text the width of the widest line is returned.</para>
+<para><simplesect kind="return"><para>The width in pixels of the current text. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TextArea.hpp" line="194" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_text_area_1a3601f0801df76443a2d9a5b5a1d9c502" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref></type>
+        <definition>TypedText getTypedText</definition>
+        <argsstring>() const</argsstring>
+        <name>getTypedText</name>
+        <briefdescription>
+<para>Gets the <ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref> of the text area. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The currently used <ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TextArea.hpp" line="213" column="1" bodyfile="touchgfx/widgets/TextArea.hpp" bodystart="213" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_text_area_1a89d80545b311896f8a171219810b7ad0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetouchgfx_1ad7afabd7637aed4278f7e26434b860c7" kindref="member">WideTextAction</ref></type>
+        <definition>WideTextAction getWideTextAction</definition>
+        <argsstring>() const</argsstring>
+        <name>getWideTextAction</name>
+        <briefdescription>
+<para>Gets wide text action previously set using setWideTextAction. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>current WideTextAction setting.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_text_area_1a413057e715a3c18b900912b7e14ed4f8" kindref="member">setWideTextAction</ref>, <ref refid="namespacetouchgfx_1ad7afabd7637aed4278f7e26434b860c7" kindref="member">WideTextAction</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TextArea.hpp" line="318" column="1" bodyfile="touchgfx/widgets/TextArea.hpp" bodystart="318" bodyend="321"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_text_area_1a1306189c0d4f590ffa813138ad0e6a8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void resizeHeightToCurrentText</definition>
+        <argsstring>()</argsstring>
+        <name>resizeHeightToCurrentText</name>
+        <briefdescription>
+<para>Sets the height of the <ref refid="classtouchgfx_1_1_text_area" kindref="compound">TextArea</ref> to match the height of the current associated text for the current selected language. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is especially useful for texts with WordWrap enabled.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_text_area_1a9a00203c4155df0e31d70a6c5acaef08" kindref="member">resizeToCurrentText</ref>, <ref refid="classtouchgfx_1_1_text_area_1a413057e715a3c18b900912b7e14ed4f8" kindref="member">setWideTextAction</ref>, <ref refid="classtouchgfx_1_1_text_area_1ae77085d0bd76f4eeae23d9f24c567384" kindref="member">setRotation</ref></para>
+</simplesect>
+<simplesect kind="note"><para>If the current text rotation is either 90 or 270 degrees, the width of the text area will be set and not the height, as the text is rotated. </para>
+</simplesect>
+<simplesect kind="note"><para>If the current text is rotated e.g. 90 degrees, the x coordinate is not updated, which means that the text will be repositioned on the display. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TextArea.hpp" line="290" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_text_area_1a9a00203c4155df0e31d70a6c5acaef08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void resizeToCurrentText</definition>
+        <argsstring>()</argsstring>
+        <name>resizeToCurrentText</name>
+        <briefdescription>
+<para>Sets the dimensions of the <ref refid="classtouchgfx_1_1_text_area" kindref="compound">TextArea</ref> to match the width and height of the current associated text for the current selected language. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If WordWrap is turned on for the <ref refid="classtouchgfx_1_1_text_area" kindref="compound">TextArea</ref>, the height might be set to an unexpected value, as only manually insert line breaks in the text will be respected - use <ref refid="classtouchgfx_1_1_text_area_1a1306189c0d4f590ffa813138ad0e6a8a" kindref="member">resizeHeightToCurrentText()</ref> to keep the width of the <ref refid="classtouchgfx_1_1_text_area" kindref="compound">TextArea</ref> and therefore retain word wrapping.</para>
+<para>If the text is centered or right aligned, calling <ref refid="classtouchgfx_1_1_text_area_1a9a00203c4155df0e31d70a6c5acaef08" kindref="member">resizeToCurrentText()</ref> will actually move the text on the screen, as the x and y coordinates of the <ref refid="classtouchgfx_1_1_text_area" kindref="compound">TextArea</ref> widget is not changed. To simply minimize the size of the <ref refid="classtouchgfx_1_1_text_area" kindref="compound">TextArea</ref> but keep the <ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref> in the same position on the screen, use <ref refid="classtouchgfx_1_1_text_area_1a7c97c49f6480b3b4760ae666d41dea49" kindref="member">resizeToCurrentTextWithAlignment()</ref>. This is also the case if the text is rotated, e.g. 180 degrees.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_text_area_1ae77085d0bd76f4eeae23d9f24c567384" kindref="member">setRotation</ref>, <ref refid="classtouchgfx_1_1_text_area_1a1306189c0d4f590ffa813138ad0e6a8a" kindref="member">resizeHeightToCurrentText</ref></para>
+</simplesect>
+<simplesect kind="note"><para>If the current text rotation is either 90 or 270 degrees, the width of the text area will be set to the height of the text and vice versa, as the text is rotated. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TextArea.hpp" line="263" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_text_area_1a7c97c49f6480b3b4760ae666d41dea49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void resizeToCurrentTextWithAlignment</definition>
+        <argsstring>()</argsstring>
+        <name>resizeToCurrentTextWithAlignment</name>
+        <briefdescription>
+<para>Sets the dimensions of the <ref refid="classtouchgfx_1_1_text_area" kindref="compound">TextArea</ref> to match the width and height of the current associated text for the current selected language, and for centered and right aligned text, the position of the <ref refid="classtouchgfx_1_1_text_area" kindref="compound">TextArea</ref> widget is also updated to keep the text in the same position on the display. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Text that is rotated is also handled properly.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_text_area_1ae77085d0bd76f4eeae23d9f24c567384" kindref="member">setRotation</ref>, <ref refid="classtouchgfx_1_1_text_area_1a1306189c0d4f590ffa813138ad0e6a8a" kindref="member">resizeHeightToCurrentText</ref></para>
+</simplesect>
+<simplesect kind="note"><para>If the current text rotation is either 90 or 270 degrees, the width of the text area will be set to the height of the text and vice versa, as the text is rotated. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TextArea.hpp" line="276" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_text_area_1a40b4eaf63ab7df1422b403a5a384a0b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setAlpha</definition>
+        <argsstring>(uint8_t newAlpha)</argsstring>
+        <name>setAlpha</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>newAlpha</declname>
+        </param>
+        <briefdescription>
+<para>Sets the opacity (alpha value). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This can be used to fade it away by gradually decreasing the alpha value from 255 (solid) to 0 (invisible).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newAlpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new alpha value. 255=solid, 0=invisible.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_text_area_1a302926ead4ee8a161627575d2666a7f2" kindref="member">getAlpha</ref></para>
+</simplesect>
+<simplesect kind="note"><para>The user code must call <ref refid="classtouchgfx_1_1_drawable_1a2800b4c18c63e9e7b1f85a74ce6b80c3" kindref="member">invalidate()</ref> in order to update the display. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TextArea.hpp" line="66" column="1" bodyfile="touchgfx/widgets/TextArea.hpp" bodystart="66" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_text_area_1a5afb6fcab0655e8c79bcc13d7a2c230b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setBaselineY</definition>
+        <argsstring>(int16_t baselineY)</argsstring>
+        <name>setBaselineY</name>
+        <param>
+          <type>int16_t</type>
+          <declname>baselineY</declname>
+        </param>
+        <briefdescription>
+<para>Adjusts the <ref refid="classtouchgfx_1_1_text_area" kindref="compound">TextArea</ref> y coordinate so the text will have its baseline at the specified value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The placements is relative to the specified <ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref> so if the <ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref> is changed, you have to set the baseline again.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>baselineY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate of the baseline of the text.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para><ref refid="classtouchgfx_1_1_text_area_1aeac718ae52f2b1c83da1093e171e5d1b" kindref="member">setTypedText()</ref> must be called prior to setting the baseline. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TextArea.hpp" line="88" column="1" bodyfile="touchgfx/widgets/TextArea.hpp" bodystart="88" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_text_area_1a470d590a3be3d71093546fd6a74336b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setColor</definition>
+        <argsstring>(colortype color)</argsstring>
+        <name>setColor</name>
+        <param>
+          <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Sets the color of the text. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If no color is set, the default color (black) is used.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color to use. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TextArea.hpp" line="47" column="1" bodyfile="touchgfx/widgets/TextArea.hpp" bodystart="47" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_text_area_1a371f930ee677c79033f7dfe938848ee8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setIndentation</definition>
+        <argsstring>(uint8_t indent)</argsstring>
+        <name>setIndentation</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>indent</declname>
+        </param>
+        <briefdescription>
+<para>Sets the indentation for the text. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This can be very useful when a font is an italic font where letters such as &quot;j&quot; and &quot;g&quot; extend a lot to the left under the previous character(s). if a line starts with a &quot;j&quot; or &quot;g&quot; this letter would either have to be pushed to the right to be able to see all of it, e.g. using spaces (which would ruin a multi line text which is left aligned) - or by clipping the first letter (which could ruin the nice graphics). The solution is to change <programlisting><codeline><highlight class="normal">textarea.setPosition(50,<sp/>50,<sp/>100,<sp/>100);</highlight></codeline>
+</programlisting> to <programlisting><codeline><highlight class="normal">textarea.setPosition(45,<sp/>50,<sp/>110,<sp/>100);</highlight></codeline>
+<codeline><highlight class="normal">textarea.setIndentation(5);</highlight></codeline>
+</programlisting> Characters that do not extend to the left under the previous characters will be drawn in the same position in either case, but &quot;j&quot; and &quot;g&quot; will be aligned with other lines.</para>
+<para>The function <ref refid="classtouchgfx_1_1_font_1a8bb07da3aa08b111b2b10a0ac94b6c51" kindref="member">Font::getMaxPixelsLeft()</ref> will give you the maximum number of pixels any glyph in the font extends to the left.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>indent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The indentation from left (when left aligned text) and right (when right aligned text).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_font_1a8bb07da3aa08b111b2b10a0ac94b6c51" kindref="member">Font::getMaxPixelsLeft</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TextArea.hpp" line="163" column="1" bodyfile="touchgfx/widgets/TextArea.hpp" bodystart="163" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_text_area_1a43f2b92c15458408c9d7ad4ac16121b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setLinespacing</definition>
+        <argsstring>(int16_t space)</argsstring>
+        <name>setLinespacing</name>
+        <param>
+          <type>int16_t</type>
+          <declname>space</declname>
+        </param>
+        <briefdescription>
+<para>Sets the line spacing of the <ref refid="classtouchgfx_1_1_text_area" kindref="compound">TextArea</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Setting a larger value will increase the space between lines. It is possible to set a negative value to have lines (partially) overlap. Default line spacing, if not set, is 0.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>space</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The line spacing of use in the <ref refid="classtouchgfx_1_1_text_area" kindref="compound">TextArea</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_text_area_1aa7ccd759542a046bdeab600936fb7988" kindref="member">getLinespacing</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TextArea.hpp" line="119" column="1" bodyfile="touchgfx/widgets/TextArea.hpp" bodystart="119" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_text_area_1ae77085d0bd76f4eeae23d9f24c567384" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setRotation</definition>
+        <argsstring>(const TextRotation rotation)</argsstring>
+        <name>setRotation</name>
+        <param>
+          <type>const <ref refid="namespacetouchgfx_1aa8b32c1e049cf804b50921f8c847866b" kindref="member">TextRotation</ref></type>
+          <declname>rotation</declname>
+        </param>
+        <briefdescription>
+<para>Sets rotation of the text in the <ref refid="classtouchgfx_1_1_text_area" kindref="compound">TextArea</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The value TEXT_ROTATE_0 is the default for normal text. The value TEXT_ROTATE_90 will rotate the text clockwise, thus writing from the top of the display and down. Similarly TEXT_ROTATE_180 and TEXT_ROTATE_270 will each rotate the text further 90 degrees clockwise.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rotation of the text. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TextArea.hpp" line="226" column="1" bodyfile="touchgfx/widgets/TextArea.hpp" bodystart="226" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_text_area_1aeac718ae52f2b1c83da1093e171e5d1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setTypedText</definition>
+        <argsstring>(TypedText t)</argsstring>
+        <name>setTypedText</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref></type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Sets the <ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref> of the text area. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If no prior size has been set, the <ref refid="classtouchgfx_1_1_text_area" kindref="compound">TextArea</ref> will be resized to fit the new <ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref> for this widget to display.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_text_area_1a9a00203c4155df0e31d70a6c5acaef08" kindref="member">resizeToCurrentText</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TextArea.hpp" line="206" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_text_area_1a413057e715a3c18b900912b7e14ed4f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setWideTextAction</definition>
+        <argsstring>(WideTextAction action)</argsstring>
+        <name>setWideTextAction</name>
+        <param>
+          <type><ref refid="namespacetouchgfx_1ad7afabd7637aed4278f7e26434b860c7" kindref="member">WideTextAction</ref></type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+<para>Defines what to do if a line of text is wider than the text area. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Default action is <ref refid="namespacetouchgfx_1ad7afabd7637aed4278f7e26434b860c7a4ab21b4229a6cab17ff59a7dba101b45" kindref="member">WIDE_TEXT_NONE</ref> which means that text lines are only broken if there is a manually inserted newline in the text.</para>
+<para>If wrapping is enabled and the text would occupy more lines than the size of the <ref refid="classtouchgfx_1_1_text_area" kindref="compound">TextArea</ref>, the end of the last line will get an ellipsis (often <hellip/>) to signal that some text is missing. The character used for ellipsis is taken from the text spreadsheet.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The action to perform for wide lines of text.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespacetouchgfx_1ad7afabd7637aed4278f7e26434b860c7" kindref="member">WideTextAction</ref>, <ref refid="classtouchgfx_1_1_text_area_1a89d80545b311896f8a171219810b7ad0" kindref="member">getWideTextAction</ref>, <ref refid="classtouchgfx_1_1_text_area_1a1306189c0d4f590ffa813138ad0e6a8a" kindref="member">resizeHeightToCurrentText</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TextArea.hpp" line="306" column="1" bodyfile="touchgfx/widgets/TextArea.hpp" bodystart="306" bodyend="309"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_text_area_1ad3889b66e0adbc4f742dbd7ec442f841" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setXBaselineY</definition>
+        <argsstring>(int16_t x, int16_t baselineY)</argsstring>
+        <name>setXBaselineY</name>
+        <param>
+          <type>int16_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>baselineY</declname>
+        </param>
+        <briefdescription>
+<para>Adjusts the <ref refid="classtouchgfx_1_1_text_area" kindref="compound">TextArea</ref> x and y coordinates so the text will have its baseline at the specified y value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The placements is relative to the specified <ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref> so if the <ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref> is changed you have to set the baseline again. The specified x coordinate will be used as the x coordinate of the <ref refid="classtouchgfx_1_1_text_area" kindref="compound">TextArea</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate of the <ref refid="classtouchgfx_1_1_text_area" kindref="compound">TextArea</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>baselineY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate of the baseline of the text.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para><ref refid="classtouchgfx_1_1_text_area_1aeac718ae52f2b1c83da1093e171e5d1b" kindref="member">setTypedText()</ref> must be called prior to setting the baseline. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TextArea.hpp" line="104" column="1" bodyfile="touchgfx/widgets/TextArea.hpp" bodystart="104" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_text_area_1aeca16e72280691d3912581e4f4ee9b72" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TextArea</definition>
+        <argsstring>()</argsstring>
+        <name>TextArea</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TextArea.hpp" line="32" column="1" bodyfile="touchgfx/widgets/TextArea.hpp" bodystart="32" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This widget is capable of showing a text area on the screen. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The text must be a predefined <ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref> in the text sheet in the assets folder. In order to display a dynamic text, use <ref refid="classtouchgfx_1_1_text_area_with_one_wildcard" kindref="compound">TextAreaWithOneWildcard</ref> or <ref refid="classtouchgfx_1_1_text_area_with_two_wildcards" kindref="compound">TextAreaWithTwoWildcards</ref>.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref>, <ref refid="classtouchgfx_1_1_text_area_with_one_wildcard" kindref="compound">TextAreaWithOneWildcard</ref>, <ref refid="classtouchgfx_1_1_text_area_with_two_wildcards" kindref="compound">TextAreaWithTwoWildcards</ref></para>
+</simplesect>
+<simplesect kind="note"><para>A <ref refid="classtouchgfx_1_1_text_area" kindref="compound">TextArea</ref> just holds a pointer to the text displayed. The developer must ensure that the pointer remains valid when drawing. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1542">
+        <label>Widget</label>
+        <link refid="classtouchgfx_1_1_widget"/>
+        <childnode refid="1543" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1545">
+        <label>TextAreaWithOneWildcard</label>
+        <link refid="classtouchgfx_1_1_text_area_with_one_wildcard"/>
+        <childnode refid="1544" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1546">
+        <label>TextAreaWithTwoWildcards</label>
+        <link refid="classtouchgfx_1_1_text_area_with_two_wildcards"/>
+        <childnode refid="1544" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1543">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+      </node>
+      <node id="1541">
+        <label>TextArea</label>
+        <link refid="classtouchgfx_1_1_text_area"/>
+        <childnode refid="1542" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1544">
+        <label>TextAreaWithWildcardBase</label>
+        <link refid="classtouchgfx_1_1_text_area_with_wildcard_base"/>
+        <childnode refid="1541" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1548">
+        <label>Widget</label>
+        <link refid="classtouchgfx_1_1_widget"/>
+        <childnode refid="1549" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1550">
+        <label>Rect</label>
+        <link refid="classtouchgfx_1_1_rect"/>
+      </node>
+      <node id="1551">
+        <label>TypedText</label>
+        <link refid="classtouchgfx_1_1_typed_text"/>
+      </node>
+      <node id="1549">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+        <childnode refid="1550" relation="usage">
+          <edgelabel>rect</edgelabel>
+        </childnode>
+        <childnode refid="1549" relation="usage">
+          <edgelabel>nextSibling</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="1547">
+        <label>TextArea</label>
+        <link refid="classtouchgfx_1_1_text_area"/>
+        <childnode refid="1548" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1551" relation="usage">
+          <edgelabel>typedText</edgelabel>
+        </childnode>
+        <childnode refid="1552" relation="usage">
+          <edgelabel>color</edgelabel>
+        </childnode>
+      </node>
+      <node id="1552">
+        <label>colortype</label>
+        <link refid="structtouchgfx_1_1colortype"/>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/widgets/TextArea.hpp" line="30" column="1" bodyfile="touchgfx/widgets/TextArea.hpp" bodystart="29" bodyend="343"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_text_area_1acf5bb76caa419c0fa231dbd66c881084" prot="protected" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>alpha</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1abb108f49dd3225ec7411ec9f286404f3" prot="public" virt="virtual"><scope>touchgfx::TextArea</scope><name>calculateTextHeight</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae2d939b2a9c253f0fb3bae3ec7be4e2f" prot="public" virt="virtual"><scope>touchgfx::TextArea</scope><name>childGeometryChanged</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1a4f5b95d48bc5f29034d5794ef85a5072" prot="protected" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>color</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1ae97e6c021d3075099eb88a81b868b5c7" prot="public" virt="virtual"><scope>touchgfx::TextArea</scope><name>draw</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9cf3a85fa7554475fa42c97985bda6df" prot="public" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>Drawable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4a009ec2b654351679a0124e9055abdc" prot="public" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>drawToDynamicBitmap</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa7737d9d49d7f55ec9bde8f2c9751b1d" prot="public" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>getAbsoluteRect</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1a302926ead4ee8a161627575d2666a7f2" prot="public" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>getAlpha</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1aeac6531763a7b698f2c7e99c2466e384" prot="public" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>getColor</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ad00483821e06fe4d0d70222de4135d30" prot="public" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>getHeight</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1a7e01124c02070721f09c608e89e9b68d" prot="public" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>getIndentation</name></member>
+      <member refid="classtouchgfx_1_1_widget_1a6bc8e89dc7f879221e9862fb27dc726f" prot="public" virt="virtual"><scope>touchgfx::TextArea</scope><name>getLastChild</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1aa7ccd759542a046bdeab600936fb7988" prot="public" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>getLinespacing</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a61c9b2bf703c49a6d238d354ddcaedb3" prot="public" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>getNextSibling</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a013e065d4d9a10dbfa0ddee9a35582a3" prot="public" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>getParent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af23a5bb7d473e16363a449c497586be3" prot="public" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>getRect</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1aedf2bb3f12e6bbc057537cb32e5ef3e4" prot="public" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>getRotation</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1a4dcdd780e93cc783a2ceeda00c6f3b51" prot="public" virt="virtual"><scope>touchgfx::TextArea</scope><name>getSolidRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4783dfe657ff1b7a33261bda8c4b4266" prot="public" virt="virtual"><scope>touchgfx::TextArea</scope><name>getSolidRectAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1a733d4fab88e4bf60c5cd7900a2796f41" prot="public" virt="virtual"><scope>touchgfx::TextArea</scope><name>getTextHeight</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1a47cb5b4519fe856a390ec95bbaa4c5b8" prot="public" virt="virtual"><scope>touchgfx::TextArea</scope><name>getTextWidth</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1a3601f0801df76443a2d9a5b5a1d9c502" prot="public" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>getTypedText</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a83b8847f583b63e60aa4bf778261ddd7" prot="public" virt="virtual"><scope>touchgfx::TextArea</scope><name>getVisibleRect</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1a89d80545b311896f8a171219810b7ad0" prot="public" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>getWideTextAction</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1acae58162aaca6fc174416550f76668e7" prot="public" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>getWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac071e9b7ccf37179df7d29c6778b664c" prot="public" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>getX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a26752e6cff4607d0eec8768ef6d9032a" prot="public" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>getY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a7f1524b90bc90e5f6cf7ee47aae12123" prot="public" virt="virtual"><scope>touchgfx::TextArea</scope><name>handleClickEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a06ae1946b2124cc94e26cfe18728debf" prot="public" virt="virtual"><scope>touchgfx::TextArea</scope><name>handleDragEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4db4945ecbc2303bf860e082409b8029" prot="public" virt="virtual"><scope>touchgfx::TextArea</scope><name>handleGestureEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1af635cee0f186c3d0fcea60bac14355" prot="public" virt="virtual"><scope>touchgfx::TextArea</scope><name>handleTickEvent</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1a7f173532f55bd02c1fed2cda6418587d" prot="protected" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>indentation</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2800b4c18c63e9e7b1f85a74ce6b80c3" prot="public" virt="virtual"><scope>touchgfx::TextArea</scope><name>invalidate</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a130cf6e1bf2b9f04f48e659758fa75e2" prot="public" virt="virtual"><scope>touchgfx::TextArea</scope><name>invalidateRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a01c717b9abc98d48673b79d691c2d28a" prot="public" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>isTouchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9d8a6cfb13917785c143e74d40e4e2be" prot="public" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>isVisible</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1ade26dbb806465aa47f618f41ac88c63f" prot="protected" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>linespace</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af3590480070e2cf91580976f322d2c5e" prot="public" virt="virtual"><scope>touchgfx::TextArea</scope><name>moveRelative</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aadc5abfad4d2fcc331cf8de8713dc00e" prot="public" virt="virtual"><scope>touchgfx::TextArea</scope><name>moveTo</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0da4a00c3fbdea5740e52c7e04316c65" prot="protected" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>nextSibling</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ab77c13cde2b01107dcbc5c2b584d422f" prot="protected" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>parent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2a955ddc316d002f566598f340eb2af9" prot="protected" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>rect</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1a1306189c0d4f590ffa813138ad0e6a8a" prot="public" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>resizeHeightToCurrentText</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1a9a00203c4155df0e31d70a6c5acaef08" prot="public" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>resizeToCurrentText</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1a7c97c49f6480b3b4760ae666d41dea49" prot="public" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>resizeToCurrentTextWithAlignment</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1ace2060689312248614d3cf147b03358e" prot="protected" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>rotation</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1a40b4eaf63ab7df1422b403a5a384a0b3" prot="public" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>setAlpha</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1a5afb6fcab0655e8c79bcc13d7a2c230b" prot="public" virt="virtual"><scope>touchgfx::TextArea</scope><name>setBaselineY</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1a470d590a3be3d71093546fd6a74336b9" prot="public" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>setColor</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a47a6312407603de99247bb802dbd8a48" prot="public" virt="virtual"><scope>touchgfx::TextArea</scope><name>setHeight</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1a371f930ee677c79033f7dfe938848ee8" prot="public" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>setIndentation</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1a43f2b92c15458408c9d7ad4ac16121b0" prot="public" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>setLinespacing</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac218c371450d8ad2bed3e1b07965a41a" prot="public" virt="virtual"><scope>touchgfx::TextArea</scope><name>setPosition</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1ae77085d0bd76f4eeae23d9f24c567384" prot="public" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>setRotation</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae4c38eadb852b153850ea7ded1f50a19" prot="public" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>setTouchable</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1aeac718ae52f2b1c83da1093e171e5d1b" prot="public" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>setTypedText</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a71639c6634c5dcf6d1bb21b8b1b61f5b" prot="public" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>setVisible</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1a413057e715a3c18b900912b7e14ed4f8" prot="public" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>setWideTextAction</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae74a37f71d23440fc8b0466ad8ecfe4b" prot="public" virt="virtual"><scope>touchgfx::TextArea</scope><name>setWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9f6db7f34a74e991fc446fffb5703a53" prot="public" virt="virtual"><scope>touchgfx::TextArea</scope><name>setX</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1ad3889b66e0adbc4f742dbd7ec442f841" prot="public" virt="virtual"><scope>touchgfx::TextArea</scope><name>setXBaselineY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6c86659dc1e7355c207e9c0aa18af167" prot="public" virt="virtual"><scope>touchgfx::TextArea</scope><name>setXY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1b08d48e7e23a046f09e63089bc82bc1" prot="public" virt="virtual"><scope>touchgfx::TextArea</scope><name>setY</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1aeca16e72280691d3912581e4f4ee9b72" prot="public" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>TextArea</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0d014de134cb9b9c1c361fcd726a5f34" prot="protected" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>touchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a48c1d14ac943dbfa4935ea39db950608" prot="public" virt="virtual"><scope>touchgfx::TextArea</scope><name>translateRectToAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1a9d9a225af451ae961007a9843f5cbcf5" prot="protected" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>typedText</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa54a57ae048476d840caf6d4d2c47aa3" prot="protected" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>visible</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1a88688b079c9e2a780ee710f09d35c751" prot="protected" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>wideTextAction</name></member>
+      <member refid="classtouchgfx_1_1_widget_1a4aecdb998b8b28b278843eaa1644998b" prot="public" virt="non-virtual"><scope>touchgfx::TextArea</scope><name>Widget</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6bb040a11ffc2bd641283cc0bc0d1346" prot="public" virt="virtual"><scope>touchgfx::TextArea</scope><name>~Drawable</name></member>
+      <member refid="classtouchgfx_1_1_widget_1af0ef273e47acd5ce75366b6b7a51057f" prot="public" virt="virtual"><scope>touchgfx::TextArea</scope><name>~Widget</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

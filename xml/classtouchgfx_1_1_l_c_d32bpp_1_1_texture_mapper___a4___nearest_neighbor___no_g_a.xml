@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_l_c_d32bpp_1_1_texture_mapper___a4___nearest_neighbor___no_g_a" kind="class" language="C++" prot="private">
+    <compoundname>touchgfx::LCD32bpp::TextureMapper_A4_NearestNeighbor_NoGA</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">LCD32bpp::DrawTextureMapScanLineBase32</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d32bpp_1_1_texture_mapper___a4___nearest_neighbor___no_g_a_1ab2182346858447906df97b78f1bd50fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void drawTextureMapScanLineSubdivisions</definition>
+        <argsstring>(int subdivisions, const int widthModLength, int pixelsToDraw, const int affineLength, float oneOverZRight, float UOverZRight, float VOverZRight, fixed16_16 U, fixed16_16 V, fixed16_16 deltaU, fixed16_16 deltaV, float ULeft, float VLeft, float URight, float VRight, float ZRight, const DrawingSurface &amp;dest, const int destX, const int destY, const int16_t bitmapWidth, const int16_t bitmapHeight, const TextureSurface &amp;texture, uint8_t alpha, const float dOneOverZdXAff, const float dUOverZdXAff, const float dVOverZdXAff)</argsstring>
+        <name>drawTextureMapScanLineSubdivisions</name>
+        <param>
+          <type>int</type>
+          <declname>subdivisions</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>widthModLength</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pixelsToDraw</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>affineLength</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>oneOverZRight</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>UOverZRight</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>VOverZRight</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1a62c78b672c5381c87b38200ab84a31f5" kindref="member">fixed16_16</ref></type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1a62c78b672c5381c87b38200ab84a31f5" kindref="member">fixed16_16</ref></type>
+          <declname>V</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1a62c78b672c5381c87b38200ab84a31f5" kindref="member">fixed16_16</ref></type>
+          <declname>deltaU</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1a62c78b672c5381c87b38200ab84a31f5" kindref="member">fixed16_16</ref></type>
+          <declname>deltaV</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ULeft</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>VLeft</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>URight</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>VRight</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ZRight</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structtouchgfx_1_1_drawing_surface" kindref="compound">DrawingSurface</ref> &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>destX</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>destY</declname>
+        </param>
+        <param>
+          <type>const int16_t</type>
+          <declname>bitmapWidth</declname>
+        </param>
+        <param>
+          <type>const int16_t</type>
+          <declname>bitmapHeight</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structtouchgfx_1_1_texture_surface" kindref="compound">TextureSurface</ref> &amp;</type>
+          <declname>texture</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>dOneOverZdXAff</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>dUOverZdXAff</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>dVOverZdXAff</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD32bpp.hpp" line="881" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d32bpp_1_1_texture_mapper___a4___nearest_neighbor___no_g_a_1a9e021479a82510a8cc492257406587e0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> void</type>
+        <definition>FORCE_INLINE_FUNCTION void writePixel</definition>
+        <argsstring>(uint32_t *const destBits, const uint8_t a4)</argsstring>
+        <name>writePixel</name>
+        <param>
+          <type>uint32_t *const</type>
+          <declname>destBits</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>a4</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD32bpp.hpp" line="884" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1776">
+        <label>LCD32bpp::TextureMapper_A4_NearestNeighbor_NoGA</label>
+        <childnode refid="1777" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1777">
+        <label>DrawTextureMapScanLineBase32</label>
+        <childnode refid="1778" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1778">
+        <label>DrawTextureMapScanLineBase</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1779">
+        <label>LCD32bpp::TextureMapper_A4_NearestNeighbor_NoGA</label>
+        <childnode refid="1780" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1780">
+        <label>DrawTextureMapScanLineBase32</label>
+        <childnode refid="1781" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1781">
+        <label>DrawTextureMapScanLineBase</label>
+      </node>
+    </collaborationgraph>
+    <location file="platform/driver/lcd/LCD32bpp.hpp" line="879" column="1" bodyfile="platform/driver/lcd/LCD32bpp.hpp" bodystart="878" bodyend="885"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_l_c_d32bpp_1_1_texture_mapper___a4___nearest_neighbor___no_g_a_1ab2182346858447906df97b78f1bd50fe" prot="public" virt="virtual"><scope>touchgfx::LCD32bpp::TextureMapper_A4_NearestNeighbor_NoGA</scope><name>drawTextureMapScanLineSubdivisions</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d32bpp_1_1_draw_texture_map_scan_line_base32_1ac5f8021e47386be50e39011e87d81d42" prot="protected" virt="non-virtual"><scope>touchgfx::LCD32bpp::TextureMapper_A4_NearestNeighbor_NoGA</scope><name>overrunCheckBilinearInterpolation</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d32bpp_1_1_draw_texture_map_scan_line_base32_1a398a0b20afe5ee3072ceee5a2e21c505" prot="protected" virt="non-virtual"><scope>touchgfx::LCD32bpp::TextureMapper_A4_NearestNeighbor_NoGA</scope><name>overrunCheckNearestNeighbor</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d32bpp_1_1_texture_mapper___a4___nearest_neighbor___no_g_a_1a9e021479a82510a8cc492257406587e0" prot="private" virt="non-virtual"><scope>touchgfx::LCD32bpp::TextureMapper_A4_NearestNeighbor_NoGA</scope><name>writePixel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

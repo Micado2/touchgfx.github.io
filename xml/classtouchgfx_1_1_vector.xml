@@ -1,0 +1,397 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_vector" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::Vector</compoundname>
+    <includes local="no">Types.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+      <param>
+        <type>uint16_t</type>
+        <declname>capacity</declname>
+        <defname>capacity</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_vector_1ac7bdb0dbf799a4618706ada7c8fa8d97" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T _elem[capacity]</definition>
+        <argsstring>[capacity]</argsstring>
+        <name>_elem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="542" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="542" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_vector_1aa634b952549ebb0aa1c5f90330b66f76" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t _size</definition>
+        <argsstring></argsstring>
+        <name>_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="543" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="543" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_vector_1aea9b069c6c80045f15d3fd76e868f357" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void add</definition>
+        <argsstring>(T e)</argsstring>
+        <name>add</name>
+        <param>
+          <type>T</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Adds an element to the <ref refid="classtouchgfx_1_1_vector" kindref="compound">Vector</ref> if the <ref refid="classtouchgfx_1_1_vector" kindref="compound">Vector</ref> is not full. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds an element to the <ref refid="classtouchgfx_1_1_vector" kindref="compound">Vector</ref> if the <ref refid="classtouchgfx_1_1_vector" kindref="compound">Vector</ref> is not full. Does nothing if the <ref refid="classtouchgfx_1_1_vector" kindref="compound">Vector</ref> is full.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element to add to the <ref refid="classtouchgfx_1_1_vector" kindref="compound">Vector</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="385" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="385" bodyend="392"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_vector_1ac8bb3912a3ce86b15842e79d0b421204" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+<para>Clears the contents of the container. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It does not destruct any of the elements in the <ref refid="classtouchgfx_1_1_vector" kindref="compound">Vector</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="536" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="536" bodyend="539"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_vector_1a2e9db546a0d9f9718e4875028826e8d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool contains</definition>
+        <argsstring>(T elem)</argsstring>
+        <name>contains</name>
+        <param>
+          <type>T</type>
+          <declname>elem</declname>
+        </param>
+        <briefdescription>
+<para>Checks if the <ref refid="classtouchgfx_1_1_vector" kindref="compound">Vector</ref> contains an element. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The == operator of the element is used when comparing it with the elements in the <ref refid="classtouchgfx_1_1_vector" kindref="compound">Vector</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>elem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the <ref refid="classtouchgfx_1_1_vector" kindref="compound">Vector</ref> contains the element, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="486" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="486" bodyend="496"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_vector_1acf82f9b2937375c7b1cf3dccb3df3312" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool isEmpty</definition>
+        <argsstring>() const</argsstring>
+        <name>isEmpty</name>
+        <briefdescription>
+<para>Query if this object is empty. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if the <ref refid="classtouchgfx_1_1_vector" kindref="compound">Vector</ref> contains no elements. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="517" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="517" bodyend="520"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_vector_1a6d7eee86e40207750066d2a49c9223be" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t maxCapacity</definition>
+        <argsstring>() const</argsstring>
+        <name>maxCapacity</name>
+        <briefdescription>
+<para>Query the maximum capacity of the vector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The capacity the <ref refid="classtouchgfx_1_1_vector" kindref="compound">Vector</ref> was initialized with. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="527" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="527" bodyend="530"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_vector_1a9047106c099455d32a4553b0e66524f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T&amp; operator[]</definition>
+        <argsstring>(uint16_t idx)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+<para>Index operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the element to obtain.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A reference to the element placed at index idx. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="359" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="359" bodyend="362"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_vector_1a5dbfdedb7fcfb3f035020c7295bd6a8e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T&amp; operator[]</definition>
+        <argsstring>(uint16_t idx) const</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+<para>Const version of the index operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the element to obtain.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A const reference to the element placed at index idx. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="371" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="371" bodyend="374"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_vector_1ad6b770daecf1e082e46d3e9f445551d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T quickRemoveAt</definition>
+        <argsstring>(uint16_t index)</argsstring>
+        <name>quickRemoveAt</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Removes an element at the specified index of the <ref refid="classtouchgfx_1_1_vector" kindref="compound">Vector</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The last element in the list is moved to the position where the element is removed.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index to remove.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The value of the removed element. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="448" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="448" bodyend="463"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_vector_1a3ff45c9ecb81b629cd50a1ca57041b7c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void remove</definition>
+        <argsstring>(T e)</argsstring>
+        <name>remove</name>
+        <param>
+          <type>T</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Removes an element from the <ref refid="classtouchgfx_1_1_vector" kindref="compound">Vector</ref> if found in the <ref refid="classtouchgfx_1_1_vector" kindref="compound">Vector</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Does nothing if the element is not found in the <ref refid="classtouchgfx_1_1_vector" kindref="compound">Vector</ref>. The == operator of the element is used when comparing it with the elements in the <ref refid="classtouchgfx_1_1_vector" kindref="compound">Vector</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The element to remove from the <ref refid="classtouchgfx_1_1_vector" kindref="compound">Vector</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="401" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="401" bodyend="414"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_vector_1aa7ecbab1b1d19ffa336fcc081f562bb4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T removeAt</definition>
+        <argsstring>(uint16_t index)</argsstring>
+        <name>removeAt</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Removes an element at the specified index of the <ref refid="classtouchgfx_1_1_vector" kindref="compound">Vector</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Will &quot;bubble-down&quot; any remaining elements after the specified index.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index to remove.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The value of the removed element. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="424" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="424" bodyend="438"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_vector_1a310c0bebc002158f5646a91d60e4dc89" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void reverse</definition>
+        <argsstring>()</argsstring>
+        <name>reverse</name>
+        <briefdescription>
+<para>Reverses the ordering of the elements in the <ref refid="classtouchgfx_1_1_vector" kindref="compound">Vector</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="466" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="466" bodyend="476"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_vector_1a0b9925c1bf7886521162558475fd1ceb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>Gets the current size of the <ref refid="classtouchgfx_1_1_vector" kindref="compound">Vector</ref> which is the number of elements contained in the <ref refid="classtouchgfx_1_1_vector" kindref="compound">Vector</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the current size of the <ref refid="classtouchgfx_1_1_vector" kindref="compound">Vector</ref> which is the number of elements contained in the <ref refid="classtouchgfx_1_1_vector" kindref="compound">Vector</ref>.</para>
+<para><simplesect kind="return"><para>The size of the <ref refid="classtouchgfx_1_1_vector" kindref="compound">Vector</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="507" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="507" bodyend="510"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_vector_1a4df026156780bc0ca651c342b7d6daa4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Vector</definition>
+        <argsstring>()</argsstring>
+        <name>Vector</name>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructs an empty vector. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="347" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="347" bodyend="350"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A very simple container class using pre-allocated memory. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of objects this container works on. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>capacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum number of objects this container can store. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <location file="touchgfx/hal/Types.hpp" line="344" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="343" bodyend="544"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_vector_1ac7bdb0dbf799a4618706ada7c8fa8d97" prot="private" virt="non-virtual"><scope>touchgfx::Vector</scope><name>_elem</name></member>
+      <member refid="classtouchgfx_1_1_vector_1aa634b952549ebb0aa1c5f90330b66f76" prot="private" virt="non-virtual"><scope>touchgfx::Vector</scope><name>_size</name></member>
+      <member refid="classtouchgfx_1_1_vector_1aea9b069c6c80045f15d3fd76e868f357" prot="public" virt="non-virtual"><scope>touchgfx::Vector</scope><name>add</name></member>
+      <member refid="classtouchgfx_1_1_vector_1ac8bb3912a3ce86b15842e79d0b421204" prot="public" virt="non-virtual"><scope>touchgfx::Vector</scope><name>clear</name></member>
+      <member refid="classtouchgfx_1_1_vector_1a2e9db546a0d9f9718e4875028826e8d8" prot="public" virt="non-virtual"><scope>touchgfx::Vector</scope><name>contains</name></member>
+      <member refid="classtouchgfx_1_1_vector_1acf82f9b2937375c7b1cf3dccb3df3312" prot="public" virt="non-virtual"><scope>touchgfx::Vector</scope><name>isEmpty</name></member>
+      <member refid="classtouchgfx_1_1_vector_1a6d7eee86e40207750066d2a49c9223be" prot="public" virt="non-virtual"><scope>touchgfx::Vector</scope><name>maxCapacity</name></member>
+      <member refid="classtouchgfx_1_1_vector_1a9047106c099455d32a4553b0e66524f9" prot="public" virt="non-virtual"><scope>touchgfx::Vector</scope><name>operator[]</name></member>
+      <member refid="classtouchgfx_1_1_vector_1a5dbfdedb7fcfb3f035020c7295bd6a8e" prot="public" virt="non-virtual"><scope>touchgfx::Vector</scope><name>operator[]</name></member>
+      <member refid="classtouchgfx_1_1_vector_1ad6b770daecf1e082e46d3e9f445551d6" prot="public" virt="non-virtual"><scope>touchgfx::Vector</scope><name>quickRemoveAt</name></member>
+      <member refid="classtouchgfx_1_1_vector_1a3ff45c9ecb81b629cd50a1ca57041b7c" prot="public" virt="non-virtual"><scope>touchgfx::Vector</scope><name>remove</name></member>
+      <member refid="classtouchgfx_1_1_vector_1aa7ecbab1b1d19ffa336fcc081f562bb4" prot="public" virt="non-virtual"><scope>touchgfx::Vector</scope><name>removeAt</name></member>
+      <member refid="classtouchgfx_1_1_vector_1a310c0bebc002158f5646a91d60e4dc89" prot="public" virt="non-virtual"><scope>touchgfx::Vector</scope><name>reverse</name></member>
+      <member refid="classtouchgfx_1_1_vector_1a0b9925c1bf7886521162558475fd1ceb" prot="public" virt="non-virtual"><scope>touchgfx::Vector</scope><name>size</name></member>
+      <member refid="classtouchgfx_1_1_vector_1a4df026156780bc0ca651c342b7d6daa4" prot="public" virt="non-virtual"><scope>touchgfx::Vector</scope><name>Vector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structtouchgfx_1_1_bitmap_1_1_cache_table_entry" kind="struct" language="C++" prot="public">
+    <compoundname>touchgfx::Bitmap::CacheTableEntry</compoundname>
+    <includes local="no">Bitmap.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtouchgfx_1_1_bitmap_1_1_cache_table_entry_1abe222f6d3581e7920dcad5306cc906a8" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+<para>Pointer to location of image data for this <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> in the cache. 0 if bitmap not cached. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Bitmap.hpp" line="101" column="1" bodyfile="touchgfx/Bitmap.hpp" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Cache bookkeeping. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="touchgfx/Bitmap.hpp" line="100" column="1" bodyfile="touchgfx/Bitmap.hpp" bodystart="99" bodyend="102"/>
+    <listofallmembers>
+      <member refid="structtouchgfx_1_1_bitmap_1_1_cache_table_entry_1abe222f6d3581e7920dcad5306cc906a8" prot="public" virt="non-virtual"><scope>touchgfx::Bitmap::CacheTableEntry</scope><name>data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

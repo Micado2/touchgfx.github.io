@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_g_p_i_o" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::GPIO</compoundname>
+    <includes local="no">GPIO.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classtouchgfx_1_1_g_p_i_o_1adcdad68201b23094026d1e32a99c059f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>GPIO_ID</name>
+        <enumvalue id="classtouchgfx_1_1_g_p_i_o_1adcdad68201b23094026d1e32a99c059fa1f67506310d6fa06ae9a1e32631c60f2" prot="public">
+          <name>VSYNC_FREQ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtouchgfx_1_1_g_p_i_o_1adcdad68201b23094026d1e32a99c059fad4c2e9a35a4faf30ee7fb0011c9e94c0" prot="public">
+          <name>RENDER_TIME</name>
+          <briefdescription>
+<para>Pin is toggled at each VSYNC. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtouchgfx_1_1_g_p_i_o_1adcdad68201b23094026d1e32a99c059fa6cfbc811d1e4cd62022028ad29b4756b" prot="public">
+          <name>FRAME_RATE</name>
+          <briefdescription>
+<para>Pin is high when frame rendering begins, low when finished. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtouchgfx_1_1_g_p_i_o_1adcdad68201b23094026d1e32a99c059fad48a9a2ece8fffba9b7ac23ce7c39f51" prot="public">
+          <name>MCU_ACTIVE</name>
+          <briefdescription>
+<para>Pin is toggled when the framebuffers are swapped. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Pin is high when the MCU is doing work (i.e. not in idle task). </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum for the GPIOs used. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/GPIO.hpp" line="20" column="1" bodyfile="touchgfx/hal/GPIO.hpp" bodystart="19" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_g_p_i_o_1a4b0a8013cdc14aa441e4c263a2a1905e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void clear</definition>
+        <argsstring>(GPIO_ID id)</argsstring>
+        <name>clear</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_g_p_i_o_1adcdad68201b23094026d1e32a99c059f" kindref="member">GPIO_ID</ref></type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Sets a pin low. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the pin to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/GPIO.hpp" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_g_p_i_o_1ae84d73c65c88bb973c9681b33cfa3087" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool get</definition>
+        <argsstring>(GPIO_ID id)</argsstring>
+        <name>get</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_g_p_i_o_1adcdad68201b23094026d1e32a99c059f" kindref="member">GPIO_ID</ref></type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Gets the state of a pin. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the pin to get.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the pin is high, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/GPIO.hpp" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_g_p_i_o_1aedc913c139bb562646d3459b0ca28997" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <briefdescription>
+<para>Perform configuration of IO pins. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/GPIO.hpp" line="28" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_g_p_i_o_1a580861af5c063a8a52160fc769f9d604" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void set</definition>
+        <argsstring>(GPIO_ID id)</argsstring>
+        <name>set</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_g_p_i_o_1adcdad68201b23094026d1e32a99c059f" kindref="member">GPIO_ID</ref></type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Sets a pin high. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the pin to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/GPIO.hpp" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_g_p_i_o_1a60fd6bf838c2203cd998e19905724ccb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void toggle</definition>
+        <argsstring>(GPIO_ID id)</argsstring>
+        <name>toggle</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_g_p_i_o_1adcdad68201b23094026d1e32a99c059f" kindref="member">GPIO_ID</ref></type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Toggles a pin. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the pin to toggle. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/GPIO.hpp" line="49" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Interface class for manipulating GPIOs in order to do performance measurements on target. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Not used on the PC simulator. </para>
+    </detaileddescription>
+    <location file="touchgfx/hal/GPIO.hpp" line="16" column="1" bodyfile="touchgfx/hal/GPIO.hpp" bodystart="15" bodyend="59"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_g_p_i_o_1a4b0a8013cdc14aa441e4c263a2a1905e" prot="public" virt="non-virtual"><scope>touchgfx::GPIO</scope><name>clear</name></member>
+      <member refid="classtouchgfx_1_1_g_p_i_o_1adcdad68201b23094026d1e32a99c059fa6cfbc811d1e4cd62022028ad29b4756b" prot="public" virt="non-virtual"><scope>touchgfx::GPIO</scope><name>FRAME_RATE</name></member>
+      <member refid="classtouchgfx_1_1_g_p_i_o_1ae84d73c65c88bb973c9681b33cfa3087" prot="public" virt="non-virtual"><scope>touchgfx::GPIO</scope><name>get</name></member>
+      <member refid="classtouchgfx_1_1_g_p_i_o_1adcdad68201b23094026d1e32a99c059f" prot="public" virt="non-virtual"><scope>touchgfx::GPIO</scope><name>GPIO_ID</name></member>
+      <member refid="classtouchgfx_1_1_g_p_i_o_1aedc913c139bb562646d3459b0ca28997" prot="public" virt="non-virtual"><scope>touchgfx::GPIO</scope><name>init</name></member>
+      <member refid="classtouchgfx_1_1_g_p_i_o_1adcdad68201b23094026d1e32a99c059fad48a9a2ece8fffba9b7ac23ce7c39f51" prot="public" virt="non-virtual"><scope>touchgfx::GPIO</scope><name>MCU_ACTIVE</name></member>
+      <member refid="classtouchgfx_1_1_g_p_i_o_1adcdad68201b23094026d1e32a99c059fad4c2e9a35a4faf30ee7fb0011c9e94c0" prot="public" virt="non-virtual"><scope>touchgfx::GPIO</scope><name>RENDER_TIME</name></member>
+      <member refid="classtouchgfx_1_1_g_p_i_o_1a580861af5c063a8a52160fc769f9d604" prot="public" virt="non-virtual"><scope>touchgfx::GPIO</scope><name>set</name></member>
+      <member refid="classtouchgfx_1_1_g_p_i_o_1a60fd6bf838c2203cd998e19905724ccb" prot="public" virt="non-virtual"><scope>touchgfx::GPIO</scope><name>toggle</name></member>
+      <member refid="classtouchgfx_1_1_g_p_i_o_1adcdad68201b23094026d1e32a99c059fa1f67506310d6fa06ae9a1e32631c60f2" prot="public" virt="non-virtual"><scope>touchgfx::GPIO</scope><name>VSYNC_FREQ</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
