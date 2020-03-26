@@ -16,25 +16,25 @@
 <link rel="stylesheet" href="/styles.cdb1878b.css">
 
 
-<link rel="preload" href="/styles.0365b3df.js" as="script">
+<link rel="preload" href="/styles.8e46bf91.js" as="script">
 
-<link rel="preload" href="/runtime~main.93d0dacb.js" as="script">
+<link rel="preload" href="/runtime~main.dd83a560.js" as="script">
 
-<link rel="preload" href="/main.b3a05451.js" as="script">
+<link rel="preload" href="/main.a401fd06.js" as="script">
 
-<link rel="preload" href="/common.7eedbb4b.js" as="script">
+<link rel="preload" href="/common.2e2fc891.js" as="script">
 
-<link rel="preload" href="/2.9492f0a1.js" as="script">
+<link rel="preload" href="/2.51dfd133.js" as="script">
 
-<link rel="preload" href="/3.494aa7a9.js" as="script">
+<link rel="preload" href="/3.cd92cb1c.js" as="script">
 
-<link rel="preload" href="/1be78505.d60b5ee4.js" as="script">
+<link rel="preload" href="/1be78505.9537ca93.js" as="script">
 
-<link rel="preload" href="/20ac7829.80732e99.js" as="script">
+<link rel="preload" href="/20ac7829.338acc89.js" as="script">
 
-<link rel="preload" href="/17896441.f4af79d3.js" as="script">
+<link rel="preload" href="/17896441.fa5ce060.js" as="script">
 
-<link rel="preload" href="/aa64f3e9.313c150f.js" as="script">
+<link rel="preload" href="/aa64f3e9.8c7e8eb1.js" as="script">
 
 </head>
 <body>
@@ -125,25 +125,25 @@ memory. This &quot;costly&quot; method can be avoided if you do not call
 Bitmap::cache with a &quot;hole&quot; in the cache.</p><p>The drawings below illustrates the principles:</p><ol><li>Caching allocates on top of the previously allocated bitmaps:</li></ol><div class="figure"><a href="/img/Development/UIDevelopment/TouchGFXEngineFeatures/CachingBitmaps/cache-operations-cache.png" target="_blank"><img src="/img/Development/UIDevelopment/TouchGFXEngineFeatures/CachingBitmaps/cache-operations-cache.png"></a><p>Allocation sequence of bitmaps in memory</p></div><ol start="2"><li>Removal marks the memory unused:</li></ol><div class="figure"><a href="/img/Development/UIDevelopment/TouchGFXEngineFeatures/CachingBitmaps/cache-operations-uncache.png" target="_blank"><img src="/img/Development/UIDevelopment/TouchGFXEngineFeatures/CachingBitmaps/cache-operations-uncache.png"></a><p>Unused memory in cache after removal of cached bitmap</p></div><ol start="3"><li>Allocating the next bitmap compacts the cache and allocates on the top:</li></ol><div class="figure"><a href="/img/Development/UIDevelopment/TouchGFXEngineFeatures/CachingBitmaps/cache-operations-compact.png" target="_blank"><img src="/img/Development/UIDevelopment/TouchGFXEngineFeatures/CachingBitmaps/cache-operations-compact.png"></a><p>cache compaction of unused memory after caching a bitmap</p></div><ol start="4"><li>When you remove the topmost (last allocated) bitmap, the memory is freed immediately along with any free memory just below it:</li></ol><div class="figure"><a href="/img/Development/UIDevelopment/TouchGFXEngineFeatures/CachingBitmaps/cache-operations-uncache-top.png" target="_blank"><img src="/img/Development/UIDevelopment/TouchGFXEngineFeatures/CachingBitmaps/cache-operations-uncache-top.png"></a><p>Topmost bitmap cache removal</p></div><p>The next cache operation will in this case not involve a compact.</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/Development/UIDevelopment/TouchGFXEngineFeatures/CanvasWidgets"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« Canvas Widgets</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/Development/UIDevelopment/TouchGFXEngineFeatures/CustomWidgets"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">Custom Widgets »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#setup-the-bitmap-cache" class="contents__link">Setup the Bitmap Cache</a><ul><li><a href="#bitmap-cache-configuration" class="contents__link">Bitmap Cache Configuration</a></li><li><a href="#blockcopy-copies-data-from-flash-to-the-cache" class="contents__link">BlockCopy copies data from flash to the cache</a></li></ul></li><li><a href="#cache-operations" class="contents__link">Cache Operations</a></li><li><a href="#cache-strategies" class="contents__link">Cache Strategies</a><ul><li><a href="#cache-bitmap-on-a-screen-basis" class="contents__link">Cache Bitmap on a Screen basis</a></li><li><a href="#replace-the-background-bitmaps-in-the-cache" class="contents__link">Replace the background Bitmaps in the cache</a></li></ul></li><li><a href="#cache-memory-management" class="contents__link">Cache Memory Management</a></li></ul></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center"><div>Copyright © 2020 ST Microelectronics</div></div></div></footer>
 </div>
 
-<script src="/styles.0365b3df.js"></script>
+<script src="/styles.8e46bf91.js"></script>
 
-<script src="/runtime~main.93d0dacb.js"></script>
+<script src="/runtime~main.dd83a560.js"></script>
 
-<script src="/main.b3a05451.js"></script>
+<script src="/main.a401fd06.js"></script>
 
-<script src="/common.7eedbb4b.js"></script>
+<script src="/common.2e2fc891.js"></script>
 
-<script src="/2.9492f0a1.js"></script>
+<script src="/2.51dfd133.js"></script>
 
-<script src="/3.494aa7a9.js"></script>
+<script src="/3.cd92cb1c.js"></script>
 
-<script src="/1be78505.d60b5ee4.js"></script>
+<script src="/1be78505.9537ca93.js"></script>
 
-<script src="/20ac7829.80732e99.js"></script>
+<script src="/20ac7829.338acc89.js"></script>
 
-<script src="/17896441.f4af79d3.js"></script>
+<script src="/17896441.fa5ce060.js"></script>
 
-<script src="/aa64f3e9.313c150f.js"></script>
+<script src="/aa64f3e9.8c7e8eb1.js"></script>
 
 
 </body>

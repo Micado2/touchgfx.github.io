@@ -16,25 +16,25 @@
 <link rel="stylesheet" href="/styles.cdb1878b.css">
 
 
-<link rel="preload" href="/styles.0365b3df.js" as="script">
+<link rel="preload" href="/styles.8e46bf91.js" as="script">
 
-<link rel="preload" href="/runtime~main.93d0dacb.js" as="script">
+<link rel="preload" href="/runtime~main.dd83a560.js" as="script">
 
-<link rel="preload" href="/main.b3a05451.js" as="script">
+<link rel="preload" href="/main.a401fd06.js" as="script">
 
-<link rel="preload" href="/common.7eedbb4b.js" as="script">
+<link rel="preload" href="/common.2e2fc891.js" as="script">
 
-<link rel="preload" href="/2.9492f0a1.js" as="script">
+<link rel="preload" href="/2.51dfd133.js" as="script">
 
-<link rel="preload" href="/3.494aa7a9.js" as="script">
+<link rel="preload" href="/3.cd92cb1c.js" as="script">
 
-<link rel="preload" href="/1be78505.d60b5ee4.js" as="script">
+<link rel="preload" href="/1be78505.9537ca93.js" as="script">
 
-<link rel="preload" href="/20ac7829.80732e99.js" as="script">
+<link rel="preload" href="/20ac7829.338acc89.js" as="script">
 
-<link rel="preload" href="/17896441.f4af79d3.js" as="script">
+<link rel="preload" href="/17896441.fa5ce060.js" as="script">
 
-<link rel="preload" href="/661cbffd.fb385776.js" as="script">
+<link rel="preload" href="/661cbffd.a8163dd6.js" as="script">
 
 </head>
 <body>
@@ -44,25 +44,25 @@
 The Custom Containers can be added to screens and other custom containers from the Widgets tab, they can be found in their own category named &#x27;Custom Containers&#x27;.</p><div class="figure"><a href="/img/Development/UIDevelopment/DesignerUserGuide/CanvasView/DesignerCanvasViewTree.gif" target="_blank"><img src="/img/Development/UIDevelopment/DesignerUserGuide/CanvasView/DesignerCanvasViewTree.gif"></a><p>The Screens tree in the left side bar</p></div><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="canvas"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#canvas" title="Direct link to heading">#</a>Canvas</h2><p>The center of the view contains the <a href="#Canvas">Canvas</a> that displays the view of the screen or custom container that is currently selected.</p><p>The canvas is surrounded by various controls: <a href="#widget-order-controls">Widget Order Controls</a>, <a href="#content-clipping-control">Content Clipping Control</a>, <a href="#history-controls">History Controls</a> and <a href="#zoom-controls">Zoom Controls</a></p><div class="figure"><a href="/img/Development/UIDevelopment/DesignerUserGuide/CanvasView/DesignerCanvasView.gif" target="_blank"><img src="/img/Development/UIDevelopment/DesignerUserGuide/CanvasView/DesignerCanvasView.gif"></a><p>The Canvas in the Canvas View</p></div><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="widget-positioning"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#widget-positioning" title="Direct link to heading">#</a>Widget Positioning</h3><p>As shown in the GIF above, it is possible to move and resize widgets by dragging their thumbs.</p><p>It is also possible to move selected widgets by 1 pixel using the arrow keys. Holding down <code class="shortcut">Ctrl</code> while using the arrows keys will move selected widgets by 10 pixels.</p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="widget-order-controls"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#widget-order-controls" title="Direct link to heading">#</a>Widget Order Controls</h3><p>The z-order of widgets can be manipulated by the Bring Forward and Send Backwards controls, this also changes their order in the Screens or Custom Container tree.</p><p>Bring Forward can also be triggered by pressing <code class="shortcut">CTRL + F</code></p><p>Send Backward can also be triggered by pressing <code class="shortcut">CTRL + B</code></p><div class="figure"><a href="/img/Development/UIDevelopment/DesignerUserGuide/CanvasView/WidgetOrderControls.png" target="_blank"><img src="/img/Development/UIDevelopment/DesignerUserGuide/CanvasView/WidgetOrderControls.png"></a><p>Bring Forward and Send Backwards controls in the Canvas View</p></div><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="content-clipping-control"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#content-clipping-control" title="Direct link to heading">#</a>Content Clipping Control</h3><p>In the canvas, widgets outside the borders of the Screen, Custom Container and children of container type widgets are clipped. The content clipping control toggles between clipping the widgets fully or showing them partially anyway.</p><div class="figure"><a href="/img/Development/UIDevelopment/DesignerUserGuide/CanvasView/ContentClippingToggleButton.png" target="_blank"><img src="/img/Development/UIDevelopment/DesignerUserGuide/CanvasView/ContentClippingToggleButton.png"></a><p>Show/Hide Clipped Content control in the Canvas View</p></div><p>In the image below a Box is placed halfway outside the borders of a screen, when the content clipping control is set to show clipped widgets, the Box will not be shown fully but instead have the part that is outside desaturated.</p><div class="figure"><a href="/img/Development/UIDevelopment/DesignerUserGuide/CanvasView/ClippedContent.png" target="_blank"><img src="/img/Development/UIDevelopment/DesignerUserGuide/CanvasView/ClippedContent.png"></a><p>Box widget appearance difference when showing and hiding clipped content</p></div><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="history-controls"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#history-controls" title="Direct link to heading">#</a>History Controls</h3><p>The history of changes performed on the canvas can be undone and redone through the history controls, located at the top center of the canvas.<br>Each screen and custom container maintains its own history, therefore to undo or redo a change performed on a certain screen, that specific screen has to be visible on the canvas.</p><p>The History controls can also be triggered by pressing <code class="shortcut">CTRL + Z</code> and <code class="shortcut">CTRL + Y </code></p><div class="figure"><a href="/img/Development/UIDevelopment/DesignerUserGuide/CanvasView/HistoryControls.png" target="_blank"><img src="/img/Development/UIDevelopment/DesignerUserGuide/CanvasView/HistoryControls.png"></a><p>History controls in the Canvas View</p></div><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="zoom-controls"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#zoom-controls" title="Direct link to heading">#</a>Zoom Controls</h3><p>The zoom level of the canvas can be controlled with the zoom control in the bottom left corner of the canvas. To return to 100% zoom press the button next to the zoom slider label &#x27;1:1&#x27;.</p><p>Zooming can also be achieved by using <code class="shortcut">CTRL + Mouse Wheel</code></p><div class="figure"><a href="/img/Development/UIDevelopment/DesignerUserGuide/CanvasView/ZoomControls.png" target="_blank"><img src="/img/Development/UIDevelopment/DesignerUserGuide/CanvasView/ZoomControls.png"></a><p>Zoom controls in the Canvas View</p></div><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="right-side-bar"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#right-side-bar" title="Direct link to heading">#</a>Right Side Bar</h2><p>The side bar to the right contains a tab control, with navigation to the <a href="#properties">Properties</a> of the widget currently selected, and the <a href="#interactions">Interactions</a> of the Screen or Custom Container that is currently viewed on the canvas.</p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="properties"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#properties" title="Direct link to heading">#</a>Properties</h3><p>The Properties tab will show the properties of the Widget/Screen/Custom Container that is currently selected. The name of the selected component is displayed at the top of the properties list, next to the name there is a questionmark icon. Clicking this questionmark icon will expand the section, to display a text describing and a link to documentation for the component.</p><p>Each of the sections in the properties list can be collapsed and expanded by pressing the chrevron next to the section name.</p><div class="figure"><a href="/img/Development/UIDevelopment/DesignerUserGuide/CanvasView/PropertiesTab.png" target="_blank"><img src="/img/Development/UIDevelopment/DesignerUserGuide/CanvasView/PropertiesTab.png"></a><p>Properties of Box</p></div><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="interactions"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#interactions" title="Direct link to heading">#</a>Interactions</h3><p>The Interactions tab will show the interactions of the Screen or Custom Container that is currently displayed on the canvas. The questionmark at the top can be pressed to reveal a description of interactions and a link to an article.</p><p>Interactions can be added by pressing the blue button labeled &#x27;Add Interaction&#x27;. Each interaction can be collapsed and expanded by pressing the chevron next to the name of the interaction. Next to the chevron, a cross is located, this cross will delete the interaction when clicked.</p><div class="figure"><a href="/img/Development/UIDevelopment/DesignerUserGuide/CanvasView/InteractionsTab.png" target="_blank"><img src="/img/Development/UIDevelopment/DesignerUserGuide/CanvasView/InteractionsTab.png"></a><p>Interactions of a Screen</p></div><div class="highlight highlight-further-reading"><div class="highlight-heading"><h5><div class="highlight-icon"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></div>Further reading</h5></div><div class="highlight-content"><li><a href="/docs/Development/UIDevelopment/DesignerUserGuide/Interactions">Interactions</a></li></div></div></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/Development/UIDevelopment/DesignerUserGuide/MainWindow"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« Main Window</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/Development/UIDevelopment/DesignerUserGuide/ImagesView"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">Images View »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#left-side-bar" class="contents__link">Left Side Bar</a><ul><li><a href="#widgets" class="contents__link">Widgets</a></li><li><a href="#screens--custom-containers" class="contents__link">Screens &amp; Custom Containers</a></li></ul></li><li><a href="#canvas" class="contents__link">Canvas</a><ul><li><a href="#widget-positioning" class="contents__link">Widget Positioning</a></li><li><a href="#widget-order-controls" class="contents__link">Widget Order Controls</a></li><li><a href="#content-clipping-control" class="contents__link">Content Clipping Control</a></li><li><a href="#history-controls" class="contents__link">History Controls</a></li><li><a href="#zoom-controls" class="contents__link">Zoom Controls</a></li></ul></li><li><a href="#right-side-bar" class="contents__link">Right Side Bar</a><ul><li><a href="#properties" class="contents__link">Properties</a></li><li><a href="#interactions" class="contents__link">Interactions</a></li></ul></li></ul></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center"><div>Copyright © 2020 ST Microelectronics</div></div></div></footer>
 </div>
 
-<script src="/styles.0365b3df.js"></script>
+<script src="/styles.8e46bf91.js"></script>
 
-<script src="/runtime~main.93d0dacb.js"></script>
+<script src="/runtime~main.dd83a560.js"></script>
 
-<script src="/main.b3a05451.js"></script>
+<script src="/main.a401fd06.js"></script>
 
-<script src="/common.7eedbb4b.js"></script>
+<script src="/common.2e2fc891.js"></script>
 
-<script src="/2.9492f0a1.js"></script>
+<script src="/2.51dfd133.js"></script>
 
-<script src="/3.494aa7a9.js"></script>
+<script src="/3.cd92cb1c.js"></script>
 
-<script src="/1be78505.d60b5ee4.js"></script>
+<script src="/1be78505.9537ca93.js"></script>
 
-<script src="/20ac7829.80732e99.js"></script>
+<script src="/20ac7829.338acc89.js"></script>
 
-<script src="/17896441.f4af79d3.js"></script>
+<script src="/17896441.fa5ce060.js"></script>
 
-<script src="/661cbffd.fb385776.js"></script>
+<script src="/661cbffd.a8163dd6.js"></script>
 
 
 </body>

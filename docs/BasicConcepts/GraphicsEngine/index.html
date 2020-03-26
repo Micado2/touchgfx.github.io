@@ -16,25 +16,25 @@
 <link rel="stylesheet" href="/styles.cdb1878b.css">
 
 
-<link rel="preload" href="/styles.0365b3df.js" as="script">
+<link rel="preload" href="/styles.8e46bf91.js" as="script">
 
-<link rel="preload" href="/runtime~main.93d0dacb.js" as="script">
+<link rel="preload" href="/runtime~main.dd83a560.js" as="script">
 
-<link rel="preload" href="/main.b3a05451.js" as="script">
+<link rel="preload" href="/main.a401fd06.js" as="script">
 
-<link rel="preload" href="/common.7eedbb4b.js" as="script">
+<link rel="preload" href="/common.2e2fc891.js" as="script">
 
-<link rel="preload" href="/2.9492f0a1.js" as="script">
+<link rel="preload" href="/2.51dfd133.js" as="script">
 
-<link rel="preload" href="/3.494aa7a9.js" as="script">
+<link rel="preload" href="/3.cd92cb1c.js" as="script">
 
-<link rel="preload" href="/1be78505.d60b5ee4.js" as="script">
+<link rel="preload" href="/1be78505.9537ca93.js" as="script">
 
-<link rel="preload" href="/20ac7829.80732e99.js" as="script">
+<link rel="preload" href="/20ac7829.338acc89.js" as="script">
 
-<link rel="preload" href="/17896441.f4af79d3.js" as="script">
+<link rel="preload" href="/17896441.fa5ce060.js" as="script">
 
-<link rel="preload" href="/f60b5397.52385f00.js" as="script">
+<link rel="preload" href="/f60b5397.8189db88.js" as="script">
 
 </head>
 <body>
@@ -50,25 +50,25 @@ React to the collected events, updating the positions, animations, colors, image
 Redraw the parts of the model that has been updated and make them appear on the display</li></ul><p>A diagrammatic version of the main loop is</p><div class="figure noshadow"><a href="/img/BasicConcepts/engine_cycle.png" target="_blank"><img width="320" src="/img/BasicConcepts/engine_cycle.png"></a><p>Main loop</p></div><p>Each execution of the main loop is denoted a tick of the application.</p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="platform-adaptibility"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#platform-adaptibility" title="Direct link to heading">#</a>Platform adaptibility</h2><p>As TouchGFX is designed for running on all STM32 embedded setups the above activities can be tailored.</p><ul><li>The collection of events is handled by a dedicated abstraction layer. The tailoring of this layer is the subject of the section on <a href="/docs/Development/TouchGFXHALDevelopment/TouchGFXHALDevelopmentIntroduction">TouchGFX AL Development</a>.</li><li>The updating of the model is completely up to the application. The details on how to do this update is the subject of <a href="/docs/Development/UIDevelopment/UIDevelopmentIntroduction">UI Development</a>.</li><li>The rendering of graphics to the framebuffer is handled by TouchGFX and will in general not need to be customized. The transferring of the pixels in the framebuffer to the display is platform specific, see the section on ###TODO for how to customize this to specific platforms.</li></ul><p>Read on to get more specifics on the main loop of TouchGFX.</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/BasicConcepts/Framebuffer"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« Framebuffer</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/BasicConcepts/Rendering"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">Main Loop »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#scene-model" class="contents__link">Scene model</a></li><li><a href="#manipulate-the-model" class="contents__link">Manipulate the model</a></li><li><a href="#issue-drawing-commands" class="contents__link">Issue drawing commands</a></li><li><a href="#main-loop" class="contents__link">Main Loop</a></li><li><a href="#platform-adaptibility" class="contents__link">Platform adaptibility</a></li></ul></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center"><div>Copyright © 2020 ST Microelectronics</div></div></div></footer>
 </div>
 
-<script src="/styles.0365b3df.js"></script>
+<script src="/styles.8e46bf91.js"></script>
 
-<script src="/runtime~main.93d0dacb.js"></script>
+<script src="/runtime~main.dd83a560.js"></script>
 
-<script src="/main.b3a05451.js"></script>
+<script src="/main.a401fd06.js"></script>
 
-<script src="/common.7eedbb4b.js"></script>
+<script src="/common.2e2fc891.js"></script>
 
-<script src="/2.9492f0a1.js"></script>
+<script src="/2.51dfd133.js"></script>
 
-<script src="/3.494aa7a9.js"></script>
+<script src="/3.cd92cb1c.js"></script>
 
-<script src="/1be78505.d60b5ee4.js"></script>
+<script src="/1be78505.9537ca93.js"></script>
 
-<script src="/20ac7829.80732e99.js"></script>
+<script src="/20ac7829.338acc89.js"></script>
 
-<script src="/17896441.f4af79d3.js"></script>
+<script src="/17896441.fa5ce060.js"></script>
 
-<script src="/f60b5397.52385f00.js"></script>
+<script src="/f60b5397.8189db88.js"></script>
 
 
 </body>

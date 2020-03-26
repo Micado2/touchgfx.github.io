@@ -16,25 +16,25 @@
 <link rel="stylesheet" href="/styles.cdb1878b.css">
 
 
-<link rel="preload" href="/styles.0365b3df.js" as="script">
+<link rel="preload" href="/styles.8e46bf91.js" as="script">
 
-<link rel="preload" href="/runtime~main.93d0dacb.js" as="script">
+<link rel="preload" href="/runtime~main.dd83a560.js" as="script">
 
-<link rel="preload" href="/main.b3a05451.js" as="script">
+<link rel="preload" href="/main.a401fd06.js" as="script">
 
-<link rel="preload" href="/common.7eedbb4b.js" as="script">
+<link rel="preload" href="/common.2e2fc891.js" as="script">
 
-<link rel="preload" href="/2.9492f0a1.js" as="script">
+<link rel="preload" href="/2.51dfd133.js" as="script">
 
-<link rel="preload" href="/3.494aa7a9.js" as="script">
+<link rel="preload" href="/3.cd92cb1c.js" as="script">
 
-<link rel="preload" href="/1be78505.d60b5ee4.js" as="script">
+<link rel="preload" href="/1be78505.9537ca93.js" as="script">
 
-<link rel="preload" href="/20ac7829.80732e99.js" as="script">
+<link rel="preload" href="/20ac7829.338acc89.js" as="script">
 
-<link rel="preload" href="/17896441.f4af79d3.js" as="script">
+<link rel="preload" href="/17896441.fa5ce060.js" as="script">
 
-<link rel="preload" href="/9ca6e4a9.32c3767c.js" as="script">
+<link rel="preload" href="/9ca6e4a9.2972c71e.js" as="script">
 
 </head>
 <body>
@@ -93,25 +93,25 @@ above example that is more than 147.136 bytes) then you do not need to
 use the bitmap cache to copy the images.</p><p>The strategy is as follows:</p><ul><li>Select a fixed address and range in RAM for the images</li><li>Remove that range from the RAM area in the linker script</li><li>Create a new area IMAGES with the selected address and size</li><li>Place the ExtFlashSection in IMAGES area</li><li>Link the application and check the .map file</li><li>Create the images.bin file from the application.elf</li><li>Before TouchGFX is started, copy the whole images.bin file from the SD-card to the selected address in RAM</li></ul><p>This solution is simple, but has some drawbacks:</p><ul><li>The available RAM must be big enough to hold all the images</li><li>Start up time will be larger because of the copying from the SD-card (megabytes can take seconds)</li></ul></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/Development/UIDevelopment/Scenarios/CreatingDynamicL8Images"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« Creating Dynamic L8 Images</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/miscellaneous/updating-to-a-new-touchgfx-version"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">Updating to a new TouchGFX Version »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#copying-bitmap-data-from-flash-to-cache" class="contents__link">Copying bitmap data from flash to cache</a></li><li><a href="#the-bitmapdatabase-table" class="contents__link">The BitmapDatabase table</a></li><li><a href="#linker-script-modifications" class="contents__link">Linker script modifications</a></li><li><a href="#modifying-the-blockcopy-function" class="contents__link">Modifying the BlockCopy function</a></li><li><a href="#linking-images-to-ram" class="contents__link">Linking images to RAM</a></li></ul></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center"><div>Copyright © 2020 ST Microelectronics</div></div></div></footer>
 </div>
 
-<script src="/styles.0365b3df.js"></script>
+<script src="/styles.8e46bf91.js"></script>
 
-<script src="/runtime~main.93d0dacb.js"></script>
+<script src="/runtime~main.dd83a560.js"></script>
 
-<script src="/main.b3a05451.js"></script>
+<script src="/main.a401fd06.js"></script>
 
-<script src="/common.7eedbb4b.js"></script>
+<script src="/common.2e2fc891.js"></script>
 
-<script src="/2.9492f0a1.js"></script>
+<script src="/2.51dfd133.js"></script>
 
-<script src="/3.494aa7a9.js"></script>
+<script src="/3.cd92cb1c.js"></script>
 
-<script src="/1be78505.d60b5ee4.js"></script>
+<script src="/1be78505.9537ca93.js"></script>
 
-<script src="/20ac7829.80732e99.js"></script>
+<script src="/20ac7829.338acc89.js"></script>
 
-<script src="/17896441.f4af79d3.js"></script>
+<script src="/17896441.fa5ce060.js"></script>
 
-<script src="/9ca6e4a9.32c3767c.js"></script>
+<script src="/9ca6e4a9.2972c71e.js"></script>
 
 
 </body>

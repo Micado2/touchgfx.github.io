@@ -16,25 +16,25 @@
 <link rel="stylesheet" href="/styles.cdb1878b.css">
 
 
-<link rel="preload" href="/styles.0365b3df.js" as="script">
+<link rel="preload" href="/styles.8e46bf91.js" as="script">
 
-<link rel="preload" href="/runtime~main.93d0dacb.js" as="script">
+<link rel="preload" href="/runtime~main.dd83a560.js" as="script">
 
-<link rel="preload" href="/main.b3a05451.js" as="script">
+<link rel="preload" href="/main.a401fd06.js" as="script">
 
-<link rel="preload" href="/common.7eedbb4b.js" as="script">
+<link rel="preload" href="/common.2e2fc891.js" as="script">
 
-<link rel="preload" href="/2.9492f0a1.js" as="script">
+<link rel="preload" href="/2.51dfd133.js" as="script">
 
-<link rel="preload" href="/3.494aa7a9.js" as="script">
+<link rel="preload" href="/3.cd92cb1c.js" as="script">
 
-<link rel="preload" href="/1be78505.d60b5ee4.js" as="script">
+<link rel="preload" href="/1be78505.9537ca93.js" as="script">
 
-<link rel="preload" href="/20ac7829.80732e99.js" as="script">
+<link rel="preload" href="/20ac7829.338acc89.js" as="script">
 
-<link rel="preload" href="/17896441.f4af79d3.js" as="script">
+<link rel="preload" href="/17896441.fa5ce060.js" as="script">
 
-<link rel="preload" href="/d16a5ec8.774829cb.js" as="script">
+<link rel="preload" href="/d16a5ec8.12a26c28.js" as="script">
 
 </head>
 <body>
@@ -80,25 +80,25 @@
 </span></div><div class="token-line docusaurus-highlight-code-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token keyword" style="font-style:italic">void</span><span class="token plain"> MyCustomContainer</span><span class="token operator" style="color:rgb(137, 221, 255)">::</span><span class="token function" style="color:rgb(130, 170, 255)">doSomething</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"></span></div><div class="token-line docusaurus-highlight-code-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></div><div class="token-line docusaurus-highlight-code-line" style="color:#bfc7d5"><span class="token plain">    MyCustomContainer</span><span class="token operator" style="color:rgb(137, 221, 255)">::</span><span class="token function" style="color:rgb(130, 170, 255)">emitSomethingHappenedCallback</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></div><div class="token-line docusaurus-highlight-code-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span></div></code></pre></div><div class="highlight highlight-further-reading"><div class="highlight-heading"><h5><div class="highlight-icon"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></div>Further reading</h5></div><div class="highlight-content">For a more detailed example on how to create and use a custom container, refer to <a href="/docs/Tutorials/Tutorial_04">Tutorial 4: Creating a Scroll Wheel with custom behavior</a>.</div></div></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/Development/UIDevelopment/TouchGFXEngineFeatures/CustomTriggersAndActions"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« Custom Triggers and Actions</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/Development/UIDevelopment/TouchGFXEngineFeatures/CanvasWidgets"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">Canvas Widgets »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#in-touchgfx-designer" class="contents__link">In TouchGFX Designer</a><ul><li><a href="#composite-custom-containers" class="contents__link">Composite Custom Containers</a></li><li><a href="#custom-triggers-and-actions" class="contents__link">Custom Triggers and Actions</a></li></ul></li><li><a href="#in-code" class="contents__link">In Code</a><ul><li><a href="#create-a-class-that-extends-the-touchgfxcontainer-class" class="contents__link">Create a class that extends the touchgfx::Container class</a></li><li><a href="#declaring-all-children-of-the-container-as-member-variables" class="contents__link">Declaring all children of the container as member variables</a></li><li><a href="#setting-the-width-and-height-of-the-container" class="contents__link">Setting the width and height of the container</a></li><li><a href="#setting-up-each-of-the-children" class="contents__link">Setting up each of the children</a></li><li><a href="#adding-each-of-the-children-to-the-hierarchy-in-the-right-order" class="contents__link">Adding each of the children to the hierarchy, in the right order</a></li><li><a href="#implementing-the-desired-behaviour-via-methods-and-callbacks" class="contents__link">Implementing the desired behaviour via methods and callbacks</a></li></ul></li></ul></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center"><div>Copyright © 2020 ST Microelectronics</div></div></div></footer>
 </div>
 
-<script src="/styles.0365b3df.js"></script>
+<script src="/styles.8e46bf91.js"></script>
 
-<script src="/runtime~main.93d0dacb.js"></script>
+<script src="/runtime~main.dd83a560.js"></script>
 
-<script src="/main.b3a05451.js"></script>
+<script src="/main.a401fd06.js"></script>
 
-<script src="/common.7eedbb4b.js"></script>
+<script src="/common.2e2fc891.js"></script>
 
-<script src="/2.9492f0a1.js"></script>
+<script src="/2.51dfd133.js"></script>
 
-<script src="/3.494aa7a9.js"></script>
+<script src="/3.cd92cb1c.js"></script>
 
-<script src="/1be78505.d60b5ee4.js"></script>
+<script src="/1be78505.9537ca93.js"></script>
 
-<script src="/20ac7829.80732e99.js"></script>
+<script src="/20ac7829.338acc89.js"></script>
 
-<script src="/17896441.f4af79d3.js"></script>
+<script src="/17896441.fa5ce060.js"></script>
 
-<script src="/d16a5ec8.774829cb.js"></script>
+<script src="/d16a5ec8.12a26c28.js"></script>
 
 
 </body>
