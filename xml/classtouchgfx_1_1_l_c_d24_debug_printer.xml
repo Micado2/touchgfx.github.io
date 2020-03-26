@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_l_c_d24_debug_printer" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::LCD24DebugPrinter</compoundname>
+    <basecompoundref refid="classtouchgfx_1_1_debug_printer" prot="public" virt="non-virtual">DebugPrinter</basecompoundref>
+    <includes local="no">LCD24bpp.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d24_debug_printer_1a1dc23f01b12284a9148d54e7ceb27645" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void draw</definition>
+        <argsstring>(const Rect &amp;rect) const</argsstring>
+        <name>draw</name>
+        <reimplements refid="classtouchgfx_1_1_debug_printer_1aa79feb642328453fb0ced82edea47e60">draw</reimplements>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>rect</declname>
+        </param>
+        <briefdescription>
+<para>Draws the debug string on top of the framebuffer content. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rect to draw inside. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD24bpp.hpp" line="658" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The class <ref refid="classtouchgfx_1_1_l_c_d24_debug_printer" kindref="compound">LCD24DebugPrinter</ref> implements the <ref refid="classtouchgfx_1_1_debug_printer" kindref="compound">DebugPrinter</ref> interface for printing debug messages on top of 24bit framebuffer. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_debug_printer" kindref="compound">DebugPrinter</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="899">
+        <label>LCD24DebugPrinter</label>
+        <link refid="classtouchgfx_1_1_l_c_d24_debug_printer"/>
+        <childnode refid="900" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="900">
+        <label>DebugPrinter</label>
+        <link refid="classtouchgfx_1_1_debug_printer"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="901">
+        <label>LCD24DebugPrinter</label>
+        <link refid="classtouchgfx_1_1_l_c_d24_debug_printer"/>
+        <childnode refid="902" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="903">
+        <label>Rect</label>
+        <link refid="classtouchgfx_1_1_rect"/>
+      </node>
+      <node id="902">
+        <label>DebugPrinter</label>
+        <link refid="classtouchgfx_1_1_debug_printer"/>
+        <childnode refid="903" relation="usage">
+          <edgelabel>debugRegion</edgelabel>
+        </childnode>
+        <childnode refid="904" relation="usage">
+          <edgelabel>debugForegroundColor</edgelabel>
+        </childnode>
+      </node>
+      <node id="904">
+        <label>colortype</label>
+        <link refid="structtouchgfx_1_1colortype"/>
+      </node>
+    </collaborationgraph>
+    <location file="platform/driver/lcd/LCD24bpp.hpp" line="656" column="1" bodyfile="platform/driver/lcd/LCD24bpp.hpp" bodystart="655" bodyend="659"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_debug_printer_1a88661c8eb3b441bc9472f11853003cfe" prot="protected" virt="non-virtual"><scope>touchgfx::LCD24DebugPrinter</scope><name>debugForegroundColor</name></member>
+      <member refid="classtouchgfx_1_1_debug_printer_1a7a61b7c193030b895bb9a2e83d9d6415" prot="public" virt="non-virtual"><scope>touchgfx::LCD24DebugPrinter</scope><name>DebugPrinter</name></member>
+      <member refid="classtouchgfx_1_1_debug_printer_1a94a98b2832a23ae7fe9ef00da2d6b0c1" prot="protected" virt="non-virtual"><scope>touchgfx::LCD24DebugPrinter</scope><name>debugRegion</name></member>
+      <member refid="classtouchgfx_1_1_debug_printer_1abf7e29dd7eb3b3c2597f4d12325a77da" prot="protected" virt="non-virtual"><scope>touchgfx::LCD24DebugPrinter</scope><name>debugScale</name></member>
+      <member refid="classtouchgfx_1_1_debug_printer_1adb587c539c181cecc3be305d5b437e6f" prot="protected" virt="non-virtual"><scope>touchgfx::LCD24DebugPrinter</scope><name>debugString</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d24_debug_printer_1a1dc23f01b12284a9148d54e7ceb27645" prot="public" virt="virtual"><scope>touchgfx::LCD24DebugPrinter</scope><name>draw</name></member>
+      <member refid="classtouchgfx_1_1_debug_printer_1adfd8e4cd36e223102a456ec4c367dd1f" prot="protected" virt="non-virtual"><scope>touchgfx::LCD24DebugPrinter</scope><name>getGlyph</name></member>
+      <member refid="classtouchgfx_1_1_debug_printer_1a46a43d27eb2566f0ed150fb98b57d3d6" prot="public" virt="non-virtual"><scope>touchgfx::LCD24DebugPrinter</scope><name>getRegion</name></member>
+      <member refid="classtouchgfx_1_1_debug_printer_1ae60d6f2a87821a6da5ce0fbebe07eb58" prot="public" virt="non-virtual"><scope>touchgfx::LCD24DebugPrinter</scope><name>setColor</name></member>
+      <member refid="classtouchgfx_1_1_debug_printer_1a2579955a9563fc7a77361884e04f8653" prot="public" virt="non-virtual"><scope>touchgfx::LCD24DebugPrinter</scope><name>setPosition</name></member>
+      <member refid="classtouchgfx_1_1_debug_printer_1a3aa36bdce508c9464dc1c61ee24e427e" prot="public" virt="non-virtual"><scope>touchgfx::LCD24DebugPrinter</scope><name>setScale</name></member>
+      <member refid="classtouchgfx_1_1_debug_printer_1a666790bd659108d5bc623718fbfb44ca" prot="public" virt="non-virtual"><scope>touchgfx::LCD24DebugPrinter</scope><name>setString</name></member>
+      <member refid="classtouchgfx_1_1_debug_printer_1af8194938732f7530746a2162921352f0" prot="public" virt="virtual"><scope>touchgfx::LCD24DebugPrinter</scope><name>~DebugPrinter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

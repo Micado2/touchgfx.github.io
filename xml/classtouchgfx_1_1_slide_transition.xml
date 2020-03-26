@@ -1,0 +1,381 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_slide_transition" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::SlideTransition</compoundname>
+    <basecompoundref refid="classtouchgfx_1_1_transition" prot="public" virt="non-virtual">Transition</basecompoundref>
+    <includes local="no">SlideTransition.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type><ref refid="namespacetouchgfx_1a224b9163917ac32fc95a60d8c1eec3aa" kindref="member">Direction</ref></type>
+        <declname>templateDirection</declname>
+        <defname>templateDirection</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_slide_transition_1a923396b0312ba5a2696312e18c49571e" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_snapshot_widget" kindref="compound">SnapshotWidget</ref></type>
+        <definition>SnapshotWidget snapshot</definition>
+        <argsstring></argsstring>
+        <name>snapshot</name>
+        <briefdescription>
+<para>The <ref refid="classtouchgfx_1_1_snapshot_widget" kindref="compound">SnapshotWidget</ref> that is moved when transitioning. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transitions/SlideTransition.hpp" line="216" column="1" bodyfile="touchgfx/transitions/SlideTransition.hpp" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_slide_transition_1ad4f4a9016c953e0841bfe830147d9d20" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_snapshot_widget" kindref="compound">SnapshotWidget</ref> *</type>
+        <definition>SnapshotWidget* snapshotPtr</definition>
+        <argsstring></argsstring>
+        <name>snapshotPtr</name>
+        <briefdescription>
+<para>Pointer pointing to the snapshot used in this transition.The snapshot pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transitions/SlideTransition.hpp" line="217" column="1" bodyfile="touchgfx/transitions/SlideTransition.hpp" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_slide_transition_1a5012e585088b0f60cd914b1d780c4e20" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t animationCounter</definition>
+        <argsstring></argsstring>
+        <name>animationCounter</name>
+        <briefdescription>
+<para>Current step in the transition animation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transitions/SlideTransition.hpp" line="224" column="1" bodyfile="touchgfx/transitions/SlideTransition.hpp" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_slide_transition_1a005a6d4c68b7ee403cd51b46f3333457" prot="private" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t animationSteps</definition>
+        <argsstring></argsstring>
+        <name>animationSteps</name>
+        <briefdescription>
+<para>Number of steps the transition should move per complete animation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transitions/SlideTransition.hpp" line="223" column="1" bodyfile="touchgfx/transitions/SlideTransition.hpp" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_slide_transition_1a5d671dd284112ffc3640ba1a4414bb38" prot="private" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t calculatedValue</definition>
+        <argsstring></argsstring>
+        <name>calculatedValue</name>
+        <briefdescription>
+<para>The calculated X or Y value for the snapshot and the children. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transitions/SlideTransition.hpp" line="226" column="1" bodyfile="touchgfx/transitions/SlideTransition.hpp" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_slide_transition_1a53421c695d00016ab925777d423b4eb6" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacetouchgfx_1a224b9163917ac32fc95a60d8c1eec3aa" kindref="member">Direction</ref></type>
+        <definition>Direction direction</definition>
+        <argsstring></argsstring>
+        <name>direction</name>
+        <briefdescription>
+<para>The direction of the transition. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transitions/SlideTransition.hpp" line="222" column="1" bodyfile="touchgfx/transitions/SlideTransition.hpp" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_slide_transition_1a9859785231665b195c81c306d830a486" prot="private" static="no" mutable="no">
+        <type><ref refid="structtouchgfx_1_1_callback" kindref="compound">Callback</ref>&lt; <ref refid="classtouchgfx_1_1_slide_transition" kindref="compound">SlideTransition</ref>, <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> &amp; &gt;</type>
+        <definition>Callback&lt;SlideTransition, Drawable&amp;&gt; handleTickCallback</definition>
+        <argsstring></argsstring>
+        <name>handleTickCallback</name>
+        <briefdescription>
+<para><ref refid="structtouchgfx_1_1_callback" kindref="compound">Callback</ref> used for <ref refid="classtouchgfx_1_1_slide_transition_1a83f41a8c9137475984f95aa3ab206d98" kindref="member">tickMoveDrawable()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transitions/SlideTransition.hpp" line="220" column="1" bodyfile="touchgfx/transitions/SlideTransition.hpp" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_slide_transition_1a77c5ebdb51f6d0560825b66d265647a1" prot="private" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t targetValue</definition>
+        <argsstring></argsstring>
+        <name>targetValue</name>
+        <briefdescription>
+<para>The target value for the transition animation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transitions/SlideTransition.hpp" line="225" column="1" bodyfile="touchgfx/transitions/SlideTransition.hpp" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_transition_1a1af635cee0f186c3d0fcea60bac14355" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void handleTickEvent</definition>
+        <argsstring>()</argsstring>
+        <name>handleTickEvent</name>
+        <reimplements refid="classtouchgfx_1_1_transition_1a1af635cee0f186c3d0fcea60bac14355">handleTickEvent</reimplements>
+        <briefdescription>
+<para>Handles the tick event when transitioning. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It moves the contents of the <ref refid="classtouchgfx_1_1_screen" kindref="compound">Screen</ref>&apos;s container and a <ref refid="classtouchgfx_1_1_snapshot_widget" kindref="compound">SnapshotWidget</ref> with a snapshot of the previous <ref refid="classtouchgfx_1_1_screen" kindref="compound">Screen</ref>. The direction of the transition determines the direction the contents of the container and the <ref refid="classtouchgfx_1_1_snapshot_widget" kindref="compound">SnapshotWidget</ref> moves. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transitions/SlideTransition.hpp" line="81" column="1" bodyfile="touchgfx/transitions/SlideTransition.hpp" bodystart="81" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_transition_1a9339772ec5ac9fa929938109207f2863" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <reimplements refid="classtouchgfx_1_1_transition_1a9339772ec5ac9fa929938109207f2863">init</reimplements>
+        <briefdescription>
+<para>Initializes the transition. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called after the constructor is called, when the application changes the transition. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transitions/SlideTransition.hpp" line="146" column="1" bodyfile="touchgfx/transitions/SlideTransition.hpp" bodystart="146" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_transition_1a1fff5949d6d9aae93f2a1f2d51152753" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SlideTransition</definition>
+        <argsstring>(const uint8_t transitionSteps=20)</argsstring>
+        <name>SlideTransition</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>transitionSteps</declname>
+          <defval>20</defval>
+        </param>
+        <briefdescription>
+<para>Initializes a new instance of the <ref refid="classtouchgfx_1_1_slide_transition" kindref="compound">SlideTransition</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>transitionSteps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(Optional) Number of steps (ticks) in the transition animation, default is 20. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transitions/SlideTransition.hpp" line="34" column="1" bodyfile="touchgfx/transitions/SlideTransition.hpp" bodystart="34" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_transition_1ae409c34c6767ff70d1e29a46fe41dfff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void tearDown</definition>
+        <argsstring>()</argsstring>
+        <name>tearDown</name>
+        <reimplements refid="classtouchgfx_1_1_transition_1ae409c34c6767ff70d1e29a46fe41dfff">tearDown</reimplements>
+        <briefdescription>
+<para>Tears down the Animation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called before the destructor is called, when the application changes the transition. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transitions/SlideTransition.hpp" line="138" column="1" bodyfile="touchgfx/transitions/SlideTransition.hpp" bodystart="138" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_transition_1a0572f5b9a15d9ae933443ae5638e4856" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~SlideTransition</definition>
+        <argsstring>()</argsstring>
+        <name>~SlideTransition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transitions/SlideTransition.hpp" line="71" column="1" bodyfile="touchgfx/transitions/SlideTransition.hpp" bodystart="71" bodyend="73"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_transition_1a0380f1063e516b12096062d44521a22f" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void initMoveDrawable</definition>
+        <argsstring>(Drawable &amp;d)</argsstring>
+        <name>initMoveDrawable</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> &amp;</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Moves the <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> to its initial position, just outside the actual display. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> to move. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transitions/SlideTransition.hpp" line="165" column="1" bodyfile="touchgfx/transitions/SlideTransition.hpp" bodystart="165" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_transition_1a83f41a8c9137475984f95aa3ab206d98" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void tickMoveDrawable</definition>
+        <argsstring>(Drawable &amp;d)</argsstring>
+        <name>tickMoveDrawable</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> &amp;</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Moves the <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> to move. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transitions/SlideTransition.hpp" line="192" column="1" bodyfile="touchgfx/transitions/SlideTransition.hpp" bodystart="192" bodyend="214"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A <ref refid="classtouchgfx_1_1_transition" kindref="compound">Transition</ref> that slides from one screen to the next. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>It does so by moving a SnapShotWidget with a snapshot of the <ref refid="classtouchgfx_1_1_screen" kindref="compound">Screen</ref> transitioning away from, and by moving the contents of <ref refid="classtouchgfx_1_1_screen" kindref="compound">Screen</ref> transitioning to.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_transition" kindref="compound">Transition</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1509">
+        <label>Transition</label>
+        <link refid="classtouchgfx_1_1_transition"/>
+      </node>
+      <node id="1508">
+        <label>SlideTransition&lt; templateDirection &gt;</label>
+        <link refid="classtouchgfx_1_1_slide_transition"/>
+        <childnode refid="1509" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1516">
+        <label>Widget</label>
+        <link refid="classtouchgfx_1_1_widget"/>
+        <childnode refid="1513" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1511">
+        <label>Transition</label>
+        <link refid="classtouchgfx_1_1_transition"/>
+        <childnode refid="1512" relation="usage">
+          <edgelabel>screenContainer</edgelabel>
+        </childnode>
+      </node>
+      <node id="1512">
+        <label>Container</label>
+        <link refid="classtouchgfx_1_1_container"/>
+        <childnode refid="1513" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1513" relation="usage">
+          <edgelabel>firstChild</edgelabel>
+        </childnode>
+      </node>
+      <node id="1514">
+        <label>Rect</label>
+        <link refid="classtouchgfx_1_1_rect"/>
+      </node>
+      <node id="1515">
+        <label>SnapshotWidget</label>
+        <link refid="classtouchgfx_1_1_snapshot_widget"/>
+        <childnode refid="1516" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1513">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+        <childnode refid="1514" relation="usage">
+          <edgelabel>rect</edgelabel>
+        </childnode>
+        <childnode refid="1513" relation="usage">
+          <edgelabel>nextSibling</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="1510">
+        <label>SlideTransition&lt; templateDirection &gt;</label>
+        <link refid="classtouchgfx_1_1_slide_transition"/>
+        <childnode refid="1511" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1515" relation="usage">
+          <edgelabel>snapshotPtr</edgelabel>
+          <edgelabel>snapshot</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/transitions/SlideTransition.hpp" line="27" column="1" bodyfile="touchgfx/transitions/SlideTransition.hpp" bodystart="26" bodyend="227"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_slide_transition_1a5012e585088b0f60cd914b1d780c4e20" prot="private" virt="non-virtual"><scope>touchgfx::SlideTransition</scope><name>animationCounter</name></member>
+      <member refid="classtouchgfx_1_1_slide_transition_1a005a6d4c68b7ee403cd51b46f3333457" prot="private" virt="non-virtual"><scope>touchgfx::SlideTransition</scope><name>animationSteps</name></member>
+      <member refid="classtouchgfx_1_1_slide_transition_1a5d671dd284112ffc3640ba1a4414bb38" prot="private" virt="non-virtual"><scope>touchgfx::SlideTransition</scope><name>calculatedValue</name></member>
+      <member refid="classtouchgfx_1_1_slide_transition_1a53421c695d00016ab925777d423b4eb6" prot="private" virt="non-virtual"><scope>touchgfx::SlideTransition</scope><name>direction</name></member>
+      <member refid="classtouchgfx_1_1_transition_1a1d39aac66e12dae50a24cd7a9100ef33" prot="protected" virt="non-virtual"><scope>touchgfx::SlideTransition</scope><name>done</name></member>
+      <member refid="classtouchgfx_1_1_slide_transition_1a9859785231665b195c81c306d830a486" prot="private" virt="non-virtual"><scope>touchgfx::SlideTransition</scope><name>handleTickCallback</name></member>
+      <member refid="classtouchgfx_1_1_slide_transition_1a1af635cee0f186c3d0fcea60bac14355" prot="public" virt="virtual"><scope>touchgfx::SlideTransition</scope><name>handleTickEvent</name></member>
+      <member refid="classtouchgfx_1_1_slide_transition_1a9339772ec5ac9fa929938109207f2863" prot="public" virt="virtual"><scope>touchgfx::SlideTransition</scope><name>init</name></member>
+      <member refid="classtouchgfx_1_1_slide_transition_1a0380f1063e516b12096062d44521a22f" prot="protected" virt="virtual"><scope>touchgfx::SlideTransition</scope><name>initMoveDrawable</name></member>
+      <member refid="classtouchgfx_1_1_transition_1a0fa3c9859f822fb382bf552628eb5ab6" prot="public" virt="non-virtual"><scope>touchgfx::SlideTransition</scope><name>isDone</name></member>
+      <member refid="classtouchgfx_1_1_transition_1a3e82472757e12af66d888eac45ca561c" prot="protected" virt="non-virtual"><scope>touchgfx::SlideTransition</scope><name>screenContainer</name></member>
+      <member refid="classtouchgfx_1_1_transition_1a71c8f06a828ab9b914af259996ff5ffe" prot="public" virt="virtual"><scope>touchgfx::SlideTransition</scope><name>setScreenContainer</name></member>
+      <member refid="classtouchgfx_1_1_slide_transition_1a1fff5949d6d9aae93f2a1f2d51152753" prot="public" virt="non-virtual"><scope>touchgfx::SlideTransition</scope><name>SlideTransition</name></member>
+      <member refid="classtouchgfx_1_1_slide_transition_1a923396b0312ba5a2696312e18c49571e" prot="protected" virt="non-virtual"><scope>touchgfx::SlideTransition</scope><name>snapshot</name></member>
+      <member refid="classtouchgfx_1_1_slide_transition_1ad4f4a9016c953e0841bfe830147d9d20" prot="protected" virt="non-virtual"><scope>touchgfx::SlideTransition</scope><name>snapshotPtr</name></member>
+      <member refid="classtouchgfx_1_1_slide_transition_1a77c5ebdb51f6d0560825b66d265647a1" prot="private" virt="non-virtual"><scope>touchgfx::SlideTransition</scope><name>targetValue</name></member>
+      <member refid="classtouchgfx_1_1_slide_transition_1ae409c34c6767ff70d1e29a46fe41dfff" prot="public" virt="virtual"><scope>touchgfx::SlideTransition</scope><name>tearDown</name></member>
+      <member refid="classtouchgfx_1_1_slide_transition_1a83f41a8c9137475984f95aa3ab206d98" prot="protected" virt="virtual"><scope>touchgfx::SlideTransition</scope><name>tickMoveDrawable</name></member>
+      <member refid="classtouchgfx_1_1_transition_1a5cff3a67b77de17d053a190f241aa753" prot="public" virt="non-virtual"><scope>touchgfx::SlideTransition</scope><name>Transition</name></member>
+      <member refid="classtouchgfx_1_1_slide_transition_1a0572f5b9a15d9ae933443ae5638e4856" prot="public" virt="virtual"><scope>touchgfx::SlideTransition</scope><name>~SlideTransition</name></member>
+      <member refid="classtouchgfx_1_1_transition_1a30dcd531eb9e8a4735038bb2db58ae2a" prot="public" virt="virtual"><scope>touchgfx::SlideTransition</scope><name>~Transition</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

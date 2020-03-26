@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_gestures" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::Gestures</compoundname>
+    <includes local="no">Gestures.hpp</includes>
+    <innerclass refid="structtouchgfx_1_1_gestures_1_1_drag_state" prot="private">touchgfx::Gestures::DragState</innerclass>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_gestures_1af3057a07ec5069b626d1d04a53188703" prot="private" static="yes" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t MAX_TICKS_BETWEEN_MOVES_FOR_SWIPE</definition>
+        <argsstring></argsstring>
+        <name>MAX_TICKS_BETWEEN_MOVES_FOR_SWIPE</name>
+        <initializer>= 7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Gestures.hpp" line="20" column="1" bodyfile="touchgfx/hal/Gestures.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_gestures_1a940c2023615c96a8438ff7539ec95406" prot="private" static="yes" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t MIN_VELOCITY_AT_RELEASE_BEFORE_SWIPE</definition>
+        <argsstring></argsstring>
+        <name>MIN_VELOCITY_AT_RELEASE_BEFORE_SWIPE</name>
+        <initializer>= 3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Gestures.hpp" line="21" column="1" bodyfile="touchgfx/hal/Gestures.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_gestures_1a460a9678fd193330fdaaa8b70033aba2" prot="private" static="no" mutable="no">
+        <type>DragState</type>
+        <definition>DragState drag</definition>
+        <argsstring></argsstring>
+        <name>drag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Gestures.hpp" line="100" column="1" bodyfile="touchgfx/hal/Gestures.hpp" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_gestures_1aa5d35fa5845dd127b13fbcddda5881ec" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dragThresholdValue</definition>
+        <argsstring></argsstring>
+        <name>dragThresholdValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Gestures.hpp" line="102" column="1" bodyfile="touchgfx/hal/Gestures.hpp" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_gestures_1a7e933b682dcad07bafc6595e3b004018" prot="private" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_u_i_event_listener" kindref="compound">UIEventListener</ref> *</type>
+        <definition>UIEventListener* listener</definition>
+        <argsstring></argsstring>
+        <name>listener</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Gestures.hpp" line="101" column="1" bodyfile="touchgfx/hal/Gestures.hpp" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_gestures_1a3032ad7797b0369554d53f277b2ba2d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gestures</definition>
+        <argsstring>()</argsstring>
+        <name>Gestures</name>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Does nothing. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Gestures.hpp" line="50" column="1" bodyfile="touchgfx/hal/Gestures.hpp" bodystart="50" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_gestures_1a249b44267f8eba63e1342c5e306f695e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void registerClickEvent</definition>
+        <argsstring>(ClickEvent::ClickEventType evt, uint16_t x, uint16_t y)</argsstring>
+        <name>registerClickEvent</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_click_event_1ac490bd373e5d33a5a257bf0c1fd443cb" kindref="member">ClickEvent::ClickEventType</ref></type>
+          <declname>evt</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Register a click event and figure out if this is a drag event, too. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>evt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the click event. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate of the click event. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate of the click event. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Gestures.hpp" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_gestures_1a94c6f456a149cedb6e5d5d2db3384361" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool registerDragEvent</definition>
+        <argsstring>(uint16_t oldX, uint16_t oldY, uint16_t newX, uint16_t newY)</argsstring>
+        <name>registerDragEvent</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>oldX</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>oldY</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>newX</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>newY</declname>
+        </param>
+        <briefdescription>
+<para>Register a drag event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>oldX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate of the drag start position (dragged from) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>oldY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate of the drag start position (dragged from) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>newX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate of the new position (dragged to) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>newY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate of the new position (dragged to)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the drag exceeds threshold value (and therefore was reported as a drag), or false if the drag did not exceed threshold (and therefore was discarded). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Gestures.hpp" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_gestures_1a67f3535195d55924a5335b4bb6a5b743" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void registerEventListener</definition>
+        <argsstring>(UIEventListener &amp;l)</argsstring>
+        <name>registerEventListener</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_u_i_event_listener" kindref="compound">UIEventListener</ref> &amp;</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+<para>Register the event listener. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The EventListener to register. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Gestures.hpp" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_gestures_1ac9e56e341bc9a54b0d27e2c62839d9cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setDragThreshold</definition>
+        <argsstring>(uint16_t val)</argsstring>
+        <name>setDragThreshold</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Configure the threshold for reporting drag events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A touch input movement must exceed this value in either axis in order to report a drag. Default value is 0.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New threshold value. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Gestures.hpp" line="94" column="1" bodyfile="touchgfx/hal/Gestures.hpp" bodystart="94" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_gestures_1a873dd91783f9efb4a590aded1f70d6b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tick</definition>
+        <argsstring>()</argsstring>
+        <name>tick</name>
+        <briefdescription>
+<para>Has to be called during the timer tick. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Gestures.hpp" line="63" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class implements the detection of gestures. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="touchgfx/hal/Gestures.hpp" line="19" column="1" bodyfile="touchgfx/hal/Gestures.hpp" bodystart="18" bodyend="103"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_gestures_1a460a9678fd193330fdaaa8b70033aba2" prot="private" virt="non-virtual"><scope>touchgfx::Gestures</scope><name>drag</name></member>
+      <member refid="classtouchgfx_1_1_gestures_1aa5d35fa5845dd127b13fbcddda5881ec" prot="private" virt="non-virtual"><scope>touchgfx::Gestures</scope><name>dragThresholdValue</name></member>
+      <member refid="classtouchgfx_1_1_gestures_1a3032ad7797b0369554d53f277b2ba2d5" prot="public" virt="non-virtual"><scope>touchgfx::Gestures</scope><name>Gestures</name></member>
+      <member refid="classtouchgfx_1_1_gestures_1a7e933b682dcad07bafc6595e3b004018" prot="private" virt="non-virtual"><scope>touchgfx::Gestures</scope><name>listener</name></member>
+      <member refid="classtouchgfx_1_1_gestures_1af3057a07ec5069b626d1d04a53188703" prot="private" virt="non-virtual"><scope>touchgfx::Gestures</scope><name>MAX_TICKS_BETWEEN_MOVES_FOR_SWIPE</name></member>
+      <member refid="classtouchgfx_1_1_gestures_1a940c2023615c96a8438ff7539ec95406" prot="private" virt="non-virtual"><scope>touchgfx::Gestures</scope><name>MIN_VELOCITY_AT_RELEASE_BEFORE_SWIPE</name></member>
+      <member refid="classtouchgfx_1_1_gestures_1a249b44267f8eba63e1342c5e306f695e" prot="public" virt="non-virtual"><scope>touchgfx::Gestures</scope><name>registerClickEvent</name></member>
+      <member refid="classtouchgfx_1_1_gestures_1a94c6f456a149cedb6e5d5d2db3384361" prot="public" virt="non-virtual"><scope>touchgfx::Gestures</scope><name>registerDragEvent</name></member>
+      <member refid="classtouchgfx_1_1_gestures_1a67f3535195d55924a5335b4bb6a5b743" prot="public" virt="non-virtual"><scope>touchgfx::Gestures</scope><name>registerEventListener</name></member>
+      <member refid="classtouchgfx_1_1_gestures_1ac9e56e341bc9a54b0d27e2c62839d9cc" prot="public" virt="non-virtual"><scope>touchgfx::Gestures</scope><name>setDragThreshold</name></member>
+      <member refid="classtouchgfx_1_1_gestures_1a873dd91783f9efb4a590aded1f70d6b0" prot="public" virt="non-virtual"><scope>touchgfx::Gestures</scope><name>tick</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

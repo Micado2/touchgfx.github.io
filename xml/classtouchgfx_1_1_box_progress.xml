@@ -1,0 +1,470 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_box_progress" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::BoxProgress</compoundname>
+    <basecompoundref refid="classtouchgfx_1_1_abstract_direction_progress" prot="public" virt="non-virtual">AbstractDirectionProgress</basecompoundref>
+    <includes local="no">BoxProgress.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_box_progress_1ab19e728e80bc2fc43d8e82c3602f8333" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_box" kindref="compound">Box</ref></type>
+        <definition>Box box</definition>
+        <argsstring></argsstring>
+        <name>box</name>
+        <briefdescription>
+<para>The box. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/BoxProgress.hpp" line="58" column="1" bodyfile="touchgfx/containers/progress_indicators/BoxProgress.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_box_progress_1ad613d6b7b6b766fcfacef2840c2fed79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BoxProgress</definition>
+        <argsstring>()</argsstring>
+        <name>BoxProgress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/BoxProgress.hpp" line="22" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_box_progress_1a48b27ff9c2eafcd202482b45abc86ff7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>uint8_t</type>
+        <definition>virtual uint8_t getAlpha</definition>
+        <argsstring>() const</argsstring>
+        <name>getAlpha</name>
+        <briefdescription>
+<para>Gets the current alpha value of the widget. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The alpha value is in range 255 (solid) to 0 (invisible).</para>
+<para><simplesect kind="return"><para>The current alpha value.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_box_progress_1a89b6c75ec0c8d536fb61b146eb420b4e" kindref="member">setAlpha</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/BoxProgress.hpp" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_box_progress_1a4d7ad8bff36afdfc11d37de65cfc1d90" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+        <definition>virtual colortype getColor</definition>
+        <argsstring>() const</argsstring>
+        <name>getColor</name>
+        <briefdescription>
+<para>Gets the color of the <ref refid="classtouchgfx_1_1_box" kindref="compound">Box</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The color.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_box_progress_1a77438b7f2f49188eecba3c8b31dcfaa5" kindref="member">setColor</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/BoxProgress.hpp" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_box_progress_1a89b6c75ec0c8d536fb61b146eb420b4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setAlpha</definition>
+        <argsstring>(uint8_t newAlpha)</argsstring>
+        <name>setAlpha</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>newAlpha</declname>
+        </param>
+        <briefdescription>
+<para>Sets the opacity (alpha value). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This can be used to fade it away by gradually decreasing the alpha value from 255 (solid) to 0 (invisible).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newAlpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new alpha value. 255=solid, 0=invisible.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_box_progress_1a48b27ff9c2eafcd202482b45abc86ff7" kindref="member">getAlpha</ref></para>
+</simplesect>
+<simplesect kind="note"><para>The user code must call <ref refid="classtouchgfx_1_1_drawable_1a2800b4c18c63e9e7b1f85a74ce6b80c3" kindref="member">invalidate()</ref> in order to update the display. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/BoxProgress.hpp" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_box_progress_1a77438b7f2f49188eecba3c8b31dcfaa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setColor</definition>
+        <argsstring>(colortype color)</argsstring>
+        <name>setColor</name>
+        <param>
+          <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Sets the color of the <ref refid="classtouchgfx_1_1_box" kindref="compound">Box</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_box_progress_1a4d7ad8bff36afdfc11d37de65cfc1d90" kindref="member">getColor</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/BoxProgress.hpp" line="34" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_box_progress_1a7c302754c2026f0c61ddfb2a887644c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setProgressIndicatorPosition</definition>
+        <argsstring>(int16_t x, int16_t y, int16_t width, int16_t height)</argsstring>
+        <name>setProgressIndicatorPosition</name>
+        <reimplements refid="classtouchgfx_1_1_abstract_progress_indicator_1a7c302754c2026f0c61ddfb2a887644c6">setProgressIndicatorPosition</reimplements>
+        <param>
+          <type>int16_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+<para>Sets the position and dimensions of the actual progress indicator relative to the background image. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The width of the box progress indicator. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The height of the box progress indicator.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_abstract_progress_indicator_1a014af24dbe00f2f1901e5efded0eac19" kindref="member">getProgressIndicatorX</ref>, <ref refid="classtouchgfx_1_1_abstract_progress_indicator_1a00d0bde08c61e6f8a396592586201296" kindref="member">getProgressIndicatorY</ref>, <ref refid="classtouchgfx_1_1_abstract_progress_indicator_1ac9bd8cf6bb9b77f5b5227bb3c2276942" kindref="member">getProgressIndicatorWidth</ref>, <ref refid="classtouchgfx_1_1_abstract_progress_indicator_1a3daf2010ab529f1e80a39e69c2a13370" kindref="member">getProgressIndicatorHeight</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/BoxProgress.hpp" line="26" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_box_progress_1afd2ee022f13d24681ce6efbf09581807" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setValue</definition>
+        <argsstring>(int value)</argsstring>
+        <name>setValue</name>
+        <reimplements refid="classtouchgfx_1_1_abstract_progress_indicator_1afd2ee022f13d24681ce6efbf09581807">setValue</reimplements>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Sets the current value in the range (min..max) set by <ref refid="classtouchgfx_1_1_abstract_progress_indicator_1a02a45c40598be83aeebffbe70ea3c79c" kindref="member">setRange()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Values lower than min are mapped to min, values higher than max are mapped to max.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_abstract_progress_indicator_1abb46316a08c089763c5171d38e53fc6e" kindref="member">getValue</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/BoxProgress.hpp" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_box_progress_1a446a0215bc3027eee4c873622aad3764" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual ~BoxProgress</definition>
+        <argsstring>()</argsstring>
+        <name>~BoxProgress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/BoxProgress.hpp" line="24" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A <ref refid="classtouchgfx_1_1_box_progress" kindref="compound">BoxProgress</ref> which shows the current progress using a simple <ref refid="classtouchgfx_1_1_box" kindref="compound">Box</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>It is possible to set the color and the alpha of the box. It is also possible to control in what direction the box will progress (up, down, to the left or to the right). </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="263">
+        <label>Container</label>
+        <link refid="classtouchgfx_1_1_container"/>
+        <childnode refid="264" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="260">
+        <label>BoxProgress</label>
+        <link refid="classtouchgfx_1_1_box_progress"/>
+        <childnode refid="261" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="264">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+      </node>
+      <node id="261">
+        <label>AbstractDirectionProgress</label>
+        <link refid="classtouchgfx_1_1_abstract_direction_progress"/>
+        <childnode refid="262" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="262">
+        <label>AbstractProgressIndicator</label>
+        <link refid="classtouchgfx_1_1_abstract_progress_indicator"/>
+        <childnode refid="263" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="272">
+        <label>Widget</label>
+        <link refid="classtouchgfx_1_1_widget"/>
+        <childnode refid="269" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="268">
+        <label>Container</label>
+        <link refid="classtouchgfx_1_1_container"/>
+        <childnode refid="269" relation="public-inheritance">
+        </childnode>
+        <childnode refid="269" relation="usage">
+          <edgelabel>firstChild</edgelabel>
+        </childnode>
+      </node>
+      <node id="270">
+        <label>Rect</label>
+        <link refid="classtouchgfx_1_1_rect"/>
+      </node>
+      <node id="271">
+        <label>Image</label>
+        <link refid="classtouchgfx_1_1_image"/>
+        <childnode refid="272" relation="public-inheritance">
+        </childnode>
+        <childnode refid="273" relation="usage">
+          <edgelabel>bitmap</edgelabel>
+        </childnode>
+      </node>
+      <node id="265">
+        <label>BoxProgress</label>
+        <link refid="classtouchgfx_1_1_box_progress"/>
+        <childnode refid="266" relation="public-inheritance">
+        </childnode>
+        <childnode refid="274" relation="usage">
+          <edgelabel>box</edgelabel>
+        </childnode>
+      </node>
+      <node id="269">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+        <childnode refid="270" relation="usage">
+          <edgelabel>rect</edgelabel>
+        </childnode>
+        <childnode refid="269" relation="usage">
+          <edgelabel>nextSibling</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="274">
+        <label>Box</label>
+        <link refid="classtouchgfx_1_1_box"/>
+        <childnode refid="272" relation="public-inheritance">
+        </childnode>
+        <childnode refid="275" relation="usage">
+          <edgelabel>color</edgelabel>
+        </childnode>
+      </node>
+      <node id="266">
+        <label>AbstractDirectionProgress</label>
+        <link refid="classtouchgfx_1_1_abstract_direction_progress"/>
+        <childnode refid="267" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="273">
+        <label>Bitmap</label>
+        <link refid="classtouchgfx_1_1_bitmap"/>
+      </node>
+      <node id="267">
+        <label>AbstractProgressIndicator</label>
+        <link refid="classtouchgfx_1_1_abstract_progress_indicator"/>
+        <childnode refid="268" relation="public-inheritance">
+        </childnode>
+        <childnode refid="268" relation="usage">
+          <edgelabel>progressIndicatorContainer</edgelabel>
+        </childnode>
+        <childnode refid="271" relation="usage">
+          <edgelabel>background</edgelabel>
+        </childnode>
+      </node>
+      <node id="275">
+        <label>colortype</label>
+        <link refid="structtouchgfx_1_1colortype"/>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/containers/progress_indicators/BoxProgress.hpp" line="20" column="1" bodyfile="touchgfx/containers/progress_indicators/BoxProgress.hpp" bodystart="19" bodyend="59"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_abstract_direction_progress_1a1063a39ac190978a62f4be9a30e8f2f5" prot="public" virt="non-virtual"><scope>touchgfx::BoxProgress</scope><name>AbstractDirectionProgress</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1a088cf0717c3adb46df00038640925e84" prot="public" virt="non-virtual"><scope>touchgfx::BoxProgress</scope><name>AbstractProgressIndicator</name></member>
+      <member refid="classtouchgfx_1_1_container_1a302ad1a4da6fe171eb249828bd8dc7ab" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>add</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1ac58c7595db571063cbbb5832998af4d4" prot="protected" virt="non-virtual"><scope>touchgfx::BoxProgress</scope><name>background</name></member>
+      <member refid="classtouchgfx_1_1_box_progress_1ab19e728e80bc2fc43d8e82c3602f8333" prot="protected" virt="non-virtual"><scope>touchgfx::BoxProgress</scope><name>box</name></member>
+      <member refid="classtouchgfx_1_1_box_progress_1ad613d6b7b6b766fcfacef2840c2fed79" prot="public" virt="non-virtual"><scope>touchgfx::BoxProgress</scope><name>BoxProgress</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae2d939b2a9c253f0fb3bae3ec7be4e2f" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>childGeometryChanged</name></member>
+      <member refid="classtouchgfx_1_1_container_1ac92243515043dff4fd93c987b894b017" prot="public" virt="non-virtual"><scope>touchgfx::BoxProgress</scope><name>Container</name></member>
+      <member refid="classtouchgfx_1_1_container_1a0109ca3d59d6ced431a24313fef18803" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>contains</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1aa9b3d6000cb8f075989733abced8253f" prot="protected" virt="non-virtual"><scope>touchgfx::BoxProgress</scope><name>currentValue</name></member>
+      <member refid="classtouchgfx_1_1_abstract_direction_progress_1a8ef30fa9c08e08c8706653571f9f5b81" prot="public" virt="non-virtual"><scope>touchgfx::BoxProgress</scope><name>DirectionType</name></member>
+      <member refid="classtouchgfx_1_1_abstract_direction_progress_1a8ef30fa9c08e08c8706653571f9f5b81a9b0b4a95b99523966e0e34ffdadac9da" prot="public" virt="non-virtual"><scope>touchgfx::BoxProgress</scope><name>DOWN</name></member>
+      <member refid="classtouchgfx_1_1_container_1a1277d4bddd51dbc604de265fb70ccbfd" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>draw</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9cf3a85fa7554475fa42c97985bda6df" prot="public" virt="non-virtual"><scope>touchgfx::BoxProgress</scope><name>Drawable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4a009ec2b654351679a0124e9055abdc" prot="public" virt="non-virtual"><scope>touchgfx::BoxProgress</scope><name>drawToDynamicBitmap</name></member>
+      <member refid="classtouchgfx_1_1_container_1a15fc4ae5c33721f5f425b20640217f22" prot="protected" virt="non-virtual"><scope>touchgfx::BoxProgress</scope><name>firstChild</name></member>
+      <member refid="classtouchgfx_1_1_container_1a2b224826cd4f0f674009c21d6821f525" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>forEachChild</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa7737d9d49d7f55ec9bde8f2c9751b1d" prot="public" virt="non-virtual"><scope>touchgfx::BoxProgress</scope><name>getAbsoluteRect</name></member>
+      <member refid="classtouchgfx_1_1_box_progress_1a48b27ff9c2eafcd202482b45abc86ff7" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>getAlpha</name></member>
+      <member refid="classtouchgfx_1_1_box_progress_1a4d7ad8bff36afdfc11d37de65cfc1d90" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>getColor</name></member>
+      <member refid="classtouchgfx_1_1_container_1a47e8a844fa50b171656f8355fd8e313b" prot="protected" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>getContainedArea</name></member>
+      <member refid="classtouchgfx_1_1_abstract_direction_progress_1ac6d859d0c9c504f6239798b1857b50c4" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>getDirection</name></member>
+      <member refid="classtouchgfx_1_1_container_1a35ae5c9547dd1861f70b5e4f0f9b94b3" prot="public" virt="non-virtual"><scope>touchgfx::BoxProgress</scope><name>getFirstChild</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ad00483821e06fe4d0d70222de4135d30" prot="public" virt="non-virtual"><scope>touchgfx::BoxProgress</scope><name>getHeight</name></member>
+      <member refid="classtouchgfx_1_1_container_1a6bc8e89dc7f879221e9862fb27dc726f" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>getLastChild</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a61c9b2bf703c49a6d238d354ddcaedb3" prot="public" virt="non-virtual"><scope>touchgfx::BoxProgress</scope><name>getNextSibling</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a013e065d4d9a10dbfa0ddee9a35582a3" prot="public" virt="non-virtual"><scope>touchgfx::BoxProgress</scope><name>getParent</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1ad6acf445b3bf33efe1287db3c61bc8c7" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>getProgress</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1a3daf2010ab529f1e80a39e69c2a13370" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>getProgressIndicatorHeight</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1ac9bd8cf6bb9b77f5b5227bb3c2276942" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>getProgressIndicatorWidth</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1a014af24dbe00f2f1901e5efded0eac19" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>getProgressIndicatorX</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1a00d0bde08c61e6f8a396592586201296" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>getProgressIndicatorY</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1a52e91c5cb93b79054d8bb5a08a412096" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>getRange</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1a1a33f23352ce0b1142c5a42520ee26e4" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>getRange</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1a95519933a70cca93e020e46eb77a19c7" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>getRange</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af23a5bb7d473e16363a449c497586be3" prot="public" virt="non-virtual"><scope>touchgfx::BoxProgress</scope><name>getRect</name></member>
+      <member refid="classtouchgfx_1_1_container_1a4dcdd780e93cc783a2ceeda00c6f3b51" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>getSolidRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4783dfe657ff1b7a33261bda8c4b4266" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>getSolidRectAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1abb46316a08c089763c5171d38e53fc6e" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>getValue</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a83b8847f583b63e60aa4bf778261ddd7" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>getVisibleRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1acae58162aaca6fc174416550f76668e7" prot="public" virt="non-virtual"><scope>touchgfx::BoxProgress</scope><name>getWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac071e9b7ccf37179df7d29c6778b664c" prot="public" virt="non-virtual"><scope>touchgfx::BoxProgress</scope><name>getX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a26752e6cff4607d0eec8768ef6d9032a" prot="public" virt="non-virtual"><scope>touchgfx::BoxProgress</scope><name>getY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a7f1524b90bc90e5f6cf7ee47aae12123" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>handleClickEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a06ae1946b2124cc94e26cfe18728debf" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>handleDragEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4db4945ecbc2303bf860e082409b8029" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>handleGestureEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1af635cee0f186c3d0fcea60bac14355" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>handleTickEvent</name></member>
+      <member refid="classtouchgfx_1_1_container_1aca896b17460628dceeac8b01553b6a00" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>insert</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2800b4c18c63e9e7b1f85a74ce6b80c3" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>invalidate</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a130cf6e1bf2b9f04f48e659758fa75e2" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>invalidateRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a01c717b9abc98d48673b79d691c2d28a" prot="public" virt="non-virtual"><scope>touchgfx::BoxProgress</scope><name>isTouchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9d8a6cfb13917785c143e74d40e4e2be" prot="public" virt="non-virtual"><scope>touchgfx::BoxProgress</scope><name>isVisible</name></member>
+      <member refid="classtouchgfx_1_1_abstract_direction_progress_1a8ef30fa9c08e08c8706653571f9f5b81adb45120aafd37a973140edee24708065" prot="public" virt="non-virtual"><scope>touchgfx::BoxProgress</scope><name>LEFT</name></member>
+      <member refid="classtouchgfx_1_1_container_1add539b68574f09b364f0b4e6a312b9b0" prot="protected" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>moveChildrenRelative</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af3590480070e2cf91580976f322d2c5e" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>moveRelative</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aadc5abfad4d2fcc331cf8de8713dc00e" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>moveTo</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0da4a00c3fbdea5740e52c7e04316c65" prot="protected" virt="non-virtual"><scope>touchgfx::BoxProgress</scope><name>nextSibling</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ab77c13cde2b01107dcbc5c2b584d422f" prot="protected" virt="non-virtual"><scope>touchgfx::BoxProgress</scope><name>parent</name></member>
+      <member refid="classtouchgfx_1_1_abstract_direction_progress_1a8f6d6978623e57f27c53c4b02890b1f2" prot="protected" virt="non-virtual"><scope>touchgfx::BoxProgress</scope><name>progressDirection</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1a5bda8640109df5374342b63669b5f84b" prot="protected" virt="non-virtual"><scope>touchgfx::BoxProgress</scope><name>progressIndicatorContainer</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1a5553b7a635fade12e38c22ac71243d6a" prot="protected" virt="non-virtual"><scope>touchgfx::BoxProgress</scope><name>rangeMax</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1a35a6e5daec1e31c6e6090c9a377a5c43" prot="protected" virt="non-virtual"><scope>touchgfx::BoxProgress</scope><name>rangeMin</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1a7de050eed4e279fd8c867b40e856c005" prot="protected" virt="non-virtual"><scope>touchgfx::BoxProgress</scope><name>rangeSteps</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1a2e4193a2cd816fb8d23a4750b8823534" prot="protected" virt="non-virtual"><scope>touchgfx::BoxProgress</scope><name>rangeStepsMin</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2a955ddc316d002f566598f340eb2af9" prot="protected" virt="non-virtual"><scope>touchgfx::BoxProgress</scope><name>rect</name></member>
+      <member refid="classtouchgfx_1_1_container_1a4d9056af30ab3c61da25a71023a341f2" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>remove</name></member>
+      <member refid="classtouchgfx_1_1_container_1a4e62c805a8478320f1e650e6a635b31a" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>removeAll</name></member>
+      <member refid="classtouchgfx_1_1_abstract_direction_progress_1a8ef30fa9c08e08c8706653571f9f5b81aec8379af7490bb9eaaf579cf17876f38" prot="public" virt="non-virtual"><scope>touchgfx::BoxProgress</scope><name>RIGHT</name></member>
+      <member refid="classtouchgfx_1_1_box_progress_1a89b6c75ec0c8d536fb61b146eb420b4e" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>setAlpha</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1af289e78e38dabff27c29cb8f3d704b72" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>setBackground</name></member>
+      <member refid="classtouchgfx_1_1_box_progress_1a77438b7f2f49188eecba3c8b31dcfaa5" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>setColor</name></member>
+      <member refid="classtouchgfx_1_1_abstract_direction_progress_1a6f667b1c96ed46aaa548f628cc2ac0ce" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>setDirection</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a47a6312407603de99247bb802dbd8a48" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>setHeight</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac218c371450d8ad2bed3e1b07965a41a" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>setPosition</name></member>
+      <member refid="classtouchgfx_1_1_box_progress_1a7c302754c2026f0c61ddfb2a887644c6" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>setProgressIndicatorPosition</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1a02a45c40598be83aeebffbe70ea3c79c" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>setRange</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae4c38eadb852b153850ea7ded1f50a19" prot="public" virt="non-virtual"><scope>touchgfx::BoxProgress</scope><name>setTouchable</name></member>
+      <member refid="classtouchgfx_1_1_box_progress_1afd2ee022f13d24681ce6efbf09581807" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>setValue</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a71639c6634c5dcf6d1bb21b8b1b61f5b" prot="public" virt="non-virtual"><scope>touchgfx::BoxProgress</scope><name>setVisible</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae74a37f71d23440fc8b0466ad8ecfe4b" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>setWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9f6db7f34a74e991fc446fffb5703a53" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>setX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6c86659dc1e7355c207e9c0aa18af167" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>setXY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1b08d48e7e23a046f09e63089bc82bc1" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>setY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0d014de134cb9b9c1c361fcd726a5f34" prot="protected" virt="non-virtual"><scope>touchgfx::BoxProgress</scope><name>touchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a48c1d14ac943dbfa4935ea39db950608" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>translateRectToAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_container_1a23f8fdbaba5449e55efb7a14a96b657d" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>unlink</name></member>
+      <member refid="classtouchgfx_1_1_abstract_direction_progress_1a8ef30fa9c08e08c8706653571f9f5b81aba595d8bca8bc5e67c37c0a9d89becfa" prot="public" virt="non-virtual"><scope>touchgfx::BoxProgress</scope><name>UP</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa54a57ae048476d840caf6d4d2c47aa3" prot="protected" virt="non-virtual"><scope>touchgfx::BoxProgress</scope><name>visible</name></member>
+      <member refid="classtouchgfx_1_1_abstract_direction_progress_1a5c52264a2df0f0ddf9fd2eb7bba3bc4e" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>~AbstractDirectionProgress</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1ae4efce05cf1140a1eb44d2c5715d8b2d" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>~AbstractProgressIndicator</name></member>
+      <member refid="classtouchgfx_1_1_box_progress_1a446a0215bc3027eee4c873622aad3764" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>~BoxProgress</name></member>
+      <member refid="classtouchgfx_1_1_container_1a316105bb0065103f6190b08783144c33" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>~Container</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6bb040a11ffc2bd641283cc0bc0d1346" prot="public" virt="virtual"><scope>touchgfx::BoxProgress</scope><name>~Drawable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

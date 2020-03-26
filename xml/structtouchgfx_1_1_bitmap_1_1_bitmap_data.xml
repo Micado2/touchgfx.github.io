@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structtouchgfx_1_1_bitmap_1_1_bitmap_data" kind="struct" language="C++" prot="public">
+    <compoundname>touchgfx::Bitmap::BitmapData</compoundname>
+    <includes local="no">Bitmap.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtouchgfx_1_1_bitmap_1_1_bitmap_data_1ac34b748bf4881f46ff60c3bade8b439c" prot="public" static="no" mutable="no">
+        <type>const uint8_t *const</type>
+        <definition>const uint8_t* const data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+<para>The data of this <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Bitmap.hpp" line="65" column="1" bodyfile="touchgfx/Bitmap.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_bitmap_1_1_bitmap_data_1a26a2ae68d3b9edd3fa151d0705b557df" prot="public" static="no" mutable="no">
+        <type>const uint8_t *const</type>
+        <definition>const uint8_t* const extraData</definition>
+        <argsstring></argsstring>
+        <name>extraData</name>
+        <briefdescription>
+<para>The data of either the alpha channel (if present) or clut data in case of indexed color bitmap. 0 if not used. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Bitmap.hpp" line="66" column="1" bodyfile="touchgfx/Bitmap.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_bitmap_1_1_bitmap_data_1aa000b83ee980e184eb1f10d367b538f3" prot="public" static="no" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t format_hi</definition>
+        <argsstring></argsstring>
+        <name>format_hi</name>
+        <bitfield> 3</bitfield>
+        <briefdescription>
+<para>Determine the format of the data (high 3 bits) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Bitmap.hpp" line="72" column="1" bodyfile="touchgfx/Bitmap.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_bitmap_1_1_bitmap_data_1a3b3bb1f17d574e66c060c0dc0628c98f" prot="public" static="no" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t format_lo</definition>
+        <argsstring></argsstring>
+        <name>format_lo</name>
+        <bitfield> 3</bitfield>
+        <briefdescription>
+<para>Determine the format of the data (low 3 bits) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Bitmap.hpp" line="74" column="1" bodyfile="touchgfx/Bitmap.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_bitmap_1_1_bitmap_data_1a08b719f21fdd4b4a8646070080cccbf9" prot="public" static="no" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+<para>The height of the <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Bitmap.hpp" line="68" column="1" bodyfile="touchgfx/Bitmap.hpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_bitmap_1_1_bitmap_data_1aaafae7ffda190236e15cd89118cdafd0" prot="public" static="no" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t solidRect_height</definition>
+        <argsstring></argsstring>
+        <name>solidRect_height</name>
+        <bitfield> 13</bitfield>
+        <briefdescription>
+<para>The height of the maximum solid rectangle of the <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Bitmap.hpp" line="73" column="1" bodyfile="touchgfx/Bitmap.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_bitmap_1_1_bitmap_data_1a7f64c9a1593097c0b481190c5a5871e1" prot="public" static="no" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t solidRect_width</definition>
+        <argsstring></argsstring>
+        <name>solidRect_width</name>
+        <bitfield> 13</bitfield>
+        <briefdescription>
+<para>The width of the maximum solid rectangle of the <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Bitmap.hpp" line="71" column="1" bodyfile="touchgfx/Bitmap.hpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_bitmap_1_1_bitmap_data_1ad43dbc315c0e8e3a15838b1d66053f1a" prot="public" static="no" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t solidRect_x</definition>
+        <argsstring></argsstring>
+        <name>solidRect_x</name>
+        <briefdescription>
+<para>The x coordinate of the maximum solid rectangle of the <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Bitmap.hpp" line="69" column="1" bodyfile="touchgfx/Bitmap.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_bitmap_1_1_bitmap_data_1a4cd87e00feb677b092356fa025b7da88" prot="public" static="no" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t solidRect_y</definition>
+        <argsstring></argsstring>
+        <name>solidRect_y</name>
+        <briefdescription>
+<para>The y coordinate of the maximum solid rectangle of the <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Bitmap.hpp" line="70" column="1" bodyfile="touchgfx/Bitmap.hpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_bitmap_1_1_bitmap_data_1a9751eb6040d62275201c4b184f1657cf" prot="public" static="no" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+<para>The width of the <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Bitmap.hpp" line="67" column="1" bodyfile="touchgfx/Bitmap.hpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structtouchgfx_1_1_bitmap_1_1_bitmap_data_1a9b4dcecd682ddcacfcb2d3e2069601a5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtouchgfx_1_1_bitmap_1a23d1a7c7cf0f6da45ca389904e644d55" kindref="member">BitmapFormat</ref></type>
+        <definition>BitmapFormat getFormat</definition>
+        <argsstring>() const</argsstring>
+        <name>getFormat</name>
+        <briefdescription>
+<para>Gets the <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> format by combining the high and low parts (format_hi &lt;&lt; 3) | format_lo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The BitmapFormat </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Bitmap.hpp" line="81" column="1" bodyfile="touchgfx/Bitmap.hpp" bodystart="81" bodyend="84"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data of a bitmap. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="touchgfx/Bitmap.hpp" line="64" column="1" bodyfile="touchgfx/Bitmap.hpp" bodystart="63" bodyend="85"/>
+    <listofallmembers>
+      <member refid="structtouchgfx_1_1_bitmap_1_1_bitmap_data_1ac34b748bf4881f46ff60c3bade8b439c" prot="public" virt="non-virtual"><scope>touchgfx::Bitmap::BitmapData</scope><name>data</name></member>
+      <member refid="structtouchgfx_1_1_bitmap_1_1_bitmap_data_1a26a2ae68d3b9edd3fa151d0705b557df" prot="public" virt="non-virtual"><scope>touchgfx::Bitmap::BitmapData</scope><name>extraData</name></member>
+      <member refid="structtouchgfx_1_1_bitmap_1_1_bitmap_data_1aa000b83ee980e184eb1f10d367b538f3" prot="public" virt="non-virtual"><scope>touchgfx::Bitmap::BitmapData</scope><name>format_hi</name></member>
+      <member refid="structtouchgfx_1_1_bitmap_1_1_bitmap_data_1a3b3bb1f17d574e66c060c0dc0628c98f" prot="public" virt="non-virtual"><scope>touchgfx::Bitmap::BitmapData</scope><name>format_lo</name></member>
+      <member refid="structtouchgfx_1_1_bitmap_1_1_bitmap_data_1a9b4dcecd682ddcacfcb2d3e2069601a5" prot="public" virt="non-virtual"><scope>touchgfx::Bitmap::BitmapData</scope><name>getFormat</name></member>
+      <member refid="structtouchgfx_1_1_bitmap_1_1_bitmap_data_1a08b719f21fdd4b4a8646070080cccbf9" prot="public" virt="non-virtual"><scope>touchgfx::Bitmap::BitmapData</scope><name>height</name></member>
+      <member refid="structtouchgfx_1_1_bitmap_1_1_bitmap_data_1aaafae7ffda190236e15cd89118cdafd0" prot="public" virt="non-virtual"><scope>touchgfx::Bitmap::BitmapData</scope><name>solidRect_height</name></member>
+      <member refid="structtouchgfx_1_1_bitmap_1_1_bitmap_data_1a7f64c9a1593097c0b481190c5a5871e1" prot="public" virt="non-virtual"><scope>touchgfx::Bitmap::BitmapData</scope><name>solidRect_width</name></member>
+      <member refid="structtouchgfx_1_1_bitmap_1_1_bitmap_data_1ad43dbc315c0e8e3a15838b1d66053f1a" prot="public" virt="non-virtual"><scope>touchgfx::Bitmap::BitmapData</scope><name>solidRect_x</name></member>
+      <member refid="structtouchgfx_1_1_bitmap_1_1_bitmap_data_1a4cd87e00feb677b092356fa025b7da88" prot="public" virt="non-virtual"><scope>touchgfx::Bitmap::BitmapData</scope><name>solidRect_y</name></member>
+      <member refid="structtouchgfx_1_1_bitmap_1_1_bitmap_data_1a9751eb6040d62275201c4b184f1657cf" prot="public" virt="non-virtual"><scope>touchgfx::Bitmap::BitmapData</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

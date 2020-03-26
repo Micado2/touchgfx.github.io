@@ -1,0 +1,1486 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_slide_menu" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::SlideMenu</compoundname>
+    <basecompoundref refid="classtouchgfx_1_1_container" prot="public" virt="non-virtual">Container</basecompoundref>
+    <includes local="no">SlideMenu.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classtouchgfx_1_1_slide_menu_1a34c48ecfcbb1829f9f4168def5e9ed6a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ExpandDirection</name>
+        <enumvalue id="classtouchgfx_1_1_slide_menu_1a34c48ecfcbb1829f9f4168def5e9ed6aa8ef5c0bce69283a9986011a63eea8a6b" prot="public">
+          <name>SOUTH</name>
+          <briefdescription>
+<para>Menu expands downwards (<bold>Towards</bold> the south) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtouchgfx_1_1_slide_menu_1a34c48ecfcbb1829f9f4168def5e9ed6aad0611de6f28d4a9c9eac959f5344698e" prot="public">
+          <name>NORTH</name>
+          <briefdescription>
+<para>Menu expands upwards (<bold>Towards</bold> the north) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtouchgfx_1_1_slide_menu_1a34c48ecfcbb1829f9f4168def5e9ed6aab5b3793b961949c817c7c0d99c05dad7" prot="public">
+          <name>EAST</name>
+          <briefdescription>
+<para>Menu expands to the right (<bold>Towards</bold> the east) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtouchgfx_1_1_slide_menu_1a34c48ecfcbb1829f9f4168def5e9ed6aae9449e8683a8199dad36b07a63b2f523" prot="public">
+          <name>WEST</name>
+          <briefdescription>
+<para>Menu expands to the left (<bold>Towards</bold> the west) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Values that represent the expand directions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="44" column="1" bodyfile="touchgfx/containers/SlideMenu.hpp" bodystart="43" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="enum" id="classtouchgfx_1_1_slide_menu_1a5d74787dedbc4e11c1ab15bf487e61f8" prot="public" static="no" strong="no">
+        <type></type>
+        <name>State</name>
+        <enumvalue id="classtouchgfx_1_1_slide_menu_1a5d74787dedbc4e11c1ab15bf487e61f8ac431df49736f0639055a9966fba03442" prot="public">
+          <name>COLLAPSED</name>
+          <briefdescription>
+<para>Menu is currently collapsed. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtouchgfx_1_1_slide_menu_1a5d74787dedbc4e11c1ab15bf487e61f8a0a77bf4f68b403d97d9c4da752ab3ae3" prot="public">
+          <name>EXPANDED</name>
+          <briefdescription>
+<para>Menu is currently expanded. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Values that represent the <ref refid="classtouchgfx_1_1_slide_menu" kindref="compound">SlideMenu</ref> states. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="37" column="1" bodyfile="touchgfx/containers/SlideMenu.hpp" bodystart="36" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_slide_menu_1a4c9d0ee476ff3cf4c8aaec472f7d1718" prot="protected" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t animationDuration</definition>
+        <argsstring></argsstring>
+        <name>animationDuration</name>
+        <briefdescription>
+<para>The animation duration of the state change animation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="301" column="1" bodyfile="touchgfx/containers/SlideMenu.hpp" bodystart="301" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_slide_menu_1a669dc0384241a8a926bf79d040e145f7" prot="protected" static="no" mutable="no">
+        <type><ref refid="structtouchgfx_1_1_callback" kindref="compound">Callback</ref>&lt; <ref refid="classtouchgfx_1_1_slide_menu" kindref="compound">SlideMenu</ref>, const <ref refid="classtouchgfx_1_1_move_animator" kindref="compound">MoveAnimator</ref>&lt; <ref refid="classtouchgfx_1_1_container" kindref="compound">Container</ref> &gt; &amp; &gt;</type>
+        <definition>Callback&lt;SlideMenu, const MoveAnimator&lt;Container&gt;&amp;&gt; animationEndedCallback</definition>
+        <argsstring></argsstring>
+        <name>animationEndedCallback</name>
+        <briefdescription>
+<para>The local state changed animation ended callback. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="285" column="1" bodyfile="touchgfx/containers/SlideMenu.hpp" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_slide_menu_1a22eaec05bb341f1aebd7f3cf85dcc3bf" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacetouchgfx_1a067e5cd30b7258d54a37d6a0d1423d68" kindref="member">EasingEquation</ref></type>
+        <definition>EasingEquation animationEquation</definition>
+        <argsstring></argsstring>
+        <name>animationEquation</name>
+        <briefdescription>
+<para>The easing equation used for the state change animation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="293" column="1" bodyfile="touchgfx/containers/SlideMenu.hpp" bodystart="293" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_slide_menu_1ac58c7595db571063cbbb5832998af4d4" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_image" kindref="compound">Image</ref></type>
+        <definition>Image background</definition>
+        <argsstring></argsstring>
+        <name>background</name>
+        <briefdescription>
+<para>The background of the <ref refid="classtouchgfx_1_1_slide_menu" kindref="compound">SlideMenu</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="282" column="1" bodyfile="touchgfx/containers/SlideMenu.hpp" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_slide_menu_1a19b06feb71094eab00b1cef6428900fb" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_slide_menu_1a5d74787dedbc4e11c1ab15bf487e61f8" kindref="member">SlideMenu::State</ref></type>
+        <definition>SlideMenu::State currentState</definition>
+        <argsstring></argsstring>
+        <name>currentState</name>
+        <briefdescription>
+<para>The current state of the <ref refid="classtouchgfx_1_1_slide_menu" kindref="compound">SlideMenu</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="290" column="1" bodyfile="touchgfx/containers/SlideMenu.hpp" bodystart="290" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_slide_menu_1aa0a055b3d4285a117a97123f8bdeb4ba" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_slide_menu_1a34c48ecfcbb1829f9f4168def5e9ed6a" kindref="member">SlideMenu::ExpandDirection</ref></type>
+        <definition>SlideMenu::ExpandDirection expandDirection</definition>
+        <argsstring></argsstring>
+        <name>expandDirection</name>
+        <briefdescription>
+<para>The expand direction of the <ref refid="classtouchgfx_1_1_slide_menu" kindref="compound">SlideMenu</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="291" column="1" bodyfile="touchgfx/containers/SlideMenu.hpp" bodystart="291" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_slide_menu_1acda47c39e6534030a0b1670306cdd755" prot="protected" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t expandedStateTimeout</definition>
+        <argsstring></argsstring>
+        <name>expandedStateTimeout</name>
+        <briefdescription>
+<para>The expanded state timeout. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="298" column="1" bodyfile="touchgfx/containers/SlideMenu.hpp" bodystart="298" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_slide_menu_1ad6af756b6f654c419fe2652922072869" prot="protected" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t expandedStateTimer</definition>
+        <argsstring></argsstring>
+        <name>expandedStateTimer</name>
+        <briefdescription>
+<para>The timer that counts towards the expandedStateTimeout. If reached the <ref refid="classtouchgfx_1_1_slide_menu" kindref="compound">SlideMenu</ref> will animate to COLLAPSED. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="299" column="1" bodyfile="touchgfx/containers/SlideMenu.hpp" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_slide_menu_1ab4d68e36bdae94b8ab169a1c30753e8b" prot="protected" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t hiddenPixelsWhenExpanded</definition>
+        <argsstring></argsstring>
+        <name>hiddenPixelsWhenExpanded</name>
+        <briefdescription>
+<para>The number of hidden pixels when expanded. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="296" column="1" bodyfile="touchgfx/containers/SlideMenu.hpp" bodystart="296" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_slide_menu_1a67c38a0c59e091a80113b7fb1ba39bed" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_move_animator" kindref="compound">MoveAnimator</ref>&lt; <ref refid="classtouchgfx_1_1_container" kindref="compound">Container</ref> &gt;</type>
+        <definition>MoveAnimator&lt;Container&gt; menuContainer</definition>
+        <argsstring></argsstring>
+        <name>menuContainer</name>
+        <briefdescription>
+<para>The container holding the actual menu items. This is the container that performs the state change animation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="280" column="1" bodyfile="touchgfx/containers/SlideMenu.hpp" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_slide_menu_1a9bbdb7314bbf9c06abad5d4c89c0ddb8" prot="protected" static="no" mutable="no">
+        <type><ref refid="structtouchgfx_1_1_callback" kindref="compound">Callback</ref>&lt; <ref refid="classtouchgfx_1_1_slide_menu" kindref="compound">SlideMenu</ref>, const <ref refid="classtouchgfx_1_1_abstract_button" kindref="compound">AbstractButton</ref> &amp; &gt;</type>
+        <definition>Callback&lt;SlideMenu, const AbstractButton&amp;&gt; onStateChangeButtonClicked</definition>
+        <argsstring></argsstring>
+        <name>onStateChangeButtonClicked</name>
+        <briefdescription>
+<para>The local state changed button clicked callback. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="284" column="1" bodyfile="touchgfx/containers/SlideMenu.hpp" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_slide_menu_1afe7b7229d1709a2782beee20cbf47edb" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_button" kindref="compound">Button</ref></type>
+        <definition>Button stateChangeButton</definition>
+        <argsstring></argsstring>
+        <name>stateChangeButton</name>
+        <briefdescription>
+<para>The state change button that toggles the <ref refid="classtouchgfx_1_1_slide_menu" kindref="compound">SlideMenu</ref> state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="281" column="1" bodyfile="touchgfx/containers/SlideMenu.hpp" bodystart="281" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_slide_menu_1ae29300794b0956211cd34231f02aa7fc" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_generic_callback" kindref="compound">GenericCallback</ref>&lt; const <ref refid="classtouchgfx_1_1_slide_menu" kindref="compound">SlideMenu</ref> &amp; &gt; *</type>
+        <definition>GenericCallback&lt;const SlideMenu&amp;&gt;* stateChangedAnimationEndedCallback</definition>
+        <argsstring></argsstring>
+        <name>stateChangedAnimationEndedCallback</name>
+        <briefdescription>
+<para>The public state changed animation ended callback. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="288" column="1" bodyfile="touchgfx/containers/SlideMenu.hpp" bodystart="288" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_slide_menu_1a944c7c2ac5658f4955d0b6f241749bcf" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_generic_callback" kindref="compound">GenericCallback</ref>&lt; const <ref refid="classtouchgfx_1_1_slide_menu" kindref="compound">SlideMenu</ref> &amp; &gt; *</type>
+        <definition>GenericCallback&lt;const SlideMenu&amp;&gt;* stateChangedCallback</definition>
+        <argsstring></argsstring>
+        <name>stateChangedCallback</name>
+        <briefdescription>
+<para>The public state changed button clicked callback. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="287" column="1" bodyfile="touchgfx/containers/SlideMenu.hpp" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_slide_menu_1a11464c66da8306ae3fc0fd3f7486ce24" prot="protected" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t visiblePixelsWhenCollapsed</definition>
+        <argsstring></argsstring>
+        <name>visiblePixelsWhenCollapsed</name>
+        <briefdescription>
+<para>The number of visible pixels when collapsed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="295" column="1" bodyfile="touchgfx/containers/SlideMenu.hpp" bodystart="295" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_menu_1a302ad1a4da6fe171eb249828bd8dc7ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void add</definition>
+        <argsstring>(Drawable &amp;d)</argsstring>
+        <name>add</name>
+        <reimplements refid="classtouchgfx_1_1_container_1a302ad1a4da6fe171eb249828bd8dc7ab">add</reimplements>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> &amp;</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Adds a drawable to the container. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Make sure the x and y coordinates of the <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> is correct relative to the <ref refid="classtouchgfx_1_1_slide_menu" kindref="compound">SlideMenu</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The drawable to add. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="270" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_menu_1aa40ae62cb0f25fb1f7ad71cf0ef0929a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void animateToState</definition>
+        <argsstring>(SlideMenu::State newState)</argsstring>
+        <name>animateToState</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_slide_menu_1a5d74787dedbc4e11c1ab15bf487e61f8" kindref="member">SlideMenu::State</ref></type>
+          <declname>newState</declname>
+        </param>
+        <briefdescription>
+<para>Animate to the given expanded or collapsed state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new state of the <ref refid="classtouchgfx_1_1_slide_menu" kindref="compound">SlideMenu</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_slide_menu_1aaafe4d4aaa4dd184332c54777a9c1541" kindref="member">setState</ref>, <ref refid="classtouchgfx_1_1_slide_menu_1a04dc7018abcdeb15b6024154b35b7bb8" kindref="member">getState</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="191" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_menu_1aa21a489ea7a6f7a91a61e5b1c9c4d52d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>uint16_t</type>
+        <definition>virtual uint16_t getAnimationDuration</definition>
+        <argsstring>() const</argsstring>
+        <name>getAnimationDuration</name>
+        <briefdescription>
+<para>Gets the animation duration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The animation duration. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="159" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_menu_1aa60a2ba6dcc03c56998512ee383c8152" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespacetouchgfx_1a067e5cd30b7258d54a37d6a0d1423d68" kindref="member">EasingEquation</ref></type>
+        <definition>virtual EasingEquation getAnimationEasingEquation</definition>
+        <argsstring>() const</argsstring>
+        <name>getAnimationEasingEquation</name>
+        <briefdescription>
+<para>Gets the animation easing equation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The animation easing equation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="173" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_menu_1a34b1c0e207996084f3ebcc5f7c3752d5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int16_t</type>
+        <definition>virtual int16_t getBackgroundX</definition>
+        <argsstring>() const</argsstring>
+        <name>getBackgroundX</name>
+        <briefdescription>
+<para>Gets the background <ref refid="classtouchgfx_1_1_image" kindref="compound">Image</ref> x coordinate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The background <ref refid="classtouchgfx_1_1_image" kindref="compound">Image</ref> x coordinate. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="225" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_menu_1acb2fe61f4f12328dca04c4f9adee294f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int16_t</type>
+        <definition>virtual int16_t getBackgroundY</definition>
+        <argsstring>() const</argsstring>
+        <name>getBackgroundY</name>
+        <briefdescription>
+<para>Gets the background <ref refid="classtouchgfx_1_1_image" kindref="compound">Image</ref> y coordinate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The background <ref refid="classtouchgfx_1_1_image" kindref="compound">Image</ref> y coordinate. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="232" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_menu_1ac6a6435795243118507db2a256c1155f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classtouchgfx_1_1_slide_menu_1a34c48ecfcbb1829f9f4168def5e9ed6a" kindref="member">SlideMenu::ExpandDirection</ref></type>
+        <definition>virtual SlideMenu::ExpandDirection getExpandDirection</definition>
+        <argsstring>() const</argsstring>
+        <name>getExpandDirection</name>
+        <briefdescription>
+<para>Gets the expand direction. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The expand direction. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="101" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_menu_1a21c6cb94bf40c089e513006286117b8c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>uint16_t</type>
+        <definition>virtual uint16_t getExpandedStateTimeout</definition>
+        <argsstring>() const</argsstring>
+        <name>getExpandedStateTimeout</name>
+        <briefdescription>
+<para>Gets expanded state timeout. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The expanded state timeout. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="145" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_menu_1a73bf34fec21564f910c567136300f7fa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>uint16_t</type>
+        <definition>virtual uint16_t getExpandedStateTimer</definition>
+        <argsstring>() const</argsstring>
+        <name>getExpandedStateTimer</name>
+        <briefdescription>
+<para>Gets the expanded state timer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The expanded state timer.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_slide_menu_1afb36ba20bea28b59c172a06505a5d6ab" kindref="member">resetExpandedStateTimer</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="218" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_menu_1a7aaf35789288ff3b06b577725d28f1ea" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int16_t</type>
+        <definition>virtual int16_t getHiddenPixelsWhenExpanded</definition>
+        <argsstring>() const</argsstring>
+        <name>getHiddenPixelsWhenExpanded</name>
+        <briefdescription>
+<para>Gets the hidden pixels when expanded. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The hidden pixels when expanded. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="129" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_menu_1a04dc7018abcdeb15b6024154b35b7bb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classtouchgfx_1_1_slide_menu_1a5d74787dedbc4e11c1ab15bf487e61f8" kindref="member">SlideMenu::State</ref></type>
+        <definition>virtual SlideMenu::State getState</definition>
+        <argsstring>()</argsstring>
+        <name>getState</name>
+        <briefdescription>
+<para>Gets the current expanded or collapsed state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current state.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_slide_menu_1aaafe4d4aaa4dd184332c54777a9c1541" kindref="member">setState</ref>, <ref refid="classtouchgfx_1_1_slide_menu_1aa40ae62cb0f25fb1f7ad71cf0ef0929a" kindref="member">animateToState</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="200" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_menu_1ae88f5e819bd234144e4488fc68afcac9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int16_t</type>
+        <definition>virtual int16_t getStateChangeButtonX</definition>
+        <argsstring>() const</argsstring>
+        <name>getStateChangeButtonX</name>
+        <briefdescription>
+<para>Gets the state change button x coordinate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The state change button x coordinate. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="239" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_menu_1ab5084ac2c9e9990da46ab3d416f88ffb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int16_t</type>
+        <definition>virtual int16_t getStateChangeButtonY</definition>
+        <argsstring>() const</argsstring>
+        <name>getStateChangeButtonY</name>
+        <briefdescription>
+<para>Gets the state change button y coordinate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The state change button y coordinate. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="246" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_menu_1aa2449a5b9cdd8c0cb31968699a6eca5f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int16_t</type>
+        <definition>virtual int16_t getVisiblePixelsWhenCollapsed</definition>
+        <argsstring>() const</argsstring>
+        <name>getVisiblePixelsWhenCollapsed</name>
+        <briefdescription>
+<para>Gets the visible pixels when collapsed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The visible pixels when collapsed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="115" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_menu_1a4d9056af30ab3c61da25a71023a341f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void remove</definition>
+        <argsstring>(Drawable &amp;d)</argsstring>
+        <name>remove</name>
+        <reimplements refid="classtouchgfx_1_1_container_1a4d9056af30ab3c61da25a71023a341f2">remove</reimplements>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> &amp;</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Removes the drawable from the container. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The drawable to remove. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="277" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_menu_1afb36ba20bea28b59c172a06505a5d6ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void resetExpandedStateTimer</definition>
+        <argsstring>()</argsstring>
+        <name>resetExpandedStateTimer</name>
+        <briefdescription>
+<para>Resets the expanded state timer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The <ref refid="classtouchgfx_1_1_slide_menu" kindref="compound">SlideMenu</ref> will automatically animate to the COLLAPSED state after a number of ticks, as set with <ref refid="classtouchgfx_1_1_slide_menu_1afeb46c8e88521b779a81818642e1da91" kindref="member">setExpandedStateTimeout()</ref>. This method resets this timer.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_slide_menu_1a73bf34fec21564f910c567136300f7fa" kindref="member">getExpandedStateTimer</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="209" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_menu_1ad8a211e2f8d9cdf59a60bc176a86796f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setAnimationDuration</definition>
+        <argsstring>(uint16_t duration)</argsstring>
+        <name>setAnimationDuration</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+<para>Sets the animation duration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>duration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The animation duration. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="152" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_menu_1ab20fed38930728ce8f73341c8bee9d47" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setAnimationEasingEquation</definition>
+        <argsstring>(EasingEquation animationEasingEquation)</argsstring>
+        <name>setAnimationEasingEquation</name>
+        <param>
+          <type><ref refid="namespacetouchgfx_1a067e5cd30b7258d54a37d6a0d1423d68" kindref="member">EasingEquation</ref></type>
+          <declname>animationEasingEquation</declname>
+        </param>
+        <briefdescription>
+<para>Sets the animation easing equation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>animationEasingEquation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The animation easing equation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="166" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_menu_1a532414231f960f77c5f47a6e10f788d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setExpandDirection</definition>
+        <argsstring>(SlideMenu::ExpandDirection newExpandDirection)</argsstring>
+        <name>setExpandDirection</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_slide_menu_1a34c48ecfcbb1829f9f4168def5e9ed6a" kindref="member">SlideMenu::ExpandDirection</ref></type>
+          <declname>newExpandDirection</declname>
+        </param>
+        <briefdescription>
+<para>Sets the expand direction. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newExpandDirection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new expand direction. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_menu_1afeb46c8e88521b779a81818642e1da91" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setExpandedStateTimeout</definition>
+        <argsstring>(uint16_t timeout)</argsstring>
+        <name>setExpandedStateTimeout</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+<para>Sets the expanded state timeout in ticks. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The <ref refid="classtouchgfx_1_1_slide_menu" kindref="compound">SlideMenu</ref> will animate to the COLLAPSED state when this number of ticks has been executed while the <ref refid="classtouchgfx_1_1_slide_menu" kindref="compound">SlideMenu</ref> is in the EXPANDED state. The timer can be reset with the resetExpandedStateTimer method.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The timeout in ticks. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="138" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_menu_1a624392a2228c70b9cf57a50546858990" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setHiddenPixelsWhenExpanded</definition>
+        <argsstring>(int16_t hiddenPixels)</argsstring>
+        <name>setHiddenPixelsWhenExpanded</name>
+        <param>
+          <type>int16_t</type>
+          <declname>hiddenPixels</declname>
+        </param>
+        <briefdescription>
+<para>Sets the amount of hidden pixels when expanded. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hiddenPixels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The hidden pixels. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="122" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_menu_1aaafe4d4aaa4dd184332c54777a9c1541" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setState</definition>
+        <argsstring>(SlideMenu::State newState)</argsstring>
+        <name>setState</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_slide_menu_1a5d74787dedbc4e11c1ab15bf487e61f8" kindref="member">SlideMenu::State</ref></type>
+          <declname>newState</declname>
+        </param>
+        <briefdescription>
+<para>Sets the state of the <ref refid="classtouchgfx_1_1_slide_menu" kindref="compound">SlideMenu</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>No animation is performed.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new state of the <ref refid="classtouchgfx_1_1_slide_menu" kindref="compound">SlideMenu</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_slide_menu_1aa40ae62cb0f25fb1f7ad71cf0ef0929a" kindref="member">animateToState</ref>, <ref refid="classtouchgfx_1_1_slide_menu_1a04dc7018abcdeb15b6024154b35b7bb8" kindref="member">getState</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="182" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_menu_1af93ea0ae7bec30906183809e0ff7a491" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setStateChangedAnimationEndedCallback</definition>
+        <argsstring>(GenericCallback&lt; const SlideMenu &amp; &gt; &amp;callback)</argsstring>
+        <name>setStateChangedAnimationEndedCallback</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_generic_callback" kindref="compound">GenericCallback</ref>&lt; const <ref refid="classtouchgfx_1_1_slide_menu" kindref="compound">SlideMenu</ref> &amp; &gt; &amp;</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>Set the state change animation ended callback. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This callback is called when a state change animation has ended.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The callback. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="262" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_menu_1ada92ac431d29032a86384285f897bdb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setStateChangedCallback</definition>
+        <argsstring>(GenericCallback&lt; const SlideMenu &amp; &gt; &amp;callback)</argsstring>
+        <name>setStateChangedCallback</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_generic_callback" kindref="compound">GenericCallback</ref>&lt; const <ref refid="classtouchgfx_1_1_slide_menu" kindref="compound">SlideMenu</ref> &amp; &gt; &amp;</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>Set the state changed callback. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This callback is called when the state change button is clicked.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The callback. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="254" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_menu_1ae17a87e4e788a64bd70b568ffeddd043" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setup</definition>
+        <argsstring>(SlideMenu::ExpandDirection newExpandDirection, const Bitmap &amp;backgroundBMP, const Bitmap &amp;stateChangeButtonBMP, const Bitmap &amp;stateChangeButtonPressedBMP)</argsstring>
+        <name>setup</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_slide_menu_1a34c48ecfcbb1829f9f4168def5e9ed6a" kindref="member">SlideMenu::ExpandDirection</ref></type>
+          <declname>newExpandDirection</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> &amp;</type>
+          <declname>backgroundBMP</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> &amp;</type>
+          <declname>stateChangeButtonBMP</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> &amp;</type>
+          <declname>stateChangeButtonPressedBMP</declname>
+        </param>
+        <briefdescription>
+<para>Setup the <ref refid="classtouchgfx_1_1_slide_menu" kindref="compound">SlideMenu</ref> by positioning the stateChangeButton next to background image relative to the expand direction, and center it in the other dimension. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The width and height of the <ref refid="classtouchgfx_1_1_slide_menu" kindref="compound">SlideMenu</ref> will be automatically set to span both elements. Default values are: expandedStateTimeout = 200, visiblePixelsWhenCollapsed = 0, hiddenPixelsWhenExpanded = 0, animationDuration = 10, animationEquation = cubicEaseInOut.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newExpandDirection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new expand direction. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>backgroundBMP</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The background bitmap. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stateChangeButtonBMP</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The state change button bitmap. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stateChangeButtonPressedBMP</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The state change button pressed bitmap. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_menu_1af3b4286b9d2b8aa228ed8c5862980eef" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setup</definition>
+        <argsstring>(SlideMenu::ExpandDirection newExpandDirection, const Bitmap &amp;backgroundBMP, const Bitmap &amp;stateChangeButtonBMP, const Bitmap &amp;stateChangeButtonPressedBMP, int16_t backgroundX, int16_t backgroundY, int16_t stateChangeButtonX, int16_t stateChangeButtonY)</argsstring>
+        <name>setup</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_slide_menu_1a34c48ecfcbb1829f9f4168def5e9ed6a" kindref="member">SlideMenu::ExpandDirection</ref></type>
+          <declname>newExpandDirection</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> &amp;</type>
+          <declname>backgroundBMP</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> &amp;</type>
+          <declname>stateChangeButtonBMP</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> &amp;</type>
+          <declname>stateChangeButtonPressedBMP</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>backgroundX</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>backgroundY</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>stateChangeButtonX</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>stateChangeButtonY</declname>
+        </param>
+        <briefdescription>
+<para>Setup method for the <ref refid="classtouchgfx_1_1_slide_menu" kindref="compound">SlideMenu</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Positioning of the background image and the stateChangeButton is done by stating the X and Y coordinates for the elements (relative to the <ref refid="classtouchgfx_1_1_slide_menu" kindref="compound">SlideMenu</ref>). The width and height of the <ref refid="classtouchgfx_1_1_slide_menu" kindref="compound">SlideMenu</ref> will be automatically set to span both elements. Default values are: expandedStateTimeout = 200, visiblePixelsWhenCollapsed = 0, hiddenPixelsWhenExpanded = 0, animationDuration = 10, animationEquation = cubicEaseInOut.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newExpandDirection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new expand direction. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>backgroundBMP</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The background bitmap. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stateChangeButtonBMP</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The state change button bitmap. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stateChangeButtonPressedBMP</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The state change button pressed bitmap. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>backgroundX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The background x coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>backgroundY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The background y coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stateChangeButtonX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The state change button x coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stateChangeButtonY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The state change button y coordinate. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_menu_1a293b48cb765a0eea42e0ffc8979b2717" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setVisiblePixelsWhenCollapsed</definition>
+        <argsstring>(int16_t visiblePixels)</argsstring>
+        <name>setVisiblePixelsWhenCollapsed</name>
+        <param>
+          <type>int16_t</type>
+          <declname>visiblePixels</declname>
+        </param>
+        <briefdescription>
+<para>Sets the amount of visible pixels when collapsed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>visiblePixels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The visible pixels. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="108" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_menu_1a6d8df0e427025e91f46215db89a2f60c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SlideMenu</definition>
+        <argsstring>()</argsstring>
+        <name>SlideMenu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_menu_1a0118daa71eca7f0ba3c94f6972bfebf4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual ~SlideMenu</definition>
+        <argsstring>()</argsstring>
+        <name>~SlideMenu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="53" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_menu_1ab8675b471f26b728392ab2d0f8442c6b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void animationEndedHandler</definition>
+        <argsstring>(const MoveAnimator&lt; Container &gt; &amp;container)</argsstring>
+        <name>animationEndedHandler</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_move_animator" kindref="compound">MoveAnimator</ref>&lt; <ref refid="classtouchgfx_1_1_container" kindref="compound">Container</ref> &gt; &amp;</type>
+          <declname>container</declname>
+        </param>
+        <briefdescription>
+<para>Handler for the state change animation ended event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>container</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The menuContainer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="315" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_menu_1a2837f1747a756f706ddab2c837bff44f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int16_t</type>
+        <definition>virtual int16_t getCollapsedXCoordinate</definition>
+        <argsstring>()</argsstring>
+        <name>getCollapsedXCoordinate</name>
+        <briefdescription>
+<para>Gets the x coordinate for the collapsed state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The collapsed x coordinate. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="324" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_menu_1a8017aa34cd1a234cf15126849c0ff072" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int16_t</type>
+        <definition>virtual int16_t getCollapsedYCoordinate</definition>
+        <argsstring>()</argsstring>
+        <name>getCollapsedYCoordinate</name>
+        <briefdescription>
+<para>Gets the y coordinate for the collapsed state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The collapsed y coordinate. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="331" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_menu_1a4da1b8c40d8645399a421c3228a76b17" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int16_t</type>
+        <definition>virtual int16_t getExpandedXCoordinate</definition>
+        <argsstring>()</argsstring>
+        <name>getExpandedXCoordinate</name>
+        <briefdescription>
+<para>Gets the x coordinate for the expanded state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The expanded x coordinate. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="338" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_menu_1a55875cea57726a40cf79082e6640735e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int16_t</type>
+        <definition>virtual int16_t getExpandedYCoordinate</definition>
+        <argsstring>()</argsstring>
+        <name>getExpandedYCoordinate</name>
+        <briefdescription>
+<para>Gets the y coordinate for the expanded state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The expanded y coordinate. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="345" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_menu_1a1af635cee0f186c3d0fcea60bac14355" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void handleTickEvent</definition>
+        <argsstring>()</argsstring>
+        <name>handleTickEvent</name>
+        <reimplements refid="classtouchgfx_1_1_drawable_1a1af635cee0f186c3d0fcea60bac14355">handleTickEvent</reimplements>
+        <briefdescription>
+<para>Called periodically by the framework if the <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> instance has subscribed to timer ticks. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_application_1a5c54374756338ccf158b197f64470345" kindref="member">Application::registerTimerWidget</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="317" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slide_menu_1a2341c53263a229d29822072d0b3ce432" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stateChangeButtonClickedHandler</definition>
+        <argsstring>(const AbstractButton &amp;button)</argsstring>
+        <name>stateChangeButtonClickedHandler</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_abstract_button" kindref="compound">AbstractButton</ref> &amp;</type>
+          <declname>button</declname>
+        </param>
+        <briefdescription>
+<para>Handler for the state change button clicked event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>button</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The state change button. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/SlideMenu.hpp" line="308" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classtouchgfx_1_1_slide_menu" kindref="compound">SlideMenu</ref> is a menu that can expand and collapse at the touch of a button. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="classtouchgfx_1_1_slide_menu" kindref="compound">SlideMenu</ref> can expand in any of the four directions. Menu items can be added, just like items are added to a normal container.</para>
+<para>The relative positions of the background and state change button is configurable as is the direction in which the <ref refid="classtouchgfx_1_1_slide_menu" kindref="compound">SlideMenu</ref> expands and collapses. How much of the <ref refid="classtouchgfx_1_1_slide_menu" kindref="compound">SlideMenu</ref> that is visible when collapsed can also be set with the. It is, of course, important that the state change button is accessible when collapsed. The <ref refid="classtouchgfx_1_1_slide_menu" kindref="compound">SlideMenu</ref> will collapse after a given timeout is reached. The timer can be reset, for example when the user interacts with elements in the list.</para>
+<para>Menu elements are added normally using the <ref refid="classtouchgfx_1_1_slide_menu_1a302ad1a4da6fe171eb249828bd8dc7ab" kindref="member">add()</ref> method and are positioned relative to the <ref refid="classtouchgfx_1_1_slide_menu" kindref="compound">SlideMenu</ref>. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1478">
+        <label>Container</label>
+        <link refid="classtouchgfx_1_1_container"/>
+        <childnode refid="1479" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1477">
+        <label>SlideMenu</label>
+        <link refid="classtouchgfx_1_1_slide_menu"/>
+        <childnode refid="1478" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1479">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1491">
+        <label>Widget</label>
+        <link refid="classtouchgfx_1_1_widget"/>
+        <childnode refid="1482" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1481">
+        <label>Container</label>
+        <link refid="classtouchgfx_1_1_container"/>
+        <childnode refid="1482" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1482" relation="usage">
+          <edgelabel>firstChild</edgelabel>
+        </childnode>
+      </node>
+      <node id="1483">
+        <label>Rect</label>
+        <link refid="classtouchgfx_1_1_rect"/>
+      </node>
+      <node id="1492">
+        <label>GenericCallback&lt; const touchgfx::AbstractButton &amp; &gt;</label>
+        <link refid="classtouchgfx_1_1_generic_callback"/>
+      </node>
+      <node id="1489">
+        <label>Button</label>
+        <link refid="classtouchgfx_1_1_button"/>
+        <childnode refid="1490" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1493" relation="usage">
+          <edgelabel>down</edgelabel>
+          <edgelabel>up</edgelabel>
+        </childnode>
+      </node>
+      <node id="1480">
+        <label>SlideMenu</label>
+        <link refid="classtouchgfx_1_1_slide_menu"/>
+        <childnode refid="1481" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1484" relation="usage">
+          <edgelabel>onStateChangeButtonClicked</edgelabel>
+        </childnode>
+        <childnode refid="1486" relation="usage">
+          <edgelabel>stateChangedAnimationEndedCallback</edgelabel>
+          <edgelabel>stateChangedCallback</edgelabel>
+        </childnode>
+        <childnode refid="1487" relation="usage">
+          <edgelabel>animationEndedCallback</edgelabel>
+        </childnode>
+        <childnode refid="1489" relation="usage">
+          <edgelabel>stateChangeButton</edgelabel>
+        </childnode>
+        <childnode refid="1494" relation="usage">
+          <edgelabel>menuContainer</edgelabel>
+        </childnode>
+        <childnode refid="1496" relation="usage">
+          <edgelabel>background</edgelabel>
+        </childnode>
+      </node>
+      <node id="1496">
+        <label>Image</label>
+        <link refid="classtouchgfx_1_1_image"/>
+        <childnode refid="1491" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1493" relation="usage">
+          <edgelabel>bitmap</edgelabel>
+        </childnode>
+      </node>
+      <node id="1495">
+        <label>GenericCallback&lt; const touchgfx::MoveAnimator&lt; touchgfx::Container &gt; &amp; &gt;</label>
+        <link refid="classtouchgfx_1_1_generic_callback"/>
+      </node>
+      <node id="1494">
+        <label>MoveAnimator&lt; touchgfx::Container &gt;</label>
+        <link refid="classtouchgfx_1_1_move_animator"/>
+        <childnode refid="1481" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1495" relation="usage">
+          <edgelabel>moveAnimationEndedCallback</edgelabel>
+        </childnode>
+      </node>
+      <node id="1482">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+        <childnode refid="1483" relation="usage">
+          <edgelabel>rect</edgelabel>
+        </childnode>
+        <childnode refid="1482" relation="usage">
+          <edgelabel>nextSibling</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="1487">
+        <label>Callback&lt; touchgfx::SlideMenu, const touchgfx::MoveAnimator&lt; touchgfx::Container &gt; &amp; &gt;</label>
+        <link refid="structtouchgfx_1_1_callback"/>
+        <childnode refid="1488" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1485">
+        <label>GenericCallback&lt; const touchgfx::AbstractButton &amp;, void, void &gt;</label>
+        <link refid="classtouchgfx_1_1_generic_callback"/>
+      </node>
+      <node id="1490">
+        <label>AbstractButton</label>
+        <link refid="classtouchgfx_1_1_abstract_button"/>
+        <childnode refid="1491" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1492" relation="usage">
+          <edgelabel>action</edgelabel>
+        </childnode>
+      </node>
+      <node id="1486">
+        <label>GenericCallback&lt; const touchgfx::SlideMenu &amp; &gt;</label>
+        <link refid="classtouchgfx_1_1_generic_callback"/>
+      </node>
+      <node id="1493">
+        <label>Bitmap</label>
+        <link refid="classtouchgfx_1_1_bitmap"/>
+      </node>
+      <node id="1484">
+        <label>Callback&lt; touchgfx::SlideMenu, const touchgfx::AbstractButton &amp; &gt;</label>
+        <link refid="structtouchgfx_1_1_callback"/>
+        <childnode refid="1485" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1488">
+        <label>GenericCallback&lt; const touchgfx::MoveAnimator&lt; touchgfx::Container &gt; &amp;, void, void &gt;</label>
+        <link refid="classtouchgfx_1_1_generic_callback"/>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/containers/SlideMenu.hpp" line="33" column="1" bodyfile="touchgfx/containers/SlideMenu.hpp" bodystart="32" bodyend="346"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_slide_menu_1a302ad1a4da6fe171eb249828bd8dc7ab" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>add</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1aa40ae62cb0f25fb1f7ad71cf0ef0929a" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>animateToState</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1a4c9d0ee476ff3cf4c8aaec472f7d1718" prot="protected" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>animationDuration</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1a669dc0384241a8a926bf79d040e145f7" prot="protected" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>animationEndedCallback</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1ab8675b471f26b728392ab2d0f8442c6b" prot="protected" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>animationEndedHandler</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1a22eaec05bb341f1aebd7f3cf85dcc3bf" prot="protected" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>animationEquation</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1ac58c7595db571063cbbb5832998af4d4" prot="protected" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>background</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae2d939b2a9c253f0fb3bae3ec7be4e2f" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>childGeometryChanged</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1a5d74787dedbc4e11c1ab15bf487e61f8ac431df49736f0639055a9966fba03442" prot="public" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>COLLAPSED</name></member>
+      <member refid="classtouchgfx_1_1_container_1ac92243515043dff4fd93c987b894b017" prot="public" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>Container</name></member>
+      <member refid="classtouchgfx_1_1_container_1a0109ca3d59d6ced431a24313fef18803" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>contains</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1a19b06feb71094eab00b1cef6428900fb" prot="protected" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>currentState</name></member>
+      <member refid="classtouchgfx_1_1_container_1a1277d4bddd51dbc604de265fb70ccbfd" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>draw</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9cf3a85fa7554475fa42c97985bda6df" prot="public" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>Drawable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4a009ec2b654351679a0124e9055abdc" prot="public" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>drawToDynamicBitmap</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1a34c48ecfcbb1829f9f4168def5e9ed6aab5b3793b961949c817c7c0d99c05dad7" prot="public" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>EAST</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1a34c48ecfcbb1829f9f4168def5e9ed6a" prot="public" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>ExpandDirection</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1aa0a055b3d4285a117a97123f8bdeb4ba" prot="protected" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>expandDirection</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1a5d74787dedbc4e11c1ab15bf487e61f8a0a77bf4f68b403d97d9c4da752ab3ae3" prot="public" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>EXPANDED</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1acda47c39e6534030a0b1670306cdd755" prot="protected" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>expandedStateTimeout</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1ad6af756b6f654c419fe2652922072869" prot="protected" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>expandedStateTimer</name></member>
+      <member refid="classtouchgfx_1_1_container_1a15fc4ae5c33721f5f425b20640217f22" prot="protected" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>firstChild</name></member>
+      <member refid="classtouchgfx_1_1_container_1a2b224826cd4f0f674009c21d6821f525" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>forEachChild</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa7737d9d49d7f55ec9bde8f2c9751b1d" prot="public" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>getAbsoluteRect</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1aa21a489ea7a6f7a91a61e5b1c9c4d52d" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>getAnimationDuration</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1aa60a2ba6dcc03c56998512ee383c8152" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>getAnimationEasingEquation</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1a34b1c0e207996084f3ebcc5f7c3752d5" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>getBackgroundX</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1acb2fe61f4f12328dca04c4f9adee294f" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>getBackgroundY</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1a2837f1747a756f706ddab2c837bff44f" prot="protected" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>getCollapsedXCoordinate</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1a8017aa34cd1a234cf15126849c0ff072" prot="protected" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>getCollapsedYCoordinate</name></member>
+      <member refid="classtouchgfx_1_1_container_1a47e8a844fa50b171656f8355fd8e313b" prot="protected" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>getContainedArea</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1ac6a6435795243118507db2a256c1155f" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>getExpandDirection</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1a21c6cb94bf40c089e513006286117b8c" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>getExpandedStateTimeout</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1a73bf34fec21564f910c567136300f7fa" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>getExpandedStateTimer</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1a4da1b8c40d8645399a421c3228a76b17" prot="protected" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>getExpandedXCoordinate</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1a55875cea57726a40cf79082e6640735e" prot="protected" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>getExpandedYCoordinate</name></member>
+      <member refid="classtouchgfx_1_1_container_1a35ae5c9547dd1861f70b5e4f0f9b94b3" prot="public" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>getFirstChild</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ad00483821e06fe4d0d70222de4135d30" prot="public" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>getHeight</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1a7aaf35789288ff3b06b577725d28f1ea" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>getHiddenPixelsWhenExpanded</name></member>
+      <member refid="classtouchgfx_1_1_container_1a6bc8e89dc7f879221e9862fb27dc726f" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>getLastChild</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a61c9b2bf703c49a6d238d354ddcaedb3" prot="public" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>getNextSibling</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a013e065d4d9a10dbfa0ddee9a35582a3" prot="public" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>getParent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af23a5bb7d473e16363a449c497586be3" prot="public" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>getRect</name></member>
+      <member refid="classtouchgfx_1_1_container_1a4dcdd780e93cc783a2ceeda00c6f3b51" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>getSolidRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4783dfe657ff1b7a33261bda8c4b4266" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>getSolidRectAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1a04dc7018abcdeb15b6024154b35b7bb8" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>getState</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1ae88f5e819bd234144e4488fc68afcac9" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>getStateChangeButtonX</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1ab5084ac2c9e9990da46ab3d416f88ffb" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>getStateChangeButtonY</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1aa2449a5b9cdd8c0cb31968699a6eca5f" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>getVisiblePixelsWhenCollapsed</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a83b8847f583b63e60aa4bf778261ddd7" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>getVisibleRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1acae58162aaca6fc174416550f76668e7" prot="public" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>getWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac071e9b7ccf37179df7d29c6778b664c" prot="public" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>getX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a26752e6cff4607d0eec8768ef6d9032a" prot="public" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>getY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a7f1524b90bc90e5f6cf7ee47aae12123" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>handleClickEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a06ae1946b2124cc94e26cfe18728debf" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>handleDragEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4db4945ecbc2303bf860e082409b8029" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>handleGestureEvent</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1a1af635cee0f186c3d0fcea60bac14355" prot="protected" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>handleTickEvent</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1ab4d68e36bdae94b8ab169a1c30753e8b" prot="protected" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>hiddenPixelsWhenExpanded</name></member>
+      <member refid="classtouchgfx_1_1_container_1aca896b17460628dceeac8b01553b6a00" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>insert</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2800b4c18c63e9e7b1f85a74ce6b80c3" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>invalidate</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a130cf6e1bf2b9f04f48e659758fa75e2" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>invalidateRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a01c717b9abc98d48673b79d691c2d28a" prot="public" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>isTouchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9d8a6cfb13917785c143e74d40e4e2be" prot="public" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>isVisible</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1a67c38a0c59e091a80113b7fb1ba39bed" prot="protected" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>menuContainer</name></member>
+      <member refid="classtouchgfx_1_1_container_1add539b68574f09b364f0b4e6a312b9b0" prot="protected" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>moveChildrenRelative</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af3590480070e2cf91580976f322d2c5e" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>moveRelative</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aadc5abfad4d2fcc331cf8de8713dc00e" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>moveTo</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0da4a00c3fbdea5740e52c7e04316c65" prot="protected" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>nextSibling</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1a34c48ecfcbb1829f9f4168def5e9ed6aad0611de6f28d4a9c9eac959f5344698e" prot="public" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>NORTH</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1a9bbdb7314bbf9c06abad5d4c89c0ddb8" prot="protected" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>onStateChangeButtonClicked</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ab77c13cde2b01107dcbc5c2b584d422f" prot="protected" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>parent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2a955ddc316d002f566598f340eb2af9" prot="protected" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>rect</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1a4d9056af30ab3c61da25a71023a341f2" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>remove</name></member>
+      <member refid="classtouchgfx_1_1_container_1a4e62c805a8478320f1e650e6a635b31a" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>removeAll</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1afb36ba20bea28b59c172a06505a5d6ab" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>resetExpandedStateTimer</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1ad8a211e2f8d9cdf59a60bc176a86796f" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>setAnimationDuration</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1ab20fed38930728ce8f73341c8bee9d47" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>setAnimationEasingEquation</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1a532414231f960f77c5f47a6e10f788d1" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>setExpandDirection</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1afeb46c8e88521b779a81818642e1da91" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>setExpandedStateTimeout</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a47a6312407603de99247bb802dbd8a48" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>setHeight</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1a624392a2228c70b9cf57a50546858990" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>setHiddenPixelsWhenExpanded</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac218c371450d8ad2bed3e1b07965a41a" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>setPosition</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1aaafe4d4aaa4dd184332c54777a9c1541" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>setState</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1af93ea0ae7bec30906183809e0ff7a491" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>setStateChangedAnimationEndedCallback</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1ada92ac431d29032a86384285f897bdb5" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>setStateChangedCallback</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae4c38eadb852b153850ea7ded1f50a19" prot="public" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>setTouchable</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1ae17a87e4e788a64bd70b568ffeddd043" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>setup</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1af3b4286b9d2b8aa228ed8c5862980eef" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>setup</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a71639c6634c5dcf6d1bb21b8b1b61f5b" prot="public" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>setVisible</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1a293b48cb765a0eea42e0ffc8979b2717" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>setVisiblePixelsWhenCollapsed</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae74a37f71d23440fc8b0466ad8ecfe4b" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>setWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9f6db7f34a74e991fc446fffb5703a53" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>setX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6c86659dc1e7355c207e9c0aa18af167" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>setXY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1b08d48e7e23a046f09e63089bc82bc1" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>setY</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1a6d8df0e427025e91f46215db89a2f60c" prot="public" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>SlideMenu</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1a34c48ecfcbb1829f9f4168def5e9ed6aa8ef5c0bce69283a9986011a63eea8a6b" prot="public" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>SOUTH</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1a5d74787dedbc4e11c1ab15bf487e61f8" prot="public" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>State</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1afe7b7229d1709a2782beee20cbf47edb" prot="protected" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>stateChangeButton</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1a2341c53263a229d29822072d0b3ce432" prot="protected" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>stateChangeButtonClickedHandler</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1ae29300794b0956211cd34231f02aa7fc" prot="protected" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>stateChangedAnimationEndedCallback</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1a944c7c2ac5658f4955d0b6f241749bcf" prot="protected" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>stateChangedCallback</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0d014de134cb9b9c1c361fcd726a5f34" prot="protected" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>touchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a48c1d14ac943dbfa4935ea39db950608" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>translateRectToAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_container_1a23f8fdbaba5449e55efb7a14a96b657d" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>unlink</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa54a57ae048476d840caf6d4d2c47aa3" prot="protected" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>visible</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1a11464c66da8306ae3fc0fd3f7486ce24" prot="protected" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>visiblePixelsWhenCollapsed</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1a34c48ecfcbb1829f9f4168def5e9ed6aae9449e8683a8199dad36b07a63b2f523" prot="public" virt="non-virtual"><scope>touchgfx::SlideMenu</scope><name>WEST</name></member>
+      <member refid="classtouchgfx_1_1_container_1a316105bb0065103f6190b08783144c33" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>~Container</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6bb040a11ffc2bd641283cc0bc0d1346" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>~Drawable</name></member>
+      <member refid="classtouchgfx_1_1_slide_menu_1a0118daa71eca7f0ba3c94f6972bfebf4" prot="public" virt="virtual"><scope>touchgfx::SlideMenu</scope><name>~SlideMenu</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

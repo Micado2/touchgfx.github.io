@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="dir_2f9b547542ac2ab3a0d3655507f6c40a" kind="dir">
+    <compoundname>platform/driver</compoundname>
+    <innerdir refid="dir_2721a1b2e27fde76a4f6b076d7f7eeb1">platform/driver/button</innerdir>
+    <innerdir refid="dir_e410795d1e39b70f170dc3aa925e8501">platform/driver/i2c</innerdir>
+    <innerdir refid="dir_772a038a17d08ace3053bf362784fbcd">platform/driver/lcd</innerdir>
+    <innerdir refid="dir_5b31f8be77399fb78621e150a864486a">platform/driver/touch</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="platform/driver/"/>
+  </compounddef>
+</doxygen>

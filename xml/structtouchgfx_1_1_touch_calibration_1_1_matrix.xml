@@ -1,0 +1,285 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structtouchgfx_1_1_touch_calibration_1_1_matrix" kind="struct" language="C++" prot="private">
+    <compoundname>touchgfx::TouchCalibration::Matrix</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtouchgfx_1_1_touch_calibration_1_1_matrix_1ab46e46c1bc4713afe190b41fc7888021" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t An</definition>
+        <argsstring></argsstring>
+        <name>An</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transforms/TouchCalibration.hpp" line="51" column="1" bodyfile="touchgfx/transforms/TouchCalibration.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_touch_calibration_1_1_matrix_1a25e9aa80e95b6c5368d958bf30c90c8e" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t Bn</definition>
+        <argsstring></argsstring>
+        <name>Bn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transforms/TouchCalibration.hpp" line="51" column="1" bodyfile="touchgfx/transforms/TouchCalibration.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_touch_calibration_1_1_matrix_1a2bdec063b0ef2d712fe9fa19b0ec172b" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t Cn</definition>
+        <argsstring></argsstring>
+        <name>Cn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transforms/TouchCalibration.hpp" line="51" column="1" bodyfile="touchgfx/transforms/TouchCalibration.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_touch_calibration_1_1_matrix_1afa02a4aaa0ef15b3a33fba4dfed28e52" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t Divider</definition>
+        <argsstring></argsstring>
+        <name>Divider</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transforms/TouchCalibration.hpp" line="51" column="1" bodyfile="touchgfx/transforms/TouchCalibration.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_touch_calibration_1_1_matrix_1a948585c36e22b4eff68a9fe7192ae47b" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t Dn</definition>
+        <argsstring></argsstring>
+        <name>Dn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transforms/TouchCalibration.hpp" line="51" column="1" bodyfile="touchgfx/transforms/TouchCalibration.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_touch_calibration_1_1_matrix_1a481803920b6d9a9133a5ed4e798f73d1" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t En</definition>
+        <argsstring></argsstring>
+        <name>En</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transforms/TouchCalibration.hpp" line="51" column="1" bodyfile="touchgfx/transforms/TouchCalibration.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_touch_calibration_1_1_matrix_1adb1deece115ee66a7e060abe7a7b1140" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t Fn</definition>
+        <argsstring></argsstring>
+        <name>Fn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transforms/TouchCalibration.hpp" line="51" column="1" bodyfile="touchgfx/transforms/TouchCalibration.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_touch_calibration_1_1_matrix_1a2b42d0725a326ab040c3a1ef4260e190" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t mlsAn</definition>
+        <argsstring></argsstring>
+        <name>mlsAn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transforms/TouchCalibration.hpp" line="52" column="1" bodyfile="touchgfx/transforms/TouchCalibration.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_touch_calibration_1_1_matrix_1a6bd9088f7e07c627b1b44daebb8c8c20" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t mlsBn</definition>
+        <argsstring></argsstring>
+        <name>mlsBn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transforms/TouchCalibration.hpp" line="52" column="1" bodyfile="touchgfx/transforms/TouchCalibration.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_touch_calibration_1_1_matrix_1a09c70c45c7d2094d71f4200b3224bd3e" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t mlsDn</definition>
+        <argsstring></argsstring>
+        <name>mlsDn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transforms/TouchCalibration.hpp" line="52" column="1" bodyfile="touchgfx/transforms/TouchCalibration.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_touch_calibration_1_1_matrix_1a43024f1c4d17f1674211bcc9ed2b2efe" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t mlsEn</definition>
+        <argsstring></argsstring>
+        <name>mlsEn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transforms/TouchCalibration.hpp" line="52" column="1" bodyfile="touchgfx/transforms/TouchCalibration.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_touch_calibration_1_1_matrix_1af4107fea3cb2adc4f43b3aee9bad0b31" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t remAn</definition>
+        <argsstring></argsstring>
+        <name>remAn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transforms/TouchCalibration.hpp" line="54" column="1" bodyfile="touchgfx/transforms/TouchCalibration.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_touch_calibration_1_1_matrix_1a395359f4fd0ca5382b911c83436c2be9" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t remBn</definition>
+        <argsstring></argsstring>
+        <name>remBn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transforms/TouchCalibration.hpp" line="54" column="1" bodyfile="touchgfx/transforms/TouchCalibration.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_touch_calibration_1_1_matrix_1a659ce06743ad91c8291092b241b299cb" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t remDn</definition>
+        <argsstring></argsstring>
+        <name>remDn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transforms/TouchCalibration.hpp" line="54" column="1" bodyfile="touchgfx/transforms/TouchCalibration.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_touch_calibration_1_1_matrix_1acd9312c4a343907e67bffe97f03656a7" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t remEn</definition>
+        <argsstring></argsstring>
+        <name>remEn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transforms/TouchCalibration.hpp" line="54" column="1" bodyfile="touchgfx/transforms/TouchCalibration.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_touch_calibration_1_1_matrix_1a767fbfe3c4a23154ea8d349046f7d292" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t resAn</definition>
+        <argsstring></argsstring>
+        <name>resAn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transforms/TouchCalibration.hpp" line="53" column="1" bodyfile="touchgfx/transforms/TouchCalibration.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_touch_calibration_1_1_matrix_1a22813758f467465abc851b6f3915973b" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t resBn</definition>
+        <argsstring></argsstring>
+        <name>resBn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transforms/TouchCalibration.hpp" line="53" column="1" bodyfile="touchgfx/transforms/TouchCalibration.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_touch_calibration_1_1_matrix_1aff8e0932e3b0fb91ca8a54f139c624ed" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t resDn</definition>
+        <argsstring></argsstring>
+        <name>resDn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transforms/TouchCalibration.hpp" line="53" column="1" bodyfile="touchgfx/transforms/TouchCalibration.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_touch_calibration_1_1_matrix_1ac9ef400089b35c8b80166d2bb05e89f2" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t resEn</definition>
+        <argsstring></argsstring>
+        <name>resEn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transforms/TouchCalibration.hpp" line="53" column="1" bodyfile="touchgfx/transforms/TouchCalibration.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A matrix. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para>http : //www.embedded.com/design/system-integration/4023968/How-To-Calibrate-Touch- Screens - calibration technique by Carlos E. Vidales. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="touchgfx/transforms/TouchCalibration.hpp" line="50" column="1" bodyfile="touchgfx/transforms/TouchCalibration.hpp" bodystart="49" bodyend="55"/>
+    <listofallmembers>
+      <member refid="structtouchgfx_1_1_touch_calibration_1_1_matrix_1ab46e46c1bc4713afe190b41fc7888021" prot="public" virt="non-virtual"><scope>touchgfx::TouchCalibration::Matrix</scope><name>An</name></member>
+      <member refid="structtouchgfx_1_1_touch_calibration_1_1_matrix_1a25e9aa80e95b6c5368d958bf30c90c8e" prot="public" virt="non-virtual"><scope>touchgfx::TouchCalibration::Matrix</scope><name>Bn</name></member>
+      <member refid="structtouchgfx_1_1_touch_calibration_1_1_matrix_1a2bdec063b0ef2d712fe9fa19b0ec172b" prot="public" virt="non-virtual"><scope>touchgfx::TouchCalibration::Matrix</scope><name>Cn</name></member>
+      <member refid="structtouchgfx_1_1_touch_calibration_1_1_matrix_1afa02a4aaa0ef15b3a33fba4dfed28e52" prot="public" virt="non-virtual"><scope>touchgfx::TouchCalibration::Matrix</scope><name>Divider</name></member>
+      <member refid="structtouchgfx_1_1_touch_calibration_1_1_matrix_1a948585c36e22b4eff68a9fe7192ae47b" prot="public" virt="non-virtual"><scope>touchgfx::TouchCalibration::Matrix</scope><name>Dn</name></member>
+      <member refid="structtouchgfx_1_1_touch_calibration_1_1_matrix_1a481803920b6d9a9133a5ed4e798f73d1" prot="public" virt="non-virtual"><scope>touchgfx::TouchCalibration::Matrix</scope><name>En</name></member>
+      <member refid="structtouchgfx_1_1_touch_calibration_1_1_matrix_1adb1deece115ee66a7e060abe7a7b1140" prot="public" virt="non-virtual"><scope>touchgfx::TouchCalibration::Matrix</scope><name>Fn</name></member>
+      <member refid="structtouchgfx_1_1_touch_calibration_1_1_matrix_1a2b42d0725a326ab040c3a1ef4260e190" prot="public" virt="non-virtual"><scope>touchgfx::TouchCalibration::Matrix</scope><name>mlsAn</name></member>
+      <member refid="structtouchgfx_1_1_touch_calibration_1_1_matrix_1a6bd9088f7e07c627b1b44daebb8c8c20" prot="public" virt="non-virtual"><scope>touchgfx::TouchCalibration::Matrix</scope><name>mlsBn</name></member>
+      <member refid="structtouchgfx_1_1_touch_calibration_1_1_matrix_1a09c70c45c7d2094d71f4200b3224bd3e" prot="public" virt="non-virtual"><scope>touchgfx::TouchCalibration::Matrix</scope><name>mlsDn</name></member>
+      <member refid="structtouchgfx_1_1_touch_calibration_1_1_matrix_1a43024f1c4d17f1674211bcc9ed2b2efe" prot="public" virt="non-virtual"><scope>touchgfx::TouchCalibration::Matrix</scope><name>mlsEn</name></member>
+      <member refid="structtouchgfx_1_1_touch_calibration_1_1_matrix_1af4107fea3cb2adc4f43b3aee9bad0b31" prot="public" virt="non-virtual"><scope>touchgfx::TouchCalibration::Matrix</scope><name>remAn</name></member>
+      <member refid="structtouchgfx_1_1_touch_calibration_1_1_matrix_1a395359f4fd0ca5382b911c83436c2be9" prot="public" virt="non-virtual"><scope>touchgfx::TouchCalibration::Matrix</scope><name>remBn</name></member>
+      <member refid="structtouchgfx_1_1_touch_calibration_1_1_matrix_1a659ce06743ad91c8291092b241b299cb" prot="public" virt="non-virtual"><scope>touchgfx::TouchCalibration::Matrix</scope><name>remDn</name></member>
+      <member refid="structtouchgfx_1_1_touch_calibration_1_1_matrix_1acd9312c4a343907e67bffe97f03656a7" prot="public" virt="non-virtual"><scope>touchgfx::TouchCalibration::Matrix</scope><name>remEn</name></member>
+      <member refid="structtouchgfx_1_1_touch_calibration_1_1_matrix_1a767fbfe3c4a23154ea8d349046f7d292" prot="public" virt="non-virtual"><scope>touchgfx::TouchCalibration::Matrix</scope><name>resAn</name></member>
+      <member refid="structtouchgfx_1_1_touch_calibration_1_1_matrix_1a22813758f467465abc851b6f3915973b" prot="public" virt="non-virtual"><scope>touchgfx::TouchCalibration::Matrix</scope><name>resBn</name></member>
+      <member refid="structtouchgfx_1_1_touch_calibration_1_1_matrix_1aff8e0932e3b0fb91ca8a54f139c624ed" prot="public" virt="non-virtual"><scope>touchgfx::TouchCalibration::Matrix</scope><name>resDn</name></member>
+      <member refid="structtouchgfx_1_1_touch_calibration_1_1_matrix_1ac9ef400089b35c8b80166d2bb05e89f2" prot="public" virt="non-virtual"><scope>touchgfx::TouchCalibration::Matrix</scope><name>resEn</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

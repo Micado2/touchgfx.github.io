@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="dir_16213c301cd13ea0e1eac47ae101a644" kind="dir">
+    <compoundname>touchgfx/events</compoundname>
+    <innerfile refid="_click_event_8hpp">ClickEvent.hpp</innerfile>
+    <innerfile refid="_drag_event_8hpp">DragEvent.hpp</innerfile>
+    <innerfile refid="_gesture_event_8hpp">GestureEvent.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="touchgfx/events/"/>
+  </compounddef>
+</doxygen>

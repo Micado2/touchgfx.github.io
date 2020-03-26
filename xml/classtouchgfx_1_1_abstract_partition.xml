@@ -1,0 +1,563 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_abstract_partition" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>touchgfx::AbstractPartition</compoundname>
+    <derivedcompoundref refid="classtouchgfx_1_1_partition" prot="public" virt="non-virtual">Partition&lt; ListOfTypes, NUMBER_OF_ELEMENTS &gt;</derivedcompoundref>
+    <includes local="no">AbstractPartition.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_abstract_partition_1aebaaaea9b7d70e17dd180e3c0c1c8f7f" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t allocations</definition>
+        <argsstring></argsstring>
+        <name>allocations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="common/AbstractPartition.hpp" line="207" column="1" bodyfile="common/AbstractPartition.hpp" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_partition_1ad180da0499a071d7758cb9bd0327a7f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void *</type>
+        <definition>virtual void* allocate</definition>
+        <argsstring>(uint16_t size)</argsstring>
+        <name>allocate</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Gets the address of the next available storage slot. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The slot size is compared with the specified size.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The address of an empty storage slot which contains minimum &apos;size&apos; bytes.</para>
+</simplesect>
+<simplesect kind="note"><para>Asserts if &apos;size&apos; is too large, or the storage is depleted. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="common/AbstractPartition.hpp" line="34" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_partition_1af03426a02d6b113972d9ea3159964efb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void *</type>
+        <definition>void* allocate</definition>
+        <argsstring>()</argsstring>
+        <name>allocate</name>
+        <briefdescription>
+<para>Gets the address of the next available storage slot. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The slot size is determined from the size of type T.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Generic type parameter.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The address of an empty storage slot.</para>
+</simplesect>
+<simplesect kind="note"><para>Asserts if T is too large, or the storage is depleted. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="common/AbstractPartition.hpp" line="92" column="1" bodyfile="common/AbstractPartition.hpp" bodystart="92" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_partition_1a4a9e43fe047ff4d6acfa4b29e8027175" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void *</type>
+        <definition>virtual void* allocateAt</definition>
+        <argsstring>(uint16_t index, uint16_t size)</argsstring>
+        <name>allocateAt</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Gets the address of the specified index. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Zero-based index of the. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The address of the appropriate storage slot which contains minimum &apos;size&apos; bytes.</para>
+</simplesect>
+<simplesect kind="note"><para>Asserts if &apos;size&apos; is too large. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="common/AbstractPartition.hpp" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_partition_1a2280de057b7a283f105773810c607bca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void *</type>
+        <definition>void* allocateAt</definition>
+        <argsstring>(uint16_t index)</argsstring>
+        <name>allocateAt</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Gets the address of the specified storage slot. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The slot size is determined from the size of type T.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Generic type parameter. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Zero-based index of the.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The address of the appropriate storage slot.</para>
+</simplesect>
+<simplesect kind="note"><para>Asserts if T is too large. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="common/AbstractPartition.hpp" line="109" column="1" bodyfile="common/AbstractPartition.hpp" bodystart="109" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_partition_1ae8660f362a0b493d1c951eb3cd2d6fc8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T &amp;</type>
+        <definition>T&amp; at</definition>
+        <argsstring>(const uint16_t index)</argsstring>
+        <name>at</name>
+        <param>
+          <type>const uint16_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Gets the object at the specified index. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Generic type parameter. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index into the <ref refid="classtouchgfx_1_1_partition" kindref="compound">Partition</ref> storage where the returned object is located.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A typed reference to the object at the specified index. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="common/AbstractPartition.hpp" line="123" column="1" bodyfile="common/AbstractPartition.hpp" bodystart="123" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_partition_1a02631f3f02742dc1a8cf862543ce3e15" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>const T &amp;</type>
+        <definition>const T&amp; at</definition>
+        <argsstring>(const uint16_t index) const</argsstring>
+        <name>at</name>
+        <param>
+          <type>const uint16_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>const version of <ref refid="classtouchgfx_1_1_abstract_partition_1ae8660f362a0b493d1c951eb3cd2d6fc8" kindref="member">at()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Generic type parameter. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Zero-based index of the.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A T&amp; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="common/AbstractPartition.hpp" line="137" column="1" bodyfile="common/AbstractPartition.hpp" bodystart="137" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_partition_1a4cfa9025ec8027e6ad832dd410afc18b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>uint16_t</type>
+        <definition>virtual uint16_t capacity</definition>
+        <argsstring>() const =0</argsstring>
+        <name>capacity</name>
+        <reimplementedby refid="classtouchgfx_1_1_partition_1ad6330a9e96e0e0ed8a11ed6959959710">capacity</reimplementedby>
+        <briefdescription>
+<para>Gets the capacity, i.e. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>the maximum allocation count.</para>
+<para><simplesect kind="return"><para>The maximum allocation count. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="common/AbstractPartition.hpp" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_partition_1aae048282c7011eedc2e0492f6421ea73" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+<para>Prepares the <ref refid="classtouchgfx_1_1_partition" kindref="compound">Partition</ref> for new allocations. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Any objects present in the <ref refid="classtouchgfx_1_1_partition" kindref="compound">Partition</ref> shall not be used after invoking this method. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="common/AbstractPartition.hpp" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_partition_1a15ca0b744f48a3d5e7cf7151f81b587a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dec</definition>
+        <argsstring>()</argsstring>
+        <name>dec</name>
+        <briefdescription>
+<para>Decreases number of allocations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="common/AbstractPartition.hpp" line="169" column="1" bodyfile="common/AbstractPartition.hpp" bodystart="169" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_partition_1afd52fcd15ce2578586cb0bd4a249d2ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>uint32_t</type>
+        <definition>virtual uint32_t element_size</definition>
+        <argsstring>()=0</argsstring>
+        <name>element_size</name>
+        <reimplementedby refid="classtouchgfx_1_1_partition_1a762e1d88fbd1a588a6b9a814977afec9">element_size</reimplementedby>
+        <briefdescription>
+<para>Access to concrete element-size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Used internally.</para>
+<para><simplesect kind="return"><para>An uint32_t. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="common/AbstractPartition.hpp" line="182" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_partition_1a30a8bca5dc58948374d5819404969dcd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structtouchgfx_1_1_pair" kindref="compound">Pair</ref>&lt; T *, uint16_t &gt;</type>
+        <definition>Pair&lt;T*, uint16_t&gt; find</definition>
+        <argsstring>(const void *pT)</argsstring>
+        <name>find</name>
+        <param>
+          <type>const void *</type>
+          <declname>pT</declname>
+        </param>
+        <briefdescription>
+<para>Determines if the specified object could have been previously allocated in the partition. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Since the <ref refid="classtouchgfx_1_1_partition" kindref="compound">Partition</ref> concept is loosely typed this method shall be used with care. The method does not guarantee that the found object at the returned index is a valid object. It only tests whether or not the object is within the bounds of the current partition allocations.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Generic type parameter. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the object to look up.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>If the object seems to be allocated in the <ref refid="classtouchgfx_1_1_partition" kindref="compound">Partition</ref>, a <ref refid="structtouchgfx_1_1_pair" kindref="compound">Pair</ref> object containing a typed pointer to the object and an index into the <ref refid="classtouchgfx_1_1_partition" kindref="compound">Partition</ref> storage is returned. Otherwise, a Pair&lt;0, 0&gt; is returned. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="common/AbstractPartition.hpp" line="157" column="1" bodyfile="common/AbstractPartition.hpp" bodystart="157" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_partition_1a1eba488f18e27256f1012aaad7a3c833" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>uint16_t</type>
+        <definition>virtual uint16_t getAllocationCount</definition>
+        <argsstring>() const</argsstring>
+        <name>getAllocationCount</name>
+        <briefdescription>
+<para>Gets allocation count. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The currently allocated storage slots. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="common/AbstractPartition.hpp" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_partition_1ac796ea67efe5bf289ea28044eaf517b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>uint16_t</type>
+        <definition>virtual uint16_t indexOf</definition>
+        <argsstring>(const void *address)</argsstring>
+        <name>indexOf</name>
+        <param>
+          <type>const void *</type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+<para>Determines index of previously allocated location. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Since the <ref refid="classtouchgfx_1_1_partition" kindref="compound">Partition</ref> concept is loosely typed this method shall be used with care. The method does not guarantee that the found object at the returned index is a valid object. It only tests whether or not the object is within the bounds of the current partition allocations.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The location address to lookup.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An uint16_t. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="common/AbstractPartition.hpp" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_partition_1ae05e5a3c6fa63b47a0c64cd1391686cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual ~AbstractPartition</definition>
+        <argsstring>()</argsstring>
+        <name>~AbstractPartition</name>
+        <briefdescription>
+<para>Finalizes an instance of the <ref refid="classtouchgfx_1_1_abstract_partition" kindref="compound">AbstractPartition</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="common/AbstractPartition.hpp" line="22" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_partition_1a6bffae5b97c1bdfe1446e41a9c370e63" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AbstractPartition</definition>
+        <argsstring>()</argsstring>
+        <name>AbstractPartition</name>
+        <briefdescription>
+<para>Initializes a new instance of the <ref refid="classtouchgfx_1_1_abstract_partition" kindref="compound">AbstractPartition</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="common/AbstractPartition.hpp" line="204" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_partition_1ac553984f2f15139cc6072f2be07caea7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void *</type>
+        <definition>virtual void* element</definition>
+        <argsstring>(uint16_t index)=0</argsstring>
+        <name>element</name>
+        <reimplementedby refid="classtouchgfx_1_1_partition_1af3dc7d28b4bdffc30784235ecefe26be">element</reimplementedby>
+        <param>
+          <type>uint16_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Access to stored element. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Used internally.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Zero-based index of the.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null if it fails, else a void*. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="common/AbstractPartition.hpp" line="192" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_partition_1a3e6dcffd3d5887b362595f7ec9d79e4e" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>const void *</type>
+        <definition>virtual const void* element</definition>
+        <argsstring>(uint16_t index) const =0</argsstring>
+        <name>element</name>
+        <reimplementedby refid="classtouchgfx_1_1_partition_1a4e5ec266524aa542137fe41cb9cf1bc4">element</reimplementedby>
+        <param>
+          <type>uint16_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Access to stored element, const version. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Zero-based index of the.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>null if it fails, else a void*. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="common/AbstractPartition.hpp" line="201" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This type defines an abstract interface to a storage partition for allocating memory slots of equal size. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The &quot;partition&quot; is not aware of the actual types stored in the partition memory, hence it provides no mechanism for deleting C++ objects when <ref refid="classtouchgfx_1_1_abstract_partition_1aae048282c7011eedc2e0492f6421ea73" kindref="member">clear()</ref>&apos;ed. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="149">
+        <label>Partition&lt; ListOfTypes, NUMBER_OF_ELEMENTS &gt;</label>
+        <link refid="classtouchgfx_1_1_partition"/>
+        <childnode refid="148" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="148">
+        <label>AbstractPartition</label>
+        <link refid="classtouchgfx_1_1_abstract_partition"/>
+      </node>
+    </inheritancegraph>
+    <location file="common/AbstractPartition.hpp" line="19" column="1" bodyfile="common/AbstractPartition.hpp" bodystart="18" bodyend="208"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_abstract_partition_1a6bffae5b97c1bdfe1446e41a9c370e63" prot="protected" virt="non-virtual"><scope>touchgfx::AbstractPartition</scope><name>AbstractPartition</name></member>
+      <member refid="classtouchgfx_1_1_abstract_partition_1ad180da0499a071d7758cb9bd0327a7f2" prot="public" virt="virtual"><scope>touchgfx::AbstractPartition</scope><name>allocate</name></member>
+      <member refid="classtouchgfx_1_1_abstract_partition_1af03426a02d6b113972d9ea3159964efb" prot="public" virt="non-virtual"><scope>touchgfx::AbstractPartition</scope><name>allocate</name></member>
+      <member refid="classtouchgfx_1_1_abstract_partition_1a4a9e43fe047ff4d6acfa4b29e8027175" prot="public" virt="virtual"><scope>touchgfx::AbstractPartition</scope><name>allocateAt</name></member>
+      <member refid="classtouchgfx_1_1_abstract_partition_1a2280de057b7a283f105773810c607bca" prot="public" virt="non-virtual"><scope>touchgfx::AbstractPartition</scope><name>allocateAt</name></member>
+      <member refid="classtouchgfx_1_1_abstract_partition_1aebaaaea9b7d70e17dd180e3c0c1c8f7f" prot="private" virt="non-virtual"><scope>touchgfx::AbstractPartition</scope><name>allocations</name></member>
+      <member refid="classtouchgfx_1_1_abstract_partition_1ae8660f362a0b493d1c951eb3cd2d6fc8" prot="public" virt="non-virtual"><scope>touchgfx::AbstractPartition</scope><name>at</name></member>
+      <member refid="classtouchgfx_1_1_abstract_partition_1a02631f3f02742dc1a8cf862543ce3e15" prot="public" virt="non-virtual"><scope>touchgfx::AbstractPartition</scope><name>at</name></member>
+      <member refid="classtouchgfx_1_1_abstract_partition_1a4cfa9025ec8027e6ad832dd410afc18b" prot="public" virt="pure-virtual"><scope>touchgfx::AbstractPartition</scope><name>capacity</name></member>
+      <member refid="classtouchgfx_1_1_abstract_partition_1aae048282c7011eedc2e0492f6421ea73" prot="public" virt="virtual"><scope>touchgfx::AbstractPartition</scope><name>clear</name></member>
+      <member refid="classtouchgfx_1_1_abstract_partition_1a15ca0b744f48a3d5e7cf7151f81b587a" prot="public" virt="non-virtual"><scope>touchgfx::AbstractPartition</scope><name>dec</name></member>
+      <member refid="classtouchgfx_1_1_abstract_partition_1ac553984f2f15139cc6072f2be07caea7" prot="protected" virt="pure-virtual"><scope>touchgfx::AbstractPartition</scope><name>element</name></member>
+      <member refid="classtouchgfx_1_1_abstract_partition_1a3e6dcffd3d5887b362595f7ec9d79e4e" prot="protected" virt="pure-virtual"><scope>touchgfx::AbstractPartition</scope><name>element</name></member>
+      <member refid="classtouchgfx_1_1_abstract_partition_1afd52fcd15ce2578586cb0bd4a249d2ba" prot="public" virt="pure-virtual"><scope>touchgfx::AbstractPartition</scope><name>element_size</name></member>
+      <member refid="classtouchgfx_1_1_abstract_partition_1a30a8bca5dc58948374d5819404969dcd" prot="public" virt="non-virtual"><scope>touchgfx::AbstractPartition</scope><name>find</name></member>
+      <member refid="classtouchgfx_1_1_abstract_partition_1a1eba488f18e27256f1012aaad7a3c833" prot="public" virt="virtual"><scope>touchgfx::AbstractPartition</scope><name>getAllocationCount</name></member>
+      <member refid="classtouchgfx_1_1_abstract_partition_1ac796ea67efe5bf289ea28044eaf517b9" prot="public" virt="virtual"><scope>touchgfx::AbstractPartition</scope><name>indexOf</name></member>
+      <member refid="classtouchgfx_1_1_abstract_partition_1ae05e5a3c6fa63b47a0c64cd1391686cd" prot="public" virt="virtual"><scope>touchgfx::AbstractPartition</scope><name>~AbstractPartition</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

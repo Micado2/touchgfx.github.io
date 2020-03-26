@@ -1,0 +1,501 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_shape" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::Shape</compoundname>
+    <basecompoundref refid="classtouchgfx_1_1_abstract_shape" prot="public" virt="non-virtual">AbstractShape</basecompoundref>
+    <includes local="no">Shape.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>uint16_t</type>
+        <declname>POINTS</declname>
+        <defname>POINTS</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_shape_1ab3f4ba0ea6e5123ab5c5703b022dfa6f" prot="private" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref></type>
+        <definition>CWRUtil::Q5 xCache[POINTS]</definition>
+        <argsstring>[POINTS]</argsstring>
+        <name>xCache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Shape.hpp" line="94" column="1" bodyfile="touchgfx/widgets/canvas/Shape.hpp" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_shape_1a0cf95fc130da85225a7976109060bc01" prot="private" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref></type>
+        <definition>CWRUtil::Q5 xCorner[POINTS]</definition>
+        <argsstring>[POINTS]</argsstring>
+        <name>xCorner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Shape.hpp" line="92" column="1" bodyfile="touchgfx/widgets/canvas/Shape.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_shape_1aa43c58ebe3c5d44a69112bef16df94df" prot="private" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref></type>
+        <definition>CWRUtil::Q5 yCache[POINTS]</definition>
+        <argsstring>[POINTS]</argsstring>
+        <name>yCache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Shape.hpp" line="95" column="1" bodyfile="touchgfx/widgets/canvas/Shape.hpp" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_shape_1a680d8b88f7efeb68695fdcbe4bd3a7a3" prot="private" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref></type>
+        <definition>CWRUtil::Q5 yCorner[POINTS]</definition>
+        <argsstring>[POINTS]</argsstring>
+        <name>yCorner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Shape.hpp" line="93" column="1" bodyfile="touchgfx/widgets/canvas/Shape.hpp" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_shape_1a64a8df749198b6e5d01a4e2ae4596cdc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref></type>
+        <definition>virtual CWRUtil::Q5 getCornerX</definition>
+        <argsstring>(int i) const</argsstring>
+        <name>getCornerX</name>
+        <reimplements refid="classtouchgfx_1_1_abstract_shape_1a1a581f7b7497765966299bb621623a22">getCornerX</reimplements>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Gets the x coordinate of a corner (a point) of the shape. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Zero-based index of the corner.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The corner x coordinate in <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref> format. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Shape.hpp" line="46" column="1" bodyfile="touchgfx/widgets/canvas/Shape.hpp" bodystart="46" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_shape_1aefa8ec9af9e27b6b7896f4143c9eee57" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref></type>
+        <definition>virtual CWRUtil::Q5 getCornerY</definition>
+        <argsstring>(int i) const</argsstring>
+        <name>getCornerY</name>
+        <reimplements refid="classtouchgfx_1_1_abstract_shape_1a867c84d9b1cf8fcb155d035a5a928d32">getCornerY</reimplements>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Gets the y coordinate of a corner (a point) of the shape. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Zero-based index of the corner.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The corner y coordinate in <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref> format. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Shape.hpp" line="55" column="1" bodyfile="touchgfx/widgets/canvas/Shape.hpp" bodystart="55" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_shape_1a8deaca6b17721df8ee9de43665db688b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int getNumPoints</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumPoints</name>
+        <reimplements refid="classtouchgfx_1_1_abstract_shape_1a00b739a24de05d063e099ffbd61e86fa">getNumPoints</reimplements>
+        <briefdescription>
+<para>Gets number of points used to make up the shape. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The number of points. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Shape.hpp" line="33" column="1" bodyfile="touchgfx/widgets/canvas/Shape.hpp" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_shape_1a9b192e75fdb9d782cf587f59267afb1a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setCorner</definition>
+        <argsstring>(int i, CWRUtil::Q5 x, CWRUtil::Q5 y)</argsstring>
+        <name>setCorner</name>
+        <reimplements refid="classtouchgfx_1_1_abstract_shape_1a1b9fd35449b1a05d593c6205d7f022e0">setCorner</reimplements>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref></type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Sets one of the points (a corner) of the shape in <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref> format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Zero-based index of the corner. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate in <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref> format. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate in <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref> format.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_abstract_shape_1ab88a1d31368bcd2b6c4540f570bd183a" kindref="member">updateAbstractShapeCache</ref></para>
+</simplesect>
+<simplesect kind="note"><para>Remember to call <ref refid="classtouchgfx_1_1_abstract_shape_1ab88a1d31368bcd2b6c4540f570bd183a" kindref="member">updateAbstractShapeCache()</ref> after calling setCorner one or more times, to make sure that the cached outline of the shape is correct. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Shape.hpp" line="38" column="1" bodyfile="touchgfx/widgets/canvas/Shape.hpp" bodystart="38" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_shape_1ae7755ce81583b9f776b857856f7cc218" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~Shape</definition>
+        <argsstring>()</argsstring>
+        <name>~Shape</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Shape.hpp" line="29" column="1" bodyfile="touchgfx/widgets/canvas/Shape.hpp" bodystart="29" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_shape_1ae09d33c7ac410f6ebdee6d0ff55f213b" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref></type>
+        <definition>virtual CWRUtil::Q5 getCacheX</definition>
+        <argsstring>(int i) const</argsstring>
+        <name>getCacheX</name>
+        <reimplements refid="classtouchgfx_1_1_abstract_shape_1afe421a6f703a1787f3b523f22a04bf63">getCacheX</reimplements>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Gets cached x coordinate of a point/corner. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Zero-based index of the point/corner.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The cached x coordinate, or zero if nothing is cached for the given i. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Shape.hpp" line="73" column="1" bodyfile="touchgfx/widgets/canvas/Shape.hpp" bodystart="73" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_shape_1a14311e1da04623eb3e893a8d69a55337" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref></type>
+        <definition>virtual CWRUtil::Q5 getCacheY</definition>
+        <argsstring>(int i) const</argsstring>
+        <name>getCacheY</name>
+        <reimplements refid="classtouchgfx_1_1_abstract_shape_1aad6a43865c24cdcd578aac535e7d4081">getCacheY</reimplements>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Gets cached y coordinate of a point/corner. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Zero-based index of the point/corner.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The cached y coordinate, or zero if nothing is cached for the given i. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Shape.hpp" line="82" column="1" bodyfile="touchgfx/widgets/canvas/Shape.hpp" bodystart="82" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_shape_1a3117cd86c8bff74a8a9f9b9b47e063c2" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setCache</definition>
+        <argsstring>(int i, CWRUtil::Q5 x, CWRUtil::Q5 y)</argsstring>
+        <name>setCache</name>
+        <reimplements refid="classtouchgfx_1_1_abstract_shape_1aa3806b9421f406fe1e9bdd78581debdc">setCache</reimplements>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref></type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Sets the cached coordinates of a given point/corner. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The coordinates in the cache are the coordinates from the corners after rotation and scaling has been applied to the coordinate.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Zero-based index of the corner. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Shape.hpp" line="65" column="1" bodyfile="touchgfx/widgets/canvas/Shape.hpp" bodystart="65" bodyend="71"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Simple widget capable of drawing a fully filled shape. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The shape can be scaled and rotated. The <ref refid="classtouchgfx_1_1_shape" kindref="compound">Shape</ref> class allows the user to draw any shape and allows the defined shape to be scaled, rotated and moved freely. Example uses could be the hands of a clock.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_abstract_shape" kindref="compound">AbstractShape</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1461">
+        <label>Widget</label>
+        <link refid="classtouchgfx_1_1_widget"/>
+        <childnode refid="1462" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1462">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+      </node>
+      <node id="1460">
+        <label>CanvasWidget</label>
+        <link refid="classtouchgfx_1_1_canvas_widget"/>
+        <childnode refid="1461" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1459">
+        <label>AbstractShape</label>
+        <link refid="classtouchgfx_1_1_abstract_shape"/>
+        <childnode refid="1460" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1458">
+        <label>Shape&lt; POINTS &gt;</label>
+        <link refid="classtouchgfx_1_1_shape"/>
+        <childnode refid="1459" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1466">
+        <label>Widget</label>
+        <link refid="classtouchgfx_1_1_widget"/>
+        <childnode refid="1467" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1468">
+        <label>Rect</label>
+        <link refid="classtouchgfx_1_1_rect"/>
+      </node>
+      <node id="1467">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+        <childnode refid="1468" relation="usage">
+          <edgelabel>rect</edgelabel>
+        </childnode>
+        <childnode refid="1467" relation="usage">
+          <edgelabel>nextSibling</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="1465">
+        <label>CanvasWidget</label>
+        <link refid="classtouchgfx_1_1_canvas_widget"/>
+        <childnode refid="1466" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1464">
+        <label>AbstractShape</label>
+        <link refid="classtouchgfx_1_1_abstract_shape"/>
+        <childnode refid="1465" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1463">
+        <label>Shape&lt; POINTS &gt;</label>
+        <link refid="classtouchgfx_1_1_shape"/>
+        <childnode refid="1464" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/widgets/canvas/Shape.hpp" line="27" column="1" bodyfile="touchgfx/widgets/canvas/Shape.hpp" bodystart="26" bodyend="96"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_abstract_shape_1ab6d3ca171180811239d5370e7830c6a9" prot="public" virt="non-virtual"><scope>touchgfx::Shape</scope><name>AbstractShape</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_1ae9e5d44779b5ee8498ba456e26e74bb3" prot="public" virt="non-virtual"><scope>touchgfx::Shape</scope><name>CanvasWidget</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae2d939b2a9c253f0fb3bae3ec7be4e2f" prot="public" virt="virtual"><scope>touchgfx::Shape</scope><name>childGeometryChanged</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_1a1277d4bddd51dbc604de265fb70ccbfd" prot="public" virt="virtual"><scope>touchgfx::Shape</scope><name>draw</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9cf3a85fa7554475fa42c97985bda6df" prot="public" virt="non-virtual"><scope>touchgfx::Shape</scope><name>Drawable</name></member>
+      <member refid="classtouchgfx_1_1_abstract_shape_1a9810af8a9edc3d97104a9a0ddfcd08fb" prot="public" virt="virtual"><scope>touchgfx::Shape</scope><name>drawCanvasWidget</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4a009ec2b654351679a0124e9055abdc" prot="public" virt="non-virtual"><scope>touchgfx::Shape</scope><name>drawToDynamicBitmap</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa7737d9d49d7f55ec9bde8f2c9751b1d" prot="public" virt="non-virtual"><scope>touchgfx::Shape</scope><name>getAbsoluteRect</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_1a48b27ff9c2eafcd202482b45abc86ff7" prot="public" virt="virtual"><scope>touchgfx::Shape</scope><name>getAlpha</name></member>
+      <member refid="classtouchgfx_1_1_abstract_shape_1a49f874205880d85b69bd3b040f2602d0" prot="public" virt="non-virtual"><scope>touchgfx::Shape</scope><name>getAngle</name></member>
+      <member refid="classtouchgfx_1_1_abstract_shape_1a091c5ab7d2e58f2874c1b837ee0bc221" prot="public" virt="non-virtual"><scope>touchgfx::Shape</scope><name>getAngle</name></member>
+      <member refid="classtouchgfx_1_1_shape_1ae09d33c7ac410f6ebdee6d0ff55f213b" prot="protected" virt="virtual"><scope>touchgfx::Shape</scope><name>getCacheX</name></member>
+      <member refid="classtouchgfx_1_1_shape_1a14311e1da04623eb3e893a8d69a55337" prot="protected" virt="virtual"><scope>touchgfx::Shape</scope><name>getCacheY</name></member>
+      <member refid="classtouchgfx_1_1_shape_1a64a8df749198b6e5d01a4e2ae4596cdc" prot="public" virt="virtual"><scope>touchgfx::Shape</scope><name>getCornerX</name></member>
+      <member refid="classtouchgfx_1_1_shape_1aefa8ec9af9e27b6b7896f4143c9eee57" prot="public" virt="virtual"><scope>touchgfx::Shape</scope><name>getCornerY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ad00483821e06fe4d0d70222de4135d30" prot="public" virt="non-virtual"><scope>touchgfx::Shape</scope><name>getHeight</name></member>
+      <member refid="classtouchgfx_1_1_widget_1a6bc8e89dc7f879221e9862fb27dc726f" prot="public" virt="virtual"><scope>touchgfx::Shape</scope><name>getLastChild</name></member>
+      <member refid="classtouchgfx_1_1_abstract_shape_1a6299071924e9fb87464b952392a623b9" prot="protected" virt="virtual"><scope>touchgfx::Shape</scope><name>getMinimalRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a61c9b2bf703c49a6d238d354ddcaedb3" prot="public" virt="non-virtual"><scope>touchgfx::Shape</scope><name>getNextSibling</name></member>
+      <member refid="classtouchgfx_1_1_shape_1a8deaca6b17721df8ee9de43665db688b" prot="public" virt="virtual"><scope>touchgfx::Shape</scope><name>getNumPoints</name></member>
+      <member refid="classtouchgfx_1_1_abstract_shape_1a8ffd203cfe7d440270d98ea183278722" prot="public" virt="non-virtual"><scope>touchgfx::Shape</scope><name>getOrigin</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_1adc65631e781ab7b6a7984ae58f74cbeb" prot="public" virt="virtual"><scope>touchgfx::Shape</scope><name>getPainter</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a013e065d4d9a10dbfa0ddee9a35582a3" prot="public" virt="non-virtual"><scope>touchgfx::Shape</scope><name>getParent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af23a5bb7d473e16363a449c497586be3" prot="public" virt="non-virtual"><scope>touchgfx::Shape</scope><name>getRect</name></member>
+      <member refid="classtouchgfx_1_1_abstract_shape_1ae00f9b932e82247943475558d8439611" prot="public" virt="non-virtual"><scope>touchgfx::Shape</scope><name>getScale</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_1a4dcdd780e93cc783a2ceeda00c6f3b51" prot="public" virt="virtual"><scope>touchgfx::Shape</scope><name>getSolidRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4783dfe657ff1b7a33261bda8c4b4266" prot="public" virt="virtual"><scope>touchgfx::Shape</scope><name>getSolidRectAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a83b8847f583b63e60aa4bf778261ddd7" prot="public" virt="virtual"><scope>touchgfx::Shape</scope><name>getVisibleRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1acae58162aaca6fc174416550f76668e7" prot="public" virt="non-virtual"><scope>touchgfx::Shape</scope><name>getWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac071e9b7ccf37179df7d29c6778b664c" prot="public" virt="non-virtual"><scope>touchgfx::Shape</scope><name>getX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a26752e6cff4607d0eec8768ef6d9032a" prot="public" virt="non-virtual"><scope>touchgfx::Shape</scope><name>getY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a7f1524b90bc90e5f6cf7ee47aae12123" prot="public" virt="virtual"><scope>touchgfx::Shape</scope><name>handleClickEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a06ae1946b2124cc94e26cfe18728debf" prot="public" virt="virtual"><scope>touchgfx::Shape</scope><name>handleDragEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4db4945ecbc2303bf860e082409b8029" prot="public" virt="virtual"><scope>touchgfx::Shape</scope><name>handleGestureEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1af635cee0f186c3d0fcea60bac14355" prot="public" virt="virtual"><scope>touchgfx::Shape</scope><name>handleTickEvent</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_1a2800b4c18c63e9e7b1f85a74ce6b80c3" prot="public" virt="virtual"><scope>touchgfx::Shape</scope><name>invalidate</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a130cf6e1bf2b9f04f48e659758fa75e2" prot="public" virt="virtual"><scope>touchgfx::Shape</scope><name>invalidateRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a01c717b9abc98d48673b79d691c2d28a" prot="public" virt="non-virtual"><scope>touchgfx::Shape</scope><name>isTouchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9d8a6cfb13917785c143e74d40e4e2be" prot="public" virt="non-virtual"><scope>touchgfx::Shape</scope><name>isVisible</name></member>
+      <member refid="classtouchgfx_1_1_abstract_shape_1a40f5296b0b72dbc70222375f80cdffa2" prot="public" virt="non-virtual"><scope>touchgfx::Shape</scope><name>moveOrigin</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af3590480070e2cf91580976f322d2c5e" prot="public" virt="virtual"><scope>touchgfx::Shape</scope><name>moveRelative</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aadc5abfad4d2fcc331cf8de8713dc00e" prot="public" virt="virtual"><scope>touchgfx::Shape</scope><name>moveTo</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0da4a00c3fbdea5740e52c7e04316c65" prot="protected" virt="non-virtual"><scope>touchgfx::Shape</scope><name>nextSibling</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ab77c13cde2b01107dcbc5c2b584d422f" prot="protected" virt="non-virtual"><scope>touchgfx::Shape</scope><name>parent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2a955ddc316d002f566598f340eb2af9" prot="protected" virt="non-virtual"><scope>touchgfx::Shape</scope><name>rect</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_1a79e090d34b93e9d637d01bc9b5639681" prot="public" virt="virtual"><scope>touchgfx::Shape</scope><name>setAlpha</name></member>
+      <member refid="classtouchgfx_1_1_abstract_shape_1a23b8b7504440f2f8fd1c4bf6a6e1fb15" prot="public" virt="non-virtual"><scope>touchgfx::Shape</scope><name>setAngle</name></member>
+      <member refid="classtouchgfx_1_1_shape_1a3117cd86c8bff74a8a9f9b9b47e063c2" prot="protected" virt="virtual"><scope>touchgfx::Shape</scope><name>setCache</name></member>
+      <member refid="classtouchgfx_1_1_shape_1a9b192e75fdb9d782cf587f59267afb1a" prot="public" virt="virtual"><scope>touchgfx::Shape</scope><name>setCorner</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a47a6312407603de99247bb802dbd8a48" prot="public" virt="virtual"><scope>touchgfx::Shape</scope><name>setHeight</name></member>
+      <member refid="classtouchgfx_1_1_abstract_shape_1a42f2510b06025080a25ced0e808cfc66" prot="public" virt="non-virtual"><scope>touchgfx::Shape</scope><name>setOrigin</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_1a2648b3c4e043a31c240657cab344610f" prot="public" virt="virtual"><scope>touchgfx::Shape</scope><name>setPainter</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac218c371450d8ad2bed3e1b07965a41a" prot="public" virt="virtual"><scope>touchgfx::Shape</scope><name>setPosition</name></member>
+      <member refid="classtouchgfx_1_1_abstract_shape_1a5257b437e2e6d3233319086d3b47600e" prot="public" virt="non-virtual"><scope>touchgfx::Shape</scope><name>setScale</name></member>
+      <member refid="classtouchgfx_1_1_abstract_shape_1a65d8d0852a7e85fb11f058d25d4249f8" prot="public" virt="non-virtual"><scope>touchgfx::Shape</scope><name>setScale</name></member>
+      <member refid="classtouchgfx_1_1_abstract_shape_1aefddb8fd2fcc875f5c5a096ff68119f0" prot="public" virt="non-virtual"><scope>touchgfx::Shape</scope><name>setShape</name></member>
+      <member refid="classtouchgfx_1_1_abstract_shape_1aece911e99a19cf675198f0ab2fe14acf" prot="public" virt="non-virtual"><scope>touchgfx::Shape</scope><name>setShape</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae4c38eadb852b153850ea7ded1f50a19" prot="public" virt="non-virtual"><scope>touchgfx::Shape</scope><name>setTouchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a71639c6634c5dcf6d1bb21b8b1b61f5b" prot="public" virt="non-virtual"><scope>touchgfx::Shape</scope><name>setVisible</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae74a37f71d23440fc8b0466ad8ecfe4b" prot="public" virt="virtual"><scope>touchgfx::Shape</scope><name>setWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9f6db7f34a74e991fc446fffb5703a53" prot="public" virt="virtual"><scope>touchgfx::Shape</scope><name>setX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6c86659dc1e7355c207e9c0aa18af167" prot="public" virt="virtual"><scope>touchgfx::Shape</scope><name>setXY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1b08d48e7e23a046f09e63089bc82bc1" prot="public" virt="virtual"><scope>touchgfx::Shape</scope><name>setY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0d014de134cb9b9c1c361fcd726a5f34" prot="protected" virt="non-virtual"><scope>touchgfx::Shape</scope><name>touchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a48c1d14ac943dbfa4935ea39db950608" prot="public" virt="virtual"><scope>touchgfx::Shape</scope><name>translateRectToAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_abstract_shape_1ab88a1d31368bcd2b6c4540f570bd183a" prot="public" virt="non-virtual"><scope>touchgfx::Shape</scope><name>updateAbstractShapeCache</name></member>
+      <member refid="classtouchgfx_1_1_abstract_shape_1a2f9e74a13a63c5abd7f10f9168f9d344" prot="public" virt="non-virtual"><scope>touchgfx::Shape</scope><name>updateAngle</name></member>
+      <member refid="classtouchgfx_1_1_abstract_shape_1ae7a08c4e3420dba6d1995f88ab03de6f" prot="public" virt="non-virtual"><scope>touchgfx::Shape</scope><name>updateScale</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa54a57ae048476d840caf6d4d2c47aa3" prot="protected" virt="non-virtual"><scope>touchgfx::Shape</scope><name>visible</name></member>
+      <member refid="classtouchgfx_1_1_widget_1a4aecdb998b8b28b278843eaa1644998b" prot="public" virt="non-virtual"><scope>touchgfx::Shape</scope><name>Widget</name></member>
+      <member refid="classtouchgfx_1_1_shape_1ab3f4ba0ea6e5123ab5c5703b022dfa6f" prot="private" virt="non-virtual"><scope>touchgfx::Shape</scope><name>xCache</name></member>
+      <member refid="classtouchgfx_1_1_shape_1a0cf95fc130da85225a7976109060bc01" prot="private" virt="non-virtual"><scope>touchgfx::Shape</scope><name>xCorner</name></member>
+      <member refid="classtouchgfx_1_1_shape_1aa43c58ebe3c5d44a69112bef16df94df" prot="private" virt="non-virtual"><scope>touchgfx::Shape</scope><name>yCache</name></member>
+      <member refid="classtouchgfx_1_1_shape_1a680d8b88f7efeb68695fdcbe4bd3a7a3" prot="private" virt="non-virtual"><scope>touchgfx::Shape</scope><name>yCorner</name></member>
+      <member refid="classtouchgfx_1_1_abstract_shape_1a0f79dd96e492df6692f189d9d58cfc95" prot="public" virt="virtual"><scope>touchgfx::Shape</scope><name>~AbstractShape</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_1a361c44968f9e7a745256a60131047d18" prot="public" virt="virtual"><scope>touchgfx::Shape</scope><name>~CanvasWidget</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6bb040a11ffc2bd641283cc0bc0d1346" prot="public" virt="virtual"><scope>touchgfx::Shape</scope><name>~Drawable</name></member>
+      <member refid="classtouchgfx_1_1_shape_1ae7755ce81583b9f776b857856f7cc218" prot="public" virt="virtual"><scope>touchgfx::Shape</scope><name>~Shape</name></member>
+      <member refid="classtouchgfx_1_1_widget_1af0ef273e47acd5ce75366b6b7a51057f" prot="public" virt="virtual"><scope>touchgfx::Shape</scope><name>~Widget</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

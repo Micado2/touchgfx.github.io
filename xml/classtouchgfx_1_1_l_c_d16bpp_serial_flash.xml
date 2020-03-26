@@ -1,0 +1,2741 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_l_c_d16bpp_serial_flash" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::LCD16bppSerialFlash</compoundname>
+    <basecompoundref refid="classtouchgfx_1_1_l_c_d" prot="public" virt="non-virtual">LCD</basecompoundref>
+    <includes local="no">LCD16bppSerialFlash.hpp</includes>
+    <innerclass refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1_1_draw_texture_map_scan_line_base16" prot="private">touchgfx::LCD16bppSerialFlash::DrawTextureMapScanLineBase16</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1_1_texture_mapper___a4___bilinear_interpolation___g_a" prot="private">touchgfx::LCD16bppSerialFlash::TextureMapper_A4_BilinearInterpolation_GA</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1_1_texture_mapper___a4___bilinear_interpolation___no_g_a" prot="private">touchgfx::LCD16bppSerialFlash::TextureMapper_A4_BilinearInterpolation_NoGA</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1_1_texture_mapper___a4___nearest_neighbor___g_a" prot="private">touchgfx::LCD16bppSerialFlash::TextureMapper_A4_NearestNeighbor_GA</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1_1_texture_mapper___a4___nearest_neighbor___no_g_a" prot="private">touchgfx::LCD16bppSerialFlash::TextureMapper_A4_NearestNeighbor_NoGA</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1_1_texture_mapper___a_r_g_b8888___non_opaque___bilinear_interpolation___g_a" prot="private">touchgfx::LCD16bppSerialFlash::TextureMapper_ARGB8888_NonOpaque_BilinearInterpolation_GA</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1_1_texture_mapper___a_r_g_b8888___non_opaque___bilinear_interpolation___no_g_a" prot="private">touchgfx::LCD16bppSerialFlash::TextureMapper_ARGB8888_NonOpaque_BilinearInterpolation_NoGA</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1_1_texture_mapper___a_r_g_b8888___non_opaque___nearest_neighbor___g_a" prot="private">touchgfx::LCD16bppSerialFlash::TextureMapper_ARGB8888_NonOpaque_NearestNeighbor_GA</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1_1_texture_mapper___a_r_g_b8888___non_opaque___nearest_neighbor___no_g_a" prot="private">touchgfx::LCD16bppSerialFlash::TextureMapper_ARGB8888_NonOpaque_NearestNeighbor_NoGA</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1_1_texture_mapper___l8___a_r_g_b8888___non_opaque___bilinear_interpolation___g_a" prot="private">touchgfx::LCD16bppSerialFlash::TextureMapper_L8_ARGB8888_NonOpaque_BilinearInterpolation_GA</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1_1_texture_mapper___l8___a_r_g_b8888___non_opaque___bilinear_interpolation___no_g_a" prot="private">touchgfx::LCD16bppSerialFlash::TextureMapper_L8_ARGB8888_NonOpaque_BilinearInterpolation_NoGA</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1_1_texture_mapper___l8___a_r_g_b8888___non_opaque___nearest_neighbor___g_a" prot="private">touchgfx::LCD16bppSerialFlash::TextureMapper_L8_ARGB8888_NonOpaque_NearestNeighbor_GA</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1_1_texture_mapper___l8___a_r_g_b8888___non_opaque___nearest_neighbor___no_g_a" prot="private">touchgfx::LCD16bppSerialFlash::TextureMapper_L8_ARGB8888_NonOpaque_NearestNeighbor_NoGA</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1_1_texture_mapper___l8___r_g_b565___opaque___bilinear_interpolation___g_a" prot="private">touchgfx::LCD16bppSerialFlash::TextureMapper_L8_RGB565_Opaque_BilinearInterpolation_GA</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1_1_texture_mapper___l8___r_g_b565___opaque___bilinear_interpolation___no_g_a" prot="private">touchgfx::LCD16bppSerialFlash::TextureMapper_L8_RGB565_Opaque_BilinearInterpolation_NoGA</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1_1_texture_mapper___l8___r_g_b565___opaque___nearest_neighbor___g_a" prot="private">touchgfx::LCD16bppSerialFlash::TextureMapper_L8_RGB565_Opaque_NearestNeighbor_GA</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1_1_texture_mapper___l8___r_g_b565___opaque___nearest_neighbor___no_g_a" prot="private">touchgfx::LCD16bppSerialFlash::TextureMapper_L8_RGB565_Opaque_NearestNeighbor_NoGA</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1_1_texture_mapper___l8___r_g_b888___opaque___bilinear_interpolation___g_a" prot="private">touchgfx::LCD16bppSerialFlash::TextureMapper_L8_RGB888_Opaque_BilinearInterpolation_GA</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1_1_texture_mapper___l8___r_g_b888___opaque___bilinear_interpolation___no_g_a" prot="private">touchgfx::LCD16bppSerialFlash::TextureMapper_L8_RGB888_Opaque_BilinearInterpolation_NoGA</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1_1_texture_mapper___l8___r_g_b888___opaque___nearest_neighbor___g_a" prot="private">touchgfx::LCD16bppSerialFlash::TextureMapper_L8_RGB888_Opaque_NearestNeighbor_GA</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1_1_texture_mapper___l8___r_g_b888___opaque___nearest_neighbor___no_g_a" prot="private">touchgfx::LCD16bppSerialFlash::TextureMapper_L8_RGB888_Opaque_NearestNeighbor_NoGA</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1_1_texture_mapper___r_g_b565___non_opaque___bilinear_interpolation___g_a" prot="private">touchgfx::LCD16bppSerialFlash::TextureMapper_RGB565_NonOpaque_BilinearInterpolation_GA</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1_1_texture_mapper___r_g_b565___non_opaque___bilinear_interpolation___no_g_a" prot="private">touchgfx::LCD16bppSerialFlash::TextureMapper_RGB565_NonOpaque_BilinearInterpolation_NoGA</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1_1_texture_mapper___r_g_b565___non_opaque___nearest_neighbor___g_a" prot="private">touchgfx::LCD16bppSerialFlash::TextureMapper_RGB565_NonOpaque_NearestNeighbor_GA</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1_1_texture_mapper___r_g_b565___non_opaque___nearest_neighbor___no_g_a" prot="private">touchgfx::LCD16bppSerialFlash::TextureMapper_RGB565_NonOpaque_NearestNeighbor_NoGA</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1_1_texture_mapper___r_g_b565___opaque___bilinear_interpolation___g_a" prot="private">touchgfx::LCD16bppSerialFlash::TextureMapper_RGB565_Opaque_BilinearInterpolation_GA</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1_1_texture_mapper___r_g_b565___opaque___bilinear_interpolation___no_g_a" prot="private">touchgfx::LCD16bppSerialFlash::TextureMapper_RGB565_Opaque_BilinearInterpolation_NoGA</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1_1_texture_mapper___r_g_b565___opaque___nearest_neighbor___g_a" prot="private">touchgfx::LCD16bppSerialFlash::TextureMapper_RGB565_Opaque_NearestNeighbor_GA</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1_1_texture_mapper___r_g_b565___opaque___nearest_neighbor___no_g_a" prot="private">touchgfx::LCD16bppSerialFlash::TextureMapper_RGB565_Opaque_NearestNeighbor_NoGA</innerclass>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a27537dbdafd0727a25354db07c22803e" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_flash_data_reader" kindref="compound">FlashDataReader</ref> &amp;</type>
+        <definition>FlashDataReader&amp; flashReader</definition>
+        <argsstring></argsstring>
+        <name>flashReader</name>
+        <briefdescription>
+<para>Flash reader. Used by routines to read pixel data from the flash. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="333" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="333" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1aeef30327c5c611e034ec20557e8f711f" prot="private" static="no" mutable="no">
+        <type>DrawTextureMapScanLineBase *</type>
+        <definition>DrawTextureMapScanLineBase* textureMapper_A4_BilinearInterpolation_GA</definition>
+        <argsstring></argsstring>
+        <name>textureMapper_A4_BilinearInterpolation_GA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="449" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="449" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a421600b9002e8b20b7a8eef237feebd6" prot="private" static="no" mutable="no">
+        <type>DrawTextureMapScanLineBase *</type>
+        <definition>DrawTextureMapScanLineBase* textureMapper_A4_BilinearInterpolation_NoGA</definition>
+        <argsstring></argsstring>
+        <name>textureMapper_A4_BilinearInterpolation_NoGA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="450" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="450" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1adf2baa47758451902e4be1be18705e8f" prot="private" static="no" mutable="no">
+        <type>DrawTextureMapScanLineBase *</type>
+        <definition>DrawTextureMapScanLineBase* textureMapper_A4_NearestNeighbor_GA</definition>
+        <argsstring></argsstring>
+        <name>textureMapper_A4_NearestNeighbor_GA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="447" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="447" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a993a600e7613996874f93bc7ace5f628" prot="private" static="no" mutable="no">
+        <type>DrawTextureMapScanLineBase *</type>
+        <definition>DrawTextureMapScanLineBase* textureMapper_A4_NearestNeighbor_NoGA</definition>
+        <argsstring></argsstring>
+        <name>textureMapper_A4_NearestNeighbor_NoGA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="448" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="448" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a8d07e92d7ec51596a8e2cfa993d413d3" prot="private" static="no" mutable="no">
+        <type>DrawTextureMapScanLineBase *</type>
+        <definition>DrawTextureMapScanLineBase* textureMapper_ARGB8888_NonOpaque_BilinearInterpolation_GA</definition>
+        <argsstring></argsstring>
+        <name>textureMapper_ARGB8888_NonOpaque_BilinearInterpolation_GA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="445" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="445" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a59272e75925eac52b1af2a05c67c3bc0" prot="private" static="no" mutable="no">
+        <type>DrawTextureMapScanLineBase *</type>
+        <definition>DrawTextureMapScanLineBase* textureMapper_ARGB8888_NonOpaque_BilinearInterpolation_NoGA</definition>
+        <argsstring></argsstring>
+        <name>textureMapper_ARGB8888_NonOpaque_BilinearInterpolation_NoGA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="446" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="446" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a1670e989aa9a756515e47796defa0ac1" prot="private" static="no" mutable="no">
+        <type>DrawTextureMapScanLineBase *</type>
+        <definition>DrawTextureMapScanLineBase* textureMapper_ARGB8888_NonOpaque_NearestNeighbor_GA</definition>
+        <argsstring></argsstring>
+        <name>textureMapper_ARGB8888_NonOpaque_NearestNeighbor_GA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="443" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="443" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1add55ed438bdcb3d185d61fd43df50910" prot="private" static="no" mutable="no">
+        <type>DrawTextureMapScanLineBase *</type>
+        <definition>DrawTextureMapScanLineBase* textureMapper_ARGB8888_NonOpaque_NearestNeighbor_NoGA</definition>
+        <argsstring></argsstring>
+        <name>textureMapper_ARGB8888_NonOpaque_NearestNeighbor_NoGA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="444" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="444" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a369a99cf91e3d313f67e0f48fb556d91" prot="private" static="no" mutable="no">
+        <type>DrawTextureMapScanLineBase *</type>
+        <definition>DrawTextureMapScanLineBase* textureMapper_L8_ARGB8888_NonOpaque_BilinearInterpolation_GA</definition>
+        <argsstring></argsstring>
+        <name>textureMapper_L8_ARGB8888_NonOpaque_BilinearInterpolation_GA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="433" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="433" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a0b6aa0dc09c494faf933a80d47063ee1" prot="private" static="no" mutable="no">
+        <type>DrawTextureMapScanLineBase *</type>
+        <definition>DrawTextureMapScanLineBase* textureMapper_L8_ARGB8888_NonOpaque_BilinearInterpolation_NoGA</definition>
+        <argsstring></argsstring>
+        <name>textureMapper_L8_ARGB8888_NonOpaque_BilinearInterpolation_NoGA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="434" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="434" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a3b6e81d9e77e1a26b7c02834e1ef09c3" prot="private" static="no" mutable="no">
+        <type>DrawTextureMapScanLineBase *</type>
+        <definition>DrawTextureMapScanLineBase* textureMapper_L8_ARGB8888_NonOpaque_NearestNeighbor_GA</definition>
+        <argsstring></argsstring>
+        <name>textureMapper_L8_ARGB8888_NonOpaque_NearestNeighbor_GA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="431" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="431" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ae2879431fe7d2e093e95e1c6c268c5a8" prot="private" static="no" mutable="no">
+        <type>DrawTextureMapScanLineBase *</type>
+        <definition>DrawTextureMapScanLineBase* textureMapper_L8_ARGB8888_NonOpaque_NearestNeighbor_NoGA</definition>
+        <argsstring></argsstring>
+        <name>textureMapper_L8_ARGB8888_NonOpaque_NearestNeighbor_NoGA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="432" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="432" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ac40dfc5bea06b96084ac82c35236e635" prot="private" static="no" mutable="no">
+        <type>DrawTextureMapScanLineBase *</type>
+        <definition>DrawTextureMapScanLineBase* textureMapper_L8_RGB565_Opaque_BilinearInterpolation_GA</definition>
+        <argsstring></argsstring>
+        <name>textureMapper_L8_RGB565_Opaque_BilinearInterpolation_GA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="425" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="425" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1adfb6c6e8f8cde0530f1527fc28218f71" prot="private" static="no" mutable="no">
+        <type>DrawTextureMapScanLineBase *</type>
+        <definition>DrawTextureMapScanLineBase* textureMapper_L8_RGB565_Opaque_BilinearInterpolation_NoGA</definition>
+        <argsstring></argsstring>
+        <name>textureMapper_L8_RGB565_Opaque_BilinearInterpolation_NoGA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="426" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="426" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a1d3895a1ee8ad3139e132eb69411ca01" prot="private" static="no" mutable="no">
+        <type>DrawTextureMapScanLineBase *</type>
+        <definition>DrawTextureMapScanLineBase* textureMapper_L8_RGB565_Opaque_NearestNeighbor_GA</definition>
+        <argsstring></argsstring>
+        <name>textureMapper_L8_RGB565_Opaque_NearestNeighbor_GA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="423" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="423" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1acdfaf71a2ee626148065c56af68e2c63" prot="private" static="no" mutable="no">
+        <type>DrawTextureMapScanLineBase *</type>
+        <definition>DrawTextureMapScanLineBase* textureMapper_L8_RGB565_Opaque_NearestNeighbor_NoGA</definition>
+        <argsstring></argsstring>
+        <name>textureMapper_L8_RGB565_Opaque_NearestNeighbor_NoGA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="424" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="424" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a08348b2e35db71cc74268dec79bfab44" prot="private" static="no" mutable="no">
+        <type>DrawTextureMapScanLineBase *</type>
+        <definition>DrawTextureMapScanLineBase* textureMapper_L8_RGB888_Opaque_BilinearInterpolation_GA</definition>
+        <argsstring></argsstring>
+        <name>textureMapper_L8_RGB888_Opaque_BilinearInterpolation_GA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="429" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="429" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a54bbb8bbd63442d956a1528193085906" prot="private" static="no" mutable="no">
+        <type>DrawTextureMapScanLineBase *</type>
+        <definition>DrawTextureMapScanLineBase* textureMapper_L8_RGB888_Opaque_BilinearInterpolation_NoGA</definition>
+        <argsstring></argsstring>
+        <name>textureMapper_L8_RGB888_Opaque_BilinearInterpolation_NoGA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="430" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="430" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a52ffc0da1f5e24e6fe05c7075dff7210" prot="private" static="no" mutable="no">
+        <type>DrawTextureMapScanLineBase *</type>
+        <definition>DrawTextureMapScanLineBase* textureMapper_L8_RGB888_Opaque_NearestNeighbor_GA</definition>
+        <argsstring></argsstring>
+        <name>textureMapper_L8_RGB888_Opaque_NearestNeighbor_GA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="427" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="427" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a2c85308d27ce3151e076222e6d87463c" prot="private" static="no" mutable="no">
+        <type>DrawTextureMapScanLineBase *</type>
+        <definition>DrawTextureMapScanLineBase* textureMapper_L8_RGB888_Opaque_NearestNeighbor_NoGA</definition>
+        <argsstring></argsstring>
+        <name>textureMapper_L8_RGB888_Opaque_NearestNeighbor_NoGA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="428" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="428" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a509cea2ba8c034d55181f20d4ed323e3" prot="private" static="no" mutable="no">
+        <type>DrawTextureMapScanLineBase *</type>
+        <definition>DrawTextureMapScanLineBase* textureMapper_RGB565_NonOpaque_BilinearInterpolation_GA</definition>
+        <argsstring></argsstring>
+        <name>textureMapper_RGB565_NonOpaque_BilinearInterpolation_GA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="439" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="439" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a1a8e55669ffaa1712a36710ac4d94175" prot="private" static="no" mutable="no">
+        <type>DrawTextureMapScanLineBase *</type>
+        <definition>DrawTextureMapScanLineBase* textureMapper_RGB565_NonOpaque_BilinearInterpolation_NoGA</definition>
+        <argsstring></argsstring>
+        <name>textureMapper_RGB565_NonOpaque_BilinearInterpolation_NoGA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="440" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="440" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a6b1639ba854b847c001f22fe76a61a6b" prot="private" static="no" mutable="no">
+        <type>DrawTextureMapScanLineBase *</type>
+        <definition>DrawTextureMapScanLineBase* textureMapper_RGB565_NonOpaque_NearestNeighbor_GA</definition>
+        <argsstring></argsstring>
+        <name>textureMapper_RGB565_NonOpaque_NearestNeighbor_GA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="435" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="435" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a2e148a5ee5ac2043638dc00c43d01ab2" prot="private" static="no" mutable="no">
+        <type>DrawTextureMapScanLineBase *</type>
+        <definition>DrawTextureMapScanLineBase* textureMapper_RGB565_NonOpaque_NearestNeighbor_NoGA</definition>
+        <argsstring></argsstring>
+        <name>textureMapper_RGB565_NonOpaque_NearestNeighbor_NoGA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="436" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="436" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1acfc7eaf4cfc37d12411cd293f018fc24" prot="private" static="no" mutable="no">
+        <type>DrawTextureMapScanLineBase *</type>
+        <definition>DrawTextureMapScanLineBase* textureMapper_RGB565_Opaque_BilinearInterpolation_GA</definition>
+        <argsstring></argsstring>
+        <name>textureMapper_RGB565_Opaque_BilinearInterpolation_GA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="441" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="441" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a50a1b4633fca3427214eb19c8e23fec6" prot="private" static="no" mutable="no">
+        <type>DrawTextureMapScanLineBase *</type>
+        <definition>DrawTextureMapScanLineBase* textureMapper_RGB565_Opaque_BilinearInterpolation_NoGA</definition>
+        <argsstring></argsstring>
+        <name>textureMapper_RGB565_Opaque_BilinearInterpolation_NoGA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="442" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="442" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ad43c8a273cfca564927f2ffb24831a39" prot="private" static="no" mutable="no">
+        <type>DrawTextureMapScanLineBase *</type>
+        <definition>DrawTextureMapScanLineBase* textureMapper_RGB565_Opaque_NearestNeighbor_GA</definition>
+        <argsstring></argsstring>
+        <name>textureMapper_RGB565_Opaque_NearestNeighbor_GA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="437" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="437" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a23672e0de15169212f13ec4b37d9e576" prot="private" static="no" mutable="no">
+        <type>DrawTextureMapScanLineBase *</type>
+        <definition>DrawTextureMapScanLineBase* textureMapper_RGB565_Opaque_NearestNeighbor_NoGA</definition>
+        <argsstring></argsstring>
+        <name>textureMapper_RGB565_Opaque_NearestNeighbor_NoGA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="438" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="438" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a9453b7ca5b528302f69afddd98aae21e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>uint8_t</type>
+        <definition>virtual uint8_t bitDepth</definition>
+        <argsstring>() const</argsstring>
+        <name>bitDepth</name>
+        <reimplements refid="classtouchgfx_1_1_l_c_d_1a166dd8002f9b8e95cc605f2242c65418">bitDepth</reimplements>
+        <briefdescription>
+<para>Number of bits per pixel used by the display. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The number of bits per pixel. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="59" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="59" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1aa9d494e3f6530fd2548ca464e79abb36" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void blitCopy</definition>
+        <argsstring>(const uint16_t *sourceData, const Rect &amp;source, const Rect &amp;blitRect, uint8_t alpha, bool hasTransparentPixels)</argsstring>
+        <name>blitCopy</name>
+        <reimplements refid="classtouchgfx_1_1_l_c_d_1a972c8ab781314774d82a3fa2c08f9f2d">blitCopy</reimplements>
+        <param>
+          <type>const uint16_t *</type>
+          <declname>sourceData</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>blitRect</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>hasTransparentPixels</declname>
+        </param>
+        <briefdescription>
+<para>Blits (directly copies) a block of data to the framebuffer, performing alpha blending (and tranparency keying) as specified. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Performs a software blend if <ref refid="classtouchgfx_1_1_h_a_l" kindref="compound">HAL</ref> does not support BLIT_COPY_WITH_ALPHA and alpha != 255 (solid).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sourceData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source array pointer (points to the beginning of the data). The sourceData must be stored in a format suitable for the selected display. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position and dimensions of the source. The x and y of this rect should both be 0. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>blitRect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A rectangle describing what region of the <emphasis>sourceData</emphasis> is to be copied to the framebuffer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alpha value to use for blending ranging from 0=invisible to 255=solid=no blending. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hasTransparentPixels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, this data copy contains transparent pixels and require hardware support for that to be enabled. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1acefc1872d8b5c24cb76ec00d13ad6de7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void blitCopy</definition>
+        <argsstring>(const uint8_t *sourceData, Bitmap::BitmapFormat sourceFormat, const Rect &amp;source, const Rect &amp;blitRect, uint8_t alpha, bool hasTransparentPixels)</argsstring>
+        <name>blitCopy</name>
+        <reimplements refid="classtouchgfx_1_1_l_c_d_1a185d987bf49db055b63cb6f85b81a07a">blitCopy</reimplements>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>sourceData</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_bitmap_1a23d1a7c7cf0f6da45ca389904e644d55" kindref="member">Bitmap::BitmapFormat</ref></type>
+          <declname>sourceFormat</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>blitRect</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>hasTransparentPixels</declname>
+        </param>
+        <briefdescription>
+<para>Blits (directly copies) a block of data to the framebuffer, performing alpha blending (and tranparency keying) as specified. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Performs a software blend if <ref refid="classtouchgfx_1_1_h_a_l" kindref="compound">HAL</ref> does not support BLIT_COPY_WITH_ALPHA and alpha &lt; 255 (solid).</para>
+<para>If the display does not support the specified <emphasis>sourceFormat</emphasis>, an <emphasis>assert</emphasis> will be raised.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sourceData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source array pointer (points to the beginning of the data). The sourceData must be stored in a format suitable for the selected display. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sourceFormat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bitmap format used in the source data. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position and dimensions of the source. The x and y of this rect should both be 0. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>blitRect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A rectangle describing what region of the <emphasis>sourceData</emphasis> is to be copied to the framebuffer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alpha value to use for blending ranging from 0=invisible to 255=solid=no blending. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hasTransparentPixels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, this data copy contains transparent pixels and require hardware support for that to be enabled. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a6b117c2cdc5ba3c678a0962b0470dbaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>uint16_t *</type>
+        <definition>virtual uint16_t* copyFrameBufferRegionToMemory</definition>
+        <argsstring>(const Rect &amp;visRegion, const Rect &amp;absRegion, const BitmapId bitmapId)</argsstring>
+        <name>copyFrameBufferRegionToMemory</name>
+        <reimplements refid="classtouchgfx_1_1_l_c_d_1a2227644ebace590ce402956e85acb295">copyFrameBufferRegionToMemory</reimplements>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>visRegion</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>absRegion</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacetouchgfx_1a3923435f6df64396b2203d60ddfa89e4" kindref="member">BitmapId</ref></type>
+          <declname>bitmapId</declname>
+        </param>
+        <briefdescription>
+<para>Copies part of the framebuffer to the data section of a bitmap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The bitmap must be a dynamic bitmap or animation storage (BITMAP_ANIMATION_STORAGE). The two regions given are the visible region and the absolute region on screen. This is used to copy only a part of the framebuffer. This might be the case if a <ref refid="classtouchgfx_1_1_snapshot_widget" kindref="compound">SnapshotWidget</ref> is placed inside a <ref refid="classtouchgfx_1_1_container" kindref="compound">Container</ref> where parts of the SnapshowWidget is outside the area defined by the <ref refid="classtouchgfx_1_1_container" kindref="compound">Container</ref>. The visible region must be completely inside the absolute region.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>visRegion</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The visible region. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>absRegion</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The absolute region. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bitmapId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier for the bitmap.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Null if it fails, else a pointer to the data in the given bitmap.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1aa9d494e3f6530fd2548ca464e79abb36" kindref="member">blitCopy</ref></para>
+</simplesect>
+<simplesect kind="note"><para>There is only one instance of animation storage. The content of the bitmap data /animation storage outside the given region is left untouched. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a6fae0e318d1bd778915adc33449736ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void drawPartialBitmap</definition>
+        <argsstring>(const Bitmap &amp;bitmap, int16_t x, int16_t y, const Rect &amp;rect, uint8_t alpha=255, bool useOptimized=true)</argsstring>
+        <name>drawPartialBitmap</name>
+        <reimplements refid="classtouchgfx_1_1_l_c_d_1a1fcbaa593af61d290572f3cc6cadb4b5">drawPartialBitmap</reimplements>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> &amp;</type>
+          <declname>bitmap</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>rect</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>alpha</declname>
+          <defval>255</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>useOptimized</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Draws all (or a part) of a <emphasis>bitmap</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The coordinates of the corner of the bitmap is given in (<emphasis>x</emphasis>, <emphasis>y</emphasis>) and <emphasis>rect</emphasis> describes which part of the <emphasis>bitmap</emphasis> should be drawn. The bitmap can be drawn as it is or more or less transparent depending on the value of <emphasis>alpha</emphasis>. The value of <emphasis>alpha</emphasis> is independent of the transparency of the individual pixels of the given <emphasis>bitmap</emphasis>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bitmap to draw. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The absolute x coordinate to place (0, 0) of the bitmap on the screen. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The absolute y coordinate to place (0, 0) of the bitmap on the screen. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A rectangle describing what region of the bitmap is to be drawn. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(Optional) Optional alpha value ranging from 0=invisible to 255=solid. Default is 255 (solid). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>useOptimized</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(Optional) if false, do not attempt to substitute (parts of) this bitmap with faster fillrects. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a98aeafe3366c95034f34faca3c5de778" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void enableTextureMapperA4</definition>
+        <argsstring>()</argsstring>
+        <name>enableTextureMapperA4</name>
+        <briefdescription>
+<para>Enables the texture mappers for A4 image format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This allows drawing A4 images using Bilinear Interpolation and Nearest Neighbor algorithms.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ac611c644c05e6ebed0972f2455782a46" kindref="member">enableTextureMapperA4_BilinearInterpolation</ref>, <ref refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ac507d6a8937a556ad8d99629de88d32e" kindref="member">enableTextureMapperA4_NearestNeighbor</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="312" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ac611c644c05e6ebed0972f2455782a46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void enableTextureMapperA4_BilinearInterpolation</definition>
+        <argsstring>()</argsstring>
+        <name>enableTextureMapperA4_BilinearInterpolation</name>
+        <briefdescription>
+<para>Enables the texture mappers for A4 image format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This allows drawing A4 images using Bilinear Interpolation algorithm.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a98aeafe3366c95034f34faca3c5de778" kindref="member">enableTextureMapperA4</ref>, <ref refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ac507d6a8937a556ad8d99629de88d32e" kindref="member">enableTextureMapperA4_NearestNeighbor</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="320" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ac507d6a8937a556ad8d99629de88d32e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void enableTextureMapperA4_NearestNeighbor</definition>
+        <argsstring>()</argsstring>
+        <name>enableTextureMapperA4_NearestNeighbor</name>
+        <briefdescription>
+<para>Enables the texture mappers for A4 image format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This allows drawing A4 images using Nearest Neighbor algorithm.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a98aeafe3366c95034f34faca3c5de778" kindref="member">enableTextureMapperA4</ref>, <ref refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ac611c644c05e6ebed0972f2455782a46" kindref="member">enableTextureMapperA4_BilinearInterpolation</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="328" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1aac48453ba9101bd6146c05e6519123ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void enableTextureMapperAll</definition>
+        <argsstring>()</argsstring>
+        <name>enableTextureMapperAll</name>
+        <briefdescription>
+<para>Enables the texture mappers for all image formats. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This allows drawing any image using Bilinear Interpolation and Nearest Neighbor algorithms, but might use a lot of memory for the drawing algorithms. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="161" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a7b7f7ccb7df6a8b5e4dd25322da7bdb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void enableTextureMapperARGB8888</definition>
+        <argsstring>()</argsstring>
+        <name>enableTextureMapperARGB8888</name>
+        <briefdescription>
+<para>Enables the texture mappers for ARGB8888 image format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This allows drawing ARGB8888 images using Bilinear Interpolation and Nearest Neighbor algorithms.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a818043c58b3117584bdb5f33fced40a6" kindref="member">enableTextureMapperARGB8888_BilinearInterpolation</ref>, <ref refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1acd785732dabaf6f2674515f3fe510bfd" kindref="member">enableTextureMapperARGB8888_NearestNeighbor</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="288" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a818043c58b3117584bdb5f33fced40a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void enableTextureMapperARGB8888_BilinearInterpolation</definition>
+        <argsstring>()</argsstring>
+        <name>enableTextureMapperARGB8888_BilinearInterpolation</name>
+        <briefdescription>
+<para>Enables the texture mappers for ARGB8888 image format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This allows drawing ARGB8888 images using Bilinear Interpolation algorithm.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a7b7f7ccb7df6a8b5e4dd25322da7bdb5" kindref="member">enableTextureMapperARGB8888</ref>, <ref refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1acd785732dabaf6f2674515f3fe510bfd" kindref="member">enableTextureMapperARGB8888_NearestNeighbor</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="296" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1acd785732dabaf6f2674515f3fe510bfd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void enableTextureMapperARGB8888_NearestNeighbor</definition>
+        <argsstring>()</argsstring>
+        <name>enableTextureMapperARGB8888_NearestNeighbor</name>
+        <briefdescription>
+<para>Enables the texture mappers for ARGB8888 image format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This allows drawing ARGB8888 images using Nearest Neighbor algorithm.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a7b7f7ccb7df6a8b5e4dd25322da7bdb5" kindref="member">enableTextureMapperARGB8888</ref>, <ref refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a818043c58b3117584bdb5f33fced40a6" kindref="member">enableTextureMapperARGB8888_BilinearInterpolation</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="304" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1abb09b49cfc2d5bae9b4ffba943c720b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void enableTextureMapperL8_ARGB8888</definition>
+        <argsstring>()</argsstring>
+        <name>enableTextureMapperL8_ARGB8888</name>
+        <briefdescription>
+<para>Enables the texture mappers for L8_ARGB8888 image format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This allows drawing L8_ARGB8888 images using Bilinear Interpolation and Nearest Neighbor algorithms.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a593add3a4d0828bd45563b7613e26095" kindref="member">enableTextureMapperL8_ARGB8888_BilinearInterpolation</ref>, <ref refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ac09dd6850ad2a2160514062bcd1d7516" kindref="member">enableTextureMapperL8_ARGB8888_NearestNeighbor</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="220" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a593add3a4d0828bd45563b7613e26095" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void enableTextureMapperL8_ARGB8888_BilinearInterpolation</definition>
+        <argsstring>()</argsstring>
+        <name>enableTextureMapperL8_ARGB8888_BilinearInterpolation</name>
+        <briefdescription>
+<para>Enables the texture mappers for L8_ARGB8888 image format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This allows drawing L8_ARGB8888 images using Bilinear Interpolation algorithm.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1abb09b49cfc2d5bae9b4ffba943c720b5" kindref="member">enableTextureMapperL8_ARGB8888</ref>, <ref refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ac09dd6850ad2a2160514062bcd1d7516" kindref="member">enableTextureMapperL8_ARGB8888_NearestNeighbor</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="228" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ac09dd6850ad2a2160514062bcd1d7516" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void enableTextureMapperL8_ARGB8888_NearestNeighbor</definition>
+        <argsstring>()</argsstring>
+        <name>enableTextureMapperL8_ARGB8888_NearestNeighbor</name>
+        <briefdescription>
+<para>Enables the texture mappers for L8_ARGB8888 image format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This allows drawing L8_ARGB8888 images using Nearest Neighbor algorithm.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1abb09b49cfc2d5bae9b4ffba943c720b5" kindref="member">enableTextureMapperL8_ARGB8888</ref>, <ref refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a593add3a4d0828bd45563b7613e26095" kindref="member">enableTextureMapperL8_ARGB8888_BilinearInterpolation</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="236" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1af3ddc77cfaf82c366e96220b0f9a12f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void enableTextureMapperL8_RGB565</definition>
+        <argsstring>()</argsstring>
+        <name>enableTextureMapperL8_RGB565</name>
+        <briefdescription>
+<para>Enables the texture mappers for L8_RGB565 image format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This allows drawing L8_RGB565 images using Bilinear Interpolation and Nearest Neighbor algorithms.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ae667b0c99ea46a5d816d792f4e1e4456" kindref="member">enableTextureMapperL8_RGB565_BilinearInterpolation</ref>, <ref refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a7a95004ff14f7400de218fbcbfa983b2" kindref="member">enableTextureMapperL8_RGB565_NearestNeighbor</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="170" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ae667b0c99ea46a5d816d792f4e1e4456" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void enableTextureMapperL8_RGB565_BilinearInterpolation</definition>
+        <argsstring>()</argsstring>
+        <name>enableTextureMapperL8_RGB565_BilinearInterpolation</name>
+        <briefdescription>
+<para>Enables the texture mappers for L8_RGB565 image format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This allows drawing L8_RGB565 images using Bilinear Interpolation algorithm.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1af3ddc77cfaf82c366e96220b0f9a12f8" kindref="member">enableTextureMapperL8_RGB565</ref>, <ref refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a7a95004ff14f7400de218fbcbfa983b2" kindref="member">enableTextureMapperL8_RGB565_NearestNeighbor</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="178" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a7a95004ff14f7400de218fbcbfa983b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void enableTextureMapperL8_RGB565_NearestNeighbor</definition>
+        <argsstring>()</argsstring>
+        <name>enableTextureMapperL8_RGB565_NearestNeighbor</name>
+        <briefdescription>
+<para>Enables the texture mappers for L8_RGB565 image format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This allows drawing L8_RGB565 images using Nearest Neighbor algorithm.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1af3ddc77cfaf82c366e96220b0f9a12f8" kindref="member">enableTextureMapperL8_RGB565</ref>, <ref refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ae667b0c99ea46a5d816d792f4e1e4456" kindref="member">enableTextureMapperL8_RGB565_BilinearInterpolation</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="186" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a1f721e52620501e93f8511267a47718b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void enableTextureMapperL8_RGB888</definition>
+        <argsstring>()</argsstring>
+        <name>enableTextureMapperL8_RGB888</name>
+        <briefdescription>
+<para>Enables the texture mappers for L8_RGB888 image format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This allows drawing L8_RGB888 images using Bilinear Interpolation and NearestNeighbor algorithms.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a24e36b0046bb0260278524d51503eaa0" kindref="member">enableTextureMapperL8_RGB888_BilinearInterpolation</ref>, <ref refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a84072914a2ec755b0d4fa3c102d8409d" kindref="member">enableTextureMapperL8_RGB888_NearestNeighbor</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="195" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a24e36b0046bb0260278524d51503eaa0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void enableTextureMapperL8_RGB888_BilinearInterpolation</definition>
+        <argsstring>()</argsstring>
+        <name>enableTextureMapperL8_RGB888_BilinearInterpolation</name>
+        <briefdescription>
+<para>Enables the texture mappers for L8_RGB888 image format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This allows drawing L8_RGB888 images using Bilinear Interpolation algorithm.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a1f721e52620501e93f8511267a47718b" kindref="member">enableTextureMapperL8_RGB888</ref>, <ref refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a84072914a2ec755b0d4fa3c102d8409d" kindref="member">enableTextureMapperL8_RGB888_NearestNeighbor</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="203" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a84072914a2ec755b0d4fa3c102d8409d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void enableTextureMapperL8_RGB888_NearestNeighbor</definition>
+        <argsstring>()</argsstring>
+        <name>enableTextureMapperL8_RGB888_NearestNeighbor</name>
+        <briefdescription>
+<para>Enables the texture mappers for L8_RGB888 image format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This allows drawing L8_RGB888 images using Nearest Neighbor algorithm.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a1f721e52620501e93f8511267a47718b" kindref="member">enableTextureMapperL8_RGB888</ref>, <ref refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a24e36b0046bb0260278524d51503eaa0" kindref="member">enableTextureMapperL8_RGB888_BilinearInterpolation</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="211" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ab21b62fafcadd239796686db3d194dd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void enableTextureMapperRGB565</definition>
+        <argsstring>()</argsstring>
+        <name>enableTextureMapperRGB565</name>
+        <briefdescription>
+<para>Enables the texture mappers for RGB565 image format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This allows drawing RGB565 images using Bilinear Interpolation and Nearest Neighbor algorithms.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a41b35f1903b252b975e8f52dd0aba3f8" kindref="member">enableTextureMapperRGB565_Opaque_BilinearInterpolation</ref>, <ref refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a03ba21b6c4a1869e994b29992debccc5" kindref="member">enableTextureMapperRGB565_Opaque_NearestNeighbor</ref>, <ref refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a6d4d870e0d17653499b69a3d5810596c" kindref="member">enableTextureMapperRGB565_NonOpaque_BilinearInterpolation</ref>, <ref refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ab4996381fbd47bc38538662ac3806675" kindref="member">enableTextureMapperRGB565_NonOpaque_NearestNeighbor</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="247" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a6d4d870e0d17653499b69a3d5810596c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void enableTextureMapperRGB565_NonOpaque_BilinearInterpolation</definition>
+        <argsstring>()</argsstring>
+        <name>enableTextureMapperRGB565_NonOpaque_BilinearInterpolation</name>
+        <briefdescription>
+<para>Enables the texture mappers for NonOpaque RGB565 image format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This allows drawing RGB565 images using Bilinear Interpolation algorithm.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ab21b62fafcadd239796686db3d194dd9" kindref="member">enableTextureMapperRGB565</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="263" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ab4996381fbd47bc38538662ac3806675" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void enableTextureMapperRGB565_NonOpaque_NearestNeighbor</definition>
+        <argsstring>()</argsstring>
+        <name>enableTextureMapperRGB565_NonOpaque_NearestNeighbor</name>
+        <briefdescription>
+<para>Enables the texture mappers for NonOpaque RGB565 image format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This allows drawing RGB565 images using Nearest Neighbor algorithm.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ab21b62fafcadd239796686db3d194dd9" kindref="member">enableTextureMapperRGB565</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="279" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a41b35f1903b252b975e8f52dd0aba3f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void enableTextureMapperRGB565_Opaque_BilinearInterpolation</definition>
+        <argsstring>()</argsstring>
+        <name>enableTextureMapperRGB565_Opaque_BilinearInterpolation</name>
+        <briefdescription>
+<para>Enables the texture mappers for Opaque RGB565 image format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This allows drawing RGB565 images using Bilinear Interpolation algorithm.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ab21b62fafcadd239796686db3d194dd9" kindref="member">enableTextureMapperRGB565</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="255" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a03ba21b6c4a1869e994b29992debccc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void enableTextureMapperRGB565_Opaque_NearestNeighbor</definition>
+        <argsstring>()</argsstring>
+        <name>enableTextureMapperRGB565_Opaque_NearestNeighbor</name>
+        <briefdescription>
+<para>Enables the texture mappers for Opaque RGB565 image format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This allows drawing RGB565 images using Nearest Neighbor algorithm.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ab21b62fafcadd239796686db3d194dd9" kindref="member">enableTextureMapperRGB565</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="271" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a3cfe25e2c90807ec57cdd32e1753af70" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void fillRect</definition>
+        <argsstring>(const Rect &amp;rect, colortype color, uint8_t alpha=255)</argsstring>
+        <name>fillRect</name>
+        <reimplements refid="classtouchgfx_1_1_l_c_d_1a813b79e2a2eaada463ca4766259d2975">fillRect</reimplements>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>rect</declname>
+        </param>
+        <param>
+          <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>alpha</declname>
+          <defval>255</defval>
+        </param>
+        <briefdescription>
+<para>Draws a filled rectangle in the framebuffer in the specified color and opacity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>By default the rectangle will be drawn as a solid box. The rectangle can be drawn with transparancy by specifying alpha from 0=invisible to 255=solid.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rectangle to draw in absolute display coordinates. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rectangle color. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(Optional) The rectangle opacity, from 0=invisible to 255=solid. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1abf1f7914f08534da2cfbcb1f3678d04e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classtouchgfx_1_1_bitmap_1a23d1a7c7cf0f6da45ca389904e644d55" kindref="member">Bitmap::BitmapFormat</ref></type>
+        <definition>virtual Bitmap::BitmapFormat framebufferFormat</definition>
+        <argsstring>() const</argsstring>
+        <name>framebufferFormat</name>
+        <reimplements refid="classtouchgfx_1_1_l_c_d_1ada15a74dcecaad464123a916cc9e81eb">framebufferFormat</reimplements>
+        <briefdescription>
+<para>Framebuffer format used by the display. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A <ref refid="classtouchgfx_1_1_bitmap_1a23d1a7c7cf0f6da45ca389904e644d55" kindref="member">Bitmap::BitmapFormat</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="64" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="64" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ab75ba1c386aac9a82b8aebcf1da40d77" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>uint16_t</type>
+        <definition>virtual uint16_t framebufferStride</definition>
+        <argsstring>() const</argsstring>
+        <name>framebufferStride</name>
+        <reimplements refid="classtouchgfx_1_1_l_c_d_1aad6cf0ceaa812e7329fb1ba360d4178b">framebufferStride</reimplements>
+        <briefdescription>
+<para>Framebuffer stride in bytes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The distance (in bytes) from the start of one framebuffer row, to the next.</para>
+<para><simplesect kind="return"><para>The number of bytes in one framebuffer row. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="69" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="69" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a6f2684edfd970891aa198c65b5624c73" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>uint8_t</type>
+        <definition>virtual uint8_t getBlueColor</definition>
+        <argsstring>(colortype color) const</argsstring>
+        <name>getBlueColor</name>
+        <reimplements refid="classtouchgfx_1_1_l_c_d_1a0d36d0f505c5ee534b2794d06eb122a8">getBlueColor</reimplements>
+        <param>
+          <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Gets the blue color part of a color. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>As this function must work for all color depths, it can be somewhat slow if used in speed critical sections. Consider finding the color in another way, if possible.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The 16 bit color value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The blue part of the color. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="139" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="139" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ad730e2cff09e2cb19690f90601cc3a3a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+        <definition>virtual colortype getColorFrom24BitRGB</definition>
+        <argsstring>(uint8_t red, uint8_t green, uint8_t blue) const</argsstring>
+        <name>getColorFrom24BitRGB</name>
+        <reimplements refid="classtouchgfx_1_1_l_c_d_1a7a4cf10b0b68239f9e0ab49f05df98ec">getColorFrom24BitRGB</reimplements>
+        <param>
+          <type>uint8_t</type>
+          <declname>red</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>green</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>blue</declname>
+        </param>
+        <briefdescription>
+<para>Generates a color representation to be used on the <ref refid="classtouchgfx_1_1_l_c_d" kindref="compound">LCD</ref>, based on 24 bit RGB values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Depending on your chosen color bit depth, the color will be interpreted internally as either a 16 bit or 24 bit color value. This function can be safely used regardless of whether your application is configured for 16 or 24 bit colors.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>red</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the red part (0-255). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>green</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the green part (0-255). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>blue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the blue part (0-255).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The color representation depending on <ref refid="classtouchgfx_1_1_l_c_d" kindref="compound">LCD</ref> color format. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="86" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="86" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a061d3d6d30e0c5d0b80eb4521d7f5b29" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>uint8_t</type>
+        <definition>virtual uint8_t getGreenColor</definition>
+        <argsstring>(colortype color) const</argsstring>
+        <name>getGreenColor</name>
+        <reimplements refid="classtouchgfx_1_1_l_c_d_1a2b8dffe98b2173b4009624e9c44e9709">getGreenColor</reimplements>
+        <param>
+          <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Gets the green color part of a color. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>As this function must work for all color depths, it can be somewhat slow if used in speed critical sections. Consider finding the color in another way, if possible.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The 16 bit color value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The green part of the color. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="122" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="122" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a9f32461dd49591b2d4df8df7cffb9235" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>uint8_t</type>
+        <definition>virtual uint8_t getRedColor</definition>
+        <argsstring>(colortype color) const</argsstring>
+        <name>getRedColor</name>
+        <reimplements refid="classtouchgfx_1_1_l_c_d_1a7ead52bf45c6f3c1cb50718405f5123e">getRedColor</reimplements>
+        <param>
+          <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Gets the red color part of a color. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>As this function must work for all color depths, it can be somewhat slow if used in speed critical sections. Consider finding the color in another way, if possible.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The red part of the color. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="105" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="105" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a9339772ec5ac9fa929938109207f2863" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <reimplements refid="classtouchgfx_1_1_l_c_d_1a9339772ec5ac9fa929938109207f2863">init</reimplements>
+        <briefdescription>
+<para>Performs initialization. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Can be called at any time to re-initialize the <ref refid="classtouchgfx_1_1_l_c_d" kindref="compound">LCD</ref> object.</para>
+<para><xrefsect id="deprecated_1_deprecated000013"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Put initialization code in constructor </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1abc49c434588cc399826f996156dc5714" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LCD16bppSerialFlash</definition>
+        <argsstring>(FlashDataReader &amp;flashReader)</argsstring>
+        <name>LCD16bppSerialFlash</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_flash_data_reader" kindref="compound">FlashDataReader</ref> &amp;</type>
+          <declname>flashReader</declname>
+        </param>
+        <briefdescription>
+<para>Creates a <ref refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash" kindref="compound">LCD16bppSerialFlash</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The <ref refid="classtouchgfx_1_1_flash_data_reader" kindref="compound">FlashDataReader</ref> object is used to fetch data from the external flash.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">flashReader</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference to a <ref refid="classtouchgfx_1_1_flash_data_reader" kindref="compound">FlashDataReader</ref> object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a86f2d7ad83ec103c35df6ae15c1122fa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~LCD16bppSerialFlash</definition>
+        <argsstring>()</argsstring>
+        <name>~LCD16bppSerialFlash</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="43" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="43" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a4c815962e1e7ba64a2786ee3c0e3be1d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint8_t</type>
+        <definition>static FORCE_INLINE_FUNCTION uint8_t getBlueFromColor</definition>
+        <argsstring>(colortype color)</argsstring>
+        <name>getBlueFromColor</name>
+        <param>
+          <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Gets blue from color. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The blue from color. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="151" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="151" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ab5470f0d37b384d9383fb95376708766" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> <ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+        <definition>static FORCE_INLINE_FUNCTION colortype getColorFromRGB</definition>
+        <argsstring>(uint8_t red, uint8_t green, uint8_t blue)</argsstring>
+        <name>getColorFromRGB</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>red</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>green</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>blue</declname>
+        </param>
+        <briefdescription>
+<para>Generates a color representation to be used on the <ref refid="classtouchgfx_1_1_l_c_d" kindref="compound">LCD</ref>, based on 24 bit RGB values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>red</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the red part (0-255). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>green</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the green part (0-255). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>blue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the blue part (0-255).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The color representation depending on <ref refid="classtouchgfx_1_1_l_c_d" kindref="compound">LCD</ref> color format. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="100" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="100" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a72b8ef11cd5918a6bd5702e918b888ef" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint16_t</type>
+        <definition>static FORCE_INLINE_FUNCTION uint16_t getFramebufferStride</definition>
+        <argsstring>()</argsstring>
+        <name>getFramebufferStride</name>
+        <briefdescription>
+<para>Framebuffer stride in bytes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The distance (in bytes) from the start of one framebuffer row, to the next.</para>
+<para><simplesect kind="return"><para>The number of bytes in one framebuffer row. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="80" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="80" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a7a0e0fbb531279a60027afc36648b43b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint8_t</type>
+        <definition>static FORCE_INLINE_FUNCTION uint8_t getGreenFromColor</definition>
+        <argsstring>(colortype color)</argsstring>
+        <name>getGreenFromColor</name>
+        <param>
+          <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Gets green from color. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The green from color. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="134" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="134" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ac6073d99e25188ba4f43cbcdcef4c07d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint8_t</type>
+        <definition>static FORCE_INLINE_FUNCTION uint8_t getRedFromColor</definition>
+        <argsstring>(colortype color)</argsstring>
+        <name>getRedFromColor</name>
+        <param>
+          <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Gets red from color. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The red from color. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="117" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="117" bodyend="120"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a962372c9fce713de3f55ea551ed140cd" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void blitCopyARGB8888</definition>
+        <argsstring>(const uint32_t *sourceData, const Rect &amp;source, const Rect &amp;blitRect, uint8_t alpha)</argsstring>
+        <name>blitCopyARGB8888</name>
+        <param>
+          <type>const uint32_t *</type>
+          <declname>sourceData</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>blitRect</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+<para>Blits a 2D source-array to the framebuffer performing alpha-blending per pixel as specified. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If ARGB8888 is not supported by the DMA a software blend is performed.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sourceData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source-array pointer (points to the beginning of the data). The sourceData must be stored as 32- bits ARGB8888 values. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The location and dimensions of the source. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>blitRect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A rectangle describing what region is to be drawn. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alpha value to use for blending applied to the whole image (255 = solid, no blending) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="368" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1acc6413b728a3075f27e8d8328e0e0393" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void blitCopyL8</definition>
+        <argsstring>(const uint8_t *sourceData, const uint8_t *clutData, const Rect &amp;source, const Rect &amp;blitRect, uint8_t alpha)</argsstring>
+        <name>blitCopyL8</name>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>sourceData</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>clutData</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>blitRect</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+<para>Blits a 2D indexed 8-bit source to the framebuffer performing alpha-blending per pixel as specified if indexed format is not supported by the DMA a software blend is performed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sourceData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source-indexes pointer (points to the beginning of the data). The sourceData must be stored as 8- bits indexes. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>clutData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source-clut pointer (points to the beginning of the CLUT color format and size data followed by colors entries. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The location and dimensions of the source. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>blitRect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A rectangle describing what region is to be drawn. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alpha value to use for blending applied to the whole image (255 = solid, no blending) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="384" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ad68f4146f8a8e0c24baf0e81d81e82a5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void blitCopyL8_ARGB8888</definition>
+        <argsstring>(const uint8_t *sourceData, const uint8_t *clutData, const Rect &amp;source, const Rect &amp;blitRect, uint8_t alpha)</argsstring>
+        <name>blitCopyL8_ARGB8888</name>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>sourceData</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>clutData</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>blitRect</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+<para>Blits a 2D indexed 8-bit source to the framebuffer performing alpha-blending per pixel as specified if L8_ARGB8888 is not supported by the DMA a software blend is performed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sourceData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source-indexes pointer (points to the beginning of the data). The sourceData must be stored as 8- bits indexes. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>clutData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source-clut pointer (points to the beginning of the CLUT color format and size data followed by colors entries stored as 32- bits (ARGB8888) format. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The location and dimensions of the source. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>blitRect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A rectangle describing what region is to be drawn. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alpha value to use for blending applied to the whole image (255 = solid, no blending) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="401" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ae51296cce51dc810f2cf8fa7098b8110" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void blitCopyL8_RGB565</definition>
+        <argsstring>(const uint8_t *sourceData, const uint8_t *clutData, const Rect &amp;source, const Rect &amp;blitRect, uint8_t alpha)</argsstring>
+        <name>blitCopyL8_RGB565</name>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>sourceData</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>clutData</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>blitRect</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+<para>Blits a 2D indexed 8-bit source to the framebuffer performing alpha-blending per pixel as specified if L8_RGB565 is not supported by the DMA a software blend is performed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sourceData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source-indexes pointer (points to the beginning of the data). The sourceData must be stored as 8- bits indexes. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>clutData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source-clut pointer points to the beginning of the CLUT color format and size data followed by colors entries stored as 16- bits (RGB565) format. If the source have per pixel alpha channel, then alpha channel data will be following the clut entries data. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The location and dimensions of the source. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>blitRect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A rectangle describing what region is to be drawn. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alpha value to use for blending applied to the whole image (255 = solid, no blending) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="420" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1af903b701e9856e78a870494bedaac857" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void drawGlyph</definition>
+        <argsstring>(uint16_t *wbuf, Rect widgetArea, int16_t x, int16_t y, uint16_t offsetX, uint16_t offsetY, const Rect &amp;invalidatedArea, const GlyphNode *glyph, const uint8_t *glyphData, uint8_t dataFormatA4, colortype color, uint8_t bitsPerPixel, uint8_t alpha, TextRotation rotation=TEXT_ROTATE_0)</argsstring>
+        <name>drawGlyph</name>
+        <reimplements refid="classtouchgfx_1_1_l_c_d_1a8eddc7eb104e8cec4bc1aced691bda33">drawGlyph</reimplements>
+        <param>
+          <type>uint16_t *</type>
+          <declname>wbuf</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref></type>
+          <declname>widgetArea</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>offsetX</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>offsetY</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>invalidatedArea</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structtouchgfx_1_1_glyph_node" kindref="compound">GlyphNode</ref> *</type>
+          <declname>glyph</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>glyphData</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>dataFormatA4</declname>
+        </param>
+        <param>
+          <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>bitsPerPixel</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1aa8b32c1e049cf804b50921f8c847866b" kindref="member">TextRotation</ref></type>
+          <declname>rotation</declname>
+          <defval><ref refid="namespacetouchgfx_1aa8b32c1e049cf804b50921f8c847866baf309363c5d33ffac5c6a9c38363bf4ae" kindref="member">TEXT_ROTATE_0</ref></defval>
+        </param>
+        <briefdescription>
+<para>Private version of draw-glyph with explicit destination buffer pointer argument. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>For all parameters (except the buffer pointer) see the public function <ref refid="classtouchgfx_1_1_l_c_d_1a4dc878f2656170e7c650deb9691dfe0d" kindref="member">drawString()</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">wbuf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination (frame) buffer to draw to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>widgetArea</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The canvas to draw the glyph inside. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Horizontal offset to start drawing the glyph. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vertical offset to start drawing the glyph. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offsetX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Horizontal offset in the glyph to start drawing from. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offsetY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vertical offset in the glyph to start drawing from. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>invalidatedArea</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The area to draw inside. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>glyph</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifications of the glyph to draw. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>glyphData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data containing the actual glyph (dense format) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dataFormatA4</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The glyph is saved using ST A4 format. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color of the glyph. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bitsPerPixel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit depth of the glyph. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The transparency of the glyph. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rotation to do before drawing the glyph. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="355" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ae883ce6179da962d7fac5d0f428ad34b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>DrawTextureMapScanLineBase *</type>
+        <definition>virtual DrawTextureMapScanLineBase* getTextureMapperDrawScanLine</definition>
+        <argsstring>(const TextureSurface &amp;texture, RenderingVariant renderVariant, uint8_t alpha)</argsstring>
+        <name>getTextureMapperDrawScanLine</name>
+        <reimplements refid="classtouchgfx_1_1_l_c_d_1ae883ce6179da962d7fac5d0f428ad34b">getTextureMapperDrawScanLine</reimplements>
+        <param>
+          <type>const <ref refid="structtouchgfx_1_1_texture_surface" kindref="compound">TextureSurface</ref> &amp;</type>
+          <declname>texture</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1ad59e90505ec56c2331c99dffd08b686c" kindref="member">RenderingVariant</ref></type>
+          <declname>renderVariant</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+<para>Gets pointer to object that can draw a scan line which allows for highly specialized and optimized implementation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>texture</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The texture Surface. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>renderVariant</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The render variant. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The global alpha.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Null if it fails, else the pointer to the texture mapper draw scan line object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="331" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a824a714c5fc8e1fe609a371886504e4b" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int nextLine</definition>
+        <argsstring>(bool rotatedDisplay, TextRotation textRotation)</argsstring>
+        <name>nextLine</name>
+        <param>
+          <type>bool</type>
+          <declname>rotatedDisplay</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1aa8b32c1e049cf804b50921f8c847866b" kindref="member">TextRotation</ref></type>
+          <declname>textRotation</declname>
+        </param>
+        <briefdescription>
+<para>Find out how much to advance in the display buffer to get to the next line. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rotatedDisplay</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Is the display running in portrait mode? </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>textRotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rotation to perform.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>How much to advance to get to the next line. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="353" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ab3106f5773f05689c7f70529f1551d30" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int nextPixel</definition>
+        <argsstring>(bool rotatedDisplay, TextRotation textRotation)</argsstring>
+        <name>nextPixel</name>
+        <param>
+          <type>bool</type>
+          <declname>rotatedDisplay</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1aa8b32c1e049cf804b50921f8c847866b" kindref="member">TextRotation</ref></type>
+          <declname>textRotation</declname>
+        </param>
+        <briefdescription>
+<para>Find out how much to advance in the display buffer to get to the next pixel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rotatedDisplay</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Is the display running in portrait mode? </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>textRotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rotation to perform.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>How much to advance to get to the next pixel. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="343" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ab8355117af5ff9b7beed95a5533812b8" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint16_t</type>
+        <definition>static FORCE_INLINE_FUNCTION uint16_t bilinearInterpolate565</definition>
+        <argsstring>(uint16_t c00, uint16_t c10, uint16_t c01, uint16_t c11, uint8_t x, uint8_t y)</argsstring>
+        <name>bilinearInterpolate565</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>c00</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>c10</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>c01</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>c11</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="462" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="462" bodyend="472"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ad1ef1cd64f32669956cdac8e6f919afd" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint16_t</type>
+        <definition>static FORCE_INLINE_FUNCTION uint16_t bilinearInterpolate565</definition>
+        <argsstring>(uint16_t c00, uint16_t c10, uint8_t x)</argsstring>
+        <name>bilinearInterpolate565</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>c00</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>c10</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="474" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="474" bodyend="481"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a916179f24cb10e727972ee346f4bc197" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint8_t</type>
+        <definition>static FORCE_INLINE_FUNCTION uint8_t bilinearInterpolate8</definition>
+        <argsstring>(uint8_t c00, uint8_t c10, uint8_t x)</argsstring>
+        <name>bilinearInterpolate8</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>c00</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>c10</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="483" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="483" bodyend="490"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1afbb3e2cdf65f85cb7c53bbdedcb3f65a" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint8_t</type>
+        <definition>static FORCE_INLINE_FUNCTION uint8_t bilinearInterpolate8</definition>
+        <argsstring>(uint8_t c00, uint8_t c10, uint8_t c01, uint8_t c11, uint8_t x, uint8_t y)</argsstring>
+        <name>bilinearInterpolate8</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>c00</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>c10</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>c01</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>c11</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="492" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="492" bodyend="501"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1af1381f6e733c3e3273b5b09c9550a8d1" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint32_t</type>
+        <definition>static FORCE_INLINE_FUNCTION uint32_t bilinearInterpolate888</definition>
+        <argsstring>(uint32_t c00, uint32_t c10, uint8_t x)</argsstring>
+        <name>bilinearInterpolate888</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>c00</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>c10</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="503" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="503" bodyend="511"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1aae35b35fd5e9a94f3eeda78626398ffe" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint32_t</type>
+        <definition>static FORCE_INLINE_FUNCTION uint32_t bilinearInterpolate888</definition>
+        <argsstring>(uint32_t c00, uint32_t c10, uint32_t c01, uint32_t c11, uint8_t x, uint8_t y)</argsstring>
+        <name>bilinearInterpolate888</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>c00</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>c10</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>c01</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>c11</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="513" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="513" bodyend="523"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ac6e14f3751f2191becb6b1a4e873b37f" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint16_t</type>
+        <definition>static FORCE_INLINE_FUNCTION uint16_t compactRgb565</definition>
+        <argsstring>(uint32_t c)</argsstring>
+        <name>compactRgb565</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="457" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="457" bodyend="460"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ab481c26e76adb63b63c5f3059bd9a8e2" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint32_t</type>
+        <definition>static FORCE_INLINE_FUNCTION uint32_t div255_565</definition>
+        <argsstring>(uint16_t val, uint8_t factor)</argsstring>
+        <name>div255_565</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>factor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="547" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="547" bodyend="550"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a27b956b7178fe5534bb45368f9ac7dbc" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint32_t</type>
+        <definition>static FORCE_INLINE_FUNCTION uint32_t div255_565_FFcheck</definition>
+        <argsstring>(uint16_t val, uint8_t factor)</argsstring>
+        <name>div255_565_FFcheck</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>factor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="552" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="552" bodyend="555"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a3771c53a624affac9f634ce96e0b00dd" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint32_t</type>
+        <definition>static FORCE_INLINE_FUNCTION uint32_t div255_888</definition>
+        <argsstring>(uint32_t val, uint8_t factor)</argsstring>
+        <name>div255_888</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>factor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="525" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="525" bodyend="528"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a8ac8c4cd32f54ff524dd6552a76982a2" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint32_t</type>
+        <definition>static FORCE_INLINE_FUNCTION uint32_t div255_888_FFcheck</definition>
+        <argsstring>(uint32_t val, uint8_t factor)</argsstring>
+        <name>div255_888_FFcheck</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>factor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="530" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="530" bodyend="533"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a04402596c9b137c87e6ed86828cba128" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint32_t</type>
+        <definition>static FORCE_INLINE_FUNCTION uint32_t div31g</definition>
+        <argsstring>(uint16_t val, uint8_t factor)</argsstring>
+        <name>div31g</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>factor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="541" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="541" bodyend="545"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ae71798b689b0562996f3b62dbfe6702e" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint32_t</type>
+        <definition>static FORCE_INLINE_FUNCTION uint32_t div31rb</definition>
+        <argsstring>(uint16_t val, uint8_t factor)</argsstring>
+        <name>div31rb</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>factor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="535" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="535" bodyend="539"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a56fefef90cf8544359deac06d3f9dcc2" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint32_t</type>
+        <definition>static FORCE_INLINE_FUNCTION uint32_t expandRgb565</definition>
+        <argsstring>(uint16_t c)</argsstring>
+        <name>expandRgb565</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="452" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="452" bodyend="455"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class contains the various low-level drawing routines for drawing bitmaps, texts and rectangles on 16 bits per pixel displays. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_l_c_d" kindref="compound">LCD</ref></para>
+</simplesect>
+<simplesect kind="note"><para>All coordinates are expected to be in absolute coordinates! </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="872">
+        <label>LCD</label>
+        <link refid="classtouchgfx_1_1_l_c_d"/>
+      </node>
+      <node id="871">
+        <label>LCD16bppSerialFlash</label>
+        <link refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash"/>
+        <childnode refid="872" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="876">
+        <label>FlashDataReader</label>
+        <link refid="classtouchgfx_1_1_flash_data_reader"/>
+      </node>
+      <node id="874">
+        <label>LCD</label>
+        <link refid="classtouchgfx_1_1_l_c_d"/>
+        <childnode refid="875" relation="usage">
+          <edgelabel>defaultColor</edgelabel>
+        </childnode>
+      </node>
+      <node id="873">
+        <label>LCD16bppSerialFlash</label>
+        <link refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash"/>
+        <childnode refid="874" relation="public-inheritance">
+        </childnode>
+        <childnode refid="876" relation="usage">
+          <edgelabel>flashReader</edgelabel>
+        </childnode>
+      </node>
+      <node id="875">
+        <label>colortype</label>
+        <link refid="structtouchgfx_1_1colortype"/>
+      </node>
+    </collaborationgraph>
+    <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="33" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="32" bodyend="829"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ab8355117af5ff9b7beed95a5533812b8" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>bilinearInterpolate565</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ad1ef1cd64f32669956cdac8e6f919afd" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>bilinearInterpolate565</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a916179f24cb10e727972ee346f4bc197" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>bilinearInterpolate8</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1afbb3e2cdf65f85cb7c53bbdedcb3f65a" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>bilinearInterpolate8</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1af1381f6e733c3e3273b5b09c9550a8d1" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>bilinearInterpolate888</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1aae35b35fd5e9a94f3eeda78626398ffe" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>bilinearInterpolate888</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a9453b7ca5b528302f69afddd98aae21e" prot="public" virt="virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>bitDepth</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1aa9d494e3f6530fd2548ca464e79abb36" prot="public" virt="virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>blitCopy</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1acefc1872d8b5c24cb76ec00d13ad6de7" prot="public" virt="virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>blitCopy</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a962372c9fce713de3f55ea551ed140cd" prot="protected" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>blitCopyARGB8888</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1acc6413b728a3075f27e8d8328e0e0393" prot="protected" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>blitCopyL8</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ad68f4146f8a8e0c24baf0e81d81e82a5" prot="protected" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>blitCopyL8_ARGB8888</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ae51296cce51dc810f2cf8fa7098b8110" prot="protected" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>blitCopyL8_RGB565</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ac6e14f3751f2191becb6b1a4e873b37f" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>compactRgb565</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a6b117c2cdc5ba3c678a0962b0470dbaf" prot="public" virt="virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>copyFrameBufferRegionToMemory</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a2816380d9d77221efa560d515d69dbd6" prot="public" virt="non-virtual" ambiguityscope="touchgfx::LCD::"><scope>touchgfx::LCD16bppSerialFlash</scope><name>copyFrameBufferRegionToMemory</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a8abbfc784700d0c6ca5d2c46d3a7c022" prot="protected" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>defaultColor</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a01d10258588c00a9dbc319dec5bf438b" prot="public" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>div255</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ab481c26e76adb63b63c5f3059bd9a8e2" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>div255_565</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a27b956b7178fe5534bb45368f9ac7dbc" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>div255_565_FFcheck</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a3771c53a624affac9f634ce96e0b00dd" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>div255_888</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a8ac8c4cd32f54ff524dd6552a76982a2" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>div255_888_FFcheck</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a0494b479a5bedee50857441a3410c0f0" prot="public" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>div255g</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1afacd4dbc6065589001a1724e20a72d89" prot="public" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>div255rb</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a04402596c9b137c87e6ed86828cba128" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>div31g</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ae71798b689b0562996f3b62dbfe6702e" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>div31rb</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1ae9353837bf0e0315d22707167e699834" prot="public" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>drawBorder</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1af903b701e9856e78a870494bedaac857" prot="protected" virt="virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>drawGlyph</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a70ffc766e161d075b1960cbd5c002553" prot="public" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>drawHorizontalLine</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a6fae0e318d1bd778915adc33449736ae" prot="public" virt="virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>drawPartialBitmap</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a645bd5f27f0c9cb9c2f876ebfa74adcd" prot="public" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>drawRect</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a4dc878f2656170e7c650deb9691dfe0d" prot="public" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>drawString</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1ae465f8bf4e968da70eb903e70998efda" prot="protected" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>drawStringLTR</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a97f760546e5938c403d513353f1edd3c" prot="protected" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>drawStringRTL</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a7b7d73f2ae2a81d2092f725124c82b11" prot="protected" virt="virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>drawTextureMapScanLine</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a981b316e67cd1d1c904b2cc9ccbdc3e6" prot="public" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>drawTextureMapTriangle</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a27329d16c48dadcd5597192891312d0d" prot="public" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>drawVerticalLine</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a98aeafe3366c95034f34faca3c5de778" prot="public" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>enableTextureMapperA4</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ac611c644c05e6ebed0972f2455782a46" prot="public" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>enableTextureMapperA4_BilinearInterpolation</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ac507d6a8937a556ad8d99629de88d32e" prot="public" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>enableTextureMapperA4_NearestNeighbor</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1aac48453ba9101bd6146c05e6519123ff" prot="public" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>enableTextureMapperAll</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a7b7f7ccb7df6a8b5e4dd25322da7bdb5" prot="public" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>enableTextureMapperARGB8888</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a818043c58b3117584bdb5f33fced40a6" prot="public" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>enableTextureMapperARGB8888_BilinearInterpolation</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1acd785732dabaf6f2674515f3fe510bfd" prot="public" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>enableTextureMapperARGB8888_NearestNeighbor</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1abb09b49cfc2d5bae9b4ffba943c720b5" prot="public" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>enableTextureMapperL8_ARGB8888</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a593add3a4d0828bd45563b7613e26095" prot="public" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>enableTextureMapperL8_ARGB8888_BilinearInterpolation</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ac09dd6850ad2a2160514062bcd1d7516" prot="public" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>enableTextureMapperL8_ARGB8888_NearestNeighbor</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1af3ddc77cfaf82c366e96220b0f9a12f8" prot="public" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>enableTextureMapperL8_RGB565</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ae667b0c99ea46a5d816d792f4e1e4456" prot="public" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>enableTextureMapperL8_RGB565_BilinearInterpolation</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a7a95004ff14f7400de218fbcbfa983b2" prot="public" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>enableTextureMapperL8_RGB565_NearestNeighbor</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a1f721e52620501e93f8511267a47718b" prot="public" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>enableTextureMapperL8_RGB888</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a24e36b0046bb0260278524d51503eaa0" prot="public" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>enableTextureMapperL8_RGB888_BilinearInterpolation</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a84072914a2ec755b0d4fa3c102d8409d" prot="public" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>enableTextureMapperL8_RGB888_NearestNeighbor</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ab21b62fafcadd239796686db3d194dd9" prot="public" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>enableTextureMapperRGB565</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a6d4d870e0d17653499b69a3d5810596c" prot="public" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>enableTextureMapperRGB565_NonOpaque_BilinearInterpolation</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ab4996381fbd47bc38538662ac3806675" prot="public" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>enableTextureMapperRGB565_NonOpaque_NearestNeighbor</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a41b35f1903b252b975e8f52dd0aba3f8" prot="public" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>enableTextureMapperRGB565_Opaque_BilinearInterpolation</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a03ba21b6c4a1869e994b29992debccc5" prot="public" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>enableTextureMapperRGB565_Opaque_NearestNeighbor</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a56fefef90cf8544359deac06d3f9dcc2" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>expandRgb565</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a3cfe25e2c90807ec57cdd32e1753af70" prot="public" virt="virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>fillRect</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a27537dbdafd0727a25354db07c22803e" prot="protected" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>flashReader</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1abf1f7914f08534da2cfbcb1f3678d04e" prot="public" virt="virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>framebufferFormat</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ab75ba1c386aac9a82b8aebcf1da40d77" prot="public" virt="virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>framebufferStride</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a6b34e4cedff06f4ebd797e00778077d2" prot="protected" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>getAlphaFromA4</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a6f2684edfd970891aa198c65b5624c73" prot="public" virt="virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>getBlueColor</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a4c815962e1e7ba64a2786ee3c0e3be1d" prot="public" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>getBlueFromColor</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ad730e2cff09e2cb19690f90601cc3a3a" prot="public" virt="virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>getColorFrom24BitRGB</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ab5470f0d37b384d9383fb95376708766" prot="public" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>getColorFromRGB</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a06519cd86f0159cf7f4b585c0fc97be9" prot="public" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>getDefaultColor</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a72b8ef11cd5918a6bd5702e918b888ef" prot="public" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>getFramebufferStride</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a061d3d6d30e0c5d0b80eb4521d7f5b29" prot="public" virt="virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>getGreenColor</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a7a0e0fbb531279a60027afc36648b43b" prot="public" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>getGreenFromColor</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1aa5c143f2953d271f2adca01f501e97bc" prot="protected" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>getNumLines</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a9f32461dd49591b2d4df8df7cffb9235" prot="public" virt="virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>getRedColor</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ac6073d99e25188ba4f43cbcdcef4c07d" prot="public" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>getRedFromColor</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ae883ce6179da962d7fac5d0f428ad34b" prot="protected" virt="virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>getTextureMapperDrawScanLine</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a9339772ec5ac9fa929938109207f2863" prot="public" virt="virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>init</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1abc49c434588cc399826f996156dc5714" prot="public" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>LCD16bppSerialFlash</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1af5a21958de35f2ab56be1f202d548ffa" prot="protected" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>newLine</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a824a714c5fc8e1fe609a371886504e4b" prot="protected" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>nextLine</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ab3106f5773f05689c7f70529f1551d30" prot="protected" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>nextPixel</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a98fc6d2a734cf2b2e0f6eb3bfdac5077" prot="protected" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>realX</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a73ff793fafba8d3b4b2c81a1399b6923" prot="protected" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>realY</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1ac1a8020c07c7a5b64aceea2893b9d6ff" prot="protected" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>rotateRect</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1ac42fdefb7af476d5d69a1f3d00c25eed" prot="public" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>setDefaultColor</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1aee926129c4f45b9e1b9691ff372e4ad9" prot="protected" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>stringWidth</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1aeef30327c5c611e034ec20557e8f711f" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>textureMapper_A4_BilinearInterpolation_GA</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a421600b9002e8b20b7a8eef237feebd6" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>textureMapper_A4_BilinearInterpolation_NoGA</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1adf2baa47758451902e4be1be18705e8f" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>textureMapper_A4_NearestNeighbor_GA</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a993a600e7613996874f93bc7ace5f628" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>textureMapper_A4_NearestNeighbor_NoGA</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a8d07e92d7ec51596a8e2cfa993d413d3" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>textureMapper_ARGB8888_NonOpaque_BilinearInterpolation_GA</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a59272e75925eac52b1af2a05c67c3bc0" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>textureMapper_ARGB8888_NonOpaque_BilinearInterpolation_NoGA</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a1670e989aa9a756515e47796defa0ac1" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>textureMapper_ARGB8888_NonOpaque_NearestNeighbor_GA</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1add55ed438bdcb3d185d61fd43df50910" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>textureMapper_ARGB8888_NonOpaque_NearestNeighbor_NoGA</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a369a99cf91e3d313f67e0f48fb556d91" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>textureMapper_L8_ARGB8888_NonOpaque_BilinearInterpolation_GA</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a0b6aa0dc09c494faf933a80d47063ee1" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>textureMapper_L8_ARGB8888_NonOpaque_BilinearInterpolation_NoGA</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a3b6e81d9e77e1a26b7c02834e1ef09c3" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>textureMapper_L8_ARGB8888_NonOpaque_NearestNeighbor_GA</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ae2879431fe7d2e093e95e1c6c268c5a8" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>textureMapper_L8_ARGB8888_NonOpaque_NearestNeighbor_NoGA</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ac40dfc5bea06b96084ac82c35236e635" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>textureMapper_L8_RGB565_Opaque_BilinearInterpolation_GA</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1adfb6c6e8f8cde0530f1527fc28218f71" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>textureMapper_L8_RGB565_Opaque_BilinearInterpolation_NoGA</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a1d3895a1ee8ad3139e132eb69411ca01" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>textureMapper_L8_RGB565_Opaque_NearestNeighbor_GA</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1acdfaf71a2ee626148065c56af68e2c63" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>textureMapper_L8_RGB565_Opaque_NearestNeighbor_NoGA</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a08348b2e35db71cc74268dec79bfab44" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>textureMapper_L8_RGB888_Opaque_BilinearInterpolation_GA</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a54bbb8bbd63442d956a1528193085906" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>textureMapper_L8_RGB888_Opaque_BilinearInterpolation_NoGA</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a52ffc0da1f5e24e6fe05c7075dff7210" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>textureMapper_L8_RGB888_Opaque_NearestNeighbor_GA</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a2c85308d27ce3151e076222e6d87463c" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>textureMapper_L8_RGB888_Opaque_NearestNeighbor_NoGA</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a509cea2ba8c034d55181f20d4ed323e3" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>textureMapper_RGB565_NonOpaque_BilinearInterpolation_GA</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a1a8e55669ffaa1712a36710ac4d94175" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>textureMapper_RGB565_NonOpaque_BilinearInterpolation_NoGA</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a6b1639ba854b847c001f22fe76a61a6b" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>textureMapper_RGB565_NonOpaque_NearestNeighbor_GA</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a2e148a5ee5ac2043638dc00c43d01ab2" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>textureMapper_RGB565_NonOpaque_NearestNeighbor_NoGA</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1acfc7eaf4cfc37d12411cd293f018fc24" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>textureMapper_RGB565_Opaque_BilinearInterpolation_GA</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a50a1b4633fca3427214eb19c8e23fec6" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>textureMapper_RGB565_Opaque_BilinearInterpolation_NoGA</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ad43c8a273cfca564927f2ffb24831a39" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>textureMapper_RGB565_Opaque_NearestNeighbor_GA</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a23672e0de15169212f13ec4b37d9e576" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>textureMapper_RGB565_Opaque_NearestNeighbor_NoGA</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a50af83d0758f69f7c290e54cf1971ba8" prot="public" virt="virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>~LCD</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a86f2d7ad83ec103c35df6ae15c1122fa" prot="public" virt="virtual"><scope>touchgfx::LCD16bppSerialFlash</scope><name>~LCD16bppSerialFlash</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
