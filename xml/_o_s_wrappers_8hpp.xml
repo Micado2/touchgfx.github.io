@@ -7,12 +7,14 @@
       <node id="4533">
         <label>assert.h</label>
       </node>
-      <node id="4535">
-        <label>touchgfx/hal/Config.hpp</label>
-        <link refid="_config_8hpp"/>
-      </node>
       <node id="4534">
         <label>stdint.h</label>
+      </node>
+      <node id="4531">
+        <label>touchgfx/hal/OSWrappers.hpp</label>
+        <link refid="_o_s_wrappers_8hpp"/>
+        <childnode refid="4532" relation="include">
+        </childnode>
       </node>
       <node id="4532">
         <label>touchgfx/hal/Types.hpp</label>
@@ -24,11 +26,9 @@
         <childnode refid="4535" relation="include">
         </childnode>
       </node>
-      <node id="4531">
-        <label>touchgfx/hal/OSWrappers.hpp</label>
-        <link refid="_o_s_wrappers_8hpp"/>
-        <childnode refid="4532" relation="include">
-        </childnode>
+      <node id="4535">
+        <label>touchgfx/hal/Config.hpp</label>
+        <link refid="_config_8hpp"/>
       </node>
     </incdepgraph>
     <innerclass refid="classtouchgfx_1_1_o_s_wrappers" prot="public">touchgfx::OSWrappers</innerclass>
