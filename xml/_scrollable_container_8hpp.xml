@@ -1,0 +1,421 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="_scrollable_container_8hpp" kind="file" language="C++">
+    <compoundname>ScrollableContainer.hpp</compoundname>
+    <includes refid="_application_8hpp" local="no">touchgfx/Application.hpp</includes>
+    <includes refid="_container_8hpp" local="no">touchgfx/containers/Container.hpp</includes>
+    <includes refid="_box_8hpp" local="no">touchgfx/widgets/Box.hpp</includes>
+    <incdepgraph>
+      <node id="2597">
+        <label>stdarg.h</label>
+      </node>
+      <node id="2598">
+        <label>touchgfx/Bitmap.hpp</label>
+        <link refid="_bitmap_8hpp"/>
+        <childnode refid="2599" relation="include">
+        </childnode>
+        <childnode refid="2587" relation="include">
+        </childnode>
+      </node>
+      <node id="2593">
+        <label>touchgfx/events/DragEvent.hpp</label>
+        <link refid="_drag_event_8hpp"/>
+        <childnode refid="2592" relation="include">
+        </childnode>
+        <childnode refid="2587" relation="include">
+        </childnode>
+      </node>
+      <node id="2605">
+        <label>windows.h</label>
+      </node>
+      <node id="2588">
+        <label>assert.h</label>
+      </node>
+      <node id="2602">
+        <label>touchgfx/TextProvider.hpp</label>
+        <link refid="_text_provider_8hpp"/>
+        <childnode refid="2597" relation="include">
+        </childnode>
+        <childnode refid="2600" relation="include">
+        </childnode>
+        <childnode refid="2601" relation="include">
+        </childnode>
+      </node>
+      <node id="2604">
+        <label>touchgfx/Utils.hpp</label>
+        <link refid="_utils_8hpp"/>
+        <childnode refid="2597" relation="include">
+        </childnode>
+        <childnode refid="2605" relation="include">
+        </childnode>
+        <childnode refid="2606" relation="include">
+        </childnode>
+        <childnode refid="2598" relation="include">
+        </childnode>
+        <childnode refid="2587" relation="include">
+        </childnode>
+      </node>
+      <node id="2590">
+        <label>touchgfx/hal/Config.hpp</label>
+        <link refid="_config_8hpp"/>
+      </node>
+      <node id="2589">
+        <label>stdint.h</label>
+      </node>
+      <node id="2610">
+        <label>touchgfx/widgets/Box.hpp</label>
+        <link refid="_box_8hpp"/>
+        <childnode refid="2598" relation="include">
+        </childnode>
+        <childnode refid="2587" relation="include">
+        </childnode>
+        <childnode refid="2596" relation="include">
+        </childnode>
+        <childnode refid="2611" relation="include">
+        </childnode>
+        <childnode refid="2612" relation="include">
+        </childnode>
+      </node>
+      <node id="2586">
+        <label>touchgfx/UIEventListener.hpp</label>
+        <link refid="_u_i_event_listener_8hpp"/>
+        <childnode refid="2587" relation="include">
+        </childnode>
+      </node>
+      <node id="2599">
+        <label>cassert</label>
+      </node>
+      <node id="2603">
+        <label>touchgfx/TextureMapTypes.hpp</label>
+        <link refid="_texture_map_types_8hpp"/>
+        <childnode refid="2587" relation="include">
+        </childnode>
+      </node>
+      <node id="2594">
+        <label>touchgfx/events/GestureEvent.hpp</label>
+        <link refid="_gesture_event_8hpp"/>
+        <childnode refid="2592" relation="include">
+        </childnode>
+        <childnode refid="2587" relation="include">
+        </childnode>
+      </node>
+      <node id="2600">
+        <label>touchgfx/Font.hpp</label>
+        <link refid="_font_8hpp"/>
+        <childnode refid="2601" relation="include">
+        </childnode>
+        <childnode refid="2587" relation="include">
+        </childnode>
+      </node>
+      <node id="2587">
+        <label>touchgfx/hal/Types.hpp</label>
+        <link refid="_types_8hpp"/>
+        <childnode refid="2588" relation="include">
+        </childnode>
+        <childnode refid="2589" relation="include">
+        </childnode>
+        <childnode refid="2590" relation="include">
+        </childnode>
+      </node>
+      <node id="2609">
+        <label>touchgfx/Drawable.hpp</label>
+        <link refid="_drawable_8hpp"/>
+        <childnode refid="2585" relation="include">
+        </childnode>
+        <childnode refid="2608" relation="include">
+        </childnode>
+        <childnode refid="2604" relation="include">
+        </childnode>
+        <childnode refid="2591" relation="include">
+        </childnode>
+        <childnode refid="2593" relation="include">
+        </childnode>
+        <childnode refid="2594" relation="include">
+        </childnode>
+        <childnode refid="2587" relation="include">
+        </childnode>
+      </node>
+      <node id="2595">
+        <label>touchgfx/transitions/Transition.hpp</label>
+        <link refid="_transition_8hpp"/>
+        <childnode refid="2587" relation="include">
+        </childnode>
+        <childnode refid="2596" relation="include">
+        </childnode>
+      </node>
+      <node id="2607">
+        <label>touchgfx/containers/Container.hpp</label>
+        <link refid="_container_8hpp"/>
+        <childnode refid="2608" relation="include">
+        </childnode>
+        <childnode refid="2609" relation="include">
+        </childnode>
+      </node>
+      <node id="2584">
+        <label>touchgfx/containers/ScrollableContainer.hpp</label>
+        <link refid="_scrollable_container_8hpp"/>
+        <childnode refid="2585" relation="include">
+        </childnode>
+        <childnode refid="2607" relation="include">
+        </childnode>
+        <childnode refid="2610" relation="include">
+        </childnode>
+      </node>
+      <node id="2591">
+        <label>touchgfx/events/ClickEvent.hpp</label>
+        <link refid="_click_event_8hpp"/>
+        <childnode refid="2592" relation="include">
+        </childnode>
+        <childnode refid="2587" relation="include">
+        </childnode>
+      </node>
+      <node id="2611">
+        <label>touchgfx/widgets/Widget.hpp</label>
+        <link refid="_widget_8hpp"/>
+        <childnode refid="2588" relation="include">
+        </childnode>
+        <childnode refid="2609" relation="include">
+        </childnode>
+      </node>
+      <node id="2585">
+        <label>touchgfx/Application.hpp</label>
+        <link refid="_application_8hpp"/>
+        <childnode refid="2586" relation="include">
+        </childnode>
+        <childnode refid="2591" relation="include">
+        </childnode>
+        <childnode refid="2593" relation="include">
+        </childnode>
+        <childnode refid="2594" relation="include">
+        </childnode>
+        <childnode refid="2587" relation="include">
+        </childnode>
+        <childnode refid="2595" relation="include">
+        </childnode>
+      </node>
+      <node id="2612">
+        <label>touchgfx/widgets/Button.hpp</label>
+        <link refid="_button_8hpp"/>
+        <childnode refid="2598" relation="include">
+        </childnode>
+        <childnode refid="2613" relation="include">
+        </childnode>
+      </node>
+      <node id="2613">
+        <label>touchgfx/widgets/AbstractButton.hpp</label>
+        <link refid="_abstract_button_8hpp"/>
+        <childnode refid="2608" relation="include">
+        </childnode>
+        <childnode refid="2611" relation="include">
+        </childnode>
+      </node>
+      <node id="2608">
+        <label>touchgfx/Callback.hpp</label>
+        <link refid="_callback_8hpp"/>
+      </node>
+      <node id="2601">
+        <label>touchgfx/Unicode.hpp</label>
+        <link refid="_unicode_8hpp"/>
+        <childnode refid="2597" relation="include">
+        </childnode>
+        <childnode refid="2587" relation="include">
+        </childnode>
+      </node>
+      <node id="2592">
+        <label>touchgfx/Event.hpp</label>
+        <link refid="_event_8hpp"/>
+      </node>
+      <node id="2596">
+        <label>touchgfx/lcd/LCD.hpp</label>
+        <link refid="_l_c_d_8hpp"/>
+        <childnode refid="2597" relation="include">
+        </childnode>
+        <childnode refid="2598" relation="include">
+        </childnode>
+        <childnode refid="2600" relation="include">
+        </childnode>
+        <childnode refid="2602" relation="include">
+        </childnode>
+        <childnode refid="2603" relation="include">
+        </childnode>
+        <childnode refid="2601" relation="include">
+        </childnode>
+        <childnode refid="2604" relation="include">
+        </childnode>
+        <childnode refid="2587" relation="include">
+        </childnode>
+      </node>
+      <node id="2606">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classtouchgfx_1_1_scrollable_container" prot="public">touchgfx::ScrollableContainer</innerclass>
+    <innernamespace refid="namespacetouchgfx">touchgfx</innernamespace>
+    <briefdescription>
+<para>Declares the <ref refid="classtouchgfx_1_1_scrollable_container" kindref="compound">touchgfx::ScrollableContainer</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>SCROLLABLECONTAINER_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SCROLLABLECONTAINER_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_application_8hpp" kindref="compound">touchgfx/Application.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_container_8hpp" kindref="compound">touchgfx/containers/Container.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_box_8hpp" kindref="compound">touchgfx/widgets/Box.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetouchgfx" kindref="compound">touchgfx</ref></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31" refid="classtouchgfx_1_1_scrollable_container" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtouchgfx_1_1_scrollable_container" kindref="compound">ScrollableContainer</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_container" kindref="compound">Container</ref></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_scrollable_container" kindref="compound">ScrollableContainer</ref>();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classtouchgfx_1_1_scrollable_container" kindref="compound">ScrollableContainer</ref>()</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a1cf7067c03ae7ac30976b3982e170f98" kindref="member">enableHorizontalScroll</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a2e32d80c1a53f939c8b6ec3e5688135e" kindref="member">scrollableX</ref><sp/>=<sp/>enable;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a6cda78163027dbfbb9946e085ad83f5a" kindref="member">enableVerticalScroll</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a4f7ef8de788763d8db91d7dc4faf0c45" kindref="member">scrollableY</ref><sp/>=<sp/>enable;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1ad4c9fa8c171f171a0521b12332030ed4" kindref="member">isScrollableXY</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&amp;<sp/>scrollX,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&amp;<sp/>scrollY)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref><sp/>contained<sp/>=<sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a47e8a844fa50b171656f8355fd8e313b" kindref="member">getContainedArea</ref>();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scrollX<sp/>=<sp/>(<ref refid="classtouchgfx_1_1_scrollable_container_1a2e32d80c1a53f939c8b6ec3e5688135e" kindref="member">scrollableX</ref><sp/>&amp;&amp;<sp/>(<ref refid="classtouchgfx_1_1_drawable_1a2a955ddc316d002f566598f340eb2af9" kindref="member">rect</ref>.<ref refid="classtouchgfx_1_1_rect_1ae0ffb42440f0305b6d22a1c6106b6e6f" kindref="member">width</ref><sp/>&lt;<sp/>contained.<ref refid="classtouchgfx_1_1_rect_1ae0ffb42440f0305b6d22a1c6106b6e6f" kindref="member">width</ref>));</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scrollY<sp/>=<sp/>(<ref refid="classtouchgfx_1_1_scrollable_container_1a4f7ef8de788763d8db91d7dc4faf0c45" kindref="member">scrollableY</ref><sp/>&amp;&amp;<sp/>(<ref refid="classtouchgfx_1_1_drawable_1a2a955ddc316d002f566598f340eb2af9" kindref="member">rect</ref>.<ref refid="classtouchgfx_1_1_rect_1a777dd66f9609a587ee98ad50de301662" kindref="member">height</ref><sp/>&lt;<sp/>contained.<ref refid="classtouchgfx_1_1_rect_1a777dd66f9609a587ee98ad50de301662" kindref="member">height</ref>));</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a5428064a66af0f11a91c3aa70febe173" kindref="member">setScrollbarsVisible</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>newVisible);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a97e194d675dbdece75c4c8bea2d58e7e" kindref="member">setScrollbarsPermanentlyVisible</ref>();</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a302ad1a4da6fe171eb249828bd8dc7ab" kindref="member">add</ref>(<ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref>&amp;<sp/>d);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a6bc8e89dc7f879221e9862fb27dc726f" kindref="member">getLastChild</ref>(int16_t<sp/>x,<sp/>int16_t<sp/>y,<sp/><ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref>**<sp/>last)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classtouchgfx_1_1_drawable_1a9d8a6cfb13917785c143e74d40e4e2be" kindref="member">isVisible</ref>())</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classtouchgfx_1_1_drawable_1a01c717b9abc98d48673b79d691c2d28a" kindref="member">isTouchable</ref>())</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*last<sp/>=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_container_1a6bc8e89dc7f879221e9862fb27dc726f" kindref="member">Container::getLastChild</ref>(x,<sp/>y,<sp/>last);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a7f1524b90bc90e5f6cf7ee47aae12123" kindref="member">handleClickEvent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_click_event" kindref="compound">ClickEvent</ref>&amp;<sp/>evt);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a06ae1946b2124cc94e26cfe18728debf" kindref="member">handleDragEvent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drag_event" kindref="compound">DragEvent</ref>&amp;<sp/>evt);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a4db4945ecbc2303bf860e082409b8029" kindref="member">handleGestureEvent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_gesture_event" kindref="compound">GestureEvent</ref>&amp;<sp/>evt);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a1af635cee0f186c3d0fcea60bac14355" kindref="member">handleTickEvent</ref>();</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a47e8a844fa50b171656f8355fd8e313b" kindref="member">getContainedArea</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1ae2d939b2a9c253f0fb3bae3ec7be4e2f" kindref="member">childGeometryChanged</ref>();</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1ad20897c5c8bd47f5d4005989bead0e55" kindref="member">reset</ref>();</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1add539b68574f09b364f0b4e6a312b9b0" kindref="member">moveChildrenRelative</ref>(int16_t<sp/>deltaX,<sp/>int16_t<sp/>deltaY);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a015a272ab4476123b6f53c2e322281d5" kindref="member">setMaxVelocity</ref>(uint16_t<sp/>max)</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1ab38449db163d2f11c2133de8aa93d1a2" kindref="member">maxVelocity</ref><sp/>=<sp/>max;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a66a03f1d3d775b47d8a4ba4d29433569" kindref="member">setScrollThreshold</ref>(int16_t<sp/>t)</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a000c43acc99664950e9e5571012d56bb" kindref="member">scrollThreshold</ref><sp/>=<sp/>t;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a2ac6a0706ccd83705d10e4af4d84ec52" kindref="member">setScrollbarsColor</ref>(<ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref><sp/>color);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a45440a40a6eb5eb4717dbe44cec63a7d" kindref="member">setScrollbarsAlpha</ref>(uint8_t<sp/>alpha);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a5bb045bf6fc251ce83b4023daeabc047" kindref="member">setScrollbarPadding</ref>(uint8_t<sp/>padding);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a5bd3862598f3efeb1aaf4c2ebb433126" kindref="member">setScrollbarWidth</ref>(uint8_t<sp/>width);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a1dcbae8564fb1bd69ccdd9e2f2f20e79" kindref="member">getScrolledX</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="classtouchgfx_1_1_scrollable_container_1ac3828b48dd65e21232304d7a88c148b5" kindref="member">getScrolledY</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="classtouchgfx_1_1_scrollable_container_1aa646e13c8f5a4b181d3dcee0c45be0f7" kindref="member">scrollbarPadding</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="classtouchgfx_1_1_scrollable_container_1aa7db99affa8a9f3b03ca5fb77e50b143" kindref="member">scrollbarWidth</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a45c634cbb9979bad5f5514cc8a7b0c73" kindref="member">scrollbarAlpha</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a53b5b4485da2ec9992df8a1545b94cc9" kindref="member">SCROLLBAR_LINE</ref><sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1ad641d04efa1baad689423f7750ff745d" kindref="member">scrollbarColor</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="classtouchgfx_1_1_scrollable_container_1ae1c85b1487c98a02bc7bbd1f83323c94" kindref="member">SCROLLBAR_MIN_VELOCITY</ref><sp/>=<sp/>5;<sp/><sp/></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="classtouchgfx_1_1_scrollable_container_1ad501b399be0e51c2f345433daa5fba89" kindref="member">SCROLLBAR_MAX_VELOCITY</ref><sp/>=<sp/>17;<sp/></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="classtouchgfx_1_1_scrollable_container_1ab38449db163d2f11c2133de8aa93d1a2" kindref="member">maxVelocity</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1ab4c58f13c4a5324b7cfe4b98e8f8a4fd" kindref="member">getXScrollbar</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1aaec87b8abab36ef542f2a668f4426c0e" kindref="member">getYScrollbar</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a0648fe9a5eb13ca47ca97339db68afe8" kindref="member">getXBorder</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref>&amp;<sp/>xBar,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref>&amp;<sp/>yBar)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a858c31388aac4ea833ee64b47ffaaf2a" kindref="member">getYBorder</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref>&amp;<sp/>xBar,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref>&amp;<sp/>yBar)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1af331d941a384e12eab5834e5bb65293d" kindref="member">invalidateScrollbars</ref>();</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a8c6387d37e571c102564a6de06b2fd0b" kindref="member">doScroll</ref>(int16_t<sp/>deltaX,<sp/>int16_t<sp/>deltaY);</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_gesture_event_1a2a0c37051efa1205aa5aade68616c947" kindref="member">GestureEvent::GestureType</ref><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1ac71e8eb32bf04ffe95438827a46adb21" kindref="member">accelDirection</ref>;<sp/></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_box" kindref="compound">Box</ref><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1ae6b40638a11183cab7ac7202dc58fa24" kindref="member">xSlider</ref>;<sp/></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_box" kindref="compound">Box</ref><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a1be3e054964846f1b28c006e0f6f867d" kindref="member">ySlider</ref>;<sp/></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref>*<sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a7c951aa975a3ee1e0c0897af47d1bf14" kindref="member">pressedDrawable</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref>*<sp/><ref refid="classtouchgfx_1_1_scrollable_container_1aab56e78b6c14659138d17662556c292e" kindref="member">lastDraggableChild</ref>;<sp/></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a3251228ad7e04cd223a811900ffddc73" kindref="member">scrolledXDistance</ref>;<sp/></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a4450673c64497c030349a495169d96cd" kindref="member">scrolledYDistance</ref>;<sp/></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a000c43acc99664950e9e5571012d56bb" kindref="member">scrollThreshold</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a068a907e0988fcaef395f4cf0ec25b85" kindref="member">pressedX</ref>;<sp/></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a58c7694b58b6c4202d45eaa309e7c5bc" kindref="member">pressedY</ref>;<sp/></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1ab1351de5234bac2d378240bdfac6e90c" kindref="member">isPressed</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a516aa9225f4c4c2bfceb2e683edb1fd0" kindref="member">isScrolling</ref>;<sp/></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a2e32d80c1a53f939c8b6ec3e5688135e" kindref="member">scrollableX</ref>;<sp/></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a4f7ef8de788763d8db91d7dc4faf0c45" kindref="member">scrollableY</ref>;<sp/></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1ad689eefe031af2de50ad80d91800fc55" kindref="member">scrollbarsVisible</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a97321fd1e935cd40d76cd3deb66e746a" kindref="member">scrollbarsPermanentlyVisible</ref>;<sp/></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="classtouchgfx_1_1_scrollable_container_1ab1d9a41d5c6b7cd94bd18cefa272e0e4" kindref="member">scrollDuration</ref>;<sp/></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a85ade30258e6ce05253944d6efb45801" kindref="member">beginningValue</ref>;<sp/></highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a77c5ebdb51f6d0560825b66d265647a1" kindref="member">targetValue</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a5b5a3753395a29a4904a93151aa4a24f" kindref="member">animationCounter</ref>;<sp/></highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a547d731792813ec95c93ab4e30694bd7" kindref="member">animate</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a230c2646bb296cf0008568e35fb7c0e6" kindref="member">fingerAdjustmentX</ref>;<sp/></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a808e130fc4fd0d84d02a3d38d78f8139" kindref="member">fingerAdjustmentY</ref>;<sp/></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_scrollable_container_1a2f1d1cc50db77f687164e49a1d53c045" kindref="member">hasIssuedCancelEvent</ref>;<sp/></highlight></codeline>
+<codeline lineno="335"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight></codeline>
+<codeline lineno="337"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>touchgfx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="338"><highlight class="normal"></highlight></codeline>
+<codeline lineno="339"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>SCROLLABLECONTAINER_HPP</highlight></codeline>
+    </programlisting>
+    <location file="touchgfx/containers/ScrollableContainer.hpp"/>
+  </compounddef>
+</doxygen>

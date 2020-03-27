@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_flash_data_reader" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>touchgfx::FlashDataReader</compoundname>
+    <includes local="no">FlashDataReader.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_flash_data_reader_1a5287a73ada8ccc5bca31548baba2c999" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool addressIsAddressable</definition>
+        <argsstring>(const void *address)=0</argsstring>
+        <name>addressIsAddressable</name>
+        <param>
+          <type>const void *</type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+<para>Compute if an address is directly addressable by the MCU. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Compute if an address is directly addressable by the MCU. The data is addressable it should be read direct through a pointer and not through this interface.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The address in the flash.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the address is addressable by the MCU. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/FlashDataReader.hpp" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_flash_data_reader_1a1cade7078935082c74a7282c4f2bd7c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void copyData</definition>
+        <argsstring>(const void *src, void *dst, uint32_t bytes)=0</argsstring>
+        <name>copyData</name>
+        <param>
+          <type>const void *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>bytes</declname>
+        </param>
+        <briefdescription>
+<para>Copy data from flash to a buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This must be a synchrony method that does not return until the copy is done.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Address of source data in the flash. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Address of destination buffer in RAM. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of bytes to copy. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/FlashDataReader.hpp" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_flash_data_reader_1aaf2cdf788d658cfb589bf7eb3a14fe46" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void startFlashLineRead</definition>
+        <argsstring>(const void *src, uint32_t bytes)=0</argsstring>
+        <name>startFlashLineRead</name>
+        <param>
+          <type>const void *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>bytes</declname>
+        </param>
+        <briefdescription>
+<para>Initiate a read operation from flash to a buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This can be an asynchrony operation that is still running after this function returns. Buffers must be handled by the subclass. LCD16bbbSerialFlash will at most copy 4 bytes times the width of the display.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Address of source data in the flash. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of bytes to copy. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/FlashDataReader.hpp" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_flash_data_reader_1aa52aafd5b648d8918fd75da254ce495e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>const uint8_t *</type>
+        <definition>virtual const uint8_t* waitFlashReadComplete</definition>
+        <argsstring>()=0</argsstring>
+        <name>waitFlashReadComplete</name>
+        <briefdescription>
+<para>Waits until the previous startFlashLineRead operation is complete. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Waits until the previous startFlashLineRead operation is complete. If the startFlashLineRead method is asynchrony, this method must wait until the previous operation has completed.</para>
+<para><simplesect kind="return"><para>The address of a buffer containing the read data. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/FlashDataReader.hpp" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_flash_data_reader_1ab161d20a5e229e50fd4d83580a5556c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~FlashDataReader</definition>
+        <argsstring>()</argsstring>
+        <name>~FlashDataReader</name>
+        <briefdescription>
+<para>Finalizes an instance of the <ref refid="classtouchgfx_1_1_flash_data_reader" kindref="compound">FlashDataReader</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/FlashDataReader.hpp" line="21" column="1" bodyfile="touchgfx/hal/FlashDataReader.hpp" bodystart="21" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class is an abstract interface for a class reading data from a flash. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The flash can be any type, but is mostly used for flashes that are not memory mapped. Applications must implement access to the flash through this interface. </para>
+    </detaileddescription>
+    <location file="touchgfx/hal/FlashDataReader.hpp" line="18" column="1" bodyfile="touchgfx/hal/FlashDataReader.hpp" bodystart="17" bodyend="68"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_flash_data_reader_1a5287a73ada8ccc5bca31548baba2c999" prot="public" virt="pure-virtual"><scope>touchgfx::FlashDataReader</scope><name>addressIsAddressable</name></member>
+      <member refid="classtouchgfx_1_1_flash_data_reader_1a1cade7078935082c74a7282c4f2bd7c8" prot="public" virt="pure-virtual"><scope>touchgfx::FlashDataReader</scope><name>copyData</name></member>
+      <member refid="classtouchgfx_1_1_flash_data_reader_1aaf2cdf788d658cfb589bf7eb3a14fe46" prot="public" virt="pure-virtual"><scope>touchgfx::FlashDataReader</scope><name>startFlashLineRead</name></member>
+      <member refid="classtouchgfx_1_1_flash_data_reader_1aa52aafd5b648d8918fd75da254ce495e" prot="public" virt="pure-virtual"><scope>touchgfx::FlashDataReader</scope><name>waitFlashReadComplete</name></member>
+      <member refid="classtouchgfx_1_1_flash_data_reader_1ab161d20a5e229e50fd4d83580a5556c4" prot="public" virt="virtual"><scope>touchgfx::FlashDataReader</scope><name>~FlashDataReader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

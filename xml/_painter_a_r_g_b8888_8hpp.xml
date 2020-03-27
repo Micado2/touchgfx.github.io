@@ -1,0 +1,360 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="_painter_a_r_g_b8888_8hpp" kind="file" language="C++">
+    <compoundname>PainterARGB8888.hpp</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes refid="_types_8hpp" local="no">touchgfx/hal/Types.hpp</includes>
+    <includes refid="_abstract_painter_a_r_g_b8888_8hpp" local="no">touchgfx/widgets/canvas/AbstractPainterARGB8888.hpp</includes>
+    <incdepgraph>
+      <node id="7309">
+        <label>stdarg.h</label>
+      </node>
+      <node id="7298">
+        <label>touchgfx/Bitmap.hpp</label>
+        <link refid="_bitmap_8hpp"/>
+        <childnode refid="7299" relation="include">
+        </childnode>
+        <childnode refid="7293" relation="include">
+        </childnode>
+      </node>
+      <node id="7305">
+        <label>touchgfx/events/DragEvent.hpp</label>
+        <link refid="_drag_event_8hpp"/>
+        <childnode refid="7304" relation="include">
+        </childnode>
+        <childnode refid="7293" relation="include">
+        </childnode>
+      </node>
+      <node id="7315">
+        <label>windows.h</label>
+      </node>
+      <node id="7294">
+        <label>assert.h</label>
+      </node>
+      <node id="7312">
+        <label>touchgfx/TextProvider.hpp</label>
+        <link refid="_text_provider_8hpp"/>
+        <childnode refid="7309" relation="include">
+        </childnode>
+        <childnode refid="7310" relation="include">
+        </childnode>
+        <childnode refid="7311" relation="include">
+        </childnode>
+      </node>
+      <node id="7314">
+        <label>touchgfx/Utils.hpp</label>
+        <link refid="_utils_8hpp"/>
+        <childnode refid="7309" relation="include">
+        </childnode>
+        <childnode refid="7315" relation="include">
+        </childnode>
+        <childnode refid="7316" relation="include">
+        </childnode>
+        <childnode refid="7298" relation="include">
+        </childnode>
+        <childnode refid="7293" relation="include">
+        </childnode>
+      </node>
+      <node id="7295">
+        <label>touchgfx/hal/Config.hpp</label>
+        <link refid="_config_8hpp"/>
+      </node>
+      <node id="7296">
+        <label>touchgfx/widgets/canvas/AbstractPainterARGB8888.hpp</label>
+        <link refid="_abstract_painter_a_r_g_b8888_8hpp"/>
+        <childnode refid="7294" relation="include">
+        </childnode>
+        <childnode refid="7297" relation="include">
+        </childnode>
+        <childnode refid="7308" relation="include">
+        </childnode>
+        <childnode refid="7326" relation="include">
+        </childnode>
+      </node>
+      <node id="7322">
+        <label>touchgfx/hal/Gestures.hpp</label>
+        <link refid="_gestures_8hpp"/>
+        <childnode refid="7302" relation="include">
+        </childnode>
+        <childnode refid="7303" relation="include">
+        </childnode>
+        <childnode refid="7305" relation="include">
+        </childnode>
+        <childnode refid="7306" relation="include">
+        </childnode>
+        <childnode refid="7293" relation="include">
+        </childnode>
+      </node>
+      <node id="7292">
+        <label>stdint.h</label>
+      </node>
+      <node id="7291">
+        <label>touchgfx/widgets/canvas/PainterARGB8888.hpp</label>
+        <link refid="_painter_a_r_g_b8888_8hpp"/>
+        <childnode refid="7292" relation="include">
+        </childnode>
+        <childnode refid="7293" relation="include">
+        </childnode>
+        <childnode refid="7296" relation="include">
+        </childnode>
+      </node>
+      <node id="7302">
+        <label>touchgfx/UIEventListener.hpp</label>
+        <link refid="_u_i_event_listener_8hpp"/>
+        <childnode refid="7293" relation="include">
+        </childnode>
+      </node>
+      <node id="7321">
+        <label>touchgfx/hal/FrameBufferAllocator.hpp</label>
+        <link refid="_frame_buffer_allocator_8hpp"/>
+        <childnode refid="7314" relation="include">
+        </childnode>
+      </node>
+      <node id="7299">
+        <label>cassert</label>
+      </node>
+      <node id="7325">
+        <label>platform/driver/touch/TouchController.hpp</label>
+        <link refid="_touch_controller_8hpp"/>
+        <childnode refid="7293" relation="include">
+        </childnode>
+      </node>
+      <node id="7313">
+        <label>touchgfx/TextureMapTypes.hpp</label>
+        <link refid="_texture_map_types_8hpp"/>
+        <childnode refid="7293" relation="include">
+        </childnode>
+      </node>
+      <node id="7306">
+        <label>touchgfx/events/GestureEvent.hpp</label>
+        <link refid="_gesture_event_8hpp"/>
+        <childnode refid="7304" relation="include">
+        </childnode>
+        <childnode refid="7293" relation="include">
+        </childnode>
+      </node>
+      <node id="7324">
+        <label>platform/driver/button/ButtonController.hpp</label>
+        <link refid="_button_controller_8hpp"/>
+        <childnode refid="7293" relation="include">
+        </childnode>
+      </node>
+      <node id="7310">
+        <label>touchgfx/Font.hpp</label>
+        <link refid="_font_8hpp"/>
+        <childnode refid="7311" relation="include">
+        </childnode>
+        <childnode refid="7293" relation="include">
+        </childnode>
+      </node>
+      <node id="7293">
+        <label>touchgfx/hal/Types.hpp</label>
+        <link refid="_types_8hpp"/>
+        <childnode refid="7294" relation="include">
+        </childnode>
+        <childnode refid="7292" relation="include">
+        </childnode>
+        <childnode refid="7295" relation="include">
+        </childnode>
+      </node>
+      <node id="7300">
+        <label>touchgfx/Drawable.hpp</label>
+        <link refid="_drawable_8hpp"/>
+        <childnode refid="7301" relation="include">
+        </childnode>
+        <childnode refid="7317" relation="include">
+        </childnode>
+        <childnode refid="7314" relation="include">
+        </childnode>
+        <childnode refid="7303" relation="include">
+        </childnode>
+        <childnode refid="7305" relation="include">
+        </childnode>
+        <childnode refid="7306" relation="include">
+        </childnode>
+        <childnode refid="7293" relation="include">
+        </childnode>
+      </node>
+      <node id="7318">
+        <label>touchgfx/hal/BlitOp.hpp</label>
+        <link refid="_blit_op_8hpp"/>
+        <childnode refid="7293" relation="include">
+        </childnode>
+      </node>
+      <node id="7320">
+        <label>touchgfx/hal/Atomic.hpp</label>
+        <link refid="_atomic_8hpp"/>
+      </node>
+      <node id="7307">
+        <label>touchgfx/transitions/Transition.hpp</label>
+        <link refid="_transition_8hpp"/>
+        <childnode refid="7293" relation="include">
+        </childnode>
+        <childnode refid="7308" relation="include">
+        </childnode>
+      </node>
+      <node id="7303">
+        <label>touchgfx/events/ClickEvent.hpp</label>
+        <link refid="_click_event_8hpp"/>
+        <childnode refid="7304" relation="include">
+        </childnode>
+        <childnode refid="7293" relation="include">
+        </childnode>
+      </node>
+      <node id="7301">
+        <label>touchgfx/Application.hpp</label>
+        <link refid="_application_8hpp"/>
+        <childnode refid="7302" relation="include">
+        </childnode>
+        <childnode refid="7303" relation="include">
+        </childnode>
+        <childnode refid="7305" relation="include">
+        </childnode>
+        <childnode refid="7306" relation="include">
+        </childnode>
+        <childnode refid="7293" relation="include">
+        </childnode>
+        <childnode refid="7307" relation="include">
+        </childnode>
+      </node>
+      <node id="7317">
+        <label>touchgfx/Callback.hpp</label>
+        <link refid="_callback_8hpp"/>
+      </node>
+      <node id="7311">
+        <label>touchgfx/Unicode.hpp</label>
+        <link refid="_unicode_8hpp"/>
+        <childnode refid="7309" relation="include">
+        </childnode>
+        <childnode refid="7293" relation="include">
+        </childnode>
+      </node>
+      <node id="7326">
+        <label>touchgfx/widgets/canvas/AbstractPainter.hpp</label>
+        <link refid="_abstract_painter_8hpp"/>
+        <childnode refid="7292" relation="include">
+        </childnode>
+        <childnode refid="7298" relation="include">
+        </childnode>
+        <childnode refid="7297" relation="include">
+        </childnode>
+      </node>
+      <node id="7304">
+        <label>touchgfx/Event.hpp</label>
+        <link refid="_event_8hpp"/>
+      </node>
+      <node id="7308">
+        <label>touchgfx/lcd/LCD.hpp</label>
+        <link refid="_l_c_d_8hpp"/>
+        <childnode refid="7309" relation="include">
+        </childnode>
+        <childnode refid="7298" relation="include">
+        </childnode>
+        <childnode refid="7310" relation="include">
+        </childnode>
+        <childnode refid="7312" relation="include">
+        </childnode>
+        <childnode refid="7313" relation="include">
+        </childnode>
+        <childnode refid="7311" relation="include">
+        </childnode>
+        <childnode refid="7314" relation="include">
+        </childnode>
+        <childnode refid="7293" relation="include">
+        </childnode>
+      </node>
+      <node id="7316">
+        <label>stdio.h</label>
+      </node>
+      <node id="7319">
+        <label>touchgfx/hal/DMA.hpp</label>
+        <link refid="_d_m_a_8hpp"/>
+        <childnode refid="7320" relation="include">
+        </childnode>
+        <childnode refid="7318" relation="include">
+        </childnode>
+      </node>
+      <node id="7323">
+        <label>platform/core/MCUInstrumentation.hpp</label>
+        <link refid="_m_c_u_instrumentation_8hpp"/>
+        <childnode refid="7292" relation="include">
+        </childnode>
+      </node>
+      <node id="7297">
+        <label>touchgfx/hal/HAL.hpp</label>
+        <link refid="_h_a_l_8hpp"/>
+        <childnode refid="7298" relation="include">
+        </childnode>
+        <childnode refid="7300" relation="include">
+        </childnode>
+        <childnode refid="7311" relation="include">
+        </childnode>
+        <childnode refid="7318" relation="include">
+        </childnode>
+        <childnode refid="7319" relation="include">
+        </childnode>
+        <childnode refid="7321" relation="include">
+        </childnode>
+        <childnode refid="7322" relation="include">
+        </childnode>
+        <childnode refid="7293" relation="include">
+        </childnode>
+        <childnode refid="7308" relation="include">
+        </childnode>
+        <childnode refid="7323" relation="include">
+        </childnode>
+        <childnode refid="7324" relation="include">
+        </childnode>
+        <childnode refid="7325" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classtouchgfx_1_1_painter_a_r_g_b8888" prot="public">touchgfx::PainterARGB8888</innerclass>
+    <innernamespace refid="namespacetouchgfx">touchgfx</innernamespace>
+    <briefdescription>
+<para>Declares the <ref refid="classtouchgfx_1_1_painter_a_r_g_b8888" kindref="compound">touchgfx::PainterARGB8888</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>PAINTERARGB8888_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PAINTERARGB8888_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_types_8hpp" kindref="compound">touchgfx/hal/Types.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_abstract_painter_a_r_g_b8888_8hpp" kindref="compound">touchgfx/widgets/canvas/AbstractPainterARGB8888.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetouchgfx" kindref="compound">touchgfx</ref></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21" refid="classtouchgfx_1_1_painter_a_r_g_b8888" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtouchgfx_1_1_painter_a_r_g_b8888" kindref="compound">PainterARGB8888</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_abstract_painter_a_r_g_b8888" kindref="compound">AbstractPainterARGB8888</ref></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_painter_a_r_g_b8888_1a7c1bfcaa5e07702ef1910ff14c56f4f6" kindref="member">PainterARGB8888</ref>(<ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref><sp/>color<sp/>=<sp/>0,<sp/>uint8_t<sp/>alpha<sp/>=<sp/>255);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_painter_a_r_g_b8888_1a6fa35251b48a056943566ac2a23ea4cb" kindref="member">setColor</ref>(<ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref><sp/>color,<sp/>uint8_t<sp/>alpha<sp/>=<sp/>255);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref><sp/><ref refid="classtouchgfx_1_1_painter_a_r_g_b8888_1aeac6531763a7b698f2c7e99c2466e384" kindref="member">getColor</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_painter_a_r_g_b8888_1a2e0420f68fa01ef7219a0bc2aa792169" kindref="member">setAlpha</ref>(uint8_t<sp/>alpha);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="classtouchgfx_1_1_painter_a_r_g_b8888_1a302926ead4ee8a161627575d2666a7f2" kindref="member">getAlpha</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_painter_a_r_g_b8888_1a8441245669080e102adac555a07830ea" kindref="member">render</ref>(uint8_t*<sp/>ptr,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>xAdjust,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>count,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>covers);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_painter_a_r_g_b8888_1a4c19bd631f876ccfea12d1b9e5b05778" kindref="member">renderNext</ref>(uint8_t&amp;<sp/>red,<sp/>uint8_t&amp;<sp/>green,<sp/>uint8_t&amp;<sp/>blue,<sp/>uint8_t&amp;<sp/>alpha);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="classtouchgfx_1_1_painter_a_r_g_b8888_1a908f4f9886175e49940c5b3d850fce4c" kindref="member">painterRed</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="classtouchgfx_1_1_painter_a_r_g_b8888_1a91400a029346b790c78d42278db9988c" kindref="member">painterGreen</ref>;<sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="classtouchgfx_1_1_painter_a_r_g_b8888_1adc15692dfe81224a868ccd0db2011a38" kindref="member">painterBlue</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="classtouchgfx_1_1_painter_a_r_g_b8888_1a26cfcaf90523269bc55329b8a599cd8c" kindref="member">painterAlpha</ref>;<sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>touchgfx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>PAINTERARGB8888_HPP</highlight></codeline>
+    </programlisting>
+    <location file="touchgfx/widgets/canvas/PainterARGB8888.hpp"/>
+  </compounddef>
+</doxygen>

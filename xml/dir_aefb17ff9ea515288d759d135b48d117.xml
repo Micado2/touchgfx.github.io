@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="dir_aefb17ff9ea515288d759d135b48d117" kind="dir">
+    <compoundname>touchgfx/containers/progress_indicators</compoundname>
+    <innerfile refid="_abstract_direction_progress_8hpp">AbstractDirectionProgress.hpp</innerfile>
+    <innerfile refid="_abstract_progress_indicator_8hpp">AbstractProgressIndicator.hpp</innerfile>
+    <innerfile refid="_box_progress_8hpp">BoxProgress.hpp</innerfile>
+    <innerfile refid="_circle_progress_8hpp">CircleProgress.hpp</innerfile>
+    <innerfile refid="_image_progress_8hpp">ImageProgress.hpp</innerfile>
+    <innerfile refid="_line_progress_8hpp">LineProgress.hpp</innerfile>
+    <innerfile refid="_text_progress_8hpp">TextProgress.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="touchgfx/containers/progress_indicators/"/>
+  </compounddef>
+</doxygen>

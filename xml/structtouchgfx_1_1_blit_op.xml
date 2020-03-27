@@ -1,0 +1,219 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structtouchgfx_1_1_blit_op" kind="struct" language="C++" prot="public">
+    <compoundname>touchgfx::BlitOp</compoundname>
+    <includes local="no">BlitOp.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtouchgfx_1_1_blit_op_1acf5bb76caa419c0fa231dbd66c881084" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t alpha</definition>
+        <argsstring></argsstring>
+        <name>alpha</name>
+        <briefdescription>
+<para>The alpha to use. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/BlitOp.hpp" line="42" column="1" bodyfile="touchgfx/hal/BlitOp.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_blit_op_1a4f5b95d48bc5f29034d5794ef85a5072" prot="public" static="no" mutable="no">
+        <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+        <definition>colortype color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <briefdescription>
+<para><ref refid="classtouchgfx_1_1_color" kindref="compound">Color</ref> to fill. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/BlitOp.hpp" line="41" column="1" bodyfile="touchgfx/hal/BlitOp.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_blit_op_1ae708fbf24a27133b82aaecc6cce4ad1a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t dstFormat</definition>
+        <argsstring></argsstring>
+        <name>dstFormat</name>
+        <briefdescription>
+<para>The destination format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_bitmap_1a23d1a7c7cf0f6da45ca389904e644d55" kindref="member">Bitmap::BitmapFormat</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/BlitOp.hpp" line="44" column="1" bodyfile="touchgfx/hal/BlitOp.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_blit_op_1a1237eda5591f5948d31073fc18ede5fb" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t dstLoopStride</definition>
+        <argsstring></argsstring>
+        <name>dstLoopStride</name>
+        <briefdescription>
+<para>The number of bytes to stride the destination after every loop. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/BlitOp.hpp" line="40" column="1" bodyfile="touchgfx/hal/BlitOp.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_blit_op_1adce4424fb37fc57f2b9831ca30ee2018" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t nLoops</definition>
+        <argsstring></argsstring>
+        <name>nLoops</name>
+        <briefdescription>
+<para>The number of lines. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/BlitOp.hpp" line="38" column="1" bodyfile="touchgfx/hal/BlitOp.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_blit_op_1a036506c5e39a2aa4a326a8f3bda3826f" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t nSteps</definition>
+        <argsstring></argsstring>
+        <name>nSteps</name>
+        <briefdescription>
+<para>The number of pixels in a line. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/BlitOp.hpp" line="37" column="1" bodyfile="touchgfx/hal/BlitOp.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_blit_op_1a2aadabc5648d67e2327e5503c3d3dce5" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t operation</definition>
+        <argsstring></argsstring>
+        <name>operation</name>
+        <briefdescription>
+<para>The operation to perform. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="namespacetouchgfx_1a5c99ff39743a4feaa2188efdc075ae8b" kindref="member">BlitOperations</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/BlitOp.hpp" line="33" column="1" bodyfile="touchgfx/hal/BlitOp.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_blit_op_1afca2cc5e5eaee4af802ecd325fda7cae" prot="public" static="no" mutable="no">
+        <type>const uint8_t *</type>
+        <definition>const uint8_t* pClut</definition>
+        <argsstring></argsstring>
+        <name>pClut</name>
+        <briefdescription>
+<para>Pointer to the source CLUT entires. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/BlitOp.hpp" line="35" column="1" bodyfile="touchgfx/hal/BlitOp.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_blit_op_1a354135bf030e087e0350668ce1293931" prot="public" static="no" mutable="no">
+        <type>uint16_t *</type>
+        <definition>uint16_t* pDst</definition>
+        <argsstring></argsstring>
+        <name>pDst</name>
+        <briefdescription>
+<para>Pointer to the destination. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/BlitOp.hpp" line="36" column="1" bodyfile="touchgfx/hal/BlitOp.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_blit_op_1a3d85b33cc8f52394ad1855b4b170bb76" prot="public" static="no" mutable="no">
+        <type>const uint16_t *</type>
+        <definition>const uint16_t* pSrc</definition>
+        <argsstring></argsstring>
+        <name>pSrc</name>
+        <briefdescription>
+<para>Pointer to the source (pixels or indexes) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/BlitOp.hpp" line="34" column="1" bodyfile="touchgfx/hal/BlitOp.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_blit_op_1a54c3003b0ca67f8a8da6e8e87b3783ab" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t srcFormat</definition>
+        <argsstring></argsstring>
+        <name>srcFormat</name>
+        <briefdescription>
+<para>The source format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_bitmap_1a23d1a7c7cf0f6da45ca389904e644d55" kindref="member">Bitmap::BitmapFormat</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/BlitOp.hpp" line="43" column="1" bodyfile="touchgfx/hal/BlitOp.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_blit_op_1a4d0a805873b450a3e937ce7890cbdfb6" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t srcLoopStride</definition>
+        <argsstring></argsstring>
+        <name>srcLoopStride</name>
+        <briefdescription>
+<para>The number of bytes to stride the source after every loop. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/BlitOp.hpp" line="39" column="1" bodyfile="touchgfx/hal/BlitOp.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="structtouchgfx_1_1_blit_op" kindref="compound">BlitOp</ref> instances carry the required information for performing operations on the <ref refid="classtouchgfx_1_1_l_c_d" kindref="compound">LCD</ref> (framebuffer) using DMA. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="248">
+        <label>BlitOp</label>
+        <link refid="structtouchgfx_1_1_blit_op"/>
+        <childnode refid="249" relation="usage">
+          <edgelabel>color</edgelabel>
+        </childnode>
+      </node>
+      <node id="249">
+        <label>colortype</label>
+        <link refid="structtouchgfx_1_1colortype"/>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/hal/BlitOp.hpp" line="32" column="1" bodyfile="touchgfx/hal/BlitOp.hpp" bodystart="31" bodyend="45"/>
+    <listofallmembers>
+      <member refid="structtouchgfx_1_1_blit_op_1acf5bb76caa419c0fa231dbd66c881084" prot="public" virt="non-virtual"><scope>touchgfx::BlitOp</scope><name>alpha</name></member>
+      <member refid="structtouchgfx_1_1_blit_op_1a4f5b95d48bc5f29034d5794ef85a5072" prot="public" virt="non-virtual"><scope>touchgfx::BlitOp</scope><name>color</name></member>
+      <member refid="structtouchgfx_1_1_blit_op_1ae708fbf24a27133b82aaecc6cce4ad1a" prot="public" virt="non-virtual"><scope>touchgfx::BlitOp</scope><name>dstFormat</name></member>
+      <member refid="structtouchgfx_1_1_blit_op_1a1237eda5591f5948d31073fc18ede5fb" prot="public" virt="non-virtual"><scope>touchgfx::BlitOp</scope><name>dstLoopStride</name></member>
+      <member refid="structtouchgfx_1_1_blit_op_1adce4424fb37fc57f2b9831ca30ee2018" prot="public" virt="non-virtual"><scope>touchgfx::BlitOp</scope><name>nLoops</name></member>
+      <member refid="structtouchgfx_1_1_blit_op_1a036506c5e39a2aa4a326a8f3bda3826f" prot="public" virt="non-virtual"><scope>touchgfx::BlitOp</scope><name>nSteps</name></member>
+      <member refid="structtouchgfx_1_1_blit_op_1a2aadabc5648d67e2327e5503c3d3dce5" prot="public" virt="non-virtual"><scope>touchgfx::BlitOp</scope><name>operation</name></member>
+      <member refid="structtouchgfx_1_1_blit_op_1afca2cc5e5eaee4af802ecd325fda7cae" prot="public" virt="non-virtual"><scope>touchgfx::BlitOp</scope><name>pClut</name></member>
+      <member refid="structtouchgfx_1_1_blit_op_1a354135bf030e087e0350668ce1293931" prot="public" virt="non-virtual"><scope>touchgfx::BlitOp</scope><name>pDst</name></member>
+      <member refid="structtouchgfx_1_1_blit_op_1a3d85b33cc8f52394ad1855b4b170bb76" prot="public" virt="non-virtual"><scope>touchgfx::BlitOp</scope><name>pSrc</name></member>
+      <member refid="structtouchgfx_1_1_blit_op_1a54c3003b0ca67f8a8da6e8e87b3783ab" prot="public" virt="non-virtual"><scope>touchgfx::BlitOp</scope><name>srcFormat</name></member>
+      <member refid="structtouchgfx_1_1_blit_op_1a4d0a805873b450a3e937ce7890cbdfb6" prot="public" virt="non-virtual"><scope>touchgfx::BlitOp</scope><name>srcLoopStride</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

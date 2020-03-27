@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="global" kind="page">
+    <compoundname>global</compoundname>
+    <title>Globals</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term>Member <ref refid="namespacetouchgfx_1ac9f45e65d261580744b315b168aa520c" kindref="member">touchgfx::touchgfx_generic_init</ref>  (<ref refid="classtouchgfx_1_1_d_m_a___interface" kindref="compound">DMA_Interface</ref> &amp;dma, <ref refid="classtouchgfx_1_1_l_c_d" kindref="compound">LCD</ref> &amp;display, <ref refid="classtouchgfx_1_1_touch_controller" kindref="compound">TouchController</ref> &amp;tc, int16_t width, int16_t height, uint16_t *bitmapCache, uint32_t bitmapCacheSize, uint32_t numberOfDynamicBitmaps=0)</term></varlistentry>
+<listitem><para><anchor id="global_1_global000001"/> </para>
+</listitem>
+</variablelist>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

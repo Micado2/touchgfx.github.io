@@ -1,0 +1,258 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="_typed_text_8hpp" kind="file" language="C++">
+    <compoundname>TypedText.hpp</compoundname>
+    <includes local="no">cassert</includes>
+    <includes refid="_font_8hpp" local="no">touchgfx/Font.hpp</includes>
+    <includes refid="_texts_8hpp" local="no">touchgfx/Texts.hpp</includes>
+    <includes refid="_types_8hpp" local="no">touchgfx/hal/Types.hpp</includes>
+    <includedby refid="_button_with_label_8hpp" local="no">touchgfx/widgets/ButtonWithLabel.hpp</includedby>
+    <includedby refid="_text_area_8hpp" local="no">touchgfx/widgets/TextArea.hpp</includedby>
+    <incdepgraph>
+      <node id="5648">
+        <label>stdarg.h</label>
+      </node>
+      <node id="5650">
+        <label>assert.h</label>
+      </node>
+      <node id="5652">
+        <label>touchgfx/hal/Config.hpp</label>
+        <link refid="_config_8hpp"/>
+      </node>
+      <node id="5651">
+        <label>stdint.h</label>
+      </node>
+      <node id="5645">
+        <label>cassert</label>
+      </node>
+      <node id="5644">
+        <label>touchgfx/TypedText.hpp</label>
+        <link refid="_typed_text_8hpp"/>
+        <childnode refid="5645" relation="include">
+        </childnode>
+        <childnode refid="5646" relation="include">
+        </childnode>
+        <childnode refid="5653" relation="include">
+        </childnode>
+        <childnode refid="5649" relation="include">
+        </childnode>
+      </node>
+      <node id="5646">
+        <label>touchgfx/Font.hpp</label>
+        <link refid="_font_8hpp"/>
+        <childnode refid="5647" relation="include">
+        </childnode>
+        <childnode refid="5649" relation="include">
+        </childnode>
+      </node>
+      <node id="5649">
+        <label>touchgfx/hal/Types.hpp</label>
+        <link refid="_types_8hpp"/>
+        <childnode refid="5650" relation="include">
+        </childnode>
+        <childnode refid="5651" relation="include">
+        </childnode>
+        <childnode refid="5652" relation="include">
+        </childnode>
+      </node>
+      <node id="5647">
+        <label>touchgfx/Unicode.hpp</label>
+        <link refid="_unicode_8hpp"/>
+        <childnode refid="5648" relation="include">
+        </childnode>
+        <childnode refid="5649" relation="include">
+        </childnode>
+      </node>
+      <node id="5653">
+        <label>touchgfx/Texts.hpp</label>
+        <link refid="_texts_8hpp"/>
+        <childnode refid="5647" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5662">
+        <label>touchgfx/containers/clock/DigitalClock.hpp</label>
+        <link refid="_digital_clock_8hpp"/>
+      </node>
+      <node id="5658">
+        <label>touchgfx/containers/buttons/Buttons.hpp</label>
+        <link refid="containers_2buttons_2_buttons_8hpp"/>
+      </node>
+      <node id="5661">
+        <label>touchgfx/containers/buttons/WildcardTextButtonStyle.hpp</label>
+        <link refid="_wildcard_text_button_style_8hpp"/>
+        <childnode refid="5658" relation="include">
+        </childnode>
+      </node>
+      <node id="5663">
+        <label>touchgfx/containers/progress_indicators/TextProgress.hpp</label>
+        <link refid="_text_progress_8hpp"/>
+      </node>
+      <node id="5654">
+        <label>touchgfx/TypedText.hpp</label>
+        <link refid="_typed_text_8hpp"/>
+        <childnode refid="5655" relation="include">
+        </childnode>
+        <childnode refid="5656" relation="include">
+        </childnode>
+      </node>
+      <node id="5664">
+        <label>touchgfx/widgets/Keyboard.hpp</label>
+        <link refid="_keyboard_8hpp"/>
+      </node>
+      <node id="5659">
+        <label>touchgfx/widgets/TextAreaWithWildcard.hpp</label>
+        <link refid="_text_area_with_wildcard_8hpp"/>
+        <childnode refid="5660" relation="include">
+        </childnode>
+        <childnode refid="5661" relation="include">
+        </childnode>
+        <childnode refid="5662" relation="include">
+        </childnode>
+        <childnode refid="5663" relation="include">
+        </childnode>
+        <childnode refid="5664" relation="include">
+        </childnode>
+      </node>
+      <node id="5655">
+        <label>touchgfx/widgets/ButtonWithLabel.hpp</label>
+        <link refid="_button_with_label_8hpp"/>
+      </node>
+      <node id="5656">
+        <label>touchgfx/widgets/TextArea.hpp</label>
+        <link refid="_text_area_8hpp"/>
+        <childnode refid="5657" relation="include">
+        </childnode>
+        <childnode refid="5659" relation="include">
+        </childnode>
+      </node>
+      <node id="5660">
+        <label>touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp</label>
+        <link refid="_two_wildcard_text_button_style_8hpp"/>
+        <childnode refid="5658" relation="include">
+        </childnode>
+      </node>
+      <node id="5657">
+        <label>touchgfx/containers/buttons/TextButtonStyle.hpp</label>
+        <link refid="_text_button_style_8hpp"/>
+        <childnode refid="5658" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classtouchgfx_1_1_typed_text" prot="public">touchgfx::TypedText</innerclass>
+    <innerclass refid="structtouchgfx_1_1_typed_text_1_1_typed_text_data" prot="public">touchgfx::TypedText::TypedTextData</innerclass>
+    <innernamespace refid="namespacetouchgfx">touchgfx</innernamespace>
+    <briefdescription>
+<para>Declares the <ref refid="classtouchgfx_1_1_typed_text" kindref="compound">touchgfx::TypedText</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>TYPEDTEXT_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TYPEDTEXT_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cassert&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_font_8hpp" kindref="compound">touchgfx/Font.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_texts_8hpp" kindref="compound">touchgfx/Texts.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_types_8hpp" kindref="compound">touchgfx/hal/Types.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetouchgfx" kindref="compound">touchgfx</ref></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacetouchgfx_1a3fd2f86199cf8f66f782fbf71dd2412d" kindref="member">TypedTextId</ref><sp/><ref refid="namespacetouchgfx_1afacec4ce50e46612f64f4d0906e95aca" kindref="member">TYPED_TEXT_INVALID</ref><sp/>=<sp/>0xFFFFU;<sp/></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__ARMCC_VERSION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Keil<sp/>compiler<sp/>issues<sp/>irrelevant<sp/>warning<sp/>relating<sp/>to<sp/>missing<sp/>ctor<sp/>initialization<sp/>for<sp/>TypedTextData.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>diag_suppress<sp/>368</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="classtouchgfx_1_1_typed_text" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="35" refid="structtouchgfx_1_1_typed_text_1_1_typed_text_data" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtouchgfx_1_1_typed_text_1_1_typed_text_data" kindref="compound">TypedTextData</ref></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="structtouchgfx_1_1_typed_text_1_1_typed_text_data_1a6d725b0c7beeb1a70a0a3136cfdd37cb" kindref="member">fontIdx</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacetouchgfx_1ae1ec6d58a3c593e4801f352243506628" kindref="member">Alignment</ref><sp/><ref refid="structtouchgfx_1_1_typed_text_1_1_typed_text_data_1aa3745703e8cd414a27b8410f2ae69b5c" kindref="member">alignment</ref><sp/>:<sp/>2;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacetouchgfx_1abe2c7387a9ed6f7c793179053f152743" kindref="member">TextDirection</ref><sp/><ref refid="structtouchgfx_1_1_typed_text_1_1_typed_text_data_1a32fadd8cb3adf39b135bb0d47d51d497" kindref="member">direction</ref><sp/>:<sp/>2;<sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_typed_text_1a12e83f9b3994cfa4e329f23413c61cbd" kindref="member">TypedText</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacetouchgfx_1a3fd2f86199cf8f66f782fbf71dd2412d" kindref="member">TypedTextId</ref><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/><ref refid="namespacetouchgfx_1afacec4ce50e46612f64f4d0906e95aca" kindref="member">TYPED_TEXT_INVALID</ref>)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>typedTextId(id)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacetouchgfx_1a3fd2f86199cf8f66f782fbf71dd2412d" kindref="member">TypedTextId</ref><sp/><ref refid="classtouchgfx_1_1_typed_text_1a9bcef23875edd64a2a5bf92d60bf7dde" kindref="member">getId</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="58"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>typedTextId;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_typed_text_1ad82dbf18c541c73a3b6d2b7d602f8b59" kindref="member">hasValidId</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="68"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>typedTextId<sp/>!=<sp/><ref refid="namespacetouchgfx_1afacec4ce50e46612f64f4d0906e95aca" kindref="member">TYPED_TEXT_INVALID</ref>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref>*<sp/><ref refid="classtouchgfx_1_1_typed_text_1a21720d7ddc86f34aa5639fcd170f0571" kindref="member">getText</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="78"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertValid();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>texts-&gt;<ref refid="classtouchgfx_1_1_texts_1a0570100e0656cdd41902bb6062b1c811" kindref="member">getText</ref>(typedTextId);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Font*<sp/><ref refid="classtouchgfx_1_1_typed_text_1a25907ed052593bfd067c8c7fd2e28101" kindref="member">getFont</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="89"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertValid();</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>fonts[typedTexts[typedTextId].<ref refid="structtouchgfx_1_1_typed_text_1_1_typed_text_data_1a6d725b0c7beeb1a70a0a3136cfdd37cb" kindref="member">fontIdx</ref>];</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacetouchgfx_1aca843a83bfa2b15fa1c762d27a87d294" kindref="member">FontId</ref><sp/><ref refid="classtouchgfx_1_1_typed_text_1abf765a8055e036ea21a8bc58b349f480" kindref="member">getFontId</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="100"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertValid();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>typedTexts[typedTextId].<ref refid="structtouchgfx_1_1_typed_text_1_1_typed_text_data_1a6d725b0c7beeb1a70a0a3136cfdd37cb" kindref="member">fontIdx</ref>;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacetouchgfx_1ae1ec6d58a3c593e4801f352243506628" kindref="member">Alignment</ref><sp/><ref refid="classtouchgfx_1_1_typed_text_1a512d7ac58ed8923c698be0d050452692" kindref="member">getAlignment</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="111"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertValid();</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>typedTexts[typedTextId].<ref refid="structtouchgfx_1_1_typed_text_1_1_typed_text_data_1aa3745703e8cd414a27b8410f2ae69b5c" kindref="member">alignment</ref>;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacetouchgfx_1abe2c7387a9ed6f7c793179053f152743" kindref="member">TextDirection</ref><sp/><ref refid="classtouchgfx_1_1_typed_text_1a8fd5b7aa1b2152fd7a910e890dfdd492" kindref="member">getTextDirection</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="122"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertValid();</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>typedTexts[typedTextId].<ref refid="structtouchgfx_1_1_typed_text_1_1_typed_text_data_1a32fadd8cb3adf39b135bb0d47d51d497" kindref="member">direction</ref>;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_typed_text_1a444668920641ec0730a3fde0e69dd7e0" kindref="member">registerTypedTextDatabase</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TypedTextData*<sp/>data,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Font*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/>f,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/>n)</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>typedTexts<sp/>=<sp/>data;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fonts<sp/>=<sp/>f;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>numberOfTypedTexts<sp/>=<sp/>n;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_typed_text_1aab0cd47f3779192fce2add3d449b3660" kindref="member">registerTexts</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Texts*<sp/>t)</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>texts<sp/>=<sp/>t;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>assertValid()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="156"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(typedTexts<sp/>!=<sp/>0<sp/>&amp;&amp;<sp/></highlight><highlight class="stringliteral">&quot;TypedText<sp/>database<sp/>has<sp/>not<sp/>been<sp/>initialized.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(typedTextId<sp/>&lt;<sp/>numberOfTypedTexts<sp/>&amp;&amp;<sp/></highlight><highlight class="stringliteral">&quot;typedTextId<sp/>larger<sp/>than<sp/>numberOfTypedTexts.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacetouchgfx_1a3fd2f86199cf8f66f782fbf71dd2412d" kindref="member">TypedTextId</ref><sp/>typedTextId;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TypedTextData*<sp/>typedTexts;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Texts*<sp/>texts;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Font*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/>fonts;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint16_t<sp/>numberOfTypedTexts;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>touchgfx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>TYPEDTEXT_HPP</highlight></codeline>
+    </programlisting>
+    <location file="touchgfx/TypedText.hpp"/>
+  </compounddef>
+</doxygen>

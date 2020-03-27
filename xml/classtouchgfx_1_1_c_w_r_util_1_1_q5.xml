@@ -1,0 +1,408 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_c_w_r_util_1_1_q5" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::CWRUtil::Q5</compoundname>
+    <includes local="no">CWRUtil.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_c_w_r_util_1_1_q5_1ace636130c01f47a340470e35a7e92d65" prot="private" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t v</definition>
+        <argsstring></argsstring>
+        <name>v</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/CWRUtil.hpp" line="204" column="1" bodyfile="touchgfx/widgets/canvas/CWRUtil.hpp" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_c_w_r_util_1_1_q5_1a2d361e0ac20dbc339d3f5b283f52d839" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q10" kindref="compound">Q10</ref></type>
+        <definition>Q10 operator *</definition>
+        <argsstring>(const Q5 &amp;q5) const</argsstring>
+        <name>operator *</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">Q5</ref> &amp;</type>
+          <declname>q5</declname>
+        </param>
+        <briefdescription>
+<para>Multiplication operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The result is a <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q10" kindref="compound">Q10</ref>, not a <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">Q5</ref>, for increased precision.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q5</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">Q5</ref> to multiply this with.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The result of the operation.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q10" kindref="compound">Q10</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/CWRUtil.hpp" line="127" column="1" bodyfile="touchgfx/widgets/canvas/CWRUtil.hpp" bodystart="127" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_c_w_r_util_1_1_q5_1ad5b47d6365f3648ca69b4a0e3a291b4f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">Q5</ref></type>
+        <definition>Q5 operator *</definition>
+        <argsstring>(const Q15 &amp;q15) const</argsstring>
+        <name>operator *</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q15" kindref="compound">Q15</ref> &amp;</type>
+          <declname>q15</declname>
+        </param>
+        <briefdescription>
+<para>Multiplication operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Often used in relation with sine and cosine calculation which are pre-calculated as <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q15" kindref="compound">Q15</ref>. As the result is needed as a <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">Q5</ref>, this operator multiplies with the given <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q15" kindref="compound">Q15</ref> and converts the result to a <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">Q5</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q15</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q15" kindref="compound">Q15</ref> to multiply this with.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The result of the operation.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q15" kindref="compound">Q15</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/CWRUtil.hpp" line="143" column="1" bodyfile="touchgfx/widgets/canvas/CWRUtil.hpp" bodystart="143" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_c_w_r_util_1_1_q5_1a3b19834d604347fb51e21ea91ffa8e9f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">Q5</ref></type>
+        <definition>Q5 operator *</definition>
+        <argsstring>(const int i) const</argsstring>
+        <name>operator *</name>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Multiplication operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The integer to multiply this with.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The result of the operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/CWRUtil.hpp" line="156" column="1" bodyfile="touchgfx/widgets/canvas/CWRUtil.hpp" bodystart="156" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_c_w_r_util_1_1_q5_1a48d27bd92e68c69527589ea65a9af69f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>operator int</definition>
+        <argsstring>() const</argsstring>
+        <name>operator int</name>
+        <briefdescription>
+<para>Gets the <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">Q5</ref> as an integer without conversion. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The unconverted <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">Q5</ref> value. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/CWRUtil.hpp" line="79" column="1" bodyfile="touchgfx/widgets/canvas/CWRUtil.hpp" bodystart="79" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_c_w_r_util_1_1_q5_1abd88ff31e687213f4a53ce792f1a8b18" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">Q5</ref></type>
+        <definition>Q5 operator+</definition>
+        <argsstring>(const Q5 &amp;q5) const</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">Q5</ref> &amp;</type>
+          <declname>q5</declname>
+        </param>
+        <briefdescription>
+<para>Addition operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q5</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">Q5</ref> to add to this.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The result of the operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/CWRUtil.hpp" line="101" column="1" bodyfile="touchgfx/widgets/canvas/CWRUtil.hpp" bodystart="101" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_c_w_r_util_1_1_q5_1aeaef0a36062beb5869edb43e1f14bba9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">Q5</ref></type>
+        <definition>Q5 operator-</definition>
+        <argsstring>() const</argsstring>
+        <name>operator-</name>
+        <briefdescription>
+<para>Negation operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The negative value of this. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/CWRUtil.hpp" line="89" column="1" bodyfile="touchgfx/widgets/canvas/CWRUtil.hpp" bodystart="89" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_c_w_r_util_1_1_q5_1aef2bb7fdb6d3444f4446ef9a80af3863" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">Q5</ref></type>
+        <definition>Q5 operator-</definition>
+        <argsstring>(const Q5 &amp;q5) const</argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">Q5</ref> &amp;</type>
+          <declname>q5</declname>
+        </param>
+        <briefdescription>
+<para>Subtraction operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q5</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">Q5</ref> to subtract from this.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The result of the operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/CWRUtil.hpp" line="113" column="1" bodyfile="touchgfx/widgets/canvas/CWRUtil.hpp" bodystart="113" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_c_w_r_util_1_1_q5_1ae79ef8de35cde86d9e96f13cba4a4f35" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">Q5</ref></type>
+        <definition>Q5 operator/</definition>
+        <argsstring>(const int i) const</argsstring>
+        <name>operator/</name>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Division operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The integer to divide this by.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The result of the operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/CWRUtil.hpp" line="168" column="1" bodyfile="touchgfx/widgets/canvas/CWRUtil.hpp" bodystart="168" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_c_w_r_util_1_1_q5_1a1d2c9fbdb0b380fb63260b8d2fcf73db" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">Q5</ref></type>
+        <definition>Q5 operator/</definition>
+        <argsstring>(const Q5 q5) const</argsstring>
+        <name>operator/</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">Q5</ref></type>
+          <declname>q5</declname>
+        </param>
+        <briefdescription>
+<para>Division operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Internally this <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">Q5</ref> is converted to <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q10" kindref="compound">Q10</ref> before the division to increased precision.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q5</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">Q5</ref> to divide this by.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The result of the operation.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q10" kindref="compound">Q10</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/CWRUtil.hpp" line="183" column="1" bodyfile="touchgfx/widgets/canvas/CWRUtil.hpp" bodystart="183" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_c_w_r_util_1_1_q5_1a3ed86dec9b68e6383f5f5f9766a55c1b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Q5</definition>
+        <argsstring>()</argsstring>
+        <name>Q5</name>
+        <briefdescription>
+<para>Initializes a new instance of the <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">Q5</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/CWRUtil.hpp" line="45" column="1" bodyfile="touchgfx/widgets/canvas/CWRUtil.hpp" bodystart="45" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_c_w_r_util_1_1_q5_1afc2bd1102e28a96095b5d18d7614ab26" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Q5</definition>
+        <argsstring>(int i)</argsstring>
+        <name>Q5</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Constructor from integer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>No conversion is done - the integer is assumed to already be in <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">Q5</ref> format.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer pre-formattet in <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">Q5</ref> format. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/CWRUtil.hpp" line="56" column="1" bodyfile="touchgfx/widgets/canvas/CWRUtil.hpp" bodystart="56" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_c_w_r_util_1_1_q5_1af6a517b9f607b97073ae925875f856dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Q5</definition>
+        <argsstring>(const Q10 q10)</argsstring>
+        <name>Q5</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q10" kindref="compound">Q10</ref></type>
+          <declname>q10</declname>
+        </param>
+        <briefdescription>
+<para>Constructor from <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q10" kindref="compound">Q10</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q10" kindref="compound">Q10</ref> is shifted down to convert it to <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">Q5</ref>, thus the value is rounded down in the conversion.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q10</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q10" kindref="compound">Q10</ref> value to convert to a <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">Q5</ref> value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q10" kindref="compound">Q10</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/CWRUtil.hpp" line="69" column="1" bodyfile="touchgfx/widgets/canvas/CWRUtil.hpp" bodystart="69" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_c_w_r_util_1_1_q5_1a43429c5a12dbbadf7ed4f91ad75ea7f7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T to</definition>
+        <argsstring>() const</argsstring>
+        <name>to</name>
+        <briefdescription>
+<para>Convert the <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">Q5</ref> value to an integer by removing the 5 bits used for the fraction, or to a floating point value by dividing by 32, depending on the type specified as T. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Either int or float.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">Q5</ref> value as a type T. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/CWRUtil.hpp" line="198" column="1" bodyfile="touchgfx/widgets/canvas/CWRUtil.hpp" bodystart="198" bodyend="201"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines a &quot;floating point number&quot; with 5 bits reserved for the fractional part of the decimal number. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">Q5</ref> implements some simple arithmetic operations, most yielding a <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">Q5</ref> number and some yielding a <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q10" kindref="compound">Q10</ref> number as a result. Other operations also work with <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q15" kindref="compound">Q15</ref> numbers.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q10" kindref="compound">Q10</ref>, <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q15" kindref="compound">Q15</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="touchgfx/widgets/canvas/CWRUtil.hpp" line="42" column="1" bodyfile="touchgfx/widgets/canvas/CWRUtil.hpp" bodystart="41" bodyend="205"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_c_w_r_util_1_1_q5_1a2d361e0ac20dbc339d3f5b283f52d839" prot="public" virt="non-virtual"><scope>touchgfx::CWRUtil::Q5</scope><name>operator *</name></member>
+      <member refid="classtouchgfx_1_1_c_w_r_util_1_1_q5_1ad5b47d6365f3648ca69b4a0e3a291b4f" prot="public" virt="non-virtual"><scope>touchgfx::CWRUtil::Q5</scope><name>operator *</name></member>
+      <member refid="classtouchgfx_1_1_c_w_r_util_1_1_q5_1a3b19834d604347fb51e21ea91ffa8e9f" prot="public" virt="non-virtual"><scope>touchgfx::CWRUtil::Q5</scope><name>operator *</name></member>
+      <member refid="classtouchgfx_1_1_c_w_r_util_1_1_q5_1a48d27bd92e68c69527589ea65a9af69f" prot="public" virt="non-virtual"><scope>touchgfx::CWRUtil::Q5</scope><name>operator int</name></member>
+      <member refid="classtouchgfx_1_1_c_w_r_util_1_1_q5_1abd88ff31e687213f4a53ce792f1a8b18" prot="public" virt="non-virtual"><scope>touchgfx::CWRUtil::Q5</scope><name>operator+</name></member>
+      <member refid="classtouchgfx_1_1_c_w_r_util_1_1_q5_1aeaef0a36062beb5869edb43e1f14bba9" prot="public" virt="non-virtual"><scope>touchgfx::CWRUtil::Q5</scope><name>operator-</name></member>
+      <member refid="classtouchgfx_1_1_c_w_r_util_1_1_q5_1aef2bb7fdb6d3444f4446ef9a80af3863" prot="public" virt="non-virtual"><scope>touchgfx::CWRUtil::Q5</scope><name>operator-</name></member>
+      <member refid="classtouchgfx_1_1_c_w_r_util_1_1_q5_1ae79ef8de35cde86d9e96f13cba4a4f35" prot="public" virt="non-virtual"><scope>touchgfx::CWRUtil::Q5</scope><name>operator/</name></member>
+      <member refid="classtouchgfx_1_1_c_w_r_util_1_1_q5_1a1d2c9fbdb0b380fb63260b8d2fcf73db" prot="public" virt="non-virtual"><scope>touchgfx::CWRUtil::Q5</scope><name>operator/</name></member>
+      <member refid="classtouchgfx_1_1_c_w_r_util_1_1_q5_1a3ed86dec9b68e6383f5f5f9766a55c1b" prot="public" virt="non-virtual"><scope>touchgfx::CWRUtil::Q5</scope><name>Q5</name></member>
+      <member refid="classtouchgfx_1_1_c_w_r_util_1_1_q5_1afc2bd1102e28a96095b5d18d7614ab26" prot="public" virt="non-virtual"><scope>touchgfx::CWRUtil::Q5</scope><name>Q5</name></member>
+      <member refid="classtouchgfx_1_1_c_w_r_util_1_1_q5_1af6a517b9f607b97073ae925875f856dc" prot="public" virt="non-virtual"><scope>touchgfx::CWRUtil::Q5</scope><name>Q5</name></member>
+      <member refid="classtouchgfx_1_1_c_w_r_util_1_1_q5_1a43429c5a12dbbadf7ed4f91ad75ea7f7" prot="public" virt="non-virtual"><scope>touchgfx::CWRUtil::Q5</scope><name>to</name></member>
+      <member refid="classtouchgfx_1_1_c_w_r_util_1_1_q5_1ace636130c01f47a340470e35a7e92d65" prot="private" virt="non-virtual"><scope>touchgfx::CWRUtil::Q5</scope><name>v</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

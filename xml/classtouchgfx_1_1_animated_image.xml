@@ -1,0 +1,653 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_animated_image" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::AnimatedImage</compoundname>
+    <basecompoundref refid="classtouchgfx_1_1_image" prot="public" virt="non-virtual">Image</basecompoundref>
+    <includes local="no">AnimatedImage.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_animated_image_1a3b065b5af46a73753bf1f1e9a6fe9c85" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_generic_callback" kindref="compound">GenericCallback</ref>&lt; const <ref refid="classtouchgfx_1_1_animated_image" kindref="compound">AnimatedImage</ref> &amp; &gt; *</type>
+        <definition>GenericCallback&lt;const AnimatedImage&amp;&gt;* animationDoneAction</definition>
+        <argsstring></argsstring>
+        <name>animationDoneAction</name>
+        <briefdescription>
+<para>Pointer to the callback to be executed when animation is done. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/AnimatedImage.hpp" line="164" column="1" bodyfile="touchgfx/widgets/AnimatedImage.hpp" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_animated_image_1aced4558f6a1d547f57c1f6c8e809afab" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacetouchgfx_1a3923435f6df64396b2203d60ddfa89e4" kindref="member">BitmapId</ref></type>
+        <definition>BitmapId endId</definition>
+        <argsstring></argsstring>
+        <name>endId</name>
+        <briefdescription>
+<para>Id of last bitmap in animation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/AnimatedImage.hpp" line="167" column="1" bodyfile="touchgfx/widgets/AnimatedImage.hpp" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_animated_image_1a0da93ec60924b321842628f4a287a2ec" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool loopAnimation</definition>
+        <argsstring></argsstring>
+        <name>loopAnimation</name>
+        <briefdescription>
+<para>If true, continuously loop animation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/AnimatedImage.hpp" line="171" column="1" bodyfile="touchgfx/widgets/AnimatedImage.hpp" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_animated_image_1a455cbdac659b075dec33e2da705aaa20" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool reverse</definition>
+        <argsstring></argsstring>
+        <name>reverse</name>
+        <briefdescription>
+<para>If true, run in reverse direction (last to first). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/AnimatedImage.hpp" line="170" column="1" bodyfile="touchgfx/widgets/AnimatedImage.hpp" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_animated_image_1a36f7b6be7108281af77939ceaec42fd6" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool running</definition>
+        <argsstring></argsstring>
+        <name>running</name>
+        <briefdescription>
+<para>If true, animation is running. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/AnimatedImage.hpp" line="172" column="1" bodyfile="touchgfx/widgets/AnimatedImage.hpp" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_animated_image_1af4a32e3e5036ab0250f6f56d70376e56" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacetouchgfx_1a3923435f6df64396b2203d60ddfa89e4" kindref="member">BitmapId</ref></type>
+        <definition>BitmapId startId</definition>
+        <argsstring></argsstring>
+        <name>startId</name>
+        <briefdescription>
+<para>Id of first bitmap in animation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/AnimatedImage.hpp" line="166" column="1" bodyfile="touchgfx/widgets/AnimatedImage.hpp" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_animated_image_1a7ad9675e7b1ea43eb2d65c5387435240" prot="protected" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ticksSinceUpdate</definition>
+        <argsstring></argsstring>
+        <name>ticksSinceUpdate</name>
+        <briefdescription>
+<para>Number of ticks since last animation update. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/AnimatedImage.hpp" line="169" column="1" bodyfile="touchgfx/widgets/AnimatedImage.hpp" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_animated_image_1acf73a174071f6bb11f495437b8f54df0" prot="protected" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t updateTicksInterval</definition>
+        <argsstring></argsstring>
+        <name>updateTicksInterval</name>
+        <briefdescription>
+<para>Number of ticks between each animation update (image change). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/AnimatedImage.hpp" line="168" column="1" bodyfile="touchgfx/widgets/AnimatedImage.hpp" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_animated_image_1afebd4410016d0f34f0bc65b3fe52c904" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AnimatedImage</definition>
+        <argsstring>(const BitmapId &amp;start, const BitmapId &amp;end, const uint8_t &amp;updateInterval=1)</argsstring>
+        <name>AnimatedImage</name>
+        <param>
+          <type>const <ref refid="namespacetouchgfx_1a3923435f6df64396b2203d60ddfa89e4" kindref="member">BitmapId</ref> &amp;</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacetouchgfx_1a3923435f6df64396b2203d60ddfa89e4" kindref="member">BitmapId</ref> &amp;</type>
+          <declname>end</declname>
+        </param>
+        <param>
+          <type>const uint8_t &amp;</type>
+          <declname>updateInterval</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Constructs an <ref refid="classtouchgfx_1_1_animated_image" kindref="compound">AnimatedImage</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The start and the end specifies the range of bitmaps to be used for animation. The update interval defines how often the animation should be updated. The animation will iterate over the bitmaps that lies between the IDs of start and end, both included.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Defines the start of the range of images in the animation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Defines the end of the range of images in the animation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>updateInterval</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(Optional) Defines the number of ticks between each animation step. Higher value results in a slower animation. Default is to update the image on every tick. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/AnimatedImage.hpp" line="33" column="1" bodyfile="touchgfx/widgets/AnimatedImage.hpp" bodystart="33" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_animated_image_1a7aee4b53816ebf95ca461c0f8ce47fa3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AnimatedImage</definition>
+        <argsstring>(const uint8_t &amp;updateInterval=1)</argsstring>
+        <name>AnimatedImage</name>
+        <param>
+          <type>const uint8_t &amp;</type>
+          <declname>updateInterval</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Constructs an <ref refid="classtouchgfx_1_1_animated_image" kindref="compound">AnimatedImage</ref> without initializing bitmaps. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>updateInterval</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(Optional) Defines the number of ticks between each animation step. Higher value results in a slower animation.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The bitmaps to display must be configured through set setBitmaps function before this widget displays anything. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/AnimatedImage.hpp" line="55" column="1" bodyfile="touchgfx/widgets/AnimatedImage.hpp" bodystart="55" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_animated_image_1a1af635cee0f186c3d0fcea60bac14355" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void handleTickEvent</definition>
+        <argsstring>()</argsstring>
+        <name>handleTickEvent</name>
+        <reimplements refid="classtouchgfx_1_1_drawable_1a1af635cee0f186c3d0fcea60bac14355">handleTickEvent</reimplements>
+        <briefdescription>
+<para>Called periodically by the framework if the <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> instance has subscribed to timer ticks. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_application_1a5c54374756338ccf158b197f64470345" kindref="member">Application::registerTimerWidget</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/AnimatedImage.hpp" line="95" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_animated_image_1a360d5f7e6f2d3882e0b18a3c6981c97d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool isAnimatedImageRunning</definition>
+        <argsstring>()</argsstring>
+        <name>isAnimatedImageRunning</name>
+        <briefdescription>
+<para>Gets the running state of the <ref refid="classtouchgfx_1_1_animated_image" kindref="compound">AnimatedImage</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if the animation is currently running, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/AnimatedImage.hpp" line="127" column="1" bodyfile="touchgfx/widgets/AnimatedImage.hpp" bodystart="127" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_animated_image_1a27b1fad56db5bd3a5f8c326c9c4fd325" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool isReverse</definition>
+        <argsstring>()</argsstring>
+        <name>isReverse</name>
+        <briefdescription>
+<para>Query if this object is running in reverse. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if the animation is performed in reverse order. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/AnimatedImage.hpp" line="137" column="1" bodyfile="touchgfx/widgets/AnimatedImage.hpp" bodystart="137" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_animated_image_1a40e5881f9c001c5cc38554084751adbc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool isRunning</definition>
+        <argsstring>()</argsstring>
+        <name>isRunning</name>
+        <briefdescription>
+<para>Gets the running state of the <ref refid="classtouchgfx_1_1_animated_image" kindref="compound">AnimatedImage</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if the animation is currently running, false otherwise.</para>
+</simplesect>
+<xrefsect id="deprecated_1_deprecated000022"><xreftitle>Deprecated</xreftitle><xrefdescription><para>use <ref refid="classtouchgfx_1_1_animated_image_1a360d5f7e6f2d3882e0b18a3c6981c97d" kindref="member">isAnimatedImageRunning()</ref> </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/AnimatedImage.hpp" line="117" column="1" bodyfile="touchgfx/widgets/AnimatedImage.hpp" bodystart="117" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_animated_image_1a15db2741b1d16c13854b0d3baa6be0c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void pauseAnimation</definition>
+        <argsstring>()</argsstring>
+        <name>pauseAnimation</name>
+        <briefdescription>
+<para>Toggles the running state of an animation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Pauses the animation if the animation is running. Continues the animation if previously paused.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_animated_image_1a93c6df95d3ab8983d811bed0ba7df206" kindref="member">stopAnimation</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/AnimatedImage.hpp" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_animated_image_1aa685c83670926f0cbf902112814c92a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setBitmaps</definition>
+        <argsstring>(BitmapId start, BitmapId end)</argsstring>
+        <name>setBitmaps</name>
+        <param>
+          <type><ref refid="namespacetouchgfx_1a3923435f6df64396b2203d60ddfa89e4" kindref="member">BitmapId</ref></type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1a3923435f6df64396b2203d60ddfa89e4" kindref="member">BitmapId</ref></type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+<para>Sets the bitmaps that are used by the animation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The animation will iterate over the bitmaps that lies between the IDs of start and end, both inclusive.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Defines the start of the range of images in the animation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Defines the end of the range of images in the animation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/AnimatedImage.hpp" line="151" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_animated_image_1a8a8b617487cdc53434d13a8c96295641" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setDoneAction</definition>
+        <argsstring>(GenericCallback&lt; const AnimatedImage &amp; &gt; &amp;callback)</argsstring>
+        <name>setDoneAction</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_generic_callback" kindref="compound">GenericCallback</ref>&lt; const <ref refid="classtouchgfx_1_1_animated_image" kindref="compound">AnimatedImage</ref> &amp; &gt; &amp;</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>Associates an action to be performed when the animation of the <ref refid="classtouchgfx_1_1_animated_image" kindref="compound">AnimatedImage</ref> is done. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the animation is set to loop at the end, the action is also triggered when the animation starts over.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The callback is executed when done. The callback is given the animated image. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/AnimatedImage.hpp" line="105" column="1" bodyfile="touchgfx/widgets/AnimatedImage.hpp" bodystart="105" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_animated_image_1acfef053e0892b07fa6bffc0c8920e028" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setUpdateTicksInterval</definition>
+        <argsstring>(uint8_t updateInterval)</argsstring>
+        <name>setUpdateTicksInterval</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>updateInterval</declname>
+        </param>
+        <briefdescription>
+<para>Sets the update interval. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The value specifies the number of ticks between each step of the animation. The default update interval for animated images is 1, which means results in the fastest possible animation.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>updateInterval</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Defines the number of ticks between each animation step. Higher value results in a slower animation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/AnimatedImage.hpp" line="161" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_animated_image_1a83047c937bdf86a78874331efef4b6bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void startAnimation</definition>
+        <argsstring>(const bool &amp;rev, const bool &amp;reset=false, const bool &amp;loop=false)</argsstring>
+        <name>startAnimation</name>
+        <param>
+          <type>const bool &amp;</type>
+          <declname>rev</declname>
+        </param>
+        <param>
+          <type>const bool &amp;</type>
+          <declname>reset</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>const bool &amp;</type>
+          <declname>loop</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Starts the animation with the given parameters for animation direction, normal or reverse, whether to restart the animation and finally if the animation should loop automatically upon completetion. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Defines if the animation should be performed in reverse order. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(Optional) Defines if the animation should reset and start from the first (or last if reverse order) bitmap. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>loop</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(Optional) Defines if the animation should loop or do a single animation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/AnimatedImage.hpp" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_animated_image_1a93c6df95d3ab8983d811bed0ba7df206" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void stopAnimation</definition>
+        <argsstring>()</argsstring>
+        <name>stopAnimation</name>
+        <briefdescription>
+<para>Stops and resets the animation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the animation should not reset to the first image in the animation sequence, use <ref refid="classtouchgfx_1_1_animated_image_1a15db2741b1d16c13854b0d3baa6be0c6" kindref="member">pauseAnimation()</ref>.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_animated_image_1a83047c937bdf86a78874331efef4b6bc" kindref="member">startAnimation</ref>, <ref refid="classtouchgfx_1_1_animated_image_1a15db2741b1d16c13854b0d3baa6be0c6" kindref="member">pauseAnimation</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/AnimatedImage.hpp" line="85" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_animated_image_1a82000e29a2d9966dc76404b954233b0e" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setBitmap</definition>
+        <argsstring>(const Bitmap &amp;bmp)</argsstring>
+        <name>setBitmap</name>
+        <reimplements refid="classtouchgfx_1_1_image_1a82000e29a2d9966dc76404b954233b0e">setBitmap</reimplements>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> &amp;</type>
+          <declname>bmp</declname>
+        </param>
+        <briefdescription>
+<para>Sets the bitmap for this <ref refid="classtouchgfx_1_1_image" kindref="compound">Image</ref> and updates the width and height of this widget to match those of the <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bmp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bitmap instance. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The user code must call <ref refid="classtouchgfx_1_1_drawable_1a2800b4c18c63e9e7b1f85a74ce6b80c3" kindref="member">invalidate()</ref> in order to update the image on the display. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/AnimatedImage.hpp" line="174" column="1" bodyfile="touchgfx/widgets/AnimatedImage.hpp" bodystart="174" bodyend="176"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A widget capable of basic animation using a range of bitmaps. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="classtouchgfx_1_1_animated_image" kindref="compound">AnimatedImage</ref> is capable of running the animation from start to end or, in reverse order, end to start. It is capable of doing a single animation or looping the animation until stopped or paused. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="195">
+        <label>Widget</label>
+        <link refid="classtouchgfx_1_1_widget"/>
+        <childnode refid="196" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="194">
+        <label>Image</label>
+        <link refid="classtouchgfx_1_1_image"/>
+        <childnode refid="195" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="196">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+      </node>
+      <node id="193">
+        <label>AnimatedImage</label>
+        <link refid="classtouchgfx_1_1_animated_image"/>
+        <childnode refid="194" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="199">
+        <label>Widget</label>
+        <link refid="classtouchgfx_1_1_widget"/>
+        <childnode refid="200" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="201">
+        <label>Rect</label>
+        <link refid="classtouchgfx_1_1_rect"/>
+      </node>
+      <node id="203">
+        <label>GenericCallback&lt; const touchgfx::AnimatedImage &amp; &gt;</label>
+        <link refid="classtouchgfx_1_1_generic_callback"/>
+      </node>
+      <node id="198">
+        <label>Image</label>
+        <link refid="classtouchgfx_1_1_image"/>
+        <childnode refid="199" relation="public-inheritance">
+        </childnode>
+        <childnode refid="202" relation="usage">
+          <edgelabel>bitmap</edgelabel>
+        </childnode>
+      </node>
+      <node id="200">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+        <childnode refid="201" relation="usage">
+          <edgelabel>rect</edgelabel>
+        </childnode>
+        <childnode refid="200" relation="usage">
+          <edgelabel>nextSibling</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="197">
+        <label>AnimatedImage</label>
+        <link refid="classtouchgfx_1_1_animated_image"/>
+        <childnode refid="198" relation="public-inheritance">
+        </childnode>
+        <childnode refid="203" relation="usage">
+          <edgelabel>animationDoneAction</edgelabel>
+        </childnode>
+      </node>
+      <node id="202">
+        <label>Bitmap</label>
+        <link refid="classtouchgfx_1_1_bitmap"/>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/widgets/AnimatedImage.hpp" line="19" column="1" bodyfile="touchgfx/widgets/AnimatedImage.hpp" bodystart="18" bodyend="177"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_image_1acf5bb76caa419c0fa231dbd66c881084" prot="protected" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>alpha</name></member>
+      <member refid="classtouchgfx_1_1_animated_image_1afebd4410016d0f34f0bc65b3fe52c904" prot="public" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>AnimatedImage</name></member>
+      <member refid="classtouchgfx_1_1_animated_image_1a7aee4b53816ebf95ca461c0f8ce47fa3" prot="public" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>AnimatedImage</name></member>
+      <member refid="classtouchgfx_1_1_animated_image_1a3b065b5af46a73753bf1f1e9a6fe9c85" prot="protected" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>animationDoneAction</name></member>
+      <member refid="classtouchgfx_1_1_image_1ab90f53fbe007c65f80d83ece2352f49a" prot="protected" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>bitmap</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae2d939b2a9c253f0fb3bae3ec7be4e2f" prot="public" virt="virtual"><scope>touchgfx::AnimatedImage</scope><name>childGeometryChanged</name></member>
+      <member refid="classtouchgfx_1_1_image_1a1277d4bddd51dbc604de265fb70ccbfd" prot="public" virt="virtual"><scope>touchgfx::AnimatedImage</scope><name>draw</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9cf3a85fa7554475fa42c97985bda6df" prot="public" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>Drawable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4a009ec2b654351679a0124e9055abdc" prot="public" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>drawToDynamicBitmap</name></member>
+      <member refid="classtouchgfx_1_1_animated_image_1aced4558f6a1d547f57c1f6c8e809afab" prot="protected" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>endId</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa7737d9d49d7f55ec9bde8f2c9751b1d" prot="public" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>getAbsoluteRect</name></member>
+      <member refid="classtouchgfx_1_1_image_1a302926ead4ee8a161627575d2666a7f2" prot="public" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>getAlpha</name></member>
+      <member refid="classtouchgfx_1_1_image_1a5b4af59b72a6b187cb1e04737d0c65e5" prot="public" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>getBitmap</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ad00483821e06fe4d0d70222de4135d30" prot="public" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>getHeight</name></member>
+      <member refid="classtouchgfx_1_1_widget_1a6bc8e89dc7f879221e9862fb27dc726f" prot="public" virt="virtual"><scope>touchgfx::AnimatedImage</scope><name>getLastChild</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a61c9b2bf703c49a6d238d354ddcaedb3" prot="public" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>getNextSibling</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a013e065d4d9a10dbfa0ddee9a35582a3" prot="public" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>getParent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af23a5bb7d473e16363a449c497586be3" prot="public" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>getRect</name></member>
+      <member refid="classtouchgfx_1_1_image_1a4dcdd780e93cc783a2ceeda00c6f3b51" prot="public" virt="virtual"><scope>touchgfx::AnimatedImage</scope><name>getSolidRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4783dfe657ff1b7a33261bda8c4b4266" prot="public" virt="virtual"><scope>touchgfx::AnimatedImage</scope><name>getSolidRectAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a83b8847f583b63e60aa4bf778261ddd7" prot="public" virt="virtual"><scope>touchgfx::AnimatedImage</scope><name>getVisibleRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1acae58162aaca6fc174416550f76668e7" prot="public" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>getWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac071e9b7ccf37179df7d29c6778b664c" prot="public" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>getX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a26752e6cff4607d0eec8768ef6d9032a" prot="public" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>getY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a7f1524b90bc90e5f6cf7ee47aae12123" prot="public" virt="virtual"><scope>touchgfx::AnimatedImage</scope><name>handleClickEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a06ae1946b2124cc94e26cfe18728debf" prot="public" virt="virtual"><scope>touchgfx::AnimatedImage</scope><name>handleDragEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4db4945ecbc2303bf860e082409b8029" prot="public" virt="virtual"><scope>touchgfx::AnimatedImage</scope><name>handleGestureEvent</name></member>
+      <member refid="classtouchgfx_1_1_animated_image_1a1af635cee0f186c3d0fcea60bac14355" prot="public" virt="virtual"><scope>touchgfx::AnimatedImage</scope><name>handleTickEvent</name></member>
+      <member refid="classtouchgfx_1_1_image_1a52a68a4210633b01427a40d071026e29" prot="protected" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>hasTransparentPixels</name></member>
+      <member refid="classtouchgfx_1_1_image_1aafe2a82267731414c0c23dbfe64101d0" prot="public" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>Image</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2800b4c18c63e9e7b1f85a74ce6b80c3" prot="public" virt="virtual"><scope>touchgfx::AnimatedImage</scope><name>invalidate</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a130cf6e1bf2b9f04f48e659758fa75e2" prot="public" virt="virtual"><scope>touchgfx::AnimatedImage</scope><name>invalidateRect</name></member>
+      <member refid="classtouchgfx_1_1_animated_image_1a360d5f7e6f2d3882e0b18a3c6981c97d" prot="public" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>isAnimatedImageRunning</name></member>
+      <member refid="classtouchgfx_1_1_animated_image_1a27b1fad56db5bd3a5f8c326c9c4fd325" prot="public" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>isReverse</name></member>
+      <member refid="classtouchgfx_1_1_animated_image_1a40e5881f9c001c5cc38554084751adbc" prot="public" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>isRunning</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a01c717b9abc98d48673b79d691c2d28a" prot="public" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>isTouchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9d8a6cfb13917785c143e74d40e4e2be" prot="public" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>isVisible</name></member>
+      <member refid="classtouchgfx_1_1_animated_image_1a0da93ec60924b321842628f4a287a2ec" prot="protected" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>loopAnimation</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af3590480070e2cf91580976f322d2c5e" prot="public" virt="virtual"><scope>touchgfx::AnimatedImage</scope><name>moveRelative</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aadc5abfad4d2fcc331cf8de8713dc00e" prot="public" virt="virtual"><scope>touchgfx::AnimatedImage</scope><name>moveTo</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0da4a00c3fbdea5740e52c7e04316c65" prot="protected" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>nextSibling</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ab77c13cde2b01107dcbc5c2b584d422f" prot="protected" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>parent</name></member>
+      <member refid="classtouchgfx_1_1_animated_image_1a15db2741b1d16c13854b0d3baa6be0c6" prot="public" virt="virtual"><scope>touchgfx::AnimatedImage</scope><name>pauseAnimation</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2a955ddc316d002f566598f340eb2af9" prot="protected" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>rect</name></member>
+      <member refid="classtouchgfx_1_1_animated_image_1a455cbdac659b075dec33e2da705aaa20" prot="protected" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>reverse</name></member>
+      <member refid="classtouchgfx_1_1_animated_image_1a36f7b6be7108281af77939ceaec42fd6" prot="protected" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>running</name></member>
+      <member refid="classtouchgfx_1_1_image_1a40b4eaf63ab7df1422b403a5a384a0b3" prot="public" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>setAlpha</name></member>
+      <member refid="classtouchgfx_1_1_animated_image_1a82000e29a2d9966dc76404b954233b0e" prot="protected" virt="virtual"><scope>touchgfx::AnimatedImage</scope><name>setBitmap</name></member>
+      <member refid="classtouchgfx_1_1_animated_image_1aa685c83670926f0cbf902112814c92a7" prot="public" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>setBitmaps</name></member>
+      <member refid="classtouchgfx_1_1_animated_image_1a8a8b617487cdc53434d13a8c96295641" prot="public" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>setDoneAction</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a47a6312407603de99247bb802dbd8a48" prot="public" virt="virtual"><scope>touchgfx::AnimatedImage</scope><name>setHeight</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac218c371450d8ad2bed3e1b07965a41a" prot="public" virt="virtual"><scope>touchgfx::AnimatedImage</scope><name>setPosition</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae4c38eadb852b153850ea7ded1f50a19" prot="public" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>setTouchable</name></member>
+      <member refid="classtouchgfx_1_1_animated_image_1acfef053e0892b07fa6bffc0c8920e028" prot="public" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>setUpdateTicksInterval</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a71639c6634c5dcf6d1bb21b8b1b61f5b" prot="public" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>setVisible</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae74a37f71d23440fc8b0466ad8ecfe4b" prot="public" virt="virtual"><scope>touchgfx::AnimatedImage</scope><name>setWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9f6db7f34a74e991fc446fffb5703a53" prot="public" virt="virtual"><scope>touchgfx::AnimatedImage</scope><name>setX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6c86659dc1e7355c207e9c0aa18af167" prot="public" virt="virtual"><scope>touchgfx::AnimatedImage</scope><name>setXY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1b08d48e7e23a046f09e63089bc82bc1" prot="public" virt="virtual"><scope>touchgfx::AnimatedImage</scope><name>setY</name></member>
+      <member refid="classtouchgfx_1_1_animated_image_1a83047c937bdf86a78874331efef4b6bc" prot="public" virt="virtual"><scope>touchgfx::AnimatedImage</scope><name>startAnimation</name></member>
+      <member refid="classtouchgfx_1_1_animated_image_1af4a32e3e5036ab0250f6f56d70376e56" prot="protected" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>startId</name></member>
+      <member refid="classtouchgfx_1_1_animated_image_1a93c6df95d3ab8983d811bed0ba7df206" prot="public" virt="virtual"><scope>touchgfx::AnimatedImage</scope><name>stopAnimation</name></member>
+      <member refid="classtouchgfx_1_1_animated_image_1a7ad9675e7b1ea43eb2d65c5387435240" prot="protected" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>ticksSinceUpdate</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0d014de134cb9b9c1c361fcd726a5f34" prot="protected" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>touchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a48c1d14ac943dbfa4935ea39db950608" prot="public" virt="virtual"><scope>touchgfx::AnimatedImage</scope><name>translateRectToAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_animated_image_1acf73a174071f6bb11f495437b8f54df0" prot="protected" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>updateTicksInterval</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa54a57ae048476d840caf6d4d2c47aa3" prot="protected" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>visible</name></member>
+      <member refid="classtouchgfx_1_1_widget_1a4aecdb998b8b28b278843eaa1644998b" prot="public" virt="non-virtual"><scope>touchgfx::AnimatedImage</scope><name>Widget</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6bb040a11ffc2bd641283cc0bc0d1346" prot="public" virt="virtual"><scope>touchgfx::AnimatedImage</scope><name>~Drawable</name></member>
+      <member refid="classtouchgfx_1_1_widget_1af0ef273e47acd5ce75366b6b7a51057f" prot="public" virt="virtual"><scope>touchgfx::AnimatedImage</scope><name>~Widget</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

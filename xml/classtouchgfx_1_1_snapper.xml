@@ -1,0 +1,310 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_snapper" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::Snapper</compoundname>
+    <basecompoundref refid="classtouchgfx_1_1_draggable" prot="public" virt="non-virtual">touchgfx::Draggable&lt; T &gt;</basecompoundref>
+    <includes local="no">Snapper.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_snapper_1a5c1561a316ce9093713f999b5945e445" prot="private" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_generic_callback" kindref="compound">GenericCallback</ref>&lt; const <ref refid="classtouchgfx_1_1_drag_event" kindref="compound">DragEvent</ref> &amp; &gt; *</type>
+        <definition>GenericCallback&lt;const DragEvent&amp;&gt;* dragAction</definition>
+        <argsstring></argsstring>
+        <name>dragAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/mixins/Snapper.hpp" line="117" column="1" bodyfile="touchgfx/mixins/Snapper.hpp" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_snapper_1a757f0fca6414e9c30e58e6c8cffa5bde" prot="private" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_generic_callback" kindref="compound">GenericCallback</ref> *</type>
+        <definition>GenericCallback* snappedAction</definition>
+        <argsstring></argsstring>
+        <name>snappedAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/mixins/Snapper.hpp" line="118" column="1" bodyfile="touchgfx/mixins/Snapper.hpp" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_snapper_1ae68fe2b1c3e163e1bda4b80a072206ad" prot="private" static="no" mutable="no">
+        <type><ref refid="structtouchgfx_1_1_pair" kindref="compound">Pair</ref>&lt; int16_t, int16_t &gt;</type>
+        <definition>Pair&lt;int16_t, int16_t&gt; snapPosition</definition>
+        <argsstring></argsstring>
+        <name>snapPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/mixins/Snapper.hpp" line="116" column="1" bodyfile="touchgfx/mixins/Snapper.hpp" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_snapper_1a7f1524b90bc90e5f6cf7ee47aae12123" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void handleClickEvent</definition>
+        <argsstring>(const ClickEvent &amp;evt)</argsstring>
+        <name>handleClickEvent</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_click_event" kindref="compound">ClickEvent</ref> &amp;</type>
+          <declname>evt</declname>
+        </param>
+        <briefdescription>
+<para>Handles the click events when the <ref refid="classtouchgfx_1_1_snapper" kindref="compound">Snapper</ref> is clicked. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It saves its current position as the snap position if the <ref refid="classtouchgfx_1_1_snapper" kindref="compound">Snapper</ref> is pressed. This happens when the drag operation starts.</para>
+<para>The snapper will then move to the snap position when the click is released. This happens when the drag operation ends.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>evt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The click event. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/mixins/Snapper.hpp" line="58" column="1" bodyfile="touchgfx/mixins/Snapper.hpp" bodystart="58" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_snapper_1a06ae1946b2124cc94e26cfe18728debf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void handleDragEvent</definition>
+        <argsstring>(const DragEvent &amp;evt)</argsstring>
+        <name>handleDragEvent</name>
+        <reimplements refid="classtouchgfx_1_1_draggable_1a06ae1946b2124cc94e26cfe18728debf">handleDragEvent</reimplements>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_drag_event" kindref="compound">DragEvent</ref> &amp;</type>
+          <declname>evt</declname>
+        </param>
+        <briefdescription>
+<para>Called when dragging the <ref refid="classtouchgfx_1_1_draggable" kindref="compound">Draggable</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The object is moved according to the drag event.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>evt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The drag event. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/mixins/Snapper.hpp" line="38" column="1" bodyfile="touchgfx/mixins/Snapper.hpp" bodystart="38" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_snapper_1a6299a137da25eaed32796bb575b7fcf1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setDragAction</definition>
+        <argsstring>(GenericCallback&lt; const DragEvent &amp; &gt; &amp;callback)</argsstring>
+        <name>setDragAction</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_generic_callback" kindref="compound">GenericCallback</ref>&lt; const <ref refid="classtouchgfx_1_1_drag_event" kindref="compound">DragEvent</ref> &amp; &gt; &amp;</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>Associates an action to be performed when the <ref refid="classtouchgfx_1_1_snapper" kindref="compound">Snapper</ref> is dragged. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The callback will be executed with the <ref refid="classtouchgfx_1_1_drag_event" kindref="compound">DragEvent</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_generic_callback" kindref="compound">GenericCallback</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/mixins/Snapper.hpp" line="98" column="1" bodyfile="touchgfx/mixins/Snapper.hpp" bodystart="98" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_snapper_1ae9c8df4166f6872db677d2be9ad23322" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setSnappedAction</definition>
+        <argsstring>(GenericCallback&lt;&gt; &amp;callback)</argsstring>
+        <name>setSnappedAction</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_generic_callback" kindref="compound">GenericCallback</ref>&lt;&gt; &amp;</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>Associates an action to be performed when the <ref refid="classtouchgfx_1_1_snapper" kindref="compound">Snapper</ref> is snapped. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The callback to be executed on snap.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_generic_callback" kindref="compound">GenericCallback</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/mixins/Snapper.hpp" line="110" column="1" bodyfile="touchgfx/mixins/Snapper.hpp" bodystart="110" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_snapper_1a0476a8fd4a7fbc74e128b8d320247d9c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setSnapPosition</definition>
+        <argsstring>(int16_t x, int16_t y)</argsstring>
+        <name>setSnapPosition</name>
+        <param>
+          <type>int16_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Sets the position the <ref refid="classtouchgfx_1_1_snapper" kindref="compound">Snapper</ref> should snap to. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This position will be overridden with the Snappers current position when the <ref refid="classtouchgfx_1_1_snapper" kindref="compound">Snapper</ref> is pressed.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/mixins/Snapper.hpp" line="85" column="1" bodyfile="touchgfx/mixins/Snapper.hpp" bodystart="85" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_snapper_1ac36e04c332291dcc2533f4c75bf9bdf8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Snapper</definition>
+        <argsstring>()</argsstring>
+        <name>Snapper</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/mixins/Snapper.hpp" line="29" column="1" bodyfile="touchgfx/mixins/Snapper.hpp" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_snapper_1ae08c6a00e645623b6a5b6ea3963e1121" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~Snapper</definition>
+        <argsstring>()</argsstring>
+        <name>~Snapper</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/mixins/Snapper.hpp" line="34" column="1" bodyfile="touchgfx/mixins/Snapper.hpp" bodystart="34" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A mix-in that will make class T draggable and able to snap to a position when a drag operation has ended. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The mix-in is able to perform callbacks when the snapper gets dragged and when the <ref refid="classtouchgfx_1_1_snapper" kindref="compound">Snapper</ref> snaps to its snap position.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_draggable_1a9709d6befcf222dc85fe6ea690d584c5" kindref="member">Draggable&lt;T&gt;</ref></para>
+</simplesect>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the type to enable the Snap behavior to. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1519">
+        <label>T</label>
+      </node>
+      <node id="1517">
+        <label>Snapper&lt; T &gt;</label>
+        <link refid="classtouchgfx_1_1_snapper"/>
+        <childnode refid="1518" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1518">
+        <label>Draggable&lt; T &gt;</label>
+        <link refid="classtouchgfx_1_1_draggable"/>
+        <childnode refid="1519" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1522">
+        <label>T</label>
+      </node>
+      <node id="1520">
+        <label>Snapper&lt; T &gt;</label>
+        <link refid="classtouchgfx_1_1_snapper"/>
+        <childnode refid="1521" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1521">
+        <label>Draggable&lt; T &gt;</label>
+        <link refid="classtouchgfx_1_1_draggable"/>
+        <childnode refid="1522" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/mixins/Snapper.hpp" line="27" column="1" bodyfile="touchgfx/mixins/Snapper.hpp" bodystart="26" bodyend="119"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_snapper_1a5c1561a316ce9093713f999b5945e445" prot="private" virt="non-virtual"><scope>touchgfx::Snapper</scope><name>dragAction</name></member>
+      <member refid="classtouchgfx_1_1_draggable_1a9709d6befcf222dc85fe6ea690d584c5" prot="public" virt="non-virtual"><scope>touchgfx::Snapper</scope><name>Draggable</name></member>
+      <member refid="classtouchgfx_1_1_snapper_1a7f1524b90bc90e5f6cf7ee47aae12123" prot="public" virt="virtual"><scope>touchgfx::Snapper</scope><name>handleClickEvent</name></member>
+      <member refid="classtouchgfx_1_1_snapper_1a06ae1946b2124cc94e26cfe18728debf" prot="public" virt="virtual"><scope>touchgfx::Snapper</scope><name>handleDragEvent</name></member>
+      <member refid="classtouchgfx_1_1_snapper_1a6299a137da25eaed32796bb575b7fcf1" prot="public" virt="non-virtual"><scope>touchgfx::Snapper</scope><name>setDragAction</name></member>
+      <member refid="classtouchgfx_1_1_snapper_1ae9c8df4166f6872db677d2be9ad23322" prot="public" virt="non-virtual"><scope>touchgfx::Snapper</scope><name>setSnappedAction</name></member>
+      <member refid="classtouchgfx_1_1_snapper_1a0476a8fd4a7fbc74e128b8d320247d9c" prot="public" virt="non-virtual"><scope>touchgfx::Snapper</scope><name>setSnapPosition</name></member>
+      <member refid="classtouchgfx_1_1_snapper_1a757f0fca6414e9c30e58e6c8cffa5bde" prot="private" virt="non-virtual"><scope>touchgfx::Snapper</scope><name>snappedAction</name></member>
+      <member refid="classtouchgfx_1_1_snapper_1ac36e04c332291dcc2533f4c75bf9bdf8" prot="public" virt="non-virtual"><scope>touchgfx::Snapper</scope><name>Snapper</name></member>
+      <member refid="classtouchgfx_1_1_snapper_1ae68fe2b1c3e163e1bda4b80a072206ad" prot="private" virt="non-virtual"><scope>touchgfx::Snapper</scope><name>snapPosition</name></member>
+      <member refid="classtouchgfx_1_1_draggable_1a5f33a3e043402db3ae89efc4df63c696" prot="public" virt="virtual"><scope>touchgfx::Snapper</scope><name>~Draggable</name></member>
+      <member refid="classtouchgfx_1_1_snapper_1ae08c6a00e645623b6a5b6ea3963e1121" prot="public" virt="virtual"><scope>touchgfx::Snapper</scope><name>~Snapper</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structtouchgfx_1_1_drawing_surface" kind="struct" language="C++" prot="public">
+    <compoundname>touchgfx::DrawingSurface</compoundname>
+    <includes local="no">Types.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtouchgfx_1_1_drawing_surface_1abc1802f0aae06d874726cd3522625999" prot="public" static="no" mutable="no">
+        <type>uint16_t *</type>
+        <definition>uint16_t* address</definition>
+        <argsstring></argsstring>
+        <name>address</name>
+        <briefdescription>
+<para>The bits. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="727" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="727" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_drawing_surface_1a4438e3445d33be6d33b2c0dbe9c2e0d7" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t stride</definition>
+        <argsstring></argsstring>
+        <name>stride</name>
+        <briefdescription>
+<para>The stride. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="728" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="728" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The destination of a draw operation. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Contains a pointer to where to draw and the stride of the drawing surface. </para>
+    </detaileddescription>
+    <location file="touchgfx/hal/Types.hpp" line="726" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="725" bodyend="729"/>
+    <listofallmembers>
+      <member refid="structtouchgfx_1_1_drawing_surface_1abc1802f0aae06d874726cd3522625999" prot="public" virt="non-virtual"><scope>touchgfx::DrawingSurface</scope><name>address</name></member>
+      <member refid="structtouchgfx_1_1_drawing_surface_1a4438e3445d33be6d33b2c0dbe9c2e0d7" prot="public" virt="non-virtual"><scope>touchgfx::DrawingSurface</scope><name>stride</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

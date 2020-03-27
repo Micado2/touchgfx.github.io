@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structtouchgfx_1_1_kerning_node" kind="struct" language="C++" prot="public">
+    <compoundname>touchgfx::KerningNode</compoundname>
+    <includes local="no">Font.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtouchgfx_1_1_kerning_node_1a284729f08162662737b849949f2d5c43" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t distance</definition>
+        <argsstring></argsstring>
+        <name>distance</name>
+        <briefdescription>
+<para>The kerning distance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Font.hpp" line="122" column="1" bodyfile="touchgfx/Font.hpp" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_kerning_node_1aca2e846c807f4a4d1d24fc5fa42c3ef3" prot="public" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref></type>
+        <definition>Unicode::UnicodeChar unicodePrevChar</definition>
+        <argsstring></argsstring>
+        <name>unicodePrevChar</name>
+        <briefdescription>
+<para>The <ref refid="classtouchgfx_1_1_unicode" kindref="compound">Unicode</ref> for the first character in the kerning pair. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Font.hpp" line="121" column="1" bodyfile="touchgfx/Font.hpp" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure providing information about a kerning for a given pair of characters. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Used by <ref refid="classtouchgfx_1_1_l_c_d" kindref="compound">LCD</ref> when rendering, calculating text width etc. </para>
+    </detaileddescription>
+    <location file="touchgfx/Font.hpp" line="120" column="1" bodyfile="touchgfx/Font.hpp" bodystart="119" bodyend="123"/>
+    <listofallmembers>
+      <member refid="structtouchgfx_1_1_kerning_node_1a284729f08162662737b849949f2d5c43" prot="public" virt="non-virtual"><scope>touchgfx::KerningNode</scope><name>distance</name></member>
+      <member refid="structtouchgfx_1_1_kerning_node_1aca2e846c807f4a4d1d24fc5fa42c3ef3" prot="public" virt="non-virtual"><scope>touchgfx::KerningNode</scope><name>unicodePrevChar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

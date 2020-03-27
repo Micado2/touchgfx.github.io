@@ -1,0 +1,2370 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_easing_equations" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::EasingEquations</compoundname>
+    <includes local="no">EasingEquations.hpp</includes>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_easing_equations_1abce8f0db8a5282e441988c8d2e73f79e" prot="private" static="yes" mutable="no">
+        <type>const float</type>
+        <definition>const float pi</definition>
+        <argsstring></argsstring>
+        <name>pi</name>
+        <briefdescription>
+<para>The pi. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/EasingEquations.hpp" line="440" column="1" bodyfile="touchgfx/EasingEquations.hpp" bodystart="440" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_easing_equations_1aa7e339dec18ede6a02bd816444f8b7ab" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>static int16_t backEaseIn</definition>
+        <argsstring>(uint16_t t, int16_t b, int16_t c, uint16_t d)</argsstring>
+        <name>backEaseIn</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Back easing in: Overshooting cubic easing: (s+1)*t^3 - s*t^2. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Backtracking slightly, then reversing direction and moving to target.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time. The current time or step. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Beginning. The beginning value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Change. The change between the beginning value and the destination value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration. The total time or total number of steps.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current value as a function of the current time or step. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/EasingEquations.hpp" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_easing_equations_1a05affd78e180c11b8f3c35e0619096a3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>static int16_t backEaseInOut</definition>
+        <argsstring>(uint16_t t, int16_t b, int16_t c, uint16_t d)</argsstring>
+        <name>backEaseInOut</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Back easing in/out: Overshooting cubic easing: (s+1)*t^3 - s*t^2. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Backtracking slightly, then reversing direction and moving to target, then overshooting target, reversing, and finally coming back to target.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time. The current time or step. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Beginning. The beginning value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Change. The change between the beginning value and the destination value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration. The total time or total number of steps.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current value as a function of the current time or step. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/EasingEquations.hpp" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_easing_equations_1af314f9e44847295d6b7249efdaa84fe9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>static int16_t backEaseOut</definition>
+        <argsstring>(uint16_t t, int16_t b, int16_t c, uint16_t d)</argsstring>
+        <name>backEaseOut</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Back easing out: Overshooting cubic easing: (s+1)*t^3 - s*t^2. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Moving towards target, overshooting it slightly, then reversing and coming back to target.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time. The current time or step. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Beginning. The beginning value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Change. The change between the beginning value and the destination value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration. The total time or total number of steps.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current value as a function of the current time or step. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/EasingEquations.hpp" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_easing_equations_1aa91e3b8f78cd06d233721cedc053cf5d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>static int16_t bounceEaseIn</definition>
+        <argsstring>(uint16_t t, int16_t b, int16_t c, uint16_t d)</argsstring>
+        <name>bounceEaseIn</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Bounce easing in - exponentially decaying parabolic bounce. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time. The current time or step. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Beginning. The beginning value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Change. The change between the beginning value and the destination value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration. The total time or total number of steps.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current value as a function of the current time or step. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/EasingEquations.hpp" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_easing_equations_1a4405e40d7efa4b6bcf8bc6f24861ab4c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>static int16_t bounceEaseInOut</definition>
+        <argsstring>(uint16_t t, int16_t b, int16_t c, uint16_t d)</argsstring>
+        <name>bounceEaseInOut</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Bounce easing in/out - exponentially decaying parabolic bounce. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time. The current time or step. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Beginning. The beginning value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Change. The change between the beginning value and the destination value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration. The total time or total number of steps.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current value as a function of the current time or step. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/EasingEquations.hpp" line="101" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_easing_equations_1a68d326cbf381c307b32c2b36bc3f68d0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>static int16_t bounceEaseOut</definition>
+        <argsstring>(uint16_t t, int16_t b, int16_t c, uint16_t d)</argsstring>
+        <name>bounceEaseOut</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Bounce easing out - exponentially decaying parabolic bounce. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time. The current time or step. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Beginning. The beginning value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Change. The change between the beginning value and the destination value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration. The total time or total number of steps.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current value as a function of the current time or step. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/EasingEquations.hpp" line="89" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_easing_equations_1a2491eb53e3579f3c316b60185ccf2eea" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>static int16_t circEaseIn</definition>
+        <argsstring>(uint16_t t, int16_t b, int16_t c, uint16_t d)</argsstring>
+        <name>circEaseIn</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Circular easing in: sqrt(1-t^2). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Accelerating from zero velocity.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time. The current time or step. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Beginning. The beginning value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Change. The change between the beginning value and the destination value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration. The total time or total number of steps.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current value as a function of the current time or step. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/EasingEquations.hpp" line="113" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_easing_equations_1aa85e36617ac0bc6fbcb6fcfd1a42d911" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>static int16_t circEaseInOut</definition>
+        <argsstring>(uint16_t t, int16_t b, int16_t c, uint16_t d)</argsstring>
+        <name>circEaseInOut</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Circular easing in/out: sqrt(1-t^2). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Acceleration until halfway, then deceleration.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time. The current time or step. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Beginning. The beginning value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Change. The change between the beginning value and the destination value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration. The total time or total number of steps.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current value as a function of the current time or step. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/EasingEquations.hpp" line="137" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_easing_equations_1a5c0d4d30993a4716c7464ccad284a443" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>static int16_t circEaseOut</definition>
+        <argsstring>(uint16_t t, int16_t b, int16_t c, uint16_t d)</argsstring>
+        <name>circEaseOut</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Circular easing out: sqrt(1-t^2). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Decelerating to zero velocity.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time. The current time or step. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Beginning. The beginning value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Change. The change between the beginning value and the destination value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration. The total time or total number of steps.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current value as a function of the current time or step. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/EasingEquations.hpp" line="125" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_easing_equations_1ad51cea76d4db17fdb16481593ae75db1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>static int16_t cubicEaseIn</definition>
+        <argsstring>(uint16_t t, int16_t b, int16_t c, uint16_t d)</argsstring>
+        <name>cubicEaseIn</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Cubic easing in: t^3. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Accelerating from zero velocity.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time. The current time or step. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Beginning. The beginning value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Change. The change between the beginning value and the destination value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration. The total time or total number of steps.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current value as a function of the current time or step. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/EasingEquations.hpp" line="149" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_easing_equations_1ae9637c20fbf0a49fa126fafe1b9ceff6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>static int16_t cubicEaseInOut</definition>
+        <argsstring>(uint16_t t, int16_t b, int16_t c, uint16_t d)</argsstring>
+        <name>cubicEaseInOut</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Cubic easing in/out: t^3. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Acceleration until halfway, then deceleration.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time. The current time or step. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Beginning. The beginning value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Change. The change between the beginning value and the destination value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration. The total time or total number of steps.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current value as a function of the current time or step. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/EasingEquations.hpp" line="173" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_easing_equations_1adc10c0c57fa415c197c2ba8cb4430a3c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>static int16_t cubicEaseOut</definition>
+        <argsstring>(uint16_t t, int16_t b, int16_t c, uint16_t d)</argsstring>
+        <name>cubicEaseOut</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Cubic easing out: t^3. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Decelerating to zero velocity.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time. The current time or step. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Beginning. The beginning value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Change. The change between the beginning value and the destination value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration. The total time or total number of steps.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current value as a function of the current time or step. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/EasingEquations.hpp" line="161" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_easing_equations_1af06d94368ac95f795ad8def7a35030d3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>static int16_t elasticEaseIn</definition>
+        <argsstring>(uint16_t t, int16_t b, int16_t c, uint16_t d)</argsstring>
+        <name>elasticEaseIn</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Elastic easing in - exponentially decaying sine wave. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time. The current time or step. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Beginning. The beginning value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Change. The change between the beginning value and the destination value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration. The total time or total number of steps.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current value as a function of the current time or step. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/EasingEquations.hpp" line="185" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_easing_equations_1a46e189f66fcb47542a4d0654e0d62886" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>static int16_t elasticEaseInOut</definition>
+        <argsstring>(uint16_t t, int16_t b, int16_t c, uint16_t d)</argsstring>
+        <name>elasticEaseInOut</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Elastic easing in/out - exponentially decaying sine wave. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time. The current time or step. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Beginning. The beginning value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Change. The change between the beginning value and the destination value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration. The total time or total number of steps.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current value as a function of the current time or step. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/EasingEquations.hpp" line="209" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_easing_equations_1a7d0e86043d1fbeaa8bdfc7e42841ffa0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>static int16_t elasticEaseOut</definition>
+        <argsstring>(uint16_t t, int16_t b, int16_t c, uint16_t d)</argsstring>
+        <name>elasticEaseOut</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Elastic easing out - exponentially decaying sine wave. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time. The current time or step. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Beginning. The beginning value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Change. The change between the beginning value and the destination value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration. The total time or total number of steps.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current value as a function of the current time or step. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/EasingEquations.hpp" line="197" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_easing_equations_1a9ef36ee28f05f569015483a7e60565f0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>static int16_t expoEaseIn</definition>
+        <argsstring>(uint16_t t, int16_t b, int16_t c, uint16_t d)</argsstring>
+        <name>expoEaseIn</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Exponential easing in: 2^t. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Accelerating from zero velocity.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time. The current time or step. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Beginning. The beginning value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Change. The change between the beginning value and the destination value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration. The total time or total number of steps.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current value as a function of the current time or step. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/EasingEquations.hpp" line="221" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_easing_equations_1aef19f82c3b680b7939ca574dc0c6c596" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>static int16_t expoEaseInOut</definition>
+        <argsstring>(uint16_t t, int16_t b, int16_t c, uint16_t d)</argsstring>
+        <name>expoEaseInOut</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Exponential easing in/out: 2^t. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Accelerating until halfway, then decelerating.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time. The current time or step. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Beginning. The beginning value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Change. The change between the beginning value and the destination value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration. The total time or total number of steps.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current value as a function of the current time or step. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/EasingEquations.hpp" line="245" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_easing_equations_1a567961c958a7f3ce1a49760a804708dd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>static int16_t expoEaseOut</definition>
+        <argsstring>(uint16_t t, int16_t b, int16_t c, uint16_t d)</argsstring>
+        <name>expoEaseOut</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Exponential easing out: 2^t. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Deceleration to zero velocity.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time. The current time or step. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Beginning. The beginning value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Change. The change between the beginning value and the destination value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration. The total time or total number of steps.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current value as a function of the current time or step. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/EasingEquations.hpp" line="233" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_easing_equations_1ab25814f5f40f9627e522505bd99080bb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>static int16_t linearEaseIn</definition>
+        <argsstring>(uint16_t t, int16_t b, int16_t c, uint16_t d)</argsstring>
+        <name>linearEaseIn</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Simple linear tweening - no easing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time. The current time or step. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Beginning. The beginning value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Change. The change between the beginning value and the destination value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration. The total time or total number of steps.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current value as a function of the current time or step. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/EasingEquations.hpp" line="269" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_easing_equations_1a431a85fb7f082e7a4443840ab9314b48" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>static int16_t linearEaseInOut</definition>
+        <argsstring>(uint16_t t, int16_t b, int16_t c, uint16_t d)</argsstring>
+        <name>linearEaseInOut</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Simple linear tweening - no easing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time. The current time or step. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Beginning. The beginning value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Change. The change between the beginning value and the destination value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration. The total time or total number of steps.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current value as a function of the current time or step. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/EasingEquations.hpp" line="293" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_easing_equations_1ae67a00d2c3a1434ba2af423add367b10" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>static int16_t linearEaseNone</definition>
+        <argsstring>(uint16_t t, int16_t b, int16_t c, uint16_t d)</argsstring>
+        <name>linearEaseNone</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Simple linear tweening - no easing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time. The current time or step. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Beginning. The beginning value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Change. The change between the beginning value and the destination value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration. The total time or total number of steps.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current value as a function of the current time or step. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/EasingEquations.hpp" line="257" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_easing_equations_1a73fb0bf271bc25e4830ed1707857b9d8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>static int16_t linearEaseOut</definition>
+        <argsstring>(uint16_t t, int16_t b, int16_t c, uint16_t d)</argsstring>
+        <name>linearEaseOut</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Simple linear tweening - no easing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time. The current time or step. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Beginning. The beginning value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Change. The change between the beginning value and the destination value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration. The total time or total number of steps.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current value as a function of the current time or step. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/EasingEquations.hpp" line="281" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_easing_equations_1a3c76a3b85eefd7c3022221e6c5608199" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>static int16_t quadEaseIn</definition>
+        <argsstring>(uint16_t t, int16_t b, int16_t c, uint16_t d)</argsstring>
+        <name>quadEaseIn</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Quadratic easing in: t^2. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Accelerating from zero velocity.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time. The current time or step. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Beginning. The beginning value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Change. The change between the beginning value and the destination value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration. The total time or total number of steps.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current value as a function of the current time or step. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/EasingEquations.hpp" line="305" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_easing_equations_1a8d867cd3590844a8edc0fe73de82c911" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>static int16_t quadEaseInOut</definition>
+        <argsstring>(uint16_t t, int16_t b, int16_t c, uint16_t d)</argsstring>
+        <name>quadEaseInOut</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Quadratic easing in/out: t^2. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Acceleration until halfway, then deceleration.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time. The current time or step. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Beginning. The beginning value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Change. The change between the beginning value and the destination value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration. The total time or total number of steps.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current value as a function of the current time or step. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/EasingEquations.hpp" line="329" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_easing_equations_1ac703812a9ef34c150b171006eb394d77" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>static int16_t quadEaseOut</definition>
+        <argsstring>(uint16_t t, int16_t b, int16_t c, uint16_t d)</argsstring>
+        <name>quadEaseOut</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Quadratic easing out: t^2. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Decelerating to zero velocity.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time. The current time or step. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Beginning. The beginning value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Change. The change between the beginning value and the destination value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration. The total time or total number of steps.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current value as a function of the current time or step. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/EasingEquations.hpp" line="317" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_easing_equations_1a7f717bc3b9d8cc9b8db7797169994f7d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>static int16_t quartEaseIn</definition>
+        <argsstring>(uint16_t t, int16_t b, int16_t c, uint16_t d)</argsstring>
+        <name>quartEaseIn</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Quartic easing in: t^4. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Accelerating from zero velocity.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time. The current time or step. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Beginning. The beginning value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Change. The change between the beginning value and the destination value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration. The total time or total number of steps.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current value as a function of the current time or step. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/EasingEquations.hpp" line="341" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_easing_equations_1a758fce1a92f01d919c5565707b043319" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>static int16_t quartEaseInOut</definition>
+        <argsstring>(uint16_t t, int16_t b, int16_t c, uint16_t d)</argsstring>
+        <name>quartEaseInOut</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Quartic easing in/out: t^4. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Acceleration until halfway, then deceleration.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time. The current time or step. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Beginning. The beginning value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Change. The change between the beginning value and the destination value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration. The total time or total number of steps.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current value as a function of the current time or step. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/EasingEquations.hpp" line="365" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_easing_equations_1a28fe7339f7ddcc37421386d35dde8951" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>static int16_t quartEaseOut</definition>
+        <argsstring>(uint16_t t, int16_t b, int16_t c, uint16_t d)</argsstring>
+        <name>quartEaseOut</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Quartic easing out: t^4. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Decelerating to zero velocity.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time. The current time or step. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Beginning. The beginning value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Change. The change between the beginning value and the destination value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration. The total time or total number of steps.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current value as a function of the current time or step. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/EasingEquations.hpp" line="353" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_easing_equations_1ac4eac0682ca7d313383a44b15db2222a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>static int16_t quintEaseIn</definition>
+        <argsstring>(uint16_t t, int16_t b, int16_t c, uint16_t d)</argsstring>
+        <name>quintEaseIn</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Quintic/strong easing in: t^5. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Accelerating from zero velocity.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time. The current time or step. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Beginning. The beginning value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Change. The change between the beginning value and the destination value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration. The total time or total number of steps.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current value as a function of the current time or step. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/EasingEquations.hpp" line="377" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_easing_equations_1a7256c372ee3fea4dfaed03d56d7012be" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>static int16_t quintEaseInOut</definition>
+        <argsstring>(uint16_t t, int16_t b, int16_t c, uint16_t d)</argsstring>
+        <name>quintEaseInOut</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Quintic/strong easing in/out: t^5. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Acceleration until halfway, then deceleration.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time. The current time or step. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Beginning. The beginning value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Change. The change between the beginning value and the destination value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration. The total time or total number of steps.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current value as a function of the current time or step. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/EasingEquations.hpp" line="401" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_easing_equations_1ac3cf45279ba3267d60e8a2e0b18d1572" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>static int16_t quintEaseOut</definition>
+        <argsstring>(uint16_t t, int16_t b, int16_t c, uint16_t d)</argsstring>
+        <name>quintEaseOut</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Quintic/strong easing out: t^5. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Decelerating to zero velocity.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time. The current time or step. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Beginning. The beginning value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Change. The change between the beginning value and the destination value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration. The total time or total number of steps.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current value as a function of the current time or step. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/EasingEquations.hpp" line="389" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_easing_equations_1a71bd6c779f05c1b3945be842dcf56ce2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>static int16_t sineEaseIn</definition>
+        <argsstring>(uint16_t t, int16_t b, int16_t c, uint16_t d)</argsstring>
+        <name>sineEaseIn</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Sinusoidal easing in: sin(t). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Accelerating from zero velocity.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time. The current time or step. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Beginning. The beginning value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Change. The change between the beginning value and the destination value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration. The total time or total number of steps.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current value as a function of the current time or step. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/EasingEquations.hpp" line="413" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_easing_equations_1a34f39bd95e9e47ecf803c7a085ab5a09" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>static int16_t sineEaseInOut</definition>
+        <argsstring>(uint16_t t, int16_t b, int16_t c, uint16_t d)</argsstring>
+        <name>sineEaseInOut</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Sinusoidal easing in/out: sin(t). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Acceleration until halfway, then deceleration.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time. The current time or step. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Beginning. The beginning value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Change. The change between the beginning value and the destination value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration. The total time or total number of steps.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current value as a function of the current time or step. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/EasingEquations.hpp" line="437" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_easing_equations_1a8e8abf99aa631e967d03953b647fd388" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>static int16_t sineEaseOut</definition>
+        <argsstring>(uint16_t t, int16_t b, int16_t c, uint16_t d)</argsstring>
+        <name>sineEaseOut</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Sinusoidal easing out: sin(t). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Decelerating to zero velocity.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time. The current time or step. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Beginning. The beginning value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Change. The change between the beginning value and the destination value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Duration. The total time or total number of steps.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current value as a function of the current time or step. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/EasingEquations.hpp" line="425" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_easing_equations_1a0baf9a46fa48c407adabe865ea804a1a" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>static int16_t roundRespectSign</definition>
+        <argsstring>(float resultFloating)</argsstring>
+        <name>roundRespectSign</name>
+        <param>
+          <type>float</type>
+          <declname>resultFloating</declname>
+        </param>
+        <briefdescription>
+<para>Round respect sign. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>resultFloating</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The result floating.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An int16_t. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/EasingEquations.hpp" line="449" column="1" bodyfile="touchgfx/EasingEquations.hpp" bodystart="449" bodyend="452"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines the &quot;Penner easing functions&quot;, which are a de facto standard for computing aesthetically pleasing motion animations. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>See <ulink url="http://easings.net/">http://easings.net/</ulink> for visual illustrations of the easing equations. </para>
+    </detaileddescription>
+    <location file="touchgfx/EasingEquations.hpp" line="25" column="1" bodyfile="touchgfx/EasingEquations.hpp" bodystart="24" bodyend="453"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_easing_equations_1aa7e339dec18ede6a02bd816444f8b7ab" prot="public" virt="non-virtual"><scope>touchgfx::EasingEquations</scope><name>backEaseIn</name></member>
+      <member refid="classtouchgfx_1_1_easing_equations_1a05affd78e180c11b8f3c35e0619096a3" prot="public" virt="non-virtual"><scope>touchgfx::EasingEquations</scope><name>backEaseInOut</name></member>
+      <member refid="classtouchgfx_1_1_easing_equations_1af314f9e44847295d6b7249efdaa84fe9" prot="public" virt="non-virtual"><scope>touchgfx::EasingEquations</scope><name>backEaseOut</name></member>
+      <member refid="classtouchgfx_1_1_easing_equations_1aa91e3b8f78cd06d233721cedc053cf5d" prot="public" virt="non-virtual"><scope>touchgfx::EasingEquations</scope><name>bounceEaseIn</name></member>
+      <member refid="classtouchgfx_1_1_easing_equations_1a4405e40d7efa4b6bcf8bc6f24861ab4c" prot="public" virt="non-virtual"><scope>touchgfx::EasingEquations</scope><name>bounceEaseInOut</name></member>
+      <member refid="classtouchgfx_1_1_easing_equations_1a68d326cbf381c307b32c2b36bc3f68d0" prot="public" virt="non-virtual"><scope>touchgfx::EasingEquations</scope><name>bounceEaseOut</name></member>
+      <member refid="classtouchgfx_1_1_easing_equations_1a2491eb53e3579f3c316b60185ccf2eea" prot="public" virt="non-virtual"><scope>touchgfx::EasingEquations</scope><name>circEaseIn</name></member>
+      <member refid="classtouchgfx_1_1_easing_equations_1aa85e36617ac0bc6fbcb6fcfd1a42d911" prot="public" virt="non-virtual"><scope>touchgfx::EasingEquations</scope><name>circEaseInOut</name></member>
+      <member refid="classtouchgfx_1_1_easing_equations_1a5c0d4d30993a4716c7464ccad284a443" prot="public" virt="non-virtual"><scope>touchgfx::EasingEquations</scope><name>circEaseOut</name></member>
+      <member refid="classtouchgfx_1_1_easing_equations_1ad51cea76d4db17fdb16481593ae75db1" prot="public" virt="non-virtual"><scope>touchgfx::EasingEquations</scope><name>cubicEaseIn</name></member>
+      <member refid="classtouchgfx_1_1_easing_equations_1ae9637c20fbf0a49fa126fafe1b9ceff6" prot="public" virt="non-virtual"><scope>touchgfx::EasingEquations</scope><name>cubicEaseInOut</name></member>
+      <member refid="classtouchgfx_1_1_easing_equations_1adc10c0c57fa415c197c2ba8cb4430a3c" prot="public" virt="non-virtual"><scope>touchgfx::EasingEquations</scope><name>cubicEaseOut</name></member>
+      <member refid="classtouchgfx_1_1_easing_equations_1af06d94368ac95f795ad8def7a35030d3" prot="public" virt="non-virtual"><scope>touchgfx::EasingEquations</scope><name>elasticEaseIn</name></member>
+      <member refid="classtouchgfx_1_1_easing_equations_1a46e189f66fcb47542a4d0654e0d62886" prot="public" virt="non-virtual"><scope>touchgfx::EasingEquations</scope><name>elasticEaseInOut</name></member>
+      <member refid="classtouchgfx_1_1_easing_equations_1a7d0e86043d1fbeaa8bdfc7e42841ffa0" prot="public" virt="non-virtual"><scope>touchgfx::EasingEquations</scope><name>elasticEaseOut</name></member>
+      <member refid="classtouchgfx_1_1_easing_equations_1a9ef36ee28f05f569015483a7e60565f0" prot="public" virt="non-virtual"><scope>touchgfx::EasingEquations</scope><name>expoEaseIn</name></member>
+      <member refid="classtouchgfx_1_1_easing_equations_1aef19f82c3b680b7939ca574dc0c6c596" prot="public" virt="non-virtual"><scope>touchgfx::EasingEquations</scope><name>expoEaseInOut</name></member>
+      <member refid="classtouchgfx_1_1_easing_equations_1a567961c958a7f3ce1a49760a804708dd" prot="public" virt="non-virtual"><scope>touchgfx::EasingEquations</scope><name>expoEaseOut</name></member>
+      <member refid="classtouchgfx_1_1_easing_equations_1ab25814f5f40f9627e522505bd99080bb" prot="public" virt="non-virtual"><scope>touchgfx::EasingEquations</scope><name>linearEaseIn</name></member>
+      <member refid="classtouchgfx_1_1_easing_equations_1a431a85fb7f082e7a4443840ab9314b48" prot="public" virt="non-virtual"><scope>touchgfx::EasingEquations</scope><name>linearEaseInOut</name></member>
+      <member refid="classtouchgfx_1_1_easing_equations_1ae67a00d2c3a1434ba2af423add367b10" prot="public" virt="non-virtual"><scope>touchgfx::EasingEquations</scope><name>linearEaseNone</name></member>
+      <member refid="classtouchgfx_1_1_easing_equations_1a73fb0bf271bc25e4830ed1707857b9d8" prot="public" virt="non-virtual"><scope>touchgfx::EasingEquations</scope><name>linearEaseOut</name></member>
+      <member refid="classtouchgfx_1_1_easing_equations_1abce8f0db8a5282e441988c8d2e73f79e" prot="private" virt="non-virtual"><scope>touchgfx::EasingEquations</scope><name>pi</name></member>
+      <member refid="classtouchgfx_1_1_easing_equations_1a3c76a3b85eefd7c3022221e6c5608199" prot="public" virt="non-virtual"><scope>touchgfx::EasingEquations</scope><name>quadEaseIn</name></member>
+      <member refid="classtouchgfx_1_1_easing_equations_1a8d867cd3590844a8edc0fe73de82c911" prot="public" virt="non-virtual"><scope>touchgfx::EasingEquations</scope><name>quadEaseInOut</name></member>
+      <member refid="classtouchgfx_1_1_easing_equations_1ac703812a9ef34c150b171006eb394d77" prot="public" virt="non-virtual"><scope>touchgfx::EasingEquations</scope><name>quadEaseOut</name></member>
+      <member refid="classtouchgfx_1_1_easing_equations_1a7f717bc3b9d8cc9b8db7797169994f7d" prot="public" virt="non-virtual"><scope>touchgfx::EasingEquations</scope><name>quartEaseIn</name></member>
+      <member refid="classtouchgfx_1_1_easing_equations_1a758fce1a92f01d919c5565707b043319" prot="public" virt="non-virtual"><scope>touchgfx::EasingEquations</scope><name>quartEaseInOut</name></member>
+      <member refid="classtouchgfx_1_1_easing_equations_1a28fe7339f7ddcc37421386d35dde8951" prot="public" virt="non-virtual"><scope>touchgfx::EasingEquations</scope><name>quartEaseOut</name></member>
+      <member refid="classtouchgfx_1_1_easing_equations_1ac4eac0682ca7d313383a44b15db2222a" prot="public" virt="non-virtual"><scope>touchgfx::EasingEquations</scope><name>quintEaseIn</name></member>
+      <member refid="classtouchgfx_1_1_easing_equations_1a7256c372ee3fea4dfaed03d56d7012be" prot="public" virt="non-virtual"><scope>touchgfx::EasingEquations</scope><name>quintEaseInOut</name></member>
+      <member refid="classtouchgfx_1_1_easing_equations_1ac3cf45279ba3267d60e8a2e0b18d1572" prot="public" virt="non-virtual"><scope>touchgfx::EasingEquations</scope><name>quintEaseOut</name></member>
+      <member refid="classtouchgfx_1_1_easing_equations_1a0baf9a46fa48c407adabe865ea804a1a" prot="private" virt="non-virtual"><scope>touchgfx::EasingEquations</scope><name>roundRespectSign</name></member>
+      <member refid="classtouchgfx_1_1_easing_equations_1a71bd6c779f05c1b3945be842dcf56ce2" prot="public" virt="non-virtual"><scope>touchgfx::EasingEquations</scope><name>sineEaseIn</name></member>
+      <member refid="classtouchgfx_1_1_easing_equations_1a34f39bd95e9e47ecf803c7a085ab5a09" prot="public" virt="non-virtual"><scope>touchgfx::EasingEquations</scope><name>sineEaseInOut</name></member>
+      <member refid="classtouchgfx_1_1_easing_equations_1a8e8abf99aa631e967d03953b647fd388" prot="public" virt="non-virtual"><scope>touchgfx::EasingEquations</scope><name>sineEaseOut</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

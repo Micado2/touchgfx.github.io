@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structtouchgfx_1_1_keyboard_1_1_layout" kind="struct" language="C++" prot="public">
+    <compoundname>touchgfx::Keyboard::Layout</compoundname>
+    <includes local="no">Keyboard.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtouchgfx_1_1_keyboard_1_1_layout_1a0870e1bac457f6b960bc66cee3de724c" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetouchgfx_1a3923435f6df64396b2203d60ddfa89e4" kindref="member">BitmapId</ref></type>
+        <definition>BitmapId bitmap</definition>
+        <argsstring></argsstring>
+        <name>bitmap</name>
+        <briefdescription>
+<para>The bitmap used for the keyboard layout. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/Keyboard.hpp" line="66" column="1" bodyfile="touchgfx/widgets/Keyboard.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_keyboard_1_1_layout_1a15f4cff99e0d31ae9946fb0e913fffab" prot="public" static="no" mutable="no">
+        <type><ref refid="structtouchgfx_1_1_keyboard_1_1_callback_area" kindref="compound">CallbackArea</ref> *</type>
+        <definition>CallbackArea* callbackAreaArray</definition>
+        <argsstring></argsstring>
+        <name>callbackAreaArray</name>
+        <briefdescription>
+<para>The array of areas and corresponding callbacks. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/Keyboard.hpp" line="69" column="1" bodyfile="touchgfx/widgets/Keyboard.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_keyboard_1_1_layout_1a1f6183562fd5d77dd2f29d8e8a07e1a0" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structtouchgfx_1_1_keyboard_1_1_key" kindref="compound">Key</ref> *</type>
+        <definition>const Key* keyArray</definition>
+        <argsstring></argsstring>
+        <name>keyArray</name>
+        <briefdescription>
+<para>The keys on the keyboard layout. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/Keyboard.hpp" line="67" column="1" bodyfile="touchgfx/widgets/Keyboard.hpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_keyboard_1_1_layout_1a2e40c7f6a9d4b05b3cb82bbfad9f4b4a" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetouchgfx_1aca843a83bfa2b15fa1c762d27a87d294" kindref="member">FontId</ref></type>
+        <definition>FontId keyFont</definition>
+        <argsstring></argsstring>
+        <name>keyFont</name>
+        <briefdescription>
+<para>The font used for the keys. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/Keyboard.hpp" line="74" column="1" bodyfile="touchgfx/widgets/Keyboard.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_keyboard_1_1_layout_1a661d6c4498bb638e89ccfe0ff6ac5aa0" prot="public" static="no" mutable="no">
+        <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+        <definition>colortype keyFontColor</definition>
+        <argsstring></argsstring>
+        <name>keyFontColor</name>
+        <briefdescription>
+<para>The color used for the keys. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/Keyboard.hpp" line="75" column="1" bodyfile="touchgfx/widgets/Keyboard.hpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_keyboard_1_1_layout_1a9d5427f61fcca962f1febb501076cd68" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t numberOfCallbackAreas</definition>
+        <argsstring></argsstring>
+        <name>numberOfCallbackAreas</name>
+        <briefdescription>
+<para>The number of areas and corresponding callbacks. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/Keyboard.hpp" line="70" column="1" bodyfile="touchgfx/widgets/Keyboard.hpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_keyboard_1_1_layout_1a7c5158ea00f5b33e6db06a6411e0a1dd" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t numberOfKeys</definition>
+        <argsstring></argsstring>
+        <name>numberOfKeys</name>
+        <briefdescription>
+<para>The number of keys on this keyboard layout. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/Keyboard.hpp" line="68" column="1" bodyfile="touchgfx/widgets/Keyboard.hpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_keyboard_1_1_layout_1a21acaffb040b6ce591d20e06cc1a9af9" prot="public" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref></type>
+        <definition>TypedText textAreaFont</definition>
+        <argsstring></argsstring>
+        <name>textAreaFont</name>
+        <briefdescription>
+<para>The font used for typing text. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/Keyboard.hpp" line="72" column="1" bodyfile="touchgfx/widgets/Keyboard.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_keyboard_1_1_layout_1ae68ef368e6225685cd5d2409e718411f" prot="public" static="no" mutable="no">
+        <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+        <definition>colortype textAreaFontColor</definition>
+        <argsstring></argsstring>
+        <name>textAreaFontColor</name>
+        <briefdescription>
+<para>The color used for the typing text. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/Keyboard.hpp" line="73" column="1" bodyfile="touchgfx/widgets/Keyboard.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_keyboard_1_1_layout_1a44f18c937874006100142401d65ec771" prot="public" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref></type>
+        <definition>Rect textAreaPosition</definition>
+        <argsstring></argsstring>
+        <name>textAreaPosition</name>
+        <briefdescription>
+<para>The area where text is written. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/Keyboard.hpp" line="71" column="1" bodyfile="touchgfx/widgets/Keyboard.hpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Definition of the keyboard layout. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The keyboard can handle changing layouts, so different keyboard modes can be implemented by changing layouts and key mappings. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="846">
+        <label>Rect</label>
+        <link refid="classtouchgfx_1_1_rect"/>
+      </node>
+      <node id="849">
+        <label>CallbackArea</label>
+        <link refid="structtouchgfx_1_1_keyboard_1_1_callback_area"/>
+        <childnode refid="846" relation="usage">
+          <edgelabel>keyArea</edgelabel>
+        </childnode>
+        <childnode refid="850" relation="usage">
+          <edgelabel>callback</edgelabel>
+        </childnode>
+      </node>
+      <node id="848">
+        <label>TypedText</label>
+        <link refid="classtouchgfx_1_1_typed_text"/>
+      </node>
+      <node id="845">
+        <label>Keyboard::Layout</label>
+        <link refid="structtouchgfx_1_1_keyboard_1_1_layout"/>
+        <childnode refid="846" relation="usage">
+          <edgelabel>textAreaPosition</edgelabel>
+        </childnode>
+        <childnode refid="847" relation="usage">
+          <edgelabel>keyArray</edgelabel>
+        </childnode>
+        <childnode refid="848" relation="usage">
+          <edgelabel>textAreaFont</edgelabel>
+        </childnode>
+        <childnode refid="849" relation="usage">
+          <edgelabel>callbackAreaArray</edgelabel>
+        </childnode>
+        <childnode refid="851" relation="usage">
+          <edgelabel>textAreaFontColor</edgelabel>
+          <edgelabel>keyFontColor</edgelabel>
+        </childnode>
+      </node>
+      <node id="850">
+        <label>GenericCallback&lt; T1, T2, T3 &gt;</label>
+        <link refid="classtouchgfx_1_1_generic_callback"/>
+      </node>
+      <node id="851">
+        <label>colortype</label>
+        <link refid="structtouchgfx_1_1colortype"/>
+      </node>
+      <node id="847">
+        <label>Key</label>
+        <link refid="structtouchgfx_1_1_keyboard_1_1_key"/>
+        <childnode refid="846" relation="usage">
+          <edgelabel>keyArea</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/widgets/Keyboard.hpp" line="65" column="1" bodyfile="touchgfx/widgets/Keyboard.hpp" bodystart="64" bodyend="76"/>
+    <listofallmembers>
+      <member refid="structtouchgfx_1_1_keyboard_1_1_layout_1a0870e1bac457f6b960bc66cee3de724c" prot="public" virt="non-virtual"><scope>touchgfx::Keyboard::Layout</scope><name>bitmap</name></member>
+      <member refid="structtouchgfx_1_1_keyboard_1_1_layout_1a15f4cff99e0d31ae9946fb0e913fffab" prot="public" virt="non-virtual"><scope>touchgfx::Keyboard::Layout</scope><name>callbackAreaArray</name></member>
+      <member refid="structtouchgfx_1_1_keyboard_1_1_layout_1a1f6183562fd5d77dd2f29d8e8a07e1a0" prot="public" virt="non-virtual"><scope>touchgfx::Keyboard::Layout</scope><name>keyArray</name></member>
+      <member refid="structtouchgfx_1_1_keyboard_1_1_layout_1a2e40c7f6a9d4b05b3cb82bbfad9f4b4a" prot="public" virt="non-virtual"><scope>touchgfx::Keyboard::Layout</scope><name>keyFont</name></member>
+      <member refid="structtouchgfx_1_1_keyboard_1_1_layout_1a661d6c4498bb638e89ccfe0ff6ac5aa0" prot="public" virt="non-virtual"><scope>touchgfx::Keyboard::Layout</scope><name>keyFontColor</name></member>
+      <member refid="structtouchgfx_1_1_keyboard_1_1_layout_1a9d5427f61fcca962f1febb501076cd68" prot="public" virt="non-virtual"><scope>touchgfx::Keyboard::Layout</scope><name>numberOfCallbackAreas</name></member>
+      <member refid="structtouchgfx_1_1_keyboard_1_1_layout_1a7c5158ea00f5b33e6db06a6411e0a1dd" prot="public" virt="non-virtual"><scope>touchgfx::Keyboard::Layout</scope><name>numberOfKeys</name></member>
+      <member refid="structtouchgfx_1_1_keyboard_1_1_layout_1a21acaffb040b6ce591d20e06cc1a9af9" prot="public" virt="non-virtual"><scope>touchgfx::Keyboard::Layout</scope><name>textAreaFont</name></member>
+      <member refid="structtouchgfx_1_1_keyboard_1_1_layout_1ae68ef368e6225685cd5d2409e718411f" prot="public" virt="non-virtual"><scope>touchgfx::Keyboard::Layout</scope><name>textAreaFontColor</name></member>
+      <member refid="structtouchgfx_1_1_keyboard_1_1_layout_1a44f18c937874006100142401d65ec771" prot="public" virt="non-virtual"><scope>touchgfx::Keyboard::Layout</scope><name>textAreaPosition</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,503 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="_text_area_with_wildcard_8hpp" kind="file" language="C++">
+    <compoundname>TextAreaWithWildcard.hpp</compoundname>
+    <includes refid="_text_provider_8hpp" local="no">touchgfx/TextProvider.hpp</includes>
+    <includes refid="_h_a_l_8hpp" local="no">touchgfx/hal/HAL.hpp</includes>
+    <includes refid="_text_area_8hpp" local="no">touchgfx/widgets/TextArea.hpp</includes>
+    <includedby refid="_two_wildcard_text_button_style_8hpp" local="no">touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp</includedby>
+    <includedby refid="_wildcard_text_button_style_8hpp" local="no">touchgfx/containers/buttons/WildcardTextButtonStyle.hpp</includedby>
+    <includedby refid="_digital_clock_8hpp" local="no">touchgfx/containers/clock/DigitalClock.hpp</includedby>
+    <includedby refid="_text_progress_8hpp" local="no">touchgfx/containers/progress_indicators/TextProgress.hpp</includedby>
+    <includedby refid="_keyboard_8hpp" local="no">touchgfx/widgets/Keyboard.hpp</includedby>
+    <incdepgraph>
+      <node id="8368">
+        <label>stdarg.h</label>
+      </node>
+      <node id="8376">
+        <label>touchgfx/Bitmap.hpp</label>
+        <link refid="_bitmap_8hpp"/>
+        <childnode refid="8377" relation="include">
+        </childnode>
+        <childnode refid="8371" relation="include">
+        </childnode>
+      </node>
+      <node id="8383">
+        <label>touchgfx/events/DragEvent.hpp</label>
+        <link refid="_drag_event_8hpp"/>
+        <childnode refid="8382" relation="include">
+        </childnode>
+        <childnode refid="8371" relation="include">
+        </childnode>
+      </node>
+      <node id="8389">
+        <label>windows.h</label>
+      </node>
+      <node id="8372">
+        <label>assert.h</label>
+      </node>
+      <node id="8367">
+        <label>touchgfx/TextProvider.hpp</label>
+        <link refid="_text_provider_8hpp"/>
+        <childnode refid="8368" relation="include">
+        </childnode>
+        <childnode refid="8369" relation="include">
+        </childnode>
+        <childnode refid="8370" relation="include">
+        </childnode>
+      </node>
+      <node id="8388">
+        <label>touchgfx/Utils.hpp</label>
+        <link refid="_utils_8hpp"/>
+        <childnode refid="8368" relation="include">
+        </childnode>
+        <childnode refid="8389" relation="include">
+        </childnode>
+        <childnode refid="8390" relation="include">
+        </childnode>
+        <childnode refid="8376" relation="include">
+        </childnode>
+        <childnode refid="8371" relation="include">
+        </childnode>
+      </node>
+      <node id="8374">
+        <label>touchgfx/hal/Config.hpp</label>
+        <link refid="_config_8hpp"/>
+      </node>
+      <node id="8396">
+        <label>touchgfx/hal/Gestures.hpp</label>
+        <link refid="_gestures_8hpp"/>
+        <childnode refid="8380" relation="include">
+        </childnode>
+        <childnode refid="8381" relation="include">
+        </childnode>
+        <childnode refid="8383" relation="include">
+        </childnode>
+        <childnode refid="8384" relation="include">
+        </childnode>
+        <childnode refid="8371" relation="include">
+        </childnode>
+      </node>
+      <node id="8373">
+        <label>stdint.h</label>
+      </node>
+      <node id="8380">
+        <label>touchgfx/UIEventListener.hpp</label>
+        <link refid="_u_i_event_listener_8hpp"/>
+        <childnode refid="8371" relation="include">
+        </childnode>
+      </node>
+      <node id="8395">
+        <label>touchgfx/hal/FrameBufferAllocator.hpp</label>
+        <link refid="_frame_buffer_allocator_8hpp"/>
+        <childnode refid="8388" relation="include">
+        </childnode>
+      </node>
+      <node id="8377">
+        <label>cassert</label>
+      </node>
+      <node id="8399">
+        <label>platform/driver/touch/TouchController.hpp</label>
+        <link refid="_touch_controller_8hpp"/>
+        <childnode refid="8371" relation="include">
+        </childnode>
+      </node>
+      <node id="8387">
+        <label>touchgfx/TextureMapTypes.hpp</label>
+        <link refid="_texture_map_types_8hpp"/>
+        <childnode refid="8371" relation="include">
+        </childnode>
+      </node>
+      <node id="8402">
+        <label>touchgfx/TypedText.hpp</label>
+        <link refid="_typed_text_8hpp"/>
+        <childnode refid="8377" relation="include">
+        </childnode>
+        <childnode refid="8369" relation="include">
+        </childnode>
+        <childnode refid="8403" relation="include">
+        </childnode>
+        <childnode refid="8371" relation="include">
+        </childnode>
+      </node>
+      <node id="8384">
+        <label>touchgfx/events/GestureEvent.hpp</label>
+        <link refid="_gesture_event_8hpp"/>
+        <childnode refid="8382" relation="include">
+        </childnode>
+        <childnode refid="8371" relation="include">
+        </childnode>
+      </node>
+      <node id="8398">
+        <label>platform/driver/button/ButtonController.hpp</label>
+        <link refid="_button_controller_8hpp"/>
+        <childnode refid="8371" relation="include">
+        </childnode>
+      </node>
+      <node id="8369">
+        <label>touchgfx/Font.hpp</label>
+        <link refid="_font_8hpp"/>
+        <childnode refid="8370" relation="include">
+        </childnode>
+        <childnode refid="8371" relation="include">
+        </childnode>
+      </node>
+      <node id="8401">
+        <label>touchgfx/FontManager.hpp</label>
+        <link refid="_font_manager_8hpp"/>
+        <childnode refid="8369" relation="include">
+        </childnode>
+      </node>
+      <node id="8371">
+        <label>touchgfx/hal/Types.hpp</label>
+        <link refid="_types_8hpp"/>
+        <childnode refid="8372" relation="include">
+        </childnode>
+        <childnode refid="8373" relation="include">
+        </childnode>
+        <childnode refid="8374" relation="include">
+        </childnode>
+      </node>
+      <node id="8378">
+        <label>touchgfx/Drawable.hpp</label>
+        <link refid="_drawable_8hpp"/>
+        <childnode refid="8379" relation="include">
+        </childnode>
+        <childnode refid="8391" relation="include">
+        </childnode>
+        <childnode refid="8388" relation="include">
+        </childnode>
+        <childnode refid="8381" relation="include">
+        </childnode>
+        <childnode refid="8383" relation="include">
+        </childnode>
+        <childnode refid="8384" relation="include">
+        </childnode>
+        <childnode refid="8371" relation="include">
+        </childnode>
+      </node>
+      <node id="8392">
+        <label>touchgfx/hal/BlitOp.hpp</label>
+        <link refid="_blit_op_8hpp"/>
+        <childnode refid="8371" relation="include">
+        </childnode>
+      </node>
+      <node id="8394">
+        <label>touchgfx/hal/Atomic.hpp</label>
+        <link refid="_atomic_8hpp"/>
+      </node>
+      <node id="8385">
+        <label>touchgfx/transitions/Transition.hpp</label>
+        <link refid="_transition_8hpp"/>
+        <childnode refid="8371" relation="include">
+        </childnode>
+        <childnode refid="8386" relation="include">
+        </childnode>
+      </node>
+      <node id="8366">
+        <label>touchgfx/widgets/TextAreaWithWildcard.hpp</label>
+        <link refid="_text_area_with_wildcard_8hpp"/>
+        <childnode refid="8367" relation="include">
+        </childnode>
+        <childnode refid="8375" relation="include">
+        </childnode>
+        <childnode refid="8400" relation="include">
+        </childnode>
+      </node>
+      <node id="8381">
+        <label>touchgfx/events/ClickEvent.hpp</label>
+        <link refid="_click_event_8hpp"/>
+        <childnode refid="8382" relation="include">
+        </childnode>
+        <childnode refid="8371" relation="include">
+        </childnode>
+      </node>
+      <node id="8404">
+        <label>touchgfx/widgets/Widget.hpp</label>
+        <link refid="_widget_8hpp"/>
+        <childnode refid="8372" relation="include">
+        </childnode>
+        <childnode refid="8378" relation="include">
+        </childnode>
+      </node>
+      <node id="8379">
+        <label>touchgfx/Application.hpp</label>
+        <link refid="_application_8hpp"/>
+        <childnode refid="8380" relation="include">
+        </childnode>
+        <childnode refid="8381" relation="include">
+        </childnode>
+        <childnode refid="8383" relation="include">
+        </childnode>
+        <childnode refid="8384" relation="include">
+        </childnode>
+        <childnode refid="8371" relation="include">
+        </childnode>
+        <childnode refid="8385" relation="include">
+        </childnode>
+      </node>
+      <node id="8400">
+        <label>touchgfx/widgets/TextArea.hpp</label>
+        <link refid="_text_area_8hpp"/>
+        <childnode refid="8369" relation="include">
+        </childnode>
+        <childnode refid="8401" relation="include">
+        </childnode>
+        <childnode refid="8402" relation="include">
+        </childnode>
+        <childnode refid="8370" relation="include">
+        </childnode>
+        <childnode refid="8371" relation="include">
+        </childnode>
+        <childnode refid="8386" relation="include">
+        </childnode>
+        <childnode refid="8404" relation="include">
+        </childnode>
+      </node>
+      <node id="8391">
+        <label>touchgfx/Callback.hpp</label>
+        <link refid="_callback_8hpp"/>
+      </node>
+      <node id="8370">
+        <label>touchgfx/Unicode.hpp</label>
+        <link refid="_unicode_8hpp"/>
+        <childnode refid="8368" relation="include">
+        </childnode>
+        <childnode refid="8371" relation="include">
+        </childnode>
+      </node>
+      <node id="8382">
+        <label>touchgfx/Event.hpp</label>
+        <link refid="_event_8hpp"/>
+      </node>
+      <node id="8386">
+        <label>touchgfx/lcd/LCD.hpp</label>
+        <link refid="_l_c_d_8hpp"/>
+        <childnode refid="8368" relation="include">
+        </childnode>
+        <childnode refid="8376" relation="include">
+        </childnode>
+        <childnode refid="8369" relation="include">
+        </childnode>
+        <childnode refid="8367" relation="include">
+        </childnode>
+        <childnode refid="8387" relation="include">
+        </childnode>
+        <childnode refid="8370" relation="include">
+        </childnode>
+        <childnode refid="8388" relation="include">
+        </childnode>
+        <childnode refid="8371" relation="include">
+        </childnode>
+      </node>
+      <node id="8403">
+        <label>touchgfx/Texts.hpp</label>
+        <link refid="_texts_8hpp"/>
+        <childnode refid="8370" relation="include">
+        </childnode>
+      </node>
+      <node id="8390">
+        <label>stdio.h</label>
+      </node>
+      <node id="8393">
+        <label>touchgfx/hal/DMA.hpp</label>
+        <link refid="_d_m_a_8hpp"/>
+        <childnode refid="8394" relation="include">
+        </childnode>
+        <childnode refid="8392" relation="include">
+        </childnode>
+      </node>
+      <node id="8397">
+        <label>platform/core/MCUInstrumentation.hpp</label>
+        <link refid="_m_c_u_instrumentation_8hpp"/>
+        <childnode refid="8373" relation="include">
+        </childnode>
+      </node>
+      <node id="8375">
+        <label>touchgfx/hal/HAL.hpp</label>
+        <link refid="_h_a_l_8hpp"/>
+        <childnode refid="8376" relation="include">
+        </childnode>
+        <childnode refid="8378" relation="include">
+        </childnode>
+        <childnode refid="8370" relation="include">
+        </childnode>
+        <childnode refid="8392" relation="include">
+        </childnode>
+        <childnode refid="8393" relation="include">
+        </childnode>
+        <childnode refid="8395" relation="include">
+        </childnode>
+        <childnode refid="8396" relation="include">
+        </childnode>
+        <childnode refid="8371" relation="include">
+        </childnode>
+        <childnode refid="8386" relation="include">
+        </childnode>
+        <childnode refid="8397" relation="include">
+        </childnode>
+        <childnode refid="8398" relation="include">
+        </childnode>
+        <childnode refid="8399" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="8409">
+        <label>touchgfx/containers/clock/DigitalClock.hpp</label>
+        <link refid="_digital_clock_8hpp"/>
+      </node>
+      <node id="8407">
+        <label>touchgfx/containers/buttons/Buttons.hpp</label>
+        <link refid="containers_2buttons_2_buttons_8hpp"/>
+      </node>
+      <node id="8408">
+        <label>touchgfx/containers/buttons/WildcardTextButtonStyle.hpp</label>
+        <link refid="_wildcard_text_button_style_8hpp"/>
+        <childnode refid="8407" relation="include">
+        </childnode>
+      </node>
+      <node id="8410">
+        <label>touchgfx/containers/progress_indicators/TextProgress.hpp</label>
+        <link refid="_text_progress_8hpp"/>
+      </node>
+      <node id="8411">
+        <label>touchgfx/widgets/Keyboard.hpp</label>
+        <link refid="_keyboard_8hpp"/>
+      </node>
+      <node id="8405">
+        <label>touchgfx/widgets/TextAreaWithWildcard.hpp</label>
+        <link refid="_text_area_with_wildcard_8hpp"/>
+        <childnode refid="8406" relation="include">
+        </childnode>
+        <childnode refid="8408" relation="include">
+        </childnode>
+        <childnode refid="8409" relation="include">
+        </childnode>
+        <childnode refid="8410" relation="include">
+        </childnode>
+        <childnode refid="8411" relation="include">
+        </childnode>
+      </node>
+      <node id="8406">
+        <label>touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp</label>
+        <link refid="_two_wildcard_text_button_style_8hpp"/>
+        <childnode refid="8407" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classtouchgfx_1_1_text_area_with_one_wildcard" prot="public">touchgfx::TextAreaWithOneWildcard</innerclass>
+    <innerclass refid="classtouchgfx_1_1_text_area_with_two_wildcards" prot="public">touchgfx::TextAreaWithTwoWildcards</innerclass>
+    <innerclass refid="classtouchgfx_1_1_text_area_with_wildcard_base" prot="public">touchgfx::TextAreaWithWildcardBase</innerclass>
+    <innernamespace refid="namespacetouchgfx">touchgfx</innernamespace>
+    <briefdescription>
+<para>Declares the <ref refid="classtouchgfx_1_1_text_area_with_wildcard_base" kindref="compound">touchgfx::TextAreaWithWildcardBase</ref> (abstract), <ref refid="classtouchgfx_1_1_text_area_with_one_wildcard" kindref="compound">touchgfx::TextAreaWithOneWildcard</ref> and <ref refid="classtouchgfx_1_1_text_area_with_two_wildcards" kindref="compound">touchgfx::TextAreaWithTwoWildcards</ref> classes. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="7"><highlight class="preprocessor">#ifndef<sp/>TEXTAREAWITHWILDCARD_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TEXTAREAWITHWILDCARD_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_text_provider_8hpp" kindref="compound">touchgfx/TextProvider.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_h_a_l_8hpp" kindref="compound">touchgfx/hal/HAL.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_text_area_8hpp" kindref="compound">touchgfx/widgets/TextArea.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetouchgfx" kindref="compound">touchgfx</ref></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21" refid="classtouchgfx_1_1_text_area_with_wildcard_base" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtouchgfx_1_1_text_area_with_wildcard_base" kindref="compound">TextAreaWithWildcardBase</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_text_area" kindref="compound">TextArea</ref></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_text_area_with_wildcard_base" kindref="compound">TextAreaWithWildcardBase</ref>()</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classtouchgfx_1_1_text_area" kindref="compound">TextArea</ref>()</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="classtouchgfx_1_1_text_area_with_one_wildcard" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtouchgfx_1_1_text_area_with_one_wildcard" kindref="compound">TextAreaWithOneWildcard</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_text_area_with_wildcard_base" kindref="compound">TextAreaWithWildcardBase</ref></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_text_area_with_one_wildcard" kindref="compound">TextAreaWithOneWildcard</ref>()</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classtouchgfx_1_1_text_area_with_wildcard_base" kindref="compound">TextAreaWithWildcardBase</ref>(),<sp/><ref refid="classtouchgfx_1_1_text_area_with_one_wildcard_1aa094ed5c7875eab08a176fe148d09d7d" kindref="member">wildcard</ref>(0)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>int16_t<sp/><ref refid="classtouchgfx_1_1_text_area_with_one_wildcard_1a733d4fab88e4bf60c5cd7900a2796f41" kindref="member">getTextHeight</ref>()</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_text_area_1a9d9a225af451ae961007a9843f5cbcf5" kindref="member">typedText</ref>.<ref refid="classtouchgfx_1_1_typed_text_1ad82dbf18c541c73a3b6d2b7d602f8b59" kindref="member">hasValidId</ref>()<sp/>?<sp/><ref refid="classtouchgfx_1_1_text_area_1abb108f49dd3225ec7411ec9f286404f3" kindref="member">calculateTextHeight</ref>(<ref refid="classtouchgfx_1_1_text_area_1a9d9a225af451ae961007a9843f5cbcf5" kindref="member">typedText</ref>.<ref refid="classtouchgfx_1_1_typed_text_1a21720d7ddc86f34aa5639fcd170f0571" kindref="member">getText</ref>(),<sp/><ref refid="classtouchgfx_1_1_text_area_with_one_wildcard_1aa094ed5c7875eab08a176fe148d09d7d" kindref="member">wildcard</ref>,<sp/>0)<sp/>:<sp/>0;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_text_area_with_one_wildcard_1ae97e6c021d3075099eb88a81b868b5c7" kindref="member">draw</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref>&amp;<sp/>area)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_text_area_with_one_wildcard_1a43aed159ec16278e3b9da7167bed8313" kindref="member">setWildcard</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref>*<sp/>value)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_text_area_with_one_wildcard_1aa094ed5c7875eab08a176fe148d09d7d" kindref="member">wildcard</ref><sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref>*<sp/><ref refid="classtouchgfx_1_1_text_area_with_one_wildcard_1a86b3321d3a62912d5aa1f20168389889" kindref="member">getWildcard</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="74"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_text_area_with_one_wildcard_1aa094ed5c7875eab08a176fe148d09d7d" kindref="member">wildcard</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="classtouchgfx_1_1_text_area_with_one_wildcard_1a47cb5b4519fe856a390ec95bbaa4c5b8" kindref="member">getTextWidth</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="79"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_text_area_1a9d9a225af451ae961007a9843f5cbcf5" kindref="member">typedText</ref>.<ref refid="classtouchgfx_1_1_typed_text_1ad82dbf18c541c73a3b6d2b7d602f8b59" kindref="member">hasValidId</ref>()<sp/>?<sp/><ref refid="classtouchgfx_1_1_text_area_1a9d9a225af451ae961007a9843f5cbcf5" kindref="member">typedText</ref>.<ref refid="classtouchgfx_1_1_typed_text_1a25907ed052593bfd067c8c7fd2e28101" kindref="member">getFont</ref>()-&gt;<ref refid="classtouchgfx_1_1_font_1a124c51d29589a4cc3e043884835c0585" kindref="member">getStringWidth</ref>(<ref refid="classtouchgfx_1_1_text_area_1a9d9a225af451ae961007a9843f5cbcf5" kindref="member">typedText</ref>.<ref refid="classtouchgfx_1_1_typed_text_1a8fd5b7aa1b2152fd7a910e890dfdd492" kindref="member">getTextDirection</ref>(),<sp/><ref refid="classtouchgfx_1_1_text_area_1a9d9a225af451ae961007a9843f5cbcf5" kindref="member">typedText</ref>.<ref refid="classtouchgfx_1_1_typed_text_1a21720d7ddc86f34aa5639fcd170f0571" kindref="member">getText</ref>(),<sp/><ref refid="classtouchgfx_1_1_text_area_with_one_wildcard_1aa094ed5c7875eab08a176fe148d09d7d" kindref="member">wildcard</ref>,<sp/>0)<sp/>:<sp/>0;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref>*<sp/><ref refid="classtouchgfx_1_1_text_area_with_one_wildcard_1aa094ed5c7875eab08a176fe148d09d7d" kindref="member">wildcard</ref>;<sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="classtouchgfx_1_1_text_area_with_two_wildcards" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtouchgfx_1_1_text_area_with_two_wildcards" kindref="compound">TextAreaWithTwoWildcards</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_text_area_with_wildcard_base" kindref="compound">TextAreaWithWildcardBase</ref></highlight></codeline>
+<codeline lineno="97"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_text_area_with_two_wildcards" kindref="compound">TextAreaWithTwoWildcards</ref>()</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classtouchgfx_1_1_text_area_with_wildcard_base" kindref="compound">TextAreaWithWildcardBase</ref>(),<sp/><ref refid="classtouchgfx_1_1_text_area_with_two_wildcards_1ac29876e4ba0126d081a71e28fc765b1b" kindref="member">wc1</ref>(0),<sp/><ref refid="classtouchgfx_1_1_text_area_with_two_wildcards_1a08db726b933ca906597b45d79b84c7a7" kindref="member">wc2</ref>(0)</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>int16_t<sp/><ref refid="classtouchgfx_1_1_text_area_with_two_wildcards_1a733d4fab88e4bf60c5cd7900a2796f41" kindref="member">getTextHeight</ref>()</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_text_area_1a9d9a225af451ae961007a9843f5cbcf5" kindref="member">typedText</ref>.<ref refid="classtouchgfx_1_1_typed_text_1ad82dbf18c541c73a3b6d2b7d602f8b59" kindref="member">hasValidId</ref>()<sp/>?<sp/><ref refid="classtouchgfx_1_1_text_area_1abb108f49dd3225ec7411ec9f286404f3" kindref="member">calculateTextHeight</ref>(<ref refid="classtouchgfx_1_1_text_area_1a9d9a225af451ae961007a9843f5cbcf5" kindref="member">typedText</ref>.<ref refid="classtouchgfx_1_1_typed_text_1a21720d7ddc86f34aa5639fcd170f0571" kindref="member">getText</ref>(),<sp/><ref refid="classtouchgfx_1_1_text_area_with_two_wildcards_1ac29876e4ba0126d081a71e28fc765b1b" kindref="member">wc1</ref>,<sp/><ref refid="classtouchgfx_1_1_text_area_with_two_wildcards_1a08db726b933ca906597b45d79b84c7a7" kindref="member">wc2</ref>)<sp/>:<sp/>0;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_text_area_with_two_wildcards_1ae97e6c021d3075099eb88a81b868b5c7" kindref="member">draw</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref>&amp;<sp/>area)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_text_area_with_two_wildcards_1ad24783d4373e613652d27d2a1a3714a7" kindref="member">setWildcard1</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref>*<sp/>value)</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_text_area_with_two_wildcards_1ac29876e4ba0126d081a71e28fc765b1b" kindref="member">wc1</ref><sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref>*<sp/><ref refid="classtouchgfx_1_1_text_area_with_two_wildcards_1ab867cdeacf78142c3be8f7a0023d1796" kindref="member">getWildcard1</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="131"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_text_area_with_two_wildcards_1ac29876e4ba0126d081a71e28fc765b1b" kindref="member">wc1</ref>;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_text_area_with_two_wildcards_1af1ee646b073de25a6dc2ecb447095237" kindref="member">setWildcard2</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref>*<sp/>value)</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_text_area_with_two_wildcards_1a08db726b933ca906597b45d79b84c7a7" kindref="member">wc2</ref><sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref>*<sp/><ref refid="classtouchgfx_1_1_text_area_with_two_wildcards_1a2f763d75be6832029d7e2aaef817b9c1" kindref="member">getWildcard2</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="155"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_text_area_with_two_wildcards_1a08db726b933ca906597b45d79b84c7a7" kindref="member">wc2</ref>;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="classtouchgfx_1_1_text_area_with_two_wildcards_1a47cb5b4519fe856a390ec95bbaa4c5b8" kindref="member">getTextWidth</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="160"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_text_area_1a9d9a225af451ae961007a9843f5cbcf5" kindref="member">typedText</ref>.<ref refid="classtouchgfx_1_1_typed_text_1ad82dbf18c541c73a3b6d2b7d602f8b59" kindref="member">hasValidId</ref>()<sp/>?<sp/><ref refid="classtouchgfx_1_1_text_area_1a9d9a225af451ae961007a9843f5cbcf5" kindref="member">typedText</ref>.<ref refid="classtouchgfx_1_1_typed_text_1a25907ed052593bfd067c8c7fd2e28101" kindref="member">getFont</ref>()-&gt;<ref refid="classtouchgfx_1_1_font_1a124c51d29589a4cc3e043884835c0585" kindref="member">getStringWidth</ref>(<ref refid="classtouchgfx_1_1_text_area_1a9d9a225af451ae961007a9843f5cbcf5" kindref="member">typedText</ref>.<ref refid="classtouchgfx_1_1_typed_text_1a8fd5b7aa1b2152fd7a910e890dfdd492" kindref="member">getTextDirection</ref>(),<sp/><ref refid="classtouchgfx_1_1_text_area_1a9d9a225af451ae961007a9843f5cbcf5" kindref="member">typedText</ref>.<ref refid="classtouchgfx_1_1_typed_text_1a21720d7ddc86f34aa5639fcd170f0571" kindref="member">getText</ref>(),<sp/><ref refid="classtouchgfx_1_1_text_area_with_two_wildcards_1ac29876e4ba0126d081a71e28fc765b1b" kindref="member">wc1</ref>,<sp/><ref refid="classtouchgfx_1_1_text_area_with_two_wildcards_1a08db726b933ca906597b45d79b84c7a7" kindref="member">wc2</ref>)<sp/>:<sp/>0;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref>*<sp/><ref refid="classtouchgfx_1_1_text_area_with_two_wildcards_1ac29876e4ba0126d081a71e28fc765b1b" kindref="member">wc1</ref>;<sp/></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref>*<sp/><ref refid="classtouchgfx_1_1_text_area_with_two_wildcards_1a08db726b933ca906597b45d79b84c7a7" kindref="member">wc2</ref>;<sp/></highlight></codeline>
+<codeline lineno="167"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>touchgfx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>TEXTAREAWITHWILDCARD_HPP</highlight></codeline>
+    </programlisting>
+    <location file="touchgfx/widgets/TextAreaWithWildcard.hpp"/>
+  </compounddef>
+</doxygen>

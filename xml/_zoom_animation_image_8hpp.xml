@@ -1,0 +1,388 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="_zoom_animation_image_8hpp" kind="file" language="C++">
+    <compoundname>ZoomAnimationImage.hpp</compoundname>
+    <includes refid="_easing_equations_8hpp" local="no">touchgfx/EasingEquations.hpp</includes>
+    <includes refid="_container_8hpp" local="no">touchgfx/containers/Container.hpp</includes>
+    <includes refid="_image_8hpp" local="no">touchgfx/widgets/Image.hpp</includes>
+    <includes refid="_scalable_image_8hpp" local="no">touchgfx/widgets/ScalableImage.hpp</includes>
+    <incdepgraph>
+      <node id="2914">
+        <label>stdarg.h</label>
+      </node>
+      <node id="2915">
+        <label>touchgfx/Bitmap.hpp</label>
+        <link refid="_bitmap_8hpp"/>
+        <childnode refid="2916" relation="include">
+        </childnode>
+        <childnode refid="2899" relation="include">
+        </childnode>
+      </node>
+      <node id="2910">
+        <label>touchgfx/events/DragEvent.hpp</label>
+        <link refid="_drag_event_8hpp"/>
+        <childnode refid="2909" relation="include">
+        </childnode>
+        <childnode refid="2899" relation="include">
+        </childnode>
+      </node>
+      <node id="2922">
+        <label>windows.h</label>
+      </node>
+      <node id="2900">
+        <label>assert.h</label>
+      </node>
+      <node id="2919">
+        <label>touchgfx/TextProvider.hpp</label>
+        <link refid="_text_provider_8hpp"/>
+        <childnode refid="2914" relation="include">
+        </childnode>
+        <childnode refid="2917" relation="include">
+        </childnode>
+        <childnode refid="2918" relation="include">
+        </childnode>
+      </node>
+      <node id="2921">
+        <label>touchgfx/Utils.hpp</label>
+        <link refid="_utils_8hpp"/>
+        <childnode refid="2914" relation="include">
+        </childnode>
+        <childnode refid="2922" relation="include">
+        </childnode>
+        <childnode refid="2923" relation="include">
+        </childnode>
+        <childnode refid="2915" relation="include">
+        </childnode>
+        <childnode refid="2899" relation="include">
+        </childnode>
+      </node>
+      <node id="2902">
+        <label>touchgfx/hal/Config.hpp</label>
+        <link refid="_config_8hpp"/>
+      </node>
+      <node id="2901">
+        <label>stdint.h</label>
+      </node>
+      <node id="2907">
+        <label>touchgfx/UIEventListener.hpp</label>
+        <link refid="_u_i_event_listener_8hpp"/>
+        <childnode refid="2899" relation="include">
+        </childnode>
+      </node>
+      <node id="2916">
+        <label>cassert</label>
+      </node>
+      <node id="2920">
+        <label>touchgfx/TextureMapTypes.hpp</label>
+        <link refid="_texture_map_types_8hpp"/>
+        <childnode refid="2899" relation="include">
+        </childnode>
+      </node>
+      <node id="2911">
+        <label>touchgfx/events/GestureEvent.hpp</label>
+        <link refid="_gesture_event_8hpp"/>
+        <childnode refid="2909" relation="include">
+        </childnode>
+        <childnode refid="2899" relation="include">
+        </childnode>
+      </node>
+      <node id="2917">
+        <label>touchgfx/Font.hpp</label>
+        <link refid="_font_8hpp"/>
+        <childnode refid="2918" relation="include">
+        </childnode>
+        <childnode refid="2899" relation="include">
+        </childnode>
+      </node>
+      <node id="2899">
+        <label>touchgfx/hal/Types.hpp</label>
+        <link refid="_types_8hpp"/>
+        <childnode refid="2900" relation="include">
+        </childnode>
+        <childnode refid="2901" relation="include">
+        </childnode>
+        <childnode refid="2902" relation="include">
+        </childnode>
+      </node>
+      <node id="2905">
+        <label>touchgfx/Drawable.hpp</label>
+        <link refid="_drawable_8hpp"/>
+        <childnode refid="2906" relation="include">
+        </childnode>
+        <childnode refid="2904" relation="include">
+        </childnode>
+        <childnode refid="2921" relation="include">
+        </childnode>
+        <childnode refid="2908" relation="include">
+        </childnode>
+        <childnode refid="2910" relation="include">
+        </childnode>
+        <childnode refid="2911" relation="include">
+        </childnode>
+        <childnode refid="2899" relation="include">
+        </childnode>
+      </node>
+      <node id="2926">
+        <label>touchgfx/widgets/ScalableImage.hpp</label>
+        <link refid="_scalable_image_8hpp"/>
+        <childnode refid="2915" relation="include">
+        </childnode>
+        <childnode refid="2924" relation="include">
+        </childnode>
+      </node>
+      <node id="2897">
+        <label>touchgfx/containers/ZoomAnimationImage.hpp</label>
+        <link refid="_zoom_animation_image_8hpp"/>
+        <childnode refid="2898" relation="include">
+        </childnode>
+        <childnode refid="2903" relation="include">
+        </childnode>
+        <childnode refid="2924" relation="include">
+        </childnode>
+        <childnode refid="2926" relation="include">
+        </childnode>
+      </node>
+      <node id="2924">
+        <label>touchgfx/widgets/Image.hpp</label>
+        <link refid="_image_8hpp"/>
+        <childnode refid="2915" relation="include">
+        </childnode>
+        <childnode refid="2899" relation="include">
+        </childnode>
+        <childnode refid="2913" relation="include">
+        </childnode>
+        <childnode refid="2925" relation="include">
+        </childnode>
+      </node>
+      <node id="2912">
+        <label>touchgfx/transitions/Transition.hpp</label>
+        <link refid="_transition_8hpp"/>
+        <childnode refid="2899" relation="include">
+        </childnode>
+        <childnode refid="2913" relation="include">
+        </childnode>
+      </node>
+      <node id="2903">
+        <label>touchgfx/containers/Container.hpp</label>
+        <link refid="_container_8hpp"/>
+        <childnode refid="2904" relation="include">
+        </childnode>
+        <childnode refid="2905" relation="include">
+        </childnode>
+      </node>
+      <node id="2908">
+        <label>touchgfx/events/ClickEvent.hpp</label>
+        <link refid="_click_event_8hpp"/>
+        <childnode refid="2909" relation="include">
+        </childnode>
+        <childnode refid="2899" relation="include">
+        </childnode>
+      </node>
+      <node id="2925">
+        <label>touchgfx/widgets/Widget.hpp</label>
+        <link refid="_widget_8hpp"/>
+        <childnode refid="2900" relation="include">
+        </childnode>
+        <childnode refid="2905" relation="include">
+        </childnode>
+      </node>
+      <node id="2906">
+        <label>touchgfx/Application.hpp</label>
+        <link refid="_application_8hpp"/>
+        <childnode refid="2907" relation="include">
+        </childnode>
+        <childnode refid="2908" relation="include">
+        </childnode>
+        <childnode refid="2910" relation="include">
+        </childnode>
+        <childnode refid="2911" relation="include">
+        </childnode>
+        <childnode refid="2899" relation="include">
+        </childnode>
+        <childnode refid="2912" relation="include">
+        </childnode>
+      </node>
+      <node id="2904">
+        <label>touchgfx/Callback.hpp</label>
+        <link refid="_callback_8hpp"/>
+      </node>
+      <node id="2918">
+        <label>touchgfx/Unicode.hpp</label>
+        <link refid="_unicode_8hpp"/>
+        <childnode refid="2914" relation="include">
+        </childnode>
+        <childnode refid="2899" relation="include">
+        </childnode>
+      </node>
+      <node id="2909">
+        <label>touchgfx/Event.hpp</label>
+        <link refid="_event_8hpp"/>
+      </node>
+      <node id="2913">
+        <label>touchgfx/lcd/LCD.hpp</label>
+        <link refid="_l_c_d_8hpp"/>
+        <childnode refid="2914" relation="include">
+        </childnode>
+        <childnode refid="2915" relation="include">
+        </childnode>
+        <childnode refid="2917" relation="include">
+        </childnode>
+        <childnode refid="2919" relation="include">
+        </childnode>
+        <childnode refid="2920" relation="include">
+        </childnode>
+        <childnode refid="2918" relation="include">
+        </childnode>
+        <childnode refid="2921" relation="include">
+        </childnode>
+        <childnode refid="2899" relation="include">
+        </childnode>
+      </node>
+      <node id="2923">
+        <label>stdio.h</label>
+      </node>
+      <node id="2898">
+        <label>touchgfx/EasingEquations.hpp</label>
+        <link refid="_easing_equations_8hpp"/>
+        <childnode refid="2899" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classtouchgfx_1_1_zoom_animation_image" prot="public">touchgfx::ZoomAnimationImage</innerclass>
+    <innernamespace refid="namespacetouchgfx">touchgfx</innernamespace>
+    <briefdescription>
+<para>Declares the <ref refid="classtouchgfx_1_1_zoom_animation_image" kindref="compound">touchgfx::ZoomAnimationImage</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>ZOOMANIMATIONIMAGE_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ZOOMANIMATIONIMAGE_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_easing_equations_8hpp" kindref="compound">touchgfx/EasingEquations.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_container_8hpp" kindref="compound">touchgfx/containers/Container.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_image_8hpp" kindref="compound">touchgfx/widgets/Image.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_scalable_image_8hpp" kindref="compound">touchgfx/widgets/ScalableImage.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetouchgfx" kindref="compound">touchgfx</ref></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33" refid="classtouchgfx_1_1_zoom_animation_image" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtouchgfx_1_1_zoom_animation_image" kindref="compound">ZoomAnimationImage</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_container" kindref="compound">Container</ref></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a9b67fd62012924ab8540c821afd2ab72" kindref="member">ZoomMode</ref></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a9b67fd62012924ab8540c821afd2ab72a19d100616772def6fcc516101e53203d" kindref="member">FIXED_CENTER</ref><sp/>=<sp/>0,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a9b67fd62012924ab8540c821afd2ab72a5b70f9a09716854ce8d9684e4badd4fb" kindref="member">FIXED_LEFT</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a9b67fd62012924ab8540c821afd2ab72a8905bab94303cffba7338b747d5af0f0" kindref="member">FIXED_RIGHT</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a9b67fd62012924ab8540c821afd2ab72a5b13f5f2e1eaea4c80f57bce037996a4" kindref="member">FIXED_TOP</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a9b67fd62012924ab8540c821afd2ab72a3e3b44e1e28e7a47702eb132394a57cd" kindref="member">FIXED_BOTTOM</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a9b67fd62012924ab8540c821afd2ab72af8816e1654baf34ea9537da49fb4b4bc" kindref="member">FIXED_LEFT_AND_TOP</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a9b67fd62012924ab8540c821afd2ab72affcf4f0438fc136fa22b148a67b5e056" kindref="member">FIXED_RIGHT_AND_TOP</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a9b67fd62012924ab8540c821afd2ab72a8ffeb14363642be54e1456f58b0afb13" kindref="member">FIXED_LEFT_AND_BOTTOM</ref>,<sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a9b67fd62012924ab8540c821afd2ab72a03120c7a0c4bcc7055f8cddc18fbc866" kindref="member">FIXED_RIGHT_AND_BOTTOM</ref><sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image" kindref="compound">ZoomAnimationImage</ref>();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classtouchgfx_1_1_zoom_animation_image" kindref="compound">ZoomAnimationImage</ref>();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a2934503e7545c43cfb6b8c4e117031c4" kindref="member">startZoomAnimation</ref>(int16_t<sp/>endWidth,<sp/>int16_t<sp/>endHeight,<sp/>uint16_t<sp/>duration,<sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a9b67fd62012924ab8540c821afd2ab72" kindref="member">ZoomMode</ref><sp/>zoomMode<sp/>=<sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a9b67fd62012924ab8540c821afd2ab72af8816e1654baf34ea9537da49fb4b4bc" kindref="member">FIXED_LEFT_AND_TOP</ref>,<sp/><ref refid="namespacetouchgfx_1a067e5cd30b7258d54a37d6a0d1423d68" kindref="member">EasingEquation</ref><sp/>widthProgressionEquation<sp/>=<sp/>&amp;<ref refid="classtouchgfx_1_1_easing_equations_1ae67a00d2c3a1434ba2af423add367b10" kindref="member">EasingEquations::linearEaseNone</ref>,<sp/><ref refid="namespacetouchgfx_1a067e5cd30b7258d54a37d6a0d1423d68" kindref="member">EasingEquation</ref><sp/>heightProgressionEquation<sp/>=<sp/>&amp;<ref refid="classtouchgfx_1_1_easing_equations_1ae67a00d2c3a1434ba2af423add367b10" kindref="member">EasingEquations::linearEaseNone</ref>);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1aea525323e185c6d6fe57540289946f97" kindref="member">startZoomAndMoveAnimation</ref>(int16_t<sp/>endX,<sp/>int16_t<sp/>endY,<sp/>int16_t<sp/>endWidth,<sp/>int16_t<sp/>endHeight,<sp/>uint16_t<sp/>duration,<sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a9b67fd62012924ab8540c821afd2ab72" kindref="member">ZoomMode</ref><sp/>zoomMode<sp/>=<sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a9b67fd62012924ab8540c821afd2ab72af8816e1654baf34ea9537da49fb4b4bc" kindref="member">FIXED_LEFT_AND_TOP</ref>,<sp/><ref refid="namespacetouchgfx_1a067e5cd30b7258d54a37d6a0d1423d68" kindref="member">EasingEquation</ref><sp/>xProgressionEquation<sp/>=<sp/>&amp;<ref refid="classtouchgfx_1_1_easing_equations_1ae67a00d2c3a1434ba2af423add367b10" kindref="member">EasingEquations::linearEaseNone</ref>,<sp/><ref refid="namespacetouchgfx_1a067e5cd30b7258d54a37d6a0d1423d68" kindref="member">EasingEquation</ref><sp/>yProgressionEquation<sp/>=<sp/>&amp;<ref refid="classtouchgfx_1_1_easing_equations_1ae67a00d2c3a1434ba2af423add367b10" kindref="member">EasingEquations::linearEaseNone</ref>,<sp/><ref refid="namespacetouchgfx_1a067e5cd30b7258d54a37d6a0d1423d68" kindref="member">EasingEquation</ref><sp/>widthProgressionEquation<sp/>=<sp/>&amp;<ref refid="classtouchgfx_1_1_easing_equations_1ae67a00d2c3a1434ba2af423add367b10" kindref="member">EasingEquations::linearEaseNone</ref>,<sp/><ref refid="namespacetouchgfx_1a067e5cd30b7258d54a37d6a0d1423d68" kindref="member">EasingEquation</ref><sp/>heightProgressionEquation<sp/>=<sp/>&amp;<ref refid="classtouchgfx_1_1_easing_equations_1ae67a00d2c3a1434ba2af423add367b10" kindref="member">EasingEquations::linearEaseNone</ref>);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1ad158fad3ad03b2e942fb2140df64e589" kindref="member">cancelZoomAnimation</ref>();</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a1af635cee0f186c3d0fcea60bac14355" kindref="member">handleTickEvent</ref>();</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a8aa47f3a6f2559403a51824d6a9e11a1" kindref="member">setBitmaps</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref>&amp;<sp/>smallBitmap,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref>&amp;<sp/>largeBitmap);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1ab288bb6efd18ee68cd8069a14f5d9cf8" kindref="member">getSmallBitmap</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="147"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1aa14ce840f93915e22d43b3e10645b753" kindref="member">smallBmp</ref>;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a942ffcfb96d2703c0b4e9a5c83a6f6fc" kindref="member">getLargeBitmap</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="159"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a46143b097e850be9ddb969f57608c778" kindref="member">largeBmp</ref>;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1ac218c371450d8ad2bed3e1b07965a41a" kindref="member">setPosition</ref>(int16_t<sp/>x,<sp/>int16_t<sp/>y,<sp/>int16_t<sp/>width,<sp/>int16_t<sp/>height);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1ae74a37f71d23440fc8b0466ad8ecfe4b" kindref="member">setWidth</ref>(int16_t<sp/>width);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a47a6312407603de99247bb802dbd8a48" kindref="member">setHeight</ref>(int16_t<sp/>height);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1acc95424e9a51fb8913b79a8f1b7edb92" kindref="member">setDimension</ref>(int16_t<sp/>width,<sp/>int16_t<sp/>height);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a55d2db5736664bde38625219a0425b36" kindref="member">setScalingMode</ref>(<ref refid="classtouchgfx_1_1_scalable_image_1a1397613edd6bbf60ba96b2db6d2aba8a" kindref="member">ScalableImage::ScalingAlgorithm</ref><sp/>mode);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_scalable_image_1a1397613edd6bbf60ba96b2db6d2aba8a" kindref="member">ScalableImage::ScalingAlgorithm</ref><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1ab86a4cc2b910a138eee457257cf5c106" kindref="member">getScalingMode</ref>();</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a89b6c75ec0c8d536fb61b146eb420b4e" kindref="member">setAlpha</ref>(uint8_t<sp/>newAlpha);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a48b27ff9c2eafcd202482b45abc86ff7" kindref="member">getAlpha</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1afd7042bae342a1736f37af3a723a47b6" kindref="member">setAnimationDelay</ref>(uint16_t<sp/>delay);</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1add08bb574acc508d82a4aaeb2e0b9680" kindref="member">getAnimationDelay</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a495263c385e705eb05a9ebd6ff513d04" kindref="member">setAnimationEndedCallback</ref>(<ref refid="classtouchgfx_1_1_generic_callback" kindref="compound">GenericCallback&lt;const ZoomAnimationImage&amp;&gt;</ref>&amp;<sp/>callback)</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1af7ab39c388f6d2983df1842c177a95ae" kindref="member">animationEndedAction</ref><sp/>=<sp/>&amp;callback;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a05ead6c4ed5f33502d94a26a3fdd8faa" kindref="member">isRunning</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1aecc74d7f0b84cbf0061deaafa8585113" kindref="member">isZoomAnimationRunning</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a808e5cd4979462d3bbe3070d7d147444" kindref="member">States</ref></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a808e5cd4979462d3bbe3070d7d147444aa9d96a3c6709d303b0359c70ca8183f5" kindref="member">ANIMATE_ZOOM</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a808e5cd4979462d3bbe3070d7d147444a28b7af34f913ca2919aa1d40a1e4e7d8" kindref="member">ANIMATE_ZOOM_AND_MOVE</ref>,<sp/></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a808e5cd4979462d3bbe3070d7d147444a8896943db4557c56942719802df5d591" kindref="member">NO_ANIMATION</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a808e5cd4979462d3bbe3070d7d147444" kindref="member">States</ref><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a372f8e4da4e6149314fd5c8dd8ae578b" kindref="member">currentState</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a05c747ceab54f1de82b0bd21e348294a" kindref="member">animationCounter</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1af0c275d76a1dd7a0884208f74bc88873" kindref="member">zoomAnimationDelay</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1aa14ce840f93915e22d43b3e10645b753" kindref="member">smallBmp</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a46143b097e850be9ddb969f57608c778" kindref="member">largeBmp</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_image" kindref="compound">Image</ref><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1af6057c173c211ff78c0f66fe3229899e" kindref="member">image</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_scalable_image" kindref="compound">ScalableImage</ref><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a54705fb920a9bd908d59cc431f8a3aca" kindref="member">scalableImage</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a9b67fd62012924ab8540c821afd2ab72" kindref="member">ZoomMode</ref><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1aa1c03f8991ac7b177a74129ed7857606" kindref="member">currentZoomMode</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a8ed74996ce715c63152fcfccfc0f009a" kindref="member">zoomAnimationStartWidth</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a48b584e3b98f17c1a6dd402081addeda" kindref="member">zoomAnimationStartHeight</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a743771a4ef4535762c5f86234d976803" kindref="member">zoomAnimationEndWidth</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1acd03d7cb691d431248ea0072d66b8222" kindref="member">zoomAnimationEndHeight</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1ada7d9f1c56b887d9d6302848b4c6ad2d" kindref="member">zoomAnimationStartX</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a35f5c4286c88c3e6aa757fe3b0607e95" kindref="member">zoomAnimationStartY</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a195734d001eaa4345fdb0301651fe917" kindref="member">zoomAnimationDeltaX</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1af5689d385d293fade8a5c37b5de4813e" kindref="member">zoomAnimationDeltaY</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1aff844c3eca7c91b5c780496d8c124dd7" kindref="member">moveAnimationEndX</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1adc89a58d63a51e4afb3539ab9810b286" kindref="member">moveAnimationEndY</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a4c9d0ee476ff3cf4c8aaec472f7d1718" kindref="member">animationDuration</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacetouchgfx_1a067e5cd30b7258d54a37d6a0d1423d68" kindref="member">EasingEquation</ref><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1ac79ed4bc34db1406a121f9aa46019a72" kindref="member">zoomAnimationWidthEquation</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacetouchgfx_1a067e5cd30b7258d54a37d6a0d1423d68" kindref="member">EasingEquation</ref><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1aa8b3a42173061cb93aff65e2d99e73c9" kindref="member">zoomAnimationHeightEquation</ref>;<sp/></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacetouchgfx_1a067e5cd30b7258d54a37d6a0d1423d68" kindref="member">EasingEquation</ref><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a1cc442703c0fc6d63f00e1b48afc25f4" kindref="member">moveAnimationXEquation</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacetouchgfx_1a067e5cd30b7258d54a37d6a0d1423d68" kindref="member">EasingEquation</ref><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a083cb35f2e9d65c46e5409b2842afe35" kindref="member">moveAnimationYEquation</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_generic_callback" kindref="compound">GenericCallback&lt;const ZoomAnimationImage&amp;&gt;</ref>*<sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1af7ab39c388f6d2983df1842c177a95ae" kindref="member">animationEndedAction</ref>;<sp/></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1acf0ffe71800d79cc544c8183245d2a49" kindref="member">updateRenderingMethod</ref>();</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a6291ba55cee8d13920161074ec709649" kindref="member">setCurrentState</ref>(<ref refid="classtouchgfx_1_1_zoom_animation_image_1a808e5cd4979462d3bbe3070d7d147444" kindref="member">States</ref><sp/>state);</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1aecdaf1dff8ab689ab937c43b50142140" kindref="member">startTimerAndSetParameters</ref>(int16_t<sp/>endWidth,<sp/>int16_t<sp/>endHeight,<sp/>uint16_t<sp/>duration,<sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a9b67fd62012924ab8540c821afd2ab72" kindref="member">ZoomMode</ref><sp/>zoomMode,<sp/><ref refid="namespacetouchgfx_1a067e5cd30b7258d54a37d6a0d1423d68" kindref="member">EasingEquation</ref><sp/>widthProgressionEquation,<sp/><ref refid="namespacetouchgfx_1a067e5cd30b7258d54a37d6a0d1423d68" kindref="member">EasingEquation</ref><sp/>heightProgressionEquation);</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_zoom_animation_image_1a037ad4aab875ec98469905bcfc83678f" kindref="member">updateZoomAnimationDeltaXY</ref>();</highlight></codeline>
+<codeline lineno="348"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"></highlight></codeline>
+<codeline lineno="350"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>touchgfx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="351"><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>ZOOMANIMATIONIMAGE_HPP</highlight></codeline>
+    </programlisting>
+    <location file="touchgfx/containers/ZoomAnimationImage.hpp"/>
+  </compounddef>
+</doxygen>

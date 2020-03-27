@@ -1,0 +1,453 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_canvas_widget" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>touchgfx::CanvasWidget</compoundname>
+    <basecompoundref refid="classtouchgfx_1_1_widget" prot="public" virt="non-virtual">Widget</basecompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_abstract_shape" prot="public" virt="non-virtual">AbstractShape</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_circle" prot="public" virt="non-virtual">Circle</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_line" prot="public" virt="non-virtual">Line</derivedcompoundref>
+    <includes local="no">CanvasWidget.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_canvas_widget_1acf5bb76caa419c0fa231dbd66c881084" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t alpha</definition>
+        <argsstring></argsstring>
+        <name>alpha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/CanvasWidget.hpp" line="154" column="1" bodyfile="touchgfx/widgets/canvas/CanvasWidget.hpp" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_canvas_widget_1a85721d788ecb49a5450204b0e1f34384" prot="private" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_abstract_painter" kindref="compound">AbstractPainter</ref> *</type>
+        <definition>AbstractPainter* canvasPainter</definition>
+        <argsstring></argsstring>
+        <name>canvasPainter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/CanvasWidget.hpp" line="152" column="1" bodyfile="touchgfx/widgets/canvas/CanvasWidget.hpp" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_canvas_widget_1a1e193a683d56438e9469c7f3da0e2350" prot="private" static="no" mutable="yes">
+        <type>int16_t</type>
+        <definition>int16_t maxRenderLines</definition>
+        <argsstring></argsstring>
+        <name>maxRenderLines</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/CanvasWidget.hpp" line="153" column="1" bodyfile="touchgfx/widgets/canvas/CanvasWidget.hpp" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_canvas_widget_1ae9e5d44779b5ee8498ba456e26e74bb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CanvasWidget</definition>
+        <argsstring>()</argsstring>
+        <name>CanvasWidget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/CanvasWidget.hpp" line="28" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_canvas_widget_1a1277d4bddd51dbc604de265fb70ccbfd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void draw</definition>
+        <argsstring>(const Rect &amp;invalidatedArea) const</argsstring>
+        <name>draw</name>
+        <reimplements refid="classtouchgfx_1_1_drawable_1a7e4c58d8817f4119459b70ec52c38ef4">draw</reimplements>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>invalidatedArea</declname>
+        </param>
+        <briefdescription>
+<para>Draws the given invalidated area. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the underlying <ref refid="classtouchgfx_1_1_canvas_widget_renderer" kindref="compound">CanvasWidgetRenderer</ref> fail to render the widget (if the widget is too complex), the invalidated area is cut into smaller slices (horizontally) which are then drawn separately. If drawing a single raster line fails, that line is considered too complex and skipped (it is left blank/transparent) and drawing continues on the next raster line.</para>
+<para>If drawing has failed at least once, which means that the number of horizontal lines draw has been reduced, the number of successfully drawn horizontal lines is remembered for the next invocation of <ref refid="classtouchgfx_1_1_canvas_widget_1a1277d4bddd51dbc604de265fb70ccbfd" kindref="member">draw()</ref>. A future call to <ref refid="classtouchgfx_1_1_canvas_widget_1a1277d4bddd51dbc604de265fb70ccbfd" kindref="member">draw()</ref> would then start off with the reduced number of horizontal lines to prevent potentially drawing the canvas widget in vain, as happened previously in <ref refid="classtouchgfx_1_1_canvas_widget_1a1277d4bddd51dbc604de265fb70ccbfd" kindref="member">draw()</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>invalidatedArea</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The invalidated area.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_canvas_widget_1a6d4ac4ab61d1c68a5907c83177bd5e68" kindref="member">drawCanvasWidget</ref></para>
+</simplesect>
+<simplesect kind="note"><para>Subclasses of <ref refid="classtouchgfx_1_1_canvas_widget" kindref="compound">CanvasWidget</ref> should implement <ref refid="classtouchgfx_1_1_canvas_widget_1a6d4ac4ab61d1c68a5907c83177bd5e68" kindref="member">drawCanvasWidget()</ref>, not <ref refid="classtouchgfx_1_1_canvas_widget_1a1277d4bddd51dbc604de265fb70ccbfd" kindref="member">draw()</ref>. </para>
+</simplesect>
+<simplesect kind="note"><para>The term &quot;too complex&quot; means that the size of the buffer (assigned to <ref refid="classtouchgfx_1_1_canvas_widget_renderer" kindref="compound">CanvasWidgetRenderer</ref> using <ref refid="classtouchgfx_1_1_canvas_widget_renderer_1a44620941d83aef66febd70b354184bbf" kindref="member">CanvasWidgetRenderer::setupBuffer()</ref>) is too small. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/CanvasWidget.hpp" line="103" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_canvas_widget_1a6d4ac4ab61d1c68a5907c83177bd5e68" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool drawCanvasWidget</definition>
+        <argsstring>(const Rect &amp;invalidatedArea) const =0</argsstring>
+        <name>drawCanvasWidget</name>
+        <reimplementedby refid="classtouchgfx_1_1_line_1a9810af8a9edc3d97104a9a0ddfcd08fb">drawCanvasWidget</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_abstract_shape_1a9810af8a9edc3d97104a9a0ddfcd08fb">drawCanvasWidget</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_circle_1a9810af8a9edc3d97104a9a0ddfcd08fb">drawCanvasWidget</reimplementedby>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>invalidatedArea</declname>
+        </param>
+        <briefdescription>
+<para>Draw canvas widget for the given invalidated area. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Similar to <ref refid="classtouchgfx_1_1_canvas_widget_1a1277d4bddd51dbc604de265fb70ccbfd" kindref="member">draw()</ref>, but might be invoked several times with increasingly smaller areas to due to memory constraints from the underlying <ref refid="classtouchgfx_1_1_canvas_widget_renderer" kindref="compound">CanvasWidgetRenderer</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>invalidatedArea</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The invalidated area.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the widget was drawn properly, false if not.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_canvas_widget_1a1277d4bddd51dbc604de265fb70ccbfd" kindref="member">draw</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/CanvasWidget.hpp" line="149" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_canvas_widget_1a48b27ff9c2eafcd202482b45abc86ff7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>uint8_t</type>
+        <definition>virtual uint8_t getAlpha</definition>
+        <argsstring>() const</argsstring>
+        <name>getAlpha</name>
+        <briefdescription>
+<para>Returns the current alpha value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Gets the current alpha value of the <ref refid="classtouchgfx_1_1_box" kindref="compound">Box</ref>.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_canvas_widget_1a79e090d34b93e9d637d01bc9b5639681" kindref="member">setAlpha</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/CanvasWidget.hpp" line="77" column="1" bodyfile="touchgfx/widgets/canvas/CanvasWidget.hpp" bodystart="77" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_canvas_widget_1a6299071924e9fb87464b952392a623b9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref></type>
+        <definition>virtual Rect getMinimalRect</definition>
+        <argsstring>() const</argsstring>
+        <name>getMinimalRect</name>
+        <reimplementedby refid="classtouchgfx_1_1_line_1a6299071924e9fb87464b952392a623b9">getMinimalRect</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_abstract_shape_1a6299071924e9fb87464b952392a623b9">getMinimalRect</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_circle_1a6299071924e9fb87464b952392a623b9">getMinimalRect</reimplementedby>
+        <briefdescription>
+<para>Gets minimal rectangle containing the shape drawn by this widget. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Default implementation returns the size of the entire widget, but this function should be overwritten in subclasses and return the minimal rectangle containing the shape. See classes such as <ref refid="classtouchgfx_1_1_circle" kindref="compound">Circle</ref> for example implementations.</para>
+<para><simplesect kind="return"><para>The minimal rectangle containing the shape drawn. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/CanvasWidget.hpp" line="123" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_canvas_widget_1adc65631e781ab7b6a7984ae58f74cbeb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classtouchgfx_1_1_abstract_painter" kindref="compound">AbstractPainter</ref> &amp;</type>
+        <definition>virtual AbstractPainter&amp; getPainter</definition>
+        <argsstring>() const</argsstring>
+        <name>getPainter</name>
+        <briefdescription>
+<para>Gets the current painter for the <ref refid="classtouchgfx_1_1_canvas_widget" kindref="compound">CanvasWidget</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The painter.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_canvas_widget_1a2648b3c4e043a31c240657cab344610f" kindref="member">setPainter</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/CanvasWidget.hpp" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_canvas_widget_1a4dcdd780e93cc783a2ceeda00c6f3b51" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref></type>
+        <definition>virtual Rect getSolidRect</definition>
+        <argsstring>() const</argsstring>
+        <name>getSolidRect</name>
+        <reimplements refid="classtouchgfx_1_1_drawable_1ae7cd27bb574d3b85bd0ce5ce99e555ba">getSolidRect</reimplements>
+        <briefdescription>
+<para>Gets the largest solid (non-transparent) rectangle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Since canvas widgets typically do not have a solid rect, it is recommended to return an empty rectangle.</para>
+<para><simplesect kind="return"><para>The largest solid (non-transparent) rectangle.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_canvas_widget_1a1277d4bddd51dbc604de265fb70ccbfd" kindref="member">draw</ref></para>
+</simplesect>
+<simplesect kind="note"><para>Function <ref refid="classtouchgfx_1_1_canvas_widget_1a1277d4bddd51dbc604de265fb70ccbfd" kindref="member">draw()</ref> might fail for some horizontal lines due to memory constraints. These lines will not be drawn and may cause strange display artifacts. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/CanvasWidget.hpp" line="136" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_canvas_widget_1a2800b4c18c63e9e7b1f85a74ce6b80c3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void invalidate</definition>
+        <argsstring>() const</argsstring>
+        <name>invalidate</name>
+        <reimplements refid="classtouchgfx_1_1_drawable_1a2800b4c18c63e9e7b1f85a74ce6b80c3">invalidate</reimplements>
+        <briefdescription>
+<para>Invalidates the area covered by this <ref refid="classtouchgfx_1_1_canvas_widget" kindref="compound">CanvasWidget</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Since many widgets are a lot smaller than the actual size of the canvas widget, each widget must be able to tell the smallest rectangle completely containing the shape drawn by the widget. For example a circle arc is typically much smaller than the widget containing the circle.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_canvas_widget_1a6299071924e9fb87464b952392a623b9" kindref="member">getMinimalRect</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/CanvasWidget.hpp" line="113" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_canvas_widget_1a79e090d34b93e9d637d01bc9b5639681" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setAlpha</definition>
+        <argsstring>(uint8_t alpha)</argsstring>
+        <name>setAlpha</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+<para>Sets the alpha value for the <ref refid="classtouchgfx_1_1_canvas_widget" kindref="compound">CanvasWidget</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The value can be from 255 (completely solid) to 0 (completely transparent).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alpha value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_canvas_widget_1a48b27ff9c2eafcd202482b45abc86ff7" kindref="member">getAlpha</ref></para>
+</simplesect>
+<simplesect kind="note"><para>The painter set with <ref refid="classtouchgfx_1_1_canvas_widget_1a2648b3c4e043a31c240657cab344610f" kindref="member">setPainter()</ref> can also have an alpha value. The alpha value of the painter and the alpha value of the <ref refid="classtouchgfx_1_1_canvas_widget" kindref="compound">CanvasWidget</ref> are combine to a single alpha value. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/CanvasWidget.hpp" line="65" column="1" bodyfile="touchgfx/widgets/canvas/CanvasWidget.hpp" bodystart="65" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_canvas_widget_1a2648b3c4e043a31c240657cab344610f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setPainter</definition>
+        <argsstring>(AbstractPainter &amp;painter)</argsstring>
+        <name>setPainter</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_abstract_painter" kindref="compound">AbstractPainter</ref> &amp;</type>
+          <declname>painter</declname>
+        </param>
+        <briefdescription>
+<para>Sets a painter for the <ref refid="classtouchgfx_1_1_canvas_widget" kindref="compound">CanvasWidget</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">painter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The painter for the <ref refid="classtouchgfx_1_1_canvas_widget" kindref="compound">CanvasWidget</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_canvas_widget_1adc65631e781ab7b6a7984ae58f74cbeb" kindref="member">getPainter</ref></para>
+</simplesect>
+<simplesect kind="note"><para>If <ref refid="classtouchgfx_1_1_canvas_widget_1a2648b3c4e043a31c240657cab344610f" kindref="member">setPainter()</ref> is used to change the painter to a different painter, the area containing the <ref refid="classtouchgfx_1_1_canvas_widget" kindref="compound">CanvasWidget</ref> is not automatically invalidated. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/CanvasWidget.hpp" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_canvas_widget_1a361c44968f9e7a745256a60131047d18" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual ~CanvasWidget</definition>
+        <argsstring>()</argsstring>
+        <name>~CanvasWidget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/CanvasWidget.hpp" line="30" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class for drawing complex polygons on the display using <ref refid="classtouchgfx_1_1_canvas_widget_renderer" kindref="compound">CanvasWidgetRenderer</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="classtouchgfx_1_1_canvas_widget" kindref="compound">CanvasWidget</ref> is used by passing it to a <ref refid="classtouchgfx_1_1_canvas" kindref="compound">Canvas</ref> object, drawing the outline of the object and then having <ref refid="classtouchgfx_1_1_canvas_widget" kindref="compound">CanvasWidget</ref> render the outline on the display using the assigned painter. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="379">
+        <label>Line</label>
+        <link refid="classtouchgfx_1_1_line"/>
+        <childnode refid="373" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="374">
+        <label>Widget</label>
+        <link refid="classtouchgfx_1_1_widget"/>
+        <childnode refid="375" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="378">
+        <label>Circle</label>
+        <link refid="classtouchgfx_1_1_circle"/>
+        <childnode refid="373" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="375">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+      </node>
+      <node id="373">
+        <label>CanvasWidget</label>
+        <link refid="classtouchgfx_1_1_canvas_widget"/>
+        <childnode refid="374" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="376">
+        <label>AbstractShape</label>
+        <link refid="classtouchgfx_1_1_abstract_shape"/>
+        <childnode refid="373" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="377">
+        <label>Shape&lt; POINTS &gt;</label>
+        <link refid="classtouchgfx_1_1_shape"/>
+        <childnode refid="376" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="381">
+        <label>Widget</label>
+        <link refid="classtouchgfx_1_1_widget"/>
+        <childnode refid="382" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="383">
+        <label>Rect</label>
+        <link refid="classtouchgfx_1_1_rect"/>
+      </node>
+      <node id="382">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+        <childnode refid="383" relation="usage">
+          <edgelabel>rect</edgelabel>
+        </childnode>
+        <childnode refid="382" relation="usage">
+          <edgelabel>nextSibling</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="380">
+        <label>CanvasWidget</label>
+        <link refid="classtouchgfx_1_1_canvas_widget"/>
+        <childnode refid="381" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/widgets/canvas/CanvasWidget.hpp" line="26" column="1" bodyfile="touchgfx/widgets/canvas/CanvasWidget.hpp" bodystart="25" bodyend="155"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_canvas_widget_1acf5bb76caa419c0fa231dbd66c881084" prot="private" virt="non-virtual"><scope>touchgfx::CanvasWidget</scope><name>alpha</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_1a85721d788ecb49a5450204b0e1f34384" prot="private" virt="non-virtual"><scope>touchgfx::CanvasWidget</scope><name>canvasPainter</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_1ae9e5d44779b5ee8498ba456e26e74bb3" prot="public" virt="non-virtual"><scope>touchgfx::CanvasWidget</scope><name>CanvasWidget</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae2d939b2a9c253f0fb3bae3ec7be4e2f" prot="public" virt="virtual"><scope>touchgfx::CanvasWidget</scope><name>childGeometryChanged</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_1a1277d4bddd51dbc604de265fb70ccbfd" prot="public" virt="virtual"><scope>touchgfx::CanvasWidget</scope><name>draw</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9cf3a85fa7554475fa42c97985bda6df" prot="public" virt="non-virtual"><scope>touchgfx::CanvasWidget</scope><name>Drawable</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_1a6d4ac4ab61d1c68a5907c83177bd5e68" prot="public" virt="pure-virtual"><scope>touchgfx::CanvasWidget</scope><name>drawCanvasWidget</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4a009ec2b654351679a0124e9055abdc" prot="public" virt="non-virtual"><scope>touchgfx::CanvasWidget</scope><name>drawToDynamicBitmap</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa7737d9d49d7f55ec9bde8f2c9751b1d" prot="public" virt="non-virtual"><scope>touchgfx::CanvasWidget</scope><name>getAbsoluteRect</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_1a48b27ff9c2eafcd202482b45abc86ff7" prot="public" virt="virtual"><scope>touchgfx::CanvasWidget</scope><name>getAlpha</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ad00483821e06fe4d0d70222de4135d30" prot="public" virt="non-virtual"><scope>touchgfx::CanvasWidget</scope><name>getHeight</name></member>
+      <member refid="classtouchgfx_1_1_widget_1a6bc8e89dc7f879221e9862fb27dc726f" prot="public" virt="virtual"><scope>touchgfx::CanvasWidget</scope><name>getLastChild</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_1a6299071924e9fb87464b952392a623b9" prot="public" virt="virtual"><scope>touchgfx::CanvasWidget</scope><name>getMinimalRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a61c9b2bf703c49a6d238d354ddcaedb3" prot="public" virt="non-virtual"><scope>touchgfx::CanvasWidget</scope><name>getNextSibling</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_1adc65631e781ab7b6a7984ae58f74cbeb" prot="public" virt="virtual"><scope>touchgfx::CanvasWidget</scope><name>getPainter</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a013e065d4d9a10dbfa0ddee9a35582a3" prot="public" virt="non-virtual"><scope>touchgfx::CanvasWidget</scope><name>getParent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af23a5bb7d473e16363a449c497586be3" prot="public" virt="non-virtual"><scope>touchgfx::CanvasWidget</scope><name>getRect</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_1a4dcdd780e93cc783a2ceeda00c6f3b51" prot="public" virt="virtual"><scope>touchgfx::CanvasWidget</scope><name>getSolidRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4783dfe657ff1b7a33261bda8c4b4266" prot="public" virt="virtual"><scope>touchgfx::CanvasWidget</scope><name>getSolidRectAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a83b8847f583b63e60aa4bf778261ddd7" prot="public" virt="virtual"><scope>touchgfx::CanvasWidget</scope><name>getVisibleRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1acae58162aaca6fc174416550f76668e7" prot="public" virt="non-virtual"><scope>touchgfx::CanvasWidget</scope><name>getWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac071e9b7ccf37179df7d29c6778b664c" prot="public" virt="non-virtual"><scope>touchgfx::CanvasWidget</scope><name>getX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a26752e6cff4607d0eec8768ef6d9032a" prot="public" virt="non-virtual"><scope>touchgfx::CanvasWidget</scope><name>getY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a7f1524b90bc90e5f6cf7ee47aae12123" prot="public" virt="virtual"><scope>touchgfx::CanvasWidget</scope><name>handleClickEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a06ae1946b2124cc94e26cfe18728debf" prot="public" virt="virtual"><scope>touchgfx::CanvasWidget</scope><name>handleDragEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4db4945ecbc2303bf860e082409b8029" prot="public" virt="virtual"><scope>touchgfx::CanvasWidget</scope><name>handleGestureEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1af635cee0f186c3d0fcea60bac14355" prot="public" virt="virtual"><scope>touchgfx::CanvasWidget</scope><name>handleTickEvent</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_1a2800b4c18c63e9e7b1f85a74ce6b80c3" prot="public" virt="virtual"><scope>touchgfx::CanvasWidget</scope><name>invalidate</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a130cf6e1bf2b9f04f48e659758fa75e2" prot="public" virt="virtual"><scope>touchgfx::CanvasWidget</scope><name>invalidateRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a01c717b9abc98d48673b79d691c2d28a" prot="public" virt="non-virtual"><scope>touchgfx::CanvasWidget</scope><name>isTouchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9d8a6cfb13917785c143e74d40e4e2be" prot="public" virt="non-virtual"><scope>touchgfx::CanvasWidget</scope><name>isVisible</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_1a1e193a683d56438e9469c7f3da0e2350" prot="private" virt="non-virtual"><scope>touchgfx::CanvasWidget</scope><name>maxRenderLines</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af3590480070e2cf91580976f322d2c5e" prot="public" virt="virtual"><scope>touchgfx::CanvasWidget</scope><name>moveRelative</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aadc5abfad4d2fcc331cf8de8713dc00e" prot="public" virt="virtual"><scope>touchgfx::CanvasWidget</scope><name>moveTo</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0da4a00c3fbdea5740e52c7e04316c65" prot="protected" virt="non-virtual"><scope>touchgfx::CanvasWidget</scope><name>nextSibling</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ab77c13cde2b01107dcbc5c2b584d422f" prot="protected" virt="non-virtual"><scope>touchgfx::CanvasWidget</scope><name>parent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2a955ddc316d002f566598f340eb2af9" prot="protected" virt="non-virtual"><scope>touchgfx::CanvasWidget</scope><name>rect</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_1a79e090d34b93e9d637d01bc9b5639681" prot="public" virt="virtual"><scope>touchgfx::CanvasWidget</scope><name>setAlpha</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a47a6312407603de99247bb802dbd8a48" prot="public" virt="virtual"><scope>touchgfx::CanvasWidget</scope><name>setHeight</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_1a2648b3c4e043a31c240657cab344610f" prot="public" virt="virtual"><scope>touchgfx::CanvasWidget</scope><name>setPainter</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac218c371450d8ad2bed3e1b07965a41a" prot="public" virt="virtual"><scope>touchgfx::CanvasWidget</scope><name>setPosition</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae4c38eadb852b153850ea7ded1f50a19" prot="public" virt="non-virtual"><scope>touchgfx::CanvasWidget</scope><name>setTouchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a71639c6634c5dcf6d1bb21b8b1b61f5b" prot="public" virt="non-virtual"><scope>touchgfx::CanvasWidget</scope><name>setVisible</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae74a37f71d23440fc8b0466ad8ecfe4b" prot="public" virt="virtual"><scope>touchgfx::CanvasWidget</scope><name>setWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9f6db7f34a74e991fc446fffb5703a53" prot="public" virt="virtual"><scope>touchgfx::CanvasWidget</scope><name>setX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6c86659dc1e7355c207e9c0aa18af167" prot="public" virt="virtual"><scope>touchgfx::CanvasWidget</scope><name>setXY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1b08d48e7e23a046f09e63089bc82bc1" prot="public" virt="virtual"><scope>touchgfx::CanvasWidget</scope><name>setY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0d014de134cb9b9c1c361fcd726a5f34" prot="protected" virt="non-virtual"><scope>touchgfx::CanvasWidget</scope><name>touchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a48c1d14ac943dbfa4935ea39db950608" prot="public" virt="virtual"><scope>touchgfx::CanvasWidget</scope><name>translateRectToAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa54a57ae048476d840caf6d4d2c47aa3" prot="protected" virt="non-virtual"><scope>touchgfx::CanvasWidget</scope><name>visible</name></member>
+      <member refid="classtouchgfx_1_1_widget_1a4aecdb998b8b28b278843eaa1644998b" prot="public" virt="non-virtual"><scope>touchgfx::CanvasWidget</scope><name>Widget</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_1a361c44968f9e7a745256a60131047d18" prot="public" virt="virtual"><scope>touchgfx::CanvasWidget</scope><name>~CanvasWidget</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6bb040a11ffc2bd641283cc0bc0d1346" prot="public" virt="virtual"><scope>touchgfx::CanvasWidget</scope><name>~Drawable</name></member>
+      <member refid="classtouchgfx_1_1_widget_1af0ef273e47acd5ce75366b6b7a51057f" prot="public" virt="virtual"><scope>touchgfx::CanvasWidget</scope><name>~Widget</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

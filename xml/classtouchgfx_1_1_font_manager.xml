@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_font_manager" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::FontManager</compoundname>
+    <includes local="no">FontManager.hpp</includes>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_font_manager_1a976560db555a2d80d81923a73513dc11" prot="private" static="yes" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_font_provider" kindref="compound">FontProvider</ref> *</type>
+        <definition>FontProvider* provider</definition>
+        <argsstring></argsstring>
+        <name>provider</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/FontManager.hpp" line="64" column="1" bodyfile="touchgfx/FontManager.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_font_manager_1a2a9da2b1f371ad2937ce72f659c53095" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtouchgfx_1_1_font" kindref="compound">Font</ref> *</type>
+        <definition>static Font* getFont</definition>
+        <argsstring>(FontId fontId)</argsstring>
+        <name>getFont</name>
+        <param>
+          <type><ref refid="namespacetouchgfx_1aca843a83bfa2b15fa1c762d27a87d294" kindref="member">FontId</ref></type>
+          <declname>fontId</declname>
+        </param>
+        <briefdescription>
+<para>Gets a font. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fontId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The FontId of the font to get.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The font with a FontId of fontId. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/FontManager.hpp" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_font_manager_1ab85c455ee3d42f1e1e0e97a44f881400" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void setFontProvider</definition>
+        <argsstring>(FontProvider *fontProvider)</argsstring>
+        <name>setFontProvider</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_font_provider" kindref="compound">FontProvider</ref> *</type>
+          <declname>fontProvider</declname>
+        </param>
+        <briefdescription>
+<para>Sets the font provider. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Must be initialized with the appropriate <ref refid="classtouchgfx_1_1_font_provider" kindref="compound">FontProvider</ref> by the application.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fontProvider</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sets the font provider. Must be initialized with the appropriate <ref refid="classtouchgfx_1_1_font_provider" kindref="compound">FontProvider</ref> by the application. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/FontManager.hpp" line="52" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class is the entry point for looking up a font based on a font id. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Must be initialized with the appropriate <ref refid="classtouchgfx_1_1_font_provider" kindref="compound">FontProvider</ref> by the application. </para>
+    </detaileddescription>
+    <location file="touchgfx/FontManager.hpp" line="43" column="1" bodyfile="touchgfx/FontManager.hpp" bodystart="42" bodyend="65"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_font_manager_1a2a9da2b1f371ad2937ce72f659c53095" prot="public" virt="non-virtual"><scope>touchgfx::FontManager</scope><name>getFont</name></member>
+      <member refid="classtouchgfx_1_1_font_manager_1a976560db555a2d80d81923a73513dc11" prot="private" virt="non-virtual"><scope>touchgfx::FontManager</scope><name>provider</name></member>
+      <member refid="classtouchgfx_1_1_font_manager_1ab85c455ee3d42f1e1e0e97a44f881400" prot="public" virt="non-virtual"><scope>touchgfx::FontManager</scope><name>setFontProvider</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

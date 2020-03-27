@@ -1,0 +1,1227 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_slider" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::Slider</compoundname>
+    <basecompoundref refid="classtouchgfx_1_1_container" prot="public" virt="non-virtual">Container</basecompoundref>
+    <includes local="no">Slider.hpp</includes>
+      <sectiondef kind="protected-type">
+      <memberdef kind="enum" id="classtouchgfx_1_1_slider_1acf9436c8845d567c1d065d7a76dff47b" prot="protected" static="no" strong="no">
+        <type></type>
+        <name>SliderOrientation</name>
+        <enumvalue id="classtouchgfx_1_1_slider_1acf9436c8845d567c1d065d7a76dff47ba4dd51ad73508d6fc83a502966779e48e" prot="protected">
+          <name>HORIZONTAL</name>
+          <briefdescription>
+<para>The <ref refid="classtouchgfx_1_1_slider" kindref="compound">Slider</ref> can be moved horizontally between left and right. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtouchgfx_1_1_slider_1acf9436c8845d567c1d065d7a76dff47ba1a88641fcd39f2ed3e58a18526e97138" prot="protected">
+          <name>VERTICAL</name>
+          <briefdescription>
+<para>The <ref refid="classtouchgfx_1_1_slider" kindref="compound">Slider</ref> can be moved vertically between top and bottom. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Values that represent slider orientations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Slider.hpp" line="266" column="1" bodyfile="touchgfx/containers/Slider.hpp" bodystart="265" bodyend="269"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_slider_1ac58c7595db571063cbbb5832998af4d4" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_image" kindref="compound">Image</ref></type>
+        <definition>Image background</definition>
+        <argsstring></argsstring>
+        <name>background</name>
+        <briefdescription>
+<para>The background image. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Slider.hpp" line="278" column="1" bodyfile="touchgfx/containers/Slider.hpp" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_slider_1afe37e0fe29f02b78b5f33a15879429a8" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_image" kindref="compound">Image</ref></type>
+        <definition>Image backgroundSelected</definition>
+        <argsstring></argsstring>
+        <name>backgroundSelected</name>
+        <briefdescription>
+<para>The backgroundSelected image. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Slider.hpp" line="279" column="1" bodyfile="touchgfx/containers/Slider.hpp" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_slider_1a685c4d0a2d80ccba71298a1326640e5d" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_container" kindref="compound">Container</ref></type>
+        <definition>Container backgroundSelectedViewPort</definition>
+        <argsstring></argsstring>
+        <name>backgroundSelectedViewPort</name>
+        <briefdescription>
+<para>The backgroundSelected view port. Controls the visible part of the backgroundSelected image. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Slider.hpp" line="281" column="1" bodyfile="touchgfx/containers/Slider.hpp" bodystart="281" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_slider_1a63b924880596b9ddcefbedaf0aedaa1e" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int currentValue</definition>
+        <argsstring></argsstring>
+        <name>currentValue</name>
+        <briefdescription>
+<para>The current value represented by the slider. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Slider.hpp" line="273" column="1" bodyfile="touchgfx/containers/Slider.hpp" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_slider_1af8f7f9c022b30ea7242bb2f5e6100ed9" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_image" kindref="compound">Image</ref></type>
+        <definition>Image indicator</definition>
+        <argsstring></argsstring>
+        <name>indicator</name>
+        <briefdescription>
+<para>The indicator image. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Slider.hpp" line="280" column="1" bodyfile="touchgfx/containers/Slider.hpp" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_slider_1a57c0411ac6607140d5b537942237fe3d" prot="protected" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t indicatorMaxPosition</definition>
+        <argsstring></argsstring>
+        <name>indicatorMaxPosition</name>
+        <briefdescription>
+<para>The maximum position of the indicator (either x coordinate in horizontal mode or y coordinate in vertical mode) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Slider.hpp" line="284" column="1" bodyfile="touchgfx/containers/Slider.hpp" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_slider_1aa254d3db286a64e04dc502d3a174cc29" prot="protected" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t indicatorMinPosition</definition>
+        <argsstring></argsstring>
+        <name>indicatorMinPosition</name>
+        <briefdescription>
+<para>The minimum position of the indicator (either x coordinate in horizontal mode or y coordinate in vertical mode) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Slider.hpp" line="283" column="1" bodyfile="touchgfx/containers/Slider.hpp" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_slider_1a9c5f0b0d278899e461a3a37370465091" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_generic_callback" kindref="compound">GenericCallback</ref>&lt; const <ref refid="classtouchgfx_1_1_slider" kindref="compound">Slider</ref> &amp;, int &gt; *</type>
+        <definition>GenericCallback&lt;const Slider&amp;, int&gt;* newValueCallback</definition>
+        <argsstring></argsstring>
+        <name>newValueCallback</name>
+        <briefdescription>
+<para>The new value callback (called when the indicator is moved) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Slider.hpp" line="288" column="1" bodyfile="touchgfx/containers/Slider.hpp" bodystart="288" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_slider_1a53c9429db6dd0231f2debe5c868a2f08" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_slider_1acf9436c8845d567c1d065d7a76dff47b" kindref="member">SliderOrientation</ref></type>
+        <definition>SliderOrientation sliderOrientation</definition>
+        <argsstring></argsstring>
+        <name>sliderOrientation</name>
+        <briefdescription>
+<para>The selected slider orientation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Slider.hpp" line="271" column="1" bodyfile="touchgfx/containers/Slider.hpp" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_slider_1aad3a4bbe7402cdaea6d6215711de8f43" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_generic_callback" kindref="compound">GenericCallback</ref>&lt; const <ref refid="classtouchgfx_1_1_slider" kindref="compound">Slider</ref> &amp;, int &gt; *</type>
+        <definition>GenericCallback&lt;const Slider&amp;, int&gt;* startValueCallback</definition>
+        <argsstring></argsstring>
+        <name>startValueCallback</name>
+        <briefdescription>
+<para>The start value callback (called when an interaction with the indicator is initiated) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Slider.hpp" line="286" column="1" bodyfile="touchgfx/containers/Slider.hpp" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_slider_1a48ae008056d058d047246040c98d1e6c" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_generic_callback" kindref="compound">GenericCallback</ref>&lt; const <ref refid="classtouchgfx_1_1_slider" kindref="compound">Slider</ref> &amp;, int &gt; *</type>
+        <definition>GenericCallback&lt;const Slider&amp;, int&gt;* stopValueCallback</definition>
+        <argsstring></argsstring>
+        <name>stopValueCallback</name>
+        <briefdescription>
+<para>The stop value callback (called when an interaction with the indicator ends) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Slider.hpp" line="287" column="1" bodyfile="touchgfx/containers/Slider.hpp" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_slider_1ac066b7939ab11dac31b1f038cdf9a671" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int valueRangeMax</definition>
+        <argsstring></argsstring>
+        <name>valueRangeMax</name>
+        <briefdescription>
+<para>The value range max. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Slider.hpp" line="276" column="1" bodyfile="touchgfx/containers/Slider.hpp" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_slider_1a5d68f4f000053e858f6004c04a8a5735" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int valueRangeMin</definition>
+        <argsstring></argsstring>
+        <name>valueRangeMin</name>
+        <briefdescription>
+<para>The value range min. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Slider.hpp" line="275" column="1" bodyfile="touchgfx/containers/Slider.hpp" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_slider_1abde232c89f44eec5f5e53f6eab960591" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>uint16_t</type>
+        <definition>virtual uint16_t getIndicatorMax</definition>
+        <argsstring>() const</argsstring>
+        <name>getIndicatorMax</name>
+        <briefdescription>
+<para>Gets indicator maximum previous set using <ref refid="classtouchgfx_1_1_slider_1a1867cb4382494c24c875cdf2c50e205d" kindref="member">setupHorizontalSlider()</ref> or <ref refid="classtouchgfx_1_1_slider_1af86837244331c56735cd3fe970e7edc1" kindref="member">setupVerticalSlider()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The calculated indicator maximum.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_slider_1a1867cb4382494c24c875cdf2c50e205d" kindref="member">setupHorizontalSlider</ref>, <ref refid="classtouchgfx_1_1_slider_1af86837244331c56735cd3fe970e7edc1" kindref="member">setupVerticalSlider</ref>, <ref refid="classtouchgfx_1_1_slider_1a468892ac783fc2d8237d8e4daa47cba8" kindref="member">getIndicatorMin</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Slider.hpp" line="178" column="1" bodyfile="touchgfx/containers/Slider.hpp" bodystart="178" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slider_1a468892ac783fc2d8237d8e4daa47cba8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>uint16_t</type>
+        <definition>virtual uint16_t getIndicatorMin</definition>
+        <argsstring>() const</argsstring>
+        <name>getIndicatorMin</name>
+        <briefdescription>
+<para>Gets indicator minimum previously set using <ref refid="classtouchgfx_1_1_slider_1a1867cb4382494c24c875cdf2c50e205d" kindref="member">setupHorizontalSlider()</ref> or <ref refid="classtouchgfx_1_1_slider_1af86837244331c56735cd3fe970e7edc1" kindref="member">setupVerticalSlider()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The indicator minimum.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_slider_1a1867cb4382494c24c875cdf2c50e205d" kindref="member">setupHorizontalSlider</ref>, <ref refid="classtouchgfx_1_1_slider_1af86837244331c56735cd3fe970e7edc1" kindref="member">setupVerticalSlider</ref>, <ref refid="classtouchgfx_1_1_slider_1abde232c89f44eec5f5e53f6eab960591" kindref="member">getIndicatorMax</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Slider.hpp" line="165" column="1" bodyfile="touchgfx/containers/Slider.hpp" bodystart="165" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slider_1a44f148270b14491d775d0e54830d9e02" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>uint16_t</type>
+        <definition>virtual uint16_t getMaxValue</definition>
+        <argsstring>() const</argsstring>
+        <name>getMaxValue</name>
+        <briefdescription>
+<para>Gets the maximum value previously set using <ref refid="classtouchgfx_1_1_slider_1ab3f8cd142b524c835b3b96bdf022cd91" kindref="member">setValueRange()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The maximum value.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_slider_1ab3f8cd142b524c835b3b96bdf022cd91" kindref="member">setValueRange</ref>, <ref refid="classtouchgfx_1_1_slider_1a4957abc6d8359ac2041929a8d3e4eeb5" kindref="member">getMinValue</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Slider.hpp" line="217" column="1" bodyfile="touchgfx/containers/Slider.hpp" bodystart="217" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slider_1a4957abc6d8359ac2041929a8d3e4eeb5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>uint16_t</type>
+        <definition>virtual uint16_t getMinValue</definition>
+        <argsstring>() const</argsstring>
+        <name>getMinValue</name>
+        <briefdescription>
+<para>Gets the minimum value previously set using <ref refid="classtouchgfx_1_1_slider_1ab3f8cd142b524c835b3b96bdf022cd91" kindref="member">setValueRange()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The minimum value.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_slider_1ab3f8cd142b524c835b3b96bdf022cd91" kindref="member">setValueRange</ref>, <ref refid="classtouchgfx_1_1_slider_1a44f148270b14491d775d0e54830d9e02" kindref="member">getMaxValue</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Slider.hpp" line="205" column="1" bodyfile="touchgfx/containers/Slider.hpp" bodystart="205" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slider_1aae714dc01fe7f5bb1a175d0d1068bb92" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int getValue</definition>
+        <argsstring>()</argsstring>
+        <name>getValue</name>
+        <briefdescription>
+<para>Gets the current value represented by the indicator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current value. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Slider.hpp" line="258" column="1" bodyfile="touchgfx/containers/Slider.hpp" bodystart="258" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slider_1a8b77e982f0d923de56c13a450f3cc772" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setBitmaps</definition>
+        <argsstring>(const Bitmap &amp;sliderBackground, const Bitmap &amp;sliderBackgroundSelected, const Bitmap &amp;indicator)</argsstring>
+        <name>setBitmaps</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> &amp;</type>
+          <declname>sliderBackground</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> &amp;</type>
+          <declname>sliderBackgroundSelected</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> &amp;</type>
+          <declname>indicator</declname>
+        </param>
+        <briefdescription>
+<para>Sets all the bitmaps for the <ref refid="classtouchgfx_1_1_slider" kindref="compound">Slider</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The <ref refid="classtouchgfx_1_1_slider" kindref="compound">Slider</ref> shows the sliderBackgroundSelected bitmap in the region of the <ref refid="classtouchgfx_1_1_slider" kindref="compound">Slider</ref> that is selected, that is the area to the left of the indicator for a horizontal <ref refid="classtouchgfx_1_1_slider" kindref="compound">Slider</ref> and below the indicator for a vertical <ref refid="classtouchgfx_1_1_slider" kindref="compound">Slider</ref>. The sliderBackground is shown on the other side of the <ref refid="classtouchgfx_1_1_slider" kindref="compound">Slider</ref>. To ignore this effect simply use the same bitmap for both the sliderBackground and the sliderBackgroundSelected.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sliderBackground</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The slider background with the slider range unselected. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sliderBackgroundSelected</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The slider background with the slider range selected. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indicator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The indicator. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Slider.hpp" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slider_1a13199564c3053d350419de5f72eed90a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setBitmaps</definition>
+        <argsstring>(const BitmapId sliderBackground, const BitmapId sliderBackgroundSelected, const BitmapId indicator)</argsstring>
+        <name>setBitmaps</name>
+        <param>
+          <type>const <ref refid="namespacetouchgfx_1a3923435f6df64396b2203d60ddfa89e4" kindref="member">BitmapId</ref></type>
+          <declname>sliderBackground</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacetouchgfx_1a3923435f6df64396b2203d60ddfa89e4" kindref="member">BitmapId</ref></type>
+          <declname>sliderBackgroundSelected</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacetouchgfx_1a3923435f6df64396b2203d60ddfa89e4" kindref="member">BitmapId</ref></type>
+          <declname>indicator</declname>
+        </param>
+        <briefdescription>
+<para>Sets all the bitmaps for the <ref refid="classtouchgfx_1_1_slider" kindref="compound">Slider</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The <ref refid="classtouchgfx_1_1_slider" kindref="compound">Slider</ref> shows the sliderBackgroundSelected bitmap in the region of the <ref refid="classtouchgfx_1_1_slider" kindref="compound">Slider</ref> that is selected, that is the area to the left of the indicator for a horizontal <ref refid="classtouchgfx_1_1_slider" kindref="compound">Slider</ref> and below the indicator for a vertical <ref refid="classtouchgfx_1_1_slider" kindref="compound">Slider</ref>. The sliderBackground is shown on the other side of the <ref refid="classtouchgfx_1_1_slider" kindref="compound">Slider</ref>. To ignore this effect simply use the same bitmap for both the sliderBackground and the sliderBackgroundSelected.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sliderBackground</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The slider background with the slider range unselected. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sliderBackgroundSelected</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The slider background with the slider range selected. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indicator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The indicator. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Slider.hpp" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slider_1a8d718f01bb8f6503756b2ef69ef36205" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setNewValueCallback</definition>
+        <argsstring>(GenericCallback&lt; const Slider &amp;, int &gt; &amp;callback)</argsstring>
+        <name>setNewValueCallback</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_generic_callback" kindref="compound">GenericCallback</ref>&lt; const <ref refid="classtouchgfx_1_1_slider" kindref="compound">Slider</ref> &amp;, int &gt; &amp;</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>Associates an action to be performed when the slider changes its value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The callback to be executed. The callback will be given a reference to the <ref refid="classtouchgfx_1_1_slider" kindref="compound">Slider</ref> and the current value of the slider.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_generic_callback" kindref="compound">GenericCallback</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Slider.hpp" line="97" column="1" bodyfile="touchgfx/containers/Slider.hpp" bodystart="97" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slider_1afbf9d9ff26f1147c29b07649ccb2a211" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setStartValueCallback</definition>
+        <argsstring>(GenericCallback&lt; const Slider &amp;, int &gt; &amp;callback)</argsstring>
+        <name>setStartValueCallback</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_generic_callback" kindref="compound">GenericCallback</ref>&lt; const <ref refid="classtouchgfx_1_1_slider" kindref="compound">Slider</ref> &amp;, int &gt; &amp;</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>Associates an action to be performed when an interaction with the slider is initiated (click or drag). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The callback to be executed. The callback will be given a reference to the <ref refid="classtouchgfx_1_1_slider" kindref="compound">Slider</ref> and the current value of the slider at interaction start.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_generic_callback" kindref="compound">GenericCallback</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Slider.hpp" line="70" column="1" bodyfile="touchgfx/containers/Slider.hpp" bodystart="70" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slider_1afd029b36aa808631db434277b4287e14" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setStopValueCallback</definition>
+        <argsstring>(GenericCallback&lt; const Slider &amp;, int &gt; &amp;callback)</argsstring>
+        <name>setStopValueCallback</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_generic_callback" kindref="compound">GenericCallback</ref>&lt; const <ref refid="classtouchgfx_1_1_slider" kindref="compound">Slider</ref> &amp;, int &gt; &amp;</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>Associates an action to be performed when an interaction with the slider ends (click or drag). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The callback to be executed. The callback will be given a reference to the <ref refid="classtouchgfx_1_1_slider" kindref="compound">Slider</ref> and the current value of the slider at interaction end.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_generic_callback" kindref="compound">GenericCallback</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Slider.hpp" line="84" column="1" bodyfile="touchgfx/containers/Slider.hpp" bodystart="84" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slider_1a1867cb4382494c24c875cdf2c50e205d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setupHorizontalSlider</definition>
+        <argsstring>(uint16_t backgroundX, uint16_t backgroundY, uint16_t indicatorY, uint16_t indicatorMinX, uint16_t indicatorMaxX)</argsstring>
+        <name>setupHorizontalSlider</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>backgroundX</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>backgroundY</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>indicatorY</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>indicatorMinX</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>indicatorMaxX</declname>
+        </param>
+        <briefdescription>
+<para>Sets up the slider in horizontal mode with the range going from the left to right. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Places the backgrounds and the indicator inside the <ref refid="classtouchgfx_1_1_slider" kindref="compound">Slider</ref> container. It is possible to place the end points of the indicator outside the background image if it needs to go beyond the boundaries of the background. The width and height of the <ref refid="classtouchgfx_1_1_slider" kindref="compound">Slider</ref> will be adjusted appropriately so that both the background and the indicator will be fully visible in both the minimum and maximum indicator positions.</para>
+<para>Calls <ref refid="classtouchgfx_1_1_slider_1afd2ee022f13d24681ce6efbf09581807" kindref="member">setValue()</ref> with the current value (default 0) and triggers the newSliderValue callback.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>backgroundX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The background x coordinate inside the slider. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>backgroundY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The background y coordinate inside the slider. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indicatorY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The indicator y coordinate inside the slider. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indicatorMinX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The indicator minimum x coordinate inside the slider. This is the position used when the slider is at its minimum value. Must be less than indicatorMaxX. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indicatorMaxX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The indicator maximum x coordinate inside the slider. This is the position used when the slider is at its maximum value. Must be greater than indicatorMinX.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The x and y position of the <ref refid="classtouchgfx_1_1_slider" kindref="compound">Slider</ref> will either be the left/top of the background or the left/top of the indicator in its minimum x coordinate. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Slider.hpp" line="127" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slider_1af86837244331c56735cd3fe970e7edc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setupVerticalSlider</definition>
+        <argsstring>(uint16_t backgroundX, uint16_t backgroundY, uint16_t indicatorX, uint16_t indicatorMinY, uint16_t indicatorMaxY)</argsstring>
+        <name>setupVerticalSlider</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>backgroundX</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>backgroundY</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>indicatorX</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>indicatorMinY</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>indicatorMaxY</declname>
+        </param>
+        <briefdescription>
+<para>Sets up the slider in vertical mode with the range going from the bottom to top. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Places the backgrounds and the indicator inside the <ref refid="classtouchgfx_1_1_slider" kindref="compound">Slider</ref> container. It is possible to place the end points of the indicator outside the background image if it needs to go beyond the boundaries of the background. The width and height of the <ref refid="classtouchgfx_1_1_slider" kindref="compound">Slider</ref> will be adjusted appropriately so that both the background and the indicator will be fully visible in both the minimum and maximum indicator positions.</para>
+<para>Calls setValue with the current value (default 0) and triggers the newSliderValue callback.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>backgroundX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The background x coordinate inside the slider. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>backgroundY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The background y coordinate inside the slider. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indicatorX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The indicator x coordinate inside the slider. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indicatorMinY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The indicator minimum y coordinate inside the slider. This is the position used when the slider is at its maximum value. Must be less than indicatorMaxX. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>indicatorMaxY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The indicator maximum y coordinate inside the slider. This is the position used when the slider is at its minimum value. Must be greater than indicatorMinX.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The x and y position of the <ref refid="classtouchgfx_1_1_slider" kindref="compound">Slider</ref> will either be the left/top of the background or the left/top of the indicator in its minimum y coordinate. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Slider.hpp" line="155" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slider_1afd2ee022f13d24681ce6efbf09581807" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setValue</definition>
+        <argsstring>(int value)</argsstring>
+        <name>setValue</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Places the indicator at the specified value relative to the specified value range. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Values beyond the value range will be rounded to the min/max value in the value range.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_slider_1ab3f8cd142b524c835b3b96bdf022cd91" kindref="member">setValueRange</ref></para>
+</simplesect>
+<simplesect kind="note"><para>The value update triggers a newSliderValue callback just as a drag or click does. </para>
+</simplesect>
+<simplesect kind="note"><para>If the value range is larger than the number of pixels specified for the indicator min and indicator max, some values will not be represented by the slider and thus is not possible to set with this method. In this case the value will be rounded to the nearest value that is represented in the current setting. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Slider.hpp" line="251" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slider_1ab3f8cd142b524c835b3b96bdf022cd91" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setValueRange</definition>
+        <argsstring>(int minValue, int maxValue, int newValue)</argsstring>
+        <name>setValueRange</name>
+        <param>
+          <type>int</type>
+          <declname>minValue</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxValue</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>newValue</declname>
+        </param>
+        <briefdescription>
+<para>Sets the value range of the slider. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Values accepted and returned by the slider will be in this range.</para>
+<para>The slider will set its value to the specified new value.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>minValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minimum value. Must be less than maxValue. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum value. Must be greater than minValue. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>newValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>If the range is larger than the number of pixels specified for the indicator min and max some values will not be represented by the slider. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Slider.hpp" line="196" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slider_1a54901867147fc92305500e327284f3b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setValueRange</definition>
+        <argsstring>(int minValue, int maxValue)</argsstring>
+        <name>setValueRange</name>
+        <param>
+          <type>int</type>
+          <declname>minValue</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxValue</declname>
+        </param>
+        <briefdescription>
+<para>Sets the value range of the slider. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Values accepted and returned by the slider will be in this range.</para>
+<para>The slider will set its value to the current value or round to minValue or maxValue if the current value is outside the new range.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>minValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minimum value. Must be less than maxValue. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum value. Must be greater than minValue.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>If the range is larger than the number of pixels specified for the indicator min and indicator max, some values will not be represented by the slider. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Slider.hpp" line="235" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slider_1ad462f549f3a252bbc307669e0920c3cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Slider</definition>
+        <argsstring>()</argsstring>
+        <name>Slider</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Slider.hpp" line="26" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slider_1a6c07b7b9e8a131a524a883a942d2c490" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual ~Slider</definition>
+        <argsstring>()</argsstring>
+        <name>~Slider</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Slider.hpp" line="28" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_slider_1a1fdd0b3aa47a08ebb5802f526f3f9a49" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int getIndicatorPositionRangeSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getIndicatorPositionRangeSize</name>
+        <briefdescription>
+<para>Gets the indicator position range, i.e. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>the difference between max and min for the position of the indicator.</para>
+<para><simplesect kind="return"><para>The indicator position range. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Slider.hpp" line="336" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slider_1ab74f73d0ca98e8836515f1d8a323c879" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>uint16_t</type>
+        <definition>virtual uint16_t getIndicatorRadius</definition>
+        <argsstring>() const</argsstring>
+        <name>getIndicatorRadius</name>
+        <briefdescription>
+<para>Gets the indicator radius, which is half the size of the indicator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The the indicator radius. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Slider.hpp" line="328" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slider_1a76087f4db65dbe2aaf0f5c46da1d4ba3" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int getValueRangeSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getValueRangeSize</name>
+        <briefdescription>
+<para>Gets the value range, i.e. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>the difference between max and min for the value range.</para>
+<para><simplesect kind="return"><para>The value range. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Slider.hpp" line="343" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slider_1a7f1524b90bc90e5f6cf7ee47aae12123" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void handleClickEvent</definition>
+        <argsstring>(const ClickEvent &amp;evt)</argsstring>
+        <name>handleClickEvent</name>
+        <reimplements refid="classtouchgfx_1_1_drawable_1a7f1524b90bc90e5f6cf7ee47aae12123">handleClickEvent</reimplements>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_click_event" kindref="compound">ClickEvent</ref> &amp;</type>
+          <declname>evt</declname>
+        </param>
+        <briefdescription>
+<para>Defines the event handler interface for ClickEvents. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default implementation ignores the event. The event is only received if the <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> is touchable and visible.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>evt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classtouchgfx_1_1_click_event" kindref="compound">ClickEvent</ref> received from the <ref refid="classtouchgfx_1_1_h_a_l" kindref="compound">HAL</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Slider.hpp" line="290" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slider_1a06ae1946b2124cc94e26cfe18728debf" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void handleDragEvent</definition>
+        <argsstring>(const DragEvent &amp;evt)</argsstring>
+        <name>handleDragEvent</name>
+        <reimplements refid="classtouchgfx_1_1_drawable_1a06ae1946b2124cc94e26cfe18728debf">handleDragEvent</reimplements>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_drag_event" kindref="compound">DragEvent</ref> &amp;</type>
+          <declname>evt</declname>
+        </param>
+        <briefdescription>
+<para>Defines the event handler interface for DragEvents. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default implementation ignores the event. The event is only received if the drawable is touchable and visible.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>evt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classtouchgfx_1_1_drag_event" kindref="compound">DragEvent</ref> received from the <ref refid="classtouchgfx_1_1_h_a_l" kindref="compound">HAL</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Slider.hpp" line="292" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slider_1a7ab9a07804fbf560cdd0d6cfadeccc57" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int positionToValue</definition>
+        <argsstring>(int16_t position) const</argsstring>
+        <name>positionToValue</name>
+        <param>
+          <type>int16_t</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+<para>Translate a position (x coordinate in horizontal mode and y in vertical mode) in the indicator position range to the corresponding value in the value range. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The value that corresponds to the coordinate. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Slider.hpp" line="321" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slider_1ac7f62aec768decd1704d14c62cb48d8d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void updateIndicatorPosition</definition>
+        <argsstring>(int16_t position)</argsstring>
+        <name>updateIndicatorPosition</name>
+        <param>
+          <type>int16_t</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+<para>Updates the indicator position described by position. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Calls the newSliderValueCallback with the new value.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position (x coordinate in horizontal mode and y coordinate in vertical mode). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Slider.hpp" line="301" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_slider_1ad1c046e7c2114c7ce828f2c6420a34e5" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int16_t</type>
+        <definition>virtual int16_t valueToPosition</definition>
+        <argsstring>(int value) const</argsstring>
+        <name>valueToPosition</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Translate a value in the value range to the corresponding position in the indicator position range (x coordinate in horizontal mode and y in vertical mode). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The coordinate that corresponds to the value. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Slider.hpp" line="311" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A slider is a graphical element with which the user may set a value by moving an indicator on a slider, or simply by clicking the slider. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The slider can operate in horizontal or vertical mode. The slider has two bitmaps. One bitmap is used on one side of the indicator. The other is used on the other side. They can be used in indicating the part of the slider value range that is currently selected.</para>
+<para>The slider operates on an integer value range that can be set by the user. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1498">
+        <label>Container</label>
+        <link refid="classtouchgfx_1_1_container"/>
+        <childnode refid="1499" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1499">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+      </node>
+      <node id="1497">
+        <label>Slider</label>
+        <link refid="classtouchgfx_1_1_slider"/>
+        <childnode refid="1498" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1507">
+        <label>GenericCallback&lt; const touchgfx::Slider &amp;, int &gt;</label>
+        <link refid="classtouchgfx_1_1_generic_callback"/>
+      </node>
+      <node id="1505">
+        <label>Widget</label>
+        <link refid="classtouchgfx_1_1_widget"/>
+        <childnode refid="1502" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1501">
+        <label>Container</label>
+        <link refid="classtouchgfx_1_1_container"/>
+        <childnode refid="1502" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1502" relation="usage">
+          <edgelabel>firstChild</edgelabel>
+        </childnode>
+      </node>
+      <node id="1503">
+        <label>Rect</label>
+        <link refid="classtouchgfx_1_1_rect"/>
+      </node>
+      <node id="1504">
+        <label>Image</label>
+        <link refid="classtouchgfx_1_1_image"/>
+        <childnode refid="1505" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1506" relation="usage">
+          <edgelabel>bitmap</edgelabel>
+        </childnode>
+      </node>
+      <node id="1502">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+        <childnode refid="1503" relation="usage">
+          <edgelabel>rect</edgelabel>
+        </childnode>
+        <childnode refid="1502" relation="usage">
+          <edgelabel>nextSibling</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="1500">
+        <label>Slider</label>
+        <link refid="classtouchgfx_1_1_slider"/>
+        <childnode refid="1501" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1501" relation="usage">
+          <edgelabel>backgroundSelectedViewPort</edgelabel>
+        </childnode>
+        <childnode refid="1504" relation="usage">
+          <edgelabel>indicator</edgelabel>
+          <edgelabel>backgroundSelected</edgelabel>
+          <edgelabel>background</edgelabel>
+        </childnode>
+        <childnode refid="1507" relation="usage">
+          <edgelabel>newValueCallback</edgelabel>
+          <edgelabel>stopValueCallback</edgelabel>
+          <edgelabel>startValueCallback</edgelabel>
+        </childnode>
+      </node>
+      <node id="1506">
+        <label>Bitmap</label>
+        <link refid="classtouchgfx_1_1_bitmap"/>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/containers/Slider.hpp" line="24" column="1" bodyfile="touchgfx/containers/Slider.hpp" bodystart="23" bodyend="344"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_container_1a302ad1a4da6fe171eb249828bd8dc7ab" prot="public" virt="virtual"><scope>touchgfx::Slider</scope><name>add</name></member>
+      <member refid="classtouchgfx_1_1_slider_1ac58c7595db571063cbbb5832998af4d4" prot="protected" virt="non-virtual"><scope>touchgfx::Slider</scope><name>background</name></member>
+      <member refid="classtouchgfx_1_1_slider_1afe37e0fe29f02b78b5f33a15879429a8" prot="protected" virt="non-virtual"><scope>touchgfx::Slider</scope><name>backgroundSelected</name></member>
+      <member refid="classtouchgfx_1_1_slider_1a685c4d0a2d80ccba71298a1326640e5d" prot="protected" virt="non-virtual"><scope>touchgfx::Slider</scope><name>backgroundSelectedViewPort</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae2d939b2a9c253f0fb3bae3ec7be4e2f" prot="public" virt="virtual"><scope>touchgfx::Slider</scope><name>childGeometryChanged</name></member>
+      <member refid="classtouchgfx_1_1_container_1ac92243515043dff4fd93c987b894b017" prot="public" virt="non-virtual"><scope>touchgfx::Slider</scope><name>Container</name></member>
+      <member refid="classtouchgfx_1_1_container_1a0109ca3d59d6ced431a24313fef18803" prot="public" virt="virtual"><scope>touchgfx::Slider</scope><name>contains</name></member>
+      <member refid="classtouchgfx_1_1_slider_1a63b924880596b9ddcefbedaf0aedaa1e" prot="protected" virt="non-virtual"><scope>touchgfx::Slider</scope><name>currentValue</name></member>
+      <member refid="classtouchgfx_1_1_container_1a1277d4bddd51dbc604de265fb70ccbfd" prot="public" virt="virtual"><scope>touchgfx::Slider</scope><name>draw</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9cf3a85fa7554475fa42c97985bda6df" prot="public" virt="non-virtual"><scope>touchgfx::Slider</scope><name>Drawable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4a009ec2b654351679a0124e9055abdc" prot="public" virt="non-virtual"><scope>touchgfx::Slider</scope><name>drawToDynamicBitmap</name></member>
+      <member refid="classtouchgfx_1_1_container_1a15fc4ae5c33721f5f425b20640217f22" prot="protected" virt="non-virtual"><scope>touchgfx::Slider</scope><name>firstChild</name></member>
+      <member refid="classtouchgfx_1_1_container_1a2b224826cd4f0f674009c21d6821f525" prot="public" virt="virtual"><scope>touchgfx::Slider</scope><name>forEachChild</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa7737d9d49d7f55ec9bde8f2c9751b1d" prot="public" virt="non-virtual"><scope>touchgfx::Slider</scope><name>getAbsoluteRect</name></member>
+      <member refid="classtouchgfx_1_1_container_1a47e8a844fa50b171656f8355fd8e313b" prot="protected" virt="virtual"><scope>touchgfx::Slider</scope><name>getContainedArea</name></member>
+      <member refid="classtouchgfx_1_1_container_1a35ae5c9547dd1861f70b5e4f0f9b94b3" prot="public" virt="non-virtual"><scope>touchgfx::Slider</scope><name>getFirstChild</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ad00483821e06fe4d0d70222de4135d30" prot="public" virt="non-virtual"><scope>touchgfx::Slider</scope><name>getHeight</name></member>
+      <member refid="classtouchgfx_1_1_slider_1abde232c89f44eec5f5e53f6eab960591" prot="public" virt="virtual"><scope>touchgfx::Slider</scope><name>getIndicatorMax</name></member>
+      <member refid="classtouchgfx_1_1_slider_1a468892ac783fc2d8237d8e4daa47cba8" prot="public" virt="virtual"><scope>touchgfx::Slider</scope><name>getIndicatorMin</name></member>
+      <member refid="classtouchgfx_1_1_slider_1a1fdd0b3aa47a08ebb5802f526f3f9a49" prot="protected" virt="virtual"><scope>touchgfx::Slider</scope><name>getIndicatorPositionRangeSize</name></member>
+      <member refid="classtouchgfx_1_1_slider_1ab74f73d0ca98e8836515f1d8a323c879" prot="protected" virt="virtual"><scope>touchgfx::Slider</scope><name>getIndicatorRadius</name></member>
+      <member refid="classtouchgfx_1_1_container_1a6bc8e89dc7f879221e9862fb27dc726f" prot="public" virt="virtual"><scope>touchgfx::Slider</scope><name>getLastChild</name></member>
+      <member refid="classtouchgfx_1_1_slider_1a44f148270b14491d775d0e54830d9e02" prot="public" virt="virtual"><scope>touchgfx::Slider</scope><name>getMaxValue</name></member>
+      <member refid="classtouchgfx_1_1_slider_1a4957abc6d8359ac2041929a8d3e4eeb5" prot="public" virt="virtual"><scope>touchgfx::Slider</scope><name>getMinValue</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a61c9b2bf703c49a6d238d354ddcaedb3" prot="public" virt="non-virtual"><scope>touchgfx::Slider</scope><name>getNextSibling</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a013e065d4d9a10dbfa0ddee9a35582a3" prot="public" virt="non-virtual"><scope>touchgfx::Slider</scope><name>getParent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af23a5bb7d473e16363a449c497586be3" prot="public" virt="non-virtual"><scope>touchgfx::Slider</scope><name>getRect</name></member>
+      <member refid="classtouchgfx_1_1_container_1a4dcdd780e93cc783a2ceeda00c6f3b51" prot="public" virt="virtual"><scope>touchgfx::Slider</scope><name>getSolidRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4783dfe657ff1b7a33261bda8c4b4266" prot="public" virt="virtual"><scope>touchgfx::Slider</scope><name>getSolidRectAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_slider_1aae714dc01fe7f5bb1a175d0d1068bb92" prot="public" virt="non-virtual"><scope>touchgfx::Slider</scope><name>getValue</name></member>
+      <member refid="classtouchgfx_1_1_slider_1a76087f4db65dbe2aaf0f5c46da1d4ba3" prot="protected" virt="virtual"><scope>touchgfx::Slider</scope><name>getValueRangeSize</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a83b8847f583b63e60aa4bf778261ddd7" prot="public" virt="virtual"><scope>touchgfx::Slider</scope><name>getVisibleRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1acae58162aaca6fc174416550f76668e7" prot="public" virt="non-virtual"><scope>touchgfx::Slider</scope><name>getWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac071e9b7ccf37179df7d29c6778b664c" prot="public" virt="non-virtual"><scope>touchgfx::Slider</scope><name>getX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a26752e6cff4607d0eec8768ef6d9032a" prot="public" virt="non-virtual"><scope>touchgfx::Slider</scope><name>getY</name></member>
+      <member refid="classtouchgfx_1_1_slider_1a7f1524b90bc90e5f6cf7ee47aae12123" prot="protected" virt="virtual"><scope>touchgfx::Slider</scope><name>handleClickEvent</name></member>
+      <member refid="classtouchgfx_1_1_slider_1a06ae1946b2124cc94e26cfe18728debf" prot="protected" virt="virtual"><scope>touchgfx::Slider</scope><name>handleDragEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4db4945ecbc2303bf860e082409b8029" prot="public" virt="virtual"><scope>touchgfx::Slider</scope><name>handleGestureEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1af635cee0f186c3d0fcea60bac14355" prot="public" virt="virtual"><scope>touchgfx::Slider</scope><name>handleTickEvent</name></member>
+      <member refid="classtouchgfx_1_1_slider_1acf9436c8845d567c1d065d7a76dff47ba4dd51ad73508d6fc83a502966779e48e" prot="protected" virt="non-virtual"><scope>touchgfx::Slider</scope><name>HORIZONTAL</name></member>
+      <member refid="classtouchgfx_1_1_slider_1af8f7f9c022b30ea7242bb2f5e6100ed9" prot="protected" virt="non-virtual"><scope>touchgfx::Slider</scope><name>indicator</name></member>
+      <member refid="classtouchgfx_1_1_slider_1a57c0411ac6607140d5b537942237fe3d" prot="protected" virt="non-virtual"><scope>touchgfx::Slider</scope><name>indicatorMaxPosition</name></member>
+      <member refid="classtouchgfx_1_1_slider_1aa254d3db286a64e04dc502d3a174cc29" prot="protected" virt="non-virtual"><scope>touchgfx::Slider</scope><name>indicatorMinPosition</name></member>
+      <member refid="classtouchgfx_1_1_container_1aca896b17460628dceeac8b01553b6a00" prot="public" virt="virtual"><scope>touchgfx::Slider</scope><name>insert</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2800b4c18c63e9e7b1f85a74ce6b80c3" prot="public" virt="virtual"><scope>touchgfx::Slider</scope><name>invalidate</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a130cf6e1bf2b9f04f48e659758fa75e2" prot="public" virt="virtual"><scope>touchgfx::Slider</scope><name>invalidateRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a01c717b9abc98d48673b79d691c2d28a" prot="public" virt="non-virtual"><scope>touchgfx::Slider</scope><name>isTouchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9d8a6cfb13917785c143e74d40e4e2be" prot="public" virt="non-virtual"><scope>touchgfx::Slider</scope><name>isVisible</name></member>
+      <member refid="classtouchgfx_1_1_container_1add539b68574f09b364f0b4e6a312b9b0" prot="protected" virt="virtual"><scope>touchgfx::Slider</scope><name>moveChildrenRelative</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af3590480070e2cf91580976f322d2c5e" prot="public" virt="virtual"><scope>touchgfx::Slider</scope><name>moveRelative</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aadc5abfad4d2fcc331cf8de8713dc00e" prot="public" virt="virtual"><scope>touchgfx::Slider</scope><name>moveTo</name></member>
+      <member refid="classtouchgfx_1_1_slider_1a9c5f0b0d278899e461a3a37370465091" prot="protected" virt="non-virtual"><scope>touchgfx::Slider</scope><name>newValueCallback</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0da4a00c3fbdea5740e52c7e04316c65" prot="protected" virt="non-virtual"><scope>touchgfx::Slider</scope><name>nextSibling</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ab77c13cde2b01107dcbc5c2b584d422f" prot="protected" virt="non-virtual"><scope>touchgfx::Slider</scope><name>parent</name></member>
+      <member refid="classtouchgfx_1_1_slider_1a7ab9a07804fbf560cdd0d6cfadeccc57" prot="protected" virt="virtual"><scope>touchgfx::Slider</scope><name>positionToValue</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2a955ddc316d002f566598f340eb2af9" prot="protected" virt="non-virtual"><scope>touchgfx::Slider</scope><name>rect</name></member>
+      <member refid="classtouchgfx_1_1_container_1a4d9056af30ab3c61da25a71023a341f2" prot="public" virt="virtual"><scope>touchgfx::Slider</scope><name>remove</name></member>
+      <member refid="classtouchgfx_1_1_container_1a4e62c805a8478320f1e650e6a635b31a" prot="public" virt="virtual"><scope>touchgfx::Slider</scope><name>removeAll</name></member>
+      <member refid="classtouchgfx_1_1_slider_1a8b77e982f0d923de56c13a450f3cc772" prot="public" virt="non-virtual"><scope>touchgfx::Slider</scope><name>setBitmaps</name></member>
+      <member refid="classtouchgfx_1_1_slider_1a13199564c3053d350419de5f72eed90a" prot="public" virt="non-virtual"><scope>touchgfx::Slider</scope><name>setBitmaps</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a47a6312407603de99247bb802dbd8a48" prot="public" virt="virtual"><scope>touchgfx::Slider</scope><name>setHeight</name></member>
+      <member refid="classtouchgfx_1_1_slider_1a8d718f01bb8f6503756b2ef69ef36205" prot="public" virt="non-virtual"><scope>touchgfx::Slider</scope><name>setNewValueCallback</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac218c371450d8ad2bed3e1b07965a41a" prot="public" virt="virtual"><scope>touchgfx::Slider</scope><name>setPosition</name></member>
+      <member refid="classtouchgfx_1_1_slider_1afbf9d9ff26f1147c29b07649ccb2a211" prot="public" virt="non-virtual"><scope>touchgfx::Slider</scope><name>setStartValueCallback</name></member>
+      <member refid="classtouchgfx_1_1_slider_1afd029b36aa808631db434277b4287e14" prot="public" virt="non-virtual"><scope>touchgfx::Slider</scope><name>setStopValueCallback</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae4c38eadb852b153850ea7ded1f50a19" prot="public" virt="non-virtual"><scope>touchgfx::Slider</scope><name>setTouchable</name></member>
+      <member refid="classtouchgfx_1_1_slider_1a1867cb4382494c24c875cdf2c50e205d" prot="public" virt="virtual"><scope>touchgfx::Slider</scope><name>setupHorizontalSlider</name></member>
+      <member refid="classtouchgfx_1_1_slider_1af86837244331c56735cd3fe970e7edc1" prot="public" virt="virtual"><scope>touchgfx::Slider</scope><name>setupVerticalSlider</name></member>
+      <member refid="classtouchgfx_1_1_slider_1afd2ee022f13d24681ce6efbf09581807" prot="public" virt="virtual"><scope>touchgfx::Slider</scope><name>setValue</name></member>
+      <member refid="classtouchgfx_1_1_slider_1ab3f8cd142b524c835b3b96bdf022cd91" prot="public" virt="virtual"><scope>touchgfx::Slider</scope><name>setValueRange</name></member>
+      <member refid="classtouchgfx_1_1_slider_1a54901867147fc92305500e327284f3b1" prot="public" virt="virtual"><scope>touchgfx::Slider</scope><name>setValueRange</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a71639c6634c5dcf6d1bb21b8b1b61f5b" prot="public" virt="non-virtual"><scope>touchgfx::Slider</scope><name>setVisible</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae74a37f71d23440fc8b0466ad8ecfe4b" prot="public" virt="virtual"><scope>touchgfx::Slider</scope><name>setWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9f6db7f34a74e991fc446fffb5703a53" prot="public" virt="virtual"><scope>touchgfx::Slider</scope><name>setX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6c86659dc1e7355c207e9c0aa18af167" prot="public" virt="virtual"><scope>touchgfx::Slider</scope><name>setXY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1b08d48e7e23a046f09e63089bc82bc1" prot="public" virt="virtual"><scope>touchgfx::Slider</scope><name>setY</name></member>
+      <member refid="classtouchgfx_1_1_slider_1ad462f549f3a252bbc307669e0920c3cb" prot="public" virt="non-virtual"><scope>touchgfx::Slider</scope><name>Slider</name></member>
+      <member refid="classtouchgfx_1_1_slider_1acf9436c8845d567c1d065d7a76dff47b" prot="protected" virt="non-virtual"><scope>touchgfx::Slider</scope><name>SliderOrientation</name></member>
+      <member refid="classtouchgfx_1_1_slider_1a53c9429db6dd0231f2debe5c868a2f08" prot="protected" virt="non-virtual"><scope>touchgfx::Slider</scope><name>sliderOrientation</name></member>
+      <member refid="classtouchgfx_1_1_slider_1aad3a4bbe7402cdaea6d6215711de8f43" prot="protected" virt="non-virtual"><scope>touchgfx::Slider</scope><name>startValueCallback</name></member>
+      <member refid="classtouchgfx_1_1_slider_1a48ae008056d058d047246040c98d1e6c" prot="protected" virt="non-virtual"><scope>touchgfx::Slider</scope><name>stopValueCallback</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0d014de134cb9b9c1c361fcd726a5f34" prot="protected" virt="non-virtual"><scope>touchgfx::Slider</scope><name>touchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a48c1d14ac943dbfa4935ea39db950608" prot="public" virt="virtual"><scope>touchgfx::Slider</scope><name>translateRectToAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_container_1a23f8fdbaba5449e55efb7a14a96b657d" prot="public" virt="virtual"><scope>touchgfx::Slider</scope><name>unlink</name></member>
+      <member refid="classtouchgfx_1_1_slider_1ac7f62aec768decd1704d14c62cb48d8d" prot="protected" virt="virtual"><scope>touchgfx::Slider</scope><name>updateIndicatorPosition</name></member>
+      <member refid="classtouchgfx_1_1_slider_1ac066b7939ab11dac31b1f038cdf9a671" prot="protected" virt="non-virtual"><scope>touchgfx::Slider</scope><name>valueRangeMax</name></member>
+      <member refid="classtouchgfx_1_1_slider_1a5d68f4f000053e858f6004c04a8a5735" prot="protected" virt="non-virtual"><scope>touchgfx::Slider</scope><name>valueRangeMin</name></member>
+      <member refid="classtouchgfx_1_1_slider_1ad1c046e7c2114c7ce828f2c6420a34e5" prot="protected" virt="virtual"><scope>touchgfx::Slider</scope><name>valueToPosition</name></member>
+      <member refid="classtouchgfx_1_1_slider_1acf9436c8845d567c1d065d7a76dff47ba1a88641fcd39f2ed3e58a18526e97138" prot="protected" virt="non-virtual"><scope>touchgfx::Slider</scope><name>VERTICAL</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa54a57ae048476d840caf6d4d2c47aa3" prot="protected" virt="non-virtual"><scope>touchgfx::Slider</scope><name>visible</name></member>
+      <member refid="classtouchgfx_1_1_container_1a316105bb0065103f6190b08783144c33" prot="public" virt="virtual"><scope>touchgfx::Slider</scope><name>~Container</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6bb040a11ffc2bd641283cc0bc0d1346" prot="public" virt="virtual"><scope>touchgfx::Slider</scope><name>~Drawable</name></member>
+      <member refid="classtouchgfx_1_1_slider_1a6c07b7b9e8a131a524a883a942d2c490" prot="public" virt="virtual"><scope>touchgfx::Slider</scope><name>~Slider</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

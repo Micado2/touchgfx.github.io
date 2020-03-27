@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structtouchgfx_1_1colortype" kind="struct" language="C++" prot="public">
+    <compoundname>touchgfx::colortype</compoundname>
+    <includes local="no">Types.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtouchgfx_1_1colortype_1a66b2ef8398a8bbb0f5816f22a7b138da" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <briefdescription>
+<para>The color. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="110" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structtouchgfx_1_1colortype_1a6d523725df9648aeecbaaacad4750dad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>colortype</definition>
+        <argsstring>()</argsstring>
+        <name>colortype</name>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a black (0) color. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="64" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="64" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="structtouchgfx_1_1colortype_1a07f83ebda6e444bc5cc4bd64a3277358" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>colortype</definition>
+        <argsstring>(uint32_t col)</argsstring>
+        <name>colortype</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>col</declname>
+        </param>
+        <briefdescription>
+<para>Contructor which creates a colortype with the given color. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Use <ref refid="classtouchgfx_1_1_color_1aa9c7e0454e1bfc7c73b8a42319b868ba" kindref="member">Color::getColorFrom24BitRGB()</ref> to create a color that will work on both 16 bit <ref refid="classtouchgfx_1_1_l_c_d" kindref="compound">LCD</ref> and 24 bit <ref refid="classtouchgfx_1_1_l_c_d" kindref="compound">LCD</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>col</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_color_1aa9c7e0454e1bfc7c73b8a42319b868ba" kindref="member">Color::getColorFrom24BitRGB</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="78" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="78" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="structtouchgfx_1_1colortype_1ace9d7f831c7e12fba1ebc6ac3b0edcb6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t getColor32</definition>
+        <argsstring>() const</argsstring>
+        <name>getColor32</name>
+        <briefdescription>
+<para>Gets color as a 32bit value suitable for passing to <ref refid="classtouchgfx_1_1_color_1ab634c209faf3547f2a8e5bf5e1361360" kindref="member">Color::getRedColor()</ref>, <ref refid="classtouchgfx_1_1_color_1a87490d0bf61d4c88fde957867e3ef1bf" kindref="member">Color::getGreenColor()</ref> and <ref refid="classtouchgfx_1_1_color_1ae058608414cce6559fbf01f28eaecbcc" kindref="member">Color::getBlueColor()</ref> which will handle all bitdeptchs. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The color 32.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_color_1ab634c209faf3547f2a8e5bf5e1361360" kindref="member">Color::getRedColor</ref>, <ref refid="classtouchgfx_1_1_color_1a87490d0bf61d4c88fde957867e3ef1bf" kindref="member">Color::getGreenColor</ref>, <ref refid="classtouchgfx_1_1_color_1ae058608414cce6559fbf01f28eaecbcc" kindref="member">Color::getBlueColor</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="91" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="91" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="structtouchgfx_1_1colortype_1ad03e8c3ddb5fa2f4d1fc39099bb79b95" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>operator uint16_t</definition>
+        <argsstring>() const</argsstring>
+        <name>operator uint16_t</name>
+        <briefdescription>
+<para>Cast that converts the given colortype to an uint16_t. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Provided only for backward compatibility - from the time when the only supported display (and colors) were 16 bit RGB565 colors.</para>
+<para><simplesect kind="return"><para>The result of the operation.</para>
+</simplesect>
+<xrefsect id="deprecated_1_deprecated000012"><xreftitle>Deprecated</xreftitle><xrefdescription><para>It is not safe for other than 16bpp displays. </para>
+</xrefdescription></xrefsect></para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="105" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="105" bodyend="108"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This type can contain a color value. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Note that in order to maintain backwards compatibility, casting this type to an integral value will yield a 16-bit value. To extract a 24/32-bit color from this type, use the getColor32 function. </para>
+    </detaileddescription>
+    <location file="touchgfx/hal/Types.hpp" line="62" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="61" bodyend="111"/>
+    <listofallmembers>
+      <member refid="structtouchgfx_1_1colortype_1a66b2ef8398a8bbb0f5816f22a7b138da" prot="public" virt="non-virtual"><scope>touchgfx::colortype</scope><name>color</name></member>
+      <member refid="structtouchgfx_1_1colortype_1a6d523725df9648aeecbaaacad4750dad" prot="public" virt="non-virtual"><scope>touchgfx::colortype</scope><name>colortype</name></member>
+      <member refid="structtouchgfx_1_1colortype_1a07f83ebda6e444bc5cc4bd64a3277358" prot="public" virt="non-virtual"><scope>touchgfx::colortype</scope><name>colortype</name></member>
+      <member refid="structtouchgfx_1_1colortype_1ace9d7f831c7e12fba1ebc6ac3b0edcb6" prot="public" virt="non-virtual"><scope>touchgfx::colortype</scope><name>getColor32</name></member>
+      <member refid="structtouchgfx_1_1colortype_1ad03e8c3ddb5fa2f4d1fc39099bb79b95" prot="public" virt="non-virtual"><scope>touchgfx::colortype</scope><name>operator uint16_t</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

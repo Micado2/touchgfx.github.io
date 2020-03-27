@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structtouchgfx_1_1_typed_text_1_1_typed_text_data" kind="struct" language="C++" prot="public">
+    <compoundname>touchgfx::TypedText::TypedTextData</compoundname>
+    <includes local="no">TypedText.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtouchgfx_1_1_typed_text_1_1_typed_text_data_1aa3745703e8cd414a27b8410f2ae69b5c" prot="public" static="no" mutable="no">
+        <type>const <ref refid="namespacetouchgfx_1ae1ec6d58a3c593e4801f352243506628" kindref="member">Alignment</ref></type>
+        <definition>const Alignment alignment</definition>
+        <argsstring></argsstring>
+        <name>alignment</name>
+        <bitfield> 2</bitfield>
+        <briefdescription>
+<para>The alignment of the typed text (LEFT,CENTER,RIGHT) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TypedText.hpp" line="38" column="1" bodyfile="touchgfx/TypedText.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_typed_text_1_1_typed_text_data_1a32fadd8cb3adf39b135bb0d47d51d497" prot="public" static="no" mutable="no">
+        <type>const <ref refid="namespacetouchgfx_1abe2c7387a9ed6f7c793179053f152743" kindref="member">TextDirection</ref></type>
+        <definition>const TextDirection direction</definition>
+        <argsstring></argsstring>
+        <name>direction</name>
+        <bitfield> 2</bitfield>
+        <briefdescription>
+<para>The text direction (LTR,RTL,...) of the typed text. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TypedText.hpp" line="39" column="1" bodyfile="touchgfx/TypedText.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_typed_text_1_1_typed_text_data_1a6d725b0c7beeb1a70a0a3136cfdd37cb" prot="public" static="no" mutable="no">
+        <type>const unsigned char</type>
+        <definition>const unsigned char fontIdx</definition>
+        <argsstring></argsstring>
+        <name>fontIdx</name>
+        <briefdescription>
+<para>The ID of the font associated with the typed text. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TypedText.hpp" line="37" column="1" bodyfile="touchgfx/TypedText.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The data structure for typed texts. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="touchgfx/TypedText.hpp" line="36" column="1" bodyfile="touchgfx/TypedText.hpp" bodystart="35" bodyend="40"/>
+    <listofallmembers>
+      <member refid="structtouchgfx_1_1_typed_text_1_1_typed_text_data_1aa3745703e8cd414a27b8410f2ae69b5c" prot="public" virt="non-virtual"><scope>touchgfx::TypedText::TypedTextData</scope><name>alignment</name></member>
+      <member refid="structtouchgfx_1_1_typed_text_1_1_typed_text_data_1a32fadd8cb3adf39b135bb0d47d51d497" prot="public" virt="non-virtual"><scope>touchgfx::TypedText::TypedTextData</scope><name>direction</name></member>
+      <member refid="structtouchgfx_1_1_typed_text_1_1_typed_text_data_1a6d725b0c7beeb1a70a0a3136cfdd37cb" prot="public" virt="non-virtual"><scope>touchgfx::TypedText::TypedTextData</scope><name>fontIdx</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

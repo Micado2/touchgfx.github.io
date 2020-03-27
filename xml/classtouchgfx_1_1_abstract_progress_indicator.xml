@@ -1,0 +1,839 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_abstract_progress_indicator" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::AbstractProgressIndicator</compoundname>
+    <basecompoundref refid="classtouchgfx_1_1_container" prot="public" virt="non-virtual">Container</basecompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_abstract_direction_progress" prot="public" virt="non-virtual">AbstractDirectionProgress</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_circle_progress" prot="public" virt="non-virtual">CircleProgress</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_line_progress" prot="public" virt="non-virtual">LineProgress</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_text_progress" prot="public" virt="non-virtual">TextProgress</derivedcompoundref>
+    <includes local="no">AbstractProgressIndicator.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_abstract_progress_indicator_1ac58c7595db571063cbbb5832998af4d4" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_image" kindref="compound">Image</ref></type>
+        <definition>Image background</definition>
+        <argsstring></argsstring>
+        <name>background</name>
+        <briefdescription>
+<para>The background image. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp" line="190" column="1" bodyfile="touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_abstract_progress_indicator_1aa9b3d6000cb8f075989733abced8253f" prot="protected" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t currentValue</definition>
+        <argsstring></argsstring>
+        <name>currentValue</name>
+        <briefdescription>
+<para>The current value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp" line="194" column="1" bodyfile="touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_abstract_progress_indicator_1a5bda8640109df5374342b63669b5f84b" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_container" kindref="compound">Container</ref></type>
+        <definition>Container progressIndicatorContainer</definition>
+        <argsstring></argsstring>
+        <name>progressIndicatorContainer</name>
+        <briefdescription>
+<para>The container that holds the actual progress indicator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp" line="191" column="1" bodyfile="touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_abstract_progress_indicator_1a5553b7a635fade12e38c22ac71243d6a" prot="protected" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t rangeMax</definition>
+        <argsstring></argsstring>
+        <name>rangeMax</name>
+        <briefdescription>
+<para>The range maximum. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp" line="193" column="1" bodyfile="touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_abstract_progress_indicator_1a35a6e5daec1e31c6e6090c9a377a5c43" prot="protected" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t rangeMin</definition>
+        <argsstring></argsstring>
+        <name>rangeMin</name>
+        <briefdescription>
+<para>The range minimum. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp" line="192" column="1" bodyfile="touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_abstract_progress_indicator_1a7de050eed4e279fd8c867b40e856c005" prot="protected" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t rangeSteps</definition>
+        <argsstring></argsstring>
+        <name>rangeSteps</name>
+        <briefdescription>
+<para>The range steps. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp" line="195" column="1" bodyfile="touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_abstract_progress_indicator_1a2e4193a2cd816fb8d23a4750b8823534" prot="protected" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t rangeStepsMin</definition>
+        <argsstring></argsstring>
+        <name>rangeStepsMin</name>
+        <briefdescription>
+<para>The range steps minimum. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp" line="196" column="1" bodyfile="touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_progress_indicator_1a088cf0717c3adb46df00038640925e84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AbstractProgressIndicator</definition>
+        <argsstring>()</argsstring>
+        <name>AbstractProgressIndicator</name>
+        <briefdescription>
+<para>Initializes a new instance of the <ref refid="classtouchgfx_1_1_abstract_progress_indicator" kindref="compound">AbstractProgressIndicator</ref> class with a default range 0-100. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp" line="25" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_progress_indicator_1ad6acf445b3bf33efe1287db3c61bc8c7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>uint16_t</type>
+        <definition>virtual uint16_t getProgress</definition>
+        <argsstring>(uint16_t range=100) const</argsstring>
+        <name>getProgress</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>range</declname>
+          <defval>100</defval>
+        </param>
+        <briefdescription>
+<para>Gets the current progress based on the range set by <ref refid="classtouchgfx_1_1_abstract_progress_indicator_1a02a45c40598be83aeebffbe70ea3c79c" kindref="member">setRange()</ref> and the value set by <ref refid="classtouchgfx_1_1_abstract_progress_indicator_1afd2ee022f13d24681ce6efbf09581807" kindref="member">setValue()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(Optional) The range, default is 100.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The progress.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_abstract_progress_indicator_1a02a45c40598be83aeebffbe70ea3c79c" kindref="member">setRange</ref>, <ref refid="classtouchgfx_1_1_abstract_progress_indicator_1afd2ee022f13d24681ce6efbf09581807" kindref="member">setValue</ref>, <ref refid="classtouchgfx_1_1_abstract_progress_indicator_1abb46316a08c089763c5171d38e53fc6e" kindref="member">getValue</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp" line="187" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_progress_indicator_1a3daf2010ab529f1e80a39e69c2a13370" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int16_t</type>
+        <definition>virtual int16_t getProgressIndicatorHeight</definition>
+        <argsstring>() const</argsstring>
+        <name>getProgressIndicatorHeight</name>
+        <briefdescription>
+<para>Gets progress indicator height. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The progress indicator height.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_abstract_progress_indicator_1a7c302754c2026f0c61ddfb2a887644c6" kindref="member">setProgressIndicatorPosition</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp" line="85" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_progress_indicator_1ac9bd8cf6bb9b77f5b5227bb3c2276942" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int16_t</type>
+        <definition>virtual int16_t getProgressIndicatorWidth</definition>
+        <argsstring>() const</argsstring>
+        <name>getProgressIndicatorWidth</name>
+        <briefdescription>
+<para>Gets progress indicator width. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The progress indicator width.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_abstract_progress_indicator_1a7c302754c2026f0c61ddfb2a887644c6" kindref="member">setProgressIndicatorPosition</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp" line="76" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_progress_indicator_1a014af24dbe00f2f1901e5efded0eac19" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int16_t</type>
+        <definition>virtual int16_t getProgressIndicatorX</definition>
+        <argsstring>() const</argsstring>
+        <name>getProgressIndicatorX</name>
+        <briefdescription>
+<para>Gets progress indicator x coordinate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The progress indicator x coordinate.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_abstract_progress_indicator_1a7c302754c2026f0c61ddfb2a887644c6" kindref="member">setProgressIndicatorPosition</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_progress_indicator_1a00d0bde08c61e6f8a396592586201296" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int16_t</type>
+        <definition>virtual int16_t getProgressIndicatorY</definition>
+        <argsstring>() const</argsstring>
+        <name>getProgressIndicatorY</name>
+        <briefdescription>
+<para>Gets progress indicator y coordinate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The progress indicator y coordinate.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_abstract_progress_indicator_1a7c302754c2026f0c61ddfb2a887644c6" kindref="member">setProgressIndicatorPosition</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_progress_indicator_1a52e91c5cb93b79054d8bb5a08a412096" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void getRange</definition>
+        <argsstring>(int16_t &amp;min, int16_t &amp;max, uint16_t &amp;steps, uint16_t &amp;minStep) const</argsstring>
+        <name>getRange</name>
+        <param>
+          <type>int16_t &amp;</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>int16_t &amp;</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type>uint16_t &amp;</type>
+          <declname>steps</declname>
+        </param>
+        <param>
+          <type>uint16_t &amp;</type>
+          <declname>minStep</declname>
+        </param>
+        <briefdescription>
+<para>Gets the range set by <ref refid="classtouchgfx_1_1_abstract_progress_indicator_1a02a45c40598be83aeebffbe70ea3c79c" kindref="member">setRange()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minimum input value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum input value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">steps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The steps in which to report progress. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">minStep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The step which the minimum input value is mapped to.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_abstract_progress_indicator_1a02a45c40598be83aeebffbe70ea3c79c" kindref="member">setRange</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp" line="136" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_progress_indicator_1a1a33f23352ce0b1142c5a42520ee26e4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void getRange</definition>
+        <argsstring>(int16_t &amp;min, int16_t &amp;max, uint16_t &amp;steps) const</argsstring>
+        <name>getRange</name>
+        <param>
+          <type>int16_t &amp;</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>int16_t &amp;</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type>uint16_t &amp;</type>
+          <declname>steps</declname>
+        </param>
+        <briefdescription>
+<para>Gets the range set by <ref refid="classtouchgfx_1_1_abstract_progress_indicator_1a02a45c40598be83aeebffbe70ea3c79c" kindref="member">setRange()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minimum input value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum input value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">steps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The steps in which to report progress.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_abstract_progress_indicator_1a02a45c40598be83aeebffbe70ea3c79c" kindref="member">setRange</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp" line="147" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_progress_indicator_1a95519933a70cca93e020e46eb77a19c7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void getRange</definition>
+        <argsstring>(int16_t &amp;min, int16_t &amp;max) const</argsstring>
+        <name>getRange</name>
+        <param>
+          <type>int16_t &amp;</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>int16_t &amp;</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+<para>Gets the range set by <ref refid="classtouchgfx_1_1_abstract_progress_indicator_1a02a45c40598be83aeebffbe70ea3c79c" kindref="member">setRange()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minimum input value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum input value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_abstract_progress_indicator_1a02a45c40598be83aeebffbe70ea3c79c" kindref="member">setRange</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp" line="157" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_progress_indicator_1abb46316a08c089763c5171d38e53fc6e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int getValue</definition>
+        <argsstring>() const</argsstring>
+        <name>getValue</name>
+        <briefdescription>
+<para>Gets the current value set by <ref refid="classtouchgfx_1_1_abstract_progress_indicator_1afd2ee022f13d24681ce6efbf09581807" kindref="member">setValue()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The value.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_abstract_progress_indicator_1afd2ee022f13d24681ce6efbf09581807" kindref="member">setValue</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp" line="175" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_progress_indicator_1af289e78e38dabff27c29cb8f3d704b72" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setBackground</definition>
+        <argsstring>(const Bitmap &amp;bmpBackground)</argsstring>
+        <name>setBackground</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> &amp;</type>
+          <declname>bmpBackground</declname>
+        </param>
+        <briefdescription>
+<para>Sets the background image. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The width and height of the progress indicator widget is updated according to the dimensions of the bitmap.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bmpBackground</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The background bitmap. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_progress_indicator_1a7c302754c2026f0c61ddfb2a887644c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setProgressIndicatorPosition</definition>
+        <argsstring>(int16_t x, int16_t y, int16_t width, int16_t height)</argsstring>
+        <name>setProgressIndicatorPosition</name>
+        <reimplementedby refid="classtouchgfx_1_1_box_progress_1a7c302754c2026f0c61ddfb2a887644c6">setProgressIndicatorPosition</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_image_progress_1a7c302754c2026f0c61ddfb2a887644c6">setProgressIndicatorPosition</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_line_progress_1a7c302754c2026f0c61ddfb2a887644c6">setProgressIndicatorPosition</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_circle_progress_1a7c302754c2026f0c61ddfb2a887644c6">setProgressIndicatorPosition</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_text_progress_1a7c302754c2026f0c61ddfb2a887644c6">setProgressIndicatorPosition</reimplementedby>
+        <param>
+          <type>int16_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+<para>Sets the position and dimensions of the actual progress indicator relative to the background image. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The width of the box progress indicator. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The height of the box progress indicator.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_abstract_progress_indicator_1a014af24dbe00f2f1901e5efded0eac19" kindref="member">getProgressIndicatorX</ref>, <ref refid="classtouchgfx_1_1_abstract_progress_indicator_1a00d0bde08c61e6f8a396592586201296" kindref="member">getProgressIndicatorY</ref>, <ref refid="classtouchgfx_1_1_abstract_progress_indicator_1ac9bd8cf6bb9b77f5b5227bb3c2276942" kindref="member">getProgressIndicatorWidth</ref>, <ref refid="classtouchgfx_1_1_abstract_progress_indicator_1a3daf2010ab529f1e80a39e69c2a13370" kindref="member">getProgressIndicatorHeight</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_progress_indicator_1a02a45c40598be83aeebffbe70ea3c79c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setRange</definition>
+        <argsstring>(int16_t min, int16_t max, uint16_t steps=0, uint16_t minStep=0)</argsstring>
+        <name>setRange</name>
+        <param>
+          <type>int16_t</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>steps</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>minStep</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Sets the range for the progress indicator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The range is the values that are given to the progress indicator while progressing through the task at hand. If an app needs to work through 237 items to finish a task, the range should be set to (0, 237) assuming that 0 items is the minimum. Though the minimum is often 0, it is possible to customize this.</para>
+<para>The steps parameter is used to specify at what granularity you want the progress indicator to report a new progress value. If the 237 items to be reported as 0%, 10%, 20%, ... 100%, the steps should be set to 10 as there are ten steps from 0% to 100%. If you want to update a widget which is 150 pixels wide, you might want to set steps to 150 to get a new progress value for every pixel. If you are updating a clock and want this to resemble an analog clock, you might want to use 12 or perhaps 60 as number of steps.</para>
+<para>The minStep parameter is used when the minimum input value (min) should give a progress different from 0. For example, if progress is a clock face, you want to count from 0..1000 and you want progress per minute, but want to make sure that 0 is not a blank clock face, but instead you want 1 minute to show, use <programlisting><codeline><highlight class="normal">setRange(0,<sp/>1000,<sp/>60,<sp/>1)</highlight></codeline>
+</programlisting> to make sure that as values progress from 0 to 1000, <ref refid="classtouchgfx_1_1_abstract_progress_indicator_1ad6acf445b3bf33efe1287db3c61bc8c7" kindref="member">getProgress()</ref> start from 1 and goes up to 60. Another example could be a <ref refid="classtouchgfx_1_1_box_progress" kindref="compound">BoxProgress</ref> with a <ref refid="classtouchgfx_1_1_text_progress" kindref="compound">TextProgress</ref> on top and you want to make sure that &quot;0%&quot; will always show in the box, use something like <programlisting><codeline><highlight class="normal">setRange(0,<sp/>1000,<sp/>200,<sp/>40)</highlight></codeline>
+</programlisting> if your box is 200 pixels wide and &quot;0%&quot; is 40 pixels wide.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minimum input value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum input value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>steps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(Optional) The steps in which to report progress. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>minStep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(Optional) The step which the minimum input value is mapped to.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_abstract_progress_indicator_1afd2ee022f13d24681ce6efbf09581807" kindref="member">setValue</ref>, <ref refid="classtouchgfx_1_1_abstract_progress_indicator_1ad6acf445b3bf33efe1287db3c61bc8c7" kindref="member">getProgress</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp" line="124" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_progress_indicator_1afd2ee022f13d24681ce6efbf09581807" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setValue</definition>
+        <argsstring>(int value)</argsstring>
+        <name>setValue</name>
+        <reimplementedby refid="classtouchgfx_1_1_box_progress_1afd2ee022f13d24681ce6efbf09581807">setValue</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_image_progress_1afd2ee022f13d24681ce6efbf09581807">setValue</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_text_progress_1afd2ee022f13d24681ce6efbf09581807">setValue</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_line_progress_1afd2ee022f13d24681ce6efbf09581807">setValue</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_circle_progress_1afd2ee022f13d24681ce6efbf09581807">setValue</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Sets the current value in the range (min..max) set by <ref refid="classtouchgfx_1_1_abstract_progress_indicator_1a02a45c40598be83aeebffbe70ea3c79c" kindref="member">setRange()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Values lower than min are mapped to min, values higher than max are mapped to max.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_abstract_progress_indicator_1abb46316a08c089763c5171d38e53fc6e" kindref="member">getValue</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp" line="166" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_progress_indicator_1ae4efce05cf1140a1eb44d2c5715d8b2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual ~AbstractProgressIndicator</definition>
+        <argsstring>()</argsstring>
+        <name>~AbstractProgressIndicator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp" line="27" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classtouchgfx_1_1_abstract_progress_indicator" kindref="compound">AbstractProgressIndicator</ref> declares methods that provides the basic mechanisms and tools to implement a progress indicator. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>For more specific implementations see classes that inherit from <ref refid="classtouchgfx_1_1_abstract_progress_indicator" kindref="compound">AbstractProgressIndicator</ref>.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_box_progress" kindref="compound">BoxProgress</ref>, <ref refid="classtouchgfx_1_1_circle_progress" kindref="compound">CircleProgress</ref>, <ref refid="classtouchgfx_1_1_image_progress" kindref="compound">ImageProgress</ref>, <ref refid="classtouchgfx_1_1_line_progress" kindref="compound">LineProgress</ref>, <ref refid="classtouchgfx_1_1_text_progress" kindref="compound">TextProgress</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="157">
+        <label>CircleProgress</label>
+        <link refid="classtouchgfx_1_1_circle_progress"/>
+        <childnode refid="151" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="158">
+        <label>LineProgress</label>
+        <link refid="classtouchgfx_1_1_line_progress"/>
+        <childnode refid="151" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="159">
+        <label>TextProgress</label>
+        <link refid="classtouchgfx_1_1_text_progress"/>
+        <childnode refid="151" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="152">
+        <label>Container</label>
+        <link refid="classtouchgfx_1_1_container"/>
+        <childnode refid="153" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="155">
+        <label>BoxProgress</label>
+        <link refid="classtouchgfx_1_1_box_progress"/>
+        <childnode refid="154" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="153">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+      </node>
+      <node id="154">
+        <label>AbstractDirectionProgress</label>
+        <link refid="classtouchgfx_1_1_abstract_direction_progress"/>
+        <childnode refid="151" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="151">
+        <label>AbstractProgressIndicator</label>
+        <link refid="classtouchgfx_1_1_abstract_progress_indicator"/>
+        <childnode refid="152" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="156">
+        <label>ImageProgress</label>
+        <link refid="classtouchgfx_1_1_image_progress"/>
+        <childnode refid="154" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="165">
+        <label>Widget</label>
+        <link refid="classtouchgfx_1_1_widget"/>
+        <childnode refid="162" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="161">
+        <label>Container</label>
+        <link refid="classtouchgfx_1_1_container"/>
+        <childnode refid="162" relation="public-inheritance">
+        </childnode>
+        <childnode refid="162" relation="usage">
+          <edgelabel>firstChild</edgelabel>
+        </childnode>
+      </node>
+      <node id="163">
+        <label>Rect</label>
+        <link refid="classtouchgfx_1_1_rect"/>
+      </node>
+      <node id="164">
+        <label>Image</label>
+        <link refid="classtouchgfx_1_1_image"/>
+        <childnode refid="165" relation="public-inheritance">
+        </childnode>
+        <childnode refid="166" relation="usage">
+          <edgelabel>bitmap</edgelabel>
+        </childnode>
+      </node>
+      <node id="162">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+        <childnode refid="163" relation="usage">
+          <edgelabel>rect</edgelabel>
+        </childnode>
+        <childnode refid="162" relation="usage">
+          <edgelabel>nextSibling</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="166">
+        <label>Bitmap</label>
+        <link refid="classtouchgfx_1_1_bitmap"/>
+      </node>
+      <node id="160">
+        <label>AbstractProgressIndicator</label>
+        <link refid="classtouchgfx_1_1_abstract_progress_indicator"/>
+        <childnode refid="161" relation="public-inheritance">
+        </childnode>
+        <childnode refid="161" relation="usage">
+          <edgelabel>progressIndicatorContainer</edgelabel>
+        </childnode>
+        <childnode refid="164" relation="usage">
+          <edgelabel>background</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp" line="22" column="1" bodyfile="touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp" bodystart="21" bodyend="197"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1a088cf0717c3adb46df00038640925e84" prot="public" virt="non-virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>AbstractProgressIndicator</name></member>
+      <member refid="classtouchgfx_1_1_container_1a302ad1a4da6fe171eb249828bd8dc7ab" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>add</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1ac58c7595db571063cbbb5832998af4d4" prot="protected" virt="non-virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>background</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae2d939b2a9c253f0fb3bae3ec7be4e2f" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>childGeometryChanged</name></member>
+      <member refid="classtouchgfx_1_1_container_1ac92243515043dff4fd93c987b894b017" prot="public" virt="non-virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>Container</name></member>
+      <member refid="classtouchgfx_1_1_container_1a0109ca3d59d6ced431a24313fef18803" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>contains</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1aa9b3d6000cb8f075989733abced8253f" prot="protected" virt="non-virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>currentValue</name></member>
+      <member refid="classtouchgfx_1_1_container_1a1277d4bddd51dbc604de265fb70ccbfd" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>draw</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9cf3a85fa7554475fa42c97985bda6df" prot="public" virt="non-virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>Drawable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4a009ec2b654351679a0124e9055abdc" prot="public" virt="non-virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>drawToDynamicBitmap</name></member>
+      <member refid="classtouchgfx_1_1_container_1a15fc4ae5c33721f5f425b20640217f22" prot="protected" virt="non-virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>firstChild</name></member>
+      <member refid="classtouchgfx_1_1_container_1a2b224826cd4f0f674009c21d6821f525" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>forEachChild</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa7737d9d49d7f55ec9bde8f2c9751b1d" prot="public" virt="non-virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>getAbsoluteRect</name></member>
+      <member refid="classtouchgfx_1_1_container_1a47e8a844fa50b171656f8355fd8e313b" prot="protected" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>getContainedArea</name></member>
+      <member refid="classtouchgfx_1_1_container_1a35ae5c9547dd1861f70b5e4f0f9b94b3" prot="public" virt="non-virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>getFirstChild</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ad00483821e06fe4d0d70222de4135d30" prot="public" virt="non-virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>getHeight</name></member>
+      <member refid="classtouchgfx_1_1_container_1a6bc8e89dc7f879221e9862fb27dc726f" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>getLastChild</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a61c9b2bf703c49a6d238d354ddcaedb3" prot="public" virt="non-virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>getNextSibling</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a013e065d4d9a10dbfa0ddee9a35582a3" prot="public" virt="non-virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>getParent</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1ad6acf445b3bf33efe1287db3c61bc8c7" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>getProgress</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1a3daf2010ab529f1e80a39e69c2a13370" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>getProgressIndicatorHeight</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1ac9bd8cf6bb9b77f5b5227bb3c2276942" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>getProgressIndicatorWidth</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1a014af24dbe00f2f1901e5efded0eac19" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>getProgressIndicatorX</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1a00d0bde08c61e6f8a396592586201296" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>getProgressIndicatorY</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1a52e91c5cb93b79054d8bb5a08a412096" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>getRange</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1a1a33f23352ce0b1142c5a42520ee26e4" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>getRange</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1a95519933a70cca93e020e46eb77a19c7" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>getRange</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af23a5bb7d473e16363a449c497586be3" prot="public" virt="non-virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>getRect</name></member>
+      <member refid="classtouchgfx_1_1_container_1a4dcdd780e93cc783a2ceeda00c6f3b51" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>getSolidRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4783dfe657ff1b7a33261bda8c4b4266" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>getSolidRectAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1abb46316a08c089763c5171d38e53fc6e" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>getValue</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a83b8847f583b63e60aa4bf778261ddd7" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>getVisibleRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1acae58162aaca6fc174416550f76668e7" prot="public" virt="non-virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>getWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac071e9b7ccf37179df7d29c6778b664c" prot="public" virt="non-virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>getX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a26752e6cff4607d0eec8768ef6d9032a" prot="public" virt="non-virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>getY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a7f1524b90bc90e5f6cf7ee47aae12123" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>handleClickEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a06ae1946b2124cc94e26cfe18728debf" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>handleDragEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4db4945ecbc2303bf860e082409b8029" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>handleGestureEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1af635cee0f186c3d0fcea60bac14355" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>handleTickEvent</name></member>
+      <member refid="classtouchgfx_1_1_container_1aca896b17460628dceeac8b01553b6a00" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>insert</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2800b4c18c63e9e7b1f85a74ce6b80c3" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>invalidate</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a130cf6e1bf2b9f04f48e659758fa75e2" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>invalidateRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a01c717b9abc98d48673b79d691c2d28a" prot="public" virt="non-virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>isTouchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9d8a6cfb13917785c143e74d40e4e2be" prot="public" virt="non-virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>isVisible</name></member>
+      <member refid="classtouchgfx_1_1_container_1add539b68574f09b364f0b4e6a312b9b0" prot="protected" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>moveChildrenRelative</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af3590480070e2cf91580976f322d2c5e" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>moveRelative</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aadc5abfad4d2fcc331cf8de8713dc00e" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>moveTo</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0da4a00c3fbdea5740e52c7e04316c65" prot="protected" virt="non-virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>nextSibling</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ab77c13cde2b01107dcbc5c2b584d422f" prot="protected" virt="non-virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>parent</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1a5bda8640109df5374342b63669b5f84b" prot="protected" virt="non-virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>progressIndicatorContainer</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1a5553b7a635fade12e38c22ac71243d6a" prot="protected" virt="non-virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>rangeMax</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1a35a6e5daec1e31c6e6090c9a377a5c43" prot="protected" virt="non-virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>rangeMin</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1a7de050eed4e279fd8c867b40e856c005" prot="protected" virt="non-virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>rangeSteps</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1a2e4193a2cd816fb8d23a4750b8823534" prot="protected" virt="non-virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>rangeStepsMin</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2a955ddc316d002f566598f340eb2af9" prot="protected" virt="non-virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>rect</name></member>
+      <member refid="classtouchgfx_1_1_container_1a4d9056af30ab3c61da25a71023a341f2" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>remove</name></member>
+      <member refid="classtouchgfx_1_1_container_1a4e62c805a8478320f1e650e6a635b31a" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>removeAll</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1af289e78e38dabff27c29cb8f3d704b72" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>setBackground</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a47a6312407603de99247bb802dbd8a48" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>setHeight</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac218c371450d8ad2bed3e1b07965a41a" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>setPosition</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1a7c302754c2026f0c61ddfb2a887644c6" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>setProgressIndicatorPosition</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1a02a45c40598be83aeebffbe70ea3c79c" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>setRange</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae4c38eadb852b153850ea7ded1f50a19" prot="public" virt="non-virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>setTouchable</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1afd2ee022f13d24681ce6efbf09581807" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>setValue</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a71639c6634c5dcf6d1bb21b8b1b61f5b" prot="public" virt="non-virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>setVisible</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae74a37f71d23440fc8b0466ad8ecfe4b" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>setWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9f6db7f34a74e991fc446fffb5703a53" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>setX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6c86659dc1e7355c207e9c0aa18af167" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>setXY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1b08d48e7e23a046f09e63089bc82bc1" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>setY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0d014de134cb9b9c1c361fcd726a5f34" prot="protected" virt="non-virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>touchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a48c1d14ac943dbfa4935ea39db950608" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>translateRectToAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_container_1a23f8fdbaba5449e55efb7a14a96b657d" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>unlink</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa54a57ae048476d840caf6d4d2c47aa3" prot="protected" virt="non-virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>visible</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1ae4efce05cf1140a1eb44d2c5715d8b2d" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>~AbstractProgressIndicator</name></member>
+      <member refid="classtouchgfx_1_1_container_1a316105bb0065103f6190b08783144c33" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>~Container</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6bb040a11ffc2bd641283cc0bc0d1346" prot="public" virt="virtual"><scope>touchgfx::AbstractProgressIndicator</scope><name>~Drawable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

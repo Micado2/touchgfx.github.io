@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structtouchgfx_1_1_keyboard_1_1_key_mapping_list" kind="struct" language="C++" prot="public">
+    <compoundname>touchgfx::Keyboard::KeyMappingList</compoundname>
+    <includes local="no">Keyboard.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtouchgfx_1_1_keyboard_1_1_key_mapping_list_1aa5be34fc1b737dece57344e5142ab6df" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structtouchgfx_1_1_keyboard_1_1_key_mapping" kindref="compound">KeyMapping</ref> *</type>
+        <definition>const KeyMapping* keyMappingArray</definition>
+        <argsstring></argsstring>
+        <name>keyMappingArray</name>
+        <briefdescription>
+<para>The array of key mappings used by the keyboard. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/Keyboard.hpp" line="88" column="1" bodyfile="touchgfx/widgets/Keyboard.hpp" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_keyboard_1_1_key_mapping_list_1a7c5158ea00f5b33e6db06a6411e0a1dd" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t numberOfKeys</definition>
+        <argsstring></argsstring>
+        <name>numberOfKeys</name>
+        <briefdescription>
+<para>The number of keys in the list. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/Keyboard.hpp" line="89" column="1" bodyfile="touchgfx/widgets/Keyboard.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>List of KeyMappings to use. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="842">
+        <label>Keyboard::KeyMappingList</label>
+        <link refid="structtouchgfx_1_1_keyboard_1_1_key_mapping_list"/>
+        <childnode refid="843" relation="usage">
+          <edgelabel>keyMappingArray</edgelabel>
+        </childnode>
+      </node>
+      <node id="843">
+        <label>KeyMapping</label>
+        <link refid="structtouchgfx_1_1_keyboard_1_1_key_mapping"/>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/widgets/Keyboard.hpp" line="87" column="1" bodyfile="touchgfx/widgets/Keyboard.hpp" bodystart="86" bodyend="90"/>
+    <listofallmembers>
+      <member refid="structtouchgfx_1_1_keyboard_1_1_key_mapping_list_1aa5be34fc1b737dece57344e5142ab6df" prot="public" virt="non-virtual"><scope>touchgfx::Keyboard::KeyMappingList</scope><name>keyMappingArray</name></member>
+      <member refid="structtouchgfx_1_1_keyboard_1_1_key_mapping_list_1a7c5158ea00f5b33e6db06a6411e0a1dd" prot="public" virt="non-virtual"><scope>touchgfx::Keyboard::KeyMappingList</scope><name>numberOfKeys</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

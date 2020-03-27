@@ -1,0 +1,681 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_digital_clock" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::DigitalClock</compoundname>
+    <basecompoundref refid="classtouchgfx_1_1_abstract_clock" prot="public" virt="non-virtual">AbstractClock</basecompoundref>
+    <includes local="no">DigitalClock.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classtouchgfx_1_1_digital_clock_1a59b40c5838e0a3d2bfbfa64c85d7ca27" prot="public" static="no" strong="no">
+        <type></type>
+        <name>DisplayMode</name>
+        <enumvalue id="classtouchgfx_1_1_digital_clock_1a59b40c5838e0a3d2bfbfa64c85d7ca27a0a24c767612564c1a7457c149b59f9e8" prot="public">
+          <name>DISPLAY_12_HOUR_NO_SECONDS</name>
+          <briefdescription>
+<para>12 Hour clock. Seconds are not displayed </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtouchgfx_1_1_digital_clock_1a59b40c5838e0a3d2bfbfa64c85d7ca27adfa485a95e20c4f0b3bf45bc195e65c3" prot="public">
+          <name>DISPLAY_24_HOUR_NO_SECONDS</name>
+          <briefdescription>
+<para>24 Hour clock. Seconds are not displayed </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtouchgfx_1_1_digital_clock_1a59b40c5838e0a3d2bfbfa64c85d7ca27a4cc2a275c325bf659f4de444ee03466c" prot="public">
+          <name>DISPLAY_12_HOUR</name>
+          <briefdescription>
+<para>12 Hour clock. Seconds are displayed </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtouchgfx_1_1_digital_clock_1a59b40c5838e0a3d2bfbfa64c85d7ca27a0c1c5ebf94406ba402231b33cd23c2e1" prot="public">
+          <name>DISPLAY_24_HOUR</name>
+          <briefdescription>
+<para>24 Hour clock. Seconds are displayed </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Values that represent different display modes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/clock/DigitalClock.hpp" line="29" column="1" bodyfile="touchgfx/containers/clock/DigitalClock.hpp" bodystart="28" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_digital_clock_1a91f806c1bc7c1f4f402a627773840252" prot="protected" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int BUFFER_SIZE</definition>
+        <argsstring></argsstring>
+        <name>BUFFER_SIZE</name>
+        <initializer>= 16</initializer>
+        <briefdescription>
+<para>Buffer size of the wild card, worst case is &quot;12:59:59 AM&quot; (12 chars) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/clock/DigitalClock.hpp" line="134" column="1" bodyfile="touchgfx/containers/clock/DigitalClock.hpp" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_digital_clock_1abac0c71079f71ade7f54db2156c62ace" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref></type>
+        <definition>Unicode::UnicodeChar buffer[BUFFER_SIZE]</definition>
+        <argsstring>[BUFFER_SIZE]</argsstring>
+        <name>buffer</name>
+        <briefdescription>
+<para>Wild card buffer for the clock text. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/clock/DigitalClock.hpp" line="140" column="1" bodyfile="touchgfx/containers/clock/DigitalClock.hpp" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_digital_clock_1a069e2fda1e3d469896891c248b584e15" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_digital_clock_1a59b40c5838e0a3d2bfbfa64c85d7ca27" kindref="member">DisplayMode</ref></type>
+        <definition>DisplayMode displayMode</definition>
+        <argsstring></argsstring>
+        <name>displayMode</name>
+        <briefdescription>
+<para>The current display mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/clock/DigitalClock.hpp" line="136" column="1" bodyfile="touchgfx/containers/clock/DigitalClock.hpp" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_digital_clock_1a2e56019cf59215f5deea30bbae62cc03" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_text_area_with_one_wildcard" kindref="compound">TextAreaWithOneWildcard</ref></type>
+        <definition>TextAreaWithOneWildcard text</definition>
+        <argsstring></argsstring>
+        <name>text</name>
+        <briefdescription>
+<para>The clock text. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/clock/DigitalClock.hpp" line="139" column="1" bodyfile="touchgfx/containers/clock/DigitalClock.hpp" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_digital_clock_1ac858a98596909705ed766d1a3b78d211" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool useLeadingZeroForHourIndicator</definition>
+        <argsstring></argsstring>
+        <name>useLeadingZeroForHourIndicator</name>
+        <briefdescription>
+<para>Print a leading zero if the hour is less than 10. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/clock/DigitalClock.hpp" line="137" column="1" bodyfile="touchgfx/containers/clock/DigitalClock.hpp" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_digital_clock_1a0d00816bc016eb0cc971ce6afcb3ed9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DigitalClock</definition>
+        <argsstring>()</argsstring>
+        <name>DigitalClock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/clock/DigitalClock.hpp" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_digital_clock_1a4cf198f1aa844981430724399f33faa3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void displayLeadingZeroForHourIndicator</definition>
+        <argsstring>(bool displayLeadingZero)</argsstring>
+        <name>displayLeadingZeroForHourIndicator</name>
+        <param>
+          <type>bool</type>
+          <declname>displayLeadingZero</declname>
+        </param>
+        <briefdescription>
+<para>Sets whether to display a leading zero for the hour indicator or not, when the hour value only has one digit. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>For example 8 can be displayed as &quot;8:&quot; (displayLeadingZero=false) or &quot;08:&quot; (displayLeadingZero=true).</para>
+<para>Default value for this setting is false.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>displayLeadingZero</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true = show leading zero. false = do not show leading zero.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This does not affect the display of minutes or seconds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/clock/DigitalClock.hpp" line="111" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_digital_clock_1a48b27ff9c2eafcd202482b45abc86ff7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>uint8_t</type>
+        <definition>virtual uint8_t getAlpha</definition>
+        <argsstring>() const</argsstring>
+        <name>getAlpha</name>
+        <briefdescription>
+<para>Gets the current alpha value of the widget. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The alpha value is in range 255 (solid) to 0 (invisible).</para>
+<para><simplesect kind="return"><para>The current alpha value.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_digital_clock_1a89b6c75ec0c8d536fb61b146eb420b4e" kindref="member">setAlpha</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/clock/DigitalClock.hpp" line="121" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_digital_clock_1a49908e199339ae8f86743bf17ccf4973" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classtouchgfx_1_1_digital_clock_1a59b40c5838e0a3d2bfbfa64c85d7ca27" kindref="member">DisplayMode</ref></type>
+        <definition>virtual DisplayMode getDisplayMode</definition>
+        <argsstring>() const</argsstring>
+        <name>getDisplayMode</name>
+        <briefdescription>
+<para>Gets the current display mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The display mode.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_digital_clock_1a59b40c5838e0a3d2bfbfa64c85d7ca27" kindref="member">DisplayMode</ref>, <ref refid="classtouchgfx_1_1_digital_clock_1adc75fdd3e9c250557427d5cd1cff8f4e" kindref="member">setDisplayMode</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/clock/DigitalClock.hpp" line="95" column="1" bodyfile="touchgfx/containers/clock/DigitalClock.hpp" bodystart="95" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_digital_clock_1a47cb5b4519fe856a390ec95bbaa4c5b8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>uint16_t</type>
+        <definition>virtual uint16_t getTextWidth</definition>
+        <argsstring>() const</argsstring>
+        <name>getTextWidth</name>
+        <briefdescription>
+<para>Gets text width of the currently displayed <ref refid="classtouchgfx_1_1_digital_clock" kindref="compound">DigitalClock</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The text width of the currently displayed <ref refid="classtouchgfx_1_1_digital_clock" kindref="compound">DigitalClock</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/clock/DigitalClock.hpp" line="128" column="1" bodyfile="touchgfx/containers/clock/DigitalClock.hpp" bodystart="128" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_digital_clock_1a89b6c75ec0c8d536fb61b146eb420b4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setAlpha</definition>
+        <argsstring>(uint8_t newAlpha)</argsstring>
+        <name>setAlpha</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>newAlpha</declname>
+        </param>
+        <briefdescription>
+<para>Sets the opacity (alpha value). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This can be used to fade it away by gradually decreasing the alpha value from 255 (solid) to 0 (invisible).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newAlpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new alpha value. 255=solid, 0=invisible.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_digital_clock_1a48b27ff9c2eafcd202482b45abc86ff7" kindref="member">getAlpha</ref></para>
+</simplesect>
+<simplesect kind="note"><para>The user code must call <ref refid="classtouchgfx_1_1_drawable_1a2800b4c18c63e9e7b1f85a74ce6b80c3" kindref="member">invalidate()</ref> in order to update the display. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/clock/DigitalClock.hpp" line="116" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_digital_clock_1a5afb6fcab0655e8c79bcc13d7a2c230b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setBaselineY</definition>
+        <argsstring>(int16_t baselineY)</argsstring>
+        <name>setBaselineY</name>
+        <param>
+          <type>int16_t</type>
+          <declname>baselineY</declname>
+        </param>
+        <briefdescription>
+<para>Adjusts the <ref refid="classtouchgfx_1_1_digital_clock" kindref="compound">DigitalClock</ref> y coordinate so the text will have its baseline at the specified value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The placements is relative to the specified <ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref> so if the <ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref> is changed, you have to set the baseline again.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>baselineY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate of the baseline of the text.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>that setTypedText must be called prior to setting the baseline. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/clock/DigitalClock.hpp" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_digital_clock_1a77438b7f2f49188eecba3c8b31dcfaa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setColor</definition>
+        <argsstring>(colortype color)</argsstring>
+        <name>setColor</name>
+        <param>
+          <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Sets the color of the text. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new text color.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Automatically invalidates the <ref refid="classtouchgfx_1_1_digital_clock" kindref="compound">DigitalClock</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/clock/DigitalClock.hpp" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_digital_clock_1adc75fdd3e9c250557427d5cd1cff8f4e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setDisplayMode</definition>
+        <argsstring>(DisplayMode dm)</argsstring>
+        <name>setDisplayMode</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_digital_clock_1a59b40c5838e0a3d2bfbfa64c85d7ca27" kindref="member">DisplayMode</ref></type>
+          <declname>dm</declname>
+        </param>
+        <briefdescription>
+<para>Sets the display mode to 12/24 hour clock with or without seconds. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new display mode.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_digital_clock_1a59b40c5838e0a3d2bfbfa64c85d7ca27" kindref="member">DisplayMode</ref>, <ref refid="classtouchgfx_1_1_digital_clock_1a49908e199339ae8f86743bf17ccf4973" kindref="member">getDisplayMode</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/clock/DigitalClock.hpp" line="83" column="1" bodyfile="touchgfx/containers/clock/DigitalClock.hpp" bodystart="83" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_digital_clock_1a47a6312407603de99247bb802dbd8a48" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setHeight</definition>
+        <argsstring>(int16_t height)</argsstring>
+        <name>setHeight</name>
+        <reimplements refid="classtouchgfx_1_1_drawable_1a47a6312407603de99247bb802dbd8a48">setHeight</reimplements>
+        <param>
+          <type>int16_t</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+<para>Sets the height of this drawable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new height.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>For most <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> widgets, changing this does normally not automatically yield a redraw. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/clock/DigitalClock.hpp" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_digital_clock_1a43f40778879f7ac0c21382ad0a3a993c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setTypedText</definition>
+        <argsstring>(TypedText typedText)</argsstring>
+        <name>setTypedText</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref></type>
+          <declname>typedText</declname>
+        </param>
+        <briefdescription>
+<para>Sets the typed text of the <ref refid="classtouchgfx_1_1_digital_clock" kindref="compound">DigitalClock</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Expects a <ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref> with one wildcard and that the following characters are defined for the typography of the <ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref>:<itemizedlist>
+<listitem><para>12 hour clock: &quot;AMP :0123456789&quot;</para>
+</listitem><listitem><para>24 hour clock: &quot;:0123456789&quot;</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>typedText</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Describes the typed text to use.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Automatically invalidates the <ref refid="classtouchgfx_1_1_digital_clock" kindref="compound">DigitalClock</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/clock/DigitalClock.hpp" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_digital_clock_1ae74a37f71d23440fc8b0466ad8ecfe4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setWidth</definition>
+        <argsstring>(int16_t width)</argsstring>
+        <name>setWidth</name>
+        <reimplements refid="classtouchgfx_1_1_drawable_1ae74a37f71d23440fc8b0466ad8ecfe4b">setWidth</reimplements>
+        <param>
+          <type>int16_t</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+<para>Sets the width of this drawable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new width.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>For most <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> widgets, changing this does normally not automatically yield a redraw. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/clock/DigitalClock.hpp" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_digital_clock_1aa371992fad896e892604208c7ee79f98" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual ~DigitalClock</definition>
+        <argsstring>()</argsstring>
+        <name>~DigitalClock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/clock/DigitalClock.hpp" line="38" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_digital_clock_1a7593ce787f3476d026844b540d090a0d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void updateClock</definition>
+        <argsstring>()</argsstring>
+        <name>updateClock</name>
+        <reimplements refid="classtouchgfx_1_1_abstract_clock_1a485c0cdeb4f94ee55f4d74eed8458da4">updateClock</reimplements>
+        <briefdescription>
+<para>Update the visual representation of the clock on the display. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/clock/DigitalClock.hpp" line="142" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A digital clock. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Can be set in either 12 or 24 hour mode. Seconds are optional. Width and height must be set manually to match the typography and alignment specified in the text database. The Digital Clock requires a typedText with one wildcard and uses the following characters (not including quotes) &quot;AMP :0123456789&quot; These must be present in the text database with the same typography as the wildcard text. Leading zero for the hour indicator can be enabled/disable by the displayLeadingZeroForHourIndicator method. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="506">
+        <label>Container</label>
+        <link refid="classtouchgfx_1_1_container"/>
+        <childnode refid="507" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="504">
+        <label>DigitalClock</label>
+        <link refid="classtouchgfx_1_1_digital_clock"/>
+        <childnode refid="505" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="505">
+        <label>AbstractClock</label>
+        <link refid="classtouchgfx_1_1_abstract_clock"/>
+        <childnode refid="506" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="507">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="516">
+        <label>Widget</label>
+        <link refid="classtouchgfx_1_1_widget"/>
+        <childnode refid="511" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="513">
+        <label>TextAreaWithOneWildcard</label>
+        <link refid="classtouchgfx_1_1_text_area_with_one_wildcard"/>
+        <childnode refid="514" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="510">
+        <label>Container</label>
+        <link refid="classtouchgfx_1_1_container"/>
+        <childnode refid="511" relation="public-inheritance">
+        </childnode>
+        <childnode refid="511" relation="usage">
+          <edgelabel>firstChild</edgelabel>
+        </childnode>
+      </node>
+      <node id="512">
+        <label>Rect</label>
+        <link refid="classtouchgfx_1_1_rect"/>
+      </node>
+      <node id="508">
+        <label>DigitalClock</label>
+        <link refid="classtouchgfx_1_1_digital_clock"/>
+        <childnode refid="509" relation="public-inheritance">
+        </childnode>
+        <childnode refid="513" relation="usage">
+          <edgelabel>text</edgelabel>
+        </childnode>
+      </node>
+      <node id="509">
+        <label>AbstractClock</label>
+        <link refid="classtouchgfx_1_1_abstract_clock"/>
+        <childnode refid="510" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="517">
+        <label>TypedText</label>
+        <link refid="classtouchgfx_1_1_typed_text"/>
+      </node>
+      <node id="511">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+        <childnode refid="512" relation="usage">
+          <edgelabel>rect</edgelabel>
+        </childnode>
+        <childnode refid="511" relation="usage">
+          <edgelabel>nextSibling</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="515">
+        <label>TextArea</label>
+        <link refid="classtouchgfx_1_1_text_area"/>
+        <childnode refid="516" relation="public-inheritance">
+        </childnode>
+        <childnode refid="517" relation="usage">
+          <edgelabel>typedText</edgelabel>
+        </childnode>
+        <childnode refid="518" relation="usage">
+          <edgelabel>color</edgelabel>
+        </childnode>
+      </node>
+      <node id="514">
+        <label>TextAreaWithWildcardBase</label>
+        <link refid="classtouchgfx_1_1_text_area_with_wildcard_base"/>
+        <childnode refid="515" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="518">
+        <label>colortype</label>
+        <link refid="structtouchgfx_1_1colortype"/>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/containers/clock/DigitalClock.hpp" line="25" column="1" bodyfile="touchgfx/containers/clock/DigitalClock.hpp" bodystart="24" bodyend="143"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_abstract_clock_1a4ea52cd272fb6cba6f9f9eb92624ea97" prot="public" virt="non-virtual"><scope>touchgfx::DigitalClock</scope><name>AbstractClock</name></member>
+      <member refid="classtouchgfx_1_1_container_1a302ad1a4da6fe171eb249828bd8dc7ab" prot="public" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>add</name></member>
+      <member refid="classtouchgfx_1_1_digital_clock_1abac0c71079f71ade7f54db2156c62ace" prot="protected" virt="non-virtual"><scope>touchgfx::DigitalClock</scope><name>buffer</name></member>
+      <member refid="classtouchgfx_1_1_digital_clock_1a91f806c1bc7c1f4f402a627773840252" prot="protected" virt="non-virtual"><scope>touchgfx::DigitalClock</scope><name>BUFFER_SIZE</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae2d939b2a9c253f0fb3bae3ec7be4e2f" prot="public" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>childGeometryChanged</name></member>
+      <member refid="classtouchgfx_1_1_container_1ac92243515043dff4fd93c987b894b017" prot="public" virt="non-virtual"><scope>touchgfx::DigitalClock</scope><name>Container</name></member>
+      <member refid="classtouchgfx_1_1_container_1a0109ca3d59d6ced431a24313fef18803" prot="public" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>contains</name></member>
+      <member refid="classtouchgfx_1_1_abstract_clock_1a58ba52cb4d715396d7dc127eb72a757e" prot="protected" virt="non-virtual"><scope>touchgfx::DigitalClock</scope><name>currentHour</name></member>
+      <member refid="classtouchgfx_1_1_abstract_clock_1ae8b40bb038f00a4756e75a7aab4189b7" prot="protected" virt="non-virtual"><scope>touchgfx::DigitalClock</scope><name>currentMinute</name></member>
+      <member refid="classtouchgfx_1_1_abstract_clock_1a73f19ae05d80df7e0c1035df66c0da86" prot="protected" virt="non-virtual"><scope>touchgfx::DigitalClock</scope><name>currentSecond</name></member>
+      <member refid="classtouchgfx_1_1_digital_clock_1a0d00816bc016eb0cc971ce6afcb3ed9c" prot="public" virt="non-virtual"><scope>touchgfx::DigitalClock</scope><name>DigitalClock</name></member>
+      <member refid="classtouchgfx_1_1_digital_clock_1a59b40c5838e0a3d2bfbfa64c85d7ca27a4cc2a275c325bf659f4de444ee03466c" prot="public" virt="non-virtual"><scope>touchgfx::DigitalClock</scope><name>DISPLAY_12_HOUR</name></member>
+      <member refid="classtouchgfx_1_1_digital_clock_1a59b40c5838e0a3d2bfbfa64c85d7ca27a0a24c767612564c1a7457c149b59f9e8" prot="public" virt="non-virtual"><scope>touchgfx::DigitalClock</scope><name>DISPLAY_12_HOUR_NO_SECONDS</name></member>
+      <member refid="classtouchgfx_1_1_digital_clock_1a59b40c5838e0a3d2bfbfa64c85d7ca27a0c1c5ebf94406ba402231b33cd23c2e1" prot="public" virt="non-virtual"><scope>touchgfx::DigitalClock</scope><name>DISPLAY_24_HOUR</name></member>
+      <member refid="classtouchgfx_1_1_digital_clock_1a59b40c5838e0a3d2bfbfa64c85d7ca27adfa485a95e20c4f0b3bf45bc195e65c3" prot="public" virt="non-virtual"><scope>touchgfx::DigitalClock</scope><name>DISPLAY_24_HOUR_NO_SECONDS</name></member>
+      <member refid="classtouchgfx_1_1_digital_clock_1a4cf198f1aa844981430724399f33faa3" prot="public" virt="non-virtual"><scope>touchgfx::DigitalClock</scope><name>displayLeadingZeroForHourIndicator</name></member>
+      <member refid="classtouchgfx_1_1_digital_clock_1a59b40c5838e0a3d2bfbfa64c85d7ca27" prot="public" virt="non-virtual"><scope>touchgfx::DigitalClock</scope><name>DisplayMode</name></member>
+      <member refid="classtouchgfx_1_1_digital_clock_1a069e2fda1e3d469896891c248b584e15" prot="protected" virt="non-virtual"><scope>touchgfx::DigitalClock</scope><name>displayMode</name></member>
+      <member refid="classtouchgfx_1_1_container_1a1277d4bddd51dbc604de265fb70ccbfd" prot="public" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>draw</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9cf3a85fa7554475fa42c97985bda6df" prot="public" virt="non-virtual"><scope>touchgfx::DigitalClock</scope><name>Drawable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4a009ec2b654351679a0124e9055abdc" prot="public" virt="non-virtual"><scope>touchgfx::DigitalClock</scope><name>drawToDynamicBitmap</name></member>
+      <member refid="classtouchgfx_1_1_container_1a15fc4ae5c33721f5f425b20640217f22" prot="protected" virt="non-virtual"><scope>touchgfx::DigitalClock</scope><name>firstChild</name></member>
+      <member refid="classtouchgfx_1_1_container_1a2b224826cd4f0f674009c21d6821f525" prot="public" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>forEachChild</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa7737d9d49d7f55ec9bde8f2c9751b1d" prot="public" virt="non-virtual"><scope>touchgfx::DigitalClock</scope><name>getAbsoluteRect</name></member>
+      <member refid="classtouchgfx_1_1_digital_clock_1a48b27ff9c2eafcd202482b45abc86ff7" prot="public" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>getAlpha</name></member>
+      <member refid="classtouchgfx_1_1_container_1a47e8a844fa50b171656f8355fd8e313b" prot="protected" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>getContainedArea</name></member>
+      <member refid="classtouchgfx_1_1_abstract_clock_1ac73330b9d1235b53a41cd2496590ab8c" prot="public" virt="non-virtual"><scope>touchgfx::DigitalClock</scope><name>getCurrentHour</name></member>
+      <member refid="classtouchgfx_1_1_abstract_clock_1aaab7acbcaa6f945bdb3dc7ae570e9237" prot="public" virt="non-virtual"><scope>touchgfx::DigitalClock</scope><name>getCurrentMinute</name></member>
+      <member refid="classtouchgfx_1_1_abstract_clock_1a8cb42ba706265640d4796da828c4a9be" prot="public" virt="non-virtual"><scope>touchgfx::DigitalClock</scope><name>getCurrentSecond</name></member>
+      <member refid="classtouchgfx_1_1_digital_clock_1a49908e199339ae8f86743bf17ccf4973" prot="public" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>getDisplayMode</name></member>
+      <member refid="classtouchgfx_1_1_container_1a35ae5c9547dd1861f70b5e4f0f9b94b3" prot="public" virt="non-virtual"><scope>touchgfx::DigitalClock</scope><name>getFirstChild</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ad00483821e06fe4d0d70222de4135d30" prot="public" virt="non-virtual"><scope>touchgfx::DigitalClock</scope><name>getHeight</name></member>
+      <member refid="classtouchgfx_1_1_container_1a6bc8e89dc7f879221e9862fb27dc726f" prot="public" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>getLastChild</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a61c9b2bf703c49a6d238d354ddcaedb3" prot="public" virt="non-virtual"><scope>touchgfx::DigitalClock</scope><name>getNextSibling</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a013e065d4d9a10dbfa0ddee9a35582a3" prot="public" virt="non-virtual"><scope>touchgfx::DigitalClock</scope><name>getParent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af23a5bb7d473e16363a449c497586be3" prot="public" virt="non-virtual"><scope>touchgfx::DigitalClock</scope><name>getRect</name></member>
+      <member refid="classtouchgfx_1_1_container_1a4dcdd780e93cc783a2ceeda00c6f3b51" prot="public" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>getSolidRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4783dfe657ff1b7a33261bda8c4b4266" prot="public" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>getSolidRectAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_digital_clock_1a47cb5b4519fe856a390ec95bbaa4c5b8" prot="public" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>getTextWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a83b8847f583b63e60aa4bf778261ddd7" prot="public" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>getVisibleRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1acae58162aaca6fc174416550f76668e7" prot="public" virt="non-virtual"><scope>touchgfx::DigitalClock</scope><name>getWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac071e9b7ccf37179df7d29c6778b664c" prot="public" virt="non-virtual"><scope>touchgfx::DigitalClock</scope><name>getX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a26752e6cff4607d0eec8768ef6d9032a" prot="public" virt="non-virtual"><scope>touchgfx::DigitalClock</scope><name>getY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a7f1524b90bc90e5f6cf7ee47aae12123" prot="public" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>handleClickEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a06ae1946b2124cc94e26cfe18728debf" prot="public" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>handleDragEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4db4945ecbc2303bf860e082409b8029" prot="public" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>handleGestureEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1af635cee0f186c3d0fcea60bac14355" prot="public" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>handleTickEvent</name></member>
+      <member refid="classtouchgfx_1_1_container_1aca896b17460628dceeac8b01553b6a00" prot="public" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>insert</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2800b4c18c63e9e7b1f85a74ce6b80c3" prot="public" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>invalidate</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a130cf6e1bf2b9f04f48e659758fa75e2" prot="public" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>invalidateRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a01c717b9abc98d48673b79d691c2d28a" prot="public" virt="non-virtual"><scope>touchgfx::DigitalClock</scope><name>isTouchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9d8a6cfb13917785c143e74d40e4e2be" prot="public" virt="non-virtual"><scope>touchgfx::DigitalClock</scope><name>isVisible</name></member>
+      <member refid="classtouchgfx_1_1_container_1add539b68574f09b364f0b4e6a312b9b0" prot="protected" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>moveChildrenRelative</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af3590480070e2cf91580976f322d2c5e" prot="public" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>moveRelative</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aadc5abfad4d2fcc331cf8de8713dc00e" prot="public" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>moveTo</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0da4a00c3fbdea5740e52c7e04316c65" prot="protected" virt="non-virtual"><scope>touchgfx::DigitalClock</scope><name>nextSibling</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ab77c13cde2b01107dcbc5c2b584d422f" prot="protected" virt="non-virtual"><scope>touchgfx::DigitalClock</scope><name>parent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2a955ddc316d002f566598f340eb2af9" prot="protected" virt="non-virtual"><scope>touchgfx::DigitalClock</scope><name>rect</name></member>
+      <member refid="classtouchgfx_1_1_container_1a4d9056af30ab3c61da25a71023a341f2" prot="public" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>remove</name></member>
+      <member refid="classtouchgfx_1_1_container_1a4e62c805a8478320f1e650e6a635b31a" prot="public" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>removeAll</name></member>
+      <member refid="classtouchgfx_1_1_digital_clock_1a89b6c75ec0c8d536fb61b146eb420b4e" prot="public" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>setAlpha</name></member>
+      <member refid="classtouchgfx_1_1_digital_clock_1a5afb6fcab0655e8c79bcc13d7a2c230b" prot="public" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>setBaselineY</name></member>
+      <member refid="classtouchgfx_1_1_digital_clock_1a77438b7f2f49188eecba3c8b31dcfaa5" prot="public" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>setColor</name></member>
+      <member refid="classtouchgfx_1_1_digital_clock_1adc75fdd3e9c250557427d5cd1cff8f4e" prot="public" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>setDisplayMode</name></member>
+      <member refid="classtouchgfx_1_1_digital_clock_1a47a6312407603de99247bb802dbd8a48" prot="public" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>setHeight</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac218c371450d8ad2bed3e1b07965a41a" prot="public" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>setPosition</name></member>
+      <member refid="classtouchgfx_1_1_abstract_clock_1ad482b7acb10aa8e21862144fe5ee991c" prot="public" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>setTime12Hour</name></member>
+      <member refid="classtouchgfx_1_1_abstract_clock_1a424077012afce80b9684a1007e0eb1a7" prot="public" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>setTime24Hour</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae4c38eadb852b153850ea7ded1f50a19" prot="public" virt="non-virtual"><scope>touchgfx::DigitalClock</scope><name>setTouchable</name></member>
+      <member refid="classtouchgfx_1_1_digital_clock_1a43f40778879f7ac0c21382ad0a3a993c" prot="public" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>setTypedText</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a71639c6634c5dcf6d1bb21b8b1b61f5b" prot="public" virt="non-virtual"><scope>touchgfx::DigitalClock</scope><name>setVisible</name></member>
+      <member refid="classtouchgfx_1_1_digital_clock_1ae74a37f71d23440fc8b0466ad8ecfe4b" prot="public" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>setWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9f6db7f34a74e991fc446fffb5703a53" prot="public" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>setX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6c86659dc1e7355c207e9c0aa18af167" prot="public" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>setXY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1b08d48e7e23a046f09e63089bc82bc1" prot="public" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>setY</name></member>
+      <member refid="classtouchgfx_1_1_digital_clock_1a2e56019cf59215f5deea30bbae62cc03" prot="protected" virt="non-virtual"><scope>touchgfx::DigitalClock</scope><name>text</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0d014de134cb9b9c1c361fcd726a5f34" prot="protected" virt="non-virtual"><scope>touchgfx::DigitalClock</scope><name>touchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a48c1d14ac943dbfa4935ea39db950608" prot="public" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>translateRectToAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_container_1a23f8fdbaba5449e55efb7a14a96b657d" prot="public" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>unlink</name></member>
+      <member refid="classtouchgfx_1_1_digital_clock_1a7593ce787f3476d026844b540d090a0d" prot="protected" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>updateClock</name></member>
+      <member refid="classtouchgfx_1_1_digital_clock_1ac858a98596909705ed766d1a3b78d211" prot="protected" virt="non-virtual"><scope>touchgfx::DigitalClock</scope><name>useLeadingZeroForHourIndicator</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa54a57ae048476d840caf6d4d2c47aa3" prot="protected" virt="non-virtual"><scope>touchgfx::DigitalClock</scope><name>visible</name></member>
+      <member refid="classtouchgfx_1_1_abstract_clock_1a56c0c7b3da487089f540b091f8a10b2a" prot="public" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>~AbstractClock</name></member>
+      <member refid="classtouchgfx_1_1_container_1a316105bb0065103f6190b08783144c33" prot="public" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>~Container</name></member>
+      <member refid="classtouchgfx_1_1_digital_clock_1aa371992fad896e892604208c7ee79f98" prot="public" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>~DigitalClock</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6bb040a11ffc2bd641283cc0bc0d1346" prot="public" virt="virtual"><scope>touchgfx::DigitalClock</scope><name>~Drawable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
