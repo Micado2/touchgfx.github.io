@@ -4,15 +4,15 @@
     <compoundname>Presenter.hpp</compoundname>
     <includedby refid="_view_8hpp" local="no">mvp/View.hpp</includedby>
     <invincdepgraph>
+      <node id="110">
+        <label>mvp/MVPApplication.hpp</label>
+        <link refid="_m_v_p_application_8hpp"/>
+      </node>
       <node id="108">
         <label>mvp/Presenter.hpp</label>
         <link refid="_presenter_8hpp"/>
         <childnode refid="109" relation="include">
         </childnode>
-      </node>
-      <node id="110">
-        <label>mvp/MVPApplication.hpp</label>
-        <link refid="_m_v_p_application_8hpp"/>
       </node>
       <node id="109">
         <label>mvp/View.hpp</label>

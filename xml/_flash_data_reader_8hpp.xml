@@ -8,14 +8,18 @@
       <node id="4243">
         <label>assert.h</label>
       </node>
+      <node id="4245">
+        <label>touchgfx/hal/Config.hpp</label>
+        <link refid="_config_8hpp"/>
+      </node>
+      <node id="4244">
+        <label>stdint.h</label>
+      </node>
       <node id="4241">
         <label>touchgfx/hal/FlashDataReader.hpp</label>
         <link refid="_flash_data_reader_8hpp"/>
         <childnode refid="4242" relation="include">
         </childnode>
-      </node>
-      <node id="4244">
-        <label>stdint.h</label>
       </node>
       <node id="4242">
         <label>touchgfx/hal/Types.hpp</label>
@@ -27,21 +31,17 @@
         <childnode refid="4245" relation="include">
         </childnode>
       </node>
-      <node id="4245">
-        <label>touchgfx/hal/Config.hpp</label>
-        <link refid="_config_8hpp"/>
-      </node>
     </incdepgraph>
     <invincdepgraph>
+      <node id="4247">
+        <label>platform/driver/lcd/LCD16bppSerialFlash.hpp</label>
+        <link refid="_l_c_d16bpp_serial_flash_8hpp"/>
+      </node>
       <node id="4246">
         <label>touchgfx/hal/FlashDataReader.hpp</label>
         <link refid="_flash_data_reader_8hpp"/>
         <childnode refid="4247" relation="include">
         </childnode>
-      </node>
-      <node id="4247">
-        <label>platform/driver/lcd/LCD16bppSerialFlash.hpp</label>
-        <link refid="_l_c_d16bpp_serial_flash_8hpp"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classtouchgfx_1_1_flash_data_reader" prot="public">touchgfx::FlashDataReader</innerclass>

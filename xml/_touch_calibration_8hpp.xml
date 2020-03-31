@@ -13,6 +13,10 @@
         <childnode refid="5393" relation="include">
         </childnode>
       </node>
+      <node id="5396">
+        <label>touchgfx/hal/Config.hpp</label>
+        <link refid="_config_8hpp"/>
+      </node>
       <node id="5395">
         <label>stdint.h</label>
       </node>
@@ -25,10 +29,6 @@
         </childnode>
         <childnode refid="5396" relation="include">
         </childnode>
-      </node>
-      <node id="5396">
-        <label>touchgfx/hal/Config.hpp</label>
-        <link refid="_config_8hpp"/>
       </node>
     </incdepgraph>
     <innerclass refid="structtouchgfx_1_1_touch_calibration_1_1_matrix" prot="private">touchgfx::TouchCalibration::Matrix</innerclass>

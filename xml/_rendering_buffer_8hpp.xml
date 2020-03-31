@@ -8,22 +8,6 @@
         <label>touchgfx/containers/progress_indicators/LineProgress.hpp</label>
         <link refid="_line_progress_8hpp"/>
       </node>
-      <node id="1463">
-        <label>touchgfx/canvas_widget_renderer/Renderer.hpp</label>
-        <link refid="_renderer_8hpp"/>
-        <childnode refid="1464" relation="include">
-        </childnode>
-      </node>
-      <node id="1468">
-        <label>touchgfx/widgets/canvas/Line.hpp</label>
-        <link refid="_line_8hpp"/>
-        <childnode refid="1469" relation="include">
-        </childnode>
-      </node>
-      <node id="1470">
-        <label>touchgfx/widgets/canvas/Shape.hpp</label>
-        <link refid="_shape_8hpp"/>
-      </node>
       <node id="1464">
         <label>touchgfx/canvas_widget_renderer/Rasterizer.hpp</label>
         <link refid="_rasterizer_8hpp"/>
@@ -36,19 +20,25 @@
         <childnode refid="1473" relation="include">
         </childnode>
       </node>
-      <node id="1465">
-        <label>touchgfx/widgets/canvas/Canvas.hpp</label>
-        <link refid="_canvas_8hpp"/>
-        <childnode refid="1466" relation="include">
-        </childnode>
-        <childnode refid="1468" relation="include">
-        </childnode>
+      <node id="1472">
+        <label>touchgfx/widgets/canvas/AbstractShape.hpp</label>
+        <link refid="_abstract_shape_8hpp"/>
         <childnode refid="1470" relation="include">
         </childnode>
       </node>
-      <node id="1467">
-        <label>touchgfx/containers/progress_indicators/CircleProgress.hpp</label>
-        <link refid="_circle_progress_8hpp"/>
+      <node id="1463">
+        <label>touchgfx/canvas_widget_renderer/Renderer.hpp</label>
+        <link refid="_renderer_8hpp"/>
+        <childnode refid="1464" relation="include">
+        </childnode>
+      </node>
+      <node id="1473">
+        <label>touchgfx/widgets/canvas/CWRUtil.hpp</label>
+        <link refid="_c_w_r_util_8hpp"/>
+        <childnode refid="1465" relation="include">
+        </childnode>
+        <childnode refid="1471" relation="include">
+        </childnode>
       </node>
       <node id="1471">
         <label>touchgfx/widgets/canvas/CanvasWidget.hpp</label>
@@ -64,17 +54,15 @@
         <childnode refid="1470" relation="include">
         </childnode>
       </node>
-      <node id="1462">
-        <label>touchgfx/canvas_widget_renderer/RenderingBuffer.hpp</label>
-        <link refid="_rendering_buffer_8hpp"/>
-        <childnode refid="1463" relation="include">
+      <node id="1468">
+        <label>touchgfx/widgets/canvas/Line.hpp</label>
+        <link refid="_line_8hpp"/>
+        <childnode refid="1469" relation="include">
         </childnode>
       </node>
-      <node id="1472">
-        <label>touchgfx/widgets/canvas/AbstractShape.hpp</label>
-        <link refid="_abstract_shape_8hpp"/>
-        <childnode refid="1470" relation="include">
-        </childnode>
+      <node id="1470">
+        <label>touchgfx/widgets/canvas/Shape.hpp</label>
+        <link refid="_shape_8hpp"/>
       </node>
       <node id="1466">
         <label>touchgfx/widgets/canvas/Circle.hpp</label>
@@ -82,13 +70,25 @@
         <childnode refid="1467" relation="include">
         </childnode>
       </node>
-      <node id="1473">
-        <label>touchgfx/widgets/canvas/CWRUtil.hpp</label>
-        <link refid="_c_w_r_util_8hpp"/>
-        <childnode refid="1465" relation="include">
+      <node id="1465">
+        <label>touchgfx/widgets/canvas/Canvas.hpp</label>
+        <link refid="_canvas_8hpp"/>
+        <childnode refid="1466" relation="include">
         </childnode>
-        <childnode refid="1471" relation="include">
+        <childnode refid="1468" relation="include">
         </childnode>
+        <childnode refid="1470" relation="include">
+        </childnode>
+      </node>
+      <node id="1462">
+        <label>touchgfx/canvas_widget_renderer/RenderingBuffer.hpp</label>
+        <link refid="_rendering_buffer_8hpp"/>
+        <childnode refid="1463" relation="include">
+        </childnode>
+      </node>
+      <node id="1467">
+        <label>touchgfx/containers/progress_indicators/CircleProgress.hpp</label>
+        <link refid="_circle_progress_8hpp"/>
       </node>
     </invincdepgraph>
     <briefdescription>

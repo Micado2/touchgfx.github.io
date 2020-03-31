@@ -11,34 +11,22 @@
     <includedby refid="_text_progress_8hpp" local="no">touchgfx/containers/progress_indicators/TextProgress.hpp</includedby>
     <includedby refid="_keyboard_8hpp" local="no">touchgfx/widgets/Keyboard.hpp</includedby>
     <incdepgraph>
-      <node id="8379">
-        <label>touchgfx/Application.hpp</label>
-        <link refid="_application_8hpp"/>
-        <childnode refid="8380" relation="include">
-        </childnode>
-        <childnode refid="8381" relation="include">
-        </childnode>
-        <childnode refid="8383" relation="include">
-        </childnode>
-        <childnode refid="8384" relation="include">
-        </childnode>
-        <childnode refid="8371" relation="include">
-        </childnode>
-        <childnode refid="8385" relation="include">
-        </childnode>
-      </node>
-      <node id="8387">
-        <label>touchgfx/TextureMapTypes.hpp</label>
-        <link refid="_texture_map_types_8hpp"/>
-        <childnode refid="8371" relation="include">
-        </childnode>
-      </node>
       <node id="8368">
         <label>stdarg.h</label>
       </node>
-      <node id="8398">
-        <label>platform/driver/button/ButtonController.hpp</label>
-        <link refid="_button_controller_8hpp"/>
+      <node id="8376">
+        <label>touchgfx/Bitmap.hpp</label>
+        <link refid="_bitmap_8hpp"/>
+        <childnode refid="8377" relation="include">
+        </childnode>
+        <childnode refid="8371" relation="include">
+        </childnode>
+      </node>
+      <node id="8383">
+        <label>touchgfx/events/DragEvent.hpp</label>
+        <link refid="_drag_event_8hpp"/>
+        <childnode refid="8382" relation="include">
+        </childnode>
         <childnode refid="8371" relation="include">
         </childnode>
       </node>
@@ -48,19 +36,6 @@
       <node id="8372">
         <label>assert.h</label>
       </node>
-      <node id="8391">
-        <label>touchgfx/Callback.hpp</label>
-        <link refid="_callback_8hpp"/>
-      </node>
-      <node id="8380">
-        <label>touchgfx/UIEventListener.hpp</label>
-        <link refid="_u_i_event_listener_8hpp"/>
-        <childnode refid="8371" relation="include">
-        </childnode>
-      </node>
-      <node id="8373">
-        <label>stdint.h</label>
-      </node>
       <node id="8367">
         <label>touchgfx/TextProvider.hpp</label>
         <link refid="_text_provider_8hpp"/>
@@ -69,59 +44,6 @@
         <childnode refid="8369" relation="include">
         </childnode>
         <childnode refid="8370" relation="include">
-        </childnode>
-      </node>
-      <node id="8377">
-        <label>cassert</label>
-      </node>
-      <node id="8385">
-        <label>touchgfx/transitions/Transition.hpp</label>
-        <link refid="_transition_8hpp"/>
-        <childnode refid="8371" relation="include">
-        </childnode>
-        <childnode refid="8386" relation="include">
-        </childnode>
-      </node>
-      <node id="8399">
-        <label>platform/driver/touch/TouchController.hpp</label>
-        <link refid="_touch_controller_8hpp"/>
-        <childnode refid="8371" relation="include">
-        </childnode>
-      </node>
-      <node id="8381">
-        <label>touchgfx/events/ClickEvent.hpp</label>
-        <link refid="_click_event_8hpp"/>
-        <childnode refid="8382" relation="include">
-        </childnode>
-        <childnode refid="8371" relation="include">
-        </childnode>
-      </node>
-      <node id="8401">
-        <label>touchgfx/FontManager.hpp</label>
-        <link refid="_font_manager_8hpp"/>
-        <childnode refid="8369" relation="include">
-        </childnode>
-      </node>
-      <node id="8392">
-        <label>touchgfx/hal/BlitOp.hpp</label>
-        <link refid="_blit_op_8hpp"/>
-        <childnode refid="8371" relation="include">
-        </childnode>
-      </node>
-      <node id="8371">
-        <label>touchgfx/hal/Types.hpp</label>
-        <link refid="_types_8hpp"/>
-        <childnode refid="8372" relation="include">
-        </childnode>
-        <childnode refid="8373" relation="include">
-        </childnode>
-        <childnode refid="8374" relation="include">
-        </childnode>
-      </node>
-      <node id="8397">
-        <label>platform/core/MCUInstrumentation.hpp</label>
-        <link refid="_m_c_u_instrumentation_8hpp"/>
-        <childnode refid="8373" relation="include">
         </childnode>
       </node>
       <node id="8388">
@@ -136,14 +58,6 @@
         <childnode refid="8376" relation="include">
         </childnode>
         <childnode refid="8371" relation="include">
-        </childnode>
-      </node>
-      <node id="8393">
-        <label>touchgfx/hal/DMA.hpp</label>
-        <link refid="_d_m_a_8hpp"/>
-        <childnode refid="8394" relation="include">
-        </childnode>
-        <childnode refid="8392" relation="include">
         </childnode>
       </node>
       <node id="8374">
@@ -164,10 +78,13 @@
         <childnode refid="8371" relation="include">
         </childnode>
       </node>
-      <node id="8403">
-        <label>touchgfx/Texts.hpp</label>
-        <link refid="_texts_8hpp"/>
-        <childnode refid="8370" relation="include">
+      <node id="8373">
+        <label>stdint.h</label>
+      </node>
+      <node id="8380">
+        <label>touchgfx/UIEventListener.hpp</label>
+        <link refid="_u_i_event_listener_8hpp"/>
+        <childnode refid="8371" relation="include">
         </childnode>
       </node>
       <node id="8395">
@@ -176,11 +93,18 @@
         <childnode refid="8388" relation="include">
         </childnode>
       </node>
-      <node id="8384">
-        <label>touchgfx/events/GestureEvent.hpp</label>
-        <link refid="_gesture_event_8hpp"/>
-        <childnode refid="8382" relation="include">
+      <node id="8377">
+        <label>cassert</label>
+      </node>
+      <node id="8399">
+        <label>platform/driver/touch/TouchController.hpp</label>
+        <link refid="_touch_controller_8hpp"/>
+        <childnode refid="8371" relation="include">
         </childnode>
+      </node>
+      <node id="8387">
+        <label>touchgfx/TextureMapTypes.hpp</label>
+        <link refid="_texture_map_types_8hpp"/>
         <childnode refid="8371" relation="include">
         </childnode>
       </node>
@@ -196,45 +120,19 @@
         <childnode refid="8371" relation="include">
         </childnode>
       </node>
-      <node id="8383">
-        <label>touchgfx/events/DragEvent.hpp</label>
-        <link refid="_drag_event_8hpp"/>
+      <node id="8384">
+        <label>touchgfx/events/GestureEvent.hpp</label>
+        <link refid="_gesture_event_8hpp"/>
         <childnode refid="8382" relation="include">
         </childnode>
         <childnode refid="8371" relation="include">
         </childnode>
       </node>
-      <node id="8376">
-        <label>touchgfx/Bitmap.hpp</label>
-        <link refid="_bitmap_8hpp"/>
-        <childnode refid="8377" relation="include">
-        </childnode>
+      <node id="8398">
+        <label>platform/driver/button/ButtonController.hpp</label>
+        <link refid="_button_controller_8hpp"/>
         <childnode refid="8371" relation="include">
         </childnode>
-      </node>
-      <node id="8370">
-        <label>touchgfx/Unicode.hpp</label>
-        <link refid="_unicode_8hpp"/>
-        <childnode refid="8368" relation="include">
-        </childnode>
-        <childnode refid="8371" relation="include">
-        </childnode>
-      </node>
-      <node id="8394">
-        <label>touchgfx/hal/Atomic.hpp</label>
-        <link refid="_atomic_8hpp"/>
-      </node>
-      <node id="8404">
-        <label>touchgfx/widgets/Widget.hpp</label>
-        <link refid="_widget_8hpp"/>
-        <childnode refid="8372" relation="include">
-        </childnode>
-        <childnode refid="8378" relation="include">
-        </childnode>
-      </node>
-      <node id="8382">
-        <label>touchgfx/Event.hpp</label>
-        <link refid="_event_8hpp"/>
       </node>
       <node id="8369">
         <label>touchgfx/Font.hpp</label>
@@ -242,6 +140,22 @@
         <childnode refid="8370" relation="include">
         </childnode>
         <childnode refid="8371" relation="include">
+        </childnode>
+      </node>
+      <node id="8401">
+        <label>touchgfx/FontManager.hpp</label>
+        <link refid="_font_manager_8hpp"/>
+        <childnode refid="8369" relation="include">
+        </childnode>
+      </node>
+      <node id="8371">
+        <label>touchgfx/hal/Types.hpp</label>
+        <link refid="_types_8hpp"/>
+        <childnode refid="8372" relation="include">
+        </childnode>
+        <childnode refid="8373" relation="include">
+        </childnode>
+        <childnode refid="8374" relation="include">
         </childnode>
       </node>
       <node id="8378">
@@ -262,6 +176,24 @@
         <childnode refid="8371" relation="include">
         </childnode>
       </node>
+      <node id="8392">
+        <label>touchgfx/hal/BlitOp.hpp</label>
+        <link refid="_blit_op_8hpp"/>
+        <childnode refid="8371" relation="include">
+        </childnode>
+      </node>
+      <node id="8394">
+        <label>touchgfx/hal/Atomic.hpp</label>
+        <link refid="_atomic_8hpp"/>
+      </node>
+      <node id="8385">
+        <label>touchgfx/transitions/Transition.hpp</label>
+        <link refid="_transition_8hpp"/>
+        <childnode refid="8371" relation="include">
+        </childnode>
+        <childnode refid="8386" relation="include">
+        </childnode>
+      </node>
       <node id="8366">
         <label>touchgfx/widgets/TextAreaWithWildcard.hpp</label>
         <link refid="_text_area_with_wildcard_8hpp"/>
@@ -270,6 +202,38 @@
         <childnode refid="8375" relation="include">
         </childnode>
         <childnode refid="8400" relation="include">
+        </childnode>
+      </node>
+      <node id="8381">
+        <label>touchgfx/events/ClickEvent.hpp</label>
+        <link refid="_click_event_8hpp"/>
+        <childnode refid="8382" relation="include">
+        </childnode>
+        <childnode refid="8371" relation="include">
+        </childnode>
+      </node>
+      <node id="8404">
+        <label>touchgfx/widgets/Widget.hpp</label>
+        <link refid="_widget_8hpp"/>
+        <childnode refid="8372" relation="include">
+        </childnode>
+        <childnode refid="8378" relation="include">
+        </childnode>
+      </node>
+      <node id="8379">
+        <label>touchgfx/Application.hpp</label>
+        <link refid="_application_8hpp"/>
+        <childnode refid="8380" relation="include">
+        </childnode>
+        <childnode refid="8381" relation="include">
+        </childnode>
+        <childnode refid="8383" relation="include">
+        </childnode>
+        <childnode refid="8384" relation="include">
+        </childnode>
+        <childnode refid="8371" relation="include">
+        </childnode>
+        <childnode refid="8385" relation="include">
         </childnode>
       </node>
       <node id="8400">
@@ -289,6 +253,22 @@
         </childnode>
         <childnode refid="8404" relation="include">
         </childnode>
+      </node>
+      <node id="8391">
+        <label>touchgfx/Callback.hpp</label>
+        <link refid="_callback_8hpp"/>
+      </node>
+      <node id="8370">
+        <label>touchgfx/Unicode.hpp</label>
+        <link refid="_unicode_8hpp"/>
+        <childnode refid="8368" relation="include">
+        </childnode>
+        <childnode refid="8371" relation="include">
+        </childnode>
+      </node>
+      <node id="8382">
+        <label>touchgfx/Event.hpp</label>
+        <link refid="_event_8hpp"/>
       </node>
       <node id="8386">
         <label>touchgfx/lcd/LCD.hpp</label>
@@ -310,8 +290,28 @@
         <childnode refid="8371" relation="include">
         </childnode>
       </node>
+      <node id="8403">
+        <label>touchgfx/Texts.hpp</label>
+        <link refid="_texts_8hpp"/>
+        <childnode refid="8370" relation="include">
+        </childnode>
+      </node>
       <node id="8390">
         <label>stdio.h</label>
+      </node>
+      <node id="8393">
+        <label>touchgfx/hal/DMA.hpp</label>
+        <link refid="_d_m_a_8hpp"/>
+        <childnode refid="8394" relation="include">
+        </childnode>
+        <childnode refid="8392" relation="include">
+        </childnode>
+      </node>
+      <node id="8397">
+        <label>platform/core/MCUInstrumentation.hpp</label>
+        <link refid="_m_c_u_instrumentation_8hpp"/>
+        <childnode refid="8373" relation="include">
+        </childnode>
       </node>
       <node id="8375">
         <label>touchgfx/hal/HAL.hpp</label>
@@ -343,10 +343,6 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="8411">
-        <label>touchgfx/widgets/Keyboard.hpp</label>
-        <link refid="_keyboard_8hpp"/>
-      </node>
       <node id="8409">
         <label>touchgfx/containers/clock/DigitalClock.hpp</label>
         <link refid="_digital_clock_8hpp"/>
@@ -355,21 +351,19 @@
         <label>touchgfx/containers/buttons/Buttons.hpp</label>
         <link refid="containers_2buttons_2_buttons_8hpp"/>
       </node>
-      <node id="8410">
-        <label>touchgfx/containers/progress_indicators/TextProgress.hpp</label>
-        <link refid="_text_progress_8hpp"/>
-      </node>
-      <node id="8406">
-        <label>touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp</label>
-        <link refid="_two_wildcard_text_button_style_8hpp"/>
-        <childnode refid="8407" relation="include">
-        </childnode>
-      </node>
       <node id="8408">
         <label>touchgfx/containers/buttons/WildcardTextButtonStyle.hpp</label>
         <link refid="_wildcard_text_button_style_8hpp"/>
         <childnode refid="8407" relation="include">
         </childnode>
+      </node>
+      <node id="8410">
+        <label>touchgfx/containers/progress_indicators/TextProgress.hpp</label>
+        <link refid="_text_progress_8hpp"/>
+      </node>
+      <node id="8411">
+        <label>touchgfx/widgets/Keyboard.hpp</label>
+        <link refid="_keyboard_8hpp"/>
       </node>
       <node id="8405">
         <label>touchgfx/widgets/TextAreaWithWildcard.hpp</label>
@@ -383,6 +377,12 @@
         <childnode refid="8410" relation="include">
         </childnode>
         <childnode refid="8411" relation="include">
+        </childnode>
+      </node>
+      <node id="8406">
+        <label>touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp</label>
+        <link refid="_two_wildcard_text_button_style_8hpp"/>
+        <childnode refid="8407" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

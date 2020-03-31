@@ -7,49 +7,36 @@
     <includedby refid="_scroll_wheel_8hpp" local="no">touchgfx/containers/scrollers/ScrollWheel.hpp</includedby>
     <includedby refid="_scroll_wheel_with_selection_style_8hpp" local="no">touchgfx/containers/scrollers/ScrollWheelWithSelectionStyle.hpp</includedby>
     <incdepgraph>
-      <node id="2619">
-        <label>touchgfx/Application.hpp</label>
-        <link refid="_application_8hpp"/>
-        <childnode refid="2620" relation="include">
-        </childnode>
-        <childnode refid="2625" relation="include">
-        </childnode>
-        <childnode refid="2627" relation="include">
-        </childnode>
-        <childnode refid="2628" relation="include">
-        </childnode>
-        <childnode refid="2621" relation="include">
-        </childnode>
-        <childnode refid="2629" relation="include">
-        </childnode>
-      </node>
-      <node id="2637">
-        <label>touchgfx/TextureMapTypes.hpp</label>
-        <link refid="_texture_map_types_8hpp"/>
-        <childnode refid="2621" relation="include">
+      <node id="2615">
+        <label>touchgfx/containers/scrollers/DrawableList.hpp</label>
+        <link refid="_drawable_list_8hpp"/>
+        <childnode refid="2616" relation="include">
         </childnode>
       </node>
       <node id="2631">
         <label>stdarg.h</label>
+      </node>
+      <node id="2632">
+        <label>touchgfx/Bitmap.hpp</label>
+        <link refid="_bitmap_8hpp"/>
+        <childnode refid="2633" relation="include">
+        </childnode>
+        <childnode refid="2621" relation="include">
+        </childnode>
+      </node>
+      <node id="2627">
+        <label>touchgfx/events/DragEvent.hpp</label>
+        <link refid="_drag_event_8hpp"/>
+        <childnode refid="2626" relation="include">
+        </childnode>
+        <childnode refid="2621" relation="include">
+        </childnode>
       </node>
       <node id="2639">
         <label>windows.h</label>
       </node>
       <node id="2622">
         <label>assert.h</label>
-      </node>
-      <node id="2617">
-        <label>touchgfx/Callback.hpp</label>
-        <link refid="_callback_8hpp"/>
-      </node>
-      <node id="2620">
-        <label>touchgfx/UIEventListener.hpp</label>
-        <link refid="_u_i_event_listener_8hpp"/>
-        <childnode refid="2621" relation="include">
-        </childnode>
-      </node>
-      <node id="2623">
-        <label>stdint.h</label>
       </node>
       <node id="2636">
         <label>touchgfx/TextProvider.hpp</label>
@@ -59,49 +46,6 @@
         <childnode refid="2634" relation="include">
         </childnode>
         <childnode refid="2635" relation="include">
-        </childnode>
-      </node>
-      <node id="2633">
-        <label>cassert</label>
-      </node>
-      <node id="2629">
-        <label>touchgfx/transitions/Transition.hpp</label>
-        <link refid="_transition_8hpp"/>
-        <childnode refid="2621" relation="include">
-        </childnode>
-        <childnode refid="2630" relation="include">
-        </childnode>
-      </node>
-      <node id="2615">
-        <label>touchgfx/containers/scrollers/DrawableList.hpp</label>
-        <link refid="_drawable_list_8hpp"/>
-        <childnode refid="2616" relation="include">
-        </childnode>
-      </node>
-      <node id="2625">
-        <label>touchgfx/events/ClickEvent.hpp</label>
-        <link refid="_click_event_8hpp"/>
-        <childnode refid="2626" relation="include">
-        </childnode>
-        <childnode refid="2621" relation="include">
-        </childnode>
-      </node>
-      <node id="2616">
-        <label>touchgfx/containers/Container.hpp</label>
-        <link refid="_container_8hpp"/>
-        <childnode refid="2617" relation="include">
-        </childnode>
-        <childnode refid="2618" relation="include">
-        </childnode>
-      </node>
-      <node id="2621">
-        <label>touchgfx/hal/Types.hpp</label>
-        <link refid="_types_8hpp"/>
-        <childnode refid="2622" relation="include">
-        </childnode>
-        <childnode refid="2623" relation="include">
-        </childnode>
-        <childnode refid="2624" relation="include">
         </childnode>
       </node>
       <node id="2638">
@@ -122,6 +66,24 @@
         <label>touchgfx/hal/Config.hpp</label>
         <link refid="_config_8hpp"/>
       </node>
+      <node id="2623">
+        <label>stdint.h</label>
+      </node>
+      <node id="2620">
+        <label>touchgfx/UIEventListener.hpp</label>
+        <link refid="_u_i_event_listener_8hpp"/>
+        <childnode refid="2621" relation="include">
+        </childnode>
+      </node>
+      <node id="2633">
+        <label>cassert</label>
+      </node>
+      <node id="2637">
+        <label>touchgfx/TextureMapTypes.hpp</label>
+        <link refid="_texture_map_types_8hpp"/>
+        <childnode refid="2621" relation="include">
+        </childnode>
+      </node>
       <node id="2628">
         <label>touchgfx/events/GestureEvent.hpp</label>
         <link refid="_gesture_event_8hpp"/>
@@ -130,40 +92,22 @@
         <childnode refid="2621" relation="include">
         </childnode>
       </node>
-      <node id="2627">
-        <label>touchgfx/events/DragEvent.hpp</label>
-        <link refid="_drag_event_8hpp"/>
-        <childnode refid="2626" relation="include">
-        </childnode>
-        <childnode refid="2621" relation="include">
-        </childnode>
-      </node>
-      <node id="2632">
-        <label>touchgfx/Bitmap.hpp</label>
-        <link refid="_bitmap_8hpp"/>
-        <childnode refid="2633" relation="include">
-        </childnode>
-        <childnode refid="2621" relation="include">
-        </childnode>
-      </node>
-      <node id="2635">
-        <label>touchgfx/Unicode.hpp</label>
-        <link refid="_unicode_8hpp"/>
-        <childnode refid="2631" relation="include">
-        </childnode>
-        <childnode refid="2621" relation="include">
-        </childnode>
-      </node>
-      <node id="2626">
-        <label>touchgfx/Event.hpp</label>
-        <link refid="_event_8hpp"/>
-      </node>
       <node id="2634">
         <label>touchgfx/Font.hpp</label>
         <link refid="_font_8hpp"/>
         <childnode refid="2635" relation="include">
         </childnode>
         <childnode refid="2621" relation="include">
+        </childnode>
+      </node>
+      <node id="2621">
+        <label>touchgfx/hal/Types.hpp</label>
+        <link refid="_types_8hpp"/>
+        <childnode refid="2622" relation="include">
+        </childnode>
+        <childnode refid="2623" relation="include">
+        </childnode>
+        <childnode refid="2624" relation="include">
         </childnode>
       </node>
       <node id="2618">
@@ -183,6 +127,62 @@
         </childnode>
         <childnode refid="2621" relation="include">
         </childnode>
+      </node>
+      <node id="2629">
+        <label>touchgfx/transitions/Transition.hpp</label>
+        <link refid="_transition_8hpp"/>
+        <childnode refid="2621" relation="include">
+        </childnode>
+        <childnode refid="2630" relation="include">
+        </childnode>
+      </node>
+      <node id="2616">
+        <label>touchgfx/containers/Container.hpp</label>
+        <link refid="_container_8hpp"/>
+        <childnode refid="2617" relation="include">
+        </childnode>
+        <childnode refid="2618" relation="include">
+        </childnode>
+      </node>
+      <node id="2625">
+        <label>touchgfx/events/ClickEvent.hpp</label>
+        <link refid="_click_event_8hpp"/>
+        <childnode refid="2626" relation="include">
+        </childnode>
+        <childnode refid="2621" relation="include">
+        </childnode>
+      </node>
+      <node id="2619">
+        <label>touchgfx/Application.hpp</label>
+        <link refid="_application_8hpp"/>
+        <childnode refid="2620" relation="include">
+        </childnode>
+        <childnode refid="2625" relation="include">
+        </childnode>
+        <childnode refid="2627" relation="include">
+        </childnode>
+        <childnode refid="2628" relation="include">
+        </childnode>
+        <childnode refid="2621" relation="include">
+        </childnode>
+        <childnode refid="2629" relation="include">
+        </childnode>
+      </node>
+      <node id="2617">
+        <label>touchgfx/Callback.hpp</label>
+        <link refid="_callback_8hpp"/>
+      </node>
+      <node id="2635">
+        <label>touchgfx/Unicode.hpp</label>
+        <link refid="_unicode_8hpp"/>
+        <childnode refid="2631" relation="include">
+        </childnode>
+        <childnode refid="2621" relation="include">
+        </childnode>
+      </node>
+      <node id="2626">
+        <label>touchgfx/Event.hpp</label>
+        <link refid="_event_8hpp"/>
       </node>
       <node id="2630">
         <label>touchgfx/lcd/LCD.hpp</label>
@@ -219,6 +219,10 @@
         <childnode refid="2646" relation="include">
         </childnode>
       </node>
+      <node id="2645">
+        <label>touchgfx/containers/scrollers/ScrollWheel.hpp</label>
+        <link refid="_scroll_wheel_8hpp"/>
+      </node>
       <node id="2642">
         <label>touchgfx/containers/scrollers/ScrollBase.hpp</label>
         <link refid="_scroll_base_8hpp"/>
@@ -227,9 +231,9 @@
         <childnode refid="2644" relation="include">
         </childnode>
       </node>
-      <node id="2645">
-        <label>touchgfx/containers/scrollers/ScrollWheel.hpp</label>
-        <link refid="_scroll_wheel_8hpp"/>
+      <node id="2643">
+        <label>touchgfx/containers/scrollers/ScrollList.hpp</label>
+        <link refid="_scroll_list_8hpp"/>
       </node>
       <node id="2644">
         <label>touchgfx/containers/scrollers/ScrollWheelBase.hpp</label>
@@ -238,10 +242,6 @@
         </childnode>
         <childnode refid="2646" relation="include">
         </childnode>
-      </node>
-      <node id="2643">
-        <label>touchgfx/containers/scrollers/ScrollList.hpp</label>
-        <link refid="_scroll_list_8hpp"/>
       </node>
       <node id="2646">
         <label>touchgfx/containers/scrollers/ScrollWheelWithSelectionStyle.hpp</label>
