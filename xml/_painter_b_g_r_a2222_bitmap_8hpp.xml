@@ -7,34 +7,22 @@
     <includes refid="_display_transformation_8hpp" local="no">touchgfx/transforms/DisplayTransformation.hpp</includes>
     <includes refid="_abstract_painter_b_g_r_a2222_8hpp" local="no">touchgfx/widgets/canvas/AbstractPainterBGRA2222.hpp</includes>
     <incdepgraph>
-      <node id="7459">
-        <label>touchgfx/Application.hpp</label>
-        <link refid="_application_8hpp"/>
-        <childnode refid="7460" relation="include">
-        </childnode>
-        <childnode refid="7461" relation="include">
-        </childnode>
-        <childnode refid="7463" relation="include">
-        </childnode>
-        <childnode refid="7464" relation="include">
-        </childnode>
-        <childnode refid="7446" relation="include">
-        </childnode>
-        <childnode refid="7465" relation="include">
-        </childnode>
-      </node>
-      <node id="7456">
-        <label>touchgfx/TextureMapTypes.hpp</label>
-        <link refid="_texture_map_types_8hpp"/>
-        <childnode refid="7446" relation="include">
-        </childnode>
-      </node>
       <node id="7452">
         <label>stdarg.h</label>
       </node>
-      <node id="7477">
-        <label>platform/driver/button/ButtonController.hpp</label>
-        <link refid="_button_controller_8hpp"/>
+      <node id="7444">
+        <label>touchgfx/Bitmap.hpp</label>
+        <link refid="_bitmap_8hpp"/>
+        <childnode refid="7445" relation="include">
+        </childnode>
+        <childnode refid="7446" relation="include">
+        </childnode>
+      </node>
+      <node id="7463">
+        <label>touchgfx/events/DragEvent.hpp</label>
+        <link refid="_drag_event_8hpp"/>
+        <childnode refid="7462" relation="include">
+        </childnode>
         <childnode refid="7446" relation="include">
         </childnode>
       </node>
@@ -43,29 +31,6 @@
       </node>
       <node id="7447">
         <label>assert.h</label>
-      </node>
-      <node id="7470">
-        <label>touchgfx/Callback.hpp</label>
-        <link refid="_callback_8hpp"/>
-      </node>
-      <node id="7460">
-        <label>touchgfx/UIEventListener.hpp</label>
-        <link refid="_u_i_event_listener_8hpp"/>
-        <childnode refid="7446" relation="include">
-        </childnode>
-      </node>
-      <node id="7443">
-        <label>stdint.h</label>
-      </node>
-      <node id="7479">
-        <label>touchgfx/widgets/canvas/AbstractPainter.hpp</label>
-        <link refid="_abstract_painter_8hpp"/>
-        <childnode refid="7443" relation="include">
-        </childnode>
-        <childnode refid="7444" relation="include">
-        </childnode>
-        <childnode refid="7457" relation="include">
-        </childnode>
       </node>
       <node id="7455">
         <label>touchgfx/TextProvider.hpp</label>
@@ -77,16 +42,55 @@
         <childnode refid="7454" relation="include">
         </childnode>
       </node>
-      <node id="7445">
-        <label>cassert</label>
-      </node>
-      <node id="7465">
-        <label>touchgfx/transitions/Transition.hpp</label>
-        <link refid="_transition_8hpp"/>
+      <node id="7467">
+        <label>touchgfx/Utils.hpp</label>
+        <link refid="_utils_8hpp"/>
+        <childnode refid="7452" relation="include">
+        </childnode>
+        <childnode refid="7468" relation="include">
+        </childnode>
+        <childnode refid="7469" relation="include">
+        </childnode>
+        <childnode refid="7444" relation="include">
+        </childnode>
         <childnode refid="7446" relation="include">
         </childnode>
-        <childnode refid="7466" relation="include">
+      </node>
+      <node id="7448">
+        <label>touchgfx/hal/Config.hpp</label>
+        <link refid="_config_8hpp"/>
+      </node>
+      <node id="7475">
+        <label>touchgfx/hal/Gestures.hpp</label>
+        <link refid="_gestures_8hpp"/>
+        <childnode refid="7460" relation="include">
         </childnode>
+        <childnode refid="7461" relation="include">
+        </childnode>
+        <childnode refid="7463" relation="include">
+        </childnode>
+        <childnode refid="7464" relation="include">
+        </childnode>
+        <childnode refid="7446" relation="include">
+        </childnode>
+      </node>
+      <node id="7443">
+        <label>stdint.h</label>
+      </node>
+      <node id="7460">
+        <label>touchgfx/UIEventListener.hpp</label>
+        <link refid="_u_i_event_listener_8hpp"/>
+        <childnode refid="7446" relation="include">
+        </childnode>
+      </node>
+      <node id="7474">
+        <label>touchgfx/hal/FrameBufferAllocator.hpp</label>
+        <link refid="_frame_buffer_allocator_8hpp"/>
+        <childnode refid="7467" relation="include">
+        </childnode>
+      </node>
+      <node id="7445">
+        <label>cassert</label>
       </node>
       <node id="7478">
         <label>platform/driver/touch/TouchController.hpp</label>
@@ -94,9 +98,77 @@
         <childnode refid="7446" relation="include">
         </childnode>
       </node>
-      <node id="7449">
-        <label>touchgfx/transforms/DisplayTransformation.hpp</label>
-        <link refid="_display_transformation_8hpp"/>
+      <node id="7456">
+        <label>touchgfx/TextureMapTypes.hpp</label>
+        <link refid="_texture_map_types_8hpp"/>
+        <childnode refid="7446" relation="include">
+        </childnode>
+      </node>
+      <node id="7442">
+        <label>touchgfx/widgets/canvas/PainterBGRA2222Bitmap.hpp</label>
+        <link refid="_painter_b_g_r_a2222_bitmap_8hpp"/>
+        <childnode refid="7443" relation="include">
+        </childnode>
+        <childnode refid="7444" relation="include">
+        </childnode>
+        <childnode refid="7449" relation="include">
+        </childnode>
+        <childnode refid="7450" relation="include">
+        </childnode>
+      </node>
+      <node id="7464">
+        <label>touchgfx/events/GestureEvent.hpp</label>
+        <link refid="_gesture_event_8hpp"/>
+        <childnode refid="7462" relation="include">
+        </childnode>
+        <childnode refid="7446" relation="include">
+        </childnode>
+      </node>
+      <node id="7477">
+        <label>platform/driver/button/ButtonController.hpp</label>
+        <link refid="_button_controller_8hpp"/>
+        <childnode refid="7446" relation="include">
+        </childnode>
+      </node>
+      <node id="7453">
+        <label>touchgfx/Font.hpp</label>
+        <link refid="_font_8hpp"/>
+        <childnode refid="7454" relation="include">
+        </childnode>
+        <childnode refid="7446" relation="include">
+        </childnode>
+      </node>
+      <node id="7446">
+        <label>touchgfx/hal/Types.hpp</label>
+        <link refid="_types_8hpp"/>
+        <childnode refid="7447" relation="include">
+        </childnode>
+        <childnode refid="7443" relation="include">
+        </childnode>
+        <childnode refid="7448" relation="include">
+        </childnode>
+      </node>
+      <node id="7458">
+        <label>touchgfx/Drawable.hpp</label>
+        <link refid="_drawable_8hpp"/>
+        <childnode refid="7459" relation="include">
+        </childnode>
+        <childnode refid="7470" relation="include">
+        </childnode>
+        <childnode refid="7467" relation="include">
+        </childnode>
+        <childnode refid="7461" relation="include">
+        </childnode>
+        <childnode refid="7463" relation="include">
+        </childnode>
+        <childnode refid="7464" relation="include">
+        </childnode>
+        <childnode refid="7446" relation="include">
+        </childnode>
+      </node>
+      <node id="7471">
+        <label>touchgfx/hal/BlitOp.hpp</label>
+        <link refid="_blit_op_8hpp"/>
         <childnode refid="7446" relation="include">
         </childnode>
       </node>
@@ -112,30 +184,6 @@
         <childnode refid="7466" relation="include">
         </childnode>
         <childnode refid="7479" relation="include">
-        </childnode>
-      </node>
-      <node id="7461">
-        <label>touchgfx/events/ClickEvent.hpp</label>
-        <link refid="_click_event_8hpp"/>
-        <childnode refid="7462" relation="include">
-        </childnode>
-        <childnode refid="7446" relation="include">
-        </childnode>
-      </node>
-      <node id="7471">
-        <label>touchgfx/hal/BlitOp.hpp</label>
-        <link refid="_blit_op_8hpp"/>
-        <childnode refid="7446" relation="include">
-        </childnode>
-      </node>
-      <node id="7446">
-        <label>touchgfx/hal/Types.hpp</label>
-        <link refid="_types_8hpp"/>
-        <childnode refid="7447" relation="include">
-        </childnode>
-        <childnode refid="7443" relation="include">
-        </childnode>
-        <childnode refid="7448" relation="include">
         </childnode>
       </node>
       <node id="7451">
@@ -160,41 +208,35 @@
         <childnode refid="7466" relation="include">
         </childnode>
       </node>
-      <node id="7476">
-        <label>platform/core/MCUInstrumentation.hpp</label>
-        <link refid="_m_c_u_instrumentation_8hpp"/>
-        <childnode refid="7443" relation="include">
+      <node id="7473">
+        <label>touchgfx/hal/Atomic.hpp</label>
+        <link refid="_atomic_8hpp"/>
+      </node>
+      <node id="7449">
+        <label>touchgfx/transforms/DisplayTransformation.hpp</label>
+        <link refid="_display_transformation_8hpp"/>
+        <childnode refid="7446" relation="include">
         </childnode>
       </node>
-      <node id="7467">
-        <label>touchgfx/Utils.hpp</label>
-        <link refid="_utils_8hpp"/>
-        <childnode refid="7452" relation="include">
+      <node id="7465">
+        <label>touchgfx/transitions/Transition.hpp</label>
+        <link refid="_transition_8hpp"/>
+        <childnode refid="7446" relation="include">
         </childnode>
-        <childnode refid="7468" relation="include">
+        <childnode refid="7466" relation="include">
         </childnode>
-        <childnode refid="7469" relation="include">
-        </childnode>
-        <childnode refid="7444" relation="include">
+      </node>
+      <node id="7461">
+        <label>touchgfx/events/ClickEvent.hpp</label>
+        <link refid="_click_event_8hpp"/>
+        <childnode refid="7462" relation="include">
         </childnode>
         <childnode refid="7446" relation="include">
         </childnode>
       </node>
-      <node id="7472">
-        <label>touchgfx/hal/DMA.hpp</label>
-        <link refid="_d_m_a_8hpp"/>
-        <childnode refid="7473" relation="include">
-        </childnode>
-        <childnode refid="7471" relation="include">
-        </childnode>
-      </node>
-      <node id="7448">
-        <label>touchgfx/hal/Config.hpp</label>
-        <link refid="_config_8hpp"/>
-      </node>
-      <node id="7475">
-        <label>touchgfx/hal/Gestures.hpp</label>
-        <link refid="_gestures_8hpp"/>
+      <node id="7459">
+        <label>touchgfx/Application.hpp</label>
+        <link refid="_application_8hpp"/>
         <childnode refid="7460" relation="include">
         </childnode>
         <childnode refid="7461" relation="include">
@@ -205,36 +247,12 @@
         </childnode>
         <childnode refid="7446" relation="include">
         </childnode>
-      </node>
-      <node id="7474">
-        <label>touchgfx/hal/FrameBufferAllocator.hpp</label>
-        <link refid="_frame_buffer_allocator_8hpp"/>
-        <childnode refid="7467" relation="include">
+        <childnode refid="7465" relation="include">
         </childnode>
       </node>
-      <node id="7464">
-        <label>touchgfx/events/GestureEvent.hpp</label>
-        <link refid="_gesture_event_8hpp"/>
-        <childnode refid="7462" relation="include">
-        </childnode>
-        <childnode refid="7446" relation="include">
-        </childnode>
-      </node>
-      <node id="7463">
-        <label>touchgfx/events/DragEvent.hpp</label>
-        <link refid="_drag_event_8hpp"/>
-        <childnode refid="7462" relation="include">
-        </childnode>
-        <childnode refid="7446" relation="include">
-        </childnode>
-      </node>
-      <node id="7444">
-        <label>touchgfx/Bitmap.hpp</label>
-        <link refid="_bitmap_8hpp"/>
-        <childnode refid="7445" relation="include">
-        </childnode>
-        <childnode refid="7446" relation="include">
-        </childnode>
+      <node id="7470">
+        <label>touchgfx/Callback.hpp</label>
+        <link refid="_callback_8hpp"/>
       </node>
       <node id="7454">
         <label>touchgfx/Unicode.hpp</label>
@@ -244,51 +262,19 @@
         <childnode refid="7446" relation="include">
         </childnode>
       </node>
-      <node id="7473">
-        <label>touchgfx/hal/Atomic.hpp</label>
-        <link refid="_atomic_8hpp"/>
-      </node>
-      <node id="7462">
-        <label>touchgfx/Event.hpp</label>
-        <link refid="_event_8hpp"/>
-      </node>
-      <node id="7442">
-        <label>touchgfx/widgets/canvas/PainterBGRA2222Bitmap.hpp</label>
-        <link refid="_painter_b_g_r_a2222_bitmap_8hpp"/>
+      <node id="7479">
+        <label>touchgfx/widgets/canvas/AbstractPainter.hpp</label>
+        <link refid="_abstract_painter_8hpp"/>
         <childnode refid="7443" relation="include">
         </childnode>
         <childnode refid="7444" relation="include">
         </childnode>
-        <childnode refid="7449" relation="include">
-        </childnode>
-        <childnode refid="7450" relation="include">
+        <childnode refid="7457" relation="include">
         </childnode>
       </node>
-      <node id="7453">
-        <label>touchgfx/Font.hpp</label>
-        <link refid="_font_8hpp"/>
-        <childnode refid="7454" relation="include">
-        </childnode>
-        <childnode refid="7446" relation="include">
-        </childnode>
-      </node>
-      <node id="7458">
-        <label>touchgfx/Drawable.hpp</label>
-        <link refid="_drawable_8hpp"/>
-        <childnode refid="7459" relation="include">
-        </childnode>
-        <childnode refid="7470" relation="include">
-        </childnode>
-        <childnode refid="7467" relation="include">
-        </childnode>
-        <childnode refid="7461" relation="include">
-        </childnode>
-        <childnode refid="7463" relation="include">
-        </childnode>
-        <childnode refid="7464" relation="include">
-        </childnode>
-        <childnode refid="7446" relation="include">
-        </childnode>
+      <node id="7462">
+        <label>touchgfx/Event.hpp</label>
+        <link refid="_event_8hpp"/>
       </node>
       <node id="7466">
         <label>touchgfx/lcd/LCD.hpp</label>
@@ -312,6 +298,20 @@
       </node>
       <node id="7469">
         <label>stdio.h</label>
+      </node>
+      <node id="7472">
+        <label>touchgfx/hal/DMA.hpp</label>
+        <link refid="_d_m_a_8hpp"/>
+        <childnode refid="7473" relation="include">
+        </childnode>
+        <childnode refid="7471" relation="include">
+        </childnode>
+      </node>
+      <node id="7476">
+        <label>platform/core/MCUInstrumentation.hpp</label>
+        <link refid="_m_c_u_instrumentation_8hpp"/>
+        <childnode refid="7443" relation="include">
+        </childnode>
       </node>
       <node id="7457">
         <label>touchgfx/hal/HAL.hpp</label>

@@ -5,34 +5,22 @@
     <includes refid="_text_area_with_wildcard_8hpp" local="no">touchgfx/widgets/TextAreaWithWildcard.hpp</includes>
     <includedby refid="containers_2buttons_2_buttons_8hpp" local="no">touchgfx/containers/buttons/Buttons.hpp</includedby>
     <incdepgraph>
-      <node id="2005">
-        <label>touchgfx/Application.hpp</label>
-        <link refid="_application_8hpp"/>
-        <childnode refid="2006" relation="include">
-        </childnode>
-        <childnode refid="2007" relation="include">
-        </childnode>
-        <childnode refid="2009" relation="include">
-        </childnode>
-        <childnode refid="2010" relation="include">
-        </childnode>
-        <childnode refid="1997" relation="include">
-        </childnode>
-        <childnode refid="2011" relation="include">
-        </childnode>
-      </node>
-      <node id="2013">
-        <label>touchgfx/TextureMapTypes.hpp</label>
-        <link refid="_texture_map_types_8hpp"/>
-        <childnode refid="1997" relation="include">
-        </childnode>
-      </node>
       <node id="1994">
         <label>stdarg.h</label>
       </node>
-      <node id="2024">
-        <label>platform/driver/button/ButtonController.hpp</label>
-        <link refid="_button_controller_8hpp"/>
+      <node id="2002">
+        <label>touchgfx/Bitmap.hpp</label>
+        <link refid="_bitmap_8hpp"/>
+        <childnode refid="2003" relation="include">
+        </childnode>
+        <childnode refid="1997" relation="include">
+        </childnode>
+      </node>
+      <node id="2009">
+        <label>touchgfx/events/DragEvent.hpp</label>
+        <link refid="_drag_event_8hpp"/>
+        <childnode refid="2008" relation="include">
+        </childnode>
         <childnode refid="1997" relation="include">
         </childnode>
       </node>
@@ -42,18 +30,11 @@
       <node id="1998">
         <label>assert.h</label>
       </node>
-      <node id="2017">
-        <label>touchgfx/Callback.hpp</label>
-        <link refid="_callback_8hpp"/>
-      </node>
-      <node id="2006">
-        <label>touchgfx/UIEventListener.hpp</label>
-        <link refid="_u_i_event_listener_8hpp"/>
-        <childnode refid="1997" relation="include">
+      <node id="1991">
+        <label>touchgfx/containers/buttons/WildcardTextButtonStyle.hpp</label>
+        <link refid="_wildcard_text_button_style_8hpp"/>
+        <childnode refid="1992" relation="include">
         </childnode>
-      </node>
-      <node id="1999">
-        <label>stdint.h</label>
       </node>
       <node id="1993">
         <label>touchgfx/TextProvider.hpp</label>
@@ -63,59 +44,6 @@
         <childnode refid="1995" relation="include">
         </childnode>
         <childnode refid="1996" relation="include">
-        </childnode>
-      </node>
-      <node id="2003">
-        <label>cassert</label>
-      </node>
-      <node id="2011">
-        <label>touchgfx/transitions/Transition.hpp</label>
-        <link refid="_transition_8hpp"/>
-        <childnode refid="1997" relation="include">
-        </childnode>
-        <childnode refid="2012" relation="include">
-        </childnode>
-      </node>
-      <node id="2025">
-        <label>platform/driver/touch/TouchController.hpp</label>
-        <link refid="_touch_controller_8hpp"/>
-        <childnode refid="1997" relation="include">
-        </childnode>
-      </node>
-      <node id="2007">
-        <label>touchgfx/events/ClickEvent.hpp</label>
-        <link refid="_click_event_8hpp"/>
-        <childnode refid="2008" relation="include">
-        </childnode>
-        <childnode refid="1997" relation="include">
-        </childnode>
-      </node>
-      <node id="2027">
-        <label>touchgfx/FontManager.hpp</label>
-        <link refid="_font_manager_8hpp"/>
-        <childnode refid="1995" relation="include">
-        </childnode>
-      </node>
-      <node id="2018">
-        <label>touchgfx/hal/BlitOp.hpp</label>
-        <link refid="_blit_op_8hpp"/>
-        <childnode refid="1997" relation="include">
-        </childnode>
-      </node>
-      <node id="1997">
-        <label>touchgfx/hal/Types.hpp</label>
-        <link refid="_types_8hpp"/>
-        <childnode refid="1998" relation="include">
-        </childnode>
-        <childnode refid="1999" relation="include">
-        </childnode>
-        <childnode refid="2000" relation="include">
-        </childnode>
-      </node>
-      <node id="2023">
-        <label>platform/core/MCUInstrumentation.hpp</label>
-        <link refid="_m_c_u_instrumentation_8hpp"/>
-        <childnode refid="1999" relation="include">
         </childnode>
       </node>
       <node id="2014">
@@ -130,14 +58,6 @@
         <childnode refid="2002" relation="include">
         </childnode>
         <childnode refid="1997" relation="include">
-        </childnode>
-      </node>
-      <node id="2019">
-        <label>touchgfx/hal/DMA.hpp</label>
-        <link refid="_d_m_a_8hpp"/>
-        <childnode refid="2020" relation="include">
-        </childnode>
-        <childnode refid="2018" relation="include">
         </childnode>
       </node>
       <node id="2000">
@@ -158,10 +78,13 @@
         <childnode refid="1997" relation="include">
         </childnode>
       </node>
-      <node id="2029">
-        <label>touchgfx/Texts.hpp</label>
-        <link refid="_texts_8hpp"/>
-        <childnode refid="1996" relation="include">
+      <node id="1999">
+        <label>stdint.h</label>
+      </node>
+      <node id="2006">
+        <label>touchgfx/UIEventListener.hpp</label>
+        <link refid="_u_i_event_listener_8hpp"/>
+        <childnode refid="1997" relation="include">
         </childnode>
       </node>
       <node id="2021">
@@ -170,11 +93,18 @@
         <childnode refid="2014" relation="include">
         </childnode>
       </node>
-      <node id="2010">
-        <label>touchgfx/events/GestureEvent.hpp</label>
-        <link refid="_gesture_event_8hpp"/>
-        <childnode refid="2008" relation="include">
+      <node id="2003">
+        <label>cassert</label>
+      </node>
+      <node id="2025">
+        <label>platform/driver/touch/TouchController.hpp</label>
+        <link refid="_touch_controller_8hpp"/>
+        <childnode refid="1997" relation="include">
         </childnode>
+      </node>
+      <node id="2013">
+        <label>touchgfx/TextureMapTypes.hpp</label>
+        <link refid="_texture_map_types_8hpp"/>
         <childnode refid="1997" relation="include">
         </childnode>
       </node>
@@ -190,50 +120,18 @@
         <childnode refid="1997" relation="include">
         </childnode>
       </node>
-      <node id="2009">
-        <label>touchgfx/events/DragEvent.hpp</label>
-        <link refid="_drag_event_8hpp"/>
+      <node id="2010">
+        <label>touchgfx/events/GestureEvent.hpp</label>
+        <link refid="_gesture_event_8hpp"/>
         <childnode refid="2008" relation="include">
         </childnode>
         <childnode refid="1997" relation="include">
         </childnode>
       </node>
-      <node id="2002">
-        <label>touchgfx/Bitmap.hpp</label>
-        <link refid="_bitmap_8hpp"/>
-        <childnode refid="2003" relation="include">
-        </childnode>
+      <node id="2024">
+        <label>platform/driver/button/ButtonController.hpp</label>
+        <link refid="_button_controller_8hpp"/>
         <childnode refid="1997" relation="include">
-        </childnode>
-      </node>
-      <node id="1996">
-        <label>touchgfx/Unicode.hpp</label>
-        <link refid="_unicode_8hpp"/>
-        <childnode refid="1994" relation="include">
-        </childnode>
-        <childnode refid="1997" relation="include">
-        </childnode>
-      </node>
-      <node id="2020">
-        <label>touchgfx/hal/Atomic.hpp</label>
-        <link refid="_atomic_8hpp"/>
-      </node>
-      <node id="2030">
-        <label>touchgfx/widgets/Widget.hpp</label>
-        <link refid="_widget_8hpp"/>
-        <childnode refid="1998" relation="include">
-        </childnode>
-        <childnode refid="2004" relation="include">
-        </childnode>
-      </node>
-      <node id="2008">
-        <label>touchgfx/Event.hpp</label>
-        <link refid="_event_8hpp"/>
-      </node>
-      <node id="1991">
-        <label>touchgfx/containers/buttons/WildcardTextButtonStyle.hpp</label>
-        <link refid="_wildcard_text_button_style_8hpp"/>
-        <childnode refid="1992" relation="include">
         </childnode>
       </node>
       <node id="1995">
@@ -242,6 +140,22 @@
         <childnode refid="1996" relation="include">
         </childnode>
         <childnode refid="1997" relation="include">
+        </childnode>
+      </node>
+      <node id="2027">
+        <label>touchgfx/FontManager.hpp</label>
+        <link refid="_font_manager_8hpp"/>
+        <childnode refid="1995" relation="include">
+        </childnode>
+      </node>
+      <node id="1997">
+        <label>touchgfx/hal/Types.hpp</label>
+        <link refid="_types_8hpp"/>
+        <childnode refid="1998" relation="include">
+        </childnode>
+        <childnode refid="1999" relation="include">
+        </childnode>
+        <childnode refid="2000" relation="include">
         </childnode>
       </node>
       <node id="2004">
@@ -262,6 +176,24 @@
         <childnode refid="1997" relation="include">
         </childnode>
       </node>
+      <node id="2018">
+        <label>touchgfx/hal/BlitOp.hpp</label>
+        <link refid="_blit_op_8hpp"/>
+        <childnode refid="1997" relation="include">
+        </childnode>
+      </node>
+      <node id="2020">
+        <label>touchgfx/hal/Atomic.hpp</label>
+        <link refid="_atomic_8hpp"/>
+      </node>
+      <node id="2011">
+        <label>touchgfx/transitions/Transition.hpp</label>
+        <link refid="_transition_8hpp"/>
+        <childnode refid="1997" relation="include">
+        </childnode>
+        <childnode refid="2012" relation="include">
+        </childnode>
+      </node>
       <node id="1992">
         <label>touchgfx/widgets/TextAreaWithWildcard.hpp</label>
         <link refid="_text_area_with_wildcard_8hpp"/>
@@ -270,6 +202,38 @@
         <childnode refid="2001" relation="include">
         </childnode>
         <childnode refid="2026" relation="include">
+        </childnode>
+      </node>
+      <node id="2007">
+        <label>touchgfx/events/ClickEvent.hpp</label>
+        <link refid="_click_event_8hpp"/>
+        <childnode refid="2008" relation="include">
+        </childnode>
+        <childnode refid="1997" relation="include">
+        </childnode>
+      </node>
+      <node id="2030">
+        <label>touchgfx/widgets/Widget.hpp</label>
+        <link refid="_widget_8hpp"/>
+        <childnode refid="1998" relation="include">
+        </childnode>
+        <childnode refid="2004" relation="include">
+        </childnode>
+      </node>
+      <node id="2005">
+        <label>touchgfx/Application.hpp</label>
+        <link refid="_application_8hpp"/>
+        <childnode refid="2006" relation="include">
+        </childnode>
+        <childnode refid="2007" relation="include">
+        </childnode>
+        <childnode refid="2009" relation="include">
+        </childnode>
+        <childnode refid="2010" relation="include">
+        </childnode>
+        <childnode refid="1997" relation="include">
+        </childnode>
+        <childnode refid="2011" relation="include">
         </childnode>
       </node>
       <node id="2026">
@@ -289,6 +253,22 @@
         </childnode>
         <childnode refid="2030" relation="include">
         </childnode>
+      </node>
+      <node id="2017">
+        <label>touchgfx/Callback.hpp</label>
+        <link refid="_callback_8hpp"/>
+      </node>
+      <node id="1996">
+        <label>touchgfx/Unicode.hpp</label>
+        <link refid="_unicode_8hpp"/>
+        <childnode refid="1994" relation="include">
+        </childnode>
+        <childnode refid="1997" relation="include">
+        </childnode>
+      </node>
+      <node id="2008">
+        <label>touchgfx/Event.hpp</label>
+        <link refid="_event_8hpp"/>
       </node>
       <node id="2012">
         <label>touchgfx/lcd/LCD.hpp</label>
@@ -310,8 +290,28 @@
         <childnode refid="1997" relation="include">
         </childnode>
       </node>
+      <node id="2029">
+        <label>touchgfx/Texts.hpp</label>
+        <link refid="_texts_8hpp"/>
+        <childnode refid="1996" relation="include">
+        </childnode>
+      </node>
       <node id="2016">
         <label>stdio.h</label>
+      </node>
+      <node id="2019">
+        <label>touchgfx/hal/DMA.hpp</label>
+        <link refid="_d_m_a_8hpp"/>
+        <childnode refid="2020" relation="include">
+        </childnode>
+        <childnode refid="2018" relation="include">
+        </childnode>
+      </node>
+      <node id="2023">
+        <label>platform/core/MCUInstrumentation.hpp</label>
+        <link refid="_m_c_u_instrumentation_8hpp"/>
+        <childnode refid="1999" relation="include">
+        </childnode>
       </node>
       <node id="2001">
         <label>touchgfx/hal/HAL.hpp</label>

@@ -16,6 +16,10 @@
       <node id="3084">
         <label>assert.h</label>
       </node>
+      <node id="3086">
+        <label>touchgfx/hal/Config.hpp</label>
+        <link refid="_config_8hpp"/>
+      </node>
       <node id="3085">
         <label>stdint.h</label>
       </node>
@@ -29,10 +33,6 @@
         <childnode refid="3086" relation="include">
         </childnode>
       </node>
-      <node id="3086">
-        <label>touchgfx/hal/Config.hpp</label>
-        <link refid="_config_8hpp"/>
-      </node>
       <node id="3082">
         <label>touchgfx/EasingEquations.hpp</label>
         <link refid="_easing_equations_8hpp"/>
@@ -41,15 +41,17 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="3097">
-        <label>touchgfx/mixins/MoveAnimator.hpp</label>
-        <link refid="_move_animator_8hpp"/>
-        <childnode refid="3094" relation="include">
-        </childnode>
+      <node id="3096">
+        <label>touchgfx/mixins/FadeAnimator.hpp</label>
+        <link refid="_fade_animator_8hpp"/>
       </node>
-      <node id="3099">
-        <label>touchgfx/transitions/SlideTransition.hpp</label>
-        <link refid="_slide_transition_8hpp"/>
+      <node id="3098">
+        <label>touchgfx/transitions/CoverTransition.hpp</label>
+        <link refid="_cover_transition_8hpp"/>
+      </node>
+      <node id="3092">
+        <label>touchgfx/containers/scrollers/ScrollWheel.hpp</label>
+        <link refid="_scroll_wheel_8hpp"/>
       </node>
       <node id="3100">
         <label>touchgfx/widgets/AnimationTextureMapper.hpp</label>
@@ -65,13 +67,9 @@
         <childnode refid="3091" relation="include">
         </childnode>
       </node>
-      <node id="3095">
-        <label>touchgfx/containers/ZoomAnimationImage.hpp</label>
-        <link refid="_zoom_animation_image_8hpp"/>
-      </node>
-      <node id="3092">
-        <label>touchgfx/containers/scrollers/ScrollWheel.hpp</label>
-        <link refid="_scroll_wheel_8hpp"/>
+      <node id="3090">
+        <label>touchgfx/containers/scrollers/ScrollList.hpp</label>
+        <link refid="_scroll_list_8hpp"/>
       </node>
       <node id="3091">
         <label>touchgfx/containers/scrollers/ScrollWheelBase.hpp</label>
@@ -85,9 +83,27 @@
         <label>touchgfx/containers/clock/AnalogClock.hpp</label>
         <link refid="_analog_clock_8hpp"/>
       </node>
-      <node id="3090">
-        <label>touchgfx/containers/scrollers/ScrollList.hpp</label>
-        <link refid="_scroll_list_8hpp"/>
+      <node id="3095">
+        <label>touchgfx/containers/ZoomAnimationImage.hpp</label>
+        <link refid="_zoom_animation_image_8hpp"/>
+      </node>
+      <node id="3093">
+        <label>touchgfx/containers/scrollers/ScrollWheelWithSelectionStyle.hpp</label>
+        <link refid="_scroll_wheel_with_selection_style_8hpp"/>
+      </node>
+      <node id="3099">
+        <label>touchgfx/transitions/SlideTransition.hpp</label>
+        <link refid="_slide_transition_8hpp"/>
+      </node>
+      <node id="3097">
+        <label>touchgfx/mixins/MoveAnimator.hpp</label>
+        <link refid="_move_animator_8hpp"/>
+        <childnode refid="3094" relation="include">
+        </childnode>
+      </node>
+      <node id="3094">
+        <label>touchgfx/containers/SlideMenu.hpp</label>
+        <link refid="_slide_menu_8hpp"/>
       </node>
       <node id="3087">
         <label>touchgfx/EasingEquations.hpp</label>
@@ -110,22 +126,6 @@
         </childnode>
         <childnode refid="3100" relation="include">
         </childnode>
-      </node>
-      <node id="3093">
-        <label>touchgfx/containers/scrollers/ScrollWheelWithSelectionStyle.hpp</label>
-        <link refid="_scroll_wheel_with_selection_style_8hpp"/>
-      </node>
-      <node id="3098">
-        <label>touchgfx/transitions/CoverTransition.hpp</label>
-        <link refid="_cover_transition_8hpp"/>
-      </node>
-      <node id="3096">
-        <label>touchgfx/mixins/FadeAnimator.hpp</label>
-        <link refid="_fade_animator_8hpp"/>
-      </node>
-      <node id="3094">
-        <label>touchgfx/containers/SlideMenu.hpp</label>
-        <link refid="_slide_menu_8hpp"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classtouchgfx_1_1_easing_equations" prot="public">touchgfx::EasingEquations</innerclass>

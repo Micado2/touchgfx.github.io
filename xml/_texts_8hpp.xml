@@ -11,6 +11,10 @@
       <node id="5208">
         <label>assert.h</label>
       </node>
+      <node id="5210">
+        <label>touchgfx/hal/Config.hpp</label>
+        <link refid="_config_8hpp"/>
+      </node>
       <node id="5209">
         <label>stdint.h</label>
       </node>
@@ -24,16 +28,6 @@
         <childnode refid="5210" relation="include">
         </childnode>
       </node>
-      <node id="5210">
-        <label>touchgfx/hal/Config.hpp</label>
-        <link refid="_config_8hpp"/>
-      </node>
-      <node id="5204">
-        <label>touchgfx/Texts.hpp</label>
-        <link refid="_texts_8hpp"/>
-        <childnode refid="5205" relation="include">
-        </childnode>
-      </node>
       <node id="5205">
         <label>touchgfx/Unicode.hpp</label>
         <link refid="_unicode_8hpp"/>
@@ -42,16 +36,14 @@
         <childnode refid="5207" relation="include">
         </childnode>
       </node>
+      <node id="5204">
+        <label>touchgfx/Texts.hpp</label>
+        <link refid="_texts_8hpp"/>
+        <childnode refid="5205" relation="include">
+        </childnode>
+      </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="5222">
-        <label>touchgfx/widgets/Keyboard.hpp</label>
-        <link refid="_keyboard_8hpp"/>
-      </node>
-      <node id="5213">
-        <label>touchgfx/widgets/ButtonWithLabel.hpp</label>
-        <link refid="_button_with_label_8hpp"/>
-      </node>
       <node id="5220">
         <label>touchgfx/containers/clock/DigitalClock.hpp</label>
         <link refid="_digital_clock_8hpp"/>
@@ -60,21 +52,15 @@
         <label>touchgfx/containers/buttons/Buttons.hpp</label>
         <link refid="containers_2buttons_2_buttons_8hpp"/>
       </node>
+      <node id="5219">
+        <label>touchgfx/containers/buttons/WildcardTextButtonStyle.hpp</label>
+        <link refid="_wildcard_text_button_style_8hpp"/>
+        <childnode refid="5216" relation="include">
+        </childnode>
+      </node>
       <node id="5221">
         <label>touchgfx/containers/progress_indicators/TextProgress.hpp</label>
         <link refid="_text_progress_8hpp"/>
-      </node>
-      <node id="5211">
-        <label>touchgfx/Texts.hpp</label>
-        <link refid="_texts_8hpp"/>
-        <childnode refid="5212" relation="include">
-        </childnode>
-      </node>
-      <node id="5218">
-        <label>touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp</label>
-        <link refid="_two_wildcard_text_button_style_8hpp"/>
-        <childnode refid="5216" relation="include">
-        </childnode>
       </node>
       <node id="5212">
         <label>touchgfx/TypedText.hpp</label>
@@ -84,17 +70,9 @@
         <childnode refid="5214" relation="include">
         </childnode>
       </node>
-      <node id="5219">
-        <label>touchgfx/containers/buttons/WildcardTextButtonStyle.hpp</label>
-        <link refid="_wildcard_text_button_style_8hpp"/>
-        <childnode refid="5216" relation="include">
-        </childnode>
-      </node>
-      <node id="5215">
-        <label>touchgfx/containers/buttons/TextButtonStyle.hpp</label>
-        <link refid="_text_button_style_8hpp"/>
-        <childnode refid="5216" relation="include">
-        </childnode>
+      <node id="5222">
+        <label>touchgfx/widgets/Keyboard.hpp</label>
+        <link refid="_keyboard_8hpp"/>
       </node>
       <node id="5217">
         <label>touchgfx/widgets/TextAreaWithWildcard.hpp</label>
@@ -110,12 +88,34 @@
         <childnode refid="5222" relation="include">
         </childnode>
       </node>
+      <node id="5213">
+        <label>touchgfx/widgets/ButtonWithLabel.hpp</label>
+        <link refid="_button_with_label_8hpp"/>
+      </node>
       <node id="5214">
         <label>touchgfx/widgets/TextArea.hpp</label>
         <link refid="_text_area_8hpp"/>
         <childnode refid="5215" relation="include">
         </childnode>
         <childnode refid="5217" relation="include">
+        </childnode>
+      </node>
+      <node id="5218">
+        <label>touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp</label>
+        <link refid="_two_wildcard_text_button_style_8hpp"/>
+        <childnode refid="5216" relation="include">
+        </childnode>
+      </node>
+      <node id="5211">
+        <label>touchgfx/Texts.hpp</label>
+        <link refid="_texts_8hpp"/>
+        <childnode refid="5212" relation="include">
+        </childnode>
+      </node>
+      <node id="5215">
+        <label>touchgfx/containers/buttons/TextButtonStyle.hpp</label>
+        <link refid="_text_button_style_8hpp"/>
+        <childnode refid="5216" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
