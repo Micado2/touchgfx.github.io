@@ -8,9 +8,11 @@
       <node id="294">
         <label>assert.h</label>
       </node>
-      <node id="296">
-        <label>touchgfx/hal/Config.hpp</label>
-        <link refid="_config_8hpp"/>
+      <node id="292">
+        <label>platform/driver/i2c/I2C.hpp</label>
+        <link refid="_i2_c_8hpp"/>
+        <childnode refid="293" relation="include">
+        </childnode>
       </node>
       <node id="295">
         <label>stdint.h</label>
@@ -25,11 +27,9 @@
         <childnode refid="296" relation="include">
         </childnode>
       </node>
-      <node id="292">
-        <label>platform/driver/i2c/I2C.hpp</label>
-        <link refid="_i2_c_8hpp"/>
-        <childnode refid="293" relation="include">
-        </childnode>
+      <node id="296">
+        <label>touchgfx/hal/Config.hpp</label>
+        <link refid="_config_8hpp"/>
       </node>
     </incdepgraph>
     <invincdepgraph>

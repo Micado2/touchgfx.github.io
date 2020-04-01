@@ -6,30 +6,49 @@
     <includedby refid="_box_progress_8hpp" local="no">touchgfx/containers/progress_indicators/BoxProgress.hpp</includedby>
     <includedby refid="_image_progress_8hpp" local="no">touchgfx/containers/progress_indicators/ImageProgress.hpp</includedby>
     <incdepgraph>
+      <node id="2304">
+        <label>touchgfx/Application.hpp</label>
+        <link refid="_application_8hpp"/>
+        <childnode refid="2305" relation="include">
+        </childnode>
+        <childnode refid="2310" relation="include">
+        </childnode>
+        <childnode refid="2312" relation="include">
+        </childnode>
+        <childnode refid="2313" relation="include">
+        </childnode>
+        <childnode refid="2306" relation="include">
+        </childnode>
+        <childnode refid="2314" relation="include">
+        </childnode>
+      </node>
+      <node id="2322">
+        <label>touchgfx/TextureMapTypes.hpp</label>
+        <link refid="_texture_map_types_8hpp"/>
+        <childnode refid="2306" relation="include">
+        </childnode>
+      </node>
       <node id="2316">
         <label>stdarg.h</label>
-      </node>
-      <node id="2317">
-        <label>touchgfx/Bitmap.hpp</label>
-        <link refid="_bitmap_8hpp"/>
-        <childnode refid="2318" relation="include">
-        </childnode>
-        <childnode refid="2306" relation="include">
-        </childnode>
-      </node>
-      <node id="2312">
-        <label>touchgfx/events/DragEvent.hpp</label>
-        <link refid="_drag_event_8hpp"/>
-        <childnode refid="2311" relation="include">
-        </childnode>
-        <childnode refid="2306" relation="include">
-        </childnode>
       </node>
       <node id="2324">
         <label>windows.h</label>
       </node>
       <node id="2307">
         <label>assert.h</label>
+      </node>
+      <node id="2302">
+        <label>touchgfx/Callback.hpp</label>
+        <link refid="_callback_8hpp"/>
+      </node>
+      <node id="2305">
+        <label>touchgfx/UIEventListener.hpp</label>
+        <link refid="_u_i_event_listener_8hpp"/>
+        <childnode refid="2306" relation="include">
+        </childnode>
+      </node>
+      <node id="2308">
+        <label>stdint.h</label>
       </node>
       <node id="2321">
         <label>touchgfx/TextProvider.hpp</label>
@@ -39,6 +58,51 @@
         <childnode refid="2319" relation="include">
         </childnode>
         <childnode refid="2320" relation="include">
+        </childnode>
+      </node>
+      <node id="2318">
+        <label>cassert</label>
+      </node>
+      <node id="2300">
+        <label>touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp</label>
+        <link refid="_abstract_progress_indicator_8hpp"/>
+        <childnode refid="2301" relation="include">
+        </childnode>
+        <childnode refid="2326" relation="include">
+        </childnode>
+      </node>
+      <node id="2314">
+        <label>touchgfx/transitions/Transition.hpp</label>
+        <link refid="_transition_8hpp"/>
+        <childnode refid="2306" relation="include">
+        </childnode>
+        <childnode refid="2315" relation="include">
+        </childnode>
+      </node>
+      <node id="2310">
+        <label>touchgfx/events/ClickEvent.hpp</label>
+        <link refid="_click_event_8hpp"/>
+        <childnode refid="2311" relation="include">
+        </childnode>
+        <childnode refid="2306" relation="include">
+        </childnode>
+      </node>
+      <node id="2301">
+        <label>touchgfx/containers/Container.hpp</label>
+        <link refid="_container_8hpp"/>
+        <childnode refid="2302" relation="include">
+        </childnode>
+        <childnode refid="2303" relation="include">
+        </childnode>
+      </node>
+      <node id="2306">
+        <label>touchgfx/hal/Types.hpp</label>
+        <link refid="_types_8hpp"/>
+        <childnode refid="2307" relation="include">
+        </childnode>
+        <childnode refid="2308" relation="include">
+        </childnode>
+        <childnode refid="2309" relation="include">
         </childnode>
       </node>
       <node id="2323">
@@ -59,30 +123,6 @@
         <label>touchgfx/hal/Config.hpp</label>
         <link refid="_config_8hpp"/>
       </node>
-      <node id="2308">
-        <label>stdint.h</label>
-      </node>
-      <node id="2305">
-        <label>touchgfx/UIEventListener.hpp</label>
-        <link refid="_u_i_event_listener_8hpp"/>
-        <childnode refid="2306" relation="include">
-        </childnode>
-      </node>
-      <node id="2318">
-        <label>cassert</label>
-      </node>
-      <node id="2322">
-        <label>touchgfx/TextureMapTypes.hpp</label>
-        <link refid="_texture_map_types_8hpp"/>
-        <childnode refid="2306" relation="include">
-        </childnode>
-      </node>
-      <node id="2299">
-        <label>touchgfx/containers/progress_indicators/AbstractDirectionProgress.hpp</label>
-        <link refid="_abstract_direction_progress_8hpp"/>
-        <childnode refid="2300" relation="include">
-        </childnode>
-      </node>
       <node id="2313">
         <label>touchgfx/events/GestureEvent.hpp</label>
         <link refid="_gesture_event_8hpp"/>
@@ -91,22 +131,60 @@
         <childnode refid="2306" relation="include">
         </childnode>
       </node>
+      <node id="2326">
+        <label>touchgfx/widgets/Image.hpp</label>
+        <link refid="_image_8hpp"/>
+        <childnode refid="2317" relation="include">
+        </childnode>
+        <childnode refid="2306" relation="include">
+        </childnode>
+        <childnode refid="2315" relation="include">
+        </childnode>
+        <childnode refid="2327" relation="include">
+        </childnode>
+      </node>
+      <node id="2312">
+        <label>touchgfx/events/DragEvent.hpp</label>
+        <link refid="_drag_event_8hpp"/>
+        <childnode refid="2311" relation="include">
+        </childnode>
+        <childnode refid="2306" relation="include">
+        </childnode>
+      </node>
+      <node id="2317">
+        <label>touchgfx/Bitmap.hpp</label>
+        <link refid="_bitmap_8hpp"/>
+        <childnode refid="2318" relation="include">
+        </childnode>
+        <childnode refid="2306" relation="include">
+        </childnode>
+      </node>
+      <node id="2320">
+        <label>touchgfx/Unicode.hpp</label>
+        <link refid="_unicode_8hpp"/>
+        <childnode refid="2316" relation="include">
+        </childnode>
+        <childnode refid="2306" relation="include">
+        </childnode>
+      </node>
+      <node id="2327">
+        <label>touchgfx/widgets/Widget.hpp</label>
+        <link refid="_widget_8hpp"/>
+        <childnode refid="2307" relation="include">
+        </childnode>
+        <childnode refid="2303" relation="include">
+        </childnode>
+      </node>
+      <node id="2311">
+        <label>touchgfx/Event.hpp</label>
+        <link refid="_event_8hpp"/>
+      </node>
       <node id="2319">
         <label>touchgfx/Font.hpp</label>
         <link refid="_font_8hpp"/>
         <childnode refid="2320" relation="include">
         </childnode>
         <childnode refid="2306" relation="include">
-        </childnode>
-      </node>
-      <node id="2306">
-        <label>touchgfx/hal/Types.hpp</label>
-        <link refid="_types_8hpp"/>
-        <childnode refid="2307" relation="include">
-        </childnode>
-        <childnode refid="2308" relation="include">
-        </childnode>
-        <childnode refid="2309" relation="include">
         </childnode>
       </node>
       <node id="2303">
@@ -126,90 +204,6 @@
         </childnode>
         <childnode refid="2306" relation="include">
         </childnode>
-      </node>
-      <node id="2326">
-        <label>touchgfx/widgets/Image.hpp</label>
-        <link refid="_image_8hpp"/>
-        <childnode refid="2317" relation="include">
-        </childnode>
-        <childnode refid="2306" relation="include">
-        </childnode>
-        <childnode refid="2315" relation="include">
-        </childnode>
-        <childnode refid="2327" relation="include">
-        </childnode>
-      </node>
-      <node id="2314">
-        <label>touchgfx/transitions/Transition.hpp</label>
-        <link refid="_transition_8hpp"/>
-        <childnode refid="2306" relation="include">
-        </childnode>
-        <childnode refid="2315" relation="include">
-        </childnode>
-      </node>
-      <node id="2301">
-        <label>touchgfx/containers/Container.hpp</label>
-        <link refid="_container_8hpp"/>
-        <childnode refid="2302" relation="include">
-        </childnode>
-        <childnode refid="2303" relation="include">
-        </childnode>
-      </node>
-      <node id="2310">
-        <label>touchgfx/events/ClickEvent.hpp</label>
-        <link refid="_click_event_8hpp"/>
-        <childnode refid="2311" relation="include">
-        </childnode>
-        <childnode refid="2306" relation="include">
-        </childnode>
-      </node>
-      <node id="2327">
-        <label>touchgfx/widgets/Widget.hpp</label>
-        <link refid="_widget_8hpp"/>
-        <childnode refid="2307" relation="include">
-        </childnode>
-        <childnode refid="2303" relation="include">
-        </childnode>
-      </node>
-      <node id="2300">
-        <label>touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp</label>
-        <link refid="_abstract_progress_indicator_8hpp"/>
-        <childnode refid="2301" relation="include">
-        </childnode>
-        <childnode refid="2326" relation="include">
-        </childnode>
-      </node>
-      <node id="2304">
-        <label>touchgfx/Application.hpp</label>
-        <link refid="_application_8hpp"/>
-        <childnode refid="2305" relation="include">
-        </childnode>
-        <childnode refid="2310" relation="include">
-        </childnode>
-        <childnode refid="2312" relation="include">
-        </childnode>
-        <childnode refid="2313" relation="include">
-        </childnode>
-        <childnode refid="2306" relation="include">
-        </childnode>
-        <childnode refid="2314" relation="include">
-        </childnode>
-      </node>
-      <node id="2302">
-        <label>touchgfx/Callback.hpp</label>
-        <link refid="_callback_8hpp"/>
-      </node>
-      <node id="2320">
-        <label>touchgfx/Unicode.hpp</label>
-        <link refid="_unicode_8hpp"/>
-        <childnode refid="2316" relation="include">
-        </childnode>
-        <childnode refid="2306" relation="include">
-        </childnode>
-      </node>
-      <node id="2311">
-        <label>touchgfx/Event.hpp</label>
-        <link refid="_event_8hpp"/>
       </node>
       <node id="2315">
         <label>touchgfx/lcd/LCD.hpp</label>
@@ -231,11 +225,21 @@
         <childnode refid="2306" relation="include">
         </childnode>
       </node>
+      <node id="2299">
+        <label>touchgfx/containers/progress_indicators/AbstractDirectionProgress.hpp</label>
+        <link refid="_abstract_direction_progress_8hpp"/>
+        <childnode refid="2300" relation="include">
+        </childnode>
+      </node>
       <node id="2325">
         <label>stdio.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
+      <node id="2330">
+        <label>touchgfx/containers/progress_indicators/ImageProgress.hpp</label>
+        <link refid="_image_progress_8hpp"/>
+      </node>
       <node id="2329">
         <label>touchgfx/containers/progress_indicators/BoxProgress.hpp</label>
         <link refid="_box_progress_8hpp"/>
@@ -247,10 +251,6 @@
         </childnode>
         <childnode refid="2330" relation="include">
         </childnode>
-      </node>
-      <node id="2330">
-        <label>touchgfx/containers/progress_indicators/ImageProgress.hpp</label>
-        <link refid="_image_progress_8hpp"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classtouchgfx_1_1_abstract_direction_progress" prot="public">touchgfx::AbstractDirectionProgress</innerclass>
