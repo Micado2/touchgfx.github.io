@@ -5,35 +5,23 @@
     <includes refid="_abstract_button_container_8hpp" local="no">touchgfx/containers/buttons/AbstractButtonContainer.hpp</includes>
     <includedby refid="containers_2buttons_2_buttons_8hpp" local="no">touchgfx/containers/buttons/Buttons.hpp</includedby>
     <incdepgraph>
-      <node id="1718">
-        <label>touchgfx/Application.hpp</label>
-        <link refid="_application_8hpp"/>
-        <childnode refid="1719" relation="include">
-        </childnode>
-        <childnode refid="1724" relation="include">
-        </childnode>
-        <childnode refid="1726" relation="include">
-        </childnode>
-        <childnode refid="1727" relation="include">
-        </childnode>
-        <childnode refid="1720" relation="include">
-        </childnode>
-        <childnode refid="1728" relation="include">
-        </childnode>
-      </node>
-      <node id="1736">
-        <label>touchgfx/TextureMapTypes.hpp</label>
-        <link refid="_texture_map_types_8hpp"/>
-        <childnode refid="1720" relation="include">
-        </childnode>
-      </node>
       <node id="1730">
         <label>stdarg.h</label>
       </node>
-      <node id="1714">
-        <label>touchgfx/containers/buttons/AbstractButtonContainer.hpp</label>
-        <link refid="_abstract_button_container_8hpp"/>
-        <childnode refid="1715" relation="include">
+      <node id="1731">
+        <label>touchgfx/Bitmap.hpp</label>
+        <link refid="_bitmap_8hpp"/>
+        <childnode refid="1732" relation="include">
+        </childnode>
+        <childnode refid="1720" relation="include">
+        </childnode>
+      </node>
+      <node id="1726">
+        <label>touchgfx/events/DragEvent.hpp</label>
+        <link refid="_drag_event_8hpp"/>
+        <childnode refid="1725" relation="include">
+        </childnode>
+        <childnode refid="1720" relation="include">
         </childnode>
       </node>
       <node id="1738">
@@ -41,19 +29,6 @@
       </node>
       <node id="1721">
         <label>assert.h</label>
-      </node>
-      <node id="1716">
-        <label>touchgfx/Callback.hpp</label>
-        <link refid="_callback_8hpp"/>
-      </node>
-      <node id="1719">
-        <label>touchgfx/UIEventListener.hpp</label>
-        <link refid="_u_i_event_listener_8hpp"/>
-        <childnode refid="1720" relation="include">
-        </childnode>
-      </node>
-      <node id="1722">
-        <label>stdint.h</label>
       </node>
       <node id="1735">
         <label>touchgfx/TextProvider.hpp</label>
@@ -63,43 +38,6 @@
         <childnode refid="1733" relation="include">
         </childnode>
         <childnode refid="1734" relation="include">
-        </childnode>
-      </node>
-      <node id="1732">
-        <label>cassert</label>
-      </node>
-      <node id="1728">
-        <label>touchgfx/transitions/Transition.hpp</label>
-        <link refid="_transition_8hpp"/>
-        <childnode refid="1720" relation="include">
-        </childnode>
-        <childnode refid="1729" relation="include">
-        </childnode>
-      </node>
-      <node id="1724">
-        <label>touchgfx/events/ClickEvent.hpp</label>
-        <link refid="_click_event_8hpp"/>
-        <childnode refid="1725" relation="include">
-        </childnode>
-        <childnode refid="1720" relation="include">
-        </childnode>
-      </node>
-      <node id="1715">
-        <label>touchgfx/containers/Container.hpp</label>
-        <link refid="_container_8hpp"/>
-        <childnode refid="1716" relation="include">
-        </childnode>
-        <childnode refid="1717" relation="include">
-        </childnode>
-      </node>
-      <node id="1720">
-        <label>touchgfx/hal/Types.hpp</label>
-        <link refid="_types_8hpp"/>
-        <childnode refid="1721" relation="include">
-        </childnode>
-        <childnode refid="1722" relation="include">
-        </childnode>
-        <childnode refid="1723" relation="include">
         </childnode>
       </node>
       <node id="1737">
@@ -120,6 +58,24 @@
         <label>touchgfx/hal/Config.hpp</label>
         <link refid="_config_8hpp"/>
       </node>
+      <node id="1722">
+        <label>stdint.h</label>
+      </node>
+      <node id="1719">
+        <label>touchgfx/UIEventListener.hpp</label>
+        <link refid="_u_i_event_listener_8hpp"/>
+        <childnode refid="1720" relation="include">
+        </childnode>
+      </node>
+      <node id="1732">
+        <label>cassert</label>
+      </node>
+      <node id="1736">
+        <label>touchgfx/TextureMapTypes.hpp</label>
+        <link refid="_texture_map_types_8hpp"/>
+        <childnode refid="1720" relation="include">
+        </childnode>
+      </node>
       <node id="1727">
         <label>touchgfx/events/GestureEvent.hpp</label>
         <link refid="_gesture_event_8hpp"/>
@@ -128,46 +84,22 @@
         <childnode refid="1720" relation="include">
         </childnode>
       </node>
-      <node id="1726">
-        <label>touchgfx/events/DragEvent.hpp</label>
-        <link refid="_drag_event_8hpp"/>
-        <childnode refid="1725" relation="include">
-        </childnode>
-        <childnode refid="1720" relation="include">
-        </childnode>
-      </node>
-      <node id="1731">
-        <label>touchgfx/Bitmap.hpp</label>
-        <link refid="_bitmap_8hpp"/>
-        <childnode refid="1732" relation="include">
-        </childnode>
-        <childnode refid="1720" relation="include">
-        </childnode>
-      </node>
-      <node id="1734">
-        <label>touchgfx/Unicode.hpp</label>
-        <link refid="_unicode_8hpp"/>
-        <childnode refid="1730" relation="include">
-        </childnode>
-        <childnode refid="1720" relation="include">
-        </childnode>
-      </node>
-      <node id="1725">
-        <label>touchgfx/Event.hpp</label>
-        <link refid="_event_8hpp"/>
-      </node>
-      <node id="1713">
-        <label>touchgfx/containers/buttons/ClickButtonTrigger.hpp</label>
-        <link refid="_click_button_trigger_8hpp"/>
-        <childnode refid="1714" relation="include">
-        </childnode>
-      </node>
       <node id="1733">
         <label>touchgfx/Font.hpp</label>
         <link refid="_font_8hpp"/>
         <childnode refid="1734" relation="include">
         </childnode>
         <childnode refid="1720" relation="include">
+        </childnode>
+      </node>
+      <node id="1720">
+        <label>touchgfx/hal/Types.hpp</label>
+        <link refid="_types_8hpp"/>
+        <childnode refid="1721" relation="include">
+        </childnode>
+        <childnode refid="1722" relation="include">
+        </childnode>
+        <childnode refid="1723" relation="include">
         </childnode>
       </node>
       <node id="1717">
@@ -186,6 +118,74 @@
         <childnode refid="1727" relation="include">
         </childnode>
         <childnode refid="1720" relation="include">
+        </childnode>
+      </node>
+      <node id="1713">
+        <label>touchgfx/containers/buttons/ClickButtonTrigger.hpp</label>
+        <link refid="_click_button_trigger_8hpp"/>
+        <childnode refid="1714" relation="include">
+        </childnode>
+      </node>
+      <node id="1728">
+        <label>touchgfx/transitions/Transition.hpp</label>
+        <link refid="_transition_8hpp"/>
+        <childnode refid="1720" relation="include">
+        </childnode>
+        <childnode refid="1729" relation="include">
+        </childnode>
+      </node>
+      <node id="1715">
+        <label>touchgfx/containers/Container.hpp</label>
+        <link refid="_container_8hpp"/>
+        <childnode refid="1716" relation="include">
+        </childnode>
+        <childnode refid="1717" relation="include">
+        </childnode>
+      </node>
+      <node id="1724">
+        <label>touchgfx/events/ClickEvent.hpp</label>
+        <link refid="_click_event_8hpp"/>
+        <childnode refid="1725" relation="include">
+        </childnode>
+        <childnode refid="1720" relation="include">
+        </childnode>
+      </node>
+      <node id="1718">
+        <label>touchgfx/Application.hpp</label>
+        <link refid="_application_8hpp"/>
+        <childnode refid="1719" relation="include">
+        </childnode>
+        <childnode refid="1724" relation="include">
+        </childnode>
+        <childnode refid="1726" relation="include">
+        </childnode>
+        <childnode refid="1727" relation="include">
+        </childnode>
+        <childnode refid="1720" relation="include">
+        </childnode>
+        <childnode refid="1728" relation="include">
+        </childnode>
+      </node>
+      <node id="1716">
+        <label>touchgfx/Callback.hpp</label>
+        <link refid="_callback_8hpp"/>
+      </node>
+      <node id="1734">
+        <label>touchgfx/Unicode.hpp</label>
+        <link refid="_unicode_8hpp"/>
+        <childnode refid="1730" relation="include">
+        </childnode>
+        <childnode refid="1720" relation="include">
+        </childnode>
+      </node>
+      <node id="1725">
+        <label>touchgfx/Event.hpp</label>
+        <link refid="_event_8hpp"/>
+      </node>
+      <node id="1714">
+        <label>touchgfx/containers/buttons/AbstractButtonContainer.hpp</label>
+        <link refid="_abstract_button_container_8hpp"/>
+        <childnode refid="1715" relation="include">
         </childnode>
       </node>
       <node id="1729">

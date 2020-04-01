@@ -4,15 +4,15 @@
     <compoundname>ClickListener.hpp</compoundname>
     <includes refid="_callback_8hpp" local="no">touchgfx/Callback.hpp</includes>
     <incdepgraph>
-      <node id="4909">
-        <label>touchgfx/Callback.hpp</label>
-        <link refid="_callback_8hpp"/>
-      </node>
       <node id="4908">
         <label>touchgfx/mixins/ClickListener.hpp</label>
         <link refid="_click_listener_8hpp"/>
         <childnode refid="4909" relation="include">
         </childnode>
+      </node>
+      <node id="4909">
+        <label>touchgfx/Callback.hpp</label>
+        <link refid="_callback_8hpp"/>
       </node>
     </incdepgraph>
     <innerclass refid="classtouchgfx_1_1_click_listener" prot="public">touchgfx::ClickListener</innerclass>

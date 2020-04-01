@@ -5,27 +5,27 @@
     <includes refid="_callback_8hpp" local="no">touchgfx/Callback.hpp</includes>
     <includedby refid="_snapper_8hpp" local="no">touchgfx/mixins/Snapper.hpp</includedby>
     <incdepgraph>
-      <node id="4912">
-        <label>touchgfx/Callback.hpp</label>
-        <link refid="_callback_8hpp"/>
-      </node>
       <node id="4911">
         <label>touchgfx/mixins/Draggable.hpp</label>
         <link refid="_draggable_8hpp"/>
         <childnode refid="4912" relation="include">
         </childnode>
       </node>
+      <node id="4912">
+        <label>touchgfx/Callback.hpp</label>
+        <link refid="_callback_8hpp"/>
+      </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="4914">
-        <label>touchgfx/mixins/Snapper.hpp</label>
-        <link refid="_snapper_8hpp"/>
-      </node>
       <node id="4913">
         <label>touchgfx/mixins/Draggable.hpp</label>
         <link refid="_draggable_8hpp"/>
         <childnode refid="4914" relation="include">
         </childnode>
+      </node>
+      <node id="4914">
+        <label>touchgfx/mixins/Snapper.hpp</label>
+        <link refid="_snapper_8hpp"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classtouchgfx_1_1_draggable" prot="public">touchgfx::Draggable</innerclass>

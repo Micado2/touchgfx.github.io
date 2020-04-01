@@ -5660,7 +5660,7 @@
   </compound>
   <compound refid="dir_5eae9ec9ab8b43310260374554d16087" kind="dir"><name>touchgfx/canvas_widget_renderer</name>
   </compound>
-  <compound refid="dir_26eef9ff65dde7c9ded8ef7c67b54ede" kind="dir"><name>C:/Workspace/touchgfx/touchgfx/documentation/changelog</name>
+  <compound refid="dir_26eef9ff65dde7c9ded8ef7c67b54ede" kind="dir"><name>C:/git/touchgfx.git/touchgfx/documentation/changelog</name>
   </compound>
   <compound refid="dir_bb8b6a6e1170945c4378d4a395f0c8fc" kind="dir"><name>touchgfx/containers/clock</name>
   </compound>
@@ -5670,7 +5670,7 @@
   </compound>
   <compound refid="dir_f2c374448d9fda4e56eacfa123e4d519" kind="dir"><name>platform/core</name>
   </compound>
-  <compound refid="dir_138aff360eb965c43b94267b8d1ce09e" kind="dir"><name>C:/Workspace/touchgfx/touchgfx/documentation</name>
+  <compound refid="dir_138aff360eb965c43b94267b8d1ce09e" kind="dir"><name>C:/git/touchgfx.git/touchgfx/documentation</name>
   </compound>
   <compound refid="dir_2f9b547542ac2ab3a0d3655507f6c40a" kind="dir"><name>platform/driver</name>
   </compound>
