@@ -4,22 +4,29 @@
     <compoundname>NoTransition.hpp</compoundname>
     <includes refid="_transition_8hpp" local="no">touchgfx/transitions/Transition.hpp</includes>
     <incdepgraph>
-      <node id="5443">
-        <label>stdarg.h</label>
-      </node>
-      <node id="5444">
-        <label>touchgfx/Bitmap.hpp</label>
-        <link refid="_bitmap_8hpp"/>
-        <childnode refid="5445" relation="include">
-        </childnode>
+      <node id="5449">
+        <label>touchgfx/TextureMapTypes.hpp</label>
+        <link refid="_texture_map_types_8hpp"/>
         <childnode refid="5438" relation="include">
         </childnode>
+      </node>
+      <node id="5443">
+        <label>stdarg.h</label>
       </node>
       <node id="5451">
         <label>windows.h</label>
       </node>
       <node id="5439">
         <label>assert.h</label>
+      </node>
+      <node id="5436">
+        <label>touchgfx/transitions/NoTransition.hpp</label>
+        <link refid="_no_transition_8hpp"/>
+        <childnode refid="5437" relation="include">
+        </childnode>
+      </node>
+      <node id="5440">
+        <label>stdint.h</label>
       </node>
       <node id="5448">
         <label>touchgfx/TextProvider.hpp</label>
@@ -29,6 +36,27 @@
         <childnode refid="5446" relation="include">
         </childnode>
         <childnode refid="5447" relation="include">
+        </childnode>
+      </node>
+      <node id="5445">
+        <label>cassert</label>
+      </node>
+      <node id="5437">
+        <label>touchgfx/transitions/Transition.hpp</label>
+        <link refid="_transition_8hpp"/>
+        <childnode refid="5438" relation="include">
+        </childnode>
+        <childnode refid="5442" relation="include">
+        </childnode>
+      </node>
+      <node id="5438">
+        <label>touchgfx/hal/Types.hpp</label>
+        <link refid="_types_8hpp"/>
+        <childnode refid="5439" relation="include">
+        </childnode>
+        <childnode refid="5440" relation="include">
+        </childnode>
+        <childnode refid="5441" relation="include">
         </childnode>
       </node>
       <node id="5450">
@@ -49,15 +77,19 @@
         <label>touchgfx/hal/Config.hpp</label>
         <link refid="_config_8hpp"/>
       </node>
-      <node id="5440">
-        <label>stdint.h</label>
+      <node id="5444">
+        <label>touchgfx/Bitmap.hpp</label>
+        <link refid="_bitmap_8hpp"/>
+        <childnode refid="5445" relation="include">
+        </childnode>
+        <childnode refid="5438" relation="include">
+        </childnode>
       </node>
-      <node id="5445">
-        <label>cassert</label>
-      </node>
-      <node id="5449">
-        <label>touchgfx/TextureMapTypes.hpp</label>
-        <link refid="_texture_map_types_8hpp"/>
+      <node id="5447">
+        <label>touchgfx/Unicode.hpp</label>
+        <link refid="_unicode_8hpp"/>
+        <childnode refid="5443" relation="include">
+        </childnode>
         <childnode refid="5438" relation="include">
         </childnode>
       </node>
@@ -65,32 +97,6 @@
         <label>touchgfx/Font.hpp</label>
         <link refid="_font_8hpp"/>
         <childnode refid="5447" relation="include">
-        </childnode>
-        <childnode refid="5438" relation="include">
-        </childnode>
-      </node>
-      <node id="5438">
-        <label>touchgfx/hal/Types.hpp</label>
-        <link refid="_types_8hpp"/>
-        <childnode refid="5439" relation="include">
-        </childnode>
-        <childnode refid="5440" relation="include">
-        </childnode>
-        <childnode refid="5441" relation="include">
-        </childnode>
-      </node>
-      <node id="5437">
-        <label>touchgfx/transitions/Transition.hpp</label>
-        <link refid="_transition_8hpp"/>
-        <childnode refid="5438" relation="include">
-        </childnode>
-        <childnode refid="5442" relation="include">
-        </childnode>
-      </node>
-      <node id="5447">
-        <label>touchgfx/Unicode.hpp</label>
-        <link refid="_unicode_8hpp"/>
-        <childnode refid="5443" relation="include">
         </childnode>
         <childnode refid="5438" relation="include">
         </childnode>
@@ -113,12 +119,6 @@
         <childnode refid="5450" relation="include">
         </childnode>
         <childnode refid="5438" relation="include">
-        </childnode>
-      </node>
-      <node id="5436">
-        <label>touchgfx/transitions/NoTransition.hpp</label>
-        <link refid="_no_transition_8hpp"/>
-        <childnode refid="5437" relation="include">
         </childnode>
       </node>
       <node id="5452">

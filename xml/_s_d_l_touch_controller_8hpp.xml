@@ -7,10 +7,6 @@
       <node id="723">
         <label>assert.h</label>
       </node>
-      <node id="725">
-        <label>touchgfx/hal/Config.hpp</label>
-        <link refid="_config_8hpp"/>
-      </node>
       <node id="724">
         <label>stdint.h</label>
       </node>
@@ -29,6 +25,10 @@
         </childnode>
         <childnode refid="725" relation="include">
         </childnode>
+      </node>
+      <node id="725">
+        <label>touchgfx/hal/Config.hpp</label>
+        <link refid="_config_8hpp"/>
       </node>
       <node id="720">
         <label>platform/driver/touch/SDLTouchController.hpp</label>

@@ -6,30 +6,49 @@
     <includes refid="_callback_8hpp" local="no">touchgfx/Callback.hpp</includes>
     <includes refid="_radio_button_8hpp" local="no">touchgfx/widgets/RadioButton.hpp</includes>
     <incdepgraph>
+      <node id="8225">
+        <label>touchgfx/Application.hpp</label>
+        <link refid="_application_8hpp"/>
+        <childnode refid="8226" relation="include">
+        </childnode>
+        <childnode refid="8227" relation="include">
+        </childnode>
+        <childnode refid="8229" relation="include">
+        </childnode>
+        <childnode refid="8230" relation="include">
+        </childnode>
+        <childnode refid="8218" relation="include">
+        </childnode>
+        <childnode refid="8231" relation="include">
+        </childnode>
+      </node>
+      <node id="8237">
+        <label>touchgfx/TextureMapTypes.hpp</label>
+        <link refid="_texture_map_types_8hpp"/>
+        <childnode refid="8218" relation="include">
+        </childnode>
+      </node>
       <node id="8233">
         <label>stdarg.h</label>
-      </node>
-      <node id="8217">
-        <label>touchgfx/Bitmap.hpp</label>
-        <link refid="_bitmap_8hpp"/>
-        <childnode refid="8214" relation="include">
-        </childnode>
-        <childnode refid="8218" relation="include">
-        </childnode>
-      </node>
-      <node id="8229">
-        <label>touchgfx/events/DragEvent.hpp</label>
-        <link refid="_drag_event_8hpp"/>
-        <childnode refid="8228" relation="include">
-        </childnode>
-        <childnode refid="8218" relation="include">
-        </childnode>
       </node>
       <node id="8239">
         <label>windows.h</label>
       </node>
       <node id="8219">
         <label>assert.h</label>
+      </node>
+      <node id="8215">
+        <label>touchgfx/Callback.hpp</label>
+        <link refid="_callback_8hpp"/>
+      </node>
+      <node id="8226">
+        <label>touchgfx/UIEventListener.hpp</label>
+        <link refid="_u_i_event_listener_8hpp"/>
+        <childnode refid="8218" relation="include">
+        </childnode>
+      </node>
+      <node id="8220">
+        <label>stdint.h</label>
       </node>
       <node id="8236">
         <label>touchgfx/TextProvider.hpp</label>
@@ -39,6 +58,35 @@
         <childnode refid="8234" relation="include">
         </childnode>
         <childnode refid="8235" relation="include">
+        </childnode>
+      </node>
+      <node id="8214">
+        <label>cassert</label>
+      </node>
+      <node id="8231">
+        <label>touchgfx/transitions/Transition.hpp</label>
+        <link refid="_transition_8hpp"/>
+        <childnode refid="8218" relation="include">
+        </childnode>
+        <childnode refid="8232" relation="include">
+        </childnode>
+      </node>
+      <node id="8227">
+        <label>touchgfx/events/ClickEvent.hpp</label>
+        <link refid="_click_event_8hpp"/>
+        <childnode refid="8228" relation="include">
+        </childnode>
+        <childnode refid="8218" relation="include">
+        </childnode>
+      </node>
+      <node id="8218">
+        <label>touchgfx/hal/Types.hpp</label>
+        <link refid="_types_8hpp"/>
+        <childnode refid="8219" relation="include">
+        </childnode>
+        <childnode refid="8220" relation="include">
+        </childnode>
+        <childnode refid="8221" relation="include">
         </childnode>
       </node>
       <node id="8238">
@@ -59,18 +107,6 @@
         <label>touchgfx/hal/Config.hpp</label>
         <link refid="_config_8hpp"/>
       </node>
-      <node id="8220">
-        <label>stdint.h</label>
-      </node>
-      <node id="8226">
-        <label>touchgfx/UIEventListener.hpp</label>
-        <link refid="_u_i_event_listener_8hpp"/>
-        <childnode refid="8218" relation="include">
-        </childnode>
-      </node>
-      <node id="8214">
-        <label>cassert</label>
-      </node>
       <node id="8213">
         <label>touchgfx/widgets/RadioButtonGroup.hpp</label>
         <link refid="_radio_button_group_8hpp"/>
@@ -81,12 +117,6 @@
         <childnode refid="8216" relation="include">
         </childnode>
       </node>
-      <node id="8237">
-        <label>touchgfx/TextureMapTypes.hpp</label>
-        <link refid="_texture_map_types_8hpp"/>
-        <childnode refid="8218" relation="include">
-        </childnode>
-      </node>
       <node id="8230">
         <label>touchgfx/events/GestureEvent.hpp</label>
         <link refid="_gesture_event_8hpp"/>
@@ -95,22 +125,56 @@
         <childnode refid="8218" relation="include">
         </childnode>
       </node>
+      <node id="8229">
+        <label>touchgfx/events/DragEvent.hpp</label>
+        <link refid="_drag_event_8hpp"/>
+        <childnode refid="8228" relation="include">
+        </childnode>
+        <childnode refid="8218" relation="include">
+        </childnode>
+      </node>
+      <node id="8217">
+        <label>touchgfx/Bitmap.hpp</label>
+        <link refid="_bitmap_8hpp"/>
+        <childnode refid="8214" relation="include">
+        </childnode>
+        <childnode refid="8218" relation="include">
+        </childnode>
+      </node>
+      <node id="8216">
+        <label>touchgfx/widgets/RadioButton.hpp</label>
+        <link refid="_radio_button_8hpp"/>
+        <childnode refid="8217" relation="include">
+        </childnode>
+        <childnode refid="8222" relation="include">
+        </childnode>
+      </node>
+      <node id="8235">
+        <label>touchgfx/Unicode.hpp</label>
+        <link refid="_unicode_8hpp"/>
+        <childnode refid="8233" relation="include">
+        </childnode>
+        <childnode refid="8218" relation="include">
+        </childnode>
+      </node>
+      <node id="8223">
+        <label>touchgfx/widgets/Widget.hpp</label>
+        <link refid="_widget_8hpp"/>
+        <childnode refid="8219" relation="include">
+        </childnode>
+        <childnode refid="8224" relation="include">
+        </childnode>
+      </node>
+      <node id="8228">
+        <label>touchgfx/Event.hpp</label>
+        <link refid="_event_8hpp"/>
+      </node>
       <node id="8234">
         <label>touchgfx/Font.hpp</label>
         <link refid="_font_8hpp"/>
         <childnode refid="8235" relation="include">
         </childnode>
         <childnode refid="8218" relation="include">
-        </childnode>
-      </node>
-      <node id="8218">
-        <label>touchgfx/hal/Types.hpp</label>
-        <link refid="_types_8hpp"/>
-        <childnode refid="8219" relation="include">
-        </childnode>
-        <childnode refid="8220" relation="include">
-        </childnode>
-        <childnode refid="8221" relation="include">
         </childnode>
       </node>
       <node id="8224">
@@ -130,78 +194,6 @@
         </childnode>
         <childnode refid="8218" relation="include">
         </childnode>
-      </node>
-      <node id="8216">
-        <label>touchgfx/widgets/RadioButton.hpp</label>
-        <link refid="_radio_button_8hpp"/>
-        <childnode refid="8217" relation="include">
-        </childnode>
-        <childnode refid="8222" relation="include">
-        </childnode>
-      </node>
-      <node id="8231">
-        <label>touchgfx/transitions/Transition.hpp</label>
-        <link refid="_transition_8hpp"/>
-        <childnode refid="8218" relation="include">
-        </childnode>
-        <childnode refid="8232" relation="include">
-        </childnode>
-      </node>
-      <node id="8227">
-        <label>touchgfx/events/ClickEvent.hpp</label>
-        <link refid="_click_event_8hpp"/>
-        <childnode refid="8228" relation="include">
-        </childnode>
-        <childnode refid="8218" relation="include">
-        </childnode>
-      </node>
-      <node id="8223">
-        <label>touchgfx/widgets/Widget.hpp</label>
-        <link refid="_widget_8hpp"/>
-        <childnode refid="8219" relation="include">
-        </childnode>
-        <childnode refid="8224" relation="include">
-        </childnode>
-      </node>
-      <node id="8225">
-        <label>touchgfx/Application.hpp</label>
-        <link refid="_application_8hpp"/>
-        <childnode refid="8226" relation="include">
-        </childnode>
-        <childnode refid="8227" relation="include">
-        </childnode>
-        <childnode refid="8229" relation="include">
-        </childnode>
-        <childnode refid="8230" relation="include">
-        </childnode>
-        <childnode refid="8218" relation="include">
-        </childnode>
-        <childnode refid="8231" relation="include">
-        </childnode>
-      </node>
-      <node id="8222">
-        <label>touchgfx/widgets/AbstractButton.hpp</label>
-        <link refid="_abstract_button_8hpp"/>
-        <childnode refid="8215" relation="include">
-        </childnode>
-        <childnode refid="8223" relation="include">
-        </childnode>
-      </node>
-      <node id="8215">
-        <label>touchgfx/Callback.hpp</label>
-        <link refid="_callback_8hpp"/>
-      </node>
-      <node id="8235">
-        <label>touchgfx/Unicode.hpp</label>
-        <link refid="_unicode_8hpp"/>
-        <childnode refid="8233" relation="include">
-        </childnode>
-        <childnode refid="8218" relation="include">
-        </childnode>
-      </node>
-      <node id="8228">
-        <label>touchgfx/Event.hpp</label>
-        <link refid="_event_8hpp"/>
       </node>
       <node id="8232">
         <label>touchgfx/lcd/LCD.hpp</label>
@@ -225,6 +217,14 @@
       </node>
       <node id="8240">
         <label>stdio.h</label>
+      </node>
+      <node id="8222">
+        <label>touchgfx/widgets/AbstractButton.hpp</label>
+        <link refid="_abstract_button_8hpp"/>
+        <childnode refid="8215" relation="include">
+        </childnode>
+        <childnode refid="8223" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <innerclass refid="classtouchgfx_1_1_radio_button_group" prot="public">touchgfx::RadioButtonGroup</innerclass>
