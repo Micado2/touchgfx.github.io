@@ -1104,7 +1104,7 @@
 <para>Registers an array of bitmaps. </para>
         </briefdescription>
         <detaileddescription>
-<para>All <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> instances are bound to this database. This function is called automatically from <ref refid="namespacetouchgfx_1ac9f45e65d261580744b315b168aa520c" kindref="member">HAL::touchgfx_generic_init()</ref>.</para>
+<para>All <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> instances are bound to this database. This function is called automatically from HAL::touchgfx_generic_init().</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>data</parametername>

@@ -1496,7 +1496,7 @@
       </sectiondef>
       <sectiondef kind="public-static-func">
       <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1a01d10258588c00a9dbc319dec5bf438b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint8_t</type>
+        <type>FORCE_INLINE_FUNCTION uint8_t</type>
         <definition>static FORCE_INLINE_FUNCTION uint8_t div255</definition>
         <argsstring>(uint16_t num)</argsstring>
         <name>div255</name>
@@ -1527,7 +1527,7 @@
         <location file="touchgfx/lcd/LCD.hpp" line="437" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="437" bodyend="440"/>
       </memberdef>
       <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1a0494b479a5bedee50857441a3410c0f0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint32_t</type>
+        <type>FORCE_INLINE_FUNCTION uint32_t</type>
         <definition>static FORCE_INLINE_FUNCTION uint32_t div255g</definition>
         <argsstring>(uint32_t pixelxAlpha)</argsstring>
         <name>div255g</name>
@@ -1557,7 +1557,7 @@
         <location file="touchgfx/lcd/LCD.hpp" line="463" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="463" bodyend="466"/>
       </memberdef>
       <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1afacd4dbc6065589001a1724e20a72d89" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint32_t</type>
+        <type>FORCE_INLINE_FUNCTION uint32_t</type>
         <definition>static FORCE_INLINE_FUNCTION uint32_t div255rb</definition>
         <argsstring>(uint32_t pixelxAlpha)</argsstring>
         <name>div255rb</name>
@@ -2148,7 +2148,7 @@
       </sectiondef>
       <sectiondef kind="protected-static-func">
       <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1a6b34e4cedff06f4ebd797e00778077d2" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint8_t</type>
+        <type>FORCE_INLINE_FUNCTION uint8_t</type>
         <definition>static FORCE_INLINE_FUNCTION uint8_t getAlphaFromA4</definition>
         <argsstring>(const uint16_t *data, uint32_t offset)</argsstring>
         <name>getAlphaFromA4</name>

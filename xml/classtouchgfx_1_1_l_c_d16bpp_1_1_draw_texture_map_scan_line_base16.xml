@@ -5,7 +5,7 @@
     <basecompoundref refid="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base" prot="public" virt="non-virtual">LCD::DrawTextureMapScanLineBase</basecompoundref>
       <sectiondef kind="protected-func">
       <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_1_1_draw_texture_map_scan_line_base16_1a38edcbd3e6c790bf0989f5cba4d1f45c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> bool</type>
+        <type>FORCE_INLINE_FUNCTION bool</type>
         <definition>FORCE_INLINE_FUNCTION bool overrunCheckBilinearInterpolation</definition>
         <argsstring>(uint16_t *&amp;destBits, int &amp;pixelsToDraw, fixed16_16 &amp;U, fixed16_16 &amp;V, fixed16_16 deltaU, fixed16_16 deltaV, const int16_t maxWidth, const int16_t maxHeight)</argsstring>
         <name>overrunCheckBilinearInterpolation</name>
@@ -50,7 +50,7 @@
         <location file="platform/driver/lcd/LCD16bpp.hpp" line="583" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_1_1_draw_texture_map_scan_line_base16_1af8eae24fd3db5a00151a795b15f57e54" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> bool</type>
+        <type>FORCE_INLINE_FUNCTION bool</type>
         <definition>FORCE_INLINE_FUNCTION bool overrunCheckNearestNeighbor</definition>
         <argsstring>(uint16_t *&amp;destBits, int &amp;pixelsToDraw, fixed16_16 &amp;U, fixed16_16 &amp;V, fixed16_16 deltaU, fixed16_16 deltaV, const int16_t maxWidth, const int16_t maxHeight)</argsstring>
         <name>overrunCheckNearestNeighbor</name>

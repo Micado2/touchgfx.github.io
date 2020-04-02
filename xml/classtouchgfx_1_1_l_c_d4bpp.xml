@@ -845,7 +845,7 @@
       </sectiondef>
       <sectiondef kind="public-static-func">
       <memberdef kind="function" id="classtouchgfx_1_1_l_c_d4bpp_1a4c815962e1e7ba64a2786ee3c0e3be1d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint8_t</type>
+        <type>FORCE_INLINE_FUNCTION uint8_t</type>
         <definition>static FORCE_INLINE_FUNCTION uint8_t getBlueFromColor</definition>
         <argsstring>(colortype color)</argsstring>
         <name>getBlueFromColor</name>
@@ -875,7 +875,7 @@
         <location file="platform/driver/lcd/LCD4bpp.hpp" line="146" column="1" bodyfile="platform/driver/lcd/LCD4bpp.hpp" bodystart="146" bodyend="149"/>
       </memberdef>
       <memberdef kind="function" id="classtouchgfx_1_1_l_c_d4bpp_1ab5470f0d37b384d9383fb95376708766" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> <ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+        <type>FORCE_INLINE_FUNCTION <ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
         <definition>static FORCE_INLINE_FUNCTION colortype getColorFromRGB</definition>
         <argsstring>(uint8_t red, uint8_t green, uint8_t blue)</argsstring>
         <name>getColorFromRGB</name>
@@ -929,7 +929,7 @@
         <location file="platform/driver/lcd/LCD4bpp.hpp" line="94" column="1" bodyfile="platform/driver/lcd/LCD4bpp.hpp" bodystart="94" bodyend="98"/>
       </memberdef>
       <memberdef kind="function" id="classtouchgfx_1_1_l_c_d4bpp_1a72b8ef11cd5918a6bd5702e918b888ef" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint16_t</type>
+        <type>FORCE_INLINE_FUNCTION uint16_t</type>
         <definition>static FORCE_INLINE_FUNCTION uint16_t getFramebufferStride</definition>
         <argsstring>()</argsstring>
         <name>getFramebufferStride</name>
@@ -947,7 +947,7 @@
         <location file="platform/driver/lcd/LCD4bpp.hpp" line="74" column="1" bodyfile="platform/driver/lcd/LCD4bpp.hpp" bodystart="74" bodyend="78"/>
       </memberdef>
       <memberdef kind="function" id="classtouchgfx_1_1_l_c_d4bpp_1a7a0e0fbb531279a60027afc36648b43b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint8_t</type>
+        <type>FORCE_INLINE_FUNCTION uint8_t</type>
         <definition>static FORCE_INLINE_FUNCTION uint8_t getGreenFromColor</definition>
         <argsstring>(colortype color)</argsstring>
         <name>getGreenFromColor</name>
@@ -977,7 +977,7 @@
         <location file="platform/driver/lcd/LCD4bpp.hpp" line="129" column="1" bodyfile="platform/driver/lcd/LCD4bpp.hpp" bodystart="129" bodyend="132"/>
       </memberdef>
       <memberdef kind="function" id="classtouchgfx_1_1_l_c_d4bpp_1ac6073d99e25188ba4f43cbcdcef4c07d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint8_t</type>
+        <type>FORCE_INLINE_FUNCTION uint8_t</type>
         <definition>static FORCE_INLINE_FUNCTION uint8_t getRedFromColor</definition>
         <argsstring>(colortype color)</argsstring>
         <name>getRedFromColor</name>
@@ -1026,7 +1026,7 @@
           <declname>srcPixelOffset</declname>
         </param>
         <param>
-          <type>uint8_t *<ref refid="_config_8hpp_1aae3356b63849abbe8789dd41648ee90a" kindref="member">RESTRICT</ref></type>
+          <type>uint8_t *RESTRICT</type>
           <declname>dstAddress</declname>
         </param>
         <param>
@@ -1526,7 +1526,7 @@
       </sectiondef>
       <sectiondef kind="private-static-func">
       <memberdef kind="function" id="classtouchgfx_1_1_l_c_d4bpp_1a916179f24cb10e727972ee346f4bc197" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint8_t</type>
+        <type>FORCE_INLINE_FUNCTION uint8_t</type>
         <definition>static FORCE_INLINE_FUNCTION uint8_t bilinearInterpolate8</definition>
         <argsstring>(uint8_t c00, uint8_t c10, uint8_t x)</argsstring>
         <name>bilinearInterpolate8</name>
@@ -1551,7 +1551,7 @@
         <location file="platform/driver/lcd/LCD4bpp.hpp" line="269" column="1" bodyfile="platform/driver/lcd/LCD4bpp.hpp" bodystart="269" bodyend="276"/>
       </memberdef>
       <memberdef kind="function" id="classtouchgfx_1_1_l_c_d4bpp_1afbb3e2cdf65f85cb7c53bbdedcb3f65a" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint8_t</type>
+        <type>FORCE_INLINE_FUNCTION uint8_t</type>
         <definition>static FORCE_INLINE_FUNCTION uint8_t bilinearInterpolate8</definition>
         <argsstring>(uint8_t c00, uint8_t c10, uint8_t c01, uint8_t c11, uint8_t x, uint8_t y)</argsstring>
         <name>bilinearInterpolate8</name>
@@ -1588,7 +1588,7 @@
         <location file="platform/driver/lcd/LCD4bpp.hpp" line="278" column="1" bodyfile="platform/driver/lcd/LCD4bpp.hpp" bodystart="278" bodyend="287"/>
       </memberdef>
       <memberdef kind="function" id="classtouchgfx_1_1_l_c_d4bpp_1a2c8de7976ff6378a5928045e30a65cfb" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint8_t</type>
+        <type>FORCE_INLINE_FUNCTION uint8_t</type>
         <definition>static FORCE_INLINE_FUNCTION uint8_t div255_4</definition>
         <argsstring>(uint16_t value)</argsstring>
         <name>div255_4</name>

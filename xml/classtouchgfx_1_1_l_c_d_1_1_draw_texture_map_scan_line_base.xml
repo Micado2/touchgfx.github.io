@@ -366,7 +366,7 @@
       </sectiondef>
       <sectiondef kind="protected-func">
       <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1add0589d9e887a57f8b687470a08d8266" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> void</type>
+        <type>FORCE_INLINE_FUNCTION void</type>
         <definition>FORCE_INLINE_FUNCTION void drawTextureMapNextSubdivision</definition>
         <argsstring>(float &amp;ULeft, float &amp;VLeft, float &amp;ZRight, float &amp;URight, float &amp;VRight, float &amp;oneOverZRight, const float dOneOverZdXAff, float &amp;UOverZRight, const float dUOverZdXAff, float &amp;VOverZRight, const float dVOverZdXAff, const int affineLength, fixed16_16 &amp;U, fixed16_16 &amp;V, fixed16_16 &amp;deltaU, fixed16_16 &amp;deltaV)</argsstring>
         <name>drawTextureMapNextSubdivision</name>
@@ -574,7 +574,7 @@
         <location file="touchgfx/lcd/LCD.hpp" line="537" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="537" bodyend="554"/>
       </memberdef>
       <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1a22c84c4c44c3ec0427c4dca43d111740" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> bool</type>
+        <type>FORCE_INLINE_FUNCTION bool</type>
         <definition>FORCE_INLINE_FUNCTION bool is1Inside</definition>
         <argsstring>(int value, int limit)</argsstring>
         <name>is1Inside</name>
@@ -616,7 +616,7 @@
         <location file="touchgfx/lcd/LCD.hpp" line="564" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="564" bodyend="567"/>
       </memberdef>
       <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1a67e23de90ee7c3d9096ae799c7da8e7c" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> bool</type>
+        <type>FORCE_INLINE_FUNCTION bool</type>
         <definition>FORCE_INLINE_FUNCTION bool is1x1Inside</definition>
         <argsstring>(int x, int y, int width, int height)</argsstring>
         <name>is1x1Inside</name>
@@ -682,7 +682,7 @@
         <location file="touchgfx/lcd/LCD.hpp" line="579" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="579" bodyend="582"/>
       </memberdef>
       <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1acbb5432c44dc0aa4c4d033a45ad71ead" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> bool</type>
+        <type>FORCE_INLINE_FUNCTION bool</type>
         <definition>FORCE_INLINE_FUNCTION bool is2Inside</definition>
         <argsstring>(int value, int limit)</argsstring>
         <name>is2Inside</name>
@@ -724,7 +724,7 @@
         <location file="touchgfx/lcd/LCD.hpp" line="592" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="592" bodyend="595"/>
       </memberdef>
       <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1a465467b63215cdd985ba984c46fbd937" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> bool</type>
+        <type>FORCE_INLINE_FUNCTION bool</type>
         <definition>FORCE_INLINE_FUNCTION bool is2PartiallyInside</definition>
         <argsstring>(int value, int limit)</argsstring>
         <name>is2PartiallyInside</name>
@@ -766,7 +766,7 @@
         <location file="touchgfx/lcd/LCD.hpp" line="620" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="620" bodyend="623"/>
       </memberdef>
       <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1a7eb16f0232cb2658f9c3396888ef290f" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> bool</type>
+        <type>FORCE_INLINE_FUNCTION bool</type>
         <definition>FORCE_INLINE_FUNCTION bool is2x2Inside</definition>
         <argsstring>(int x, int y, int width, int height)</argsstring>
         <name>is2x2Inside</name>
@@ -832,7 +832,7 @@
         <location file="touchgfx/lcd/LCD.hpp" line="607" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="607" bodyend="610"/>
       </memberdef>
       <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1a5628626873a5c12fd2aaa6471bb76330" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> bool</type>
+        <type>FORCE_INLINE_FUNCTION bool</type>
         <definition>FORCE_INLINE_FUNCTION bool is2x2PartiallyInside</definition>
         <argsstring>(int x, int y, int width, int height)</argsstring>
         <name>is2x2PartiallyInside</name>

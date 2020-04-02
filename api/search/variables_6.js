@@ -21,7 +21,6 @@ var searchData=
   ['font',['font',['../structtouchgfx_1_1_l_c_d_1_1_string_visuals.html#aa11da001847a95e048397f8d86f8c117',1,'touchgfx::LCD::StringVisuals']]],
   ['fontheight',['fontHeight',['../classtouchgfx_1_1_font.html#a0368f14498012c2ea12c72b0eea75d92',1,'touchgfx::Font']]],
   ['fontidx',['fontIdx',['../structtouchgfx_1_1_typed_text_1_1_typed_text_data.html#a6d725b0c7beeb1a70a0a3136cfdd37cb',1,'touchgfx::TypedText::TypedTextData']]],
-  ['fontprovider',['fontProvider',['../_touch_g_f_x_init_8hpp.html#ae6a03aaf6183f872e39ab4cfc0ae6774',1,'TouchGFXInit.hpp']]],
   ['format',['format',['../structtouchgfx_1_1_bitmap_1_1_dynamic_bitmap_data.html#a7864fd50d470f893524181b4a59d9828',1,'touchgfx::Bitmap::DynamicBitmapData::format()'],['../classtouchgfx_1_1_pixel_data_widget.html#a6499284a8ca88c8b295478a33330c66d',1,'touchgfx::PixelDataWidget::format()']]],
   ['format_5fhi',['format_hi',['../structtouchgfx_1_1_bitmap_1_1_bitmap_data.html#aa000b83ee980e184eb1f10d367b538f3',1,'touchgfx::Bitmap::BitmapData']]],
   ['format_5flo',['format_lo',['../structtouchgfx_1_1_bitmap_1_1_bitmap_data.html#a3b3bb1f17d574e66c060c0dc0628c98f',1,'touchgfx::Bitmap::BitmapData']]],

@@ -9,137 +9,16 @@
     <includedby refid="_button_with_label_8hpp" local="no">touchgfx/widgets/ButtonWithLabel.hpp</includedby>
     <includedby refid="_text_area_8hpp" local="no">touchgfx/widgets/TextArea.hpp</includedby>
     <incdepgraph>
-      <node id="5648">
-        <label>stdarg.h</label>
-      </node>
-      <node id="5650">
-        <label>assert.h</label>
-      </node>
-      <node id="5652">
-        <label>touchgfx/hal/Config.hpp</label>
-        <link refid="_config_8hpp"/>
-      </node>
-      <node id="5651">
-        <label>stdint.h</label>
-      </node>
-      <node id="5645">
+      <node id="278">
         <label>cassert</label>
       </node>
-      <node id="5644">
+      <node id="277">
         <label>touchgfx/TypedText.hpp</label>
         <link refid="_typed_text_8hpp"/>
-        <childnode refid="5645" relation="include">
-        </childnode>
-        <childnode refid="5646" relation="include">
-        </childnode>
-        <childnode refid="5653" relation="include">
-        </childnode>
-        <childnode refid="5649" relation="include">
-        </childnode>
-      </node>
-      <node id="5646">
-        <label>touchgfx/Font.hpp</label>
-        <link refid="_font_8hpp"/>
-        <childnode refid="5647" relation="include">
-        </childnode>
-        <childnode refid="5649" relation="include">
-        </childnode>
-      </node>
-      <node id="5649">
-        <label>touchgfx/hal/Types.hpp</label>
-        <link refid="_types_8hpp"/>
-        <childnode refid="5650" relation="include">
-        </childnode>
-        <childnode refid="5651" relation="include">
-        </childnode>
-        <childnode refid="5652" relation="include">
-        </childnode>
-      </node>
-      <node id="5647">
-        <label>touchgfx/Unicode.hpp</label>
-        <link refid="_unicode_8hpp"/>
-        <childnode refid="5648" relation="include">
-        </childnode>
-        <childnode refid="5649" relation="include">
-        </childnode>
-      </node>
-      <node id="5653">
-        <label>touchgfx/Texts.hpp</label>
-        <link refid="_texts_8hpp"/>
-        <childnode refid="5647" relation="include">
+        <childnode refid="278" relation="include">
         </childnode>
       </node>
     </incdepgraph>
-    <invincdepgraph>
-      <node id="5662">
-        <label>touchgfx/containers/clock/DigitalClock.hpp</label>
-        <link refid="_digital_clock_8hpp"/>
-      </node>
-      <node id="5658">
-        <label>touchgfx/containers/buttons/Buttons.hpp</label>
-        <link refid="containers_2buttons_2_buttons_8hpp"/>
-      </node>
-      <node id="5661">
-        <label>touchgfx/containers/buttons/WildcardTextButtonStyle.hpp</label>
-        <link refid="_wildcard_text_button_style_8hpp"/>
-        <childnode refid="5658" relation="include">
-        </childnode>
-      </node>
-      <node id="5663">
-        <label>touchgfx/containers/progress_indicators/TextProgress.hpp</label>
-        <link refid="_text_progress_8hpp"/>
-      </node>
-      <node id="5654">
-        <label>touchgfx/TypedText.hpp</label>
-        <link refid="_typed_text_8hpp"/>
-        <childnode refid="5655" relation="include">
-        </childnode>
-        <childnode refid="5656" relation="include">
-        </childnode>
-      </node>
-      <node id="5664">
-        <label>touchgfx/widgets/Keyboard.hpp</label>
-        <link refid="_keyboard_8hpp"/>
-      </node>
-      <node id="5659">
-        <label>touchgfx/widgets/TextAreaWithWildcard.hpp</label>
-        <link refid="_text_area_with_wildcard_8hpp"/>
-        <childnode refid="5660" relation="include">
-        </childnode>
-        <childnode refid="5661" relation="include">
-        </childnode>
-        <childnode refid="5662" relation="include">
-        </childnode>
-        <childnode refid="5663" relation="include">
-        </childnode>
-        <childnode refid="5664" relation="include">
-        </childnode>
-      </node>
-      <node id="5655">
-        <label>touchgfx/widgets/ButtonWithLabel.hpp</label>
-        <link refid="_button_with_label_8hpp"/>
-      </node>
-      <node id="5656">
-        <label>touchgfx/widgets/TextArea.hpp</label>
-        <link refid="_text_area_8hpp"/>
-        <childnode refid="5657" relation="include">
-        </childnode>
-        <childnode refid="5659" relation="include">
-        </childnode>
-      </node>
-      <node id="5660">
-        <label>touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp</label>
-        <link refid="_two_wildcard_text_button_style_8hpp"/>
-        <childnode refid="5658" relation="include">
-        </childnode>
-      </node>
-      <node id="5657">
-        <label>touchgfx/containers/buttons/TextButtonStyle.hpp</label>
-        <link refid="_text_button_style_8hpp"/>
-        <childnode refid="5658" relation="include">
-        </childnode>
-      </node>
-    </invincdepgraph>
     <innerclass refid="classtouchgfx_1_1_typed_text" prot="public">touchgfx::TypedText</innerclass>
     <innerclass refid="structtouchgfx_1_1_typed_text_1_1_typed_text_data" prot="public">touchgfx::TypedText::TypedTextData</innerclass>
     <innernamespace refid="namespacetouchgfx">touchgfx</innernamespace>
@@ -154,9 +33,9 @@
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TYPEDTEXT_HPP</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cassert&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_font_8hpp" kindref="compound">touchgfx/Font.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_texts_8hpp" kindref="compound">touchgfx/Texts.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_types_8hpp" kindref="compound">touchgfx/hal/Types.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;touchgfx/Font.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;touchgfx/Texts.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;touchgfx/hal/Types.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetouchgfx" kindref="compound">touchgfx</ref></highlight></codeline>
 <codeline lineno="15"><highlight class="normal">{</highlight></codeline>

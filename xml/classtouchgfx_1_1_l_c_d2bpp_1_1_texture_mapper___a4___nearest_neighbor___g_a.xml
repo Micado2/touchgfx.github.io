@@ -124,7 +124,7 @@
       </sectiondef>
       <sectiondef kind="private-func">
       <memberdef kind="function" id="classtouchgfx_1_1_l_c_d2bpp_1_1_texture_mapper___a4___nearest_neighbor___g_a_1a8ac46b5476b2645209c8bfda2d846b6c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> void</type>
+        <type>FORCE_INLINE_FUNCTION void</type>
         <definition>FORCE_INLINE_FUNCTION void writePixel</definition>
         <argsstring>(uint16_t *const destAddress, const uint32_t destOffset, const uint8_t a4, const uint8_t alpha)</argsstring>
         <name>writePixel</name>

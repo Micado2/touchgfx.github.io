@@ -1985,7 +1985,7 @@ alpha&quot;, &quot;2&quot; for &quot;alpha&quot;. The rest is the Bitmap::Format
         <location file="touchgfx/hal/BoardConfiguration.hpp" line="15" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespacetouchgfx_1ad7ac1ff1e5338aa31817d0eed8c38ae3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint8_t</type>
+        <type>FORCE_INLINE_FUNCTION uint8_t</type>
         <definition>FORCE_INLINE_FUNCTION uint8_t touchgfx::LCD2getPixel</definition>
         <argsstring>(const uint8_t *addr, int offset)</argsstring>
         <name>LCD2getPixel</name>
@@ -2027,7 +2027,7 @@ alpha&quot;, &quot;2&quot; for &quot;alpha&quot;. The rest is the Bitmap::Format
         <location file="platform/driver/lcd/LCD2bpp.hpp" line="359" column="1" bodyfile="platform/driver/lcd/LCD2bpp.hpp" bodystart="359" bodyend="362"/>
       </memberdef>
       <memberdef kind="function" id="namespacetouchgfx_1aac57f51730bad6ebc3be8e2b86de7da7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint8_t</type>
+        <type>FORCE_INLINE_FUNCTION uint8_t</type>
         <definition>FORCE_INLINE_FUNCTION uint8_t touchgfx::LCD2getPixel</definition>
         <argsstring>(const uint16_t *addr, int offset)</argsstring>
         <name>LCD2getPixel</name>
@@ -2069,7 +2069,7 @@ alpha&quot;, &quot;2&quot; for &quot;alpha&quot;. The rest is the Bitmap::Format
         <location file="platform/driver/lcd/LCD2bpp.hpp" line="372" column="1" bodyfile="platform/driver/lcd/LCD2bpp.hpp" bodystart="372" bodyend="375"/>
       </memberdef>
       <memberdef kind="function" id="namespacetouchgfx_1a2d7c7dad74ee145a1cfef82814536003" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> void</type>
+        <type>FORCE_INLINE_FUNCTION void</type>
         <definition>FORCE_INLINE_FUNCTION void touchgfx::LCD2setPixel</definition>
         <argsstring>(uint8_t *addr, int offset, uint8_t value)</argsstring>
         <name>LCD2setPixel</name>
@@ -2121,7 +2121,7 @@ alpha&quot;, &quot;2&quot; for &quot;alpha&quot;. The rest is the Bitmap::Format
         <location file="platform/driver/lcd/LCD2bpp.hpp" line="384" column="1" bodyfile="platform/driver/lcd/LCD2bpp.hpp" bodystart="384" bodyend="388"/>
       </memberdef>
       <memberdef kind="function" id="namespacetouchgfx_1a4d9c959af2c65d16f1bebf167c50cee0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> void</type>
+        <type>FORCE_INLINE_FUNCTION void</type>
         <definition>FORCE_INLINE_FUNCTION void touchgfx::LCD2setPixel</definition>
         <argsstring>(uint16_t *addr, int offset, uint8_t value)</argsstring>
         <name>LCD2setPixel</name>
@@ -2173,7 +2173,7 @@ alpha&quot;, &quot;2&quot; for &quot;alpha&quot;. The rest is the Bitmap::Format
         <location file="platform/driver/lcd/LCD2bpp.hpp" line="397" column="1" bodyfile="platform/driver/lcd/LCD2bpp.hpp" bodystart="397" bodyend="400"/>
       </memberdef>
       <memberdef kind="function" id="namespacetouchgfx_1a4dd15f2f9a7e9d8026a5a2aa035765c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> int</type>
+        <type>FORCE_INLINE_FUNCTION int</type>
         <definition>FORCE_INLINE_FUNCTION int touchgfx::LCD2shiftVal</definition>
         <argsstring>(int offset)</argsstring>
         <name>LCD2shiftVal</name>
@@ -2203,7 +2203,7 @@ alpha&quot;, &quot;2&quot; for &quot;alpha&quot;. The rest is the Bitmap::Format
         <location file="platform/driver/lcd/LCD2bpp.hpp" line="342" column="1" bodyfile="platform/driver/lcd/LCD2bpp.hpp" bodystart="342" bodyend="349"/>
       </memberdef>
       <memberdef kind="function" id="namespacetouchgfx_1a18022299e9bf294f9cdda7a8a147459a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint8_t</type>
+        <type>FORCE_INLINE_FUNCTION uint8_t</type>
         <definition>FORCE_INLINE_FUNCTION uint8_t touchgfx::LCD4getPixel</definition>
         <argsstring>(const uint8_t *addr, int offset)</argsstring>
         <name>LCD4getPixel</name>
@@ -2245,7 +2245,7 @@ alpha&quot;, &quot;2&quot; for &quot;alpha&quot;. The rest is the Bitmap::Format
         <location file="platform/driver/lcd/LCD4bpp.hpp" line="367" column="1" bodyfile="platform/driver/lcd/LCD4bpp.hpp" bodystart="367" bodyend="375"/>
       </memberdef>
       <memberdef kind="function" id="namespacetouchgfx_1a63b9572209d773921552207e013e9535" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint8_t</type>
+        <type>FORCE_INLINE_FUNCTION uint8_t</type>
         <definition>FORCE_INLINE_FUNCTION uint8_t touchgfx::LCD4getPixel</definition>
         <argsstring>(const uint16_t *addr, int offset)</argsstring>
         <name>LCD4getPixel</name>
@@ -2287,7 +2287,7 @@ alpha&quot;, &quot;2&quot; for &quot;alpha&quot;. The rest is the Bitmap::Format
         <location file="platform/driver/lcd/LCD4bpp.hpp" line="385" column="1" bodyfile="platform/driver/lcd/LCD4bpp.hpp" bodystart="385" bodyend="388"/>
       </memberdef>
       <memberdef kind="function" id="namespacetouchgfx_1ade3bbccf82f10ef0599552dd04d5a8c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> void</type>
+        <type>FORCE_INLINE_FUNCTION void</type>
         <definition>FORCE_INLINE_FUNCTION void touchgfx::LCD4setPixel</definition>
         <argsstring>(uint8_t *addr, int offset, uint8_t value)</argsstring>
         <name>LCD4setPixel</name>
@@ -2339,7 +2339,7 @@ alpha&quot;, &quot;2&quot; for &quot;alpha&quot;. The rest is the Bitmap::Format
         <location file="platform/driver/lcd/LCD4bpp.hpp" line="397" column="1" bodyfile="platform/driver/lcd/LCD4bpp.hpp" bodystart="397" bodyend="405"/>
       </memberdef>
       <memberdef kind="function" id="namespacetouchgfx_1a1a3b7ab4520618654367b8ac7abff9f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> void</type>
+        <type>FORCE_INLINE_FUNCTION void</type>
         <definition>FORCE_INLINE_FUNCTION void touchgfx::LCD4setPixel</definition>
         <argsstring>(uint16_t *addr, int offset, uint8_t value)</argsstring>
         <name>LCD4setPixel</name>

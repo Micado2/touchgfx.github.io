@@ -766,11 +766,11 @@
         <argsstring>(const UnicodeChar *RESTRICT str1, const UnicodeChar *RESTRICT str2, uint16_t maxchars)</argsstring>
         <name>strncmp</name>
         <param>
-          <type>const <ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">UnicodeChar</ref> *<ref refid="_config_8hpp_1aae3356b63849abbe8789dd41648ee90a" kindref="member">RESTRICT</ref></type>
+          <type>const <ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">UnicodeChar</ref> *RESTRICT</type>
           <declname>str1</declname>
         </param>
         <param>
-          <type>const <ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">UnicodeChar</ref> *<ref refid="_config_8hpp_1aae3356b63849abbe8789dd41648ee90a" kindref="member">RESTRICT</ref></type>
+          <type>const <ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">UnicodeChar</ref> *RESTRICT</type>
           <declname>str2</declname>
         </param>
         <param>
@@ -821,11 +821,11 @@
         <argsstring>(const UnicodeChar *RESTRICT str1, const UnicodeChar *RESTRICT str2, uint16_t maxchars)</argsstring>
         <name>strncmp_ignore_white_spaces</name>
         <param>
-          <type>const <ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">UnicodeChar</ref> *<ref refid="_config_8hpp_1aae3356b63849abbe8789dd41648ee90a" kindref="member">RESTRICT</ref></type>
+          <type>const <ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">UnicodeChar</ref> *RESTRICT</type>
           <declname>str1</declname>
         </param>
         <param>
-          <type>const <ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">UnicodeChar</ref> *<ref refid="_config_8hpp_1aae3356b63849abbe8789dd41648ee90a" kindref="member">RESTRICT</ref></type>
+          <type>const <ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">UnicodeChar</ref> *RESTRICT</type>
           <declname>str2</declname>
         </param>
         <param>
@@ -875,11 +875,11 @@
         <argsstring>(UnicodeChar *RESTRICT dst, const UnicodeChar *RESTRICT src, uint16_t maxchars)</argsstring>
         <name>strncpy</name>
         <param>
-          <type><ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">UnicodeChar</ref> *<ref refid="_config_8hpp_1aae3356b63849abbe8789dd41648ee90a" kindref="member">RESTRICT</ref></type>
+          <type><ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">UnicodeChar</ref> *RESTRICT</type>
           <declname>dst</declname>
         </param>
         <param>
-          <type>const <ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">UnicodeChar</ref> *<ref refid="_config_8hpp_1aae3356b63849abbe8789dd41648ee90a" kindref="member">RESTRICT</ref></type>
+          <type>const <ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">UnicodeChar</ref> *RESTRICT</type>
           <declname>src</declname>
         </param>
         <param>
@@ -932,11 +932,11 @@
         <argsstring>(UnicodeChar *RESTRICT dst, const char *RESTRICT src, uint16_t maxchars)</argsstring>
         <name>strncpy</name>
         <param>
-          <type><ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">UnicodeChar</ref> *<ref refid="_config_8hpp_1aae3356b63849abbe8789dd41648ee90a" kindref="member">RESTRICT</ref></type>
+          <type><ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">UnicodeChar</ref> *RESTRICT</type>
           <declname>dst</declname>
         </param>
         <param>
-          <type>const char *<ref refid="_config_8hpp_1aae3356b63849abbe8789dd41648ee90a" kindref="member">RESTRICT</ref></type>
+          <type>const char *RESTRICT</type>
           <declname>src</declname>
         </param>
         <param>

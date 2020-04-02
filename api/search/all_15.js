@@ -2,9 +2,7 @@ var searchData=
 [
   ['u',['U',['../structtouchgfx_1_1_point3_d.html#a0960ce8ee4607f26fa67f51c52f1877c',1,'touchgfx::Point3D']]],
   ['uieventlistener',['UIEventListener',['../classtouchgfx_1_1_u_i_event_listener.html',1,'touchgfx']]],
-  ['uieventlistener_2ehpp',['UIEventListener.hpp',['../_u_i_event_listener_8hpp.html',1,'']]],
   ['unicode',['Unicode',['../classtouchgfx_1_1_unicode.html',1,'Unicode'],['../structtouchgfx_1_1_glyph_node.html#a4fcc473965356b820eb657882271e290',1,'touchgfx::GlyphNode::unicode()']]],
-  ['unicode_2ehpp',['Unicode.hpp',['../_unicode_8hpp.html',1,'']]],
   ['unicodechar',['UnicodeChar',['../classtouchgfx_1_1_unicode.html#a8288baea3c463411f70776b30b04605d',1,'touchgfx::Unicode']]],
   ['unicodeprevchar',['unicodePrevChar',['../structtouchgfx_1_1_kerning_node.html#aca2e846c807f4a4d1d24fc5fa42c3ef3',1,'touchgfx::KerningNode']]],
   ['unlink',['unlink',['../classtouchgfx_1_1_container.html#a23f8fdbaba5449e55efb7a14a96b657d',1,'touchgfx::Container']]],
@@ -41,6 +39,5 @@ var searchData=
   ['useleadingzeroforhourindicator',['useLeadingZeroForHourIndicator',['../classtouchgfx_1_1_digital_clock.html#ac858a98596909705ed766d1a3b78d211',1,'touchgfx::DigitalClock']]],
   ['usesmocdrawing',['useSMOCDrawing',['../classtouchgfx_1_1_screen.html#a787858e36336ba2391ce0df2b9496f93',1,'touchgfx::Screen']]],
   ['usingsmoc',['usingSMOC',['../classtouchgfx_1_1_screen.html#a74b34acc720ee5a628da9453005ef9af',1,'touchgfx::Screen']]],
-  ['utils_2ehpp',['Utils.hpp',['../_utils_8hpp.html',1,'']]],
   ['utoa',['utoa',['../classtouchgfx_1_1_unicode.html#a914b242d859dff4adfbcb568ced738d7',1,'touchgfx::Unicode']]]
 ];

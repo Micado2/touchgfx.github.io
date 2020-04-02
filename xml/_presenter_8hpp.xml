@@ -3,24 +3,6 @@
   <compounddef id="_presenter_8hpp" kind="file" language="C++">
     <compoundname>Presenter.hpp</compoundname>
     <includedby refid="_view_8hpp" local="no">mvp/View.hpp</includedby>
-    <invincdepgraph>
-      <node id="110">
-        <label>mvp/MVPApplication.hpp</label>
-        <link refid="_m_v_p_application_8hpp"/>
-      </node>
-      <node id="108">
-        <label>mvp/Presenter.hpp</label>
-        <link refid="_presenter_8hpp"/>
-        <childnode refid="109" relation="include">
-        </childnode>
-      </node>
-      <node id="109">
-        <label>mvp/View.hpp</label>
-        <link refid="_view_8hpp"/>
-        <childnode refid="110" relation="include">
-        </childnode>
-      </node>
-    </invincdepgraph>
     <innerclass refid="classtouchgfx_1_1_presenter" prot="public">touchgfx::Presenter</innerclass>
     <innernamespace refid="namespacetouchgfx">touchgfx</innernamespace>
     <briefdescription>

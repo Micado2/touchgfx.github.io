@@ -5,50 +5,13 @@
     <includes local="no">assert.h</includes>
     <includes refid="_d_m_a_8hpp" local="no">touchgfx/hal/DMA.hpp</includes>
     <incdepgraph>
-      <node id="4523">
+      <node id="227">
         <label>assert.h</label>
       </node>
-      <node id="4529">
-        <label>touchgfx/hal/Config.hpp</label>
-        <link refid="_config_8hpp"/>
-      </node>
-      <node id="4528">
-        <label>stdint.h</label>
-      </node>
-      <node id="4527">
-        <label>touchgfx/hal/Types.hpp</label>
-        <link refid="_types_8hpp"/>
-        <childnode refid="4523" relation="include">
-        </childnode>
-        <childnode refid="4528" relation="include">
-        </childnode>
-        <childnode refid="4529" relation="include">
-        </childnode>
-      </node>
-      <node id="4526">
-        <label>touchgfx/hal/BlitOp.hpp</label>
-        <link refid="_blit_op_8hpp"/>
-        <childnode refid="4527" relation="include">
-        </childnode>
-      </node>
-      <node id="4525">
-        <label>touchgfx/hal/Atomic.hpp</label>
-        <link refid="_atomic_8hpp"/>
-      </node>
-      <node id="4522">
+      <node id="226">
         <label>touchgfx/hal/NoDMA.hpp</label>
         <link refid="_no_d_m_a_8hpp"/>
-        <childnode refid="4523" relation="include">
-        </childnode>
-        <childnode refid="4524" relation="include">
-        </childnode>
-      </node>
-      <node id="4524">
-        <label>touchgfx/hal/DMA.hpp</label>
-        <link refid="_d_m_a_8hpp"/>
-        <childnode refid="4525" relation="include">
-        </childnode>
-        <childnode refid="4526" relation="include">
+        <childnode refid="227" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -65,7 +28,7 @@
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NODMA_HPP</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;assert.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_d_m_a_8hpp" kindref="compound">touchgfx/hal/DMA.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;touchgfx/hal/DMA.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetouchgfx" kindref="compound">touchgfx</ref></highlight></codeline>
 <codeline lineno="13"><highlight class="normal">{</highlight></codeline>

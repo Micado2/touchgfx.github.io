@@ -613,7 +613,7 @@
             <type>typename T</type>
           </param>
         </templateparamlist>
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q10" kindref="compound">Q10</ref></type>
+        <type>FORCE_INLINE_FUNCTION <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q10" kindref="compound">Q10</ref></type>
         <definition>static FORCE_INLINE_FUNCTION Q10 toQ10</definition>
         <argsstring>(T value)</argsstring>
         <name>toQ10</name>
@@ -653,7 +653,7 @@
         <location file="touchgfx/widgets/canvas/CWRUtil.hpp" line="433" column="1" bodyfile="touchgfx/widgets/canvas/CWRUtil.hpp" bodystart="433" bodyend="436"/>
       </memberdef>
       <memberdef kind="function" id="structtouchgfx_1_1_c_w_r_util_1a4544e955b5a8f7bdd953f129315b9984" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">Q5</ref></type>
+        <type>FORCE_INLINE_FUNCTION <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">Q5</ref></type>
         <definition>static FORCE_INLINE_FUNCTION Q5 toQ5</definition>
         <argsstring>(Q5 value)</argsstring>
         <name>toQ5</name>
@@ -689,7 +689,7 @@
             <type>typename T</type>
           </param>
         </templateparamlist>
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">Q5</ref></type>
+        <type>FORCE_INLINE_FUNCTION <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">Q5</ref></type>
         <definition>static FORCE_INLINE_FUNCTION Q5 toQ5</definition>
         <argsstring>(T value)</argsstring>
         <name>toQ5</name>

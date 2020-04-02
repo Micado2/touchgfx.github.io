@@ -423,11 +423,11 @@
         <name>blockCopy</name>
         <reimplements refid="classtouchgfx_1_1_h_a_l_1a4f53c9928e6d17edbb6382461ea60a43">blockCopy</reimplements>
         <param>
-          <type>void *<ref refid="_config_8hpp_1aae3356b63849abbe8789dd41648ee90a" kindref="member">RESTRICT</ref></type>
+          <type>void *RESTRICT</type>
           <declname>dest</declname>
         </param>
         <param>
-          <type>const void *<ref refid="_config_8hpp_1aae3356b63849abbe8789dd41648ee90a" kindref="member">RESTRICT</ref></type>
+          <type>const void *RESTRICT</type>
           <declname>src</declname>
         </param>
         <param>

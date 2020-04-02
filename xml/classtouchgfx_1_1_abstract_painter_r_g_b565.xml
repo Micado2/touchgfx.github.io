@@ -99,7 +99,7 @@
         <location file="touchgfx/widgets/canvas/AbstractPainterRGB565.hpp" line="29" column="1" bodyfile="touchgfx/widgets/canvas/AbstractPainterRGB565.hpp" bodystart="29" bodyend="32"/>
       </memberdef>
       <memberdef kind="function" id="classtouchgfx_1_1_abstract_painter_r_g_b565_1a4f5d97f20d21a97b0cce1803b0ae4c2b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint16_t</type>
+        <type>FORCE_INLINE_FUNCTION uint16_t</type>
         <definition>FORCE_INLINE_FUNCTION uint16_t mixColors</definition>
         <argsstring>(uint16_t newpix, uint16_t bufpix, uint8_t alpha)</argsstring>
         <name>mixColors</name>
@@ -153,7 +153,7 @@
         <location file="touchgfx/widgets/canvas/AbstractPainterRGB565.hpp" line="50" column="1" bodyfile="touchgfx/widgets/canvas/AbstractPainterRGB565.hpp" bodystart="50" bodyend="53"/>
       </memberdef>
       <memberdef kind="function" id="classtouchgfx_1_1_abstract_painter_r_g_b565_1a6601fa2dcd9f9942fe179adda4fbf4ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint16_t</type>
+        <type>FORCE_INLINE_FUNCTION uint16_t</type>
         <definition>FORCE_INLINE_FUNCTION uint16_t mixColors</definition>
         <argsstring>(uint16_t R, uint16_t G, uint16_t B, uint16_t bufpix, uint8_t alpha)</argsstring>
         <name>mixColors</name>

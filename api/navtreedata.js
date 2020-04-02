@@ -48,37 +48,27 @@ var NAVTREE =
         [ "Enumerations", "functions_enum.html", null ],
         [ "Enumerator", "functions_eval.html", null ]
       ] ]
-    ] ],
-    [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ],
-      [ "File Members", "globals.html", [
-        [ "All", "globals.html", null ],
-        [ "Functions", "globals_func.html", null ],
-        [ "Variables", "globals_vars.html", null ],
-        [ "Macros", "globals_defs.html", null ]
-      ] ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"_abstract_button_8hpp.html",
-"_types_8hpp.html",
-"classtouchgfx_1_1_abstract_progress_indicator.html#a088cf0717c3adb46df00038640925e84",
-"classtouchgfx_1_1_box_with_border.html#a302926ead4ee8a161627575d2666a7f2",
-"classtouchgfx_1_1_container.html#add539b68574f09b364f0b4e6a312b9b0",
-"classtouchgfx_1_1_fade_animator.html#a6463cdfc7a7c5cd573fe1e5ba59ebd61",
-"classtouchgfx_1_1_i2_c.html#ab5be7e5a13ea77d59aac45d21dceb6a0",
-"classtouchgfx_1_1_l_c_d1bpp.html#a6fae0e318d1bd778915adc33449736ae",
-"classtouchgfx_1_1_l_c_d8bpp___a_r_g_b2222.html#a6f2684edfd970891aa198c65b5624c73",
-"classtouchgfx_1_1_modal_window.html#ab9f3e889d3be296f75d22c995bb06778",
-"classtouchgfx_1_1_painter_r_g_b565_bitmap.html#a2e0420f68fa01ef7219a0bc2aa792169",
-"classtouchgfx_1_1_screen.html#a7a8ad1a2e43c28cb3ac5741c40f3df69",
-"classtouchgfx_1_1_slide_menu.html#a532414231f960f77c5f47a6e10f788d1",
-"classtouchgfx_1_1_texture_mapper.html#a5a49678e9f043c0bf4025d108d89701a",
-"classtouchgfx_1_1_zoom_animation_image.html#a808e5cd4979462d3bbe3070d7d147444aa9d96a3c6709d303b0359c70ca8183f5",
-"structtouchgfx_1_1_blit_op.html#adce4424fb37fc57f2b9831ca30ee2018"
+"annotated.html",
+"classtouchgfx_1_1_analog_clock.html#a9671e6acdc2e39efb06ad706a462d9b9",
+"classtouchgfx_1_1_button_with_label.html#a4f5b95d48bc5f29034d5794ef85a5072",
+"classtouchgfx_1_1_digital_clock.html#a47a6312407603de99247bb802dbd8a48",
+"classtouchgfx_1_1_g_p_i_o.html#adcdad68201b23094026d1e32a99c059fad48a9a2ece8fffba9b7ac23ce7c39f51",
+"classtouchgfx_1_1_keyboard.html#a06ae1946b2124cc94e26cfe18728debf",
+"classtouchgfx_1_1_l_c_d24bpp.html#aeb10a8ea9c2c8d3447ad1592fd800105",
+"classtouchgfx_1_1_l_c_d8bpp___r_g_b_a2222.html#a3cfe25e2c90807ec57cdd32e1753af70",
+"classtouchgfx_1_1_painter_a_b_g_r2222_bitmap.html",
+"classtouchgfx_1_1_painter_r_g_b_a2222.html#a6fa35251b48a056943566ac2a23ea4cb",
+"classtouchgfx_1_1_scroll_base.html#ad60d125bdbd08f20dd1c265e311f8eb9",
+"classtouchgfx_1_1_slider.html#a8d718f01bb8f6503756b2ef69ef36205",
+"classtouchgfx_1_1_tiled_image.html#af0d4b608d2d4a7da4d7102c9f1e4ab8f",
+"functions_func_q.html",
+"structtouchgfx_1_1_pair.html#ae885a6822c40e26649c9dd8b476942f8"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

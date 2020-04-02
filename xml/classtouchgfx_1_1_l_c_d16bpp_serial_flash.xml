@@ -1437,7 +1437,7 @@
       </sectiondef>
       <sectiondef kind="public-static-func">
       <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a4c815962e1e7ba64a2786ee3c0e3be1d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint8_t</type>
+        <type>FORCE_INLINE_FUNCTION uint8_t</type>
         <definition>static FORCE_INLINE_FUNCTION uint8_t getBlueFromColor</definition>
         <argsstring>(colortype color)</argsstring>
         <name>getBlueFromColor</name>
@@ -1467,7 +1467,7 @@
         <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="151" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="151" bodyend="154"/>
       </memberdef>
       <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ab5470f0d37b384d9383fb95376708766" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> <ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+        <type>FORCE_INLINE_FUNCTION <ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
         <definition>static FORCE_INLINE_FUNCTION colortype getColorFromRGB</definition>
         <argsstring>(uint8_t red, uint8_t green, uint8_t blue)</argsstring>
         <name>getColorFromRGB</name>
@@ -1521,7 +1521,7 @@
         <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="100" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="100" bodyend="103"/>
       </memberdef>
       <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a72b8ef11cd5918a6bd5702e918b888ef" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint16_t</type>
+        <type>FORCE_INLINE_FUNCTION uint16_t</type>
         <definition>static FORCE_INLINE_FUNCTION uint16_t getFramebufferStride</definition>
         <argsstring>()</argsstring>
         <name>getFramebufferStride</name>
@@ -1539,7 +1539,7 @@
         <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="80" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="80" bodyend="84"/>
       </memberdef>
       <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a7a0e0fbb531279a60027afc36648b43b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint8_t</type>
+        <type>FORCE_INLINE_FUNCTION uint8_t</type>
         <definition>static FORCE_INLINE_FUNCTION uint8_t getGreenFromColor</definition>
         <argsstring>(colortype color)</argsstring>
         <name>getGreenFromColor</name>
@@ -1569,7 +1569,7 @@
         <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="134" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="134" bodyend="137"/>
       </memberdef>
       <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ac6073d99e25188ba4f43cbcdcef4c07d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint8_t</type>
+        <type>FORCE_INLINE_FUNCTION uint8_t</type>
         <definition>static FORCE_INLINE_FUNCTION uint8_t getRedFromColor</definition>
         <argsstring>(colortype color)</argsstring>
         <name>getRedFromColor</name>
@@ -2224,7 +2224,7 @@
       </sectiondef>
       <sectiondef kind="private-static-func">
       <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ab8355117af5ff9b7beed95a5533812b8" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint16_t</type>
+        <type>FORCE_INLINE_FUNCTION uint16_t</type>
         <definition>static FORCE_INLINE_FUNCTION uint16_t bilinearInterpolate565</definition>
         <argsstring>(uint16_t c00, uint16_t c10, uint16_t c01, uint16_t c11, uint8_t x, uint8_t y)</argsstring>
         <name>bilinearInterpolate565</name>
@@ -2261,7 +2261,7 @@
         <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="462" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="462" bodyend="472"/>
       </memberdef>
       <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ad1ef1cd64f32669956cdac8e6f919afd" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint16_t</type>
+        <type>FORCE_INLINE_FUNCTION uint16_t</type>
         <definition>static FORCE_INLINE_FUNCTION uint16_t bilinearInterpolate565</definition>
         <argsstring>(uint16_t c00, uint16_t c10, uint8_t x)</argsstring>
         <name>bilinearInterpolate565</name>
@@ -2286,7 +2286,7 @@
         <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="474" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="474" bodyend="481"/>
       </memberdef>
       <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a916179f24cb10e727972ee346f4bc197" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint8_t</type>
+        <type>FORCE_INLINE_FUNCTION uint8_t</type>
         <definition>static FORCE_INLINE_FUNCTION uint8_t bilinearInterpolate8</definition>
         <argsstring>(uint8_t c00, uint8_t c10, uint8_t x)</argsstring>
         <name>bilinearInterpolate8</name>
@@ -2311,7 +2311,7 @@
         <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="483" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="483" bodyend="490"/>
       </memberdef>
       <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1afbb3e2cdf65f85cb7c53bbdedcb3f65a" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint8_t</type>
+        <type>FORCE_INLINE_FUNCTION uint8_t</type>
         <definition>static FORCE_INLINE_FUNCTION uint8_t bilinearInterpolate8</definition>
         <argsstring>(uint8_t c00, uint8_t c10, uint8_t c01, uint8_t c11, uint8_t x, uint8_t y)</argsstring>
         <name>bilinearInterpolate8</name>
@@ -2348,7 +2348,7 @@
         <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="492" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="492" bodyend="501"/>
       </memberdef>
       <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1af1381f6e733c3e3273b5b09c9550a8d1" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint32_t</type>
+        <type>FORCE_INLINE_FUNCTION uint32_t</type>
         <definition>static FORCE_INLINE_FUNCTION uint32_t bilinearInterpolate888</definition>
         <argsstring>(uint32_t c00, uint32_t c10, uint8_t x)</argsstring>
         <name>bilinearInterpolate888</name>
@@ -2373,7 +2373,7 @@
         <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="503" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="503" bodyend="511"/>
       </memberdef>
       <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1aae35b35fd5e9a94f3eeda78626398ffe" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint32_t</type>
+        <type>FORCE_INLINE_FUNCTION uint32_t</type>
         <definition>static FORCE_INLINE_FUNCTION uint32_t bilinearInterpolate888</definition>
         <argsstring>(uint32_t c00, uint32_t c10, uint32_t c01, uint32_t c11, uint8_t x, uint8_t y)</argsstring>
         <name>bilinearInterpolate888</name>
@@ -2410,7 +2410,7 @@
         <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="513" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="513" bodyend="523"/>
       </memberdef>
       <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ac6e14f3751f2191becb6b1a4e873b37f" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint16_t</type>
+        <type>FORCE_INLINE_FUNCTION uint16_t</type>
         <definition>static FORCE_INLINE_FUNCTION uint16_t compactRgb565</definition>
         <argsstring>(uint32_t c)</argsstring>
         <name>compactRgb565</name>
@@ -2427,7 +2427,7 @@
         <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="457" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="457" bodyend="460"/>
       </memberdef>
       <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ab481c26e76adb63b63c5f3059bd9a8e2" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint32_t</type>
+        <type>FORCE_INLINE_FUNCTION uint32_t</type>
         <definition>static FORCE_INLINE_FUNCTION uint32_t div255_565</definition>
         <argsstring>(uint16_t val, uint8_t factor)</argsstring>
         <name>div255_565</name>
@@ -2448,7 +2448,7 @@
         <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="547" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="547" bodyend="550"/>
       </memberdef>
       <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a27b956b7178fe5534bb45368f9ac7dbc" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint32_t</type>
+        <type>FORCE_INLINE_FUNCTION uint32_t</type>
         <definition>static FORCE_INLINE_FUNCTION uint32_t div255_565_FFcheck</definition>
         <argsstring>(uint16_t val, uint8_t factor)</argsstring>
         <name>div255_565_FFcheck</name>
@@ -2469,7 +2469,7 @@
         <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="552" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="552" bodyend="555"/>
       </memberdef>
       <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a3771c53a624affac9f634ce96e0b00dd" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint32_t</type>
+        <type>FORCE_INLINE_FUNCTION uint32_t</type>
         <definition>static FORCE_INLINE_FUNCTION uint32_t div255_888</definition>
         <argsstring>(uint32_t val, uint8_t factor)</argsstring>
         <name>div255_888</name>
@@ -2490,7 +2490,7 @@
         <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="525" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="525" bodyend="528"/>
       </memberdef>
       <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a8ac8c4cd32f54ff524dd6552a76982a2" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint32_t</type>
+        <type>FORCE_INLINE_FUNCTION uint32_t</type>
         <definition>static FORCE_INLINE_FUNCTION uint32_t div255_888_FFcheck</definition>
         <argsstring>(uint32_t val, uint8_t factor)</argsstring>
         <name>div255_888_FFcheck</name>
@@ -2511,7 +2511,7 @@
         <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="530" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="530" bodyend="533"/>
       </memberdef>
       <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a04402596c9b137c87e6ed86828cba128" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint32_t</type>
+        <type>FORCE_INLINE_FUNCTION uint32_t</type>
         <definition>static FORCE_INLINE_FUNCTION uint32_t div31g</definition>
         <argsstring>(uint16_t val, uint8_t factor)</argsstring>
         <name>div31g</name>
@@ -2532,7 +2532,7 @@
         <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="541" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="541" bodyend="545"/>
       </memberdef>
       <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1ae71798b689b0562996f3b62dbfe6702e" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint32_t</type>
+        <type>FORCE_INLINE_FUNCTION uint32_t</type>
         <definition>static FORCE_INLINE_FUNCTION uint32_t div31rb</definition>
         <argsstring>(uint16_t val, uint8_t factor)</argsstring>
         <name>div31rb</name>
@@ -2553,7 +2553,7 @@
         <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="535" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="535" bodyend="539"/>
       </memberdef>
       <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1a56fefef90cf8544359deac06d3f9dcc2" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="_config_8hpp_1abcf3010ec537dd8aa34d95a39a3ae369" kindref="member">FORCE_INLINE_FUNCTION</ref> uint32_t</type>
+        <type>FORCE_INLINE_FUNCTION uint32_t</type>
         <definition>static FORCE_INLINE_FUNCTION uint32_t expandRgb565</definition>
         <argsstring>(uint16_t c)</argsstring>
         <name>expandRgb565</name>

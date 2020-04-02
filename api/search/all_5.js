@@ -2,7 +2,6 @@ var searchData=
 [
   ['easingequation',['easingEquation',['../classtouchgfx_1_1_scroll_base.html#aea6ddb8fc22377efc02098c18742881c',1,'touchgfx::ScrollBase::easingEquation()'],['../namespacetouchgfx.html#a067e5cd30b7258d54a37d6a0d1423d68',1,'touchgfx::EasingEquation()']]],
   ['easingequations',['EasingEquations',['../classtouchgfx_1_1_easing_equations.html',1,'touchgfx']]],
-  ['easingequations_2ehpp',['EasingEquations.hpp',['../_easing_equations_8hpp.html',1,'']]],
   ['east',['EAST',['../classtouchgfx_1_1_slide_menu.html#a34c48ecfcbb1829f9f4168def5e9ed6aab5b3793b961949c817c7c0d99c05dad7',1,'touchgfx::SlideMenu::EAST()'],['../namespacetouchgfx.html#a224b9163917ac32fc95a60d8c1eec3aaab5b3793b961949c817c7c0d99c05dad7',1,'touchgfx::EAST()']]],
   ['edge',['Edge',['../structtouchgfx_1_1_edge.html',1,'Edge'],['../structtouchgfx_1_1_edge.html#aa682b15251f2e7cb8f104b764790fbf6',1,'touchgfx::Edge::Edge()']]],
   ['elasticeasein',['elasticEaseIn',['../classtouchgfx_1_1_easing_equations.html#af06d94368ac95f795ad8def7a35030d3',1,'touchgfx::EasingEquations']]],
@@ -71,7 +70,6 @@ var searchData=
   ['errorterm',['errorTerm',['../structtouchgfx_1_1_edge.html#ab6c9d47292a631ae554fe1d363e1b996',1,'touchgfx::Edge']]],
   ['evaluatependingscreentransition',['evaluatePendingScreenTransition',['../classtouchgfx_1_1_m_v_p_application.html#a71a0230ac191abfdc9b84709e97bfd48',1,'touchgfx::MVPApplication']]],
   ['event',['Event',['../classtouchgfx_1_1_event.html',1,'Event'],['../classtouchgfx_1_1_event.html#a85b9e8172cffad1f169d55688e49a72f',1,'touchgfx::Event::Event()']]],
-  ['event_2ehpp',['Event.hpp',['../_event_8hpp.html',1,'']]],
   ['event_5fclick',['EVENT_CLICK',['../classtouchgfx_1_1_event.html#a2628ea8d12e8b2563c32f05dc7fff6faaf55e6a16ca135b3e652be84c9a056ab3',1,'touchgfx::Event']]],
   ['event_5fdrag',['EVENT_DRAG',['../classtouchgfx_1_1_event.html#a2628ea8d12e8b2563c32f05dc7fff6faa421eb1f5f9af39efcbe5e0c10c810122',1,'touchgfx::Event']]],
   ['event_5fgesture',['EVENT_GESTURE',['../classtouchgfx_1_1_event.html#a2628ea8d12e8b2563c32f05dc7fff6faa35467a1eaf0b54602b93270032ca9cfd',1,'touchgfx::Event']]],

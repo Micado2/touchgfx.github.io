@@ -5,50 +5,6 @@
     <includes refid="_i2_c_8hpp" local="no">platform/driver/i2c/I2C.hpp</includes>
     <includes refid="_touch_controller_8hpp" local="no">platform/driver/touch/TouchController.hpp</includes>
     <includes refid="_types_8hpp" local="no">touchgfx/hal/Types.hpp</includes>
-    <incdepgraph>
-      <node id="701">
-        <label>assert.h</label>
-      </node>
-      <node id="703">
-        <label>touchgfx/hal/Config.hpp</label>
-        <link refid="_config_8hpp"/>
-      </node>
-      <node id="702">
-        <label>stdint.h</label>
-      </node>
-      <node id="704">
-        <label>platform/driver/touch/TouchController.hpp</label>
-        <link refid="_touch_controller_8hpp"/>
-        <childnode refid="700" relation="include">
-        </childnode>
-      </node>
-      <node id="700">
-        <label>touchgfx/hal/Types.hpp</label>
-        <link refid="_types_8hpp"/>
-        <childnode refid="701" relation="include">
-        </childnode>
-        <childnode refid="702" relation="include">
-        </childnode>
-        <childnode refid="703" relation="include">
-        </childnode>
-      </node>
-      <node id="699">
-        <label>platform/driver/i2c/I2C.hpp</label>
-        <link refid="_i2_c_8hpp"/>
-        <childnode refid="700" relation="include">
-        </childnode>
-      </node>
-      <node id="698">
-        <label>platform/driver/touch/I2CTouchController.hpp</label>
-        <link refid="_i2_c_touch_controller_8hpp"/>
-        <childnode refid="699" relation="include">
-        </childnode>
-        <childnode refid="704" relation="include">
-        </childnode>
-        <childnode refid="700" relation="include">
-        </childnode>
-      </node>
-    </incdepgraph>
     <innerclass refid="classtouchgfx_1_1_i2_c_touch_controller" prot="public">touchgfx::I2CTouchController</innerclass>
     <innernamespace refid="namespacetouchgfx">touchgfx</innernamespace>
     <briefdescription>
@@ -61,9 +17,9 @@
 <codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>I2CTOUCHCONTROLLER_HPP</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I2CTOUCHCONTROLLER_HPP</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_i2_c_8hpp" kindref="compound">platform/driver/i2c/I2C.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_touch_controller_8hpp" kindref="compound">platform/driver/touch/TouchController.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_types_8hpp" kindref="compound">touchgfx/hal/Types.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;platform/driver/i2c/I2C.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;platform/driver/touch/TouchController.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;touchgfx/hal/Types.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetouchgfx" kindref="compound">touchgfx</ref></highlight></codeline>
 <codeline lineno="14"><highlight class="normal">{</highlight></codeline>

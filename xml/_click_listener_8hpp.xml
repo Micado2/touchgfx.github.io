@@ -3,18 +3,6 @@
   <compounddef id="_click_listener_8hpp" kind="file" language="C++">
     <compoundname>ClickListener.hpp</compoundname>
     <includes refid="_callback_8hpp" local="no">touchgfx/Callback.hpp</includes>
-    <incdepgraph>
-      <node id="4908">
-        <label>touchgfx/mixins/ClickListener.hpp</label>
-        <link refid="_click_listener_8hpp"/>
-        <childnode refid="4909" relation="include">
-        </childnode>
-      </node>
-      <node id="4909">
-        <label>touchgfx/Callback.hpp</label>
-        <link refid="_callback_8hpp"/>
-      </node>
-    </incdepgraph>
     <innerclass refid="classtouchgfx_1_1_click_listener" prot="public">touchgfx::ClickListener</innerclass>
     <innernamespace refid="namespacetouchgfx">touchgfx</innernamespace>
     <briefdescription>
@@ -27,7 +15,7 @@
 <codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>CLICKLISTENER_HPP</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CLICKLISTENER_HPP</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_callback_8hpp" kindref="compound">touchgfx/Callback.hpp</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;touchgfx/Callback.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetouchgfx" kindref="compound">touchgfx</ref></highlight></codeline>
 <codeline lineno="12"><highlight class="normal">{</highlight></codeline>

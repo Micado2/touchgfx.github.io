@@ -3,18 +3,6 @@
   <compounddef id="_m_v_p_heap_8hpp" kind="file" language="C++">
     <compoundname>MVPHeap.hpp</compoundname>
     <includedby refid="_m_v_p_application_8hpp" local="no">mvp/MVPApplication.hpp</includedby>
-    <invincdepgraph>
-      <node id="106">
-        <label>mvp/MVPApplication.hpp</label>
-        <link refid="_m_v_p_application_8hpp"/>
-      </node>
-      <node id="105">
-        <label>mvp/MVPHeap.hpp</label>
-        <link refid="_m_v_p_heap_8hpp"/>
-        <childnode refid="106" relation="include">
-        </childnode>
-      </node>
-    </invincdepgraph>
     <innerclass refid="classtouchgfx_1_1_m_v_p_heap" prot="public">touchgfx::MVPHeap</innerclass>
     <innernamespace refid="namespacetouchgfx">touchgfx</innernamespace>
     <briefdescription>

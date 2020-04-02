@@ -3,24 +3,6 @@
   <compounddef id="_math3_d_8hpp" kind="file" language="C++">
     <compoundname>Math3D.hpp</compoundname>
     <includedby refid="_animation_texture_mapper_8hpp" local="no">touchgfx/widgets/AnimationTextureMapper.hpp</includedby>
-    <invincdepgraph>
-      <node id="4906">
-        <label>touchgfx/widgets/AnimationTextureMapper.hpp</label>
-        <link refid="_animation_texture_mapper_8hpp"/>
-        <childnode refid="4907" relation="include">
-        </childnode>
-      </node>
-      <node id="4907">
-        <label>touchgfx/containers/clock/AnalogClock.hpp</label>
-        <link refid="_analog_clock_8hpp"/>
-      </node>
-      <node id="4905">
-        <label>touchgfx/Math3D.hpp</label>
-        <link refid="_math3_d_8hpp"/>
-        <childnode refid="4906" relation="include">
-        </childnode>
-      </node>
-    </invincdepgraph>
     <innerclass refid="classtouchgfx_1_1_matrix4x4" prot="public">touchgfx::Matrix4x4</innerclass>
     <innerclass refid="classtouchgfx_1_1_point4" prot="public">touchgfx::Point4</innerclass>
     <innerclass refid="classtouchgfx_1_1_quadruple" prot="public">touchgfx::Quadruple</innerclass>

@@ -10,7 +10,6 @@ var searchData=
   ['vector_3c_20touchgfx_3a_3arect_2c_208_20_3e',['Vector&lt; touchgfx::Rect, 8 &gt;',['../classtouchgfx_1_1_vector.html',1,'touchgfx']]],
   ['vertical',['VERTICAL',['../classtouchgfx_1_1_slider.html#acf9436c8845d567c1d065d7a76dff47ba1a88641fcd39f2ed3e58a18526e97138',1,'touchgfx::Slider']]],
   ['view',['View',['../classtouchgfx_1_1_view.html',1,'touchgfx']]],
-  ['view_2ehpp',['View.hpp',['../_view_8hpp.html',1,'']]],
   ['visible',['visible',['../classtouchgfx_1_1_drawable.html#aa54a57ae048476d840caf6d4d2c47aa3',1,'touchgfx::Drawable']]],
   ['visiblepixelswhencollapsed',['visiblePixelsWhenCollapsed',['../classtouchgfx_1_1_slide_menu.html#a11464c66da8306ae3fc0fd3f7486ce24',1,'touchgfx::SlideMenu']]],
   ['voverz',['VOverZ',['../structtouchgfx_1_1_gradients.html#aac350e3747bfd6fcd91ea453fb2d94d4',1,'touchgfx::Gradients::VOverZ()'],['../structtouchgfx_1_1_edge.html#afe03df0d1c122bc9b663fcbd44754ce8',1,'touchgfx::Edge::VOverZ()']]],

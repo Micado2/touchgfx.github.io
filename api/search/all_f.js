@@ -23,7 +23,5 @@ var searchData=
   ['originalpressed',['originalPressed',['../classtouchgfx_1_1_toggle_button.html#a7464c402b3a415246067526cf76c0794',1,'touchgfx::ToggleButton']]],
   ['originalupdatecenterdrawablecallback',['originalUpdateCenterDrawableCallback',['../classtouchgfx_1_1_scroll_wheel_with_selection_style.html#a5d6096f310ccdc996fc48368a45b33a4',1,'touchgfx::ScrollWheelWithSelectionStyle']]],
   ['originalupdatedrawablecallback',['originalUpdateDrawableCallback',['../classtouchgfx_1_1_scroll_wheel_with_selection_style.html#adfa66b1fed73dd6d5778cb457a49ae43',1,'touchgfx::ScrollWheelWithSelectionStyle']]],
-  ['oswrappers',['OSWrappers',['../classtouchgfx_1_1_o_s_wrappers.html',1,'touchgfx']]],
-  ['oswrappers_2ehpp',['OSWrappers.hpp',['../_o_s_wrappers_8hpp.html',1,'']]],
-  ['outline_2ehpp',['Outline.hpp',['../_outline_8hpp.html',1,'']]]
+  ['oswrappers',['OSWrappers',['../classtouchgfx_1_1_o_s_wrappers.html',1,'touchgfx']]]
 ];
