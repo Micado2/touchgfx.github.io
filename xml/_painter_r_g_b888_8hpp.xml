@@ -6,14 +6,14 @@
     <includes refid="_types_8hpp" local="no">touchgfx/hal/Types.hpp</includes>
     <includes refid="_abstract_painter_r_g_b888_8hpp" local="no">touchgfx/widgets/canvas/AbstractPainterRGB888.hpp</includes>
     <incdepgraph>
+      <node id="405">
+        <label>stdint.h</label>
+      </node>
       <node id="404">
         <label>touchgfx/widgets/canvas/PainterRGB888.hpp</label>
         <link refid="_painter_r_g_b888_8hpp"/>
         <childnode refid="405" relation="include">
         </childnode>
-      </node>
-      <node id="405">
-        <label>stdint.h</label>
       </node>
     </incdepgraph>
     <innerclass refid="classtouchgfx_1_1_painter_r_g_b888" prot="public">touchgfx::PainterRGB888</innerclass>

@@ -9,14 +9,14 @@
     <includedby refid="_painter_g_r_a_y4_8hpp" local="no">touchgfx/widgets/canvas/PainterGRAY4.hpp</includedby>
     <includedby refid="_painter_g_r_a_y4_bitmap_8hpp" local="no">touchgfx/widgets/canvas/PainterGRAY4Bitmap.hpp</includedby>
     <incdepgraph>
-      <node id="328">
-        <label>assert.h</label>
-      </node>
       <node id="327">
         <label>touchgfx/widgets/canvas/AbstractPainterGRAY4.hpp</label>
         <link refid="_abstract_painter_g_r_a_y4_8hpp"/>
         <childnode refid="328" relation="include">
         </childnode>
+      </node>
+      <node id="328">
+        <label>assert.h</label>
       </node>
     </incdepgraph>
     <innerclass refid="classtouchgfx_1_1_abstract_painter_g_r_a_y4" prot="public">touchgfx::AbstractPainterGRAY4</innerclass>

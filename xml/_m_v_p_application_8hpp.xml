@@ -15,6 +15,9 @@
       <node id="16">
         <label>cassert</label>
       </node>
+      <node id="17">
+        <label>new</label>
+      </node>
       <node id="15">
         <label>mvp/MVPApplication.hpp</label>
         <link refid="_m_v_p_application_8hpp"/>
@@ -24,9 +27,6 @@
         </childnode>
         <childnode refid="18" relation="include">
         </childnode>
-      </node>
-      <node id="17">
-        <label>new</label>
       </node>
       <node id="18">
         <label>common/Meta.hpp</label>
