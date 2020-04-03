@@ -4,7 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="generator" content="Docusaurus">
-
+<link rel="preconnect" href="https://www.google-analytics.com">
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-162710244-1","auto"),ga("send","pageview")</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
 
 <title data-react-helmet="true">Using Non-Memory Mapped Flash for storing images | TouchGFX Documentation</title>
 
@@ -16,25 +18,25 @@
 <link rel="stylesheet" href="/styles.cdb1878b.css">
 
 
-<link rel="preload" href="/styles.a46c8391.js" as="script">
+<link rel="preload" href="/styles.a6256359.js" as="script">
 
-<link rel="preload" href="/runtime~main.d7082c42.js" as="script">
+<link rel="preload" href="/runtime~main.b3bce9c9.js" as="script">
 
-<link rel="preload" href="/main.652be987.js" as="script">
+<link rel="preload" href="/main.44427fc7.js" as="script">
 
-<link rel="preload" href="/common.61c1039a.js" as="script">
+<link rel="preload" href="/common.b8534468.js" as="script">
 
-<link rel="preload" href="/2.ac967074.js" as="script">
+<link rel="preload" href="/2.2d1fafba.js" as="script">
 
-<link rel="preload" href="/3.168ba183.js" as="script">
+<link rel="preload" href="/3.77c9ac1d.js" as="script">
 
-<link rel="preload" href="/1be78505.63628704.js" as="script">
+<link rel="preload" href="/1be78505.0419adad.js" as="script">
 
-<link rel="preload" href="/20ac7829.ca23f0a5.js" as="script">
+<link rel="preload" href="/20ac7829.c459a9ec.js" as="script">
 
-<link rel="preload" href="/17896441.f8cf0f7f.js" as="script">
+<link rel="preload" href="/17896441.aa90f48d.js" as="script">
 
-<link rel="preload" href="/b4787294.848869f7.js" as="script">
+<link rel="preload" href="/b4787294.bdd1fded.js" as="script">
 
 </head>
 <body>
@@ -90,28 +92,28 @@ read the pixels from the address found in the <code>bitmap_database</code>
 table. This address will be in the range 0x24000000 - 0x24100000 and
 the read will result in an exception.</p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="linking-images-to-ram"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#linking-images-to-ram" title="Direct link to heading">#</a>Linking images to RAM</h2><p>If your available RAM is big enough to hold all the images (in the
 above example that is more than 147.136 bytes) then you do not need to
-use the bitmap cache to copy the images.</p><p>The strategy is as follows:</p><ul><li>Select a fixed address and range in RAM for the images</li><li>Remove that range from the RAM area in the linker script</li><li>Create a new area IMAGES with the selected address and size</li><li>Place the ExtFlashSection in IMAGES area</li><li>Link the application and check the .map file</li><li>Create the images.bin file from the application.elf</li><li>Before TouchGFX is started, copy the whole images.bin file from the SD-card to the selected address in RAM</li></ul><p>This solution is simple, but has some drawbacks:</p><ul><li>The available RAM must be big enough to hold all the images</li><li>Start up time will be larger because of the copying from the SD-card (megabytes can take seconds)</li></ul></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/development/ui-development/scenarios/creating-dynamic-l8-images"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« Creating Dynamic L8 Images</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/miscellaneous/updating-to-a-new-touchgfx-version"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">Updating to a new TouchGFX Version »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#copying-bitmap-data-from-flash-to-cache" class="contents__link">Copying bitmap data from flash to cache</a></li><li><a href="#the-bitmapdatabase-table" class="contents__link">The BitmapDatabase table</a></li><li><a href="#linker-script-modifications" class="contents__link">Linker script modifications</a></li><li><a href="#modifying-the-blockcopy-function" class="contents__link">Modifying the BlockCopy function</a></li><li><a href="#linking-images-to-ram" class="contents__link">Linking images to RAM</a></li></ul></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center"><div>Copyright © 2020 ST Microelectronics</div></div></div></footer>
+use the bitmap cache to copy the images.</p><p>The strategy is as follows:</p><ul><li>Select a fixed address and range in RAM for the images</li><li>Remove that range from the RAM area in the linker script</li><li>Create a new area IMAGES with the selected address and size</li><li>Place the ExtFlashSection in IMAGES area</li><li>Link the application and check the .map file</li><li>Create the images.bin file from the application.elf</li><li>Before TouchGFX is started, copy the whole images.bin file from the SD-card to the selected address in RAM</li></ul><p>This solution is simple, but has some drawbacks:</p><ul><li>The available RAM must be big enough to hold all the images</li><li>Start up time will be larger because of the copying from the SD-card (megabytes can take seconds)</li></ul></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/development/ui-development/scenarios/creating-dynamic-l8-images"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« Creating Dynamic L8 Images</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/miscellaneous/updating-to-a-new-touchgfx-version"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">Updating to a new TouchGFX Version »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#copying-bitmap-data-from-flash-to-cache" class="contents__link">Copying bitmap data from flash to cache</a></li><li><a href="#the-bitmapdatabase-table" class="contents__link">The BitmapDatabase table</a></li><li><a href="#linker-script-modifications" class="contents__link">Linker script modifications</a></li><li><a href="#modifying-the-blockcopy-function" class="contents__link">Modifying the BlockCopy function</a></li><li><a href="#linking-images-to-ram" class="contents__link">Linking images to RAM</a></li></ul></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center"><div>Copyright © 2020 STMicroelectronics</div></div></div></footer>
 </div>
 
-<script src="/styles.a46c8391.js"></script>
+<script src="/styles.a6256359.js"></script>
 
-<script src="/runtime~main.d7082c42.js"></script>
+<script src="/runtime~main.b3bce9c9.js"></script>
 
-<script src="/main.652be987.js"></script>
+<script src="/main.44427fc7.js"></script>
 
-<script src="/common.61c1039a.js"></script>
+<script src="/common.b8534468.js"></script>
 
-<script src="/2.ac967074.js"></script>
+<script src="/2.2d1fafba.js"></script>
 
-<script src="/3.168ba183.js"></script>
+<script src="/3.77c9ac1d.js"></script>
 
-<script src="/1be78505.63628704.js"></script>
+<script src="/1be78505.0419adad.js"></script>
 
-<script src="/20ac7829.ca23f0a5.js"></script>
+<script src="/20ac7829.c459a9ec.js"></script>
 
-<script src="/17896441.f8cf0f7f.js"></script>
+<script src="/17896441.aa90f48d.js"></script>
 
-<script src="/b4787294.848869f7.js"></script>
+<script src="/b4787294.bdd1fded.js"></script>
 
 
 </body>

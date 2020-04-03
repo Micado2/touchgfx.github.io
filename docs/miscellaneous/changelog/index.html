@@ -4,7 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="generator" content="Docusaurus">
-
+<link rel="preconnect" href="https://www.google-analytics.com">
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-162710244-1","auto"),ga("send","pageview")</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
 
 <title data-react-helmet="true">Changelog | TouchGFX Documentation</title>
 
@@ -16,25 +18,25 @@
 <link rel="stylesheet" href="/styles.cdb1878b.css">
 
 
-<link rel="preload" href="/styles.a46c8391.js" as="script">
+<link rel="preload" href="/styles.a6256359.js" as="script">
 
-<link rel="preload" href="/runtime~main.d7082c42.js" as="script">
+<link rel="preload" href="/runtime~main.b3bce9c9.js" as="script">
 
-<link rel="preload" href="/main.652be987.js" as="script">
+<link rel="preload" href="/main.44427fc7.js" as="script">
 
-<link rel="preload" href="/common.61c1039a.js" as="script">
+<link rel="preload" href="/common.b8534468.js" as="script">
 
-<link rel="preload" href="/2.ac967074.js" as="script">
+<link rel="preload" href="/2.2d1fafba.js" as="script">
 
-<link rel="preload" href="/3.168ba183.js" as="script">
+<link rel="preload" href="/3.77c9ac1d.js" as="script">
 
-<link rel="preload" href="/1be78505.63628704.js" as="script">
+<link rel="preload" href="/1be78505.0419adad.js" as="script">
 
-<link rel="preload" href="/20ac7829.ca23f0a5.js" as="script">
+<link rel="preload" href="/20ac7829.c459a9ec.js" as="script">
 
-<link rel="preload" href="/17896441.f8cf0f7f.js" as="script">
+<link rel="preload" href="/17896441.aa90f48d.js" as="script">
 
-<link rel="preload" href="/be6440e7.47130402.js" as="script">
+<link rel="preload" href="/be6440e7.22207dbf.js" as="script">
 
 </head>
 <body>
@@ -86,14 +88,14 @@ not display the correct font name some places in the UI.</li></ul></li><li><p>Ne
 the range of -10% to -60% depending on the image format, rendering
 algorithm, hardware setup and image layout.</li><li>Texture Mappers are disabled by default, must be enabled before
 use. Read more about this feature here:
-<a href="https://touchgfx.zendesk.com/hc/en-us/articles/360010606200">https://touchgfx.zendesk.com/hc/en-us/articles/360010606200</a></li><li>Added simple string printing for debugging in all LCD types.
-See: <a href="https://touchgfx.zendesk.com/hc/en-us/articles/205074511">https://touchgfx.zendesk.com/hc/en-us/articles/205074511</a></li><li>Font caching now supports GSUB tables as used in Hindi.
-See: <a href="https://touchgfx.zendesk.com/hc/en-us/articles/360024979552">https://touchgfx.zendesk.com/hc/en-us/articles/360024979552</a></li><li>Updated arm gcc compiler to version 7.3.1 2018q2.</li><li>Updated gcc compiler to version 7.3.0.</li><li>Updated mingw environment with latest version of packages.</li></ul></li><li><p>Bugfixes in TouchGFX Core:</p><ul><li>TextureMapper: blending on edges corrected/improved in Bilinear
+<a href="https://support.touchgfx.com/docs/miscellaneous/known-issues/#texturemapper-is-disabled-by-default">https://support.touchgfx.com/docs/miscellaneous/known-issues/#texturemapper-is-disabled-by-default</a></li><li>Added simple string printing for debugging in all LCD types.
+See: <a href="https://touchgfx.zendesk.com/hc/en-us/articles/205074511">https://touchgfx.zendesk.com/hc/en-us/articles/205074511</a></li><li>Font caching now supports GSUB tables as used in Hindi. See:
+<a href="https://support.touchgfx.com/docs/development/ui-development/touchgfx-engine-features/font-cache/#caching-gsub-tables">https://support.touchgfx.com/docs/development/ui-development/touchgfx-engine-features/font-cache/#caching-gsub-tables</a></li><li>Updated arm gcc compiler to version 7.3.1 2018q2.</li><li>Updated gcc compiler to version 7.3.0.</li><li>Updated mingw environment with latest version of packages.</li></ul></li><li><p>Bugfixes in TouchGFX Core:</p><ul><li>TextureMapper: blending on edges corrected/improved in Bilinear
 mode.</li><li>TextureMapper: minor image quality improvements in Nearest
 Neighbor mode.</li><li>Bugfix for text order in arabic text &quot;12:34&quot; which would
 previously render as &quot;34:12&quot; in RTL.</li></ul></li><li><p>Deprecated TouchGFX Core Features:</p><ul><li>Removed definition of deprecated TRANSPARENT_COL.</li><li>Removed Drawable::getType().</li><li>Removed HAL::blitSetTransparencyKey().</li><li>Removed HAL::registerTextCache().</li><li>Removed HAL::cacheTextString().</li></ul></li><li><p>Update procedure:</p><ul><li>For this release additional steps might be needed. Please refer to
 the Known Issues article for details:
-<a href="https://touchgfx.zendesk.com/hc/en-us/articles/207507415">https://touchgfx.zendesk.com/hc/en-us/articles/207507415</a></li></ul></li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="version-4123"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#version-4123" title="Direct link to heading">#</a>Version 4.12.3</h2><ul><li><p>Release date: September 25rd, 2019</p></li><li><p>New TouchGFX Core Features (since 4.12.0):</p><ul><li>Binary Fonts: Binary fonts can be used as an alternative to
+<a href="https://support.touchgfx.com/docs/miscellaneous/known-issues/#project-updater-issue">https://support.touchgfx.com/docs/miscellaneous/known-issues/#project-updater-issue</a></li></ul></li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="version-4123"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#version-4123" title="Direct link to heading">#</a>Version 4.12.3</h2><ul><li><p>Release date: September 25th, 2019</p></li><li><p>New TouchGFX Core Features (since 4.12.0):</p><ul><li>Binary Fonts: Binary fonts can be used as an alternative to
 compiling and linking font information in to your application. The
 main advantages of this approach is to get a smaller application
 binary and get a flexibility in providing different sets of fonts
@@ -101,8 +103,7 @@ with your device.</li><li>Font Caching: Support for caching binary fonts, suitab
 loading only the required characters from a file system, when a
 string is displayed.</li><li>Binary Translations: Support for binary translations, suitable for
 loading translations from a file system as opposed to linking them
-into the application.
-Read more about these feature here:
+into the application. Read more about these feature here:
 <a href="https://touchgfx.zendesk.com/hc/en-us/articles/360024979552">https://touchgfx.zendesk.com/hc/en-us/articles/360024979552</a></li><li>Support for non-memory-mapped flash storage for 16bpp displays,
 allows storage of images and fonts in e.g. inexpensive SPI
 flashes.</li><li>Recognition of Unicode sequences for Arabic ligatures Allah,
@@ -167,7 +168,7 @@ platforms. Invalidating the entire screen in
 Screen::afterTransition(), if required, is now the responsibility
 of the application developer.</li></ul></li><li><p>Update procedure:</p><ul><li>For this release additional steps might be needed. Please refer to
 the Known Issues article for details:
-<a href="https://touchgfx.zendesk.com/hc/en-us/articles/207507415">https://touchgfx.zendesk.com/hc/en-us/articles/207507415</a></li></ul></li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="version-4110"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#version-4110" title="Direct link to heading">#</a>Version 4.11.0</h2><ul><li><p>Release date: March 1st, 2019</p></li><li><p>Important upgrade information:</p><ul><li>If your application includes LCD.hpp and expects to have access to
+<a href="https://support.touchgfx.com/docs/miscellaneous/known-issues/#project-updater-issue">https://support.touchgfx.com/docs/miscellaneous/known-issues/#project-updater-issue</a></li></ul></li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="version-4110"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#version-4110" title="Direct link to heading">#</a>Version 4.11.0</h2><ul><li><p>Release date: March 1st, 2019</p></li><li><p>Important upgrade information:</p><ul><li>If your application includes LCD.hpp and expects to have access to
 HAL, this will no longer work since LCD.hpp no longer includes
 HAL.hpp. Make sure to include HAL.hpp in this case. Older versions
 of sample applications Demo1 and Demo2 had this issue and have been
@@ -199,7 +200,7 @@ FlexButton.</li><li>Fixed wrong order of initializations when using numerous sli
 callbacks in interactions.</li></ul></li><li><p>Bugfixes in TouchGFX Core:</p><ul><li>Fixed precision in CWR Painters for 4bpp and 2bpp.</li><li>Fixed precision in alpha blending formulaes for 8bpp, 16bpp and
 24bpp.</li></ul></li><li><p>Update procedure:</p><ul><li>For this release additional steps might be needed. Please refer to
 the Known Issues article for details:
-<a href="https://touchgfx.zendesk.com/hc/en-us/articles/207507415">https://touchgfx.zendesk.com/hc/en-us/articles/207507415</a></li></ul></li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="version-4100"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#version-4100" title="Direct link to heading">#</a>Version 4.10.0</h2><ul><li><p>Release date: November 5th, 2018</p></li><li><p>Requirements:</p><ul><li>TouchGFX is now only available for STM32 microcontrollers.</li></ul></li><li><p>New TouchGFX Designer Features:</p><ul><li>Added support for the following widgets: ImageProgress,
+<a href="https://support.touchgfx.com/docs/miscellaneous/known-issues/#project-updater-issue">https://support.touchgfx.com/docs/miscellaneous/known-issues/#project-updater-issue</a></li></ul></li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="version-4100"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#version-4100" title="Direct link to heading">#</a>Version 4.10.0</h2><ul><li><p>Release date: November 5th, 2018</p></li><li><p>Requirements:</p><ul><li>TouchGFX is now only available for STM32 microcontrollers.</li></ul></li><li><p>New TouchGFX Designer Features:</p><ul><li>Added support for the following widgets: ImageProgress,
 BoxProgress, TextProgress, LineProgress, CircleProgress, Line,
 Circle, BoxWithBorder, FlexButton, ScrollList, ScrollWheel and
 SwipeContainer.</li><li>Canvas Buffer setting can be adjusted on screens.</li><li>Support for screen transition: CoverTransition.</li><li>Now logs the following system information for use in support
@@ -234,7 +235,7 @@ rectangle was not calculated properly.</li><li>Fixed Circle when half line width
 and 1449 pixels high.</li><li>Fixed bug preventing some Arabic ligatures from being rendered
 correctly.</li></ul></li><li><p>Update procedure:</p><ul><li>For this release additional steps might be needed. Please refer to
 the Known Issues article for details:
-<a href="https://touchgfx.zendesk.com/hc/en-us/articles/207507415">https://touchgfx.zendesk.com/hc/en-us/articles/207507415</a></li></ul></li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="version-494"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#version-494" title="Direct link to heading">#</a>Version 4.9.4</h2><ul><li><p>Release date: January 25th, 2018</p></li><li><p>Bugfixes:</p><ul><li>Reduced the time it takes to load an application in the Designer.</li></ul></li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="version-493"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#version-493" title="Direct link to heading">#</a>Version 4.9.3</h2><ul><li><p>Release date: December 15th, 2017</p></li><li><p>Bugfixes:</p><ul><li>Designer now uses default Windows proxy settings.</li><li>Package manager updates available packages when online.</li><li>Improved error description when offline.</li><li>Set text interaction works with resource texts.</li><li>Project updater updates MSVS projects with correct image formats.</li><li>Text size calculated wrongly in Designer in rare occasions.</li><li>Recent files ordered by date.</li><li>Corrected initialization of counter in Wait For interaction.</li><li>Fixed drawing of child elements in list layout, when resized.</li><li>Fixed loading of application with list layout widgets.</li><li>.otf font files now correctly rendered.</li><li>Dragging containers could in rare cases introduce wrong coordinates.</li><li>Fixed zero termination of wildcard text buffers.</li><li>Button With Label text rendering correction.</li><li>tgfx.exe packager works for more complex file layouts.</li><li>Source code included for containers.</li><li>Additional minor Designer UI fixes and improvements.</li></ul></li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="version-492"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#version-492" title="Direct link to heading">#</a>Version 4.9.2</h2><ul><li><p>Release date: November 20th, 2017</p></li><li><p>Bugfixes:</p><ul><li>Fixed Designer issue where dragging elements on the canvas would
+<a href="https://support.touchgfx.com/docs/miscellaneous/known-issues/#project-updater-issue">https://support.touchgfx.com/docs/miscellaneous/known-issues/#project-updater-issue</a></li></ul></li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="version-494"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#version-494" title="Direct link to heading">#</a>Version 4.9.4</h2><ul><li><p>Release date: January 25th, 2018</p></li><li><p>Bugfixes:</p><ul><li>Reduced the time it takes to load an application in the Designer.</li></ul></li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="version-493"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#version-493" title="Direct link to heading">#</a>Version 4.9.3</h2><ul><li><p>Release date: December 15th, 2017</p></li><li><p>Bugfixes:</p><ul><li>Designer now uses default Windows proxy settings.</li><li>Package manager updates available packages when online.</li><li>Improved error description when offline.</li><li>Set text interaction works with resource texts.</li><li>Project updater updates MSVS projects with correct image formats.</li><li>Text size calculated wrongly in Designer in rare occasions.</li><li>Recent files ordered by date.</li><li>Corrected initialization of counter in Wait For interaction.</li><li>Fixed drawing of child elements in list layout, when resized.</li><li>Fixed loading of application with list layout widgets.</li><li>.otf font files now correctly rendered.</li><li>Dragging containers could in rare cases introduce wrong coordinates.</li><li>Fixed null-termination of wildcard text buffers.</li><li>Button With Label text rendering correction.</li><li>tgfx.exe packager works for more complex file layouts.</li><li>Source code included for containers.</li><li>Additional minor Designer UI fixes and improvements.</li></ul></li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="version-492"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#version-492" title="Direct link to heading">#</a>Version 4.9.2</h2><ul><li><p>Release date: November 20th, 2017</p></li><li><p>Bugfixes:</p><ul><li>Fixed Designer issue where dragging elements on the canvas would
 in some cases cause an exception.</li></ul></li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="version-491"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#version-491" title="Direct link to heading">#</a>Version 4.9.1</h2><ul><li><p>Release date: November 16th, 2017</p></li><li><p>Bugfixes:</p><ul><li>Fixed several Designer issues with TextArea widgets when placed
 inside containers.</li><li>Fixed an issue with interactions triggered by &quot;Another interaction
 is done&quot; dissappearing when loading a project.</li><li>On PCs with certain security policy configurations, the Designer
@@ -245,8 +246,7 @@ generated.</li><li>Fixed issue with ImageConverter when assets folder was under 
 control.</li><li>ImageConverter could in certain cases fail to detect changes in
 assets.</li></ul></li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="version-490"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#version-490" title="Direct link to heading">#</a>Version 4.9.0</h2><ul><li><p>Release date: November 8th, 2017</p></li><li><p>New Features:</p><ul><li>Added a package manager for handling board support packages, demos
 and examples. The Designer will now fetch these from an online
-repository. Read more about this feature here:
-<a href="https://touchgfx.zendesk.com/hc/en-us/articles/115002589211">https://touchgfx.zendesk.com/hc/en-us/articles/115002589211</a></li><li>All the old examples, demos and ports for various boards have been
+repository.</li><li>All the old examples, demos and ports for various boards have been
 removed from the framework, and are now available as packages
 instead.</li><li>Substantially improved text handling in the Designer. It is now
 possible to work with translations and wildcards in the Designer,
@@ -266,19 +266,14 @@ information about which widgets are currently registered.</li></ul></li><li><p>B
 cancelAnimationTextureMapperAnimation() to avoid problems with
 MoveAnimator::cancelMoveAnimation().</li><li>Fixed bug in PainterRGB565Bitmap when rendering solid pixels from
 an ARGB8888 Bitmap.</li><li>Fixed rare bug in FontConvert if all used characters are missing
-from the font.</li><li>Fixed unitialized variables in the DMA class.</li></ul></li><li><p>Update procedure:</p><ul><li>For this release additional steps might be needed. Please refer to
-the Known Issues article for details:
-<a href="https://touchgfx.zendesk.com/hc/en-us/articles/207507415">https://touchgfx.zendesk.com/hc/en-us/articles/207507415</a></li></ul></li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="version-480"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#version-480" title="Direct link to heading">#</a>Version 4.8.0</h2><ul><li><p>Release date: March 10th, 2017</p></li><li><p>Performance</p><ul><li>LCD4bpp now draws characters up to 15% faster.</li><li>Canvas widgets now render slightly faster in certain situations.</li></ul></li><li><p>New Features:</p><ul><li>TouchGFX Designer released. The core framework, Designer and
-environment shell are now bundled in a single installation.
-To get started with the Designer, please see
-<a href="https://touchgfx.zendesk.com/hc/en-us/articles/115001801745">https://touchgfx.zendesk.com/hc/en-us/articles/115001801745</a></li><li>Support for Farsi and Arabic ligatures where squences of up to
+from the font.</li><li>Fixed unitialized variables in the DMA class.</li></ul></li><li><p>Update procedure:</p><ul><li>For this release additional steps might be needed.</li></ul></li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="version-480"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#version-480" title="Direct link to heading">#</a>Version 4.8.0</h2><ul><li><p>Release date: March 10th, 2017</p></li><li><p>Performance</p><ul><li>LCD4bpp now draws characters up to 15% faster.</li><li>Canvas widgets now render slightly faster in certain situations.</li></ul></li><li><p>New Features:</p><ul><li>TouchGFX Designer released. The core framework, Designer and
+environment shell are now bundled in a single installation.</li><li>Support for Farsi and Arabic ligatures where squences of up to
 three character are recognized.</li><li>Added support for Microsoft Visual Studio 2017.</li><li>TextArea and TextAreaWithWildcard(s) now support
 setWideTextAction() to automatically break lines and insert
 ellipsis at end of line, when the line is too long.</li><li>Added getter functions to Slider.</li><li>MoveAnimator and FadeAnimator can now clear the callback
 set for animation ended.</li><li>Errors from ImageConvert, TextConvert and FontConvert are now
 shown in the Error List window of Visual Studio.</li><li>Simulator applications are now Windows programs instead of Console
-programs. To use printf() or std::out, please see
-<a href="https://touchgfx.zendesk.com/hc/en-us/articles/205074511-Tips-tricks">https://touchgfx.zendesk.com/hc/en-us/articles/205074511-Tips-tricks</a></li></ul></li><li><p>Bugfixes</p><ul><li>AbstractShape::updateAbstractShapeCache() is now a public function
+programs.</li></ul></li><li><p>Bugfixes</p><ul><li>AbstractShape::updateAbstractShapeCache() is now a public function
 and should be called after one or more calls to
 AbstractShape::setCorner(), to ensure shape is correct.</li><li>Simulator window can no longer be unintentionally resized.</li><li>F2 to highlight invalidated areas now works with old HALSDL.</li><li>PainterGRAY2Bitmap, PainterGRAY4Bitmap, PainterRGB565Bitmap and
 PainterRGB888Bitmap all failed to validate that painting was
@@ -287,24 +282,18 @@ screenshots correct.</li><li>TiledImage::setOffset() now handles an empty bitmap
 resizeHeightToCurrentText() would swap the width/height.</li><li>Function getTextHeight() would not take line spacing into
 account. Functions like resizeToCurrentText() and others that use
 the getTextHeight() function would not resize correctly.</li><li>SlideMenu::setState() did not handle EXPANDED state correctly.</li></ul></li><li><p>Update Procedure</p><ul><li>Due to the addition of TouchGFX Designer, installation is now
-done via an .msi installer. For details and manual installation
-refer to <a href="https://touchgfx.zendesk.com/hc/en-us/articles/206819819">https://touchgfx.zendesk.com/hc/en-us/articles/206819819</a></li><li>Compatible with existing 4.x applications and HAL ports.</li></ul></li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="version-470"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#version-470" title="Direct link to heading">#</a>Version 4.7.0</h2><ul><li><p>Release date: December 14th, 2016</p></li><li><p>New Features:</p><ul><li>Source code for all the standard widgets and containers is now
+done via an .msi installer.</li><li>Compatible with existing 4.x applications and HAL ports.</li></ul></li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="version-470"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#version-470" title="Direct link to heading">#</a>Version 4.7.0</h2><ul><li><p>Release date: December 14th, 2016</p></li><li><p>New Features:</p><ul><li>Source code for all the standard widgets and containers is now
 included. See the touchgfx/framework/source/touchgfx directory.
 Note that these classes are still present in the core library, and
 the source code files are not added to the IAR/Keil/gcc projects
-per default. For details, see the following article:
-<a href="https://touchgfx.zendesk.com/hc/en-us/articles/115000035825">https://touchgfx.zendesk.com/hc/en-us/articles/115000035825</a></li><li>Optimized the handling of single frame buffer configuration on TFT
+per default.</li><li>Optimized the handling of single frame buffer configuration on TFT
 controller based platforms, which in many cases eliminate the need
-for external RAM. For details on this feature, and how to enable
-it please see the following article:
-<a href="https://touchgfx.zendesk.com/hc/en-us/articles/203649441">https://touchgfx.zendesk.com/hc/en-us/articles/203649441</a></li><li>Substantial performance optimizations of the canvas widget system
+for external RAM.</li><li>Substantial performance optimizations of the canvas widget system
 and all the standard painters. Expect a very significant increase
 in performance if many pixels are being drawn, and a smaller
 increase in performance for minor shapes (e.g. graph lines). The
 &quot;PainterVerticalAlpha&quot; used in our demos have also been
-updated. If you are using custom painters please refer to the
-Known Issues article:
-<a href="https://touchgfx.zendesk.com/hc/en-us/articles/207507415">https://touchgfx.zendesk.com/hc/en-us/articles/207507415</a></li><li>The text converter tool will now combine identical translations
+updated.</li><li>The text converter tool will now combine identical translations
 across all languages, resulting in reduced footprint. The result
 of this process will be printed during asset generation.
 NOTE: This behavior is enabled by default. If you have an existing
@@ -314,12 +303,10 @@ code. The optimization can be disabled by adding the following
 remap_identical_texts := no (for &quot;make&quot;-based generation)
 &lt;RemapIdenticalTexts&gt;no&lt;/RemapIdenticalTexts&gt; (for MSVS)</li><li>Updated SDL version used by simulator from 1.2 to 2.0.4. SDL1.2 is
 still present in the distribution, but all examples and projects
-now use SDL2. For more details, please see:
-<a href="https://touchgfx.zendesk.com/hc/en-us/articles/115000011245">https://touchgfx.zendesk.com/hc/en-us/articles/115000011245</a></li><li>Support for skinning the simulator with .png files. If the .png
+now use SDL2.</li><li>Support for skinning the simulator with .png files. If the .png
 files contain non-opaque areas, the simulator window will be
 shaped accordingly. See display_orientation_example for a code
-example or read the following article:
-<a href="https://touchgfx.zendesk.com/hc/en-us/articles/115000014669">https://touchgfx.zendesk.com/hc/en-us/articles/115000014669</a></li><li>On ST targets with Chrom-ART, the Box widget will now be drawn by
+example.</li><li>On ST targets with Chrom-ART, the Box widget will now be drawn by
 DMA even when alpha &lt; 255 (BLIT_OP_FILL_WITH_ALPHA support).</li><li>TextArea and TextArea with wildcard(s) now support
 setWideTextAction() to automatically wrap long lines.</li><li>Added the ability to display a &quot;fallback&quot; character in case a
 non-existing glyph is encountered at runtime. This is configured
@@ -360,15 +347,13 @@ HALSDL::setWindowTitle().</li><li>BW_RLE format (1bpp displays) now compresses b
 remove old generated files and re-generate assets.</li><li>STM32F756G-EVAL using IAR now supports flashing of external
 memory.</li></ul></li><li><p>Bugfixes</p><ul><li>Added IAR linker redirect commands to fix linker errors when
 compiling a Cortex-M4 based target with IAR 7.x.</li><li>Assigning different memory buffers to CanvasWidgetRenderer using
-setupBuffer() could in rare cases result in memory corruption.</li><li>TextureMapper could in rare cases draw outside the frame buffer.</li><li>Setting the offset of a TiledImage did not work properly.</li><li>Fixed two issues that would in some cases cause memory corruption
+setupBuffer() could in rare cases result in memory corruption.</li><li>TextureMapper could in rare cases draw outside the framebuffer.</li><li>Setting the offset of a TiledImage did not work properly.</li><li>Fixed two issues that would in some cases cause memory corruption
 when deleting dynamic bitmaps.</li><li>Missing virtual method declarations in AnalogClock added.</li><li>Fixed a problem in GCC linker script for LPC4088DisplayModule
 which caused texts and fonts to be placed in external flash.</li><li>For those using fontconvert.out on its own, the output directory
 is now automatically created if it does not exist.</li><li>ScrollableContainers could in rare cases send a wrong drag event
 to a child.</li><li>Monochrome (1bpp) displays with width not divisible by 8 would not
 display text correctly.</li><li>Slightly increased default touch sample rate on STM32F746G
-Discovery board.</li></ul></li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="version-460"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#version-460" title="Direct link to heading">#</a>Version 4.6.0</h2><ul><li><p>Release date: June 14th, 2016</p></li><li><p>New features</p><ul><li>Added support for 2bpp grayscale displays. See
-<a href="https://touchgfx.zendesk.com/hc/en-us/articles/208237889">https://touchgfx.zendesk.com/hc/en-us/articles/208237889</a> for details.</li><li>Added support for 4bpp grayscale displays. See
-<a href="https://touchgfx.zendesk.com/hc/en-us/articles/209003105">https://touchgfx.zendesk.com/hc/en-us/articles/209003105</a> for details.</li><li>New widget TiledImage. Will display one or more repetions of an
+Discovery board.</li></ul></li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="version-460"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#version-460" title="Direct link to heading">#</a>Version 4.6.0</h2><ul><li><p>Release date: June 14th, 2016</p></li><li><p>New features</p><ul><li>Added support for 2bpp grayscale displays.</li><li>Added support for 4bpp grayscale displays.</li><li>New widget TiledImage. Will display one or more repetions of an
 image. The number of repetitions depends on the size of the widget
 and the size of the image.</li><li>New widget RepeatButton. A button that will repeatedly fire click
 events when pressed.</li><li>New widget AnimationTextureMapper. TextureMapper with build in
@@ -379,16 +364,13 @@ visible. See example modal_window_example.</li><li>New container SlideMenu. Anim
 an activate button for sliding it in/out of the screen. A timeout
 can be set for automitical hiding when idle for a period of time.</li><li>Canvas Widget Line supports ROUND_CAP_ENDING and setCapPrecision()
 to control the round cap.</li><li>Simulator can now generate ticks very close to the frequency of
-the hardware. See
-<a href="https://touchgfx.zendesk.com/hc/en-us/articles/205074511">https://touchgfx.zendesk.com/hc/en-us/articles/205074511</a> for details.</li><li>Mouse X and Y coordinates are put in the title of the window in
+the hardware.</li><li>Mouse X and Y coordinates are put in the title of the window in
 the simulator. (press F1 to (de)active this when running the
-simulator). See
-<a href="https://touchgfx.zendesk.com/hc/en-us/articles/205074511">https://touchgfx.zendesk.com/hc/en-us/articles/205074511</a> for details.</li><li>ST Cube drivers updated to version 1.4.0 for STM32F7 MCU and
+simulator).</li><li>ST Cube drivers updated to version 1.4.0 for STM32F7 MCU and
 STM32F7 based boards.</li><li>Added support for the STM32769I-EVAL board.</li><li>Added support for the STM32F769I-Discovery board.</li><li>Screenshots made from the simulator (F3) are now saved under a
 name with timestamp to prevent old screenshots to be overwritten
 by accident.</li><li>Simulator now outputs canvas widget memory usage to easily find
-optimal canvas memory buffer size. See
-<a href="https://touchgfx.zendesk.com/hc/en-us/articles/205074511">https://touchgfx.zendesk.com/hc/en-us/articles/205074511</a> for details.</li></ul></li><li><p>Bugfixes</p><ul><li>DMA drivers for ST boards: express DMA2D instance initialization
+optimal canvas memory buffer size.</li></ul></li><li><p>Bugfixes</p><ul><li>DMA drivers for ST boards: express DMA2D instance initialization
 for STM32F7. Fixed incorrect used of CLUT_CM for F4-Discovery.</li><li>DMA drivers for LPC17xx, LPC18xx, LPC43xx did not behave correctly
 if other DMA channels are in use simulatenously. They now properly
 look at flags for channel 0 only.</li><li>Touch controller drivers for ST boards now properly checks that
@@ -401,9 +383,7 @@ fixes occasional graphics errors on STM32F7 when in single frame
 buffer mode and fb was located in SRAM.</li><li>The otm8009a displays (STM32769-DISCO, STM32769-EVAL,
 STM32469-DISCO, STM32469-EVAL) are now using maximum display
 brightness.</li><li>Added a workaround for a bug in IAR 7.50.x regarding va_list
-name mangling.</li></ul></li><li><p>Update Procedure</p><ul><li>Compatible with existing 4.x applications and HAL ports. Please
-refer to this article for details:
-<a href="https://touchgfx.zendesk.com/hc/en-us/articles/206819819">https://touchgfx.zendesk.com/hc/en-us/articles/206819819</a></li></ul></li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="version-451"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#version-451" title="Direct link to heading">#</a>Version 4.5.1</h2><ul><li><p>Release date: March 14th, 2016</p></li><li><p>Bugfixes</p><ul><li>Fixed two IAR linker issues related to resolving the va_list
+name mangling.</li></ul></li><li><p>Update Procedure</p><ul><li>Compatible with existing 4.x applications and HAL ports.</li></ul></li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="version-451"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#version-451" title="Direct link to heading">#</a>Version 4.5.1</h2><ul><li><p>Release date: March 14th, 2016</p></li><li><p>Bugfixes</p><ul><li>Fixed two IAR linker issues related to resolving the va_list
 symbol, which would cause some versions of IAR being unable to
 link the example projects.</li><li>STM32F4-Discovery board would draw solid rectangles with the wrong
 color in 16bpp mode.</li><li>The Canvas Widget Renderer no longer performs unaligned memory
@@ -412,23 +392,17 @@ previously prevented FreeRTOS from freeing memory if tasks were
 deleted.</li><li>Arabic words with accent in the middle would not render properly.</li><li>Added PixelDataWidget::getAlpha().</li><li>Unicode::strncpy() with a char* as source would not copy
 characters with ascii codes above 127 properly.</li></ul></li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="version-450"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#version-450" title="Direct link to heading">#</a>Version 4.5.0</h2><ul><li><p>Release date: February 2nd, 2016</p></li><li><p>New features</p><ul><li>Support for two new languages, Arabic and Hebrew, with
 right-to-left text rendering. RTL strings can be mixed with LTR
-texts and numbers.</li><li>Support for 24 bits per pixel frame buffers. Images look more
-detailed, but also consume more memory. See this article:
-<a href="https://touchgfx.zendesk.com/hc/en-us/articles/206725849">https://touchgfx.zendesk.com/hc/en-us/articles/206725849</a></li><li>Bitmaps can now be created at runtime using method
+texts and numbers.</li><li>Support for 24 bits per pixel framebuffers. Images look more
+detailed, but also consume more memory.</li><li>Bitmaps can now be created at runtime using method
 Bitmap::dynamicBitmapCreate. Useful for e.g. displaying .bmp files
-loaded from an SD card. See dynamic_bitmap_example and this
-article: <a href="https://touchgfx.zendesk.com/hc/en-us/articles/207460605">https://touchgfx.zendesk.com/hc/en-us/articles/207460605</a></li><li>Frame rate compensation feature which provides smoother animations
-if frame rate occasionally drops. Not enabled by default. See
-article: <a href="https://touchgfx.zendesk.com/hc/en-us/articles/206430529">https://touchgfx.zendesk.com/hc/en-us/articles/206430529</a></li><li>Bitmap caching is enhanced to allow removal of bitmaps from the
-cache to make room for caching of other bitmaps. See this article:
-<a href="https://touchgfx.zendesk.com/hc/en-us/articles/205953932">https://touchgfx.zendesk.com/hc/en-us/articles/205953932</a></li><li>A new widget, PixelDataWidget, is introduced. This widget makes it
+loaded from an SD card. See dynamic_bitmap_example.</li><li>Frame rate compensation feature which provides smoother animations
+if frame rate occasionally drops. Not enabled by default.</li><li>Bitmap caching is enhanced to allow removal of bitmaps from the
+cache to make room for caching of other bitmaps.</li><li>A new widget, PixelDataWidget, is introduced. This widget makes it
 possible to display raw pixel data obtained at runtime (e.g. video
 samples).</li><li>The simulator executable on windows now features an icon for
 easier identification in the task bar.</li><li>ST boards supported by TouchGFX can now have just their internal
 flash programmed from the command using &#x27;make intflash&#x27; provided
-that ST-Link Utility Release 3.7+ is installed. For usage and
-troubleshooting, please refer to this article:
-<a href="https://touchgfx.zendesk.com/hc/en-us/articles/205264831">https://touchgfx.zendesk.com/hc/en-us/articles/205264831</a></li><li>Unicode::snprintf() has been improved and updated substantially to
+that ST-Link Utility Release 3.7+ is installed.</li><li>Unicode::snprintf() has been improved and updated substantially to
 support more of the standard format specifiers like %02d.</li><li>Unicode::snprintfFloat() added to support floats (in separate
 function because the &quot;%f&quot; va_args approach would force inclusion
 of doubles).</li><li>Quality of image converter dithering has been improved (floating
@@ -462,12 +436,10 @@ uppercase hex and &quot;%x&quot; generates lower case hex, just like the
 standard snprintf().</li><li>Fixed randomness for demos when running on Linux.</li><li>Fixed redrawing when using heavily italicized fonts.</li><li>Pointer to ModelListener in Model class for all TouchGFX
 applications was not properly initialized (NULL).</li><li>Fixed support for heavily italicized fonts in touchgfx::TextArea.</li><li>Subtle error in the Image Converter where column 0 could get
 slightly incorrect pixel colors. As a result the entire image
-could be slightly wrong, probably not noticeable.</li><li>Minor error in Slider where values were not distributed evenly.</li></ul></li><li><p>Deprecated</p><ul><li>LCD::drawGlyph() has been deprecated. Use LCD::drawString instead.</li></ul></li><li><p>Update Procedure</p><ul><li>Compatible with existing 4.x applications and HAL ports. Please
-refer to this article for details:
-<a href="https://touchgfx.zendesk.com/hc/en-us/articles/206819819">https://touchgfx.zendesk.com/hc/en-us/articles/206819819</a></li></ul></li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="version-442"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#version-442" title="Direct link to heading">#</a>Version 4.4.2</h2><ul><li><p>Release date: November 26th, 2015</p></li><li><p>Bugfixes:</p><ul><li>Corrected rare GUI task hangup on STM32F7 targets when compiling
+could be slightly wrong, probably not noticeable.</li><li>Minor error in Slider where values were not distributed evenly.</li></ul></li><li><p>Deprecated</p><ul><li>LCD::drawGlyph() has been deprecated. Use LCD::drawString instead.</li></ul></li><li><p>Update Procedure</p><ul><li>Compatible with existing 4.x applications and HAL ports.</li></ul></li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="version-442"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#version-442" title="Direct link to heading">#</a>Version 4.4.2</h2><ul><li><p>Release date: November 26th, 2015</p></li><li><p>Bugfixes:</p><ul><li>Corrected rare GUI task hangup on STM32F7 targets when compiling
 with IAR 7.x</li></ul></li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="version-441"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#version-441" title="Direct link to heading">#</a>Version 4.4.1</h2><ul><li><p>Release date: October 27th, 2015</p></li><li><p>Bugfixes:</p><ul><li>Corrected occasional GUI task hangup on STM32F7 targets when
 compiling with Keil 5.x</li><li>Fixed occasional tearing on STM32 F469 EVAL/Discovery boards when
-using DSI in landscape orientation and single frame buffer mode.</li><li>Modified IAR flash loader settings for STM32 F469 boards to enable
+using DSI in landscape orientation and single framebuffer mode.</li><li>Modified IAR flash loader settings for STM32 F469 boards to enable
 programming of internal flash (Note: QuadSPI flash must still be
 programmed from ST-Link Utility as there are no IAR loaders for
 this)</li><li>GPIO class for perf. measurement for STM32F746G-EVAL boards now
@@ -496,7 +468,7 @@ version 4.9.3. The older version 4.8.4 could generate invalid code
 for Cortex-M7 cores in rare cases.</li></ul></li><li><p>Board support</p><ul><li>Added support for the STM32F7xx processors</li><li>Added support for the STM32F746G-DISCO and STM32756G-EVAL boards</li><li>Added support for the STM32F469 processor with DSI displays</li><li>Added support for the STM32469I-EVAL and STM32469I-Discovery boards</li></ul></li><li><p>Bugfixes</p><ul><li>TextureMapper and ScaleableImage now draws images correctly when
 using &quot;rotate90&quot;.</li><li>Fixed potential initialization order bug in STM32F4DMA.cpp</li><li>Fixed bug that limited number of glyphs in a single font to 32768.
 Now supports 65536 glyphs per font as intended.</li><li>Fixed bug that caused hal.lockDMAToFrontPorch(false) to not have
-any effect in single frame buffer mode.</li><li>ButtonWithLabel correctly center texts vertically if text contains
+any effect in single framebuffer mode.</li><li>ButtonWithLabel correctly center texts vertically if text contains
 newlines</li></ul></li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="version-430"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#version-430" title="Direct link to heading">#</a>Version 4.3.0</h2><ul><li><p>Release date: June 8th, 2015</p></li><li><p>New features</p><ul><li>TextureMapper widget added.
 The TextureMapper is a highly optimized image renderer that can be
 used for displaying an image that is scaled and/or rotated in two
@@ -649,28 +621,28 @@ structure</li></ul></li><li><p>Info</p><ul><li>The &quot;magic&quot; transparent
 transparent color in the bmp format is no longer supported.
 Instead use png images with alpha channel.</li></ul></li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="version-220"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#version-220" title="Direct link to heading">#</a>Version 2.2.0</h2><ul><li>New features<ul><li>Added support for portrait mode with landscape displays at zero
 performance/resource cost.</li><li>Added kerning support.</li><li>Added Keyboard example (with IAR project for the Energy Micro
-DK3750 eval board)</li><li>Changed interface for blitCopy method in LCD.</li><li>Removed SyncBackBuffer method from HAL.</li><li>Removed clearLCD method from LCD.</li><li>Removed fillGradientRect method from LCD.</li><li>ScrollableContainer supports setScrollbarsVisible(bool visible).</li></ul></li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="version-210"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#version-210" title="Direct link to heading">#</a>Version 2.1.0</h2><ul><li>First release of TouchGFX as a commercially available framework</li></ul></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/miscellaneous/known-issues"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« Known Issues</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/miscellaneous/3rd-party-components-in-touchgfx"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">3rd Party Components in TouchGFX »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#version-4130" class="contents__link">Version 4.13.0</a></li><li><a href="#version-4123" class="contents__link">Version 4.12.3</a></li><li><a href="#version-4122" class="contents__link">Version 4.12.2</a></li><li><a href="#version-4121" class="contents__link">Version 4.12.1</a></li><li><a href="#version-4120" class="contents__link">Version 4.12.0</a></li><li><a href="#version-4110" class="contents__link">Version 4.11.0</a></li><li><a href="#version-4100" class="contents__link">Version 4.10.0</a></li><li><a href="#version-494" class="contents__link">Version 4.9.4</a></li><li><a href="#version-493" class="contents__link">Version 4.9.3</a></li><li><a href="#version-492" class="contents__link">Version 4.9.2</a></li><li><a href="#version-491" class="contents__link">Version 4.9.1</a></li><li><a href="#version-490" class="contents__link">Version 4.9.0</a></li><li><a href="#version-480" class="contents__link">Version 4.8.0</a></li><li><a href="#version-470" class="contents__link">Version 4.7.0</a></li><li><a href="#version-461" class="contents__link">Version 4.6.1</a></li><li><a href="#version-460" class="contents__link">Version 4.6.0</a></li><li><a href="#version-451" class="contents__link">Version 4.5.1</a></li><li><a href="#version-450" class="contents__link">Version 4.5.0</a></li><li><a href="#version-442" class="contents__link">Version 4.4.2</a></li><li><a href="#version-441" class="contents__link">Version 4.4.1</a></li><li><a href="#version-440" class="contents__link">Version 4.4.0</a></li><li><a href="#version-430" class="contents__link">Version 4.3.0</a></li><li><a href="#version-420" class="contents__link">Version 4.2.0</a></li><li><a href="#version-411" class="contents__link">Version 4.1.1</a></li><li><a href="#version-410" class="contents__link">Version 4.1.0</a></li><li><a href="#version-400" class="contents__link">Version 4.0.0</a></li><li><a href="#version-310" class="contents__link">Version 3.1.0</a></li><li><a href="#version-300" class="contents__link">Version 3.0.0</a></li><li><a href="#version-220" class="contents__link">Version 2.2.0</a></li><li><a href="#version-210" class="contents__link">Version 2.1.0</a></li></ul></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center"><div>Copyright © 2020 ST Microelectronics</div></div></div></footer>
+DK3750 eval board)</li><li>Changed interface for blitCopy method in LCD.</li><li>Removed SyncBackBuffer method from HAL.</li><li>Removed clearLCD method from LCD.</li><li>Removed fillGradientRect method from LCD.</li><li>ScrollableContainer supports setScrollbarsVisible(bool visible).</li></ul></li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="version-210"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#version-210" title="Direct link to heading">#</a>Version 2.1.0</h2><ul><li>First release of TouchGFX as a commercially available framework.</li></ul></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/miscellaneous/known-issues"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« Known Issues</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/miscellaneous/3rd-party-components-in-touchgfx"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">3rd Party Components in TouchGFX »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#version-4130" class="contents__link">Version 4.13.0</a></li><li><a href="#version-4123" class="contents__link">Version 4.12.3</a></li><li><a href="#version-4122" class="contents__link">Version 4.12.2</a></li><li><a href="#version-4121" class="contents__link">Version 4.12.1</a></li><li><a href="#version-4120" class="contents__link">Version 4.12.0</a></li><li><a href="#version-4110" class="contents__link">Version 4.11.0</a></li><li><a href="#version-4100" class="contents__link">Version 4.10.0</a></li><li><a href="#version-494" class="contents__link">Version 4.9.4</a></li><li><a href="#version-493" class="contents__link">Version 4.9.3</a></li><li><a href="#version-492" class="contents__link">Version 4.9.2</a></li><li><a href="#version-491" class="contents__link">Version 4.9.1</a></li><li><a href="#version-490" class="contents__link">Version 4.9.0</a></li><li><a href="#version-480" class="contents__link">Version 4.8.0</a></li><li><a href="#version-470" class="contents__link">Version 4.7.0</a></li><li><a href="#version-461" class="contents__link">Version 4.6.1</a></li><li><a href="#version-460" class="contents__link">Version 4.6.0</a></li><li><a href="#version-451" class="contents__link">Version 4.5.1</a></li><li><a href="#version-450" class="contents__link">Version 4.5.0</a></li><li><a href="#version-442" class="contents__link">Version 4.4.2</a></li><li><a href="#version-441" class="contents__link">Version 4.4.1</a></li><li><a href="#version-440" class="contents__link">Version 4.4.0</a></li><li><a href="#version-430" class="contents__link">Version 4.3.0</a></li><li><a href="#version-420" class="contents__link">Version 4.2.0</a></li><li><a href="#version-411" class="contents__link">Version 4.1.1</a></li><li><a href="#version-410" class="contents__link">Version 4.1.0</a></li><li><a href="#version-400" class="contents__link">Version 4.0.0</a></li><li><a href="#version-310" class="contents__link">Version 3.1.0</a></li><li><a href="#version-300" class="contents__link">Version 3.0.0</a></li><li><a href="#version-220" class="contents__link">Version 2.2.0</a></li><li><a href="#version-210" class="contents__link">Version 2.1.0</a></li></ul></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center"><div>Copyright © 2020 STMicroelectronics</div></div></div></footer>
 </div>
 
-<script src="/styles.a46c8391.js"></script>
+<script src="/styles.a6256359.js"></script>
 
-<script src="/runtime~main.d7082c42.js"></script>
+<script src="/runtime~main.b3bce9c9.js"></script>
 
-<script src="/main.652be987.js"></script>
+<script src="/main.44427fc7.js"></script>
 
-<script src="/common.61c1039a.js"></script>
+<script src="/common.b8534468.js"></script>
 
-<script src="/2.ac967074.js"></script>
+<script src="/2.2d1fafba.js"></script>
 
-<script src="/3.168ba183.js"></script>
+<script src="/3.77c9ac1d.js"></script>
 
-<script src="/1be78505.63628704.js"></script>
+<script src="/1be78505.0419adad.js"></script>
 
-<script src="/20ac7829.ca23f0a5.js"></script>
+<script src="/20ac7829.c459a9ec.js"></script>
 
-<script src="/17896441.f8cf0f7f.js"></script>
+<script src="/17896441.aa90f48d.js"></script>
 
-<script src="/be6440e7.47130402.js"></script>
+<script src="/be6440e7.22207dbf.js"></script>
 
 
 </body>

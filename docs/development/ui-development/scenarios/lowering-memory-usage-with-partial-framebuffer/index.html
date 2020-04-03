@@ -4,7 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="generator" content="Docusaurus">
-
+<link rel="preconnect" href="https://www.google-analytics.com">
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-162710244-1","auto"),ga("send","pageview")</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
 
 <title data-react-helmet="true">Lowering Memory Usage with Partial Framebuffer | TouchGFX Documentation</title>
 
@@ -16,25 +18,25 @@
 <link rel="stylesheet" href="/styles.cdb1878b.css">
 
 
-<link rel="preload" href="/styles.a46c8391.js" as="script">
+<link rel="preload" href="/styles.a6256359.js" as="script">
 
-<link rel="preload" href="/runtime~main.d7082c42.js" as="script">
+<link rel="preload" href="/runtime~main.b3bce9c9.js" as="script">
 
-<link rel="preload" href="/main.652be987.js" as="script">
+<link rel="preload" href="/main.44427fc7.js" as="script">
 
-<link rel="preload" href="/common.61c1039a.js" as="script">
+<link rel="preload" href="/common.b8534468.js" as="script">
 
-<link rel="preload" href="/2.ac967074.js" as="script">
+<link rel="preload" href="/2.2d1fafba.js" as="script">
 
-<link rel="preload" href="/3.168ba183.js" as="script">
+<link rel="preload" href="/3.77c9ac1d.js" as="script">
 
-<link rel="preload" href="/1be78505.63628704.js" as="script">
+<link rel="preload" href="/1be78505.0419adad.js" as="script">
 
-<link rel="preload" href="/20ac7829.ca23f0a5.js" as="script">
+<link rel="preload" href="/20ac7829.c459a9ec.js" as="script">
 
-<link rel="preload" href="/17896441.f8cf0f7f.js" as="script">
+<link rel="preload" href="/17896441.aa90f48d.js" as="script">
 
-<link rel="preload" href="/787fafe0.ea328fea.js" as="script">
+<link rel="preload" href="/787fafe0.143d0d28.js" as="script">
 
 </head>
 <body>
@@ -159,28 +161,28 @@ the blocks to the display varies. We saw how, for an LTDC/DSI based
 platform (STM32L4R9-DISCO) we were able to reconfigure the LTDC Layer
 to fit the next block ready for transfer on DSI, while on a platform
 with no LCD controller (STM32G081) we were able to send the blocks to
-the display using SPI.</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/development/ui-development/scenarios/loading-images-at-runtime"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« Loading Images at Runtime</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/development/ui-development/scenarios/using-the-l8-image-format-to-reduce-memory-consumption"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">Using the L8 Image Format to Reduce Memory Consumption »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#full-size-frame-buffer-memory" class="contents__link">Full-size Frame Buffer memory</a></li><li><a href="#partial-frame-buffer-memory" class="contents__link">Partial Frame Buffer memory</a></li><li><a href="#display-tearing" class="contents__link">Display Tearing</a></li><li><a href="#display-update-example" class="contents__link">Display update example</a></li><li><a href="#configuring-partial-frame-buffers" class="contents__link">Configuring Partial Frame Buffers</a></li><li><a href="#transferring-frame-buffers-to-the-screen" class="contents__link">Transferring Frame Buffers to the Screen</a><ul><li><a href="#transferring-frame-buffers-on-dsi-display" class="contents__link">Transferring Frame Buffers on DSI Display</a></li><li><a href="#transferring-frame-buffers-on-spi-display" class="contents__link">Transferring Frame Buffers on SPI Display</a></li></ul></li><li><a href="#conclusion" class="contents__link">Conclusion</a></li></ul></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center"><div>Copyright © 2020 ST Microelectronics</div></div></div></footer>
+the display using SPI.</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/development/ui-development/scenarios/loading-images-at-runtime"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« Loading Images at Runtime</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/development/ui-development/scenarios/using-the-l8-image-format-to-reduce-memory-consumption"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">Using the L8 Image Format to Reduce Memory Consumption »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#full-size-frame-buffer-memory" class="contents__link">Full-size Frame Buffer memory</a></li><li><a href="#partial-frame-buffer-memory" class="contents__link">Partial Frame Buffer memory</a></li><li><a href="#display-tearing" class="contents__link">Display Tearing</a></li><li><a href="#display-update-example" class="contents__link">Display update example</a></li><li><a href="#configuring-partial-frame-buffers" class="contents__link">Configuring Partial Frame Buffers</a></li><li><a href="#transferring-frame-buffers-to-the-screen" class="contents__link">Transferring Frame Buffers to the Screen</a><ul><li><a href="#transferring-frame-buffers-on-dsi-display" class="contents__link">Transferring Frame Buffers on DSI Display</a></li><li><a href="#transferring-frame-buffers-on-spi-display" class="contents__link">Transferring Frame Buffers on SPI Display</a></li></ul></li><li><a href="#conclusion" class="contents__link">Conclusion</a></li></ul></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center"><div>Copyright © 2020 STMicroelectronics</div></div></div></footer>
 </div>
 
-<script src="/styles.a46c8391.js"></script>
+<script src="/styles.a6256359.js"></script>
 
-<script src="/runtime~main.d7082c42.js"></script>
+<script src="/runtime~main.b3bce9c9.js"></script>
 
-<script src="/main.652be987.js"></script>
+<script src="/main.44427fc7.js"></script>
 
-<script src="/common.61c1039a.js"></script>
+<script src="/common.b8534468.js"></script>
 
-<script src="/2.ac967074.js"></script>
+<script src="/2.2d1fafba.js"></script>
 
-<script src="/3.168ba183.js"></script>
+<script src="/3.77c9ac1d.js"></script>
 
-<script src="/1be78505.63628704.js"></script>
+<script src="/1be78505.0419adad.js"></script>
 
-<script src="/20ac7829.ca23f0a5.js"></script>
+<script src="/20ac7829.c459a9ec.js"></script>
 
-<script src="/17896441.f8cf0f7f.js"></script>
+<script src="/17896441.aa90f48d.js"></script>
 
-<script src="/787fafe0.ea328fea.js"></script>
+<script src="/787fafe0.143d0d28.js"></script>
 
 
 </body>

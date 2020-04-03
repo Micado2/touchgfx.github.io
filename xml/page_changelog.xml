@@ -122,11 +122,11 @@
     algorithm, hardware setup and image layout.
   * Texture Mappers are disabled by default, must be enabled before
     use. Read more about this feature here:
-    https://touchgfx.zendesk.com/hc/en-us/articles/360010606200
+    https://support.touchgfx.com/docs/miscellaneous/known-issues/#texturemapper-is-disabled-by-default
   * Added simple string printing for debugging in all LCD types.
     See: https://touchgfx.zendesk.com/hc/en-us/articles/205074511
-  * Font caching now supports GSUB tables as used in Hindi.
-    See: https://touchgfx.zendesk.com/hc/en-us/articles/360024979552
+  * Font caching now supports GSUB tables as used in Hindi. See:
+    https://support.touchgfx.com/docs/development/ui-development/touchgfx-engine-features/font-cache/#caching-gsub-tables
   * Updated arm gcc compiler to version 7.3.1 2018q2.
   * Updated gcc compiler to version 7.3.0.
   * Updated mingw environment with latest version of packages.
@@ -149,7 +149,7 @@
 * Update procedure:
   * For this release additional steps might be needed. Please refer to
     the Known Issues article for details:
-    https://touchgfx.zendesk.com/hc/en-us/articles/207507415
+    https://support.touchgfx.com/docs/miscellaneous/known-issues/#project-updater-issue
 
 
 4.12.3
@@ -168,8 +168,7 @@
     string is displayed.
   * Binary Translations: Support for binary translations, suitable for
     loading translations from a file system as opposed to linking them
-    into the application.
-    Read more about these feature here:
+    into the application. Read more about these feature here:
     https://touchgfx.zendesk.com/hc/en-us/articles/360024979552
   * Support for non-memory-mapped flash storage for 16bpp displays,
     allows storage of images and fonts in e.g. inexpensive SPI
@@ -330,7 +329,7 @@
 * Update procedure:
   * For this release additional steps might be needed. Please refer to
     the Known Issues article for details:
-    https://touchgfx.zendesk.com/hc/en-us/articles/207507415
+    https://support.touchgfx.com/docs/miscellaneous/known-issues/#project-updater-issue
 
 
 4.11.0
@@ -425,7 +424,8 @@
 * Update procedure:
   * For this release additional steps might be needed. Please refer to
     the Known Issues article for details:
-    https://touchgfx.zendesk.com/hc/en-us/articles/207507415
+    https://support.touchgfx.com/docs/miscellaneous/known-issues/#project-updater-issue
+
 
 4.10.0
 ======
@@ -517,7 +517,8 @@
 * Update procedure:
   * For this release additional steps might be needed. Please refer to
     the Known Issues article for details:
-    https://touchgfx.zendesk.com/hc/en-us/articles/207507415
+    https://support.touchgfx.com/docs/miscellaneous/known-issues/#project-updater-issue
+
 
 4.9.4
 =====
@@ -595,8 +596,7 @@
 * New Features:
   * Added a package manager for handling board support packages, demos
     and examples. The Designer will now fetch these from an online
-    repository. Read more about this feature here:
-    https://touchgfx.zendesk.com/hc/en-us/articles/115002589211
+    repository.
   * All the old examples, demos and ports for various boards have been
     removed from the framework, and are now available as packages
     instead.
@@ -636,9 +636,7 @@
   * Fixed unitialized variables in the DMA class.
 
 * Update procedure:
-  * For this release additional steps might be needed. Please refer to
-    the Known Issues article for details:
-    https://touchgfx.zendesk.com/hc/en-us/articles/207507415
+  * For this release additional steps might be needed.
 
 
 4.8.0
@@ -653,8 +651,6 @@
 * New Features:
   * TouchGFX Designer released. The core framework, Designer and
     environment shell are now bundled in a single installation.
-    To get started with the Designer, please see
-    https://touchgfx.zendesk.com/hc/en-us/articles/115001801745
   * Support for Farsi and Arabic ligatures where squences of up to
     three character are recognized.
   * Added support for Microsoft Visual Studio 2017.
@@ -667,8 +663,7 @@
   * Errors from ImageConvert, TextConvert and FontConvert are now
     shown in the Error List window of Visual Studio.
   * Simulator applications are now Windows programs instead of Console
-    programs. To use printf() or std::out, please see
-    https://touchgfx.zendesk.com/hc/en-us/articles/205074511-Tips-tricks
+    programs.
 
 * Bugfixes
   * AbstractShape::updateAbstractShapeCache() is now a public function
@@ -692,8 +687,7 @@
 
 * Update Procedure
   * Due to the addition of TouchGFX Designer, installation is now
-    done via an .msi installer. For details and manual installation
-    refer to https://touchgfx.zendesk.com/hc/en-us/articles/206819819
+    done via an .msi installer.
   * Compatible with existing 4.x applications and HAL ports.
 
 
@@ -707,21 +701,16 @@
     included. See the touchgfx/framework/source/touchgfx directory.
     Note that these classes are still present in the core library, and
     the source code files are not added to the IAR/Keil/gcc projects
-    per default. For details, see the following article:
-    https://touchgfx.zendesk.com/hc/en-us/articles/115000035825
-  * Optimized the handling of single framebuffer configuration on TFT
+    per default.
+  * Optimized the handling of single frame buffer configuration on TFT
     controller based platforms, which in many cases eliminate the need
-    for external RAM. For details on this feature, and how to enable
-    it please see the following article:
-    https://touchgfx.zendesk.com/hc/en-us/articles/203649441
+    for external RAM.
   * Substantial performance optimizations of the canvas widget system
     and all the standard painters. Expect a very significant increase
     in performance if many pixels are being drawn, and a smaller
     increase in performance for minor shapes (e.g. graph lines). The
     &quot;PainterVerticalAlpha&quot; used in our demos have also been
-    updated. If you are using custom painters please refer to the
-    Known Issues article:
-    https://touchgfx.zendesk.com/hc/en-us/articles/207507415
+    updated.
   * The text converter tool will now combine identical translations
     across all languages, resulting in reduced footprint. The result
     of this process will be printed during asset generation.
@@ -733,13 +722,11 @@
       &lt;RemapIdenticalTexts&gt;no&lt;/RemapIdenticalTexts&gt; (for MSVS)
   * Updated SDL version used by simulator from 1.2 to 2.0.4. SDL1.2 is
     still present in the distribution, but all examples and projects
-    now use SDL2. For more details, please see:
-    https://touchgfx.zendesk.com/hc/en-us/articles/115000011245
+    now use SDL2.
   * Support for skinning the simulator with .png files. If the .png
     files contain non-opaque areas, the simulator window will be
     shaped accordingly. See display_orientation_example for a code
-    example or read the following article:
-    https://touchgfx.zendesk.com/hc/en-us/articles/115000014669
+    example.
   * On ST targets with Chrom-ART, the Box widget will now be drawn by
     DMA even when alpha &lt; 255 (BLIT_OP_FILL_WITH_ALPHA support).
   * TextArea and TextArea with wildcard(s) now support
@@ -847,10 +834,8 @@
 * Release date: June 14th, 2016
 
 * New features
-  * Added support for 2bpp grayscale displays. See
-    https://touchgfx.zendesk.com/hc/en-us/articles/208237889 for details.
-  * Added support for 4bpp grayscale displays. See
-    https://touchgfx.zendesk.com/hc/en-us/articles/209003105 for details.
+  * Added support for 2bpp grayscale displays.
+  * Added support for 4bpp grayscale displays.
   * New widget TiledImage. Will display one or more repetions of an
     image. The number of repetitions depends on the size of the widget
     and the size of the image.
@@ -870,12 +855,10 @@
   * Canvas Widget Line supports ROUND_CAP_ENDING and setCapPrecision()
     to control the round cap.
   * Simulator can now generate ticks very close to the frequency of
-    the hardware. See
-    https://touchgfx.zendesk.com/hc/en-us/articles/205074511 for details.
+    the hardware.
   * Mouse X and Y coordinates are put in the title of the window in
     the simulator. (press F1 to (de)active this when running the
-    simulator). See
-    https://touchgfx.zendesk.com/hc/en-us/articles/205074511 for details.
+    simulator).
   * ST Cube drivers updated to version 1.4.0 for STM32F7 MCU and
     STM32F7 based boards.
   * Added support for the STM32769I-EVAL board.
@@ -884,8 +867,7 @@
     name with timestamp to prevent old screenshots to be overwritten
     by accident.
   * Simulator now outputs canvas widget memory usage to easily find
-    optimal canvas memory buffer size. See
-    https://touchgfx.zendesk.com/hc/en-us/articles/205074511 for details.
+    optimal canvas memory buffer size.
 
 * Bugfixes
   * DMA drivers for ST boards: express DMA2D instance initialization
@@ -914,9 +896,8 @@
   * Added a workaround for a bug in IAR 7.50.x regarding va_list
     name mangling.
 * Update Procedure
-  * Compatible with existing 4.x applications and HAL ports. Please
-    refer to this article for details:
-    https://touchgfx.zendesk.com/hc/en-us/articles/206819819
+  * Compatible with existing 4.x applications and HAL ports.
+
 
 4.5.1
 =====
@@ -950,18 +931,14 @@
     right-to-left text rendering. RTL strings can be mixed with LTR
     texts and numbers.
   * Support for 24 bits per pixel framebuffers. Images look more
-    detailed, but also consume more memory. See this article:
-    https://touchgfx.zendesk.com/hc/en-us/articles/206725849
+    detailed, but also consume more memory.
   * Bitmaps can now be created at runtime using method
     Bitmap::dynamicBitmapCreate. Useful for e.g. displaying .bmp files
-    loaded from an SD card. See dynamic_bitmap_example and this
-    article: https://touchgfx.zendesk.com/hc/en-us/articles/207460605
+    loaded from an SD card. See dynamic_bitmap_example.
   * Frame rate compensation feature which provides smoother animations
-    if frame rate occasionally drops. Not enabled by default. See
-    article: https://touchgfx.zendesk.com/hc/en-us/articles/206430529
+    if frame rate occasionally drops. Not enabled by default.
   * Bitmap caching is enhanced to allow removal of bitmaps from the
-    cache to make room for caching of other bitmaps. See this article:
-    https://touchgfx.zendesk.com/hc/en-us/articles/205953932
+    cache to make room for caching of other bitmaps.
   * A new widget, PixelDataWidget, is introduced. This widget makes it
     possible to display raw pixel data obtained at runtime (e.g. video
     samples).
@@ -969,9 +946,7 @@
     easier identification in the task bar.
   * ST boards supported by TouchGFX can now have just their internal
     flash programmed from the command using &apos;make intflash&apos; provided
-    that ST-Link Utility Release 3.7+ is installed. For usage and
-    troubleshooting, please refer to this article:
-    https://touchgfx.zendesk.com/hc/en-us/articles/205264831
+    that ST-Link Utility Release 3.7+ is installed.
   * Unicode::snprintf() has been improved and updated substantially to
     support more of the standard format specifiers like %02d.
   * Unicode::snprintfFloat() added to support floats (in separate
@@ -1035,9 +1010,7 @@
   * LCD::drawGlyph() has been deprecated. Use LCD::drawString instead.
 
 * Update Procedure
-  * Compatible with existing 4.x applications and HAL ports. Please
-    refer to this article for details:
-    https://touchgfx.zendesk.com/hc/en-us/articles/206819819
+  * Compatible with existing 4.x applications and HAL ports.
 
 
 4.4.2
@@ -1535,8 +1508,7 @@
 2.1.0
 =====
 
-* First release of TouchGFX as a commercially available framework
-
+* First release of TouchGFX as a commercially available framework.
 </verbatim> </para>
     </briefdescription>
     <detaileddescription>
@@ -1658,11 +1630,11 @@
     algorithm, hardware setup and image layout.
   * Texture Mappers are disabled by default, must be enabled before
     use. Read more about this feature here:
-    https://touchgfx.zendesk.com/hc/en-us/articles/360010606200
+    https://support.touchgfx.com/docs/miscellaneous/known-issues/#texturemapper-is-disabled-by-default
   * Added simple string printing for debugging in all LCD types.
     See: https://touchgfx.zendesk.com/hc/en-us/articles/205074511
-  * Font caching now supports GSUB tables as used in Hindi.
-    See: https://touchgfx.zendesk.com/hc/en-us/articles/360024979552
+  * Font caching now supports GSUB tables as used in Hindi. See:
+    https://support.touchgfx.com/docs/development/ui-development/touchgfx-engine-features/font-cache/#caching-gsub-tables
   * Updated arm gcc compiler to version 7.3.1 2018q2.
   * Updated gcc compiler to version 7.3.0.
   * Updated mingw environment with latest version of packages.
@@ -1685,7 +1657,7 @@
 * Update procedure:
   * For this release additional steps might be needed. Please refer to
     the Known Issues article for details:
-    https://touchgfx.zendesk.com/hc/en-us/articles/207507415
+    https://support.touchgfx.com/docs/miscellaneous/known-issues/#project-updater-issue
 
 
 4.12.3
@@ -1704,8 +1676,7 @@
     string is displayed.
   * Binary Translations: Support for binary translations, suitable for
     loading translations from a file system as opposed to linking them
-    into the application.
-    Read more about these feature here:
+    into the application. Read more about these feature here:
     https://touchgfx.zendesk.com/hc/en-us/articles/360024979552
   * Support for non-memory-mapped flash storage for 16bpp displays,
     allows storage of images and fonts in e.g. inexpensive SPI
@@ -1866,7 +1837,7 @@
 * Update procedure:
   * For this release additional steps might be needed. Please refer to
     the Known Issues article for details:
-    https://touchgfx.zendesk.com/hc/en-us/articles/207507415
+    https://support.touchgfx.com/docs/miscellaneous/known-issues/#project-updater-issue
 
 
 4.11.0
@@ -1961,7 +1932,8 @@
 * Update procedure:
   * For this release additional steps might be needed. Please refer to
     the Known Issues article for details:
-    https://touchgfx.zendesk.com/hc/en-us/articles/207507415
+    https://support.touchgfx.com/docs/miscellaneous/known-issues/#project-updater-issue
+
 
 4.10.0
 ======
@@ -2053,7 +2025,8 @@
 * Update procedure:
   * For this release additional steps might be needed. Please refer to
     the Known Issues article for details:
-    https://touchgfx.zendesk.com/hc/en-us/articles/207507415
+    https://support.touchgfx.com/docs/miscellaneous/known-issues/#project-updater-issue
+
 
 4.9.4
 =====
@@ -2131,8 +2104,7 @@
 * New Features:
   * Added a package manager for handling board support packages, demos
     and examples. The Designer will now fetch these from an online
-    repository. Read more about this feature here:
-    https://touchgfx.zendesk.com/hc/en-us/articles/115002589211
+    repository.
   * All the old examples, demos and ports for various boards have been
     removed from the framework, and are now available as packages
     instead.
@@ -2172,9 +2144,7 @@
   * Fixed unitialized variables in the DMA class.
 
 * Update procedure:
-  * For this release additional steps might be needed. Please refer to
-    the Known Issues article for details:
-    https://touchgfx.zendesk.com/hc/en-us/articles/207507415
+  * For this release additional steps might be needed.
 
 
 4.8.0
@@ -2189,8 +2159,6 @@
 * New Features:
   * TouchGFX Designer released. The core framework, Designer and
     environment shell are now bundled in a single installation.
-    To get started with the Designer, please see
-    https://touchgfx.zendesk.com/hc/en-us/articles/115001801745
   * Support for Farsi and Arabic ligatures where squences of up to
     three character are recognized.
   * Added support for Microsoft Visual Studio 2017.
@@ -2203,8 +2171,7 @@
   * Errors from ImageConvert, TextConvert and FontConvert are now
     shown in the Error List window of Visual Studio.
   * Simulator applications are now Windows programs instead of Console
-    programs. To use printf() or std::out, please see
-    https://touchgfx.zendesk.com/hc/en-us/articles/205074511-Tips-tricks
+    programs.
 
 * Bugfixes
   * AbstractShape::updateAbstractShapeCache() is now a public function
@@ -2228,8 +2195,7 @@
 
 * Update Procedure
   * Due to the addition of TouchGFX Designer, installation is now
-    done via an .msi installer. For details and manual installation
-    refer to https://touchgfx.zendesk.com/hc/en-us/articles/206819819
+    done via an .msi installer.
   * Compatible with existing 4.x applications and HAL ports.
 
 
@@ -2243,21 +2209,16 @@
     included. See the touchgfx/framework/source/touchgfx directory.
     Note that these classes are still present in the core library, and
     the source code files are not added to the IAR/Keil/gcc projects
-    per default. For details, see the following article:
-    https://touchgfx.zendesk.com/hc/en-us/articles/115000035825
-  * Optimized the handling of single framebuffer configuration on TFT
+    per default.
+  * Optimized the handling of single frame buffer configuration on TFT
     controller based platforms, which in many cases eliminate the need
-    for external RAM. For details on this feature, and how to enable
-    it please see the following article:
-    https://touchgfx.zendesk.com/hc/en-us/articles/203649441
+    for external RAM.
   * Substantial performance optimizations of the canvas widget system
     and all the standard painters. Expect a very significant increase
     in performance if many pixels are being drawn, and a smaller
     increase in performance for minor shapes (e.g. graph lines). The
     &quot;PainterVerticalAlpha&quot; used in our demos have also been
-    updated. If you are using custom painters please refer to the
-    Known Issues article:
-    https://touchgfx.zendesk.com/hc/en-us/articles/207507415
+    updated.
   * The text converter tool will now combine identical translations
     across all languages, resulting in reduced footprint. The result
     of this process will be printed during asset generation.
@@ -2269,13 +2230,11 @@
       &lt;RemapIdenticalTexts&gt;no&lt;/RemapIdenticalTexts&gt; (for MSVS)
   * Updated SDL version used by simulator from 1.2 to 2.0.4. SDL1.2 is
     still present in the distribution, but all examples and projects
-    now use SDL2. For more details, please see:
-    https://touchgfx.zendesk.com/hc/en-us/articles/115000011245
+    now use SDL2.
   * Support for skinning the simulator with .png files. If the .png
     files contain non-opaque areas, the simulator window will be
     shaped accordingly. See display_orientation_example for a code
-    example or read the following article:
-    https://touchgfx.zendesk.com/hc/en-us/articles/115000014669
+    example.
   * On ST targets with Chrom-ART, the Box widget will now be drawn by
     DMA even when alpha &lt; 255 (BLIT_OP_FILL_WITH_ALPHA support).
   * TextArea and TextArea with wildcard(s) now support
@@ -2383,10 +2342,8 @@
 * Release date: June 14th, 2016
 
 * New features
-  * Added support for 2bpp grayscale displays. See
-    https://touchgfx.zendesk.com/hc/en-us/articles/208237889 for details.
-  * Added support for 4bpp grayscale displays. See
-    https://touchgfx.zendesk.com/hc/en-us/articles/209003105 for details.
+  * Added support for 2bpp grayscale displays.
+  * Added support for 4bpp grayscale displays.
   * New widget TiledImage. Will display one or more repetions of an
     image. The number of repetitions depends on the size of the widget
     and the size of the image.
@@ -2406,12 +2363,10 @@
   * Canvas Widget Line supports ROUND_CAP_ENDING and setCapPrecision()
     to control the round cap.
   * Simulator can now generate ticks very close to the frequency of
-    the hardware. See
-    https://touchgfx.zendesk.com/hc/en-us/articles/205074511 for details.
+    the hardware.
   * Mouse X and Y coordinates are put in the title of the window in
     the simulator. (press F1 to (de)active this when running the
-    simulator). See
-    https://touchgfx.zendesk.com/hc/en-us/articles/205074511 for details.
+    simulator).
   * ST Cube drivers updated to version 1.4.0 for STM32F7 MCU and
     STM32F7 based boards.
   * Added support for the STM32769I-EVAL board.
@@ -2420,8 +2375,7 @@
     name with timestamp to prevent old screenshots to be overwritten
     by accident.
   * Simulator now outputs canvas widget memory usage to easily find
-    optimal canvas memory buffer size. See
-    https://touchgfx.zendesk.com/hc/en-us/articles/205074511 for details.
+    optimal canvas memory buffer size.
 
 * Bugfixes
   * DMA drivers for ST boards: express DMA2D instance initialization
@@ -2450,9 +2404,8 @@
   * Added a workaround for a bug in IAR 7.50.x regarding va_list
     name mangling.
 * Update Procedure
-  * Compatible with existing 4.x applications and HAL ports. Please
-    refer to this article for details:
-    https://touchgfx.zendesk.com/hc/en-us/articles/206819819
+  * Compatible with existing 4.x applications and HAL ports.
+
 
 4.5.1
 =====
@@ -2486,18 +2439,14 @@
     right-to-left text rendering. RTL strings can be mixed with LTR
     texts and numbers.
   * Support for 24 bits per pixel framebuffers. Images look more
-    detailed, but also consume more memory. See this article:
-    https://touchgfx.zendesk.com/hc/en-us/articles/206725849
+    detailed, but also consume more memory.
   * Bitmaps can now be created at runtime using method
     Bitmap::dynamicBitmapCreate. Useful for e.g. displaying .bmp files
-    loaded from an SD card. See dynamic_bitmap_example and this
-    article: https://touchgfx.zendesk.com/hc/en-us/articles/207460605
+    loaded from an SD card. See dynamic_bitmap_example.
   * Frame rate compensation feature which provides smoother animations
-    if frame rate occasionally drops. Not enabled by default. See
-    article: https://touchgfx.zendesk.com/hc/en-us/articles/206430529
+    if frame rate occasionally drops. Not enabled by default.
   * Bitmap caching is enhanced to allow removal of bitmaps from the
-    cache to make room for caching of other bitmaps. See this article:
-    https://touchgfx.zendesk.com/hc/en-us/articles/205953932
+    cache to make room for caching of other bitmaps.
   * A new widget, PixelDataWidget, is introduced. This widget makes it
     possible to display raw pixel data obtained at runtime (e.g. video
     samples).
@@ -2505,9 +2454,7 @@
     easier identification in the task bar.
   * ST boards supported by TouchGFX can now have just their internal
     flash programmed from the command using &apos;make intflash&apos; provided
-    that ST-Link Utility Release 3.7+ is installed. For usage and
-    troubleshooting, please refer to this article:
-    https://touchgfx.zendesk.com/hc/en-us/articles/205264831
+    that ST-Link Utility Release 3.7+ is installed.
   * Unicode::snprintf() has been improved and updated substantially to
     support more of the standard format specifiers like %02d.
   * Unicode::snprintfFloat() added to support floats (in separate
@@ -2571,9 +2518,7 @@
   * LCD::drawGlyph() has been deprecated. Use LCD::drawString instead.
 
 * Update Procedure
-  * Compatible with existing 4.x applications and HAL ports. Please
-    refer to this article for details:
-    https://touchgfx.zendesk.com/hc/en-us/articles/206819819
+  * Compatible with existing 4.x applications and HAL ports.
 
 
 4.4.2
@@ -3071,8 +3016,7 @@
 2.1.0
 =====
 
-* First release of TouchGFX as a commercially available framework
-
+* First release of TouchGFX as a commercially available framework.
 </verbatim> </para>
     </detaileddescription>
   </compounddef>

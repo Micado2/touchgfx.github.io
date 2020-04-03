@@ -4,7 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="generator" content="Docusaurus">
-
+<link rel="preconnect" href="https://www.google-analytics.com">
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-162710244-1","auto"),ga("send","pageview")</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
 
 <title data-react-helmet="true">Display | TouchGFX Documentation</title>
 
@@ -16,25 +18,25 @@
 <link rel="stylesheet" href="/styles.cdb1878b.css">
 
 
-<link rel="preload" href="/styles.a46c8391.js" as="script">
+<link rel="preload" href="/styles.a6256359.js" as="script">
 
-<link rel="preload" href="/runtime~main.d7082c42.js" as="script">
+<link rel="preload" href="/runtime~main.b3bce9c9.js" as="script">
 
-<link rel="preload" href="/main.652be987.js" as="script">
+<link rel="preload" href="/main.44427fc7.js" as="script">
 
-<link rel="preload" href="/common.61c1039a.js" as="script">
+<link rel="preload" href="/common.b8534468.js" as="script">
 
-<link rel="preload" href="/2.ac967074.js" as="script">
+<link rel="preload" href="/2.2d1fafba.js" as="script">
 
-<link rel="preload" href="/3.168ba183.js" as="script">
+<link rel="preload" href="/3.77c9ac1d.js" as="script">
 
-<link rel="preload" href="/1be78505.63628704.js" as="script">
+<link rel="preload" href="/1be78505.0419adad.js" as="script">
 
-<link rel="preload" href="/20ac7829.ca23f0a5.js" as="script">
+<link rel="preload" href="/20ac7829.c459a9ec.js" as="script">
 
-<link rel="preload" href="/17896441.f8cf0f7f.js" as="script">
+<link rel="preload" href="/17896441.aa90f48d.js" as="script">
 
-<link rel="preload" href="/72950d95.137c9209.js" as="script">
+<link rel="preload" href="/72950d95.401afca5.js" as="script">
 
 </head>
 <body>
@@ -46,28 +48,28 @@ Both technologies comes in different qualities, but some differences can be the 
 Some questions to ask yourself are:</p><ul><li><strong>Is the display in direct sunlight?</strong></li><li><strong>Is it being used in rugged environments where it needs to be impact resistent?</strong></li><li><strong>Is it being handled by one wearing gloves?</strong></li><li><strong>Does it need vandal proofing?</strong></li><li><strong>Is it being operated with buttons only?</strong></li></ul><p>Answering these questions will give you an better idea of which touch technology to selected, or even if touch is required.</p><p>Note: TouchGFX runs on both touch and non-touch displays, and the TouchGFX GUI can be controlled by buttons, hand and voice gestures also.</p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="touch--non-touch-displays"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#touch--non-touch-displays" title="Direct link to heading">#</a>Touch / Non-touch displays</h3><p>There are different touch technologies available in the market today and some examples are, resistive, capacitive (surface, projected), SAW touch, infrared touch. This section will only adress some technologies.</p><h4><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="capacitive-touch"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#capacitive-touch" title="Direct link to heading">#</a>Capacitive Touch</h4><p>This is one of the most popular touch technologies. It comes in two sensing technologies: first is the self capacitance which is for single finger touch, secondly is the mutual capacitance allowing multi touch but more challenged when exposed to water/moist (TouchGFX does not support multi touch).
 Most STM32 DISCO boards are using capacitive touch, some examples are the STM32H7B3I DISCO, STM32H750 DISCO, STM32F746G DISCO.</p><h4><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="resistive-touch"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#resistive-touch" title="Direct link to heading">#</a>Resistive Touch</h4><p>A simple technology activated by mechanical pressure, and only requires ADC - or a simple touch controller. It is often low price, due to maturity. The surface is more protected to scratches and tearing, so more difficult to vandal proof, it also has a lower sunlight readability.
 The STM32F429 DISCO board is using a resistive touch, available with a TouchGFX application.</p><h4><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="non-touch"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#non-touch" title="Direct link to heading">#</a>Non-touch</h4><p>Often if the GUI is being controlled by buttons, just displaying images/video or controlled externally by another device, then adding touch to the product might not be relevant. And by not adding a touch layer to the display will decrease the price.</p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="displays-with-ram"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#displays-with-ram" title="Direct link to heading">#</a>Displays with RAM</h3><p>Displays with either Motorla 6800 , Intel 8080, SPI, or MIPI-DSI interfaces usually embeds RAM (GRAM), which has the size of 1 full framebuffer. These types of displays can connect to the MCU via SPI, FMC or DSI-host(LTDC). A second ram (framebuffer) is required external to the display RAM and this can be in the MCU or in external RAM.</p><div class="figure noshadow"><a href="/img/development/hardware-selection/display/gram-mipi.png" target="_blank"><img src="/img/development/hardware-selection/display/gram-mipi.png"></a><p>MIPI-DSI display</p></div><p>In some cases the need of external RAM (External to the MCU) for storing the framebuffer is not needed, and thereby use the available internal RAM in the MCU. If the MCU RAM is lower then 1 full framebuffer size, using the TouchGFX partial framebuffer feature is an option, allowing a very small framebuffer footprint. (read more)<a href="/docs/development/ui-development/scenarios/lowering-memory-usage-with-partial-framebuffer">Partial framebuffer</a></p><div class="figure noshadow"><a href="/img/development/hardware-selection/display/gram-spi.png" target="_blank"><img src="/img/development/hardware-selection/display/gram-spi.png"></a><p>SPI display</p></div><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="non-square-pixels--pixel-aspect-ratio"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#non-square-pixels--pixel-aspect-ratio" title="Direct link to heading">#</a>Non-square pixels / Pixel aspect ratio</h3><p>The most common pixel shape is square, but some displays are using non-square pixels. Pixel ratio is the ratio of a pixels height to its width. The aspect ratio using a square pixel with 100 pixel width and 100 pixel height is therefore 1/1. But non-square pixles results in a different pixel aspect ratio.
-If a graphics designer does not take this into account the the display displayed bitmaps may be stretched like below example.</p><div class="figure noshadow"><a href="/img/development/hardware-selection/display/pixel-aspect.png" target="_blank"><img src="/img/development/hardware-selection/display/pixel-aspect.png"></a><p>Stretched bitmaps</p></div><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="cover-lense"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#cover-lense" title="Direct link to heading">#</a>Cover lense</h3><p>As the display is the face of your embedded graphical user interface product, adding a cover lens could improve the look and feel. The cover lense can improve the design, scratch resistance, impact strength, colors, etc.</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/development/hardware-selection/hardware-components/hardware-selection-mcu"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« MCU</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/development/hardware-selection/hardware-components/hardware-selection-external-memories"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">External Memories »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#examples-of-displays" class="contents__link">Examples of displays</a><ul><li><a href="#lcd-tft" class="contents__link">LCD-TFT</a></li><li><a href="#mip" class="contents__link">MIP</a></li><li><a href="#epapereink" class="contents__link">ePaper/eInk</a></li></ul></li><li><a href="#display-interface-overview" class="contents__link">Display Interface Overview</a><ul><li><a href="#brightness--backlight" class="contents__link">Brightness &amp; Backlight</a></li><li><a href="#viewing-position-and-color-inversion" class="contents__link">Viewing Position and Color Inversion</a></li><li><a href="#display-lifetime" class="contents__link">Display Lifetime</a></li><li><a href="#pixel-density" class="contents__link">Pixel density</a></li><li><a href="#environment" class="contents__link">Environment</a></li><li><a href="#touch--non-touch-displays" class="contents__link">Touch / Non-touch displays</a></li><li><a href="#displays-with-ram" class="contents__link">Displays with RAM</a></li><li><a href="#non-square-pixels--pixel-aspect-ratio" class="contents__link">Non-square pixels / Pixel aspect ratio</a></li><li><a href="#cover-lense" class="contents__link">Cover lense</a></li></ul></li></ul></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center"><div>Copyright © 2020 ST Microelectronics</div></div></div></footer>
+If a graphics designer does not take this into account the the display displayed bitmaps may be stretched like below example.</p><div class="figure noshadow"><a href="/img/development/hardware-selection/display/pixel-aspect.png" target="_blank"><img src="/img/development/hardware-selection/display/pixel-aspect.png"></a><p>Stretched bitmaps</p></div><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="cover-lense"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#cover-lense" title="Direct link to heading">#</a>Cover lense</h3><p>As the display is the face of your embedded graphical user interface product, adding a cover lens could improve the look and feel. The cover lense can improve the design, scratch resistance, impact strength, colors, etc.</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/development/hardware-selection/hardware-components/hardware-selection-mcu"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« MCU</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/development/hardware-selection/hardware-components/hardware-selection-external-memories"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">External Memories »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#examples-of-displays" class="contents__link">Examples of displays</a><ul><li><a href="#lcd-tft" class="contents__link">LCD-TFT</a></li><li><a href="#mip" class="contents__link">MIP</a></li><li><a href="#epapereink" class="contents__link">ePaper/eInk</a></li></ul></li><li><a href="#display-interface-overview" class="contents__link">Display Interface Overview</a><ul><li><a href="#brightness--backlight" class="contents__link">Brightness &amp; Backlight</a></li><li><a href="#viewing-position-and-color-inversion" class="contents__link">Viewing Position and Color Inversion</a></li><li><a href="#display-lifetime" class="contents__link">Display Lifetime</a></li><li><a href="#pixel-density" class="contents__link">Pixel density</a></li><li><a href="#environment" class="contents__link">Environment</a></li><li><a href="#touch--non-touch-displays" class="contents__link">Touch / Non-touch displays</a></li><li><a href="#displays-with-ram" class="contents__link">Displays with RAM</a></li><li><a href="#non-square-pixels--pixel-aspect-ratio" class="contents__link">Non-square pixels / Pixel aspect ratio</a></li><li><a href="#cover-lense" class="contents__link">Cover lense</a></li></ul></li></ul></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center"><div>Copyright © 2020 STMicroelectronics</div></div></div></footer>
 </div>
 
-<script src="/styles.a46c8391.js"></script>
+<script src="/styles.a6256359.js"></script>
 
-<script src="/runtime~main.d7082c42.js"></script>
+<script src="/runtime~main.b3bce9c9.js"></script>
 
-<script src="/main.652be987.js"></script>
+<script src="/main.44427fc7.js"></script>
 
-<script src="/common.61c1039a.js"></script>
+<script src="/common.b8534468.js"></script>
 
-<script src="/2.ac967074.js"></script>
+<script src="/2.2d1fafba.js"></script>
 
-<script src="/3.168ba183.js"></script>
+<script src="/3.77c9ac1d.js"></script>
 
-<script src="/1be78505.63628704.js"></script>
+<script src="/1be78505.0419adad.js"></script>
 
-<script src="/20ac7829.ca23f0a5.js"></script>
+<script src="/20ac7829.c459a9ec.js"></script>
 
-<script src="/17896441.f8cf0f7f.js"></script>
+<script src="/17896441.aa90f48d.js"></script>
 
-<script src="/72950d95.137c9209.js"></script>
+<script src="/72950d95.401afca5.js"></script>
 
 
 </body>

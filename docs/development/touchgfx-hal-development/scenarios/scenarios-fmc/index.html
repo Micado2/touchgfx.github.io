@@ -4,7 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="generator" content="Docusaurus">
-
+<link rel="preconnect" href="https://www.google-analytics.com">
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-162710244-1","auto"),ga("send","pageview")</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
 
 <title data-react-helmet="true">FMC and SPI | TouchGFX Documentation</title>
 
@@ -16,25 +18,25 @@
 <link rel="stylesheet" href="/styles.cdb1878b.css">
 
 
-<link rel="preload" href="/styles.a46c8391.js" as="script">
+<link rel="preload" href="/styles.a6256359.js" as="script">
 
-<link rel="preload" href="/runtime~main.d7082c42.js" as="script">
+<link rel="preload" href="/runtime~main.b3bce9c9.js" as="script">
 
-<link rel="preload" href="/main.652be987.js" as="script">
+<link rel="preload" href="/main.44427fc7.js" as="script">
 
-<link rel="preload" href="/common.61c1039a.js" as="script">
+<link rel="preload" href="/common.b8534468.js" as="script">
 
-<link rel="preload" href="/2.ac967074.js" as="script">
+<link rel="preload" href="/2.2d1fafba.js" as="script">
 
-<link rel="preload" href="/3.168ba183.js" as="script">
+<link rel="preload" href="/3.77c9ac1d.js" as="script">
 
-<link rel="preload" href="/1be78505.63628704.js" as="script">
+<link rel="preload" href="/1be78505.0419adad.js" as="script">
 
-<link rel="preload" href="/20ac7829.ca23f0a5.js" as="script">
+<link rel="preload" href="/20ac7829.c459a9ec.js" as="script">
 
-<link rel="preload" href="/17896441.f8cf0f7f.js" as="script">
+<link rel="preload" href="/17896441.aa90f48d.js" as="script">
 
-<link rel="preload" href="/395b0177.1ad055fb.js" as="script">
+<link rel="preload" href="/395b0177.9eca1260.js" as="script">
 
 </head>
 <body>
@@ -51,28 +53,28 @@
 </span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">//Set up DMA</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token function" style="color:rgb(130, 170, 255)">screenDMAEnable</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain" style="display:inline-block">
 </span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">// Wait for the DMA transfer to complete</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token function" style="color:rgb(130, 170, 255)">xSemaphoreTake</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">screen_frame_buffer_sem</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> portMAX_DELAY</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain" style="display:inline-block">
 </span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">//Unlock framebuffer and give semaphore back</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    HAL</span><span class="token operator" style="color:rgb(137, 221, 255)">::</span><span class="token function" style="color:rgb(130, 170, 255)">unlockFrameBuffer</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token function" style="color:rgb(130, 170, 255)">xSemaphoreGive</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">screen_frame_buffer_sem</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span></div></code></pre></div><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="touchgfx-driver--tearing-effect-signal"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#touchgfx-driver--tearing-effect-signal" title="Direct link to heading">#</a>TouchGFX Driver / Tearing Effect Signal</h2><p>As can be seen in TouchGFX Generator configuration above, the &quot;Application Tick Source&quot; is also set to &quot;Custom&quot;, which is general for MCUs without embedded TFT Controllers.</p><p>As described in the Abstraction Layer Architecture section, the TouchGFX Engine main loop is unblocked by calling <code>OSWrappers::signalVSync()</code>, usually at the time when a display signals.</p><p>For displays with a serial or 8080 display interface, the embedded display controller typically raises a periodic Tearing Effect (TE) signal that can be connected to a GPIO on the MCU. In this case, the MCU is usually configured to raise an interrupt when the GPIO is signalled. This &quot;Tearing Effect&quot; interrupt will then unblock the TouchGFX Engine Main loop to render the next frame. Remember to configure the GPIO to input and enable the external interrupt for the pin in CubeMX.</p><div class="mdxCodeBlock_iHAB"><pre class="prism-code language-cpp codeBlock_19pQ"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><code class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token keyword" style="font-style:italic">extern</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">&quot;C&quot;</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token keyword" style="font-style:italic">void</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">TE_Handler</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token keyword" style="font-style:italic">void</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">/* Unblock TouchGFX Engine Main Loop to render next frame */</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    OSWrappers</span><span class="token operator" style="color:rgb(137, 221, 255)">::</span><span class="token function" style="color:rgb(130, 170, 255)">signalVSync</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain" style="display:inline-block">
-</span></div></code></pre></div><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="conclusion"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#conclusion" title="Direct link to heading">#</a>Conclusion</h2><p>Selecting <em>Custom</em> Display Interface throgh the TouchGFX Generator is an expression of a developers intent to write code to transfer pixels from an application frame buffer to a display, manually.</p><p>The TouchGFX Generator will generate a function <code>TouchGFXHAL::flushFrameBuffer(Rect&amp; rect)</code> that is called automatically by TouchGFX after rendering an area of the framebuffer that developers can use to transfer affected pixels to a display, SPI, FMC or otherwise.</p><p>Selecting a <em>custom</em> display interface also requires developers to implement a custom TouchGFX Application Tick driver that signals <code>OSWrappers::signalVSync()</code> to unblock the TouchGFX Engine Main loop. Usually, displays used along with MCUS that have no TFT Controllers can provide a <em>Tearing Effect</em> signal that is connected to the MCU.</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/development/touchgfx-hal-development/scenarios/scenarios-ltdc-parallel-rgb"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« LTDC/Parallel RGB</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/development/touchgfx-hal-development/scenarios/scenarios-framebuffer-strategies"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">Framebuffer Strategies »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#transferring-the-framebuffer" class="contents__link">Transferring the framebuffer</a></li><li><a href="#returning-from-halflushframebuffer" class="contents__link">Returning from HAL::flushFrameBuffer()</a></li><li><a href="#touchgfx-driver--tearing-effect-signal" class="contents__link">TouchGFX Driver / Tearing Effect Signal</a></li><li><a href="#conclusion" class="contents__link">Conclusion</a></li></ul></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center"><div>Copyright © 2020 ST Microelectronics</div></div></div></footer>
+</span></div></code></pre></div><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="conclusion"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#conclusion" title="Direct link to heading">#</a>Conclusion</h2><p>Selecting <em>Custom</em> Display Interface throgh the TouchGFX Generator is an expression of a developers intent to write code to transfer pixels from an application frame buffer to a display, manually.</p><p>The TouchGFX Generator will generate a function <code>TouchGFXHAL::flushFrameBuffer(Rect&amp; rect)</code> that is called automatically by TouchGFX after rendering an area of the framebuffer that developers can use to transfer affected pixels to a display, SPI, FMC or otherwise.</p><p>Selecting a <em>custom</em> display interface also requires developers to implement a custom TouchGFX Application Tick driver that signals <code>OSWrappers::signalVSync()</code> to unblock the TouchGFX Engine Main loop. Usually, displays used along with MCUS that have no TFT Controllers can provide a <em>Tearing Effect</em> signal that is connected to the MCU.</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/development/touchgfx-hal-development/scenarios/scenarios-ltdc-parallel-rgb"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« LTDC/Parallel RGB</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/development/touchgfx-hal-development/scenarios/scenarios-framebuffer-strategies"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">Framebuffer Strategies »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#transferring-the-framebuffer" class="contents__link">Transferring the framebuffer</a></li><li><a href="#returning-from-halflushframebuffer" class="contents__link">Returning from HAL::flushFrameBuffer()</a></li><li><a href="#touchgfx-driver--tearing-effect-signal" class="contents__link">TouchGFX Driver / Tearing Effect Signal</a></li><li><a href="#conclusion" class="contents__link">Conclusion</a></li></ul></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center"><div>Copyright © 2020 STMicroelectronics</div></div></div></footer>
 </div>
 
-<script src="/styles.a46c8391.js"></script>
+<script src="/styles.a6256359.js"></script>
 
-<script src="/runtime~main.d7082c42.js"></script>
+<script src="/runtime~main.b3bce9c9.js"></script>
 
-<script src="/main.652be987.js"></script>
+<script src="/main.44427fc7.js"></script>
 
-<script src="/common.61c1039a.js"></script>
+<script src="/common.b8534468.js"></script>
 
-<script src="/2.ac967074.js"></script>
+<script src="/2.2d1fafba.js"></script>
 
-<script src="/3.168ba183.js"></script>
+<script src="/3.77c9ac1d.js"></script>
 
-<script src="/1be78505.63628704.js"></script>
+<script src="/1be78505.0419adad.js"></script>
 
-<script src="/20ac7829.ca23f0a5.js"></script>
+<script src="/20ac7829.c459a9ec.js"></script>
 
-<script src="/17896441.f8cf0f7f.js"></script>
+<script src="/17896441.aa90f48d.js"></script>
 
-<script src="/395b0177.1ad055fb.js"></script>
+<script src="/395b0177.9eca1260.js"></script>
 
 
 </body>

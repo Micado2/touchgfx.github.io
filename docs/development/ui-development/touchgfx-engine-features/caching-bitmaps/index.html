@@ -4,7 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="generator" content="Docusaurus">
-
+<link rel="preconnect" href="https://www.google-analytics.com">
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-162710244-1","auto"),ga("send","pageview")</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
 
 <title data-react-helmet="true">Caching Bitmaps | TouchGFX Documentation</title>
 
@@ -16,25 +18,25 @@
 <link rel="stylesheet" href="/styles.cdb1878b.css">
 
 
-<link rel="preload" href="/styles.a46c8391.js" as="script">
+<link rel="preload" href="/styles.a6256359.js" as="script">
 
-<link rel="preload" href="/runtime~main.d7082c42.js" as="script">
+<link rel="preload" href="/runtime~main.b3bce9c9.js" as="script">
 
-<link rel="preload" href="/main.652be987.js" as="script">
+<link rel="preload" href="/main.44427fc7.js" as="script">
 
-<link rel="preload" href="/common.61c1039a.js" as="script">
+<link rel="preload" href="/common.b8534468.js" as="script">
 
-<link rel="preload" href="/2.ac967074.js" as="script">
+<link rel="preload" href="/2.2d1fafba.js" as="script">
 
-<link rel="preload" href="/3.168ba183.js" as="script">
+<link rel="preload" href="/3.77c9ac1d.js" as="script">
 
-<link rel="preload" href="/1be78505.63628704.js" as="script">
+<link rel="preload" href="/1be78505.0419adad.js" as="script">
 
-<link rel="preload" href="/20ac7829.ca23f0a5.js" as="script">
+<link rel="preload" href="/20ac7829.c459a9ec.js" as="script">
 
-<link rel="preload" href="/17896441.f8cf0f7f.js" as="script">
+<link rel="preload" href="/17896441.aa90f48d.js" as="script">
 
-<link rel="preload" href="/fbfc39d5.77d4603b.js" as="script">
+<link rel="preload" href="/fbfc39d5.92c59ede.js" as="script">
 
 </head>
 <body>
@@ -122,28 +124,28 @@ immediately useable unless the removed bitmap was on top of the stack.
 If the bitmap was in &quot;the middle&quot; of the cache a compacting operation
 is performed the next time Bitmap::cache is called to reclaim the
 memory. This &quot;costly&quot; method can be avoided if you do not call
-Bitmap::cache with a &quot;hole&quot; in the cache.</p><p>The drawings below illustrates the principles:</p><ol><li>Caching allocates on top of the previously allocated bitmaps:</li></ol><div class="figure"><a href="/img/development/ui-development/touchgfx-engine-features/caching-bitmaps/cache-operations-cache.png" target="_blank"><img src="/img/development/ui-development/touchgfx-engine-features/caching-bitmaps/cache-operations-cache.png"></a><p>Allocation sequence of bitmaps in memory</p></div><ol start="2"><li>Removal marks the memory unused:</li></ol><div class="figure"><a href="/img/development/ui-development/touchgfx-engine-features/caching-bitmaps/cache-operations-uncache.png" target="_blank"><img src="/img/development/ui-development/touchgfx-engine-features/caching-bitmaps/cache-operations-uncache.png"></a><p>Unused memory in cache after removal of cached bitmap</p></div><ol start="3"><li>Allocating the next bitmap compacts the cache and allocates on the top:</li></ol><div class="figure"><a href="/img/development/ui-development/touchgfx-engine-features/caching-bitmaps/cache-operations-compact.png" target="_blank"><img src="/img/development/ui-development/touchgfx-engine-features/caching-bitmaps/cache-operations-compact.png"></a><p>cache compaction of unused memory after caching a bitmap</p></div><ol start="4"><li>When you remove the topmost (last allocated) bitmap, the memory is freed immediately along with any free memory just below it:</li></ol><div class="figure"><a href="/img/development/ui-development/touchgfx-engine-features/caching-bitmaps/cache-operations-uncache-top.png" target="_blank"><img src="/img/development/ui-development/touchgfx-engine-features/caching-bitmaps/cache-operations-uncache-top.png"></a><p>Topmost bitmap cache removal</p></div><p>The next cache operation will in this case not involve a compact.</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/development/ui-development/touchgfx-engine-features/custom-containers"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« Custom Containers</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/development/ui-development/touchgfx-engine-features/custom-widgets"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">Custom Widgets »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#setup-the-bitmap-cache" class="contents__link">Setup the Bitmap Cache</a><ul><li><a href="#bitmap-cache-configuration" class="contents__link">Bitmap Cache Configuration</a></li><li><a href="#blockcopy-copies-data-from-flash-to-the-cache" class="contents__link">BlockCopy copies data from flash to the cache</a></li></ul></li><li><a href="#cache-operations" class="contents__link">Cache Operations</a></li><li><a href="#cache-strategies" class="contents__link">Cache Strategies</a><ul><li><a href="#cache-bitmap-on-a-screen-basis" class="contents__link">Cache Bitmap on a Screen basis</a></li><li><a href="#replace-the-background-bitmaps-in-the-cache" class="contents__link">Replace the background Bitmaps in the cache</a></li></ul></li><li><a href="#cache-memory-management" class="contents__link">Cache Memory Management</a></li></ul></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center"><div>Copyright © 2020 ST Microelectronics</div></div></div></footer>
+Bitmap::cache with a &quot;hole&quot; in the cache.</p><p>The drawings below illustrates the principles:</p><ol><li>Caching allocates on top of the previously allocated bitmaps:</li></ol><div class="figure"><a href="/img/development/ui-development/touchgfx-engine-features/caching-bitmaps/cache-operations-cache.png" target="_blank"><img src="/img/development/ui-development/touchgfx-engine-features/caching-bitmaps/cache-operations-cache.png"></a><p>Allocation sequence of bitmaps in memory</p></div><ol start="2"><li>Removal marks the memory unused:</li></ol><div class="figure"><a href="/img/development/ui-development/touchgfx-engine-features/caching-bitmaps/cache-operations-uncache.png" target="_blank"><img src="/img/development/ui-development/touchgfx-engine-features/caching-bitmaps/cache-operations-uncache.png"></a><p>Unused memory in cache after removal of cached bitmap</p></div><ol start="3"><li>Allocating the next bitmap compacts the cache and allocates on the top:</li></ol><div class="figure"><a href="/img/development/ui-development/touchgfx-engine-features/caching-bitmaps/cache-operations-compact.png" target="_blank"><img src="/img/development/ui-development/touchgfx-engine-features/caching-bitmaps/cache-operations-compact.png"></a><p>cache compaction of unused memory after caching a bitmap</p></div><ol start="4"><li>When you remove the topmost (last allocated) bitmap, the memory is freed immediately along with any free memory just below it:</li></ol><div class="figure"><a href="/img/development/ui-development/touchgfx-engine-features/caching-bitmaps/cache-operations-uncache-top.png" target="_blank"><img src="/img/development/ui-development/touchgfx-engine-features/caching-bitmaps/cache-operations-uncache-top.png"></a><p>Topmost bitmap cache removal</p></div><p>The next cache operation will in this case not involve a compact.</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/development/ui-development/touchgfx-engine-features/custom-containers"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« Custom Containers</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/development/ui-development/touchgfx-engine-features/custom-widgets"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">Custom Widgets »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#setup-the-bitmap-cache" class="contents__link">Setup the Bitmap Cache</a><ul><li><a href="#bitmap-cache-configuration" class="contents__link">Bitmap Cache Configuration</a></li><li><a href="#blockcopy-copies-data-from-flash-to-the-cache" class="contents__link">BlockCopy copies data from flash to the cache</a></li></ul></li><li><a href="#cache-operations" class="contents__link">Cache Operations</a></li><li><a href="#cache-strategies" class="contents__link">Cache Strategies</a><ul><li><a href="#cache-bitmap-on-a-screen-basis" class="contents__link">Cache Bitmap on a Screen basis</a></li><li><a href="#replace-the-background-bitmaps-in-the-cache" class="contents__link">Replace the background Bitmaps in the cache</a></li></ul></li><li><a href="#cache-memory-management" class="contents__link">Cache Memory Management</a></li></ul></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center"><div>Copyright © 2020 STMicroelectronics</div></div></div></footer>
 </div>
 
-<script src="/styles.a46c8391.js"></script>
+<script src="/styles.a6256359.js"></script>
 
-<script src="/runtime~main.d7082c42.js"></script>
+<script src="/runtime~main.b3bce9c9.js"></script>
 
-<script src="/main.652be987.js"></script>
+<script src="/main.44427fc7.js"></script>
 
-<script src="/common.61c1039a.js"></script>
+<script src="/common.b8534468.js"></script>
 
-<script src="/2.ac967074.js"></script>
+<script src="/2.2d1fafba.js"></script>
 
-<script src="/3.168ba183.js"></script>
+<script src="/3.77c9ac1d.js"></script>
 
-<script src="/1be78505.63628704.js"></script>
+<script src="/1be78505.0419adad.js"></script>
 
-<script src="/20ac7829.ca23f0a5.js"></script>
+<script src="/20ac7829.c459a9ec.js"></script>
 
-<script src="/17896441.f8cf0f7f.js"></script>
+<script src="/17896441.aa90f48d.js"></script>
 
-<script src="/fbfc39d5.77d4603b.js"></script>
+<script src="/fbfc39d5.92c59ede.js"></script>
 
 
 </body>

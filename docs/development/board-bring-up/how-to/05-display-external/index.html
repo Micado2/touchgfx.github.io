@@ -4,7 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="generator" content="Docusaurus">
-
+<link rel="preconnect" href="https://www.google-analytics.com">
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-162710244-1","auto"),ga("send","pageview")</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
 
 <title data-react-helmet="true">5. Framebuffer in external RAM | TouchGFX Documentation</title>
 
@@ -16,25 +18,25 @@
 <link rel="stylesheet" href="/styles.cdb1878b.css">
 
 
-<link rel="preload" href="/styles.a46c8391.js" as="script">
+<link rel="preload" href="/styles.a6256359.js" as="script">
 
-<link rel="preload" href="/runtime~main.d7082c42.js" as="script">
+<link rel="preload" href="/runtime~main.b3bce9c9.js" as="script">
 
-<link rel="preload" href="/main.652be987.js" as="script">
+<link rel="preload" href="/main.44427fc7.js" as="script">
 
-<link rel="preload" href="/common.61c1039a.js" as="script">
+<link rel="preload" href="/common.b8534468.js" as="script">
 
-<link rel="preload" href="/2.ac967074.js" as="script">
+<link rel="preload" href="/2.2d1fafba.js" as="script">
 
-<link rel="preload" href="/3.168ba183.js" as="script">
+<link rel="preload" href="/3.77c9ac1d.js" as="script">
 
-<link rel="preload" href="/1be78505.63628704.js" as="script">
+<link rel="preload" href="/1be78505.0419adad.js" as="script">
 
-<link rel="preload" href="/20ac7829.ca23f0a5.js" as="script">
+<link rel="preload" href="/20ac7829.c459a9ec.js" as="script">
 
-<link rel="preload" href="/17896441.f8cf0f7f.js" as="script">
+<link rel="preload" href="/17896441.aa90f48d.js" as="script">
 
-<link rel="preload" href="/de815af1.a311c564.js" as="script">
+<link rel="preload" href="/de815af1.499fd4a3.js" as="script">
 
 </head>
 <body>
@@ -47,35 +49,43 @@ controller has certain expectations on the transfer speed. This might
 result in errors. Common errors are LTDC underrun, because the
 bandwidth of the external RAM is not high enough, or pixel errors
 because the RAM is configured incorrectly and is running &quot;out of
-spec&quot;.</p><div class="highlight highlight-note"><div class="highlight-heading"><h5><div class="highlight-icon"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></div>Note</h5></div><div class="highlight-content">If the LTDC Layer size was setup to only update a part of the display in the previous step<a href="/docs/development/board-bring-up/how-to/03-display-internal"> Display internal </a>(due to the amount of internal RAM ), now is the time to redo that. Reconfigure the LTDC Layer such that the entire display is covered.</div></div><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="prerequisites"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#prerequisites" title="Direct link to heading">#</a>Prerequisites</h2><p>The following are the prerequisites for this step:</p><ul><li>Address of the framebuffer in the external RAM</li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="do"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#do" title="Direct link to heading">#</a>Do</h2><ul><li>Place the framebuffer in external RAM</li><li>Setup the display controller to read from the external RAM</li></ul><p>When the frambuffer is in external RAM, it is common practice to not
+spec&quot;.</p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="goal"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#goal" title="Direct link to heading">#</a>Goal</h2><p>The goal in this step is to remove the framebuffer array from internal
+RAM and use a framebuffer in external RAM.</p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="verification"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#verification" title="Direct link to heading">#</a>Verification</h3><p>Here are the verification points for this section. These are similar
+to the verification points when the framebuffer is in internal RAM,
+but should be checked again, as the speed on the external memory may
+influence the transmission of the framebuffer to the display.</p><table><thead><tr><th>Verification Point</th><th>Rationale</th></tr></thead><tbody><tr><td>Framebuffer is shown</td><td>Display controller or SPI is configured and running</td></tr><tr><td>Updated framebuffer is shown</td><td>We know how to repeatedly transmit the framebuffer</td></tr><tr><td>Framerate is correct</td><td>The pixel clock and porches are configured to get the required framerate</td></tr></tbody></table><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="prerequisites"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#prerequisites" title="Direct link to heading">#</a>Prerequisites</h2><p>The following are the prerequisites for this step:</p><ul><li>Address of the framebuffer in the external RAM</li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="do"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#do" title="Direct link to heading">#</a>Do</h2><p>We have these two tasks:</p><ul><li>Place the framebuffer in external RAM</li><li>Setup the display controller to read from the external RAM</li></ul><p>When the frambuffer is in external RAM, it is common practice to not
 allocate an array for it. You just declare a pointer to the correct
 address. The address in external RAM is then manually selected. It can
 be anywhere in the external RAM, but the start of the RAM is commonly
 used:</p><div class="code-header"><div><h5>main.c</h5></div></div><div class="mdxCodeBlock_iHAB"><pre class="prism-code language-cpp codeBlock_19pQ"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><code class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token keyword" style="font-style:italic">uint16_t</span><span class="token operator" style="color:rgb(137, 221, 255)">*</span><span class="token plain"> framebuffer </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token keyword" style="font-style:italic">uint16_t</span><span class="token operator" style="color:rgb(137, 221, 255)">*</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token number" style="color:rgb(247, 140, 108)">0xC0000000</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain">  </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">//16 bpp framebuffer</span></div></code></pre></div><p>You can reuse the small test programs you created in the steps in
 <a href="/docs/development/board-bring-up/how-to/03-display-internal">Display Internal</a>.</p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="ltdc-layer-configuration"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#ltdc-layer-configuration" title="Direct link to heading">#</a>LTDC Layer configuration</h3><p>Remember to change the configuration of the LTDC Layer. Since we now
 have a specific address for the framebuffer, we can insert that
-address in CubeMX (Color Frame Buffer Start Address):</p><div class="figure"><a href="/img/development/board-bring-up/display/cubemx-03.png" target="_blank"><img width="600" src="/img/development/board-bring-up/display/cubemx-03.png"></a><p>Configuring LTDC Layer Parameters</p></div><p>Remember to remove this line from your program and the framebuffer array:</p><div class="code-header"><div><h5>main.c</h5></div></div><div class="mdxCodeBlock_iHAB"><pre class="prism-code language-cpp codeBlock_19pQ"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><code class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">/* USER CODE BEGIN 2 */</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token function" style="color:rgb(130, 170, 255)">HAL_LTDC_SetAddress</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token operator" style="color:rgb(137, 221, 255)">&amp;</span><span class="token plain">hltdc</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> framebuffer</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> LTDC_LAYER_1</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">/* USER CODE END 2 */</span></div></code></pre></div><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="verification"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#verification" title="Direct link to heading">#</a>Verification</h2><p>Here are the verification points for this section:</p><table><thead><tr><th>Verification Point</th><th>Rationale</th></tr></thead><tbody><tr><td>Framebuffer is shown</td><td>Display controller or SPI is configured and running</td></tr><tr><td>Updated framebuffer is shown</td><td>We know how to repeatedly transmit the framebuffer</td></tr><tr><td>Framerate is correct</td><td>The pixel clock and porches are configured to get the required framerate</td></tr></tbody></table></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/development/board-bring-up/how-to/04-enable-external-ram"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« 4. External RAM</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/development/board-bring-up/how-to/06-flash-external-addressable"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">6. External addressable flash »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#motivation" class="contents__link">Motivation</a></li><li><a href="#prerequisites" class="contents__link">Prerequisites</a></li><li><a href="#do" class="contents__link">Do</a><ul><li><a href="#ltdc-layer-configuration" class="contents__link">LTDC Layer configuration</a></li></ul></li><li><a href="#verification" class="contents__link">Verification</a></li></ul></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center"><div>Copyright © 2020 ST Microelectronics</div></div></div></footer>
+address in CubeMX (Color Frame Buffer Start Address):</p><div class="figure"><a href="/img/development/board-bring-up/display/cubemx-03.png" target="_blank"><img width="600" src="/img/development/board-bring-up/display/cubemx-03.png"></a><p>Configuring LTDC Layer Parameters</p></div><p>Remember to remove this line from your program and the framebuffer array:</p><div class="code-header"><div><h5>main.c</h5></div></div><div class="mdxCodeBlock_iHAB"><pre class="prism-code language-cpp codeBlock_19pQ"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><code class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">/* USER CODE BEGIN 2 */</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token function" style="color:rgb(130, 170, 255)">HAL_LTDC_SetAddress</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token operator" style="color:rgb(137, 221, 255)">&amp;</span><span class="token plain">hltdc</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> framebuffer</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> LTDC_LAYER_1</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">/* USER CODE END 2 */</span></div></code></pre></div><p>If the LTDC Layer size was setup to only update a part of the
+display in <a href="/docs/development/board-bring-up/how-to/03-display-internal">step 03</a>
+(due to the amount of internal RAM ), now is the time to redo
+that. Reconfigure the LTDC Layer such that the entire display is
+covered.</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/development/board-bring-up/how-to/04-enable-external-ram"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« 4. External RAM</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/development/board-bring-up/how-to/06-flash-external-addressable"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">6. External addressable flash »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#motivation" class="contents__link">Motivation</a></li><li><a href="#goal" class="contents__link">Goal</a><ul><li><a href="#verification" class="contents__link">Verification</a></li></ul></li><li><a href="#prerequisites" class="contents__link">Prerequisites</a></li><li><a href="#do" class="contents__link">Do</a><ul><li><a href="#ltdc-layer-configuration" class="contents__link">LTDC Layer configuration</a></li></ul></li></ul></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center"><div>Copyright © 2020 STMicroelectronics</div></div></div></footer>
 </div>
 
-<script src="/styles.a46c8391.js"></script>
+<script src="/styles.a6256359.js"></script>
 
-<script src="/runtime~main.d7082c42.js"></script>
+<script src="/runtime~main.b3bce9c9.js"></script>
 
-<script src="/main.652be987.js"></script>
+<script src="/main.44427fc7.js"></script>
 
-<script src="/common.61c1039a.js"></script>
+<script src="/common.b8534468.js"></script>
 
-<script src="/2.ac967074.js"></script>
+<script src="/2.2d1fafba.js"></script>
 
-<script src="/3.168ba183.js"></script>
+<script src="/3.77c9ac1d.js"></script>
 
-<script src="/1be78505.63628704.js"></script>
+<script src="/1be78505.0419adad.js"></script>
 
-<script src="/20ac7829.ca23f0a5.js"></script>
+<script src="/20ac7829.c459a9ec.js"></script>
 
-<script src="/17896441.f8cf0f7f.js"></script>
+<script src="/17896441.aa90f48d.js"></script>
 
-<script src="/de815af1.a311c564.js"></script>
+<script src="/de815af1.499fd4a3.js"></script>
 
 
 </body>

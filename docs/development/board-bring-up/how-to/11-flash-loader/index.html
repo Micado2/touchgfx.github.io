@@ -4,7 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="generator" content="Docusaurus">
-
+<link rel="preconnect" href="https://www.google-analytics.com">
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-162710244-1","auto"),ga("send","pageview")</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
 
 <title data-react-helmet="true">11. Flash Loader | TouchGFX Documentation</title>
 
@@ -16,25 +18,25 @@
 <link rel="stylesheet" href="/styles.cdb1878b.css">
 
 
-<link rel="preload" href="/styles.a46c8391.js" as="script">
+<link rel="preload" href="/styles.a6256359.js" as="script">
 
-<link rel="preload" href="/runtime~main.d7082c42.js" as="script">
+<link rel="preload" href="/runtime~main.b3bce9c9.js" as="script">
 
-<link rel="preload" href="/main.652be987.js" as="script">
+<link rel="preload" href="/main.44427fc7.js" as="script">
 
-<link rel="preload" href="/common.61c1039a.js" as="script">
+<link rel="preload" href="/common.b8534468.js" as="script">
 
-<link rel="preload" href="/2.ac967074.js" as="script">
+<link rel="preload" href="/2.2d1fafba.js" as="script">
 
-<link rel="preload" href="/3.168ba183.js" as="script">
+<link rel="preload" href="/3.77c9ac1d.js" as="script">
 
-<link rel="preload" href="/1be78505.63628704.js" as="script">
+<link rel="preload" href="/1be78505.0419adad.js" as="script">
 
-<link rel="preload" href="/20ac7829.ca23f0a5.js" as="script">
+<link rel="preload" href="/20ac7829.c459a9ec.js" as="script">
 
-<link rel="preload" href="/17896441.f8cf0f7f.js" as="script">
+<link rel="preload" href="/17896441.aa90f48d.js" as="script">
 
-<link rel="preload" href="/7e41bf48.b89fb84a.js" as="script">
+<link rel="preload" href="/7e41bf48.aea494ba.js" as="script">
 
 </head>
 <body>
@@ -46,10 +48,10 @@ produce a binary or hex file with these data. These data are typically
 put into the external flash. The internal flash is then reserved for
 code.</p><p>During development we need a way to write data to the external flash,
 but this is not necessary during runtime where we only read from the
-flash.</p><p>Two ways are common for writing data to the external flash:</p><ul><li>Write a flashloader for STM32CubeProgrammer</li><li>Use a proprietary application-based solution</li></ul><div class="highlight highlight-note"><div class="highlight-heading"><h5><div class="highlight-icon"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></div>Note</h5></div><div class="highlight-content">Skip this step if external flash is not present</div></div><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="goal"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#goal" title="Direct link to heading">#</a>Goal</h2><p>The goal in this section is to provide a mechanism for loading data to
-the external flash.</p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="prerequisites"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#prerequisites" title="Direct link to heading">#</a>Prerequisites</h2><p>The following are the prerequisites for this step:</p><ul><li>Information about the flash, typically a datasheet</li><li>Information about the connections between the mcu and the external flash</li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="do"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#do" title="Direct link to heading">#</a>Do</h2><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="flash-loader-for-stm32cubeprogrammer"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#flash-loader-for-stm32cubeprogrammer" title="Direct link to heading">#</a>Flash loader for STM32CubeProgrammer</h3><p>The <a target="_blank" to="https://www.st.com/en/development-tools/stm32cubeprog.html" href="https://www.st.com/en/development-tools/stm32cubeprog.html">STM32CubeProgrammer</a> comes with flash loaders for the various STM32
+flash.</p><p>Two ways are common for writing data to the external flash:</p><ul><li>Write a flashloader for STM32CubeProgrammer</li><li>Use a proprietary application-based solution</li></ul><div class="highlight highlight-note"><div class="highlight-heading"><h5><div class="highlight-icon"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></div>Note</h5></div><div class="highlight-content">Skip this step if external flash is not present</div></div><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="goal"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#goal" title="Direct link to heading">#</a>Goal</h2><p>The goal in this section is to select and develop a mechanism for loading data to
+the external flash.</p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="verification"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#verification" title="Direct link to heading">#</a>Verification</h3><p>Here are the verification points for this section:</p><table><thead><tr><th>Verification Point</th><th>Rationale</th></tr></thead><tbody><tr><td>Data can be flashed</td><td>External flash can be used for image storage</td></tr></tbody></table><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="prerequisites"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#prerequisites" title="Direct link to heading">#</a>Prerequisites</h2><p>The following are the prerequisites for this step:</p><ul><li>Information about the flash, typically a datasheet</li><li>Information about the connections between the MCU and the external flash</li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="do"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#do" title="Direct link to heading">#</a>Do</h2><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="flash-loader-for-stm32cubeprogrammer"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#flash-loader-for-stm32cubeprogrammer" title="Direct link to heading">#</a>Flash loader for STM32CubeProgrammer</h3><p>The <a target="_blank" to="https://www.st.com/en/development-tools/stm32cubeprog.html" href="https://www.st.com/en/development-tools/stm32cubeprog.html">STM32CubeProgrammer</a> comes with flash loaders for the various STM32
 Evaluation kits. The flash loaders are small programs that are loaded
-to the RAM of the mcu and facilitates the programming of the flash.</p><p>The flash loader consists of two parts:
+to the RAM of the MCU and facilitates the programming of the flash.</p><p>The flash loader consists of two parts:
 <em>Configuration of the GPIOs and flash interface that are required to communicate with the flash
 </em>The flashing algorithm that knows the sequence of commands required to write in the flash</p><p>These parts can often be based on an existing flash loader. If you can
 find a flash loader for the same flash that you are using, take that
@@ -69,28 +71,28 @@ the application must typically be put in a special mode.</p><p>Open source solut
 the internet. The Y-modem protocol for example provides 16-bit CRC on the data.</p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="testing"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#testing" title="Direct link to heading">#</a>Testing</h3><p>After the data has been written to the flash, test that it can be read
 correctly. Use the small test programs developed in the previous
 sections.</p><p>It is adviced to test the whole flash thoroughly now, to find any bugs
-early.</p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="verification"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#verification" title="Direct link to heading">#</a>Verification</h2><p>Here are the verification points for this section:</p><table><thead><tr><th>Verification Point</th><th>Rationale</th></tr></thead><tbody><tr><td>Data can be flashed</td><td>External flash can be used for image storage</td></tr></tbody></table></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/development/board-bring-up/how-to/10-physical-buttons"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« 10. Physical Buttons</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/development/touchgfx-hal-development/touchgfx-al-development-introduction"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">Introduction »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#motivation" class="contents__link">Motivation</a></li><li><a href="#goal" class="contents__link">Goal</a></li><li><a href="#prerequisites" class="contents__link">Prerequisites</a></li><li><a href="#do" class="contents__link">Do</a><ul><li><a href="#flash-loader-for-stm32cubeprogrammer" class="contents__link">Flash loader for STM32CubeProgrammer</a></li><li><a href="#proprietary-application-based-solution" class="contents__link">Proprietary application-based solution</a></li><li><a href="#testing" class="contents__link">Testing</a></li></ul></li><li><a href="#verification" class="contents__link">Verification</a></li></ul></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center"><div>Copyright © 2020 ST Microelectronics</div></div></div></footer>
+early.</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/development/board-bring-up/how-to/10-physical-buttons"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« 10. Physical Buttons</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/development/touchgfx-hal-development/touchgfx-al-development-introduction"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">Introduction »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#motivation" class="contents__link">Motivation</a></li><li><a href="#goal" class="contents__link">Goal</a><ul><li><a href="#verification" class="contents__link">Verification</a></li></ul></li><li><a href="#prerequisites" class="contents__link">Prerequisites</a></li><li><a href="#do" class="contents__link">Do</a><ul><li><a href="#flash-loader-for-stm32cubeprogrammer" class="contents__link">Flash loader for STM32CubeProgrammer</a></li><li><a href="#proprietary-application-based-solution" class="contents__link">Proprietary application-based solution</a></li><li><a href="#testing" class="contents__link">Testing</a></li></ul></li></ul></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center"><div>Copyright © 2020 STMicroelectronics</div></div></div></footer>
 </div>
 
-<script src="/styles.a46c8391.js"></script>
+<script src="/styles.a6256359.js"></script>
 
-<script src="/runtime~main.d7082c42.js"></script>
+<script src="/runtime~main.b3bce9c9.js"></script>
 
-<script src="/main.652be987.js"></script>
+<script src="/main.44427fc7.js"></script>
 
-<script src="/common.61c1039a.js"></script>
+<script src="/common.b8534468.js"></script>
 
-<script src="/2.ac967074.js"></script>
+<script src="/2.2d1fafba.js"></script>
 
-<script src="/3.168ba183.js"></script>
+<script src="/3.77c9ac1d.js"></script>
 
-<script src="/1be78505.63628704.js"></script>
+<script src="/1be78505.0419adad.js"></script>
 
-<script src="/20ac7829.ca23f0a5.js"></script>
+<script src="/20ac7829.c459a9ec.js"></script>
 
-<script src="/17896441.f8cf0f7f.js"></script>
+<script src="/17896441.aa90f48d.js"></script>
 
-<script src="/7e41bf48.b89fb84a.js"></script>
+<script src="/7e41bf48.aea494ba.js"></script>
 
 
 </body>
