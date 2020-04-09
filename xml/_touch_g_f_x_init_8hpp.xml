@@ -13,12 +13,6 @@
       <node id="10">
         <label>BitmapDatabase.hpp</label>
       </node>
-      <node id="11">
-        <label>fonts/ApplicationFontProvider.hpp</label>
-      </node>
-      <node id="13">
-        <label>gui/common/FrontendHeap.hpp</label>
-      </node>
       <node id="9">
         <label>common/TouchGFXInit.hpp</label>
         <link refid="_touch_g_f_x_init_8hpp"/>
@@ -30,6 +24,12 @@
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
+      </node>
+      <node id="11">
+        <label>fonts/ApplicationFontProvider.hpp</label>
+      </node>
+      <node id="13">
+        <label>gui/common/FrontendHeap.hpp</label>
       </node>
       <node id="12">
         <label>texts/TypedTextDatabase.hpp</label>
