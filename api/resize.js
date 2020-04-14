@@ -46,7 +46,7 @@ function initResizable()
 
   function writeCookie(cookie, val, expiration)
   {
-    if (val==undefined) return;
+     return;
     if (expiration == null) {
       var date = new Date();
       date.setTime(date.getTime()+(10*365*24*60*60*1000)); // default expiration is one week
