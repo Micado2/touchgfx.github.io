@@ -4,9 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="generator" content="Docusaurus">
-<link rel="preconnect" href="https://www.google-analytics.com">
-<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-162710244-1","auto"),ga("send","pageview")</script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
+
 
 <title data-react-helmet="true">Using IDEs with TouchGFX | TouchGFX Documentation</title>
 
@@ -18,25 +16,25 @@
 <link rel="stylesheet" href="/styles.cdb1878b.css">
 
 
-<link rel="preload" href="/styles.fb438ccf.js" as="script">
+<link rel="preload" href="/styles.48ef6447.js" as="script">
 
-<link rel="preload" href="/runtime~main.461b11dc.js" as="script">
+<link rel="preload" href="/runtime~main.bff67e53.js" as="script">
 
-<link rel="preload" href="/main.b799bff4.js" as="script">
+<link rel="preload" href="/main.6057de2f.js" as="script">
 
-<link rel="preload" href="/common.2399d9cc.js" as="script">
+<link rel="preload" href="/common.8b1495a5.js" as="script">
 
-<link rel="preload" href="/2.7c0dfd88.js" as="script">
+<link rel="preload" href="/2.a04eba9a.js" as="script">
 
-<link rel="preload" href="/3.68ee71aa.js" as="script">
+<link rel="preload" href="/3.8b1bacb6.js" as="script">
 
-<link rel="preload" href="/1be78505.7aa3ccb4.js" as="script">
+<link rel="preload" href="/1be78505.9dc167c2.js" as="script">
 
-<link rel="preload" href="/20ac7829.c5363d09.js" as="script">
+<link rel="preload" href="/20ac7829.0c93daa0.js" as="script">
 
-<link rel="preload" href="/17896441.d556ceff.js" as="script">
+<link rel="preload" href="/17896441.9b023743.js" as="script">
 
-<link rel="preload" href="/31209510.36b95076.js" as="script">
+<link rel="preload" href="/31209510.36b4ce70.js" as="script">
 
 </head>
 <body>
@@ -48,25 +46,25 @@ The imageconverter can be found in your projects touchgfx folder <code>touchgfx/
 The textconverter can be found in your projects touchgfx folder <code>touchgfx\framework\tools\textconvert</code> as a ruby file: <code>main.rb</code>.</p><div class="mdxCodeBlock_iHAB"><pre class="prism-code language-undefined codeBlock_19pQ"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><code class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token plain">usage: main.rb file.xlsx path/to/fontconvert.out path/to/fonts_output_dir path/to/localization_output_dir path/to/font/asset calling_path</span></div></code></pre></div><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="flashing-and-debugging"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#flashing-and-debugging" title="Direct link to heading">#</a>Flashing and debugging</h2><p>Depending on your linker settings, you will most likely get an <code>.elf</code> or <code>.hex</code> file produced as output. It is possible to deploy and debug TouchGFX applications from within most IDEs, typically using a GDB server, or whichever other approach your IDE provides. Concrete pointers for each available IDE cannot be provided, but you might find inspiration in the <a href="/docs/development/ui-development/working-with-touchgfx/compiling-and-flashing">Compiling &amp; Flashing</a> article, which explains how to flash a board with a GCC-produced ELF/HEX file.</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/development/ui-development/software-architecture/code-structure"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« Code Structure</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/development/ui-development/working-with-touchgfx/widgets-and-containers"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">Widgets and Containers »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#prerequisite-gcc-version" class="contents__link">Prerequisite: GCC version</a></li><li><a href="#invoke-touchgfx-makefile-from-ide" class="contents__link">Invoke TouchGFX Makefile from IDE</a></li><li><a href="#add-touchgfx-code-files-to-your-own-project" class="contents__link">Add TouchGFX code files to your own project</a><ul><li><a href="#required-files" class="contents__link">Required files</a></li><li><a href="#include-paths" class="contents__link">Include paths</a></li><li><a href="#compiler-switches" class="contents__link">Compiler switches</a></li><li><a href="#linker" class="contents__link">Linker</a></li></ul></li><li><a href="#asset-generation" class="contents__link">Asset generation</a></li><li><a href="#flashing-and-debugging" class="contents__link">Flashing and debugging</a></li></ul></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center"><div>All rights reserved © 2020 STMicroelectronics | <a href="https://www.st.com/content/st_com/en/common/terms-of-use.html">Terms of use</a> | <a href="https://www.st.com/content/ccc/resource/legal/legal_agreement/sales_agreement/49/05/8c/68/a0/35/4a/6e/ST%20Terms%20and%20Conditions%20of%20Sales.pdf/files/ST%20Terms%20and%20Conditions%20of%20Sales.pdf/_jcr_content/translations/en.ST%20Terms%20and%20Conditions%20of%20Sales.pdf">Sales Terms & Conditions</a> | <a href="https://www.st.com/content/st_com/en/common/privacy-policy.html">Privacy Policy</a> | <a href="https://www.st.com/content/st_com/en/common/cookies-policy.html">Manage cookies</a> | <a href="https://app-de.onetrust.com/app/#/webform/2b87200d-4023-4588-9df7-ab0cdea1a67e">Exercise your rights</a></div></div></div></footer>
 </div>
 
-<script src="/styles.fb438ccf.js"></script>
+<script src="/styles.48ef6447.js"></script>
 
-<script src="/runtime~main.461b11dc.js"></script>
+<script src="/runtime~main.bff67e53.js"></script>
 
-<script src="/main.b799bff4.js"></script>
+<script src="/main.6057de2f.js"></script>
 
-<script src="/common.2399d9cc.js"></script>
+<script src="/common.8b1495a5.js"></script>
 
-<script src="/2.7c0dfd88.js"></script>
+<script src="/2.a04eba9a.js"></script>
 
-<script src="/3.68ee71aa.js"></script>
+<script src="/3.8b1bacb6.js"></script>
 
-<script src="/1be78505.7aa3ccb4.js"></script>
+<script src="/1be78505.9dc167c2.js"></script>
 
-<script src="/20ac7829.c5363d09.js"></script>
+<script src="/20ac7829.0c93daa0.js"></script>
 
-<script src="/17896441.d556ceff.js"></script>
+<script src="/17896441.9b023743.js"></script>
 
-<script src="/31209510.36b95076.js"></script>
+<script src="/31209510.36b4ce70.js"></script>
 
 
 </body>

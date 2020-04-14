@@ -4,9 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="generator" content="Docusaurus">
-<link rel="preconnect" href="https://www.google-analytics.com">
-<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-162710244-1","auto"),ga("send","pageview")</script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
+
 
 <title data-react-helmet="true">LTDC/Parallel RGB | TouchGFX Documentation</title>
 
@@ -18,25 +16,25 @@
 <link rel="stylesheet" href="/styles.cdb1878b.css">
 
 
-<link rel="preload" href="/styles.fb438ccf.js" as="script">
+<link rel="preload" href="/styles.48ef6447.js" as="script">
 
-<link rel="preload" href="/runtime~main.461b11dc.js" as="script">
+<link rel="preload" href="/runtime~main.bff67e53.js" as="script">
 
-<link rel="preload" href="/main.b799bff4.js" as="script">
+<link rel="preload" href="/main.6057de2f.js" as="script">
 
-<link rel="preload" href="/common.2399d9cc.js" as="script">
+<link rel="preload" href="/common.8b1495a5.js" as="script">
 
-<link rel="preload" href="/2.7c0dfd88.js" as="script">
+<link rel="preload" href="/2.a04eba9a.js" as="script">
 
-<link rel="preload" href="/3.68ee71aa.js" as="script">
+<link rel="preload" href="/3.8b1bacb6.js" as="script">
 
-<link rel="preload" href="/1be78505.7aa3ccb4.js" as="script">
+<link rel="preload" href="/1be78505.9dc167c2.js" as="script">
 
-<link rel="preload" href="/20ac7829.c5363d09.js" as="script">
+<link rel="preload" href="/20ac7829.0c93daa0.js" as="script">
 
-<link rel="preload" href="/17896441.d556ceff.js" as="script">
+<link rel="preload" href="/17896441.9b023743.js" as="script">
 
-<link rel="preload" href="/277ea528.1e79c884.js" as="script">
+<link rel="preload" href="/277ea528.09485da6.js" as="script">
 
 </head>
 <body>
@@ -47,25 +45,25 @@ The generated code both starts the correct framebuffer transfer and unblocks the
 after enabling the LTDC peripheral in the Multimedia section.</p><div class="figure noshadow"><a href="/img/development/touchgfx-hal-development/touchgfx-generator/dependencies.png" target="_blank"><img src="/img/development/touchgfx-hal-development/touchgfx-generator/dependencies.png"></a><p></p></div><p>The following image shows the LTDC configuration that satisfies the conditions of the warnings, causing the Dependencies group to disappear from the TouchGFX Generator interface.</p><div class="figure noshadow"><a href="/img/development/touchgfx-hal-development/touchgfx-generator/ltdc-config.png" target="_blank"><img src="/img/development/touchgfx-hal-development/touchgfx-generator/ltdc-config.png"></a><p></p></div><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="reading-settings-from-cubemx"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#reading-settings-from-cubemx" title="Direct link to heading">#</a>Reading settings from CubeMX</h2><p>By selecting <em>Parallel RGB (LTDC)</em> as the display interface through TouchGFX Generator, the <em>width</em> and <em>height</em> of the framebuffer is inherited from the LTDC configuration <em>horizontal start/stop</em> and <em>vertical start/stop</em>.</p><div class="figure noshadow"><a href="/img/development/touchgfx-hal-development/touchgfx-generator/ltdc-window-position.png" target="_blank"><img src="/img/development/touchgfx-hal-development/touchgfx-generator/ltdc-window-position.png"></a><p></p></div><p>Defining the dimensions of Layer <em>0</em> according to the display and application dimensions a new entry in the <em>Dependency</em> window appears.</p><div class="figure noshadow"><a href="/img/development/touchgfx-hal-development/touchgfx-generator/dependency-ltdc-image.png" target="_blank"><img src="/img/development/touchgfx-hal-development/touchgfx-generator/dependency-ltdc-image.png"></a><p></p></div><p>Ensuring that Framebuffer <em>Image Width</em> and <em>Image Height</em> match the size of the window, which is usually desired, will satisfy the warning.</p><div class="figure noshadow"><a href="/img/development/touchgfx-hal-development/touchgfx-generator/ltdc-config-fixed.png" target="_blank"><img src="/img/development/touchgfx-hal-development/touchgfx-generator/ltdc-config-fixed.png"></a><p></p></div><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="touchgfx-driver--vsync-signal"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#touchgfx-driver--vsync-signal" title="Direct link to heading">#</a>TouchGFX Driver / VSYNC Signal</h2><p>Once <em>Parallel RGB (LTDC)</em> is selected as Display Interface developers gain access to the <em>LTDC</em> Application Tick Driver or TouchGFX Driver.</p><div class="figure noshadow"><a href="/img/development/touchgfx-hal-development/scenarios/ltdc-application-tick-source.png" target="_blank"><img width="500" src="/img/development/touchgfx-hal-development/scenarios/ltdc-application-tick-source.png"></a><p></p></div><p>The following code is the interrupt handler (STM32F7) for the LTDC interrupt generated according to LTDC configuration. The generated handler automatically unblocks the TouchGFX Engine main loop.</p><div class="mdxCodeBlock_iHAB"><pre class="prism-code language-cpp codeBlock_19pQ"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><code class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token keyword" style="font-style:italic">extern</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">&quot;C&quot;</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token operator" style="color:rgb(137, 221, 255)">-</span><span class="token plain">irq </span><span class="token keyword" style="font-style:italic">void</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">LTDC_IRQHandler</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token keyword" style="font-style:italic">void</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token keyword" style="font-style:italic">if</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">LTDC</span><span class="token operator" style="color:rgb(137, 221, 255)">-&gt;</span><span class="token plain">ISR </span><span class="token operator" style="color:rgb(137, 221, 255)">&amp;</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">1</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">        LTDC</span><span class="token operator" style="color:rgb(137, 221, 255)">-&gt;</span><span class="token plain">ICR </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">1</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">        </span><span class="token keyword" style="font-style:italic">if</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">LTDC</span><span class="token operator" style="color:rgb(137, 221, 255)">-&gt;</span><span class="token plain">LIPCR </span><span class="token operator" style="color:rgb(137, 221, 255)">==</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">LTDC</span><span class="token operator" style="color:rgb(137, 221, 255)">-&gt;</span><span class="token plain">AWCR </span><span class="token operator" style="color:rgb(137, 221, 255)">&amp;</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">0x7FF</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">-</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">1</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">        </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">            </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">//entering active area</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">            OSWrappers</span><span class="token operator" style="color:rgb(137, 221, 255)">::</span><span class="token function" style="color:rgb(130, 170, 255)">signalVSync</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></div><div class="token-line docusaurus-highlight-code-line" style="color:#bfc7d5"><span class="token plain">        </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span></div></code></pre></div><div class="highlight highlight-note"><div class="highlight-heading"><h5><div class="highlight-icon"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></div>Note</h5></div><div class="highlight-content">For the LTDC driver to work, users must enable the LTDC global interrupt through the LTDC NVIC settings or through Global NVIC settings, and also enable generation of handler code.</div></div><div class="figure noshadow"><a href="/img/development/touchgfx-hal-development/touchgfx-generator/nvic-global-interrupt-enable.png" target="_blank"><img src="/img/development/touchgfx-hal-development/touchgfx-generator/nvic-global-interrupt-enable.png"></a><p></p></div><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="conclusion"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#conclusion" title="Direct link to heading">#</a>Conclusion</h2><p>Enabling the <em>Parallel RGB (LTDC)</em> display interface option through TouchGFX Generator allows all required HAL code to be generated.</p><ul><li>Sets the width, height and pixel format of the TouchGFX application in accordance with the CubeMX LTDC configuration. The LTDC layer <em>width</em> and <em>height</em> impact the size of the canvas in TouchGFX Designer and the LTDC Pixel Format impacts the required TouchGFX framebuffer driver and also the format for generated assets.</li><li>Allow the LTDC application tick source to be selected which generates a handler to drive the TouchGFX Engine Main loop. Usually, with LTDC Configurations developers would always use the provided Application Tick Driver.</li></ul></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/development/touchgfx-hal-development/scenarios/scenarios-introduction"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« Introduction</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/development/touchgfx-hal-development/scenarios/scenarios-fmc"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">FMC and SPI »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#display-interface" class="contents__link">Display Interface</a></li><li><a href="#reading-settings-from-cubemx" class="contents__link">Reading settings from CubeMX</a></li><li><a href="#touchgfx-driver--vsync-signal" class="contents__link">TouchGFX Driver / VSYNC Signal</a></li><li><a href="#conclusion" class="contents__link">Conclusion</a></li></ul></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center"><div>All rights reserved © 2020 STMicroelectronics | <a href="https://www.st.com/content/st_com/en/common/terms-of-use.html">Terms of use</a> | <a href="https://www.st.com/content/ccc/resource/legal/legal_agreement/sales_agreement/49/05/8c/68/a0/35/4a/6e/ST%20Terms%20and%20Conditions%20of%20Sales.pdf/files/ST%20Terms%20and%20Conditions%20of%20Sales.pdf/_jcr_content/translations/en.ST%20Terms%20and%20Conditions%20of%20Sales.pdf">Sales Terms & Conditions</a> | <a href="https://www.st.com/content/st_com/en/common/privacy-policy.html">Privacy Policy</a> | <a href="https://www.st.com/content/st_com/en/common/cookies-policy.html">Manage cookies</a> | <a href="https://app-de.onetrust.com/app/#/webform/2b87200d-4023-4588-9df7-ab0cdea1a67e">Exercise your rights</a></div></div></div></footer>
 </div>
 
-<script src="/styles.fb438ccf.js"></script>
+<script src="/styles.48ef6447.js"></script>
 
-<script src="/runtime~main.461b11dc.js"></script>
+<script src="/runtime~main.bff67e53.js"></script>
 
-<script src="/main.b799bff4.js"></script>
+<script src="/main.6057de2f.js"></script>
 
-<script src="/common.2399d9cc.js"></script>
+<script src="/common.8b1495a5.js"></script>
 
-<script src="/2.7c0dfd88.js"></script>
+<script src="/2.a04eba9a.js"></script>
 
-<script src="/3.68ee71aa.js"></script>
+<script src="/3.8b1bacb6.js"></script>
 
-<script src="/1be78505.7aa3ccb4.js"></script>
+<script src="/1be78505.9dc167c2.js"></script>
 
-<script src="/20ac7829.c5363d09.js"></script>
+<script src="/20ac7829.0c93daa0.js"></script>
 
-<script src="/17896441.d556ceff.js"></script>
+<script src="/17896441.9b023743.js"></script>
 
-<script src="/277ea528.1e79c884.js"></script>
+<script src="/277ea528.09485da6.js"></script>
 
 
 </body>

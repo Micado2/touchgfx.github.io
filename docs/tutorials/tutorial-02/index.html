@@ -4,9 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="generator" content="Docusaurus">
-<link rel="preconnect" href="https://www.google-analytics.com">
-<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-162710244-1","auto"),ga("send","pageview")</script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
+
 
 <title data-react-helmet="true">Tutorial 2: Creating Your Own Application | TouchGFX Documentation</title>
 
@@ -18,25 +16,25 @@
 <link rel="stylesheet" href="/styles.cdb1878b.css">
 
 
-<link rel="preload" href="/styles.fb438ccf.js" as="script">
+<link rel="preload" href="/styles.48ef6447.js" as="script">
 
-<link rel="preload" href="/runtime~main.461b11dc.js" as="script">
+<link rel="preload" href="/runtime~main.bff67e53.js" as="script">
 
-<link rel="preload" href="/main.b799bff4.js" as="script">
+<link rel="preload" href="/main.6057de2f.js" as="script">
 
-<link rel="preload" href="/common.2399d9cc.js" as="script">
+<link rel="preload" href="/common.8b1495a5.js" as="script">
 
-<link rel="preload" href="/2.7c0dfd88.js" as="script">
+<link rel="preload" href="/2.a04eba9a.js" as="script">
 
-<link rel="preload" href="/3.68ee71aa.js" as="script">
+<link rel="preload" href="/3.8b1bacb6.js" as="script">
 
-<link rel="preload" href="/1be78505.7aa3ccb4.js" as="script">
+<link rel="preload" href="/1be78505.9dc167c2.js" as="script">
 
-<link rel="preload" href="/20ac7829.c5363d09.js" as="script">
+<link rel="preload" href="/20ac7829.0c93daa0.js" as="script">
 
-<link rel="preload" href="/17896441.d556ceff.js" as="script">
+<link rel="preload" href="/17896441.9b023743.js" as="script">
 
-<link rel="preload" href="/d68039c8.be58079f.js" as="script">
+<link rel="preload" href="/d68039c8.02de3299.js" as="script">
 
 </head>
 <body>
@@ -71,25 +69,25 @@ We want the widget to show a large text, so un-check the <i>Auto-size</i> proper
 </span></div></code></pre></div><p>Note that we call <code>invalidate()</code> on the <code>textCounter</code> widget after updating it. This ensures that the TextArea is redrawn after the counter value has been updated.</p><p>We need one more thing before the application is finished. TouchGFX only included the characters needed from the used fonts, so we need to tell TouchGFX Designer to include the characters 0-9 in the &quot;Default&quot; typography. To do that, go back to TouchGFX Designer and click the &quot;Texts&quot; tab, then the &quot;Typographies&quot; tab. In the &quot;Wildcard Ranges&quot; column for the Default typography, add the range &quot;0-9&quot;.</p><div class="figure"><a href="/img/tutorials/tutorial-02/set-wildcard-range.png" target="_blank"><img src="/img/tutorials/tutorial-02/set-wildcard-range.png"></a><p>Setting the Wildcard Range for the Default typography</p></div><p>Now click &quot;Run Simulator&quot; again and click the up button a few times:</p><div class="figure"><a href="/img/tutorials/tutorial-02/running-the-simulator-4.png" target="_blank"><img src="/img/tutorials/tutorial-02/running-the-simulator-4.png"></a><p>Running the Simulator</p></div><p>As the program is now, it will not handle negative numbers correctly. This can be fixed, either by inserting a guard in the <code>buttonDownClicked()</code> function to ensure the counter does not go below 0 or by adding the character &quot;-&quot; to the used typography. This can be accomplished simply by adding a minus (&quot;-&quot;) in the Wildcard Characters cell for the Default typography.</p><p>This step concludes tutorial 2.</p><div class="highlight highlight-further-reading"><div class="highlight-heading"><h5><div class="highlight-icon"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></div>Further reading</h5></div><div class="highlight-content"><li>Read more about texts on the <a href="/docs/development/ui-development/touchgfx-engine-features/texts-and-fonts">Texts and Fonts</a> page.</li></div></div></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/tutorials/tutorial-01"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« Tutorial 1: Trying Out the Examples</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/tutorials/tutorial-03"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">Tutorial 3: Applications with Multiple Screens »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#step-1-setting-a-background-image" class="contents__link">Step 1: Setting a Background Image</a><ul><li><a href="#starting-a-new-project" class="contents__link">Starting a New Project</a></li><li><a href="#inserting-a-background" class="contents__link">Inserting a Background</a></li></ul></li><li><a href="#step-2-adding-buttons" class="contents__link">Step 2: Adding Buttons</a><ul><li><a href="#adding-the-buttons" class="contents__link">Adding the Buttons</a></li><li><a href="#changing-the-look" class="contents__link">Changing the Look</a></li></ul></li><li><a href="#step-3-adding-text" class="contents__link">Step 3: Adding Text</a><ul><li><a href="#text-background" class="contents__link">Text Background</a></li><li><a href="#adding-the-text" class="contents__link">Adding the Text</a></li><li><a href="#changing-the-text-typography" class="contents__link">Changing the Text Typography</a></li><li><a href="#using-a-wildcard-text" class="contents__link">Using a Wildcard Text</a></li></ul></li><li><a href="#step-4-adding-code" class="contents__link">Step 4: Adding Code</a><ul><li><a href="#implementing-the-virtual-methods" class="contents__link">Implementing the Virtual Methods</a></li><li><a href="#updating-the-counter-value" class="contents__link">Updating the Counter Value</a></li></ul></li></ul></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center"><div>All rights reserved © 2020 STMicroelectronics | <a href="https://www.st.com/content/st_com/en/common/terms-of-use.html">Terms of use</a> | <a href="https://www.st.com/content/ccc/resource/legal/legal_agreement/sales_agreement/49/05/8c/68/a0/35/4a/6e/ST%20Terms%20and%20Conditions%20of%20Sales.pdf/files/ST%20Terms%20and%20Conditions%20of%20Sales.pdf/_jcr_content/translations/en.ST%20Terms%20and%20Conditions%20of%20Sales.pdf">Sales Terms & Conditions</a> | <a href="https://www.st.com/content/st_com/en/common/privacy-policy.html">Privacy Policy</a> | <a href="https://www.st.com/content/st_com/en/common/cookies-policy.html">Manage cookies</a> | <a href="https://app-de.onetrust.com/app/#/webform/2b87200d-4023-4588-9df7-ab0cdea1a67e">Exercise your rights</a></div></div></div></footer>
 </div>
 
-<script src="/styles.fb438ccf.js"></script>
+<script src="/styles.48ef6447.js"></script>
 
-<script src="/runtime~main.461b11dc.js"></script>
+<script src="/runtime~main.bff67e53.js"></script>
 
-<script src="/main.b799bff4.js"></script>
+<script src="/main.6057de2f.js"></script>
 
-<script src="/common.2399d9cc.js"></script>
+<script src="/common.8b1495a5.js"></script>
 
-<script src="/2.7c0dfd88.js"></script>
+<script src="/2.a04eba9a.js"></script>
 
-<script src="/3.68ee71aa.js"></script>
+<script src="/3.8b1bacb6.js"></script>
 
-<script src="/1be78505.7aa3ccb4.js"></script>
+<script src="/1be78505.9dc167c2.js"></script>
 
-<script src="/20ac7829.c5363d09.js"></script>
+<script src="/20ac7829.0c93daa0.js"></script>
 
-<script src="/17896441.d556ceff.js"></script>
+<script src="/17896441.9b023743.js"></script>
 
-<script src="/d68039c8.be58079f.js"></script>
+<script src="/d68039c8.02de3299.js"></script>
 
 
 </body>

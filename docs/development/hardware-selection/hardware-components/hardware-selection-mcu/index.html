@@ -4,9 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="generator" content="Docusaurus">
-<link rel="preconnect" href="https://www.google-analytics.com">
-<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-162710244-1","auto"),ga("send","pageview")</script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
+
 
 <title data-react-helmet="true">MCU | TouchGFX Documentation</title>
 
@@ -18,25 +16,25 @@
 <link rel="stylesheet" href="/styles.cdb1878b.css">
 
 
-<link rel="preload" href="/styles.fb438ccf.js" as="script">
+<link rel="preload" href="/styles.48ef6447.js" as="script">
 
-<link rel="preload" href="/runtime~main.461b11dc.js" as="script">
+<link rel="preload" href="/runtime~main.bff67e53.js" as="script">
 
-<link rel="preload" href="/main.b799bff4.js" as="script">
+<link rel="preload" href="/main.6057de2f.js" as="script">
 
-<link rel="preload" href="/common.2399d9cc.js" as="script">
+<link rel="preload" href="/common.8b1495a5.js" as="script">
 
-<link rel="preload" href="/2.7c0dfd88.js" as="script">
+<link rel="preload" href="/2.a04eba9a.js" as="script">
 
-<link rel="preload" href="/3.68ee71aa.js" as="script">
+<link rel="preload" href="/3.8b1bacb6.js" as="script">
 
-<link rel="preload" href="/1be78505.7aa3ccb4.js" as="script">
+<link rel="preload" href="/1be78505.9dc167c2.js" as="script">
 
-<link rel="preload" href="/20ac7829.c5363d09.js" as="script">
+<link rel="preload" href="/20ac7829.0c93daa0.js" as="script">
 
-<link rel="preload" href="/17896441.d556ceff.js" as="script">
+<link rel="preload" href="/17896441.9b023743.js" as="script">
 
-<link rel="preload" href="/0a086025.e7bc4a1f.js" as="script">
+<link rel="preload" href="/0a086025.af692d83.js" as="script">
 
 </head>
 <body>
@@ -62,25 +60,25 @@ An L1-Cache stores a set of data or instructions near the CPU, so the CPU does n
 Considering the requirements of the interface, resolution, performance, etc., the user can ultimately find suitable MCUs and estimate price.</p><div class="highlight highlight-further-reading"><div class="highlight-heading"><h5><div class="highlight-icon"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></div>Further reading</h5></div><div class="highlight-content"><li>See <a to="https://www.st.com/en/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus.html" href="https://www.st.com/en/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus.html">STM32 32-bit Arm Cortex MCUs</a> for available STM32 microcontrollers.</li></div></div></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/development/hardware-selection/preliminary-considerations"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« Preliminary Considerations</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/development/hardware-selection/hardware-components/hardware-selection-display"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">Display »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#frequency" class="contents__link">Frequency</a><ul><li><a href="#graphic-subsystem-frequency" class="contents__link">Graphic Subsystem Frequency</a></li><li><a href="#example" class="contents__link">Example</a></li></ul></li><li><a href="#embedded-hardware-acceleration-features" class="contents__link">Embedded Hardware Acceleration Features</a><ul><li><a href="#chrom-art" class="contents__link">Chrom-ART</a></li><li><a href="#jpeg-hardware-codec" class="contents__link">JPEG Hardware Codec</a></li><li><a href="#chrom-grc" class="contents__link">Chrom-GRC</a></li></ul></li><li><a href="#internal-flash" class="contents__link">Internal Flash</a></li><li><a href="#internal-ram" class="contents__link">Internal RAM</a></li><li><a href="#lcd-controller" class="contents__link">LCD Controller</a></li><li><a href="#packages--io" class="contents__link">Packages &amp; I/O</a></li><li><a href="#memory-interfacing" class="contents__link">Memory Interfacing</a><ul><li><a href="#flexible-memory-controller--flexible-static-memory-controller-fmcfsmc" class="contents__link">Flexible Memory Controller &amp; Flexible Static Memory Controller (FMC/FSMC)</a></li><li><a href="#serial-memory-interface" class="contents__link">Serial Memory Interface</a></li><li><a href="#stm32-value-line-products" class="contents__link">STM32 Value Line products</a></li></ul></li><li><a href="#cortex-m-cores" class="contents__link">Cortex®-M Cores</a><ul><li><a href="#cortex-m0" class="contents__link">Cortex®-M0+</a></li><li><a href="#cortex-m4" class="contents__link">Cortex®-M4</a></li><li><a href="#cortex-m7" class="contents__link">Cortex®-M7</a></li><li><a href="#feature-overview" class="contents__link">Feature overview</a></li><li><a href="#level-1-cache" class="contents__link">Level 1 cache:</a></li><li><a href="#dual-core" class="contents__link">Dual core</a></li></ul></li><li><a href="#bus-architecture" class="contents__link">Bus architecture</a></li><li><a href="#price" class="contents__link">Price</a></li></ul></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center"><div>All rights reserved © 2020 STMicroelectronics | <a href="https://www.st.com/content/st_com/en/common/terms-of-use.html">Terms of use</a> | <a href="https://www.st.com/content/ccc/resource/legal/legal_agreement/sales_agreement/49/05/8c/68/a0/35/4a/6e/ST%20Terms%20and%20Conditions%20of%20Sales.pdf/files/ST%20Terms%20and%20Conditions%20of%20Sales.pdf/_jcr_content/translations/en.ST%20Terms%20and%20Conditions%20of%20Sales.pdf">Sales Terms & Conditions</a> | <a href="https://www.st.com/content/st_com/en/common/privacy-policy.html">Privacy Policy</a> | <a href="https://www.st.com/content/st_com/en/common/cookies-policy.html">Manage cookies</a> | <a href="https://app-de.onetrust.com/app/#/webform/2b87200d-4023-4588-9df7-ab0cdea1a67e">Exercise your rights</a></div></div></div></footer>
 </div>
 
-<script src="/styles.fb438ccf.js"></script>
+<script src="/styles.48ef6447.js"></script>
 
-<script src="/runtime~main.461b11dc.js"></script>
+<script src="/runtime~main.bff67e53.js"></script>
 
-<script src="/main.b799bff4.js"></script>
+<script src="/main.6057de2f.js"></script>
 
-<script src="/common.2399d9cc.js"></script>
+<script src="/common.8b1495a5.js"></script>
 
-<script src="/2.7c0dfd88.js"></script>
+<script src="/2.a04eba9a.js"></script>
 
-<script src="/3.68ee71aa.js"></script>
+<script src="/3.8b1bacb6.js"></script>
 
-<script src="/1be78505.7aa3ccb4.js"></script>
+<script src="/1be78505.9dc167c2.js"></script>
 
-<script src="/20ac7829.c5363d09.js"></script>
+<script src="/20ac7829.0c93daa0.js"></script>
 
-<script src="/17896441.d556ceff.js"></script>
+<script src="/17896441.9b023743.js"></script>
 
-<script src="/0a086025.e7bc4a1f.js"></script>
+<script src="/0a086025.af692d83.js"></script>
 
 
 </body>

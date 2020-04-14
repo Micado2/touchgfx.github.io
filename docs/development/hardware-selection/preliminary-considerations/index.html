@@ -4,9 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="generator" content="Docusaurus">
-<link rel="preconnect" href="https://www.google-analytics.com">
-<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-162710244-1","auto"),ga("send","pageview")</script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
+
 
 <title data-react-helmet="true">Preliminary Considerations | TouchGFX Documentation</title>
 
@@ -18,25 +16,25 @@
 <link rel="stylesheet" href="/styles.cdb1878b.css">
 
 
-<link rel="preload" href="/styles.fb438ccf.js" as="script">
+<link rel="preload" href="/styles.48ef6447.js" as="script">
 
-<link rel="preload" href="/runtime~main.461b11dc.js" as="script">
+<link rel="preload" href="/runtime~main.bff67e53.js" as="script">
 
-<link rel="preload" href="/main.b799bff4.js" as="script">
+<link rel="preload" href="/main.6057de2f.js" as="script">
 
-<link rel="preload" href="/common.2399d9cc.js" as="script">
+<link rel="preload" href="/common.8b1495a5.js" as="script">
 
-<link rel="preload" href="/2.7c0dfd88.js" as="script">
+<link rel="preload" href="/2.a04eba9a.js" as="script">
 
-<link rel="preload" href="/3.68ee71aa.js" as="script">
+<link rel="preload" href="/3.8b1bacb6.js" as="script">
 
-<link rel="preload" href="/1be78505.7aa3ccb4.js" as="script">
+<link rel="preload" href="/1be78505.9dc167c2.js" as="script">
 
-<link rel="preload" href="/20ac7829.c5363d09.js" as="script">
+<link rel="preload" href="/20ac7829.0c93daa0.js" as="script">
 
-<link rel="preload" href="/17896441.d556ceff.js" as="script">
+<link rel="preload" href="/17896441.9b023743.js" as="script">
 
-<link rel="preload" href="/5f1cd6bf.a7653a3c.js" as="script">
+<link rel="preload" href="/5f1cd6bf.ba4752aa.js" as="script">
 
 </head>
 <body>
@@ -46,25 +44,25 @@
 Some transitions require additional storage, and might therefore result in a larger amount of memory needed.</li><li><strong>Do you need complex texture mapper animations like rotation and scaling?</strong> Animating a texture mapper can be quite intensive on the system when it comes to calculations and transferring bitmaps and as such generally needs higher MHz, and high memory throughput.</li></ul><div class="figure"><a href="/img/development/hardware-selection/preliminary-considerations/animations.gif" target="_blank"><img width="480" src="/img/development/hardware-selection/preliminary-considerations/animations.gif"></a><p>Animations</p></div><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="mechanical-design-requirements"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#mechanical-design-requirements" title="Direct link to heading">#</a>Mechanical Design Requirements</h2><p>Physical casing requirements of a product will vary greatly and can have an impact on the hardware chosen. Home appliances will have other requirements to hazardous industrial usage and therefore, some of the questions you should ask yourself when unveiling the physical limitations could be:</p><ul><li><strong>Is your product required to be very small?</strong> An example could be a smart watch, which will have a limited casing size, which is limiting the size of the PCB, and therefore choosing the correct components is important. STM32 is offering a wide variety of MCU packages, like a WLCSP package.</li><li><strong>Is your product going to be subject to extreme temperatures?</strong> Capacitive displays can under perform during extraordinary heat or extraordinary cold. So perhaps if you&#x27;re installing your product in for example cold storage, a resistive display will be a better user experience. The STM32 product portfolio offers microcontrollers with ambient temperature range up to 85, 105 and 125 degrees.</li><li><strong>Does your product need to be very resistant to outdoor environmental factors such as water or dust?</strong> Different technologies offer different quality and features, and adding a cover lens for protection purposes could be one option.</li><li><strong>Is visibility in high sunlight important?</strong> Displays varies in candela and lumen, and the higher lumen and candela of the display the higher readability of the display. Adding a special cover lens can also improve this. Or using a another display technology which may also offer reflective features.</li></ul><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="frames-per-second"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#frames-per-second" title="Direct link to heading">#</a>Frames Per Second</h2><p>A higher and stable Frames Per Second (FPS) count is often preferable since this makes an application seem much smoother. </p><p>Sometimes FPS is less important. For instance in a static GUI with minimum display animation updates. In such cases lower cost hardware might be suitable.</p><p>But having a pretty and smooth application with a lot of flashy animations can also be a huge selling point depending on the targeted user segment, so as with anything related to hardware selection, it is all about meeting the end-users expectations, and providing a good user experience.</p><p>The overall performance of a graphical user interface comes down to the performance at system level, accounting for components like the MCU, RAM, Flash, display, interfaces throughput, and also hardware capabilities like the STM32 Chrom-ART.</p><p>The figures below paint a very generalized picture of the impact of some different parameters. To select the right hardware, these parameters need to be considered. Also taking into consideration that the STM32 Chrom-ART is offloading the MCU, and thereby in some cases decreases the importance of a high MCU frequency.</p><div class="figure noshadow"><a href="/img/development/hardware-selection/preliminary-considerations/fps-figures.png" target="_blank"><img src="/img/development/hardware-selection/preliminary-considerations/fps-figures.png"></a><p>The impact on FPS of different parameters</p></div></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/development/hardware-selection/hardware-selection-introduction"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« Introduction</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/development/hardware-selection/hardware-components/hardware-selection-mcu"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">MCU »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#display-resolution" class="contents__link">Display Resolution</a></li><li><a href="#color-depth" class="contents__link">Color Depth</a></li><li><a href="#framebuffer-size-calculation" class="contents__link">Framebuffer Size Calculation</a></li><li><a href="#display" class="contents__link">Display</a><ul><li><a href="#interface" class="contents__link">Interface</a></li><li><a href="#size" class="contents__link">Size</a></li><li><a href="#touch" class="contents__link">Touch</a></li></ul></li><li><a href="#animations" class="contents__link">Animations</a></li><li><a href="#mechanical-design-requirements" class="contents__link">Mechanical Design Requirements</a></li><li><a href="#frames-per-second" class="contents__link">Frames Per Second</a></li></ul></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center"><div>All rights reserved © 2020 STMicroelectronics | <a href="https://www.st.com/content/st_com/en/common/terms-of-use.html">Terms of use</a> | <a href="https://www.st.com/content/ccc/resource/legal/legal_agreement/sales_agreement/49/05/8c/68/a0/35/4a/6e/ST%20Terms%20and%20Conditions%20of%20Sales.pdf/files/ST%20Terms%20and%20Conditions%20of%20Sales.pdf/_jcr_content/translations/en.ST%20Terms%20and%20Conditions%20of%20Sales.pdf">Sales Terms & Conditions</a> | <a href="https://www.st.com/content/st_com/en/common/privacy-policy.html">Privacy Policy</a> | <a href="https://www.st.com/content/st_com/en/common/cookies-policy.html">Manage cookies</a> | <a href="https://app-de.onetrust.com/app/#/webform/2b87200d-4023-4588-9df7-ab0cdea1a67e">Exercise your rights</a></div></div></div></footer>
 </div>
 
-<script src="/styles.fb438ccf.js"></script>
+<script src="/styles.48ef6447.js"></script>
 
-<script src="/runtime~main.461b11dc.js"></script>
+<script src="/runtime~main.bff67e53.js"></script>
 
-<script src="/main.b799bff4.js"></script>
+<script src="/main.6057de2f.js"></script>
 
-<script src="/common.2399d9cc.js"></script>
+<script src="/common.8b1495a5.js"></script>
 
-<script src="/2.7c0dfd88.js"></script>
+<script src="/2.a04eba9a.js"></script>
 
-<script src="/3.68ee71aa.js"></script>
+<script src="/3.8b1bacb6.js"></script>
 
-<script src="/1be78505.7aa3ccb4.js"></script>
+<script src="/1be78505.9dc167c2.js"></script>
 
-<script src="/20ac7829.c5363d09.js"></script>
+<script src="/20ac7829.0c93daa0.js"></script>
 
-<script src="/17896441.d556ceff.js"></script>
+<script src="/17896441.9b023743.js"></script>
 
-<script src="/5f1cd6bf.a7653a3c.js"></script>
+<script src="/5f1cd6bf.ba4752aa.js"></script>
 
 
 </body>

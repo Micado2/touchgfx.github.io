@@ -4,9 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="generator" content="Docusaurus">
-<link rel="preconnect" href="https://www.google-analytics.com">
-<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-162710244-1","auto"),ga("send","pageview")</script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
+
 
 <title data-react-helmet="true">Framebuffer Strategies | TouchGFX Documentation</title>
 
@@ -18,25 +16,25 @@
 <link rel="stylesheet" href="/styles.cdb1878b.css">
 
 
-<link rel="preload" href="/styles.fb438ccf.js" as="script">
+<link rel="preload" href="/styles.48ef6447.js" as="script">
 
-<link rel="preload" href="/runtime~main.461b11dc.js" as="script">
+<link rel="preload" href="/runtime~main.bff67e53.js" as="script">
 
-<link rel="preload" href="/main.b799bff4.js" as="script">
+<link rel="preload" href="/main.6057de2f.js" as="script">
 
-<link rel="preload" href="/common.2399d9cc.js" as="script">
+<link rel="preload" href="/common.8b1495a5.js" as="script">
 
-<link rel="preload" href="/2.7c0dfd88.js" as="script">
+<link rel="preload" href="/2.a04eba9a.js" as="script">
 
-<link rel="preload" href="/3.68ee71aa.js" as="script">
+<link rel="preload" href="/3.8b1bacb6.js" as="script">
 
-<link rel="preload" href="/1be78505.7aa3ccb4.js" as="script">
+<link rel="preload" href="/1be78505.9dc167c2.js" as="script">
 
-<link rel="preload" href="/20ac7829.c5363d09.js" as="script">
+<link rel="preload" href="/20ac7829.0c93daa0.js" as="script">
 
-<link rel="preload" href="/17896441.d556ceff.js" as="script">
+<link rel="preload" href="/17896441.9b023743.js" as="script">
 
-<link rel="preload" href="/47bb034d.8d5e1be4.js" as="script">
+<link rel="preload" href="/47bb034d.744ceedf.js" as="script">
 
 </head>
 <body>
@@ -52,25 +50,25 @@
 </span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">// Once flushFrameBuffer() is called by the framework a block is already for transfer</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">// Mark it ready for transfer and transmit it if user defined method </span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">// isTransmittingData() does not return false</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">// If data is not being transmitted, transfer the data with user defined method</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">// transmitFrameBufferBlock().</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    frameBufferAllocator</span><span class="token operator" style="color:rgb(137, 221, 255)">-&gt;</span><span class="token function" style="color:rgb(130, 170, 255)">markBlockReadyForTransfer</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></div><div class="token-line docusaurus-highlight-code-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token keyword" style="font-style:italic">if</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token operator" style="color:rgb(137, 221, 255)">!</span><span class="token function" style="color:rgb(130, 170, 255)">isTransmittingData</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">        touchgfx</span><span class="token operator" style="color:rgb(137, 221, 255)">::</span><span class="token plain">Rect r</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">        </span><span class="token keyword" style="font-style:italic">const</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">uint8_t</span><span class="token operator" style="color:rgb(137, 221, 255)">*</span><span class="token plain"> pixels </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> frameBufferAllocator</span><span class="token operator" style="color:rgb(137, 221, 255)">-&gt;</span><span class="token function" style="color:rgb(130, 170, 255)">getBlockForTransfer</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">r</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></div><div class="token-line docusaurus-highlight-code-line" style="color:#bfc7d5"><span class="token plain">        </span><span class="token function" style="color:rgb(130, 170, 255)">transmitFrameBufferBlock</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token keyword" style="font-style:italic">uint8_t</span><span class="token operator" style="color:rgb(137, 221, 255)">*</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain">pixels</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> r</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token plain">x</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> r</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token plain">y</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> r</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token plain">width</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> r</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token plain">height</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span></div></code></pre></div></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/development/touchgfx-hal-development/scenarios/scenarios-fmc"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« FMC and SPI</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/development/board-bring-up/example-gpio"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">External events as triggers »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#single-frame-buffer" class="contents__link">Single Frame Buffer</a><ul><li><a href="#by-allocation" class="contents__link">By Allocation</a></li><li><a href="#by-address" class="contents__link">By Address</a></li></ul></li><li><a href="#double-frame-buffer" class="contents__link">Double Frame Buffer</a><ul><li><a href="#by-address-1" class="contents__link">By Address</a></li><li><a href="#by-allocation-1" class="contents__link">By Allocation</a></li></ul></li><li><a href="#partial-frame-buffer" class="contents__link">Partial Frame Buffer</a></li></ul></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center"><div>All rights reserved © 2020 STMicroelectronics | <a href="https://www.st.com/content/st_com/en/common/terms-of-use.html">Terms of use</a> | <a href="https://www.st.com/content/ccc/resource/legal/legal_agreement/sales_agreement/49/05/8c/68/a0/35/4a/6e/ST%20Terms%20and%20Conditions%20of%20Sales.pdf/files/ST%20Terms%20and%20Conditions%20of%20Sales.pdf/_jcr_content/translations/en.ST%20Terms%20and%20Conditions%20of%20Sales.pdf">Sales Terms & Conditions</a> | <a href="https://www.st.com/content/st_com/en/common/privacy-policy.html">Privacy Policy</a> | <a href="https://www.st.com/content/st_com/en/common/cookies-policy.html">Manage cookies</a> | <a href="https://app-de.onetrust.com/app/#/webform/2b87200d-4023-4588-9df7-ab0cdea1a67e">Exercise your rights</a></div></div></div></footer>
 </div>
 
-<script src="/styles.fb438ccf.js"></script>
+<script src="/styles.48ef6447.js"></script>
 
-<script src="/runtime~main.461b11dc.js"></script>
+<script src="/runtime~main.bff67e53.js"></script>
 
-<script src="/main.b799bff4.js"></script>
+<script src="/main.6057de2f.js"></script>
 
-<script src="/common.2399d9cc.js"></script>
+<script src="/common.8b1495a5.js"></script>
 
-<script src="/2.7c0dfd88.js"></script>
+<script src="/2.a04eba9a.js"></script>
 
-<script src="/3.68ee71aa.js"></script>
+<script src="/3.8b1bacb6.js"></script>
 
-<script src="/1be78505.7aa3ccb4.js"></script>
+<script src="/1be78505.9dc167c2.js"></script>
 
-<script src="/20ac7829.c5363d09.js"></script>
+<script src="/20ac7829.0c93daa0.js"></script>
 
-<script src="/17896441.d556ceff.js"></script>
+<script src="/17896441.9b023743.js"></script>
 
-<script src="/47bb034d.8d5e1be4.js"></script>
+<script src="/47bb034d.744ceedf.js"></script>
 
 
 </body>

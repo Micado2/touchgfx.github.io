@@ -4,9 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="generator" content="Docusaurus">
-<link rel="preconnect" href="https://www.google-analytics.com">
-<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-162710244-1","auto"),ga("send","pageview")</script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
+
 
 <title data-react-helmet="true">Graphics Engine | TouchGFX Documentation</title>
 
@@ -18,25 +16,25 @@
 <link rel="stylesheet" href="/styles.cdb1878b.css">
 
 
-<link rel="preload" href="/styles.fb438ccf.js" as="script">
+<link rel="preload" href="/styles.48ef6447.js" as="script">
 
-<link rel="preload" href="/runtime~main.461b11dc.js" as="script">
+<link rel="preload" href="/runtime~main.bff67e53.js" as="script">
 
-<link rel="preload" href="/main.b799bff4.js" as="script">
+<link rel="preload" href="/main.6057de2f.js" as="script">
 
-<link rel="preload" href="/common.2399d9cc.js" as="script">
+<link rel="preload" href="/common.8b1495a5.js" as="script">
 
-<link rel="preload" href="/2.7c0dfd88.js" as="script">
+<link rel="preload" href="/2.a04eba9a.js" as="script">
 
-<link rel="preload" href="/3.68ee71aa.js" as="script">
+<link rel="preload" href="/3.8b1bacb6.js" as="script">
 
-<link rel="preload" href="/1be78505.7aa3ccb4.js" as="script">
+<link rel="preload" href="/1be78505.9dc167c2.js" as="script">
 
-<link rel="preload" href="/20ac7829.c5363d09.js" as="script">
+<link rel="preload" href="/20ac7829.0c93daa0.js" as="script">
 
-<link rel="preload" href="/17896441.d556ceff.js" as="script">
+<link rel="preload" href="/17896441.9b023743.js" as="script">
 
-<link rel="preload" href="/85bbbbb5.6361967b.js" as="script">
+<link rel="preload" href="/85bbbbb5.ae7247d1.js" as="script">
 
 </head>
 <body>
@@ -52,25 +50,25 @@ React to the collected events, updating the positions, animations, colors, image
 Redraw the parts of the model that has been updated and make them appear on the display</li></ul><p>A diagrammatic version of the main loop is</p><div class="figure noshadow"><a href="/img/basic-concepts/engine-cycle.png" target="_blank"><img width="320" src="/img/basic-concepts/engine-cycle.png"></a><p>Main loop</p></div><p>Each execution of the main loop is denoted a tick of the application.</p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="platform-adaptibility"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#platform-adaptibility" title="Direct link to heading">#</a>Platform adaptibility</h2><p>As TouchGFX is designed for running on all STM32 embedded setups the above activities can be tailored.</p><ul><li>The collection of events is handled by a dedicated abstraction layer. The tailoring of this layer is the subject of the section on <a href="/docs/development/touchgfx-hal-development/touchgfx-al-development-introduction">TouchGFX AL Development</a>.</li><li>The updating of the model is completely up to the application. The details on how to do this update is the subject of <a href="/docs/development/ui-development/ui-development-introduction">UI Development</a>.</li><li>The rendering of graphics to the framebuffer is handled by TouchGFX and will in general not need to be customized. The transferring of the pixels in the framebuffer to the display is platform specific, see <a href="/docs/development/board-bring-up/board-introduction">Board Bring Up</a> and <a href="/docs/development/touchgfx-hal-development/touchgfx-al-development-introduction">TouchGFX AL Development</a> for how to customize this to specific platforms.</li></ul><p>Read on to get more specifics on the main loop of TouchGFX.</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/basic-concepts/framebuffer"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« Framebuffer</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/basic-concepts/rendering"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">Main Loop »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#scene-model" class="contents__link">Scene model</a></li><li><a href="#manipulate-the-model" class="contents__link">Manipulate the model</a></li><li><a href="#issue-drawing-commands" class="contents__link">Issue drawing commands</a></li><li><a href="#main-loop" class="contents__link">Main Loop</a></li><li><a href="#platform-adaptibility" class="contents__link">Platform adaptibility</a></li></ul></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center"><div>All rights reserved © 2020 STMicroelectronics | <a href="https://www.st.com/content/st_com/en/common/terms-of-use.html">Terms of use</a> | <a href="https://www.st.com/content/ccc/resource/legal/legal_agreement/sales_agreement/49/05/8c/68/a0/35/4a/6e/ST%20Terms%20and%20Conditions%20of%20Sales.pdf/files/ST%20Terms%20and%20Conditions%20of%20Sales.pdf/_jcr_content/translations/en.ST%20Terms%20and%20Conditions%20of%20Sales.pdf">Sales Terms & Conditions</a> | <a href="https://www.st.com/content/st_com/en/common/privacy-policy.html">Privacy Policy</a> | <a href="https://www.st.com/content/st_com/en/common/cookies-policy.html">Manage cookies</a> | <a href="https://app-de.onetrust.com/app/#/webform/2b87200d-4023-4588-9df7-ab0cdea1a67e">Exercise your rights</a></div></div></div></footer>
 </div>
 
-<script src="/styles.fb438ccf.js"></script>
+<script src="/styles.48ef6447.js"></script>
 
-<script src="/runtime~main.461b11dc.js"></script>
+<script src="/runtime~main.bff67e53.js"></script>
 
-<script src="/main.b799bff4.js"></script>
+<script src="/main.6057de2f.js"></script>
 
-<script src="/common.2399d9cc.js"></script>
+<script src="/common.8b1495a5.js"></script>
 
-<script src="/2.7c0dfd88.js"></script>
+<script src="/2.a04eba9a.js"></script>
 
-<script src="/3.68ee71aa.js"></script>
+<script src="/3.8b1bacb6.js"></script>
 
-<script src="/1be78505.7aa3ccb4.js"></script>
+<script src="/1be78505.9dc167c2.js"></script>
 
-<script src="/20ac7829.c5363d09.js"></script>
+<script src="/20ac7829.0c93daa0.js"></script>
 
-<script src="/17896441.d556ceff.js"></script>
+<script src="/17896441.9b023743.js"></script>
 
-<script src="/85bbbbb5.6361967b.js"></script>
+<script src="/85bbbbb5.ae7247d1.js"></script>
 
 
 </body>

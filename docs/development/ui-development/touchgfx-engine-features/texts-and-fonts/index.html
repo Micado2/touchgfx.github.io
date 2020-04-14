@@ -4,9 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="generator" content="Docusaurus">
-<link rel="preconnect" href="https://www.google-analytics.com">
-<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-162710244-1","auto"),ga("send","pageview")</script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
+
 
 <title data-react-helmet="true">Texts and Fonts | TouchGFX Documentation</title>
 
@@ -18,25 +16,25 @@
 <link rel="stylesheet" href="/styles.cdb1878b.css">
 
 
-<link rel="preload" href="/styles.fb438ccf.js" as="script">
+<link rel="preload" href="/styles.48ef6447.js" as="script">
 
-<link rel="preload" href="/runtime~main.461b11dc.js" as="script">
+<link rel="preload" href="/runtime~main.bff67e53.js" as="script">
 
-<link rel="preload" href="/main.b799bff4.js" as="script">
+<link rel="preload" href="/main.6057de2f.js" as="script">
 
-<link rel="preload" href="/common.2399d9cc.js" as="script">
+<link rel="preload" href="/common.8b1495a5.js" as="script">
 
-<link rel="preload" href="/2.7c0dfd88.js" as="script">
+<link rel="preload" href="/2.a04eba9a.js" as="script">
 
-<link rel="preload" href="/3.68ee71aa.js" as="script">
+<link rel="preload" href="/3.8b1bacb6.js" as="script">
 
-<link rel="preload" href="/1be78505.7aa3ccb4.js" as="script">
+<link rel="preload" href="/1be78505.9dc167c2.js" as="script">
 
-<link rel="preload" href="/20ac7829.c5363d09.js" as="script">
+<link rel="preload" href="/20ac7829.0c93daa0.js" as="script">
 
-<link rel="preload" href="/17896441.d556ceff.js" as="script">
+<link rel="preload" href="/17896441.9b023743.js" as="script">
 
-<link rel="preload" href="/7b2c1f77.c40973b4.js" as="script">
+<link rel="preload" href="/7b2c1f77.d11a1fa8.js" as="script">
 
 </head>
 <body>
@@ -56,25 +54,25 @@ This spreadsheet, along with font files are feed to the font- and text-converter
 One way of placing a text is to specify the position where you believe it should be and then fine tune the position by inspecting the placement in the simulator. This is most often a fairly simple task but it has to be redone if you change the font or font size later on.</p><p>A more robust way of doing it is to use text baseline. The baseline is the line upon which most letters &quot;sit&quot; and below which descenders (characters like p and j) extend.</p><div class="figure"><a href="/img/development/ui-development/touchgfx-engine-features/texts-and-fonts/text-baseline.png" target="_blank"><img src="/img/development/ui-development/touchgfx-engine-features/texts-and-fonts/text-baseline.png"></a><p>Baseline for text</p></div><p>To set a text baseline use the <code>TextArea::setBaselineY(y)</code> or <code>TextArea::setXBaselineY(x, y)</code>. For these methods you do not specify the upper left corner of the TextArea but instead the baseline of the first text line. This will take the font size and spacing into account and set the Y position of the TextArea accordingly.</p><p>The baseline functionality is not available in TouchGFX Designer, since TextArea widget placement is easily done via TouchGFX Designer Canvas, and can therefore only be used in User Code.</p><div class="highlight highlight-note"><div class="highlight-heading"><h5><div class="highlight-icon"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></div>Note</h5></div><div class="highlight-content">The TextArea needs to have its TypedText set before calling setBaselineY since it relies on the font. Also be aware that you need to call <code>setBaselineY</code> again if you change the TextAreas TypedText to one with a different font or font size.</div></div><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="automatic-wrapping-of-long-text-lines"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#automatic-wrapping-of-long-text-lines" title="Direct link to heading">#</a>Automatic Wrapping of Long Text Lines</h3><p>Sometimes a TextArea needs to contain a text which is very long. By default, such text is simply written as a single line and all text that does not fit inside the TextArea is simpy cut off. If instead the text should be wrapped at spaces and re-flowed to fill several lines, simply call:</p><div class="mdxCodeBlock_iHAB"><pre class="prism-code language-cpp codeBlock_19pQ"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><code class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token plain">myTextArea</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token function" style="color:rgb(130, 170, 255)">setWideTextAction</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">WIDE_TEXT_WORDWRAP</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"> </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">// Default is WIDE_TEXT_NONE</span></div></code></pre></div><h4><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="available-wide-text-actions"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#available-wide-text-actions" title="Direct link to heading">#</a>Available Wide Text Actions</h4><ul><li><code>WIDE_TEXT_NONE</code>: Do nothing, simply cut the text in the middle of any character that extends beyond the width of the TextArea.</li><li><code>WIDE_TEXT_WORDWRAP</code>: Wrap between words, ellipsis anywhere &quot;Very long t...&quot;.</li><li><code>WIDE_TEXT_WORDWRAP_ELLIPSIS_AFTER_SPACE</code>: Wrap between words, ellipsis anywhere only after space &quot;Very long ...&quot;.</li><li><code>WIDE_TEXT_CHARWRAP</code>: Wrap between any two characters, ellipsis anywhere, as used in Chinese.</li><li><code>WIDE_TEXT_CHARWRAP_DOUBLE_ELLIPSIS</code>:Wrap between any two characters, double ellipsis anywhere, as used in Chinese.</li></ul><div class="highlight highlight-further-reading"><div class="highlight-heading"><h5><div class="highlight-icon"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></div>Further reading</h5></div><div class="highlight-content"><a target="_blank" href="/api/namespacetouchgfx.html#ad7afabd7637aed4278f7e26434b860c7">API Reference for the WideTextAction enum</a></div></div><p>This will probably make the TextArea need more vertical space. This can either be achieved by increasing the height of the TextArea in the Designer or it can be done in user code as follows</p><div class="mdxCodeBlock_iHAB"><pre class="prism-code language-cpp codeBlock_19pQ"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><code class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token plain">myTextArea</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token function" style="color:rgb(130, 170, 255)">setWidth</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token number" style="color:rgb(247, 140, 108)">200</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">myTextArea</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token function" style="color:rgb(130, 170, 255)">resizeHeightToCurrentText</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"> </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">// Will set height by wrapping text at 200px long lines</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">myTextArea</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token function" style="color:rgb(130, 170, 255)">invalidate</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span></div></code></pre></div><p>Remember to call <code>myTextArea.invalidate()</code> before resizing <code>myTextArea</code> if you are decreasing the text area size. If not, you will still see part of the old text area, since it is not covered by the new smaller text area.</p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="switching-language"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#switching-language" title="Direct link to heading">#</a>Switching Language</h2><p>TouchGFX supports multi language interfaces. The current language used in the interface can be changed by calling the static method <code> Texts::setLanguage</code>:</p><div class="mdxCodeBlock_iHAB"><pre class="prism-code language-cpp codeBlock_19pQ"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><code class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token plain">Texts</span><span class="token operator" style="color:rgb(137, 221, 255)">::</span><span class="token function" style="color:rgb(130, 170, 255)">setLanguage</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">GB</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span></div></code></pre></div><p>The value <i>GB</i> is found in the <code>LANGUAGES</code> enum in the <code>TextKeysAndLanguages.hpp</code> as shown in the example in <a href="#the-text-converter">The Text Converter</a> section.</p><p>After this call, invalidate all widgets that display texts (or simply invalidate the entire screen) and they will display texts in the newly selected language.</p><h3><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="in-touchgfx-designer"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#in-touchgfx-designer" title="Direct link to heading">#</a>In TouchGFX Designer</h3><p>You can switch between languages, enabling testing for all translations. This is done from <a href="/docs/development/ui-development/designer-user-guide/config-view#general">General section of the Config view</a>. Here you simply change the startup language of the application by changing the <i>Selected Language</i>. Languages will need to be created and translated before they are selectable in the Config view.</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/development/ui-development/touchgfx-engine-features/mixins"><h5 class="pagination-nav__link--sublabel">Previous</h5><h4 class="pagination-nav__link--label">« Mixins</h4></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/development/ui-development/touchgfx-engine-features/languages-and-characters"><h5 class="pagination-nav__link--sublabel">Next</h5><h4 class="pagination-nav__link--label">Languages and Characters »</h4></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#texts-and-typographies" class="contents__link">Texts and Typographies</a></li><li><a href="#the-text-converter" class="contents__link">The Text Converter</a></li><li><a href="#the-font-converter" class="contents__link">The Font Converter</a></li><li><a href="#character-memory-optimization" class="contents__link">Character Memory Optimization</a></li><li><a href="#wildcards" class="contents__link">Wildcards</a><ul><li><a href="#using-wildcards-in-touchgfx-designer" class="contents__link">Using Wildcards in TouchGFX Designer</a></li><li><a href="#using-wildcards-in-user-code" class="contents__link">Using Wildcards in User Code</a></li></ul></li><li><a href="#text-placement" class="contents__link">Text Placement</a><ul><li><a href="#alignment" class="contents__link">Alignment</a></li><li><a href="#setting-the-correct-width-and-height-of-a-textarea" class="contents__link">Setting the Correct Width and Height of a TextArea</a></li><li><a href="#setting-the-correct-x-and-y-for-a-textarea" class="contents__link">Setting the Correct X and Y for a TextArea</a></li><li><a href="#automatic-wrapping-of-long-text-lines" class="contents__link">Automatic Wrapping of Long Text Lines</a></li></ul></li><li><a href="#switching-language" class="contents__link">Switching Language</a><ul><li><a href="#in-touchgfx-designer" class="contents__link">In TouchGFX Designer</a></li></ul></li></ul></div></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center"><div>All rights reserved © 2020 STMicroelectronics | <a href="https://www.st.com/content/st_com/en/common/terms-of-use.html">Terms of use</a> | <a href="https://www.st.com/content/ccc/resource/legal/legal_agreement/sales_agreement/49/05/8c/68/a0/35/4a/6e/ST%20Terms%20and%20Conditions%20of%20Sales.pdf/files/ST%20Terms%20and%20Conditions%20of%20Sales.pdf/_jcr_content/translations/en.ST%20Terms%20and%20Conditions%20of%20Sales.pdf">Sales Terms & Conditions</a> | <a href="https://www.st.com/content/st_com/en/common/privacy-policy.html">Privacy Policy</a> | <a href="https://www.st.com/content/st_com/en/common/cookies-policy.html">Manage cookies</a> | <a href="https://app-de.onetrust.com/app/#/webform/2b87200d-4023-4588-9df7-ab0cdea1a67e">Exercise your rights</a></div></div></div></footer>
 </div>
 
-<script src="/styles.fb438ccf.js"></script>
+<script src="/styles.48ef6447.js"></script>
 
-<script src="/runtime~main.461b11dc.js"></script>
+<script src="/runtime~main.bff67e53.js"></script>
 
-<script src="/main.b799bff4.js"></script>
+<script src="/main.6057de2f.js"></script>
 
-<script src="/common.2399d9cc.js"></script>
+<script src="/common.8b1495a5.js"></script>
 
-<script src="/2.7c0dfd88.js"></script>
+<script src="/2.a04eba9a.js"></script>
 
-<script src="/3.68ee71aa.js"></script>
+<script src="/3.8b1bacb6.js"></script>
 
-<script src="/1be78505.7aa3ccb4.js"></script>
+<script src="/1be78505.9dc167c2.js"></script>
 
-<script src="/20ac7829.c5363d09.js"></script>
+<script src="/20ac7829.0c93daa0.js"></script>
 
-<script src="/17896441.d556ceff.js"></script>
+<script src="/17896441.9b023743.js"></script>
 
-<script src="/7b2c1f77.c40973b4.js"></script>
+<script src="/7b2c1f77.d11a1fa8.js"></script>
 
 
 </body>
