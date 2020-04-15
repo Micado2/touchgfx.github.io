@@ -4,14 +4,14 @@
     <compoundname>LED.hpp</compoundname>
     <includes local="yes">lpc_types.h</includes>
     <incdepgraph>
-      <node id="224">
-        <label>lpc_types.h</label>
-      </node>
       <node id="223">
         <label>touchgfx/hal/LED.hpp</label>
         <link refid="_l_e_d_8hpp"/>
         <childnode refid="224" relation="include">
         </childnode>
+      </node>
+      <node id="224">
+        <label>lpc_types.h</label>
       </node>
     </incdepgraph>
     <innerclass refid="classtouchgfx_1_1_l_e_d" prot="public">touchgfx::LED</innerclass>

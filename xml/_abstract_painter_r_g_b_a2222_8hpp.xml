@@ -10,14 +10,14 @@
     <includedby refid="_painter_r_g_b_a2222_8hpp" local="no">touchgfx/widgets/canvas/PainterRGBA2222.hpp</includedby>
     <includedby refid="_painter_r_g_b_a2222_bitmap_8hpp" local="no">touchgfx/widgets/canvas/PainterRGBA2222Bitmap.hpp</includedby>
     <incdepgraph>
+      <node id="337">
+        <label>assert.h</label>
+      </node>
       <node id="336">
         <label>touchgfx/widgets/canvas/AbstractPainterRGBA2222.hpp</label>
         <link refid="_abstract_painter_r_g_b_a2222_8hpp"/>
         <childnode refid="337" relation="include">
         </childnode>
-      </node>
-      <node id="337">
-        <label>assert.h</label>
       </node>
     </incdepgraph>
     <innerclass refid="classtouchgfx_1_1_abstract_painter_r_g_b_a2222" prot="public">touchgfx::AbstractPainterRGBA2222</innerclass>

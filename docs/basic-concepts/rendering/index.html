@@ -18,23 +18,23 @@
 
 <link rel="preload" href="/styles.e9d81739.js" as="script">
 
-<link rel="preload" href="/runtime~main.5480e1e9.js" as="script">
+<link rel="preload" href="/runtime~main.d2a33b67.js" as="script">
 
-<link rel="preload" href="/main.2f00fd5e.js" as="script">
+<link rel="preload" href="/main.d11fad01.js" as="script">
 
-<link rel="preload" href="/common.a01f277a.js" as="script">
+<link rel="preload" href="/common.723a530a.js" as="script">
 
 <link rel="preload" href="/2.7ea106c9.js" as="script">
 
-<link rel="preload" href="/3.f46da482.js" as="script">
+<link rel="preload" href="/3.e3f70e37.js" as="script">
 
-<link rel="preload" href="/1be78505.e5419cbd.js" as="script">
+<link rel="preload" href="/1be78505.1907dcdd.js" as="script">
 
 <link rel="preload" href="/20ac7829.ab0d8bfc.js" as="script">
 
 <link rel="preload" href="/17896441.9293b320.js" as="script">
 
-<link rel="preload" href="/7be3e988.66dc6b34.js" as="script">
+<link rel="preload" href="/7be3e988.ea921005.js" as="script">
 
 </head>
 <body>
@@ -63,12 +63,12 @@ display.</p><p>The graphics engine implements this synchronisation by waiting fo
 hardware abstraction layer
 <a href="/docs/development/touchgfx-hal-development/touchgfx-al-development-introduction">here</a></p><p>In pseudo code the main loop inside the TouchGFX graphics engine looks
 like this:</p><div class="mdxCodeBlock_iHAB"><div class="codeBlockContent_32p_"><button type="button" aria-label="Copy code to clipboard" class="copyButton_1BYj">Copy</button><div tabindex="0" class="prism-code language-cpp codeBlock_19pQ"><div class="codeBlockLines_2n9r" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token keyword" style="font-style:italic">while</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token boolean" style="color:rgb(255, 88, 116)">true</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token function" style="color:rgb(130, 170, 255)">collect</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain">    </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">// Collect events from outside</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token function" style="color:rgb(130, 170, 255)">update</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain">     </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">// Update the application ui model</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token function" style="color:rgb(130, 170, 255)">render</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain">     </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">// Render new updated graphics to the framebuffer</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token function" style="color:rgb(130, 170, 255)">wait</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain">       </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">// Wait for &#x27;go&#x27; from display</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span></div></div></div></div></div><p>The code is more involved in the real implementation, but the pseudo
-code above helps in understanding the main parts of the engine.</p><p>We will discuss these four stages in more detail below:</p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="collect"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#collect" title="Direct link to heading">#</a>Collect</h2><p>In this phase the graphics engine collects events from the outside
+code above helps in understanding the main parts of the engine.</p><p>We will discuss these four stages in more detail below.</p><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="collect"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#collect" title="Direct link to heading">#</a>Collect</h2><p>In this phase the graphics engine collects events from the outside
 environment. These events are typically touch events and buttons.</p><p>TouchGFX samples and propagates events to the application. The raw
-touch events are converted into more specific touch events:</p><ul><li><strong>Click</strong>
-The user pressed or released his finger from the display</li><li><strong>Drag</strong>
+touch events are converted into more specific touch events:</p><ul><li><strong>Click:</strong>
+The user pressed or released his finger from the display</li><li><strong>Drag:</strong>
 The user moved his finger on the display (while touching the
-display).</li><li><strong>Gestures</strong>
+display).</li><li><strong>Gestures:</strong>
 The user moved his finger fast in a direction and then
 released. This is called a <em>swipe</em> and is recognized by the graphics
 engine.</li></ul><p>The events are forwarded to the ui elements (e.g. widgets) that are
@@ -219,23 +219,23 @@ of high performance.</p></div></article><div class="margin-vert--lg"><nav class=
 
 <script src="/styles.e9d81739.js"></script>
 
-<script src="/runtime~main.5480e1e9.js"></script>
+<script src="/runtime~main.d2a33b67.js"></script>
 
-<script src="/main.2f00fd5e.js"></script>
+<script src="/main.d11fad01.js"></script>
 
-<script src="/common.a01f277a.js"></script>
+<script src="/common.723a530a.js"></script>
 
 <script src="/2.7ea106c9.js"></script>
 
-<script src="/3.f46da482.js"></script>
+<script src="/3.e3f70e37.js"></script>
 
-<script src="/1be78505.e5419cbd.js"></script>
+<script src="/1be78505.1907dcdd.js"></script>
 
 <script src="/20ac7829.ab0d8bfc.js"></script>
 
 <script src="/17896441.9293b320.js"></script>
 
-<script src="/7be3e988.66dc6b34.js"></script>
+<script src="/7be3e988.ea921005.js"></script>
 
 
 </body>
