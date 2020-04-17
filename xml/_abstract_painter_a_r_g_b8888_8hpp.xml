@@ -10,14 +10,14 @@
     <includedby refid="_painter_a_r_g_b8888_bitmap_8hpp" local="no">touchgfx/widgets/canvas/PainterARGB8888Bitmap.hpp</includedby>
     <includedby refid="_painter_a_r_g_b8888_l8_bitmap_8hpp" local="no">touchgfx/widgets/canvas/PainterARGB8888L8Bitmap.hpp</includedby>
     <incdepgraph>
+      <node id="316">
+        <label>assert.h</label>
+      </node>
       <node id="315">
         <label>touchgfx/widgets/canvas/AbstractPainterARGB8888.hpp</label>
         <link refid="_abstract_painter_a_r_g_b8888_8hpp"/>
         <childnode refid="316" relation="include">
         </childnode>
-      </node>
-      <node id="316">
-        <label>assert.h</label>
       </node>
     </incdepgraph>
     <innerclass refid="classtouchgfx_1_1_abstract_painter_a_r_g_b8888" prot="public">touchgfx::AbstractPainterARGB8888</innerclass>

@@ -7,14 +7,14 @@
     <includes refid="_display_transformation_8hpp" local="no">touchgfx/transforms/DisplayTransformation.hpp</includes>
     <includes refid="_abstract_painter_g_r_a_y2_8hpp" local="no">touchgfx/widgets/canvas/AbstractPainterGRAY2.hpp</includes>
     <incdepgraph>
-      <node id="387">
-        <label>stdint.h</label>
-      </node>
       <node id="386">
         <label>touchgfx/widgets/canvas/PainterGRAY2Bitmap.hpp</label>
         <link refid="_painter_g_r_a_y2_bitmap_8hpp"/>
         <childnode refid="387" relation="include">
         </childnode>
+      </node>
+      <node id="387">
+        <label>stdint.h</label>
       </node>
     </incdepgraph>
     <innerclass refid="classtouchgfx_1_1_painter_g_r_a_y2_bitmap" prot="public">touchgfx::PainterGRAY2Bitmap</innerclass>
