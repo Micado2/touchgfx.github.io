@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="dir_4f05924e6ed802336ae65e49e788598d" kind="dir">
+    <compoundname>touchgfx</compoundname>
+    <innerdir refid="dir_5eae9ec9ab8b43310260374554d16087">touchgfx/canvas_widget_renderer</innerdir>
+    <innerdir refid="dir_703f503d4dd7a27f2c2c1223b95cec2e">touchgfx/containers</innerdir>
+    <innerdir refid="dir_16213c301cd13ea0e1eac47ae101a644">touchgfx/events</innerdir>
+    <innerdir refid="dir_8d0186503bd42b5f96449f78afdce5b9">touchgfx/hal</innerdir>
+    <innerdir refid="dir_9a90f3e23b3d66e5239585e61a0d7553">touchgfx/lcd</innerdir>
+    <innerdir refid="dir_3965cc0e6bbbcbbb48d51e19edce3ae0">touchgfx/mixins</innerdir>
+    <innerdir refid="dir_541e7624571442f1c3b0fa79f15f356a">touchgfx/transforms</innerdir>
+    <innerdir refid="dir_cf5175297c925fa3ef9009f22fd648aa">touchgfx/transitions</innerdir>
+    <innerdir refid="dir_077c23760d9b6fcf70aeadd284838365">touchgfx/widgets</innerdir>
+    <innerfile refid="_application_8hpp">Application.hpp</innerfile>
+    <innerfile refid="_bitmap_8hpp">Bitmap.hpp</innerfile>
+    <innerfile refid="_callback_8hpp">Callback.hpp</innerfile>
+    <innerfile refid="_color_8hpp">Color.hpp</innerfile>
+    <innerfile refid="_const_font_8hpp">ConstFont.hpp</innerfile>
+    <innerfile refid="_drawable_8hpp">Drawable.hpp</innerfile>
+    <innerfile refid="_easing_equations_8hpp">EasingEquations.hpp</innerfile>
+    <innerfile refid="_event_8hpp">Event.hpp</innerfile>
+    <innerfile refid="_font_8hpp">Font.hpp</innerfile>
+    <innerfile refid="_font_manager_8hpp">FontManager.hpp</innerfile>
+    <innerfile refid="_internal_flash_font_8hpp">InternalFlashFont.hpp</innerfile>
+    <innerfile refid="_j_s_m_o_c_helper_8hpp">JSMOCHelper.hpp</innerfile>
+    <innerfile refid="_math3_d_8hpp">Math3D.hpp</innerfile>
+    <innerfile refid="_screen_8hpp">Screen.hpp</innerfile>
+    <innerfile refid="_text_provider_8hpp">TextProvider.hpp</innerfile>
+    <innerfile refid="_texts_8hpp">Texts.hpp</innerfile>
+    <innerfile refid="_texture_map_types_8hpp">TextureMapTypes.hpp</innerfile>
+    <innerfile refid="_typed_text_8hpp">TypedText.hpp</innerfile>
+    <innerfile refid="_u_i_event_listener_8hpp">UIEventListener.hpp</innerfile>
+    <innerfile refid="_unicode_8hpp">Unicode.hpp</innerfile>
+    <innerfile refid="_utils_8hpp">Utils.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="touchgfx/"/>
+  </compounddef>
+</doxygen>

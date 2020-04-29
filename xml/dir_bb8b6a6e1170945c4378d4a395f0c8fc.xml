@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="dir_bb8b6a6e1170945c4378d4a395f0c8fc" kind="dir">
+    <compoundname>touchgfx/containers/clock</compoundname>
+    <innerfile refid="_abstract_clock_8hpp">AbstractClock.hpp</innerfile>
+    <innerfile refid="_analog_clock_8hpp">AnalogClock.hpp</innerfile>
+    <innerfile refid="_digital_clock_8hpp">DigitalClock.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="touchgfx/containers/clock/"/>
+  </compounddef>
+</doxygen>

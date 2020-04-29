@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="_image_8hpp" kind="file" language="C++">
+    <compoundname>Image.hpp</compoundname>
+    <includes refid="_bitmap_8hpp" local="no">touchgfx/Bitmap.hpp</includes>
+    <includes refid="_types_8hpp" local="no">touchgfx/hal/Types.hpp</includes>
+    <includes refid="_l_c_d_8hpp" local="no">touchgfx/lcd/LCD.hpp</includes>
+    <includes refid="_widget_8hpp" local="no">touchgfx/widgets/Widget.hpp</includes>
+    <includedby refid="_icon_button_style_8hpp" local="no">touchgfx/containers/buttons/IconButtonStyle.hpp</includedby>
+    <includedby refid="_image_button_style_8hpp" local="no">touchgfx/containers/buttons/ImageButtonStyle.hpp</includedby>
+    <includedby refid="_cacheable_container_8hpp" local="no">touchgfx/containers/CacheableContainer.hpp</includedby>
+    <includedby refid="_abstract_clock_8hpp" local="no">touchgfx/containers/clock/AbstractClock.hpp</includedby>
+    <includedby refid="_analog_clock_8hpp" local="no">touchgfx/containers/clock/AnalogClock.hpp</includedby>
+    <includedby refid="_modal_window_8hpp" local="no">touchgfx/containers/ModalWindow.hpp</includedby>
+    <includedby refid="_abstract_progress_indicator_8hpp" local="no">touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp</includedby>
+    <includedby refid="_slide_menu_8hpp" local="no">touchgfx/containers/SlideMenu.hpp</includedby>
+    <includedby refid="_slider_8hpp" local="no">touchgfx/containers/Slider.hpp</includedby>
+    <includedby refid="_zoom_animation_image_8hpp" local="no">touchgfx/containers/ZoomAnimationImage.hpp</includedby>
+    <includedby refid="_animated_image_8hpp" local="no">touchgfx/widgets/AnimatedImage.hpp</includedby>
+    <includedby refid="_keyboard_8hpp" local="no">touchgfx/widgets/Keyboard.hpp</includedby>
+    <includedby refid="_scalable_image_8hpp" local="no">touchgfx/widgets/ScalableImage.hpp</includedby>
+    <includedby refid="_texture_mapper_8hpp" local="no">touchgfx/widgets/TextureMapper.hpp</includedby>
+    <includedby refid="_tiled_image_8hpp" local="no">touchgfx/widgets/TiledImage.hpp</includedby>
+    <innerclass refid="classtouchgfx_1_1_image" prot="public">touchgfx::Image</innerclass>
+    <innernamespace refid="namespacetouchgfx">touchgfx</innernamespace>
+    <briefdescription>
+<para>Declares the <ref refid="classtouchgfx_1_1_image" kindref="compound">touchgfx::Image</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>IMAGE_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IMAGE_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;touchgfx/Bitmap.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;touchgfx/hal/Types.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;touchgfx/lcd/LCD.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;touchgfx/widgets/Widget.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetouchgfx" kindref="compound">touchgfx</ref></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27" refid="classtouchgfx_1_1_image" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtouchgfx_1_1_image" kindref="compound">Image</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_widget" kindref="compound">Widget</ref></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_image_1aafe2a82267731414c0c23dbfe64101d0" kindref="member">Image</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref>&amp;<sp/>bmp<sp/>=<sp/><ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref>())</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classtouchgfx_1_1_widget" kindref="compound">Widget</ref>(),<sp/><ref refid="classtouchgfx_1_1_image_1acf5bb76caa419c0fa231dbd66c881084" kindref="member">alpha</ref>(255)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_image_1a82000e29a2d9966dc76404b954233b0e" kindref="member">setBitmap</ref>(bmp);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_image_1a82000e29a2d9966dc76404b954233b0e" kindref="member">setBitmap</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref>&amp;<sp/>bmp);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_image_1a40b4eaf63ab7df1422b403a5a384a0b3" kindref="member">setAlpha</ref>(uint8_t<sp/>newAlpha)</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_image_1acf5bb76caa419c0fa231dbd66c881084" kindref="member">alpha</ref><sp/>=<sp/>newAlpha;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_image_1a1277d4bddd51dbc604de265fb70ccbfd" kindref="member">draw</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref>&amp;<sp/>invalidatedArea)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacetouchgfx_1a3923435f6df64396b2203d60ddfa89e4" kindref="member">BitmapId</ref><sp/><ref refid="classtouchgfx_1_1_image_1a5b4af59b72a6b187cb1e04737d0c65e5" kindref="member">getBitmap</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="77"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_image_1ab90f53fbe007c65f80d83ece2352f49a" kindref="member">bitmap</ref>.<ref refid="classtouchgfx_1_1_bitmap_1ae0e55eb0de5be05ca3816dc18a17555b" kindref="member">getId</ref>();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="classtouchgfx_1_1_image_1a302926ead4ee8a161627575d2666a7f2" kindref="member">getAlpha</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="90"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_image_1acf5bb76caa419c0fa231dbd66c881084" kindref="member">alpha</ref>;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref><sp/><ref refid="classtouchgfx_1_1_image_1a4dcdd780e93cc783a2ceeda00c6f3b51" kindref="member">getSolidRect</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref><sp/><ref refid="classtouchgfx_1_1_image_1ab90f53fbe007c65f80d83ece2352f49a" kindref="member">bitmap</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="classtouchgfx_1_1_image_1acf5bb76caa419c0fa231dbd66c881084" kindref="member">alpha</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_image_1a52a68a4210633b01427a40d071026e29" kindref="member">hasTransparentPixels</ref>;<sp/></highlight></codeline>
+<codeline lineno="100"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>touchgfx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>IMAGE_HPP</highlight></codeline>
+    </programlisting>
+    <location file="touchgfx/widgets/Image.hpp"/>
+  </compounddef>
+</doxygen>

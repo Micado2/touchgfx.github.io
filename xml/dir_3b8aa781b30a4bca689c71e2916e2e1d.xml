@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="dir_3b8aa781b30a4bca689c71e2916e2e1d" kind="dir">
+    <compoundname>touchgfx/containers/scrollers</compoundname>
+    <innerfile refid="_drawable_list_8hpp">DrawableList.hpp</innerfile>
+    <innerfile refid="_scroll_base_8hpp">ScrollBase.hpp</innerfile>
+    <innerfile refid="_scroll_list_8hpp">ScrollList.hpp</innerfile>
+    <innerfile refid="_scroll_wheel_8hpp">ScrollWheel.hpp</innerfile>
+    <innerfile refid="_scroll_wheel_base_8hpp">ScrollWheelBase.hpp</innerfile>
+    <innerfile refid="_scroll_wheel_with_selection_style_8hpp">ScrollWheelWithSelectionStyle.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="touchgfx/containers/scrollers/"/>
+  </compounddef>
+</doxygen>

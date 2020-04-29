@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="dir_f2c374448d9fda4e56eacfa123e4d519" kind="dir">
+    <compoundname>platform/core</compoundname>
+    <innerfile refid="_m_c_u_instrumentation_8hpp">MCUInstrumentation.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="platform/core/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,375 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structtouchgfx_1_1_edge" kind="struct" language="C++" prot="public">
+    <compoundname>touchgfx::Edge</compoundname>
+    <includes local="no">TextureMapTypes.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtouchgfx_1_1_edge_1abca868beb61d97cdaccf83c03409cfb4" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t denominator</definition>
+        <argsstring></argsstring>
+        <name>denominator</name>
+        <briefdescription>
+<para>The denominator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TextureMapTypes.hpp" line="105" column="1" bodyfile="touchgfx/TextureMapTypes.hpp" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_edge_1ab6c9d47292a631ae554fe1d363e1b996" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t errorTerm</definition>
+        <argsstring></argsstring>
+        <name>errorTerm</name>
+        <briefdescription>
+<para>The error term. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TextureMapTypes.hpp" line="106" column="1" bodyfile="touchgfx/TextureMapTypes.hpp" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_edge_1ad12fc34ce789bce6c8a05d8a17138534" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+<para>The height. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TextureMapTypes.hpp" line="108" column="1" bodyfile="touchgfx/TextureMapTypes.hpp" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_edge_1af72aac6879b5b4384b6fa8c1b4852eb6" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t numerator</definition>
+        <argsstring></argsstring>
+        <name>numerator</name>
+        <briefdescription>
+<para>The numerator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TextureMapTypes.hpp" line="104" column="1" bodyfile="touchgfx/TextureMapTypes.hpp" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_edge_1a32fd6b40a76355d19186854c323905b2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float oneOverZ</definition>
+        <argsstring></argsstring>
+        <name>oneOverZ</name>
+        <briefdescription>
+<para>The one over z coordinate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TextureMapTypes.hpp" line="109" column="1" bodyfile="touchgfx/TextureMapTypes.hpp" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_edge_1a109720432c7300334475269607c65d96" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float oneOverZStep</definition>
+        <argsstring></argsstring>
+        <name>oneOverZStep</name>
+        <briefdescription>
+<para>The one over z coordinate step. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TextureMapTypes.hpp" line="110" column="1" bodyfile="touchgfx/TextureMapTypes.hpp" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_edge_1a2693615583d4ff4e35c83cff1f35c061" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float oneOverZStepExtra</definition>
+        <argsstring></argsstring>
+        <name>oneOverZStepExtra</name>
+        <briefdescription>
+<para>The one over z coordinate step extra. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TextureMapTypes.hpp" line="111" column="1" bodyfile="touchgfx/TextureMapTypes.hpp" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_edge_1a99915b4fd8726bfa7cd9e8ed4aed2e3d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UOverZ</definition>
+        <argsstring></argsstring>
+        <name>UOverZ</name>
+        <briefdescription>
+<para>The over z coordinate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TextureMapTypes.hpp" line="112" column="1" bodyfile="touchgfx/TextureMapTypes.hpp" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_edge_1aedb222596e655bc94c040314d81b982a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UOverZStep</definition>
+        <argsstring></argsstring>
+        <name>UOverZStep</name>
+        <briefdescription>
+<para>The over z coordinate step. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TextureMapTypes.hpp" line="113" column="1" bodyfile="touchgfx/TextureMapTypes.hpp" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_edge_1abe2fdd2e2e443e37393b5fe7cdd71562" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UOverZStepExtra</definition>
+        <argsstring></argsstring>
+        <name>UOverZStepExtra</name>
+        <briefdescription>
+<para>The over z coordinate step extra. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TextureMapTypes.hpp" line="114" column="1" bodyfile="touchgfx/TextureMapTypes.hpp" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_edge_1afe03df0d1c122bc9b663fcbd44754ce8" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float VOverZ</definition>
+        <argsstring></argsstring>
+        <name>VOverZ</name>
+        <briefdescription>
+<para>The over z coordinate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TextureMapTypes.hpp" line="115" column="1" bodyfile="touchgfx/TextureMapTypes.hpp" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_edge_1a840ae128a85232f1cdfe4a0595ebe1b9" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float VOverZStep</definition>
+        <argsstring></argsstring>
+        <name>VOverZStep</name>
+        <briefdescription>
+<para>The over z coordinate step. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TextureMapTypes.hpp" line="116" column="1" bodyfile="touchgfx/TextureMapTypes.hpp" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_edge_1a893c72a5e882e61834931459a5b1090a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float VOverZStepExtra</definition>
+        <argsstring></argsstring>
+        <name>VOverZStepExtra</name>
+        <briefdescription>
+<para>The over z coordinate step extra. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TextureMapTypes.hpp" line="117" column="1" bodyfile="touchgfx/TextureMapTypes.hpp" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_edge_1a15a78e2c6057c34f33a3e3ba9d4a2655" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t X</definition>
+        <argsstring></argsstring>
+        <name>X</name>
+        <briefdescription>
+<para>The X coordinate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TextureMapTypes.hpp" line="102" column="1" bodyfile="touchgfx/TextureMapTypes.hpp" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_edge_1a4e0161437cec4cc6933717ebc7e9c3b3" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t XStep</definition>
+        <argsstring></argsstring>
+        <name>XStep</name>
+        <briefdescription>
+<para>Amount to increment x. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TextureMapTypes.hpp" line="103" column="1" bodyfile="touchgfx/TextureMapTypes.hpp" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_edge_1aa482c4cc86a24474e4fb19b5b5978778" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Y</definition>
+        <argsstring></argsstring>
+        <name>Y</name>
+        <briefdescription>
+<para>The Y coordinate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TextureMapTypes.hpp" line="107" column="1" bodyfile="touchgfx/TextureMapTypes.hpp" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structtouchgfx_1_1_edge_1aa682b15251f2e7cb8f104b764790fbf6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Edge</definition>
+        <argsstring>(const Gradients &amp;gradients, const Point3D *vertices, int top, int bottom)</argsstring>
+        <name>Edge</name>
+        <param>
+          <type>const <ref refid="structtouchgfx_1_1_gradients" kindref="compound">Gradients</ref> &amp;</type>
+          <declname>gradients</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structtouchgfx_1_1_point3_d" kindref="compound">Point3D</ref> *</type>
+          <declname>vertices</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>top</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bottom</declname>
+        </param>
+        <briefdescription>
+<para>Initializes a new instance of the TextureMapTypes class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Construct the edge between two vertices and uses the gradients for calculating the interpolation values.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gradients</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The gradients for the triangle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vertices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The vertices for the triangle. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>top</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index in the vertices array of the top vertex of this edge. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bottom</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index in the vertices array of the bottom vertex of this edge. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TextureMapTypes.hpp" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structtouchgfx_1_1_edge_1a6452a9d7c9fcabeb40bb5d8495300090" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int step</definition>
+        <argsstring>()</argsstring>
+        <name>step</name>
+        <briefdescription>
+<para>Perform a step along the edge. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Increase the Y and decrease the height.</para>
+<para><simplesect kind="return"><para>The remaining height. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TextureMapTypes.hpp" line="64" column="1" bodyfile="touchgfx/TextureMapTypes.hpp" bodystart="64" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="structtouchgfx_1_1_edge_1ac7aad6bdc187de043b91cdb4fa400ca9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int step</definition>
+        <argsstring>(int steps)</argsstring>
+        <name>step</name>
+        <param>
+          <type>int</type>
+          <declname>steps</declname>
+        </param>
+        <briefdescription>
+<para>Performs a number of steps along the edge. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>steps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of steps the perform.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The remaining height. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TextureMapTypes.hpp" line="93" column="1" bodyfile="touchgfx/TextureMapTypes.hpp" bodystart="93" bodyend="100"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An edge contains information about one edge, between two points, of a triangle, as well as information about how to interpolate values when moving in the vertical direction. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="touchgfx/TextureMapTypes.hpp" line="47" column="1" bodyfile="touchgfx/TextureMapTypes.hpp" bodystart="46" bodyend="118"/>
+    <listofallmembers>
+      <member refid="structtouchgfx_1_1_edge_1abca868beb61d97cdaccf83c03409cfb4" prot="public" virt="non-virtual"><scope>touchgfx::Edge</scope><name>denominator</name></member>
+      <member refid="structtouchgfx_1_1_edge_1aa682b15251f2e7cb8f104b764790fbf6" prot="public" virt="non-virtual"><scope>touchgfx::Edge</scope><name>Edge</name></member>
+      <member refid="structtouchgfx_1_1_edge_1ab6c9d47292a631ae554fe1d363e1b996" prot="public" virt="non-virtual"><scope>touchgfx::Edge</scope><name>errorTerm</name></member>
+      <member refid="structtouchgfx_1_1_edge_1ad12fc34ce789bce6c8a05d8a17138534" prot="public" virt="non-virtual"><scope>touchgfx::Edge</scope><name>height</name></member>
+      <member refid="structtouchgfx_1_1_edge_1af72aac6879b5b4384b6fa8c1b4852eb6" prot="public" virt="non-virtual"><scope>touchgfx::Edge</scope><name>numerator</name></member>
+      <member refid="structtouchgfx_1_1_edge_1a32fd6b40a76355d19186854c323905b2" prot="public" virt="non-virtual"><scope>touchgfx::Edge</scope><name>oneOverZ</name></member>
+      <member refid="structtouchgfx_1_1_edge_1a109720432c7300334475269607c65d96" prot="public" virt="non-virtual"><scope>touchgfx::Edge</scope><name>oneOverZStep</name></member>
+      <member refid="structtouchgfx_1_1_edge_1a2693615583d4ff4e35c83cff1f35c061" prot="public" virt="non-virtual"><scope>touchgfx::Edge</scope><name>oneOverZStepExtra</name></member>
+      <member refid="structtouchgfx_1_1_edge_1a6452a9d7c9fcabeb40bb5d8495300090" prot="public" virt="non-virtual"><scope>touchgfx::Edge</scope><name>step</name></member>
+      <member refid="structtouchgfx_1_1_edge_1ac7aad6bdc187de043b91cdb4fa400ca9" prot="public" virt="non-virtual"><scope>touchgfx::Edge</scope><name>step</name></member>
+      <member refid="structtouchgfx_1_1_edge_1a99915b4fd8726bfa7cd9e8ed4aed2e3d" prot="public" virt="non-virtual"><scope>touchgfx::Edge</scope><name>UOverZ</name></member>
+      <member refid="structtouchgfx_1_1_edge_1aedb222596e655bc94c040314d81b982a" prot="public" virt="non-virtual"><scope>touchgfx::Edge</scope><name>UOverZStep</name></member>
+      <member refid="structtouchgfx_1_1_edge_1abe2fdd2e2e443e37393b5fe7cdd71562" prot="public" virt="non-virtual"><scope>touchgfx::Edge</scope><name>UOverZStepExtra</name></member>
+      <member refid="structtouchgfx_1_1_edge_1afe03df0d1c122bc9b663fcbd44754ce8" prot="public" virt="non-virtual"><scope>touchgfx::Edge</scope><name>VOverZ</name></member>
+      <member refid="structtouchgfx_1_1_edge_1a840ae128a85232f1cdfe4a0595ebe1b9" prot="public" virt="non-virtual"><scope>touchgfx::Edge</scope><name>VOverZStep</name></member>
+      <member refid="structtouchgfx_1_1_edge_1a893c72a5e882e61834931459a5b1090a" prot="public" virt="non-virtual"><scope>touchgfx::Edge</scope><name>VOverZStepExtra</name></member>
+      <member refid="structtouchgfx_1_1_edge_1a15a78e2c6057c34f33a3e3ba9d4a2655" prot="public" virt="non-virtual"><scope>touchgfx::Edge</scope><name>X</name></member>
+      <member refid="structtouchgfx_1_1_edge_1a4e0161437cec4cc6933717ebc7e9c3b3" prot="public" virt="non-virtual"><scope>touchgfx::Edge</scope><name>XStep</name></member>
+      <member refid="structtouchgfx_1_1_edge_1aa482c4cc86a24474e4fb19b5b5978778" prot="public" virt="non-virtual"><scope>touchgfx::Edge</scope><name>Y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

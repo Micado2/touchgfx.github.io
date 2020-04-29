@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="_m_v_p_application_8hpp" kind="file" language="C++">
+    <compoundname>MVPApplication.hpp</compoundname>
+    <includes local="no">cassert</includes>
+    <includes local="no">new</includes>
+    <includes local="no">common/Meta.hpp</includes>
+    <includes refid="_partition_8hpp" local="no">common/Partition.hpp</includes>
+    <includes refid="_m_v_p_heap_8hpp" local="no">mvp/MVPHeap.hpp</includes>
+    <includes refid="_view_8hpp" local="no">mvp/View.hpp</includes>
+    <includes refid="_application_8hpp" local="no">touchgfx/Application.hpp</includes>
+    <includes refid="_callback_8hpp" local="no">touchgfx/Callback.hpp</includes>
+    <includes refid="_h_a_l_8hpp" local="no">touchgfx/hal/HAL.hpp</includes>
+    <incdepgraph>
+      <node id="15">
+        <label>mvp/MVPApplication.hpp</label>
+        <link refid="_m_v_p_application_8hpp"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>cassert</label>
+      </node>
+      <node id="17">
+        <label>new</label>
+      </node>
+      <node id="18">
+        <label>common/Meta.hpp</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classtouchgfx_1_1_m_v_p_application" prot="public">touchgfx::MVPApplication</innerclass>
+    <innernamespace refid="namespacetouchgfx">touchgfx</innernamespace>
+    <briefdescription>
+<para>Declares the <ref refid="classtouchgfx_1_1_m_v_p_application" kindref="compound">touchgfx::MVPApplication</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>MVPAPPLICATION_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MVPAPPLICATION_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cassert&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;new&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;common/Meta.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;common/Partition.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mvp/MVPHeap.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mvp/View.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;touchgfx/Application.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;touchgfx/Callback.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;touchgfx/hal/HAL.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetouchgfx" kindref="compound">touchgfx</ref></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Presenter;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="classtouchgfx_1_1_m_v_p_application" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtouchgfx_1_1_m_v_p_application" kindref="compound">MVPApplication</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_application" kindref="compound">Application</ref></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_m_v_p_application_1a05fe50bbefa7585b526fd7ac7db08792" kindref="member">MVPApplication</ref>()</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classtouchgfx_1_1_m_v_p_application_1a377d22cb3912b9fa3fc8a477e8fe0812" kindref="member">currentPresenter</ref>(0),</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_m_v_p_application_1a279004cc1c8e4deeadd4fcf776388c2b" kindref="member">pendingScreenTransitionCallback</ref>(0)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_application_1a04a0d41fa8c25bfad4f06563b287b464" kindref="member">instance</ref><sp/>=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classtouchgfx_1_1_m_v_p_application" kindref="compound">MVPApplication</ref>()</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_m_v_p_application_1af54ae20b14a651b98e1980b39fb4fd39" kindref="member">handlePendingScreenTransition</ref>()</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_m_v_p_application_1a71a0230ac191abfdc9b84709e97bfd48" kindref="member">evaluatePendingScreenTransition</ref>();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_presenter" kindref="compound">Presenter</ref>*<sp/><ref refid="classtouchgfx_1_1_m_v_p_application_1a377d22cb3912b9fa3fc8a477e8fe0812" kindref="member">currentPresenter</ref>;<sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_generic_callback" kindref="compound">GenericCallback&lt;&gt;</ref>*<sp/><ref refid="classtouchgfx_1_1_m_v_p_application_1a279004cc1c8e4deeadd4fcf776388c2b" kindref="member">pendingScreenTransitionCallback</ref>;<sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_m_v_p_application_1a71a0230ac191abfdc9b84709e97bfd48" kindref="member">evaluatePendingScreenTransition</ref>()</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classtouchgfx_1_1_m_v_p_application_1a279004cc1c8e4deeadd4fcf776388c2b" kindref="member">pendingScreenTransitionCallback</ref><sp/>&amp;&amp;<sp/><ref refid="classtouchgfx_1_1_m_v_p_application_1a279004cc1c8e4deeadd4fcf776388c2b" kindref="member">pendingScreenTransitionCallback</ref>-&gt;<ref refid="classtouchgfx_1_1_generic_callback_1a84d80615491ecea423f99490445b73ae" kindref="member">isValid</ref>())</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_m_v_p_application_1a279004cc1c8e4deeadd4fcf776388c2b" kindref="member">pendingScreenTransitionCallback</ref>-&gt;<ref refid="classtouchgfx_1_1_generic_callback_1ad38d4f33764a05acff473fe7b45ad328" kindref="member">execute</ref>();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_m_v_p_application_1a279004cc1c8e4deeadd4fcf776388c2b" kindref="member">pendingScreenTransitionCallback</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacetouchgfx_1a91ece3ecafb7f4bdca2bcdb4aafa8654" kindref="member">prepareTransition</ref>(<ref refid="classtouchgfx_1_1_screen" kindref="compound">Screen</ref>**<sp/>currentScreen,<sp/><ref refid="classtouchgfx_1_1_presenter" kindref="compound">Presenter</ref>**<sp/>currentPresenter,<sp/><ref refid="classtouchgfx_1_1_transition" kindref="compound">Transition</ref>**<sp/>currentTrans)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_application_1aa98b8f5621b53c808429f5dde0662921" kindref="member">Application::getInstance</ref>()-&gt;<ref refid="classtouchgfx_1_1_application_1aa39b86d75ac96268a9bac4b165990669" kindref="member">clearAllTimerWidgets</ref>();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(*currentTrans)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*currentTrans)-&gt;tearDown();</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(*currentTrans)</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*currentTrans)-&gt;~Transition();</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(*currentScreen)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*currentScreen)-&gt;tearDownScreen();</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(*currentPresenter)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*currentPresenter)-&gt;deactivate();</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(*currentScreen)</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*currentScreen)-&gt;~Screen();</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(*currentPresenter)</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*currentPresenter)-&gt;~Presenter();</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacetouchgfx_1ad3fbb265c17cf21007c1dc4d7a96707c" kindref="member">finalizeTransition</ref>(Screen*<sp/>newScreen,<sp/>Presenter*<sp/>newPresenter,<sp/>Transition*<sp/>newTransition)</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>newScreen-&gt;setupScreen();</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>newPresenter-&gt;activate();</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>newScreen-&gt;bindTransition(*newTransition);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>newTransition-&gt;init();</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_application_1aa98b8f5621b53c808429f5dde0662921" kindref="member">Application::getInstance</ref>()-&gt;<ref refid="classtouchgfx_1_1_application_1abc45d04e5f5ce1fbd68f920fcdb2d0e0" kindref="member">draw</ref>();</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>ScreenType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>PresenterType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>TransType,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>ModelType&gt;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">PresenterType*<sp/><ref refid="namespacetouchgfx_1a5c5efcff26f3775392d3e615e10f32c2" kindref="member">makeTransition</ref>(Screen**<sp/>currentScreen,<sp/>Presenter**<sp/>currentPresenter,<sp/>MVPHeap&amp;<sp/>heap,<sp/>Transition**<sp/>currentTrans,<sp/>ModelType*<sp/>model)</highlight></codeline>
+<codeline lineno="155"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(ScreenType)<sp/>&lt;=<sp/>heap.screenStorage.element_size()<sp/>&amp;&amp;<sp/></highlight><highlight class="stringliteral">&quot;View<sp/>allocation<sp/>error:<sp/>Check<sp/>that<sp/>all<sp/>views<sp/>are<sp/>added<sp/>to<sp/>FrontendHeap::ViewTypes&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(PresenterType)<sp/>&lt;=<sp/>heap.presenterStorage.element_size()<sp/>&amp;&amp;<sp/></highlight><highlight class="stringliteral">&quot;Presenter<sp/>allocation<sp/>error:<sp/>Check<sp/>that<sp/>all<sp/>presenters<sp/>are<sp/>added<sp/>to<sp/>FrontendHeap::PresenterTypes&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(TransType)<sp/>&lt;=<sp/>heap.transitionStorage.element_size()<sp/>&amp;&amp;<sp/></highlight><highlight class="stringliteral">&quot;Transition<sp/>allocation<sp/>error:<sp/>Check<sp/>that<sp/>all<sp/>transitions<sp/>are<sp/>added<sp/>to<sp/>FrontendHeap::TransitionTypes&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacetouchgfx_1a91ece3ecafb7f4bdca2bcdb4aafa8654" kindref="member">prepareTransition</ref>(currentScreen,<sp/>currentPresenter,<sp/>currentTrans);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>TransType*<sp/>newTransition<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>(&amp;heap.transitionStorage.at&lt;TransType&gt;(0))<sp/>TransType;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>ScreenType*<sp/>newScreen<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>(&amp;heap.screenStorage.at&lt;ScreenType&gt;(0))<sp/>ScreenType;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>PresenterType*<sp/>newPresenter<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>(&amp;heap.presenterStorage.at&lt;PresenterType&gt;(0))<sp/>PresenterType(*newScreen);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>*currentTrans<sp/>=<sp/>newTransition;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>*currentPresenter<sp/>=<sp/>newPresenter;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>*currentScreen<sp/>=<sp/>newScreen;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>model-&gt;bind(newPresenter);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>newPresenter-&gt;bind(model);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>newScreen-&gt;bind(*newPresenter);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacetouchgfx_1ad3fbb265c17cf21007c1dc4d7a96707c" kindref="member">finalizeTransition</ref>((Screen*)newScreen,<sp/>(Presenter*)newPresenter,<sp/>(Transition*)newTransition);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>newPresenter;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>touchgfx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>MVPAPPLICATION_HPP</highlight></codeline>
+    </programlisting>
+    <location file="mvp/MVPApplication.hpp"/>
+  </compounddef>
+</doxygen>

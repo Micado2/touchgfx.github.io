@@ -1,0 +1,459 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_box_with_border_button_style" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::BoxWithBorderButtonStyle</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">T</basecompoundref>
+    <includes local="no">BoxWithBorderButtonStyle.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_box_with_border_button_style_1ac795bcf6361931a1749b253a6ee93081" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_box_with_border" kindref="compound">BoxWithBorder</ref></type>
+        <definition>BoxWithBorder borderBox</definition>
+        <argsstring></argsstring>
+        <name>borderBox</name>
+        <briefdescription>
+<para>The border box. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp" line="107" column="1" bodyfile="touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_box_with_border_button_style_1a52de25b4b79f3e4ab5e036350613b1f6" prot="protected" static="no" mutable="no">
+        <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+        <definition>colortype borderDown</definition>
+        <argsstring></argsstring>
+        <name>borderDown</name>
+        <briefdescription>
+<para>The border down. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp" line="111" column="1" bodyfile="touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_box_with_border_button_style_1ab62c29b78d7f4e7c5be14982f0740276" prot="protected" static="no" mutable="no">
+        <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+        <definition>colortype borderUp</definition>
+        <argsstring></argsstring>
+        <name>borderUp</name>
+        <briefdescription>
+<para>The border up. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp" line="110" column="1" bodyfile="touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_box_with_border_button_style_1a1e928ea747b3214c0f4a196adb8ef78c" prot="protected" static="no" mutable="no">
+        <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+        <definition>colortype down</definition>
+        <argsstring></argsstring>
+        <name>down</name>
+        <briefdescription>
+<para>The down. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp" line="109" column="1" bodyfile="touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_box_with_border_button_style_1ab0dc1226ff4133f2a10c21a4f631beda" prot="protected" static="no" mutable="no">
+        <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+        <definition>colortype up</definition>
+        <argsstring></argsstring>
+        <name>up</name>
+        <briefdescription>
+<para>The up. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp" line="108" column="1" bodyfile="touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_box_with_border_button_style_1a873696ed1588455120656eafd0bb30fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BoxWithBorderButtonStyle</definition>
+        <argsstring>()</argsstring>
+        <name>BoxWithBorderButtonStyle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp" line="31" column="1" bodyfile="touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp" bodystart="31" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_box_with_border_button_style_1a471df7fc33f743af9e2bd601b720f54c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setBorderSize</definition>
+        <argsstring>(uint8_t size)</argsstring>
+        <name>setBorderSize</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Sets border size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp" line="101" column="1" bodyfile="touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp" bodystart="101" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_box_with_border_button_style_1af84104827c6740426887ffb585706461" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setBoxWithBorderColors</definition>
+        <argsstring>(const colortype colorReleased, const colortype colorPressed, const colortype borderColorReleased, const colortype borderColorPressed)</argsstring>
+        <name>setBoxWithBorderColors</name>
+        <param>
+          <type>const <ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+          <declname>colorReleased</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+          <declname>colorPressed</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+          <declname>borderColorReleased</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+          <declname>borderColorPressed</declname>
+        </param>
+        <briefdescription>
+<para>Sets the colors. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>colorReleased</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color released. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>colorPressed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color pressed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>borderColorReleased</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The border color released. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>borderColorPressed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The border color pressed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp" line="85" column="1" bodyfile="touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp" bodystart="85" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_box_with_border_button_style_1a5266acf6f7f5522e41ea430b735ba487" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setBoxWithBorderHeight</definition>
+        <argsstring>(int16_t height)</argsstring>
+        <name>setBoxWithBorderHeight</name>
+        <param>
+          <type>int16_t</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+<para>Sets the height. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The height. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp" line="72" column="1" bodyfile="touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_box_with_border_button_style_1a9b8207101cbe427d96f1679f75ef10da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setBoxWithBorderPosition</definition>
+        <argsstring>(int16_t x, int16_t y, int16_t width, int16_t height)</argsstring>
+        <name>setBoxWithBorderPosition</name>
+        <param>
+          <type>int16_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+<para>Sets the size and position of this <ref refid="classtouchgfx_1_1_box_with_border_button_style" kindref="compound">BoxWithBorderButtonStyle</ref>, relative to its parent. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate of this <ref refid="classtouchgfx_1_1_box_with_border_button_style" kindref="compound">BoxWithBorderButtonStyle</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate of this <ref refid="classtouchgfx_1_1_box_with_border_button_style" kindref="compound">BoxWithBorderButtonStyle</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The width of this <ref refid="classtouchgfx_1_1_box_with_border_button_style" kindref="compound">BoxWithBorderButtonStyle</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The height of this <ref refid="classtouchgfx_1_1_box_with_border_button_style" kindref="compound">BoxWithBorderButtonStyle</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Changing this does not automatically yield a redraw. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp" line="52" column="1" bodyfile="touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp" bodystart="52" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_box_with_border_button_style_1a0dbb9ed990d46872fa01c73e2c3a5829" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setBoxWithBorderWidth</definition>
+        <argsstring>(int16_t width)</argsstring>
+        <name>setBoxWithBorderWidth</name>
+        <param>
+          <type>int16_t</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+<para>Sets the width. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The width. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp" line="62" column="1" bodyfile="touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp" bodystart="62" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_box_with_border_button_style_1a76a7d659fcd7379fdd5ebfe0287b592f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~BoxWithBorderButtonStyle</definition>
+        <argsstring>()</argsstring>
+        <name>~BoxWithBorderButtonStyle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp" line="38" column="1" bodyfile="touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp" bodystart="38" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_box_with_border_button_style_1a0db52eec9b389e131e1cfe9b414e8401" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void handleAlphaUpdated</definition>
+        <argsstring>()</argsstring>
+        <name>handleAlphaUpdated</name>
+        <briefdescription>
+<para>Handles what should happen when the alpha is updated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp" line="122" column="1" bodyfile="touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp" bodystart="122" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_box_with_border_button_style_1af6923b5d162d6c810eede74998f69928" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void handlePressedUpdated</definition>
+        <argsstring>()</argsstring>
+        <name>handlePressedUpdated</name>
+        <briefdescription>
+<para>Handles what should happen when the pressed state is updated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp" line="114" column="1" bodyfile="touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp" bodystart="114" bodyend="119"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A box with border button style. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class is supposed to be used with one of the ButtonTrigger classes to create a functional button. This class will show a box with a border in different colors depending on the state of the button (pressed or released).</para>
+<para>An image button style. This class is supposed to be used with one of the ButtonTrigger classes to create a functional button. This class will show one of two images depending on the state of the button (pressed or released).</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Generic type parameter. Typically a <ref refid="classtouchgfx_1_1_abstract_button_container" kindref="compound">AbstractButtonContainer</ref> subclass.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_abstract_button_container" kindref="compound">AbstractButtonContainer</ref>, <ref refid="classtouchgfx_1_1_box_with_border" kindref="compound">BoxWithBorder</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="285">
+        <label>T</label>
+      </node>
+      <node id="284">
+        <label>BoxWithBorderButtonStyle&lt; T &gt;</label>
+        <link refid="classtouchgfx_1_1_box_with_border_button_style"/>
+        <childnode refid="285" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="287">
+        <label>T</label>
+      </node>
+      <node id="289">
+        <label>Widget</label>
+        <link refid="classtouchgfx_1_1_widget"/>
+        <childnode refid="290" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="286">
+        <label>BoxWithBorderButtonStyle&lt; T &gt;</label>
+        <link refid="classtouchgfx_1_1_box_with_border_button_style"/>
+        <childnode refid="287" relation="public-inheritance">
+        </childnode>
+        <childnode refid="288" relation="usage">
+          <edgelabel>borderBox</edgelabel>
+        </childnode>
+        <childnode refid="292" relation="usage">
+          <edgelabel>down</edgelabel>
+          <edgelabel>borderDown</edgelabel>
+          <edgelabel>borderUp</edgelabel>
+          <edgelabel>up</edgelabel>
+        </childnode>
+      </node>
+      <node id="291">
+        <label>Rect</label>
+        <link refid="classtouchgfx_1_1_rect"/>
+      </node>
+      <node id="290">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+        <childnode refid="291" relation="usage">
+          <edgelabel>rect</edgelabel>
+        </childnode>
+        <childnode refid="290" relation="usage">
+          <edgelabel>nextSibling</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="288">
+        <label>BoxWithBorder</label>
+        <link refid="classtouchgfx_1_1_box_with_border"/>
+        <childnode refid="289" relation="public-inheritance">
+        </childnode>
+        <childnode refid="292" relation="usage">
+          <edgelabel>borderColor</edgelabel>
+          <edgelabel>color</edgelabel>
+        </childnode>
+      </node>
+      <node id="292">
+        <label>colortype</label>
+        <link refid="structtouchgfx_1_1colortype"/>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp" line="29" column="1" bodyfile="touchgfx/containers/buttons/BoxWithBorderButtonStyle.hpp" bodystart="28" bodyend="127"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_box_with_border_button_style_1ac795bcf6361931a1749b253a6ee93081" prot="protected" virt="non-virtual"><scope>touchgfx::BoxWithBorderButtonStyle</scope><name>borderBox</name></member>
+      <member refid="classtouchgfx_1_1_box_with_border_button_style_1a52de25b4b79f3e4ab5e036350613b1f6" prot="protected" virt="non-virtual"><scope>touchgfx::BoxWithBorderButtonStyle</scope><name>borderDown</name></member>
+      <member refid="classtouchgfx_1_1_box_with_border_button_style_1ab62c29b78d7f4e7c5be14982f0740276" prot="protected" virt="non-virtual"><scope>touchgfx::BoxWithBorderButtonStyle</scope><name>borderUp</name></member>
+      <member refid="classtouchgfx_1_1_box_with_border_button_style_1a873696ed1588455120656eafd0bb30fe" prot="public" virt="non-virtual"><scope>touchgfx::BoxWithBorderButtonStyle</scope><name>BoxWithBorderButtonStyle</name></member>
+      <member refid="classtouchgfx_1_1_box_with_border_button_style_1a1e928ea747b3214c0f4a196adb8ef78c" prot="protected" virt="non-virtual"><scope>touchgfx::BoxWithBorderButtonStyle</scope><name>down</name></member>
+      <member refid="classtouchgfx_1_1_box_with_border_button_style_1a0db52eec9b389e131e1cfe9b414e8401" prot="protected" virt="virtual"><scope>touchgfx::BoxWithBorderButtonStyle</scope><name>handleAlphaUpdated</name></member>
+      <member refid="classtouchgfx_1_1_box_with_border_button_style_1af6923b5d162d6c810eede74998f69928" prot="protected" virt="virtual"><scope>touchgfx::BoxWithBorderButtonStyle</scope><name>handlePressedUpdated</name></member>
+      <member refid="classtouchgfx_1_1_box_with_border_button_style_1a471df7fc33f743af9e2bd601b720f54c" prot="public" virt="non-virtual"><scope>touchgfx::BoxWithBorderButtonStyle</scope><name>setBorderSize</name></member>
+      <member refid="classtouchgfx_1_1_box_with_border_button_style_1af84104827c6740426887ffb585706461" prot="public" virt="non-virtual"><scope>touchgfx::BoxWithBorderButtonStyle</scope><name>setBoxWithBorderColors</name></member>
+      <member refid="classtouchgfx_1_1_box_with_border_button_style_1a5266acf6f7f5522e41ea430b735ba487" prot="public" virt="non-virtual"><scope>touchgfx::BoxWithBorderButtonStyle</scope><name>setBoxWithBorderHeight</name></member>
+      <member refid="classtouchgfx_1_1_box_with_border_button_style_1a9b8207101cbe427d96f1679f75ef10da" prot="public" virt="non-virtual"><scope>touchgfx::BoxWithBorderButtonStyle</scope><name>setBoxWithBorderPosition</name></member>
+      <member refid="classtouchgfx_1_1_box_with_border_button_style_1a0dbb9ed990d46872fa01c73e2c3a5829" prot="public" virt="non-virtual"><scope>touchgfx::BoxWithBorderButtonStyle</scope><name>setBoxWithBorderWidth</name></member>
+      <member refid="classtouchgfx_1_1_box_with_border_button_style_1ab0dc1226ff4133f2a10c21a4f631beda" prot="protected" virt="non-virtual"><scope>touchgfx::BoxWithBorderButtonStyle</scope><name>up</name></member>
+      <member refid="classtouchgfx_1_1_box_with_border_button_style_1a76a7d659fcd7379fdd5ebfe0287b592f" prot="public" virt="virtual"><scope>touchgfx::BoxWithBorderButtonStyle</scope><name>~BoxWithBorderButtonStyle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

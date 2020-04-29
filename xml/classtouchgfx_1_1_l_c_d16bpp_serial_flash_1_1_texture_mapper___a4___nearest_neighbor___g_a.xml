@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1_1_texture_mapper___a4___nearest_neighbor___g_a" kind="class" language="C++" prot="private">
+    <compoundname>touchgfx::LCD16bppSerialFlash::TextureMapper_A4_NearestNeighbor_GA</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">LCD16bppSerialFlash::DrawTextureMapScanLineBase16</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1_1_texture_mapper___a4___nearest_neighbor___g_a_1ab2182346858447906df97b78f1bd50fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void drawTextureMapScanLineSubdivisions</definition>
+        <argsstring>(int subdivisions, const int widthModLength, int pixelsToDraw, const int affineLength, float oneOverZRight, float UOverZRight, float VOverZRight, fixed16_16 U, fixed16_16 V, fixed16_16 deltaU, fixed16_16 deltaV, float ULeft, float VLeft, float URight, float VRight, float ZRight, const DrawingSurface &amp;dest, const int destX, const int destY, const int16_t bitmapWidth, const int16_t bitmapHeight, const TextureSurface &amp;texture, uint8_t alpha, const float dOneOverZdXAff, const float dUOverZdXAff, const float dVOverZdXAff)</argsstring>
+        <name>drawTextureMapScanLineSubdivisions</name>
+        <param>
+          <type>int</type>
+          <declname>subdivisions</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>widthModLength</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pixelsToDraw</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>affineLength</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>oneOverZRight</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>UOverZRight</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>VOverZRight</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1a62c78b672c5381c87b38200ab84a31f5" kindref="member">fixed16_16</ref></type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1a62c78b672c5381c87b38200ab84a31f5" kindref="member">fixed16_16</ref></type>
+          <declname>V</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1a62c78b672c5381c87b38200ab84a31f5" kindref="member">fixed16_16</ref></type>
+          <declname>deltaU</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1a62c78b672c5381c87b38200ab84a31f5" kindref="member">fixed16_16</ref></type>
+          <declname>deltaV</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ULeft</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>VLeft</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>URight</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>VRight</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ZRight</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structtouchgfx_1_1_drawing_surface" kindref="compound">DrawingSurface</ref> &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>destX</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>destY</declname>
+        </param>
+        <param>
+          <type>const int16_t</type>
+          <declname>bitmapWidth</declname>
+        </param>
+        <param>
+          <type>const int16_t</type>
+          <declname>bitmapHeight</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structtouchgfx_1_1_texture_surface" kindref="compound">TextureSurface</ref> &amp;</type>
+          <declname>texture</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>dOneOverZdXAff</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>dUOverZdXAff</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>dVOverZdXAff</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="795" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1_1_texture_mapper___a4___nearest_neighbor___g_a_1ad213aa88d5653df7c3f16468f7cd0fcc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FORCE_INLINE_FUNCTION void</type>
+        <definition>FORCE_INLINE_FUNCTION void writePixel</definition>
+        <argsstring>(uint16_t *const destBits, const uint8_t a4, const uint8_t alpha)</argsstring>
+        <name>writePixel</name>
+        <param>
+          <type>uint16_t *const</type>
+          <declname>destBits</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>a4</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="798" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1728">
+        <label>LCD16bppSerialFlash::TextureMapper_A4_NearestNeighbor_GA</label>
+        <childnode refid="1729" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1729">
+        <label>DrawTextureMapScanLineBase16</label>
+        <childnode refid="1730" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1730">
+        <label>DrawTextureMapScanLineBase</label>
+        <link refid="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1731">
+        <label>LCD16bppSerialFlash::TextureMapper_A4_NearestNeighbor_GA</label>
+        <childnode refid="1732" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1732">
+        <label>DrawTextureMapScanLineBase16</label>
+        <childnode refid="1733" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1733">
+        <label>DrawTextureMapScanLineBase</label>
+        <link refid="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base"/>
+      </node>
+    </collaborationgraph>
+    <location file="platform/driver/lcd/LCD16bppSerialFlash.hpp" line="793" column="1" bodyfile="platform/driver/lcd/LCD16bppSerialFlash.hpp" bodystart="792" bodyend="799"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1add0589d9e887a57f8b687470a08d8266" prot="protected" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash::TextureMapper_A4_NearestNeighbor_GA</scope><name>drawTextureMapNextSubdivision</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1_1_texture_mapper___a4___nearest_neighbor___g_a_1ab2182346858447906df97b78f1bd50fe" prot="public" virt="virtual"><scope>touchgfx::LCD16bppSerialFlash::TextureMapper_A4_NearestNeighbor_GA</scope><name>drawTextureMapScanLineSubdivisions</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1adc2b8996624c05d3f30f27186185aa3c" prot="protected" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash::TextureMapper_A4_NearestNeighbor_GA</scope><name>half</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1a22c84c4c44c3ec0427c4dca43d111740" prot="protected" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash::TextureMapper_A4_NearestNeighbor_GA</scope><name>is1Inside</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1a67e23de90ee7c3d9096ae799c7da8e7c" prot="protected" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash::TextureMapper_A4_NearestNeighbor_GA</scope><name>is1x1Inside</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1acbb5432c44dc0aa4c4d033a45ad71ead" prot="protected" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash::TextureMapper_A4_NearestNeighbor_GA</scope><name>is2Inside</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1a465467b63215cdd985ba984c46fbd937" prot="protected" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash::TextureMapper_A4_NearestNeighbor_GA</scope><name>is2PartiallyInside</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1a7eb16f0232cb2658f9c3396888ef290f" prot="protected" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash::TextureMapper_A4_NearestNeighbor_GA</scope><name>is2x2Inside</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1a5628626873a5c12fd2aaa6471bb76330" prot="protected" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash::TextureMapper_A4_NearestNeighbor_GA</scope><name>is2x2PartiallyInside</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1_1_draw_texture_map_scan_line_base16_1a38edcbd3e6c790bf0989f5cba4d1f45c" prot="protected" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash::TextureMapper_A4_NearestNeighbor_GA</scope><name>overrunCheckBilinearInterpolation</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1_1_draw_texture_map_scan_line_base16_1af8eae24fd3db5a00151a795b15f57e54" prot="protected" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash::TextureMapper_A4_NearestNeighbor_GA</scope><name>overrunCheckNearestNeighbor</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash_1_1_texture_mapper___a4___nearest_neighbor___g_a_1ad213aa88d5653df7c3f16468f7cd0fcc" prot="private" virt="non-virtual"><scope>touchgfx::LCD16bppSerialFlash::TextureMapper_A4_NearestNeighbor_GA</scope><name>writePixel</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1abeeb40671ac8350ae2abbcee86f96609" prot="public" virt="virtual"><scope>touchgfx::LCD16bppSerialFlash::TextureMapper_A4_NearestNeighbor_GA</scope><name>~DrawTextureMapScanLineBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

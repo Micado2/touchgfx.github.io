@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_pre_renderable" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::PreRenderable</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">T</basecompoundref>
+    <includes local="no">PreRenderable.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_pre_renderable_1aada99aba2a745a436a13e143e63cd26b" prot="private" static="no" mutable="no">
+        <type>uint16_t *</type>
+        <definition>uint16_t* preRenderedAddress</definition>
+        <argsstring></argsstring>
+        <name>preRenderedAddress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/mixins/PreRenderable.hpp" line="119" column="1" bodyfile="touchgfx/mixins/PreRenderable.hpp" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_pre_renderable_1ab597fcb8ec83d0ea6816ed61d9ee9d5e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void draw</definition>
+        <argsstring>(const Rect &amp;invalidatedArea) const</argsstring>
+        <name>draw</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>invalidatedArea</declname>
+        </param>
+        <briefdescription>
+<para>Overrides the draw function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If <ref refid="classtouchgfx_1_1_pre_renderable_1a1b9feb23a28bf2cd7cbeb6c5c15e25e0" kindref="member">preRender()</ref> has been called, perform a memcpy of the cached version. If not, just call the base class version of draw.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>invalidatedArea</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The subregion of this <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> which needs to be redrawn. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/mixins/PreRenderable.hpp" line="45" column="1" bodyfile="touchgfx/mixins/PreRenderable.hpp" bodystart="45" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_pre_renderable_1a3c19d5dd54c0ed23b0e06c8a233886f9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool isPreRendered</definition>
+        <argsstring>() const</argsstring>
+        <name>isPreRendered</name>
+        <briefdescription>
+<para>Whether or not the snapshot of the widget been taken. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Is the widget rendered. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/mixins/PreRenderable.hpp" line="99" column="1" bodyfile="touchgfx/mixins/PreRenderable.hpp" bodystart="99" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_pre_renderable_1a1b9feb23a28bf2cd7cbeb6c5c15e25e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void preRender</definition>
+        <argsstring>()</argsstring>
+        <name>preRender</name>
+        <briefdescription>
+<para>Takes a snapshot of the current visual appearance of this widget. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>All subsequent calls to draw on this mix-in will result in the snapshot being draw. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/mixins/PreRenderable.hpp" line="108" column="1" bodyfile="touchgfx/mixins/PreRenderable.hpp" bodystart="108" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_pre_renderable_1a8f214b3c34abc92136ee022414b58f62" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PreRenderable</definition>
+        <argsstring>()</argsstring>
+        <name>PreRenderable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/mixins/PreRenderable.hpp" line="34" column="1" bodyfile="touchgfx/mixins/PreRenderable.hpp" bodystart="34" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This mix-in can be used on any <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>It provides a preRender function, which will cache the current visual appearance of the <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> in a cache in a memory region. Subsequent calls to <ref refid="classtouchgfx_1_1_pre_renderable_1ab597fcb8ec83d0ea6816ed61d9ee9d5e" kindref="member">draw()</ref> on this <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> will result in a simple copying of the cached memory to the framebuffer instead of the normal draw operation. This mix-in can therefore be used on Drawables whose visual appearance is static and the normal draw operation takes a long time to perform.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the type to extend with the <ref refid="classtouchgfx_1_1_fade_animator" kindref="compound">FadeAnimator</ref> behavior.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The actual uses of this mix-in are rare, and the class is mainly provided for example purposes. </para>
+</simplesect>
+<simplesect kind="note"><para>The <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> is cached in animation storage, which must be available</para>
+</simplesect>
+<xrefsect id="deprecated_1_deprecated000021"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Consult <ref refid="classtouchgfx_1_1_cacheable_container" kindref="compound">CacheableContainer</ref> or <ref refid="classtouchgfx_1_1_snapshot_widget" kindref="compound">SnapshotWidget</ref> </para>
+</xrefdescription></xrefsect></para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1294">
+        <label>T</label>
+      </node>
+      <node id="1293">
+        <label>PreRenderable&lt; T &gt;</label>
+        <link refid="classtouchgfx_1_1_pre_renderable"/>
+        <childnode refid="1294" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1296">
+        <label>T</label>
+      </node>
+      <node id="1295">
+        <label>PreRenderable&lt; T &gt;</label>
+        <link refid="classtouchgfx_1_1_pre_renderable"/>
+        <childnode refid="1296" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/mixins/PreRenderable.hpp" line="32" column="1" bodyfile="touchgfx/mixins/PreRenderable.hpp" bodystart="31" bodyend="120"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_pre_renderable_1ab597fcb8ec83d0ea6816ed61d9ee9d5e" prot="public" virt="non-virtual"><scope>touchgfx::PreRenderable</scope><name>draw</name></member>
+      <member refid="classtouchgfx_1_1_pre_renderable_1a3c19d5dd54c0ed23b0e06c8a233886f9" prot="public" virt="non-virtual"><scope>touchgfx::PreRenderable</scope><name>isPreRendered</name></member>
+      <member refid="classtouchgfx_1_1_pre_renderable_1a1b9feb23a28bf2cd7cbeb6c5c15e25e0" prot="public" virt="non-virtual"><scope>touchgfx::PreRenderable</scope><name>preRender</name></member>
+      <member refid="classtouchgfx_1_1_pre_renderable_1a8f214b3c34abc92136ee022414b58f62" prot="public" virt="non-virtual"><scope>touchgfx::PreRenderable</scope><name>PreRenderable</name></member>
+      <member refid="classtouchgfx_1_1_pre_renderable_1aada99aba2a745a436a13e143e63cd26b" prot="private" virt="non-virtual"><scope>touchgfx::PreRenderable</scope><name>preRenderedAddress</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

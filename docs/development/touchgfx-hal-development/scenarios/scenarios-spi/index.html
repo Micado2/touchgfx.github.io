@@ -16,25 +16,25 @@
 <link rel="stylesheet" href="/styles.7918f707.css">
 
 
-<link rel="preload" href="/styles.af33404d.js" as="script">
+<link rel="preload" href="/styles.8e9a0dfe.js" as="script">
 
-<link rel="preload" href="/runtime~main.13f6c158.js" as="script">
+<link rel="preload" href="/runtime~main.c2177a22.js" as="script">
 
-<link rel="preload" href="/main.b2ef3ba9.js" as="script">
+<link rel="preload" href="/main.bcff10ef.js" as="script">
 
-<link rel="preload" href="/common.7e5c58cb.js" as="script">
+<link rel="preload" href="/common.49a6b0af.js" as="script">
 
-<link rel="preload" href="/2.82cf487c.js" as="script">
+<link rel="preload" href="/2.6d0f4c3a.js" as="script">
 
-<link rel="preload" href="/3.8bca877d.js" as="script">
+<link rel="preload" href="/3.21523051.js" as="script">
 
-<link rel="preload" href="/1be78505.210be432.js" as="script">
+<link rel="preload" href="/1be78505.2913786a.js" as="script">
 
-<link rel="preload" href="/20ac7829.73e8981d.js" as="script">
+<link rel="preload" href="/20ac7829.02dc4365.js" as="script">
 
-<link rel="preload" href="/17896441.b842672b.js" as="script">
+<link rel="preload" href="/17896441.6203982b.js" as="script">
 
-<link rel="preload" href="/bbf1dd48.b809314d.js" as="script">
+<link rel="preload" href="/bbf1dd48.fa932469.js" as="script">
 
 </head>
 <body>
@@ -48,25 +48,25 @@
 </span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">// Use default implementation (CPU copy!).</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">// This can be accelerated using regular DMA hardware</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token keyword" style="font-style:italic">for</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">height </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">0</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"> height </span><span class="token operator" style="color:rgb(137, 221, 255)">&lt;</span><span class="token plain"> rect</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token plain">height </span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"> height</span><span class="token operator" style="color:rgb(137, 221, 255)">++</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">        ptr </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">getClientFrameBuffer</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">+</span><span class="token plain"> rect</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token plain">x </span><span class="token operator" style="color:rgb(137, 221, 255)">+</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">height </span><span class="token operator" style="color:rgb(137, 221, 255)">+</span><span class="token plain"> rect</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token plain">y</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain">  </span><span class="token operator" style="color:rgb(137, 221, 255)">*</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">BSP_LCD_GetXSize</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">        </span><span class="token function" style="color:rgb(130, 170, 255)">LCD_IO_WriteMultipleData</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token keyword" style="font-style:italic">uint16_t</span><span class="token operator" style="color:rgb(137, 221, 255)">*</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain">ptr</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> rect</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token plain">width</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span></div></div></div></div></div><h2><a aria-hidden="true" tabindex="-1" class="anchor enhancedAnchor_ZqCz" id="returning-from-flushframebuffer"></a><a aria-hidden="true" tabindex="-1" class="hash-link" href="#returning-from-flushframebuffer" title="Direct link to heading">#</a>Returning from flushFrameBuffer</h2><p>Once the function returns, TouchGFX Engine returns to its. If developers desire to use DMA to perform these transfers, then they must ensure that <code>HAL::flushFrameBuffer(Rect&amp; rect)</code> does not return by waiting on a semaphore that is signaled by a DMA Completed interrupt.</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav"><div class="pagination-nav__item"></div><div class="pagination-nav__item pagination-nav__item--next"></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_TbNY"><ul class="contents contents__left-border"><li><a href="#transfering-the-framebuffer" class="contents__link">Transfering the framebuffer</a></li><li><a href="#returning-from-flushframebuffer" class="contents__link">Returning from flushFrameBuffer</a></li></ul></div></div></div></div></main></div></div><footer class="footer"><div class="container"><div class="text--center"><div>All rights reserved © 2020 STMicroelectronics | <a href="https://www.st.com/content/st_com/en/common/terms-of-use.html">Terms of use</a> | <a href="https://www.st.com/content/st_com/en/common/privacy-policy.html">Privacy Policy</a> | <a href="/docs/miscellaneous/cookie-policy">Cookie Policy</a> | <a href="https://app-de.onetrust.com/app/#/webform/2b87200d-4023-4588-9df7-ab0cdea1a67e">Exercise your rights</a></div></div></div></footer>
 </div>
 
-<script src="/styles.af33404d.js"></script>
+<script src="/styles.8e9a0dfe.js"></script>
 
-<script src="/runtime~main.13f6c158.js"></script>
+<script src="/runtime~main.c2177a22.js"></script>
 
-<script src="/main.b2ef3ba9.js"></script>
+<script src="/main.bcff10ef.js"></script>
 
-<script src="/common.7e5c58cb.js"></script>
+<script src="/common.49a6b0af.js"></script>
 
-<script src="/2.82cf487c.js"></script>
+<script src="/2.6d0f4c3a.js"></script>
 
-<script src="/3.8bca877d.js"></script>
+<script src="/3.21523051.js"></script>
 
-<script src="/1be78505.210be432.js"></script>
+<script src="/1be78505.2913786a.js"></script>
 
-<script src="/20ac7829.73e8981d.js"></script>
+<script src="/20ac7829.02dc4365.js"></script>
 
-<script src="/17896441.b842672b.js"></script>
+<script src="/17896441.6203982b.js"></script>
 
-<script src="/bbf1dd48.b809314d.js"></script>
+<script src="/bbf1dd48.fa932469.js"></script>
 
 
 </body>

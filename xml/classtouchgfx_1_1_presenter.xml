@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_presenter" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::Presenter</compoundname>
+    <includes local="no">Presenter.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_presenter_1a44d98e5a5532610ba5a8a0a3cf513bd1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void activate</definition>
+        <argsstring>()</argsstring>
+        <name>activate</name>
+        <briefdescription>
+<para>Place initialization code for the <ref refid="classtouchgfx_1_1_presenter" kindref="compound">Presenter</ref> here. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The activate function is called automatically when a screen transition causes this <ref refid="classtouchgfx_1_1_presenter" kindref="compound">Presenter</ref> to become active. Place initialization code for the <ref refid="classtouchgfx_1_1_presenter" kindref="compound">Presenter</ref> here. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mvp/Presenter.hpp" line="25" column="1" bodyfile="mvp/Presenter.hpp" bodystart="25" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_presenter_1a0b4b84b56b2df761be371988a39eff22" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void deactivate</definition>
+        <argsstring>()</argsstring>
+        <name>deactivate</name>
+        <briefdescription>
+<para>Place cleanup code for the <ref refid="classtouchgfx_1_1_presenter" kindref="compound">Presenter</ref> here. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The deactivate function is called automatically when a screen transition causes this <ref refid="classtouchgfx_1_1_presenter" kindref="compound">Presenter</ref> to become inactive. Place cleanup code for the <ref refid="classtouchgfx_1_1_presenter" kindref="compound">Presenter</ref> here. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mvp/Presenter.hpp" line="35" column="1" bodyfile="mvp/Presenter.hpp" bodystart="35" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_presenter_1a807d284fe3443399e2ea96e15e7a2060" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~Presenter</definition>
+        <argsstring>()</argsstring>
+        <name>~Presenter</name>
+        <briefdescription>
+<para>Finalizes an instance of the <ref refid="classtouchgfx_1_1_presenter" kindref="compound">Presenter</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mvp/Presenter.hpp" line="40" column="1" bodyfile="mvp/Presenter.hpp" bodystart="40" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_presenter_1aa692e205ce727dc3ae1157b55ef98664" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Presenter</definition>
+        <argsstring>()</argsstring>
+        <name>Presenter</name>
+        <briefdescription>
+<para>Initializes a new instance of the <ref refid="classtouchgfx_1_1_presenter" kindref="compound">Presenter</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mvp/Presenter.hpp" line="46" column="1" bodyfile="mvp/Presenter.hpp" bodystart="46" bodyend="48"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classtouchgfx_1_1_presenter" kindref="compound">Presenter</ref> base class that all application-specific presenters should derive from. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Only contains activate and deactivate virtual functions which are called automatically during screen transition. </para>
+    </detaileddescription>
+    <location file="mvp/Presenter.hpp" line="17" column="1" bodyfile="mvp/Presenter.hpp" bodystart="16" bodyend="49"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_presenter_1a44d98e5a5532610ba5a8a0a3cf513bd1" prot="public" virt="virtual"><scope>touchgfx::Presenter</scope><name>activate</name></member>
+      <member refid="classtouchgfx_1_1_presenter_1a0b4b84b56b2df761be371988a39eff22" prot="public" virt="virtual"><scope>touchgfx::Presenter</scope><name>deactivate</name></member>
+      <member refid="classtouchgfx_1_1_presenter_1aa692e205ce727dc3ae1157b55ef98664" prot="protected" virt="non-virtual"><scope>touchgfx::Presenter</scope><name>Presenter</name></member>
+      <member refid="classtouchgfx_1_1_presenter_1a807d284fe3443399e2ea96e15e7a2060" prot="public" virt="virtual"><scope>touchgfx::Presenter</scope><name>~Presenter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,361 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_many_block_allocator" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::ManyBlockAllocator</compoundname>
+    <basecompoundref refid="classtouchgfx_1_1_frame_buffer_allocator" prot="public" virt="non-virtual">FrameBufferAllocator</basecompoundref>
+    <includes local="no">FrameBufferAllocator.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>uint32_t</type>
+        <declname>block_size</declname>
+        <defname>block_size</defname>
+      </param>
+      <param>
+        <type>int32_t</type>
+        <declname>blocks</declname>
+        <defname>blocks</defname>
+      </param>
+      <param>
+        <type>uint32_t</type>
+        <declname>bytes_pr_pixel</declname>
+        <defname>bytes_pr_pixel</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="classtouchgfx_1_1_many_block_allocator_1ad6cf116f1b761cc66851b7c34eb68d88" prot="private" static="no" strong="no">
+        <type></type>
+        <name>BlockState</name>
+        <enumvalue id="classtouchgfx_1_1_many_block_allocator_1ad6cf116f1b761cc66851b7c34eb68d88a2f0d18fc0d0fa4a6cd92dc328501874d" prot="private">
+          <name>EMPTY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtouchgfx_1_1_many_block_allocator_1ad6cf116f1b761cc66851b7c34eb68d88a6a8a5583659fbcdf64186aacaf55cece" prot="private">
+          <name>ALLOCATED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtouchgfx_1_1_many_block_allocator_1ad6cf116f1b761cc66851b7c34eb68d88a0df07fbba3060ca340188fc6a9a583da" prot="private">
+          <name>DRAWN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtouchgfx_1_1_many_block_allocator_1ad6cf116f1b761cc66851b7c34eb68d88adfcb5fb1201d2110fa6604e4db15d459" prot="private">
+          <name>SENDING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/FrameBufferAllocator.hpp" line="301" column="1" bodyfile="touchgfx/hal/FrameBufferAllocator.hpp" bodystart="300" bodyend="306"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_many_block_allocator_1ac7d627a423afae523f3dd20d0e82cf03" prot="private" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref></type>
+        <definition>Rect blockRect[blocks]</definition>
+        <argsstring>[blocks]</argsstring>
+        <name>blockRect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/FrameBufferAllocator.hpp" line="309" column="1" bodyfile="touchgfx/hal/FrameBufferAllocator.hpp" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_many_block_allocator_1a5c850c51c9f607b4431a9aaeb73661cb" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int drawingBlock</definition>
+        <argsstring></argsstring>
+        <name>drawingBlock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/FrameBufferAllocator.hpp" line="311" column="1" bodyfile="touchgfx/hal/FrameBufferAllocator.hpp" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_many_block_allocator_1acc56b171d83626dd1f0b6bdabbbf24b4" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t memory[blocks][block_size/4]</definition>
+        <argsstring>[blocks][block_size/4]</argsstring>
+        <name>memory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/FrameBufferAllocator.hpp" line="308" column="1" bodyfile="touchgfx/hal/FrameBufferAllocator.hpp" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_many_block_allocator_1a323c56e0f2fc51a00dd39944766a884f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int sendingBlock</definition>
+        <argsstring></argsstring>
+        <name>sendingBlock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/FrameBufferAllocator.hpp" line="310" column="1" bodyfile="touchgfx/hal/FrameBufferAllocator.hpp" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_many_block_allocator_1a1b7a98e1d995f99395a1eb3df65659a0" prot="private" static="no" mutable="no">
+        <type>BlockState</type>
+        <definition>volatile BlockState state[blocks]</definition>
+        <argsstring>[blocks]</argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/FrameBufferAllocator.hpp" line="307" column="1" bodyfile="touchgfx/hal/FrameBufferAllocator.hpp" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_many_block_allocator_1a2497da66d9e04ea0b5112cddd1d297bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>uint16_t</type>
+        <definition>virtual uint16_t allocateBlock</definition>
+        <argsstring>(const uint16_t x, const uint16_t y, const uint16_t width, const uint16_t height, uint8_t **block)</argsstring>
+        <name>allocateBlock</name>
+        <reimplements refid="classtouchgfx_1_1_frame_buffer_allocator_1a3365296b1eba57ee3a979ae24f58bffa">allocateBlock</reimplements>
+        <param>
+          <type>const uint16_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const uint16_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const uint16_t</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>const uint16_t</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>uint8_t **</type>
+          <declname>block</declname>
+        </param>
+        <briefdescription>
+<para>Allocates a framebuffer block. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The block will have at least the width requested. The height of the allocated block can be lower than requested if not enough memory is available.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The absolute x coordinate of the block on the screen. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The absolute y coordinate of the block on the screen. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The width of the block. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The height of the block. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">block</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to pointer to return the block address in.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The height of the allocated block. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/FrameBufferAllocator.hpp" line="218" column="1" bodyfile="touchgfx/hal/FrameBufferAllocator.hpp" bodystart="218" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_many_block_allocator_1a27ace0c47cb7a44e1542a0cde44a8efe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void freeBlockAfterTransfer</definition>
+        <argsstring>()</argsstring>
+        <name>freeBlockAfterTransfer</name>
+        <reimplements refid="classtouchgfx_1_1_frame_buffer_allocator_1a7bdd152d1fb8624413d5999c0e429115">freeBlockAfterTransfer</reimplements>
+        <briefdescription>
+<para>Free a block after transfer to the <ref refid="classtouchgfx_1_1_l_c_d" kindref="compound">LCD</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Marks a previously allocated block as transferred and ready to reuse. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/FrameBufferAllocator.hpp" line="293" column="1" bodyfile="touchgfx/hal/FrameBufferAllocator.hpp" bodystart="293" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_many_block_allocator_1a137e28734f80992194e4f42ec0846ed2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>const uint8_t *</type>
+        <definition>virtual const uint8_t* getBlockForTransfer</definition>
+        <argsstring>(Rect &amp;rect)</argsstring>
+        <name>getBlockForTransfer</name>
+        <reimplements refid="classtouchgfx_1_1_frame_buffer_allocator_1acf7e532e03f66d46e50e9f085e30bbea">getBlockForTransfer</reimplements>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>rect</declname>
+        </param>
+        <briefdescription>
+<para>Get the block ready for transfer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference to rect to write block x, y, width, and height.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns the address of the block ready for transfer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/FrameBufferAllocator.hpp" line="274" column="1" bodyfile="touchgfx/hal/FrameBufferAllocator.hpp" bodystart="274" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_many_block_allocator_1acdafcf1d6b01559219c02e6076cdcb05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool hasBlockReadyForTransfer</definition>
+        <argsstring>()</argsstring>
+        <name>hasBlockReadyForTransfer</name>
+        <reimplements refid="classtouchgfx_1_1_frame_buffer_allocator_1a0c4bb68f5e74e3bbec35b6cf38dccb9a">hasBlockReadyForTransfer</reimplements>
+        <briefdescription>
+<para>Check if a block is ready for transfer to the <ref refid="classtouchgfx_1_1_l_c_d" kindref="compound">LCD</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if a block is ready for transfer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/FrameBufferAllocator.hpp" line="255" column="1" bodyfile="touchgfx/hal/FrameBufferAllocator.hpp" bodystart="255" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_many_block_allocator_1a896d094795c45da65d6bb62a1bfd2897" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ManyBlockAllocator</definition>
+        <argsstring>()</argsstring>
+        <name>ManyBlockAllocator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/FrameBufferAllocator.hpp" line="195" column="1" bodyfile="touchgfx/hal/FrameBufferAllocator.hpp" bodystart="195" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_many_block_allocator_1a639978843010083e09b66a073a58d8b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void markBlockReadyForTransfer</definition>
+        <argsstring>()</argsstring>
+        <name>markBlockReadyForTransfer</name>
+        <reimplements refid="classtouchgfx_1_1_frame_buffer_allocator_1a47d30f293c8e92a7ef8b9ee9a0660091">markBlockReadyForTransfer</reimplements>
+        <briefdescription>
+<para>Marks a previously allocated block as ready to be transferred to the <ref refid="classtouchgfx_1_1_l_c_d" kindref="compound">LCD</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/FrameBufferAllocator.hpp" line="242" column="1" bodyfile="touchgfx/hal/FrameBufferAllocator.hpp" bodystart="242" bodyend="248"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class is partial framebuffer allocator using multiple blocks. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>New buffers can be allocated until no free blocks are available. After transfer to <ref refid="classtouchgfx_1_1_l_c_d" kindref="compound">LCD</ref>, a block is queued for allocation again.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_single_block_allocator" kindref="compound">SingleBlockAllocator</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1021">
+        <label>ManyBlockAllocator&lt; block_size, blocks, bytes_pr_pixel &gt;</label>
+        <link refid="classtouchgfx_1_1_many_block_allocator"/>
+        <childnode refid="1022" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1022">
+        <label>FrameBufferAllocator</label>
+        <link refid="classtouchgfx_1_1_frame_buffer_allocator"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1023">
+        <label>ManyBlockAllocator&lt; block_size, blocks, bytes_pr_pixel &gt;</label>
+        <link refid="classtouchgfx_1_1_many_block_allocator"/>
+        <childnode refid="1024" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1024">
+        <label>FrameBufferAllocator</label>
+        <link refid="classtouchgfx_1_1_frame_buffer_allocator"/>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/hal/FrameBufferAllocator.hpp" line="193" column="1" bodyfile="touchgfx/hal/FrameBufferAllocator.hpp" bodystart="192" bodyend="312"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_many_block_allocator_1a2497da66d9e04ea0b5112cddd1d297bb" prot="public" virt="virtual"><scope>touchgfx::ManyBlockAllocator</scope><name>allocateBlock</name></member>
+      <member refid="classtouchgfx_1_1_many_block_allocator_1ad6cf116f1b761cc66851b7c34eb68d88a6a8a5583659fbcdf64186aacaf55cece" prot="private" virt="non-virtual"><scope>touchgfx::ManyBlockAllocator</scope><name>ALLOCATED</name></member>
+      <member refid="classtouchgfx_1_1_many_block_allocator_1ac7d627a423afae523f3dd20d0e82cf03" prot="private" virt="non-virtual"><scope>touchgfx::ManyBlockAllocator</scope><name>blockRect</name></member>
+      <member refid="classtouchgfx_1_1_many_block_allocator_1ad6cf116f1b761cc66851b7c34eb68d88" prot="private" virt="non-virtual"><scope>touchgfx::ManyBlockAllocator</scope><name>BlockState</name></member>
+      <member refid="classtouchgfx_1_1_many_block_allocator_1a5c850c51c9f607b4431a9aaeb73661cb" prot="private" virt="non-virtual"><scope>touchgfx::ManyBlockAllocator</scope><name>drawingBlock</name></member>
+      <member refid="classtouchgfx_1_1_many_block_allocator_1ad6cf116f1b761cc66851b7c34eb68d88a0df07fbba3060ca340188fc6a9a583da" prot="private" virt="non-virtual"><scope>touchgfx::ManyBlockAllocator</scope><name>DRAWN</name></member>
+      <member refid="classtouchgfx_1_1_many_block_allocator_1ad6cf116f1b761cc66851b7c34eb68d88a2f0d18fc0d0fa4a6cd92dc328501874d" prot="private" virt="non-virtual"><scope>touchgfx::ManyBlockAllocator</scope><name>EMPTY</name></member>
+      <member refid="classtouchgfx_1_1_many_block_allocator_1a27ace0c47cb7a44e1542a0cde44a8efe" prot="public" virt="virtual"><scope>touchgfx::ManyBlockAllocator</scope><name>freeBlockAfterTransfer</name></member>
+      <member refid="classtouchgfx_1_1_many_block_allocator_1a137e28734f80992194e4f42ec0846ed2" prot="public" virt="virtual"><scope>touchgfx::ManyBlockAllocator</scope><name>getBlockForTransfer</name></member>
+      <member refid="classtouchgfx_1_1_many_block_allocator_1acdafcf1d6b01559219c02e6076cdcb05" prot="public" virt="virtual"><scope>touchgfx::ManyBlockAllocator</scope><name>hasBlockReadyForTransfer</name></member>
+      <member refid="classtouchgfx_1_1_many_block_allocator_1a896d094795c45da65d6bb62a1bfd2897" prot="public" virt="non-virtual"><scope>touchgfx::ManyBlockAllocator</scope><name>ManyBlockAllocator</name></member>
+      <member refid="classtouchgfx_1_1_many_block_allocator_1a639978843010083e09b66a073a58d8b5" prot="public" virt="virtual"><scope>touchgfx::ManyBlockAllocator</scope><name>markBlockReadyForTransfer</name></member>
+      <member refid="classtouchgfx_1_1_many_block_allocator_1acc56b171d83626dd1f0b6bdabbbf24b4" prot="private" virt="non-virtual"><scope>touchgfx::ManyBlockAllocator</scope><name>memory</name></member>
+      <member refid="classtouchgfx_1_1_many_block_allocator_1ad6cf116f1b761cc66851b7c34eb68d88adfcb5fb1201d2110fa6604e4db15d459" prot="private" virt="non-virtual"><scope>touchgfx::ManyBlockAllocator</scope><name>SENDING</name></member>
+      <member refid="classtouchgfx_1_1_many_block_allocator_1a323c56e0f2fc51a00dd39944766a884f" prot="private" virt="non-virtual"><scope>touchgfx::ManyBlockAllocator</scope><name>sendingBlock</name></member>
+      <member refid="classtouchgfx_1_1_many_block_allocator_1a1b7a98e1d995f99395a1eb3df65659a0" prot="private" virt="non-virtual"><scope>touchgfx::ManyBlockAllocator</scope><name>state</name></member>
+      <member refid="classtouchgfx_1_1_frame_buffer_allocator_1af5063163985b08c7cc7e26841f10302d" prot="public" virt="virtual"><scope>touchgfx::ManyBlockAllocator</scope><name>~FrameBufferAllocator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

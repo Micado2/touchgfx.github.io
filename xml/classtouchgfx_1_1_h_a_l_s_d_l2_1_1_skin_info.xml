@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_h_a_l_s_d_l2_1_1_skin_info" kind="class" language="C++" prot="private">
+    <compoundname>touchgfx::HALSDL2::SkinInfo</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_h_a_l_s_d_l2_1_1_skin_info_1a4be6fb5d363aa849d727a425a366cb0d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool hasSemiTransparency</definition>
+        <argsstring></argsstring>
+        <name>hasSemiTransparency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/hal/simulator/sdl2/HALSDL2.hpp" line="360" column="1" bodyfile="platform/hal/simulator/sdl2/HALSDL2.hpp" bodystart="360" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_h_a_l_s_d_l2_1_1_skin_info_1aafa0aa4842bc9acd32ffa5aa9fed33af" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool isOpaque</definition>
+        <argsstring></argsstring>
+        <name>isOpaque</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/hal/simulator/sdl2/HALSDL2.hpp" line="359" column="1" bodyfile="platform/hal/simulator/sdl2/HALSDL2.hpp" bodystart="359" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_h_a_l_s_d_l2_1_1_skin_info_1a57abafae3e09830d3569389b2cfcd6d5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int offsetX</definition>
+        <argsstring></argsstring>
+        <name>offsetX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/hal/simulator/sdl2/HALSDL2.hpp" line="361" column="1" bodyfile="platform/hal/simulator/sdl2/HALSDL2.hpp" bodystart="361" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_h_a_l_s_d_l2_1_1_skin_info_1ad187214e7b10f8e8d3d271c33dbdb91f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int offsetY</definition>
+        <argsstring></argsstring>
+        <name>offsetY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/hal/simulator/sdl2/HALSDL2.hpp" line="362" column="1" bodyfile="platform/hal/simulator/sdl2/HALSDL2.hpp" bodystart="362" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_h_a_l_s_d_l2_1_1_skin_info_1a2f5cac12e913bcfcff660305bf88dd3b" prot="public" static="no" mutable="no">
+        <type>SDL_Surface *</type>
+        <definition>SDL_Surface* surface</definition>
+        <argsstring></argsstring>
+        <name>surface</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/hal/simulator/sdl2/HALSDL2.hpp" line="358" column="1" bodyfile="platform/hal/simulator/sdl2/HALSDL2.hpp" bodystart="358" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_h_a_l_s_d_l2_1_1_skin_info_1a671b631003351cefcc61478fe3ca140b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SkinInfo</definition>
+        <argsstring>()</argsstring>
+        <name>SkinInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/hal/simulator/sdl2/HALSDL2.hpp" line="363" column="1" bodyfile="platform/hal/simulator/sdl2/HALSDL2.hpp" bodystart="363" bodyend="366"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_h_a_l_s_d_l2_1_1_skin_info_1a6f66ac9162fa3bfaeb6b1fd035e7cb58" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~SkinInfo</definition>
+        <argsstring>()</argsstring>
+        <name>~SkinInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/hal/simulator/sdl2/HALSDL2.hpp" line="367" column="1" bodyfile="platform/hal/simulator/sdl2/HALSDL2.hpp" bodystart="367" bodyend="369"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="platform/hal/simulator/sdl2/HALSDL2.hpp" line="356" column="1" bodyfile="platform/hal/simulator/sdl2/HALSDL2.hpp" bodystart="355" bodyend="370"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_h_a_l_s_d_l2_1_1_skin_info_1a4be6fb5d363aa849d727a425a366cb0d" prot="public" virt="non-virtual"><scope>touchgfx::HALSDL2::SkinInfo</scope><name>hasSemiTransparency</name></member>
+      <member refid="classtouchgfx_1_1_h_a_l_s_d_l2_1_1_skin_info_1aafa0aa4842bc9acd32ffa5aa9fed33af" prot="public" virt="non-virtual"><scope>touchgfx::HALSDL2::SkinInfo</scope><name>isOpaque</name></member>
+      <member refid="classtouchgfx_1_1_h_a_l_s_d_l2_1_1_skin_info_1a57abafae3e09830d3569389b2cfcd6d5" prot="public" virt="non-virtual"><scope>touchgfx::HALSDL2::SkinInfo</scope><name>offsetX</name></member>
+      <member refid="classtouchgfx_1_1_h_a_l_s_d_l2_1_1_skin_info_1ad187214e7b10f8e8d3d271c33dbdb91f" prot="public" virt="non-virtual"><scope>touchgfx::HALSDL2::SkinInfo</scope><name>offsetY</name></member>
+      <member refid="classtouchgfx_1_1_h_a_l_s_d_l2_1_1_skin_info_1a671b631003351cefcc61478fe3ca140b" prot="public" virt="non-virtual"><scope>touchgfx::HALSDL2::SkinInfo</scope><name>SkinInfo</name></member>
+      <member refid="classtouchgfx_1_1_h_a_l_s_d_l2_1_1_skin_info_1a2f5cac12e913bcfcff660305bf88dd3b" prot="public" virt="non-virtual"><scope>touchgfx::HALSDL2::SkinInfo</scope><name>surface</name></member>
+      <member refid="classtouchgfx_1_1_h_a_l_s_d_l2_1_1_skin_info_1a6f66ac9162fa3bfaeb6b1fd035e7cb58" prot="public" virt="virtual"><scope>touchgfx::HALSDL2::SkinInfo</scope><name>~SkinInfo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

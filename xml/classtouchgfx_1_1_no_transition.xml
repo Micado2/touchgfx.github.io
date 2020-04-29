@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_no_transition" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::NoTransition</compoundname>
+    <basecompoundref refid="classtouchgfx_1_1_transition" prot="public" virt="non-virtual">Transition</basecompoundref>
+    <includes local="no">NoTransition.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_no_transition_1a1af635cee0f186c3d0fcea60bac14355" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void handleTickEvent</definition>
+        <argsstring>()</argsstring>
+        <name>handleTickEvent</name>
+        <reimplements refid="classtouchgfx_1_1_transition_1a1af635cee0f186c3d0fcea60bac14355">handleTickEvent</reimplements>
+        <briefdescription>
+<para>Indicates that the transition is done after the first tick. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transitions/NoTransition.hpp" line="32" column="1" bodyfile="touchgfx/transitions/NoTransition.hpp" bodystart="32" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_no_transition_1aa74e9f960e179bf03f8f5d2adf6f71c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NoTransition</definition>
+        <argsstring>()</argsstring>
+        <name>NoTransition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transitions/NoTransition.hpp" line="22" column="1" bodyfile="touchgfx/transitions/NoTransition.hpp" bodystart="22" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_no_transition_1a1f08a0825896c67b0551b7ded26cb0e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~NoTransition</definition>
+        <argsstring>()</argsstring>
+        <name>~NoTransition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transitions/NoTransition.hpp" line="27" column="1" bodyfile="touchgfx/transitions/NoTransition.hpp" bodystart="27" bodyend="29"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The most simple <ref refid="classtouchgfx_1_1_transition" kindref="compound">Transition</ref> without any visual effects. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>THe screen transition is done by immediately replace the current <ref refid="classtouchgfx_1_1_screen" kindref="compound">Screen</ref> with a new <ref refid="classtouchgfx_1_1_screen" kindref="compound">Screen</ref>.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_transition" kindref="compound">Transition</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1091">
+        <label>NoTransition</label>
+        <link refid="classtouchgfx_1_1_no_transition"/>
+        <childnode refid="1092" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1092">
+        <label>Transition</label>
+        <link refid="classtouchgfx_1_1_transition"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1093">
+        <label>NoTransition</label>
+        <link refid="classtouchgfx_1_1_no_transition"/>
+        <childnode refid="1094" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1094">
+        <label>Transition</label>
+        <link refid="classtouchgfx_1_1_transition"/>
+        <childnode refid="1095" relation="usage">
+          <edgelabel>screenContainer</edgelabel>
+        </childnode>
+      </node>
+      <node id="1095">
+        <label>Container</label>
+        <link refid="classtouchgfx_1_1_container"/>
+        <childnode refid="1096" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1096" relation="usage">
+          <edgelabel>firstChild</edgelabel>
+        </childnode>
+      </node>
+      <node id="1097">
+        <label>Rect</label>
+        <link refid="classtouchgfx_1_1_rect"/>
+      </node>
+      <node id="1096">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+        <childnode refid="1097" relation="usage">
+          <edgelabel>rect</edgelabel>
+        </childnode>
+        <childnode refid="1096" relation="usage">
+          <edgelabel>nextSibling</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/transitions/NoTransition.hpp" line="20" column="1" bodyfile="touchgfx/transitions/NoTransition.hpp" bodystart="19" bodyend="36"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_transition_1a1d39aac66e12dae50a24cd7a9100ef33" prot="protected" virt="non-virtual"><scope>touchgfx::NoTransition</scope><name>done</name></member>
+      <member refid="classtouchgfx_1_1_no_transition_1a1af635cee0f186c3d0fcea60bac14355" prot="public" virt="virtual"><scope>touchgfx::NoTransition</scope><name>handleTickEvent</name></member>
+      <member refid="classtouchgfx_1_1_transition_1a9339772ec5ac9fa929938109207f2863" prot="public" virt="virtual"><scope>touchgfx::NoTransition</scope><name>init</name></member>
+      <member refid="classtouchgfx_1_1_transition_1a0fa3c9859f822fb382bf552628eb5ab6" prot="public" virt="non-virtual"><scope>touchgfx::NoTransition</scope><name>isDone</name></member>
+      <member refid="classtouchgfx_1_1_no_transition_1aa74e9f960e179bf03f8f5d2adf6f71c7" prot="public" virt="non-virtual"><scope>touchgfx::NoTransition</scope><name>NoTransition</name></member>
+      <member refid="classtouchgfx_1_1_transition_1a3e82472757e12af66d888eac45ca561c" prot="protected" virt="non-virtual"><scope>touchgfx::NoTransition</scope><name>screenContainer</name></member>
+      <member refid="classtouchgfx_1_1_transition_1a71c8f06a828ab9b914af259996ff5ffe" prot="public" virt="virtual"><scope>touchgfx::NoTransition</scope><name>setScreenContainer</name></member>
+      <member refid="classtouchgfx_1_1_transition_1ae409c34c6767ff70d1e29a46fe41dfff" prot="public" virt="virtual"><scope>touchgfx::NoTransition</scope><name>tearDown</name></member>
+      <member refid="classtouchgfx_1_1_transition_1a5cff3a67b77de17d053a190f241aa753" prot="public" virt="non-virtual"><scope>touchgfx::NoTransition</scope><name>Transition</name></member>
+      <member refid="classtouchgfx_1_1_no_transition_1a1f08a0825896c67b0551b7ded26cb0e9" prot="public" virt="virtual"><scope>touchgfx::NoTransition</scope><name>~NoTransition</name></member>
+      <member refid="classtouchgfx_1_1_transition_1a30dcd531eb9e8a4735038bb2db58ae2a" prot="public" virt="virtual"><scope>touchgfx::NoTransition</scope><name>~Transition</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
