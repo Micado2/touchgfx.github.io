@@ -1,0 +1,671 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_canvas" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::Canvas</compoundname>
+    <includes local="no">Canvas.hpp</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="classtouchgfx_1_1_canvas_1adf764cbdea00d65edcd07bb9953ad2b7" prot="private" static="no" strong="no">
+        <type></type>
+        <name>@1</name>
+        <enumvalue id="classtouchgfx_1_1_canvas_1adf764cbdea00d65edcd07bb9953ad2b7aa06ff50e352cec866204a34e5c944299" prot="private">
+          <name>POINT_IS_ABOVE</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtouchgfx_1_1_canvas_1adf764cbdea00d65edcd07bb9953ad2b7a09e61d9cfee33325253ab9c2e3d916ec" prot="private">
+          <name>POINT_IS_BELOW</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtouchgfx_1_1_canvas_1adf764cbdea00d65edcd07bb9953ad2b7a90e8e7a1e8fa28e2b0051a7c60cdeefe" prot="private">
+          <name>POINT_IS_LEFT</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtouchgfx_1_1_canvas_1adf764cbdea00d65edcd07bb9953ad2b7a7d4e810d60930f6afc65a9473d75038c" prot="private">
+          <name>POINT_IS_RIGHT</name>
+          <initializer>= 1 &lt;&lt; 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Canvas.hpp" line="141" column="1" bodyfile="touchgfx/widgets/canvas/Canvas.hpp" bodystart="140" bodyend="146"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_canvas_1addf90f45f016b8ab0f8c3c99feffa46b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool enoughMemory</definition>
+        <argsstring></argsstring>
+        <name>enoughMemory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Canvas.hpp" line="133" column="1" bodyfile="touchgfx/widgets/canvas/Canvas.hpp" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_canvas_1a5a86bb666b438b15840f5c7a7fcab56f" prot="private" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref></type>
+        <definition>CWRUtil::Q5 initialX</definition>
+        <argsstring></argsstring>
+        <name>initialX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Canvas.hpp" line="138" column="1" bodyfile="touchgfx/widgets/canvas/Canvas.hpp" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_canvas_1aad79ae80395047fdbba6640c8b6e2f23" prot="private" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref></type>
+        <definition>CWRUtil::Q5 initialY</definition>
+        <argsstring></argsstring>
+        <name>initialY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Canvas.hpp" line="138" column="1" bodyfile="touchgfx/widgets/canvas/Canvas.hpp" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_canvas_1ab48533ad807d722bec62f6a3cc61c4cd" prot="private" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref></type>
+        <definition>CWRUtil::Q5 invalidatedAreaHeight</definition>
+        <argsstring></argsstring>
+        <name>invalidatedAreaHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Canvas.hpp" line="124" column="1" bodyfile="touchgfx/widgets/canvas/Canvas.hpp" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_canvas_1ac465d49f18724962c23b09d8b4913259" prot="private" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref></type>
+        <definition>CWRUtil::Q5 invalidatedAreaWidth</definition>
+        <argsstring></argsstring>
+        <name>invalidatedAreaWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Canvas.hpp" line="123" column="1" bodyfile="touchgfx/widgets/canvas/Canvas.hpp" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_canvas_1ae858ab4475857e96b34ec1f71edb71bf" prot="private" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref></type>
+        <definition>CWRUtil::Q5 invalidatedAreaX</definition>
+        <argsstring></argsstring>
+        <name>invalidatedAreaX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Canvas.hpp" line="121" column="1" bodyfile="touchgfx/widgets/canvas/Canvas.hpp" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_canvas_1a3b07ba64d51555d3e2899ae4af1e0669" prot="private" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref></type>
+        <definition>CWRUtil::Q5 invalidatedAreaY</definition>
+        <argsstring></argsstring>
+        <name>invalidatedAreaY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Canvas.hpp" line="122" column="1" bodyfile="touchgfx/widgets/canvas/Canvas.hpp" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_canvas_1adadb2d4fc74e6037d5c256fddbe34e6c" prot="private" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t offsetX</definition>
+        <argsstring></argsstring>
+        <name>offsetX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Canvas.hpp" line="130" column="1" bodyfile="touchgfx/widgets/canvas/Canvas.hpp" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_canvas_1adb93e6c192fce011399173c16488bb6e" prot="private" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t offsetY</definition>
+        <argsstring></argsstring>
+        <name>offsetY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Canvas.hpp" line="130" column="1" bodyfile="touchgfx/widgets/canvas/Canvas.hpp" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_canvas_1ab22299d95df1ba978e46b9e0db60c3e7" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t penDownOutside</definition>
+        <argsstring></argsstring>
+        <name>penDownOutside</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Canvas.hpp" line="137" column="1" bodyfile="touchgfx/widgets/canvas/Canvas.hpp" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_canvas_1a246f843638358747e0ab7c7d4f9ddd95" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool penHasBeenDown</definition>
+        <argsstring></argsstring>
+        <name>penHasBeenDown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Canvas.hpp" line="134" column="1" bodyfile="touchgfx/widgets/canvas/Canvas.hpp" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_canvas_1a152f5f2fd9f5f92a704ec44227adade2" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool penUp</definition>
+        <argsstring></argsstring>
+        <name>penUp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Canvas.hpp" line="134" column="1" bodyfile="touchgfx/widgets/canvas/Canvas.hpp" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_canvas_1a01b12abca2d0839e1714d411244d3c6b" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t previousOutside</definition>
+        <argsstring></argsstring>
+        <name>previousOutside</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Canvas.hpp" line="136" column="1" bodyfile="touchgfx/widgets/canvas/Canvas.hpp" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_canvas_1aa39dbd0e2d3e189bd015f1978a64c5af" prot="private" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref></type>
+        <definition>CWRUtil::Q5 previousX</definition>
+        <argsstring></argsstring>
+        <name>previousX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Canvas.hpp" line="135" column="1" bodyfile="touchgfx/widgets/canvas/Canvas.hpp" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_canvas_1ae677569b2fca3c969ce39bae87b55aa6" prot="private" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref></type>
+        <definition>CWRUtil::Q5 previousY</definition>
+        <argsstring></argsstring>
+        <name>previousY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Canvas.hpp" line="135" column="1" bodyfile="touchgfx/widgets/canvas/Canvas.hpp" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_canvas_1ab9caccdc1783ed52f7a6ad605ed5a541" prot="private" static="no" mutable="no">
+        <type>Rasterizer</type>
+        <definition>Rasterizer ras</definition>
+        <argsstring></argsstring>
+        <name>ras</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Canvas.hpp" line="128" column="1" bodyfile="touchgfx/widgets/canvas/Canvas.hpp" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_canvas_1ad775e5b36c0e9538c089adf1722c6539" prot="private" static="no" mutable="no">
+        <type>RenderingBuffer</type>
+        <definition>RenderingBuffer rbuf</definition>
+        <argsstring></argsstring>
+        <name>rbuf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Canvas.hpp" line="127" column="1" bodyfile="touchgfx/widgets/canvas/Canvas.hpp" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_canvas_1a371ca1120cae189705233e8122bc60d2" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classtouchgfx_1_1_canvas_widget" kindref="compound">CanvasWidget</ref> *</type>
+        <definition>const CanvasWidget* widget</definition>
+        <argsstring></argsstring>
+        <name>widget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Canvas.hpp" line="118" column="1" bodyfile="touchgfx/widgets/canvas/Canvas.hpp" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_canvas_1a01ed44749cb2ba41e71027cf63775cce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Canvas</definition>
+        <argsstring>(const CanvasWidget *_widget, const Rect &amp;invalidatedArea)</argsstring>
+        <name>Canvas</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_canvas_widget" kindref="compound">CanvasWidget</ref> *</type>
+          <declname>_widget</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>invalidatedArea</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classtouchgfx_1_1_canvas" kindref="compound">Canvas</ref> Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Locks the framebuffer and prepares for drawing only in the allowed area which has been invalidated. The color depth of the <ref refid="classtouchgfx_1_1_l_c_d" kindref="compound">LCD</ref> is taken into account.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_widget</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the <ref refid="classtouchgfx_1_1_canvas_widget" kindref="compound">CanvasWidget</ref> using this <ref refid="classtouchgfx_1_1_canvas" kindref="compound">Canvas</ref>. Used for getting the canvas dimensions. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>invalidatedArea</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the are which should be updated. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Locks the framebuffer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Canvas.hpp" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_canvas_1a4766487c28986ceb8f515d5e75c52e7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lineTo</definition>
+        <argsstring>(CWRUtil::Q5 x, CWRUtil::Q5 y)</argsstring>
+        <name>lineTo</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref></type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Draw line from the current (x, y) to the new (x, y) as part of the shape being drawn. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>As for moveTo, lineTo commands completely outside the drawing are are discarded.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate for the pen position in <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref> format. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate for the pen position in <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref> format.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref>, <ref refid="classtouchgfx_1_1_canvas_1a4c24191a2ceb264a14c683668ea4e457" kindref="member">moveTo</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Canvas.hpp" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_canvas_1a5ea3f19fcfa3e888ce8434060a3d8779" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void lineTo</definition>
+        <argsstring>(T x, T y)</argsstring>
+        <name>lineTo</name>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Draw line from the current (x, y) to the new (x, y) as part of the shape being drawn. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>As for moveTo, lineTo commands completely outside the drawing are are discarded.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>either int or float. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate for the pen position. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate for the pen position. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Canvas.hpp" line="100" column="1" bodyfile="touchgfx/widgets/canvas/Canvas.hpp" bodystart="100" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_canvas_1a4c24191a2ceb264a14c683668ea4e457" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void moveTo</definition>
+        <argsstring>(CWRUtil::Q5 x, CWRUtil::Q5 y)</argsstring>
+        <name>moveTo</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref></type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Move the current pen position to (x, y). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the pen is outside the drawing area, nothing is done, but the coordinates are saved in case the next operation is lineTo a coordinate which is inside (or on the opposite side of) the drawing area.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate for the pen position in <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref> format. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate for the pen position in <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref> format.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref>, <ref refid="classtouchgfx_1_1_canvas_1a4766487c28986ceb8f515d5e75c52e7e" kindref="member">lineTo</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Canvas.hpp" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_canvas_1a865d9260e4c0b2d94133fada7d394f68" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void moveTo</definition>
+        <argsstring>(T x, T y)</argsstring>
+        <name>moveTo</name>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Move the current pen position to (x, y). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the pen is outside (above or below) the drawing area, nothing is done, but the coordinates are saved in case the next operation is lineTo a coordinate which is inside (or on the opposite side of) the drawing area.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Either int or float. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate for the pen position. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate for the pen position. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Canvas.hpp" line="86" column="1" bodyfile="touchgfx/widgets/canvas/Canvas.hpp" bodystart="86" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_canvas_1a56015385cd7137607aea8d34af868524" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool render</definition>
+        <argsstring>()</argsstring>
+        <name>render</name>
+        <briefdescription>
+<para>Render the graphical shape drawn using <ref refid="classtouchgfx_1_1_canvas_1a4c24191a2ceb264a14c683668ea4e457" kindref="member">moveTo()</ref> and <ref refid="classtouchgfx_1_1_canvas_1a4766487c28986ceb8f515d5e75c52e7e" kindref="member">lineTo()</ref> with the given Painter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The shape is automatically closed, i.e. a <ref refid="classtouchgfx_1_1_canvas_1a4766487c28986ceb8f515d5e75c52e7e" kindref="member">lineTo()</ref> is automatically inserted connecting the current pen position with the initial pen position given in the first <ref refid="classtouchgfx_1_1_canvas_1a4c24191a2ceb264a14c683668ea4e457" kindref="member">moveTo()</ref> command.</para>
+<para><simplesect kind="return"><para>true if the widget was rendered, false if insufficient memory was available to render the widget. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Canvas.hpp" line="114" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_canvas_1a3a3fded642cee4529551bd50c3e64f3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual ~Canvas</definition>
+        <argsstring>()</argsstring>
+        <name>~Canvas</name>
+        <briefdescription>
+<para>Finalizes an instance of the <ref refid="classtouchgfx_1_1_canvas" kindref="compound">Canvas</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Unlocks the framebuffer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Canvas.hpp" line="50" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_canvas_1a5ae591df94fc66ccb85cbb6565368bca" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Canvas.hpp" line="152" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_canvas_1ae46ef1f1fb8247f509ec2734208564c6" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t isOutside</definition>
+        <argsstring>(const CWRUtil::Q5 &amp;x, const CWRUtil::Q5 &amp;y, const CWRUtil::Q5 &amp;width, const CWRUtil::Q5 &amp;height) const</argsstring>
+        <name>isOutside</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref> &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref> &amp;</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref> &amp;</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref> &amp;</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Canvas.hpp" line="148" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_canvas_1a6e5fd4f035f08e17d902b249c0b2c05e" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void transformFrameBufferToDisplay</definition>
+        <argsstring>(CWRUtil::Q5 &amp;x, CWRUtil::Q5 &amp;y) const</argsstring>
+        <name>transformFrameBufferToDisplay</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref> &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref> &amp;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Canvas.hpp" line="150" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class for easy rendering using <ref refid="classtouchgfx_1_1_canvas_widget_renderer" kindref="compound">CanvasWidgetRenderer</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="classtouchgfx_1_1_canvas" kindref="compound">Canvas</ref> class will make implementation of a new <ref refid="classtouchgfx_1_1_canvas_widget" kindref="compound">CanvasWidget</ref> very easy. The few simple primitives allows moving a &quot;pen&quot; and drawing the outline of a shape which can then be rendered.</para>
+<para>The <ref refid="classtouchgfx_1_1_canvas" kindref="compound">Canvas</ref> class has been optimized to eliminate drawing unnecessary lines outside the currently invalidated rectangle. </para>
+    </detaileddescription>
+    <location file="touchgfx/widgets/canvas/Canvas.hpp" line="31" column="1" bodyfile="touchgfx/widgets/canvas/Canvas.hpp" bodystart="30" bodyend="153"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_canvas_1a01ed44749cb2ba41e71027cf63775cce" prot="public" virt="non-virtual"><scope>touchgfx::Canvas</scope><name>Canvas</name></member>
+      <member refid="classtouchgfx_1_1_canvas_1a5ae591df94fc66ccb85cbb6565368bca" prot="private" virt="non-virtual"><scope>touchgfx::Canvas</scope><name>close</name></member>
+      <member refid="classtouchgfx_1_1_canvas_1addf90f45f016b8ab0f8c3c99feffa46b" prot="private" virt="non-virtual"><scope>touchgfx::Canvas</scope><name>enoughMemory</name></member>
+      <member refid="classtouchgfx_1_1_canvas_1a5a86bb666b438b15840f5c7a7fcab56f" prot="private" virt="non-virtual"><scope>touchgfx::Canvas</scope><name>initialX</name></member>
+      <member refid="classtouchgfx_1_1_canvas_1aad79ae80395047fdbba6640c8b6e2f23" prot="private" virt="non-virtual"><scope>touchgfx::Canvas</scope><name>initialY</name></member>
+      <member refid="classtouchgfx_1_1_canvas_1ab48533ad807d722bec62f6a3cc61c4cd" prot="private" virt="non-virtual"><scope>touchgfx::Canvas</scope><name>invalidatedAreaHeight</name></member>
+      <member refid="classtouchgfx_1_1_canvas_1ac465d49f18724962c23b09d8b4913259" prot="private" virt="non-virtual"><scope>touchgfx::Canvas</scope><name>invalidatedAreaWidth</name></member>
+      <member refid="classtouchgfx_1_1_canvas_1ae858ab4475857e96b34ec1f71edb71bf" prot="private" virt="non-virtual"><scope>touchgfx::Canvas</scope><name>invalidatedAreaX</name></member>
+      <member refid="classtouchgfx_1_1_canvas_1a3b07ba64d51555d3e2899ae4af1e0669" prot="private" virt="non-virtual"><scope>touchgfx::Canvas</scope><name>invalidatedAreaY</name></member>
+      <member refid="classtouchgfx_1_1_canvas_1ae46ef1f1fb8247f509ec2734208564c6" prot="private" virt="non-virtual"><scope>touchgfx::Canvas</scope><name>isOutside</name></member>
+      <member refid="classtouchgfx_1_1_canvas_1a4766487c28986ceb8f515d5e75c52e7e" prot="public" virt="non-virtual"><scope>touchgfx::Canvas</scope><name>lineTo</name></member>
+      <member refid="classtouchgfx_1_1_canvas_1a5ea3f19fcfa3e888ce8434060a3d8779" prot="public" virt="non-virtual"><scope>touchgfx::Canvas</scope><name>lineTo</name></member>
+      <member refid="classtouchgfx_1_1_canvas_1a4c24191a2ceb264a14c683668ea4e457" prot="public" virt="non-virtual"><scope>touchgfx::Canvas</scope><name>moveTo</name></member>
+      <member refid="classtouchgfx_1_1_canvas_1a865d9260e4c0b2d94133fada7d394f68" prot="public" virt="non-virtual"><scope>touchgfx::Canvas</scope><name>moveTo</name></member>
+      <member refid="classtouchgfx_1_1_canvas_1adadb2d4fc74e6037d5c256fddbe34e6c" prot="private" virt="non-virtual"><scope>touchgfx::Canvas</scope><name>offsetX</name></member>
+      <member refid="classtouchgfx_1_1_canvas_1adb93e6c192fce011399173c16488bb6e" prot="private" virt="non-virtual"><scope>touchgfx::Canvas</scope><name>offsetY</name></member>
+      <member refid="classtouchgfx_1_1_canvas_1ab22299d95df1ba978e46b9e0db60c3e7" prot="private" virt="non-virtual"><scope>touchgfx::Canvas</scope><name>penDownOutside</name></member>
+      <member refid="classtouchgfx_1_1_canvas_1a246f843638358747e0ab7c7d4f9ddd95" prot="private" virt="non-virtual"><scope>touchgfx::Canvas</scope><name>penHasBeenDown</name></member>
+      <member refid="classtouchgfx_1_1_canvas_1a152f5f2fd9f5f92a704ec44227adade2" prot="private" virt="non-virtual"><scope>touchgfx::Canvas</scope><name>penUp</name></member>
+      <member refid="classtouchgfx_1_1_canvas_1adf764cbdea00d65edcd07bb9953ad2b7aa06ff50e352cec866204a34e5c944299" prot="private" virt="non-virtual"><scope>touchgfx::Canvas</scope><name>POINT_IS_ABOVE</name></member>
+      <member refid="classtouchgfx_1_1_canvas_1adf764cbdea00d65edcd07bb9953ad2b7a09e61d9cfee33325253ab9c2e3d916ec" prot="private" virt="non-virtual"><scope>touchgfx::Canvas</scope><name>POINT_IS_BELOW</name></member>
+      <member refid="classtouchgfx_1_1_canvas_1adf764cbdea00d65edcd07bb9953ad2b7a90e8e7a1e8fa28e2b0051a7c60cdeefe" prot="private" virt="non-virtual"><scope>touchgfx::Canvas</scope><name>POINT_IS_LEFT</name></member>
+      <member refid="classtouchgfx_1_1_canvas_1adf764cbdea00d65edcd07bb9953ad2b7a7d4e810d60930f6afc65a9473d75038c" prot="private" virt="non-virtual"><scope>touchgfx::Canvas</scope><name>POINT_IS_RIGHT</name></member>
+      <member refid="classtouchgfx_1_1_canvas_1a01b12abca2d0839e1714d411244d3c6b" prot="private" virt="non-virtual"><scope>touchgfx::Canvas</scope><name>previousOutside</name></member>
+      <member refid="classtouchgfx_1_1_canvas_1aa39dbd0e2d3e189bd015f1978a64c5af" prot="private" virt="non-virtual"><scope>touchgfx::Canvas</scope><name>previousX</name></member>
+      <member refid="classtouchgfx_1_1_canvas_1ae677569b2fca3c969ce39bae87b55aa6" prot="private" virt="non-virtual"><scope>touchgfx::Canvas</scope><name>previousY</name></member>
+      <member refid="classtouchgfx_1_1_canvas_1ab9caccdc1783ed52f7a6ad605ed5a541" prot="private" virt="non-virtual"><scope>touchgfx::Canvas</scope><name>ras</name></member>
+      <member refid="classtouchgfx_1_1_canvas_1ad775e5b36c0e9538c089adf1722c6539" prot="private" virt="non-virtual"><scope>touchgfx::Canvas</scope><name>rbuf</name></member>
+      <member refid="classtouchgfx_1_1_canvas_1a56015385cd7137607aea8d34af868524" prot="public" virt="non-virtual"><scope>touchgfx::Canvas</scope><name>render</name></member>
+      <member refid="classtouchgfx_1_1_canvas_1a6e5fd4f035f08e17d902b249c0b2c05e" prot="private" virt="non-virtual"><scope>touchgfx::Canvas</scope><name>transformFrameBufferToDisplay</name></member>
+      <member refid="classtouchgfx_1_1_canvas_1a371ca1120cae189705233e8122bc60d2" prot="private" virt="non-virtual"><scope>touchgfx::Canvas</scope><name>widget</name></member>
+      <member refid="classtouchgfx_1_1_canvas_1a3a3fded642cee4529551bd50c3e64f3d" prot="public" virt="virtual"><scope>touchgfx::Canvas</scope><name>~Canvas</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

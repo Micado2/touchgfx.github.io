@@ -1,0 +1,1618 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_l_c_d2bpp" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::LCD2bpp</compoundname>
+    <basecompoundref refid="classtouchgfx_1_1_l_c_d" prot="public" virt="non-virtual">LCD</basecompoundref>
+    <includes local="no">LCD2bpp.hpp</includes>
+    <innerclass refid="classtouchgfx_1_1_l_c_d2bpp_1_1_draw_texture_map_scan_line_base2" prot="private">touchgfx::LCD2bpp::DrawTextureMapScanLineBase2</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d2bpp_1_1_texture_mapper___a4___bilinear_interpolation___g_a" prot="private">touchgfx::LCD2bpp::TextureMapper_A4_BilinearInterpolation_GA</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d2bpp_1_1_texture_mapper___a4___nearest_neighbor___g_a" prot="private">touchgfx::LCD2bpp::TextureMapper_A4_NearestNeighbor_GA</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d2bpp_1_1_texture_mapper___g_r_a_y2___non_opaque___bilinear_interpolation___g_a" prot="private">touchgfx::LCD2bpp::TextureMapper_GRAY2_NonOpaque_BilinearInterpolation_GA</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d2bpp_1_1_texture_mapper___g_r_a_y2___non_opaque___nearest_neighbor___g_a" prot="private">touchgfx::LCD2bpp::TextureMapper_GRAY2_NonOpaque_NearestNeighbor_GA</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d2bpp_1_1_texture_mapper___g_r_a_y2___opaque___bilinear_interpolation___g_a" prot="private">touchgfx::LCD2bpp::TextureMapper_GRAY2_Opaque_BilinearInterpolation_GA</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d2bpp_1_1_texture_mapper___g_r_a_y2___opaque___nearest_neighbor___g_a" prot="private">touchgfx::LCD2bpp::TextureMapper_GRAY2_Opaque_NearestNeighbor_GA</innerclass>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_l_c_d2bpp_1aef659484f0fa9300471dd8b3720d358e" prot="protected" static="yes" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t alphaTable2bpp[256]</definition>
+        <argsstring>[256]</argsstring>
+        <name>alphaTable2bpp</name>
+        <briefdescription>
+<para>The alpha lookup table to avoid arithmetics when alpha blending. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD2bpp.hpp" line="179" column="1" bodyfile="platform/driver/lcd/LCD2bpp.hpp" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_l_c_d2bpp_1aa70758c813cccbb4ec9237a87da672a0" prot="private" static="no" mutable="no">
+        <type>DrawTextureMapScanLineBase *</type>
+        <definition>DrawTextureMapScanLineBase* textureMapper_GRAY2_NonOpaque_BilinearInterpolation_GA</definition>
+        <argsstring></argsstring>
+        <name>textureMapper_GRAY2_NonOpaque_BilinearInterpolation_GA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD2bpp.hpp" line="237" column="1" bodyfile="platform/driver/lcd/LCD2bpp.hpp" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_l_c_d2bpp_1a5f545ff44b08a575c797cd92e834a59c" prot="private" static="no" mutable="no">
+        <type>DrawTextureMapScanLineBase *</type>
+        <definition>DrawTextureMapScanLineBase* textureMapper_GRAY2_NonOpaque_NearestNeighbor_GA</definition>
+        <argsstring></argsstring>
+        <name>textureMapper_GRAY2_NonOpaque_NearestNeighbor_GA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD2bpp.hpp" line="235" column="1" bodyfile="platform/driver/lcd/LCD2bpp.hpp" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_l_c_d2bpp_1ab1677703ca174837c414e1f6c7d85647" prot="private" static="no" mutable="no">
+        <type>DrawTextureMapScanLineBase *</type>
+        <definition>DrawTextureMapScanLineBase* textureMapper_GRAY2_Opaque_BilinearInterpolation_GA</definition>
+        <argsstring></argsstring>
+        <name>textureMapper_GRAY2_Opaque_BilinearInterpolation_GA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD2bpp.hpp" line="238" column="1" bodyfile="platform/driver/lcd/LCD2bpp.hpp" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_l_c_d2bpp_1a4d37ee158b89e602f9cac6009c814bae" prot="private" static="no" mutable="no">
+        <type>DrawTextureMapScanLineBase *</type>
+        <definition>DrawTextureMapScanLineBase* textureMapper_GRAY2_Opaque_NearestNeighbor_GA</definition>
+        <argsstring></argsstring>
+        <name>textureMapper_GRAY2_Opaque_NearestNeighbor_GA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD2bpp.hpp" line="236" column="1" bodyfile="platform/driver/lcd/LCD2bpp.hpp" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d2bpp_1a9453b7ca5b528302f69afddd98aae21e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>uint8_t</type>
+        <definition>virtual uint8_t bitDepth</definition>
+        <argsstring>() const</argsstring>
+        <name>bitDepth</name>
+        <reimplements refid="classtouchgfx_1_1_l_c_d_1a166dd8002f9b8e95cc605f2242c65418">bitDepth</reimplements>
+        <briefdescription>
+<para>Number of bits per pixel used by the display. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The number of bits per pixel. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD2bpp.hpp" line="48" column="1" bodyfile="platform/driver/lcd/LCD2bpp.hpp" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d2bpp_1aa9d494e3f6530fd2548ca464e79abb36" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void blitCopy</definition>
+        <argsstring>(const uint16_t *sourceData, const Rect &amp;source, const Rect &amp;blitRect, uint8_t alpha, bool hasTransparentPixels)</argsstring>
+        <name>blitCopy</name>
+        <reimplements refid="classtouchgfx_1_1_l_c_d_1a972c8ab781314774d82a3fa2c08f9f2d">blitCopy</reimplements>
+        <param>
+          <type>const uint16_t *</type>
+          <declname>sourceData</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>blitRect</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>hasTransparentPixels</declname>
+        </param>
+        <briefdescription>
+<para>Blits (directly copies) a block of data to the framebuffer, performing alpha blending (and tranparency keying) as specified. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Performs a software blend if <ref refid="classtouchgfx_1_1_h_a_l" kindref="compound">HAL</ref> does not support BLIT_COPY_WITH_ALPHA and alpha != 255 (solid).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sourceData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source array pointer (points to the beginning of the data). The sourceData must be stored in a format suitable for the selected display. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position and dimensions of the source. The x and y of this rect should both be 0. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>blitRect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A rectangle describing what region of the <emphasis>sourceData</emphasis> is to be copied to the framebuffer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alpha value to use for blending ranging from 0=invisible to 255=solid=no blending. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hasTransparentPixels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, this data copy contains transparent pixels and require hardware support for that to be enabled. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD2bpp.hpp" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d2bpp_1acefc1872d8b5c24cb76ec00d13ad6de7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void blitCopy</definition>
+        <argsstring>(const uint8_t *sourceData, Bitmap::BitmapFormat sourceFormat, const Rect &amp;source, const Rect &amp;blitRect, uint8_t alpha, bool hasTransparentPixels)</argsstring>
+        <name>blitCopy</name>
+        <reimplements refid="classtouchgfx_1_1_l_c_d_1a185d987bf49db055b63cb6f85b81a07a">blitCopy</reimplements>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>sourceData</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_bitmap_1a23d1a7c7cf0f6da45ca389904e644d55" kindref="member">Bitmap::BitmapFormat</ref></type>
+          <declname>sourceFormat</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>blitRect</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>hasTransparentPixels</declname>
+        </param>
+        <briefdescription>
+<para>Blits (directly copies) a block of data to the framebuffer, performing alpha blending (and tranparency keying) as specified. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Performs a software blend if <ref refid="classtouchgfx_1_1_h_a_l" kindref="compound">HAL</ref> does not support BLIT_COPY_WITH_ALPHA and alpha &lt; 255 (solid).</para>
+<para>If the display does not support the specified <emphasis>sourceFormat</emphasis>, an <emphasis>assert</emphasis> will be raised.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sourceData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source array pointer (points to the beginning of the data). The sourceData must be stored in a format suitable for the selected display. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sourceFormat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bitmap format used in the source data. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position and dimensions of the source. The x and y of this rect should both be 0. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>blitRect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A rectangle describing what region of the <emphasis>sourceData</emphasis> is to be copied to the framebuffer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alpha value to use for blending ranging from 0=invisible to 255=solid=no blending. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hasTransparentPixels</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, this data copy contains transparent pixels and require hardware support for that to be enabled. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD2bpp.hpp" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d2bpp_1a6b117c2cdc5ba3c678a0962b0470dbaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>uint16_t *</type>
+        <definition>virtual uint16_t* copyFrameBufferRegionToMemory</definition>
+        <argsstring>(const Rect &amp;visRegion, const Rect &amp;absRegion, const BitmapId bitmapId)</argsstring>
+        <name>copyFrameBufferRegionToMemory</name>
+        <reimplements refid="classtouchgfx_1_1_l_c_d_1a2227644ebace590ce402956e85acb295">copyFrameBufferRegionToMemory</reimplements>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>visRegion</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>absRegion</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacetouchgfx_1a3923435f6df64396b2203d60ddfa89e4" kindref="member">BitmapId</ref></type>
+          <declname>bitmapId</declname>
+        </param>
+        <briefdescription>
+<para>Copies part of the framebuffer to the data section of a bitmap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The bitmap must be a dynamic bitmap or animation storage (BITMAP_ANIMATION_STORAGE). The two regions given are the visible region and the absolute region on screen. This is used to copy only a part of the framebuffer. This might be the case if a <ref refid="classtouchgfx_1_1_snapshot_widget" kindref="compound">SnapshotWidget</ref> is placed inside a <ref refid="classtouchgfx_1_1_container" kindref="compound">Container</ref> where parts of the SnapshowWidget is outside the area defined by the <ref refid="classtouchgfx_1_1_container" kindref="compound">Container</ref>. The visible region must be completely inside the absolute region.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>visRegion</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The visible region. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>absRegion</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The absolute region. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bitmapId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifier for the bitmap.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Null if it fails, else a pointer to the data in the given bitmap.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_l_c_d2bpp_1aa9d494e3f6530fd2548ca464e79abb36" kindref="member">blitCopy</ref></para>
+</simplesect>
+<simplesect kind="note"><para>There is only one instance of animation storage. The content of the bitmap data /animation storage outside the given region is left untouched. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD2bpp.hpp" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d2bpp_1a6fae0e318d1bd778915adc33449736ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void drawPartialBitmap</definition>
+        <argsstring>(const Bitmap &amp;bitmap, int16_t x, int16_t y, const Rect &amp;rect, uint8_t alpha=255, bool useOptimized=true)</argsstring>
+        <name>drawPartialBitmap</name>
+        <reimplements refid="classtouchgfx_1_1_l_c_d_1a1fcbaa593af61d290572f3cc6cadb4b5">drawPartialBitmap</reimplements>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> &amp;</type>
+          <declname>bitmap</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>rect</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>alpha</declname>
+          <defval>255</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>useOptimized</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Draws all (or a part) of a <emphasis>bitmap</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The coordinates of the corner of the bitmap is given in (<emphasis>x</emphasis>, <emphasis>y</emphasis>) and <emphasis>rect</emphasis> describes which part of the <emphasis>bitmap</emphasis> should be drawn. The bitmap can be drawn as it is or more or less transparent depending on the value of <emphasis>alpha</emphasis>. The value of <emphasis>alpha</emphasis> is independent of the transparency of the individual pixels of the given <emphasis>bitmap</emphasis>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bitmap to draw. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The absolute x coordinate to place (0, 0) of the bitmap on the screen. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The absolute y coordinate to place (0, 0) of the bitmap on the screen. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A rectangle describing what region of the bitmap is to be drawn. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(Optional) Optional alpha value ranging from 0=invisible to 255=solid. Default is 255 (solid). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>useOptimized</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(Optional) if false, do not attempt to substitute (parts of) this bitmap with faster fillrects. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD2bpp.hpp" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d2bpp_1aac48453ba9101bd6146c05e6519123ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void enableTextureMapperAll</definition>
+        <argsstring>()</argsstring>
+        <name>enableTextureMapperAll</name>
+        <briefdescription>
+<para>Enables the texture mappers for all image formats. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This allows drawing any image using Bilinear Interpolation and Nearest Neighbor algorithms, but might use a lot of memory for the drawing algorithms. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD2bpp.hpp" line="151" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d2bpp_1a26b914e215bba7dd913d9cf49c1beec5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void enableTextureMapperGRAY2</definition>
+        <argsstring>()</argsstring>
+        <name>enableTextureMapperGRAY2</name>
+        <briefdescription>
+<para>Enables the texture mappers for GRAY2 image format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This allows drawing GRAY2 images using Bilinear Interpolation and Nearest Neighbor algorithms.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_l_c_d2bpp_1a914bc954e7054a1e20ae0d051d31e51f" kindref="member">enableTextureMapperGRAY2_BilinearInterpolation</ref>, <ref refid="classtouchgfx_1_1_l_c_d2bpp_1ac2e1702a277b0a657ffc67adaf7beea0" kindref="member">enableTextureMapperGRAY2_NearestNeighbor</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD2bpp.hpp" line="160" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d2bpp_1a914bc954e7054a1e20ae0d051d31e51f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void enableTextureMapperGRAY2_BilinearInterpolation</definition>
+        <argsstring>()</argsstring>
+        <name>enableTextureMapperGRAY2_BilinearInterpolation</name>
+        <briefdescription>
+<para>Enables the texture mappers for GRAY2 image format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This allows drawing GRAY2 images using Bilinear Interpolation algorithm.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_l_c_d2bpp_1a26b914e215bba7dd913d9cf49c1beec5" kindref="member">enableTextureMapperGRAY2</ref>, <ref refid="classtouchgfx_1_1_l_c_d2bpp_1ac2e1702a277b0a657ffc67adaf7beea0" kindref="member">enableTextureMapperGRAY2_NearestNeighbor</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD2bpp.hpp" line="168" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d2bpp_1ac2e1702a277b0a657ffc67adaf7beea0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void enableTextureMapperGRAY2_NearestNeighbor</definition>
+        <argsstring>()</argsstring>
+        <name>enableTextureMapperGRAY2_NearestNeighbor</name>
+        <briefdescription>
+<para>Enables the texture mappers for GRAY2 image format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This allows drawing GRAY2 images using Nearest Neighbor algorithm.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_l_c_d2bpp_1a26b914e215bba7dd913d9cf49c1beec5" kindref="member">enableTextureMapperGRAY2</ref>, <ref refid="classtouchgfx_1_1_l_c_d2bpp_1a914bc954e7054a1e20ae0d051d31e51f" kindref="member">enableTextureMapperGRAY2_BilinearInterpolation</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD2bpp.hpp" line="176" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d2bpp_1a3cfe25e2c90807ec57cdd32e1753af70" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void fillRect</definition>
+        <argsstring>(const Rect &amp;rect, colortype color, uint8_t alpha=255)</argsstring>
+        <name>fillRect</name>
+        <reimplements refid="classtouchgfx_1_1_l_c_d_1a813b79e2a2eaada463ca4766259d2975">fillRect</reimplements>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>rect</declname>
+        </param>
+        <param>
+          <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>alpha</declname>
+          <defval>255</defval>
+        </param>
+        <briefdescription>
+<para>Draws a filled rectangle in the framebuffer in the specified color and opacity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>By default the rectangle will be drawn as a solid box. The rectangle can be drawn with transparancy by specifying alpha from 0=invisible to 255=solid.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rectangle to draw in absolute display coordinates. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rectangle color. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(Optional) The rectangle opacity, from 0=invisible to 255=solid. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD2bpp.hpp" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d2bpp_1abf1f7914f08534da2cfbcb1f3678d04e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classtouchgfx_1_1_bitmap_1a23d1a7c7cf0f6da45ca389904e644d55" kindref="member">Bitmap::BitmapFormat</ref></type>
+        <definition>virtual Bitmap::BitmapFormat framebufferFormat</definition>
+        <argsstring>() const</argsstring>
+        <name>framebufferFormat</name>
+        <reimplements refid="classtouchgfx_1_1_l_c_d_1ada15a74dcecaad464123a916cc9e81eb">framebufferFormat</reimplements>
+        <briefdescription>
+<para>Framebuffer format used by the display. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A <ref refid="classtouchgfx_1_1_bitmap_1a23d1a7c7cf0f6da45ca389904e644d55" kindref="member">Bitmap::BitmapFormat</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD2bpp.hpp" line="53" column="1" bodyfile="platform/driver/lcd/LCD2bpp.hpp" bodystart="53" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d2bpp_1ab75ba1c386aac9a82b8aebcf1da40d77" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>uint16_t</type>
+        <definition>virtual uint16_t framebufferStride</definition>
+        <argsstring>() const</argsstring>
+        <name>framebufferStride</name>
+        <reimplements refid="classtouchgfx_1_1_l_c_d_1aad6cf0ceaa812e7329fb1ba360d4178b">framebufferStride</reimplements>
+        <briefdescription>
+<para>Framebuffer stride in bytes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The distance (in bytes) from the start of one framebuffer row, to the next.</para>
+<para><simplesect kind="return"><para>The number of bytes in one framebuffer row. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD2bpp.hpp" line="58" column="1" bodyfile="platform/driver/lcd/LCD2bpp.hpp" bodystart="58" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d2bpp_1a6f2684edfd970891aa198c65b5624c73" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>uint8_t</type>
+        <definition>virtual uint8_t getBlueColor</definition>
+        <argsstring>(colortype color) const</argsstring>
+        <name>getBlueColor</name>
+        <reimplements refid="classtouchgfx_1_1_l_c_d_1a0d36d0f505c5ee534b2794d06eb122a8">getBlueColor</reimplements>
+        <param>
+          <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Gets the blue color part of a color. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>As this function must work for all color depths, it can be somewhat slow if used in speed critical sections. Consider finding the color in another way, if possible.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The 16 bit color value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The blue part of the color. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD2bpp.hpp" line="129" column="1" bodyfile="platform/driver/lcd/LCD2bpp.hpp" bodystart="129" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d2bpp_1ad730e2cff09e2cb19690f90601cc3a3a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+        <definition>virtual colortype getColorFrom24BitRGB</definition>
+        <argsstring>(uint8_t red, uint8_t green, uint8_t blue) const</argsstring>
+        <name>getColorFrom24BitRGB</name>
+        <reimplements refid="classtouchgfx_1_1_l_c_d_1a7a4cf10b0b68239f9e0ab49f05df98ec">getColorFrom24BitRGB</reimplements>
+        <param>
+          <type>uint8_t</type>
+          <declname>red</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>green</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>blue</declname>
+        </param>
+        <briefdescription>
+<para>Generates a color representation to be used on the <ref refid="classtouchgfx_1_1_l_c_d" kindref="compound">LCD</ref>, based on 24 bit RGB values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Depending on your chosen color bit depth, the color will be interpreted internally as either a 16 bit or 24 bit color value. This function can be safely used regardless of whether your application is configured for 16 or 24 bit colors.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>red</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the red part (0-255). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>green</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the green part (0-255). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>blue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the blue part (0-255).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The color representation depending on <ref refid="classtouchgfx_1_1_l_c_d" kindref="compound">LCD</ref> color format. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD2bpp.hpp" line="75" column="1" bodyfile="platform/driver/lcd/LCD2bpp.hpp" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d2bpp_1a061d3d6d30e0c5d0b80eb4521d7f5b29" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>uint8_t</type>
+        <definition>virtual uint8_t getGreenColor</definition>
+        <argsstring>(colortype color) const</argsstring>
+        <name>getGreenColor</name>
+        <reimplements refid="classtouchgfx_1_1_l_c_d_1a2b8dffe98b2173b4009624e9c44e9709">getGreenColor</reimplements>
+        <param>
+          <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Gets the green color part of a color. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>As this function must work for all color depths, it can be somewhat slow if used in speed critical sections. Consider finding the color in another way, if possible.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The 16 bit color value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The green part of the color. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD2bpp.hpp" line="112" column="1" bodyfile="platform/driver/lcd/LCD2bpp.hpp" bodystart="112" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d2bpp_1a9f32461dd49591b2d4df8df7cffb9235" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>uint8_t</type>
+        <definition>virtual uint8_t getRedColor</definition>
+        <argsstring>(colortype color) const</argsstring>
+        <name>getRedColor</name>
+        <reimplements refid="classtouchgfx_1_1_l_c_d_1a7ead52bf45c6f3c1cb50718405f5123e">getRedColor</reimplements>
+        <param>
+          <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Gets the red color part of a color. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>As this function must work for all color depths, it can be somewhat slow if used in speed critical sections. Consider finding the color in another way, if possible.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The red part of the color. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD2bpp.hpp" line="95" column="1" bodyfile="platform/driver/lcd/LCD2bpp.hpp" bodystart="95" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d2bpp_1a1fdc34a61024eb2747b6e4354af6c18c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>uint8_t</type>
+        <definition>virtual uint8_t getRedFromColor</definition>
+        <argsstring>(colortype color) const</argsstring>
+        <name>getRedFromColor</name>
+        <param>
+          <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Gets red from color. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The red from color. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD2bpp.hpp" line="107" column="1" bodyfile="platform/driver/lcd/LCD2bpp.hpp" bodystart="107" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d2bpp_1aa49cda8c8c5e34493313e0d18a0da8f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LCD2bpp</definition>
+        <argsstring>()</argsstring>
+        <name>LCD2bpp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD2bpp.hpp" line="35" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d2bpp_1a4c815962e1e7ba64a2786ee3c0e3be1d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>FORCE_INLINE_FUNCTION uint8_t</type>
+        <definition>static FORCE_INLINE_FUNCTION uint8_t getBlueFromColor</definition>
+        <argsstring>(colortype color)</argsstring>
+        <name>getBlueFromColor</name>
+        <param>
+          <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Gets blue from color. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The blue from color. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD2bpp.hpp" line="141" column="1" bodyfile="platform/driver/lcd/LCD2bpp.hpp" bodystart="141" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d2bpp_1ab5470f0d37b384d9383fb95376708766" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>FORCE_INLINE_FUNCTION <ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+        <definition>static FORCE_INLINE_FUNCTION colortype getColorFromRGB</definition>
+        <argsstring>(uint8_t red, uint8_t green, uint8_t blue)</argsstring>
+        <name>getColorFromRGB</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>red</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>green</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>blue</declname>
+        </param>
+        <briefdescription>
+<para>Generates a color representation to be used on the <ref refid="classtouchgfx_1_1_l_c_d" kindref="compound">LCD</ref>, based on 24 bit RGB values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>red</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the red part (0-255). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>green</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the green part (0-255). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>blue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the blue part (0-255).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The color representation depending on <ref refid="classtouchgfx_1_1_l_c_d" kindref="compound">LCD</ref> color format. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD2bpp.hpp" line="89" column="1" bodyfile="platform/driver/lcd/LCD2bpp.hpp" bodystart="89" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d2bpp_1a72b8ef11cd5918a6bd5702e918b888ef" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>FORCE_INLINE_FUNCTION uint16_t</type>
+        <definition>static FORCE_INLINE_FUNCTION uint16_t getFramebufferStride</definition>
+        <argsstring>()</argsstring>
+        <name>getFramebufferStride</name>
+        <briefdescription>
+<para>Framebuffer stride in bytes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The distance (in bytes) from the start of one framebuffer row, to the next.</para>
+<para><simplesect kind="return"><para>The number of bytes in one framebuffer row. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD2bpp.hpp" line="69" column="1" bodyfile="platform/driver/lcd/LCD2bpp.hpp" bodystart="69" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d2bpp_1a7a0e0fbb531279a60027afc36648b43b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>FORCE_INLINE_FUNCTION uint8_t</type>
+        <definition>static FORCE_INLINE_FUNCTION uint8_t getGreenFromColor</definition>
+        <argsstring>(colortype color)</argsstring>
+        <name>getGreenFromColor</name>
+        <param>
+          <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Gets green from color. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The green from color. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD2bpp.hpp" line="124" column="1" bodyfile="platform/driver/lcd/LCD2bpp.hpp" bodystart="124" bodyend="127"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d2bpp_1a7cefe618f478f818cad39605e1020f8a" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void copyRect</definition>
+        <argsstring>(const uint8_t *srcAddress, uint16_t srcStride, uint8_t srcPixelOffset, uint8_t *RESTRICT dstAddress, uint16_t dstStride, uint8_t dstPixelOffset, uint16_t width, uint16_t height) const</argsstring>
+        <name>copyRect</name>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>srcAddress</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>srcStride</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>srcPixelOffset</declname>
+        </param>
+        <param>
+          <type>uint8_t *RESTRICT</type>
+          <declname>dstAddress</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>dstStride</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>dstPixelOffset</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+<para>Copies a rectangular area. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>srcAddress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source address (byte address). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>srcStride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source stride (number of bytes to advance to next line). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>srcPixelOffset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source pixel offset (first pixel in first source byte). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dstAddress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If destination address (byte address). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dstStride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination stride (number of bytes to advance to next line). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dstPixelOffset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination pixel offset (first pixel in destination byte). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The width of area (in pixels). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The height of area (in pixels). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD2bpp.hpp" line="232" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d2bpp_1a97648ad120bb71266b640abda7afa339" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void drawGlyph</definition>
+        <argsstring>(uint16_t *wbuf16, Rect widgetArea, int16_t x, int16_t y, uint16_t offsetX, uint16_t offsetY, const Rect &amp;invalidatedArea, const GlyphNode *glyph, const uint8_t *glyphData, uint8_t byteAlignRow, colortype color, uint8_t bitsPerPixel, uint8_t alpha, TextRotation rotation)</argsstring>
+        <name>drawGlyph</name>
+        <reimplements refid="classtouchgfx_1_1_l_c_d_1a5b8ece39083fe4474ae14ab94f127794">drawGlyph</reimplements>
+        <param>
+          <type>uint16_t *</type>
+          <declname>wbuf16</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref></type>
+          <declname>widgetArea</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>offsetX</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>offsetY</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>invalidatedArea</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structtouchgfx_1_1_glyph_node" kindref="compound">GlyphNode</ref> *</type>
+          <declname>glyph</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>glyphData</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>byteAlignRow</declname>
+        </param>
+        <param>
+          <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>bitsPerPixel</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1aa8b32c1e049cf804b50921f8c847866b" kindref="member">TextRotation</ref></type>
+          <declname>rotation</declname>
+        </param>
+        <briefdescription>
+<para>Private version of draw-glyph with explicit destination buffer pointer argument. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>For all parameters (except the buffer pointer) see the public function <ref refid="classtouchgfx_1_1_l_c_d_1a4dc878f2656170e7c650deb9691dfe0d" kindref="member">drawString()</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">wbuf16</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination (frame) buffer to draw to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>widgetArea</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The canvas to draw the glyph inside. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Horizontal offset to start drawing the glyph. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vertical offset to start drawing the glyph. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offsetX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Horizontal offset in the glyph to start drawing from. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offsetY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vertical offset in the glyph to start drawing from. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>invalidatedArea</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The area to draw inside. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>glyph</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifications of the glyph to draw. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>glyphData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data containing the actual glyph (dense format) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>byteAlignRow</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Each row of glyph data starts in a new byte. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color of the glyph. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bitsPerPixel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit depth of the glyph. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The transparency of the glyph. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rotation to do before drawing the glyph. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD2bpp.hpp" line="203" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d2bpp_1ae883ce6179da962d7fac5d0f428ad34b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>DrawTextureMapScanLineBase *</type>
+        <definition>virtual DrawTextureMapScanLineBase* getTextureMapperDrawScanLine</definition>
+        <argsstring>(const TextureSurface &amp;texture, RenderingVariant renderVariant, uint8_t alpha)</argsstring>
+        <name>getTextureMapperDrawScanLine</name>
+        <reimplements refid="classtouchgfx_1_1_l_c_d_1ae883ce6179da962d7fac5d0f428ad34b">getTextureMapperDrawScanLine</reimplements>
+        <param>
+          <type>const <ref refid="structtouchgfx_1_1_texture_surface" kindref="compound">TextureSurface</ref> &amp;</type>
+          <declname>texture</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1ad59e90505ec56c2331c99dffd08b686c" kindref="member">RenderingVariant</ref></type>
+          <declname>renderVariant</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+<para>Gets pointer to object that can draw a scan line which allows for highly specialized and optimized implementation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>texture</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The texture Surface. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>renderVariant</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The render variant. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The global alpha.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Null if it fails, else the pointer to the texture mapper draw scan line object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD2bpp.hpp" line="181" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d2bpp_1a4c9428ca94eb7051f69ae574f0a7d31b" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void blitCopyAlphaPerPixel</definition>
+        <argsstring>(const uint16_t *sourceData16, const uint8_t *sourceAlphaData, const Rect &amp;source, const Rect &amp;blitRect, uint8_t alpha)</argsstring>
+        <name>blitCopyAlphaPerPixel</name>
+        <param>
+          <type>const uint16_t *</type>
+          <declname>sourceData16</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>sourceAlphaData</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>blitRect</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+<para>Blit a 2D source-array to the framebuffer performing alpha-blending per pixel as specified Performs always a software blend. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sourceData16</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source-array pointer (points to the beginning of the data). The sourceData must be stored as 2bpp GRAY2 values. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sourceAlphaData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alpha channel array pointer (points to the beginning of the data) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The location and dimensions of the source. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>blitRect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A rectangle describing what region is to be drawn. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alpha value to use for blending applied to the whole image (255 = solid, no blending) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD2bpp.hpp" line="218" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d2bpp_1a824a714c5fc8e1fe609a371886504e4b" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int nextLine</definition>
+        <argsstring>(bool rotatedDisplay, TextRotation textRotation)</argsstring>
+        <name>nextLine</name>
+        <param>
+          <type>bool</type>
+          <declname>rotatedDisplay</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1aa8b32c1e049cf804b50921f8c847866b" kindref="member">TextRotation</ref></type>
+          <declname>textRotation</declname>
+        </param>
+        <briefdescription>
+<para>Find out how much to advance in the display buffer to get to the next line. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rotatedDisplay</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Is the display running in portrait mode? </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>textRotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rotation to perform.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>How much to advance to get to the next line. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD2bpp.hpp" line="201" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d2bpp_1ab3106f5773f05689c7f70529f1551d30" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int nextPixel</definition>
+        <argsstring>(bool rotatedDisplay, TextRotation textRotation)</argsstring>
+        <name>nextPixel</name>
+        <param>
+          <type>bool</type>
+          <declname>rotatedDisplay</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1aa8b32c1e049cf804b50921f8c847866b" kindref="member">TextRotation</ref></type>
+          <declname>textRotation</declname>
+        </param>
+        <briefdescription>
+<para>Find out how much to advance in the display buffer to get to the next pixel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rotatedDisplay</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Is the display running in portrait mode? </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>textRotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rotation to perform.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>How much to advance to get to the next pixel. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD2bpp.hpp" line="191" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d2bpp_1a916179f24cb10e727972ee346f4bc197" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>FORCE_INLINE_FUNCTION uint8_t</type>
+        <definition>static FORCE_INLINE_FUNCTION uint8_t bilinearInterpolate8</definition>
+        <argsstring>(uint8_t c00, uint8_t c10, uint8_t x)</argsstring>
+        <name>bilinearInterpolate8</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>c00</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>c10</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD2bpp.hpp" line="240" column="1" bodyfile="platform/driver/lcd/LCD2bpp.hpp" bodystart="240" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d2bpp_1afbb3e2cdf65f85cb7c53bbdedcb3f65a" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>FORCE_INLINE_FUNCTION uint8_t</type>
+        <definition>static FORCE_INLINE_FUNCTION uint8_t bilinearInterpolate8</definition>
+        <argsstring>(uint8_t c00, uint8_t c10, uint8_t c01, uint8_t c11, uint8_t x, uint8_t y)</argsstring>
+        <name>bilinearInterpolate8</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>c00</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>c10</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>c01</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>c11</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD2bpp.hpp" line="249" column="1" bodyfile="platform/driver/lcd/LCD2bpp.hpp" bodystart="249" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d2bpp_1acf83da949af37569bf22d2e1893285a9" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>FORCE_INLINE_FUNCTION uint8_t</type>
+        <definition>static FORCE_INLINE_FUNCTION uint8_t div255_2</definition>
+        <argsstring>(uint16_t value)</argsstring>
+        <name>div255_2</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD2bpp.hpp" line="260" column="1" bodyfile="platform/driver/lcd/LCD2bpp.hpp" bodystart="260" bodyend="263"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class contains the various low-level drawing routines for drawing bitmaps, texts and rectangles on 2 bits per pixel grayscale displays. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_l_c_d" kindref="compound">LCD</ref></para>
+</simplesect>
+<simplesect kind="note"><para>All coordinates are expected to be in absolute coordinates! </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="902">
+        <label>LCD2bpp</label>
+        <link refid="classtouchgfx_1_1_l_c_d2bpp"/>
+        <childnode refid="903" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="903">
+        <label>LCD</label>
+        <link refid="classtouchgfx_1_1_l_c_d"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="904">
+        <label>LCD2bpp</label>
+        <link refid="classtouchgfx_1_1_l_c_d2bpp"/>
+        <childnode refid="905" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="905">
+        <label>LCD</label>
+        <link refid="classtouchgfx_1_1_l_c_d"/>
+        <childnode refid="906" relation="usage">
+          <edgelabel>defaultColor</edgelabel>
+        </childnode>
+      </node>
+      <node id="906">
+        <label>colortype</label>
+        <link refid="structtouchgfx_1_1colortype"/>
+      </node>
+    </collaborationgraph>
+    <location file="platform/driver/lcd/LCD2bpp.hpp" line="33" column="1" bodyfile="platform/driver/lcd/LCD2bpp.hpp" bodystart="32" bodyend="328"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_l_c_d2bpp_1aef659484f0fa9300471dd8b3720d358e" prot="protected" virt="non-virtual"><scope>touchgfx::LCD2bpp</scope><name>alphaTable2bpp</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d2bpp_1a916179f24cb10e727972ee346f4bc197" prot="private" virt="non-virtual"><scope>touchgfx::LCD2bpp</scope><name>bilinearInterpolate8</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d2bpp_1afbb3e2cdf65f85cb7c53bbdedcb3f65a" prot="private" virt="non-virtual"><scope>touchgfx::LCD2bpp</scope><name>bilinearInterpolate8</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d2bpp_1a9453b7ca5b528302f69afddd98aae21e" prot="public" virt="virtual"><scope>touchgfx::LCD2bpp</scope><name>bitDepth</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d2bpp_1aa9d494e3f6530fd2548ca464e79abb36" prot="public" virt="virtual"><scope>touchgfx::LCD2bpp</scope><name>blitCopy</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d2bpp_1acefc1872d8b5c24cb76ec00d13ad6de7" prot="public" virt="virtual"><scope>touchgfx::LCD2bpp</scope><name>blitCopy</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d2bpp_1a4c9428ca94eb7051f69ae574f0a7d31b" prot="protected" virt="non-virtual"><scope>touchgfx::LCD2bpp</scope><name>blitCopyAlphaPerPixel</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d2bpp_1a6b117c2cdc5ba3c678a0962b0470dbaf" prot="public" virt="virtual"><scope>touchgfx::LCD2bpp</scope><name>copyFrameBufferRegionToMemory</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a2816380d9d77221efa560d515d69dbd6" prot="public" virt="non-virtual" ambiguityscope="touchgfx::LCD::"><scope>touchgfx::LCD2bpp</scope><name>copyFrameBufferRegionToMemory</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d2bpp_1a7cefe618f478f818cad39605e1020f8a" prot="protected" virt="non-virtual"><scope>touchgfx::LCD2bpp</scope><name>copyRect</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a8abbfc784700d0c6ca5d2c46d3a7c022" prot="protected" virt="non-virtual"><scope>touchgfx::LCD2bpp</scope><name>defaultColor</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a01d10258588c00a9dbc319dec5bf438b" prot="public" virt="non-virtual"><scope>touchgfx::LCD2bpp</scope><name>div255</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d2bpp_1acf83da949af37569bf22d2e1893285a9" prot="private" virt="non-virtual"><scope>touchgfx::LCD2bpp</scope><name>div255_2</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a0494b479a5bedee50857441a3410c0f0" prot="public" virt="non-virtual"><scope>touchgfx::LCD2bpp</scope><name>div255g</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1afacd4dbc6065589001a1724e20a72d89" prot="public" virt="non-virtual"><scope>touchgfx::LCD2bpp</scope><name>div255rb</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1ae9353837bf0e0315d22707167e699834" prot="public" virt="non-virtual"><scope>touchgfx::LCD2bpp</scope><name>drawBorder</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d2bpp_1a97648ad120bb71266b640abda7afa339" prot="protected" virt="virtual"><scope>touchgfx::LCD2bpp</scope><name>drawGlyph</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a70ffc766e161d075b1960cbd5c002553" prot="public" virt="non-virtual"><scope>touchgfx::LCD2bpp</scope><name>drawHorizontalLine</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d2bpp_1a6fae0e318d1bd778915adc33449736ae" prot="public" virt="virtual"><scope>touchgfx::LCD2bpp</scope><name>drawPartialBitmap</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a645bd5f27f0c9cb9c2f876ebfa74adcd" prot="public" virt="non-virtual"><scope>touchgfx::LCD2bpp</scope><name>drawRect</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a4dc878f2656170e7c650deb9691dfe0d" prot="public" virt="non-virtual"><scope>touchgfx::LCD2bpp</scope><name>drawString</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1ae465f8bf4e968da70eb903e70998efda" prot="protected" virt="non-virtual"><scope>touchgfx::LCD2bpp</scope><name>drawStringLTR</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a97f760546e5938c403d513353f1edd3c" prot="protected" virt="non-virtual"><scope>touchgfx::LCD2bpp</scope><name>drawStringRTL</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a7b7d73f2ae2a81d2092f725124c82b11" prot="protected" virt="virtual"><scope>touchgfx::LCD2bpp</scope><name>drawTextureMapScanLine</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a981b316e67cd1d1c904b2cc9ccbdc3e6" prot="public" virt="non-virtual"><scope>touchgfx::LCD2bpp</scope><name>drawTextureMapTriangle</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a27329d16c48dadcd5597192891312d0d" prot="public" virt="non-virtual"><scope>touchgfx::LCD2bpp</scope><name>drawVerticalLine</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d2bpp_1aac48453ba9101bd6146c05e6519123ff" prot="public" virt="non-virtual"><scope>touchgfx::LCD2bpp</scope><name>enableTextureMapperAll</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d2bpp_1a26b914e215bba7dd913d9cf49c1beec5" prot="public" virt="non-virtual"><scope>touchgfx::LCD2bpp</scope><name>enableTextureMapperGRAY2</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d2bpp_1a914bc954e7054a1e20ae0d051d31e51f" prot="public" virt="non-virtual"><scope>touchgfx::LCD2bpp</scope><name>enableTextureMapperGRAY2_BilinearInterpolation</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d2bpp_1ac2e1702a277b0a657ffc67adaf7beea0" prot="public" virt="non-virtual"><scope>touchgfx::LCD2bpp</scope><name>enableTextureMapperGRAY2_NearestNeighbor</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d2bpp_1a3cfe25e2c90807ec57cdd32e1753af70" prot="public" virt="virtual"><scope>touchgfx::LCD2bpp</scope><name>fillRect</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d2bpp_1abf1f7914f08534da2cfbcb1f3678d04e" prot="public" virt="virtual"><scope>touchgfx::LCD2bpp</scope><name>framebufferFormat</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d2bpp_1ab75ba1c386aac9a82b8aebcf1da40d77" prot="public" virt="virtual"><scope>touchgfx::LCD2bpp</scope><name>framebufferStride</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a6b34e4cedff06f4ebd797e00778077d2" prot="protected" virt="non-virtual"><scope>touchgfx::LCD2bpp</scope><name>getAlphaFromA4</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d2bpp_1a6f2684edfd970891aa198c65b5624c73" prot="public" virt="virtual"><scope>touchgfx::LCD2bpp</scope><name>getBlueColor</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d2bpp_1a4c815962e1e7ba64a2786ee3c0e3be1d" prot="public" virt="non-virtual"><scope>touchgfx::LCD2bpp</scope><name>getBlueFromColor</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d2bpp_1ad730e2cff09e2cb19690f90601cc3a3a" prot="public" virt="virtual"><scope>touchgfx::LCD2bpp</scope><name>getColorFrom24BitRGB</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d2bpp_1ab5470f0d37b384d9383fb95376708766" prot="public" virt="non-virtual"><scope>touchgfx::LCD2bpp</scope><name>getColorFromRGB</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a06519cd86f0159cf7f4b585c0fc97be9" prot="public" virt="non-virtual"><scope>touchgfx::LCD2bpp</scope><name>getDefaultColor</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d2bpp_1a72b8ef11cd5918a6bd5702e918b888ef" prot="public" virt="non-virtual"><scope>touchgfx::LCD2bpp</scope><name>getFramebufferStride</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d2bpp_1a061d3d6d30e0c5d0b80eb4521d7f5b29" prot="public" virt="virtual"><scope>touchgfx::LCD2bpp</scope><name>getGreenColor</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d2bpp_1a7a0e0fbb531279a60027afc36648b43b" prot="public" virt="non-virtual"><scope>touchgfx::LCD2bpp</scope><name>getGreenFromColor</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1aa5c143f2953d271f2adca01f501e97bc" prot="protected" virt="non-virtual"><scope>touchgfx::LCD2bpp</scope><name>getNumLines</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d2bpp_1a9f32461dd49591b2d4df8df7cffb9235" prot="public" virt="virtual"><scope>touchgfx::LCD2bpp</scope><name>getRedColor</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d2bpp_1a1fdc34a61024eb2747b6e4354af6c18c" prot="public" virt="virtual"><scope>touchgfx::LCD2bpp</scope><name>getRedFromColor</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d2bpp_1ae883ce6179da962d7fac5d0f428ad34b" prot="protected" virt="virtual"><scope>touchgfx::LCD2bpp</scope><name>getTextureMapperDrawScanLine</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d2bpp_1aa49cda8c8c5e34493313e0d18a0da8f3" prot="public" virt="non-virtual"><scope>touchgfx::LCD2bpp</scope><name>LCD2bpp</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1af5a21958de35f2ab56be1f202d548ffa" prot="protected" virt="non-virtual"><scope>touchgfx::LCD2bpp</scope><name>newLine</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d2bpp_1a824a714c5fc8e1fe609a371886504e4b" prot="protected" virt="non-virtual"><scope>touchgfx::LCD2bpp</scope><name>nextLine</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d2bpp_1ab3106f5773f05689c7f70529f1551d30" prot="protected" virt="non-virtual"><scope>touchgfx::LCD2bpp</scope><name>nextPixel</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a98fc6d2a734cf2b2e0f6eb3bfdac5077" prot="protected" virt="non-virtual"><scope>touchgfx::LCD2bpp</scope><name>realX</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a73ff793fafba8d3b4b2c81a1399b6923" prot="protected" virt="non-virtual"><scope>touchgfx::LCD2bpp</scope><name>realY</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1ac1a8020c07c7a5b64aceea2893b9d6ff" prot="protected" virt="non-virtual"><scope>touchgfx::LCD2bpp</scope><name>rotateRect</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1ac42fdefb7af476d5d69a1f3d00c25eed" prot="public" virt="non-virtual"><scope>touchgfx::LCD2bpp</scope><name>setDefaultColor</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1aee926129c4f45b9e1b9691ff372e4ad9" prot="protected" virt="non-virtual"><scope>touchgfx::LCD2bpp</scope><name>stringWidth</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d2bpp_1aa70758c813cccbb4ec9237a87da672a0" prot="private" virt="non-virtual"><scope>touchgfx::LCD2bpp</scope><name>textureMapper_GRAY2_NonOpaque_BilinearInterpolation_GA</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d2bpp_1a5f545ff44b08a575c797cd92e834a59c" prot="private" virt="non-virtual"><scope>touchgfx::LCD2bpp</scope><name>textureMapper_GRAY2_NonOpaque_NearestNeighbor_GA</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d2bpp_1ab1677703ca174837c414e1f6c7d85647" prot="private" virt="non-virtual"><scope>touchgfx::LCD2bpp</scope><name>textureMapper_GRAY2_Opaque_BilinearInterpolation_GA</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d2bpp_1a4d37ee158b89e602f9cac6009c814bae" prot="private" virt="non-virtual"><scope>touchgfx::LCD2bpp</scope><name>textureMapper_GRAY2_Opaque_NearestNeighbor_GA</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1a50af83d0758f69f7c290e54cf1971ba8" prot="public" virt="virtual"><scope>touchgfx::LCD2bpp</scope><name>~LCD</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

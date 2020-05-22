@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="dir_5b9f6026e81436660fbb11efe40d3b6f" kind="dir">
+    <compoundname>common</compoundname>
+    <innerfile refid="_abstract_partition_8hpp">AbstractPartition.hpp</innerfile>
+    <innerfile refid="_partition_8hpp">Partition.hpp</innerfile>
+    <innerfile refid="_touch_g_f_x_init_8hpp">TouchGFXInit.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="common/"/>
+  </compounddef>
+</doxygen>

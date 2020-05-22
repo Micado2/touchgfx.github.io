@@ -1,0 +1,397 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_quadruple" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::Quadruple</compoundname>
+    <derivedcompoundref refid="classtouchgfx_1_1_point4" prot="public" virt="non-virtual">Point4</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_vector4" prot="public" virt="non-virtual">Vector4</derivedcompoundref>
+    <includes local="no">Math3D.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_quadruple_1ab7f237083b1d8b797557b804d0d314df" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float elements[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>elements</name>
+        <briefdescription>
+<para>The elements[4]. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Math3D.hpp" line="166" column="1" bodyfile="touchgfx/Math3D.hpp" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_quadruple_1a1ddfa3b1bb71dec22967557f66ee7912" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float getElement</definition>
+        <argsstring>(int row) const</argsstring>
+        <name>getElement</name>
+        <param>
+          <type>int</type>
+          <declname>row</declname>
+        </param>
+        <briefdescription>
+<para>Gets an element. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>row</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The row (0-3).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The element. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Math3D.hpp" line="47" column="1" bodyfile="touchgfx/Math3D.hpp" bodystart="47" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_quadruple_1a97ac4384926a343ef4df84d2f3edad8a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float getW</definition>
+        <argsstring>() const</argsstring>
+        <name>getW</name>
+        <briefdescription>
+<para>Get w coordinate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The w coordinate. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Math3D.hpp" line="87" column="1" bodyfile="touchgfx/Math3D.hpp" bodystart="87" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_quadruple_1a1da8aa3a43aa06db29c286dc0a87987a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float getX</definition>
+        <argsstring>() const</argsstring>
+        <name>getX</name>
+        <briefdescription>
+<para>Get x coordinate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The x coordinate. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Math3D.hpp" line="57" column="1" bodyfile="touchgfx/Math3D.hpp" bodystart="57" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_quadruple_1a0a3f71b2c1cfb1387019fc4c32f9994c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float getY</definition>
+        <argsstring>() const</argsstring>
+        <name>getY</name>
+        <briefdescription>
+<para>Get y coordinate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The y coordinate. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Math3D.hpp" line="67" column="1" bodyfile="touchgfx/Math3D.hpp" bodystart="67" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_quadruple_1a2edb8bc9da8833de796803d1463951af" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float getZ</definition>
+        <argsstring>() const</argsstring>
+        <name>getZ</name>
+        <briefdescription>
+<para>Get z coordinate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The z coordinate. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Math3D.hpp" line="77" column="1" bodyfile="touchgfx/Math3D.hpp" bodystart="77" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_quadruple_1a4a64da1109167cb44dca4c8ea17f0d0b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setElement</definition>
+        <argsstring>(int row, float value)</argsstring>
+        <name>setElement</name>
+        <param>
+          <type>int</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Sets an element. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>row</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The row (0-3). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new value. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Math3D.hpp" line="98" column="1" bodyfile="touchgfx/Math3D.hpp" bodystart="98" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_quadruple_1a1dbc5544771f5f75ce7b6fe129cb00ab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setW</definition>
+        <argsstring>(float value)</argsstring>
+        <name>setW</name>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Sets a w coordinate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new value. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Math3D.hpp" line="138" column="1" bodyfile="touchgfx/Math3D.hpp" bodystart="138" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_quadruple_1a054981188622744a3ba6a6a1c7e3e13b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setX</definition>
+        <argsstring>(float value)</argsstring>
+        <name>setX</name>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Sets an x coordinate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new value. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Math3D.hpp" line="108" column="1" bodyfile="touchgfx/Math3D.hpp" bodystart="108" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_quadruple_1a1bc97f25ba5ffb37b23b86756ce97933" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setY</definition>
+        <argsstring>(float value)</argsstring>
+        <name>setY</name>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Sets a y coordinate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new value. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Math3D.hpp" line="118" column="1" bodyfile="touchgfx/Math3D.hpp" bodystart="118" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_quadruple_1aff386330165ca2b0e7e6d4ce9956d3b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setZ</definition>
+        <argsstring>(float value)</argsstring>
+        <name>setZ</name>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Sets a z coordinate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new value. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Math3D.hpp" line="128" column="1" bodyfile="touchgfx/Math3D.hpp" bodystart="128" bodyend="131"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_quadruple_1af11ee4fd36688396780a356060a0dce3" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Quadruple</definition>
+        <argsstring>()</argsstring>
+        <name>Quadruple</name>
+        <briefdescription>
+<para>Initializes a new instance of the <ref refid="classtouchgfx_1_1_quadruple" kindref="compound">Quadruple</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; The elements[ 3] </para>
+        </inbodydescription>
+        <location file="touchgfx/Math3D.hpp" line="145" column="1" bodyfile="touchgfx/Math3D.hpp" bodystart="145" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_quadruple_1adfad89e2d23a1c919ba82e121709ac4b" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Quadruple</definition>
+        <argsstring>(float x, float y, float z, float w)</argsstring>
+        <name>Quadruple</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>w</declname>
+        </param>
+        <briefdescription>
+<para>Initializes a new instance of the <ref refid="classtouchgfx_1_1_quadruple" kindref="compound">Quadruple</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The z coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>w</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The w coordinate. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Math3D.hpp" line="158" column="1" bodyfile="touchgfx/Math3D.hpp" bodystart="158" bodyend="164"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class for homogeneous vectors and points. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1302">
+        <label>Quadruple</label>
+        <link refid="classtouchgfx_1_1_quadruple"/>
+      </node>
+      <node id="1303">
+        <label>Point4</label>
+        <link refid="classtouchgfx_1_1_point4"/>
+        <childnode refid="1302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1304">
+        <label>Vector4</label>
+        <link refid="classtouchgfx_1_1_vector4"/>
+        <childnode refid="1302" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="touchgfx/Math3D.hpp" line="38" column="1" bodyfile="touchgfx/Math3D.hpp" bodystart="37" bodyend="167"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_quadruple_1ab7f237083b1d8b797557b804d0d314df" prot="protected" virt="non-virtual"><scope>touchgfx::Quadruple</scope><name>elements</name></member>
+      <member refid="classtouchgfx_1_1_quadruple_1a1ddfa3b1bb71dec22967557f66ee7912" prot="public" virt="non-virtual"><scope>touchgfx::Quadruple</scope><name>getElement</name></member>
+      <member refid="classtouchgfx_1_1_quadruple_1a97ac4384926a343ef4df84d2f3edad8a" prot="public" virt="non-virtual"><scope>touchgfx::Quadruple</scope><name>getW</name></member>
+      <member refid="classtouchgfx_1_1_quadruple_1a1da8aa3a43aa06db29c286dc0a87987a" prot="public" virt="non-virtual"><scope>touchgfx::Quadruple</scope><name>getX</name></member>
+      <member refid="classtouchgfx_1_1_quadruple_1a0a3f71b2c1cfb1387019fc4c32f9994c" prot="public" virt="non-virtual"><scope>touchgfx::Quadruple</scope><name>getY</name></member>
+      <member refid="classtouchgfx_1_1_quadruple_1a2edb8bc9da8833de796803d1463951af" prot="public" virt="non-virtual"><scope>touchgfx::Quadruple</scope><name>getZ</name></member>
+      <member refid="classtouchgfx_1_1_quadruple_1af11ee4fd36688396780a356060a0dce3" prot="protected" virt="non-virtual"><scope>touchgfx::Quadruple</scope><name>Quadruple</name></member>
+      <member refid="classtouchgfx_1_1_quadruple_1adfad89e2d23a1c919ba82e121709ac4b" prot="protected" virt="non-virtual"><scope>touchgfx::Quadruple</scope><name>Quadruple</name></member>
+      <member refid="classtouchgfx_1_1_quadruple_1a4a64da1109167cb44dca4c8ea17f0d0b" prot="public" virt="non-virtual"><scope>touchgfx::Quadruple</scope><name>setElement</name></member>
+      <member refid="classtouchgfx_1_1_quadruple_1a1dbc5544771f5f75ce7b6fe129cb00ab" prot="public" virt="non-virtual"><scope>touchgfx::Quadruple</scope><name>setW</name></member>
+      <member refid="classtouchgfx_1_1_quadruple_1a054981188622744a3ba6a6a1c7e3e13b" prot="public" virt="non-virtual"><scope>touchgfx::Quadruple</scope><name>setX</name></member>
+      <member refid="classtouchgfx_1_1_quadruple_1a1bc97f25ba5ffb37b23b86756ce97933" prot="public" virt="non-virtual"><scope>touchgfx::Quadruple</scope><name>setY</name></member>
+      <member refid="classtouchgfx_1_1_quadruple_1aff386330165ca2b0e7e6d4ce9956d3b3" prot="public" virt="non-virtual"><scope>touchgfx::Quadruple</scope><name>setZ</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

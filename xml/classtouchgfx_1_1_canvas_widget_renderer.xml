@@ -1,0 +1,413 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_canvas_widget_renderer" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::CanvasWidgetRenderer</compoundname>
+    <basecompoundref refid="classtouchgfx_1_1_widget" prot="public" virt="non-virtual">Widget</basecompoundref>
+    <includes local="no">CanvasWidgetRenderer.hpp</includes>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_canvas_widget_renderer_1a6d275ff844b944287ff02dd1cd003c66" prot="private" static="yes" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int maxCellsMissing</definition>
+        <argsstring></argsstring>
+        <name>maxCellsMissing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp" line="193" column="1" bodyfile="touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_canvas_widget_renderer_1ab5ba5ba9dbf7a511eec9774c7e00184b" prot="private" static="yes" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int maxCellsUsed</definition>
+        <argsstring></argsstring>
+        <name>maxCellsUsed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp" line="192" column="1" bodyfile="touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_canvas_widget_renderer_1aa08dfa3799431ea7583d2f6b4b4ab0c5" prot="private" static="yes" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* memoryBuffer</definition>
+        <argsstring></argsstring>
+        <name>memoryBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp" line="182" column="1" bodyfile="touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_canvas_widget_renderer_1a26ee591c64a23e15f34037e1083e13f8" prot="private" static="yes" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int memoryBufferSize</definition>
+        <argsstring></argsstring>
+        <name>memoryBufferSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp" line="183" column="1" bodyfile="touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_canvas_widget_renderer_1a82d156f119ebad69c589458625e7431b" prot="private" static="yes" mutable="no">
+        <type>Cell *</type>
+        <definition>Cell* outlineBuffer</definition>
+        <argsstring></argsstring>
+        <name>outlineBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp" line="188" column="1" bodyfile="touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_canvas_widget_renderer_1a68cb5efd89c9b33a2dbbcf3474bcb46e" prot="private" static="yes" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int outlineBufferSize</definition>
+        <argsstring></argsstring>
+        <name>outlineBufferSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp" line="189" column="1" bodyfile="touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_canvas_widget_renderer_1ad530b2c44730aebf6c1d228029805c3a" prot="private" static="yes" mutable="no">
+        <type>void *</type>
+        <definition>void* scanlineCounts</definition>
+        <argsstring></argsstring>
+        <name>scanlineCounts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp" line="187" column="1" bodyfile="touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_canvas_widget_renderer_1aa48bfd219cad32e37c92dd05314973f0" prot="private" static="yes" mutable="no">
+        <type>void *</type>
+        <definition>void* scanlineCovers</definition>
+        <argsstring></argsstring>
+        <name>scanlineCovers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp" line="185" column="1" bodyfile="touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_canvas_widget_renderer_1ab857f81cfef7193e5a86c1f6cda3270a" prot="private" static="yes" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int scanlineSize</definition>
+        <argsstring></argsstring>
+        <name>scanlineSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp" line="191" column="1" bodyfile="touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_canvas_widget_renderer_1a8428b437e3baf845a3b7fde5f9c3b33d" prot="private" static="yes" mutable="no">
+        <type>void *</type>
+        <definition>void* scanlineStartIndices</definition>
+        <argsstring></argsstring>
+        <name>scanlineStartIndices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp" line="186" column="1" bodyfile="touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_canvas_widget_renderer_1a177ebf6fdb73b6688fccc6c299f852ab" prot="private" static="yes" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int scanlineWidth</definition>
+        <argsstring></argsstring>
+        <name>scanlineWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp" line="184" column="1" bodyfile="touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_canvas_widget_renderer_1a71ffed8e9bcdc8c20a2b874a90bd4c7f" prot="private" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool writeReport</definition>
+        <argsstring></argsstring>
+        <name>writeReport</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp" line="194" column="1" bodyfile="touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_canvas_widget_renderer_1a14c94d800debf92b8dbb50c9c780256d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>static unsigned getMissingBufferSize</definition>
+        <argsstring>()</argsstring>
+        <name>getMissingBufferSize</name>
+        <briefdescription>
+<para>Calculate how much memory was required by CanvasWidgets, but was unavailable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the value returned is greater than 0 it means the This can be used to fine tune the size of the buffer passed to <ref refid="classtouchgfx_1_1_canvas_widget_renderer" kindref="compound">CanvasWidgetRenderer</ref> upon initialization.</para>
+<para><simplesect kind="return"><para>The number of bytes required. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp" line="177" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_canvas_widget_renderer_1a2a8f444c1114199ab64d6d79f1576adf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>static unsigned getUsedBufferSize</definition>
+        <argsstring>()</argsstring>
+        <name>getUsedBufferSize</name>
+        <briefdescription>
+<para>Calculate how much memory has been required by CanvasWidgets. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This can be used to fine tune the size of the buffer passed to <ref refid="classtouchgfx_1_1_canvas_widget_renderer" kindref="compound">CanvasWidgetRenderer</ref> upon initialization.</para>
+<para><simplesect kind="return"><para>The number of bytes required. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp" line="168" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_canvas_widget_renderer_1af1cc3bb534c3e0aab965684d95eef14a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool getWriteMemoryUsageReport</definition>
+        <argsstring>()</argsstring>
+        <name>getWriteMemoryUsageReport</name>
+        <briefdescription>
+<para>Gets write memory usage report flag. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if it CWR writes memory reports, false if not. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp" line="142" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_canvas_widget_renderer_1a44620941d83aef66febd70b354184bbf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void setupBuffer</definition>
+        <argsstring>(uint8_t *buffer, unsigned bufsize)</argsstring>
+        <name>setupBuffer</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>bufsize</declname>
+        </param>
+        <briefdescription>
+<para>Setup the buffers used by <ref refid="classtouchgfx_1_1_canvas_widget" kindref="compound">CanvasWidget</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer reserved for <ref refid="classtouchgfx_1_1_canvas_widget" kindref="compound">CanvasWidget</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bufsize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the buffer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_canvas_widget_renderer_1a3fec0ac3b067e7e45a622620204dc032" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void setWriteMemoryUsageReport</definition>
+        <argsstring>(bool writeUsageReport)</argsstring>
+        <name>setWriteMemoryUsageReport</name>
+        <param>
+          <type>bool</type>
+          <declname>writeUsageReport</declname>
+        </param>
+        <briefdescription>
+<para>Memory reporting. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Memory reporting can be turned on (and off) using this method. CWR will try to work with the given amount of memory passed when calling <ref refid="classtouchgfx_1_1_canvas_widget_renderer_1a44620941d83aef66febd70b354184bbf" kindref="member">setupBuffer()</ref>. If the outline of the figure is too complex, this will be reported.</para>
+<para>&quot;CWR requires X bytes&quot; means that X bytes is the highest number of bytes required by CWR so far, but since the size of the invalidated area and the shape of things draw can influence this, this may be reported several times with a higher and higher number. Leave your app running for a long time to find out what the memory requirements are.</para>
+<para>&quot;CWR requires X bytes (Y bytes missing)&quot; means the same as the report above, but there as was not enough memory to render the entire shape. To get around this, CWR will split the shape into two separate drawings of half size. This means that less memory is required, but drawing will be (somewhat) slower. After you see this message all future draws will be split into smaller chunks, so memory requirements might not get as high. This is followed by:</para>
+<para>&quot;CWR will split draw into multiple draws due to limited memory.&quot; actually just means that CWR will try to work with a smaller amount of memory.</para>
+<para>In general, if there is enough memory available to run the simulation and never see the message &quot;CWR will split draw ...&quot;, this is preferred. The size of the buffer required will be the highest number X reported as &quot;CWR requires X bytes&quot;. Good numbers can also be around half of X.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>writeUsageReport</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true to write report.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_canvas_widget_renderer_1a44620941d83aef66febd70b354184bbf" kindref="member">setupBuffer</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp" line="135" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class for supporting drawing of figures. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class holds the memory which is used by the underlying algorithms. <ref refid="classtouchgfx_1_1_canvas_widget" kindref="compound">CanvasWidget</ref> will not allocate memory dynamically, but will use memory from the buffer passed to <ref refid="classtouchgfx_1_1_canvas_widget_renderer" kindref="compound">CanvasWidgetRenderer</ref>. When using the TouchGFX simulator, it is also possible to get a report on the actual amount of memory used for drawing with <ref refid="classtouchgfx_1_1_canvas_widget_renderer" kindref="compound">CanvasWidgetRenderer</ref> to help adjusting the buffer size.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_widget" kindref="compound">Widget</ref>, <ref refid="classtouchgfx_1_1_canvas_widget_renderer_1a3fec0ac3b067e7e45a622620204dc032" kindref="member">setWriteMemoryUsageReport</ref>, <ref refid="classtouchgfx_1_1_canvas_widget_renderer_1af1cc3bb534c3e0aab965684d95eef14a" kindref="member">getWriteMemoryUsageReport</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="384">
+        <label>CanvasWidgetRenderer</label>
+        <link refid="classtouchgfx_1_1_canvas_widget_renderer"/>
+        <childnode refid="385" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="385">
+        <label>Widget</label>
+        <link refid="classtouchgfx_1_1_widget"/>
+        <childnode refid="386" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="386">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="387">
+        <label>CanvasWidgetRenderer</label>
+        <link refid="classtouchgfx_1_1_canvas_widget_renderer"/>
+        <childnode refid="388" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="388">
+        <label>Widget</label>
+        <link refid="classtouchgfx_1_1_widget"/>
+        <childnode refid="389" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="390">
+        <label>Rect</label>
+        <link refid="classtouchgfx_1_1_rect"/>
+      </node>
+      <node id="389">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+        <childnode refid="390" relation="usage">
+          <edgelabel>rect</edgelabel>
+        </childnode>
+        <childnode refid="389" relation="usage">
+          <edgelabel>nextSibling</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp" line="27" column="1" bodyfile="touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp" bodystart="26" bodyend="196"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_drawable_1ae2d939b2a9c253f0fb3bae3ec7be4e2f" prot="public" virt="virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>childGeometryChanged</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a7e4c58d8817f4119459b70ec52c38ef4" prot="public" virt="pure-virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>draw</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9cf3a85fa7554475fa42c97985bda6df" prot="public" virt="non-virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>Drawable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4a009ec2b654351679a0124e9055abdc" prot="public" virt="non-virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>drawToDynamicBitmap</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa7737d9d49d7f55ec9bde8f2c9751b1d" prot="public" virt="non-virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>getAbsoluteRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ad00483821e06fe4d0d70222de4135d30" prot="public" virt="non-virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>getHeight</name></member>
+      <member refid="classtouchgfx_1_1_widget_1a6bc8e89dc7f879221e9862fb27dc726f" prot="public" virt="virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>getLastChild</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_renderer_1a14c94d800debf92b8dbb50c9c780256d" prot="public" virt="non-virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>getMissingBufferSize</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a61c9b2bf703c49a6d238d354ddcaedb3" prot="public" virt="non-virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>getNextSibling</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a013e065d4d9a10dbfa0ddee9a35582a3" prot="public" virt="non-virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>getParent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af23a5bb7d473e16363a449c497586be3" prot="public" virt="non-virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>getRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae7cd27bb574d3b85bd0ce5ce99e555ba" prot="public" virt="pure-virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>getSolidRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4783dfe657ff1b7a33261bda8c4b4266" prot="public" virt="virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>getSolidRectAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_renderer_1a2a8f444c1114199ab64d6d79f1576adf" prot="public" virt="non-virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>getUsedBufferSize</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a83b8847f583b63e60aa4bf778261ddd7" prot="public" virt="virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>getVisibleRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1acae58162aaca6fc174416550f76668e7" prot="public" virt="non-virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>getWidth</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_renderer_1af1cc3bb534c3e0aab965684d95eef14a" prot="public" virt="non-virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>getWriteMemoryUsageReport</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac071e9b7ccf37179df7d29c6778b664c" prot="public" virt="non-virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>getX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a26752e6cff4607d0eec8768ef6d9032a" prot="public" virt="non-virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>getY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a7f1524b90bc90e5f6cf7ee47aae12123" prot="public" virt="virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>handleClickEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a06ae1946b2124cc94e26cfe18728debf" prot="public" virt="virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>handleDragEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4db4945ecbc2303bf860e082409b8029" prot="public" virt="virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>handleGestureEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1af635cee0f186c3d0fcea60bac14355" prot="public" virt="virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>handleTickEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2800b4c18c63e9e7b1f85a74ce6b80c3" prot="public" virt="virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>invalidate</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a130cf6e1bf2b9f04f48e659758fa75e2" prot="public" virt="virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>invalidateRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a01c717b9abc98d48673b79d691c2d28a" prot="public" virt="non-virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>isTouchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9d8a6cfb13917785c143e74d40e4e2be" prot="public" virt="non-virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>isVisible</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_renderer_1a6d275ff844b944287ff02dd1cd003c66" prot="private" virt="non-virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>maxCellsMissing</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_renderer_1ab5ba5ba9dbf7a511eec9774c7e00184b" prot="private" virt="non-virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>maxCellsUsed</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_renderer_1aa08dfa3799431ea7583d2f6b4b4ab0c5" prot="private" virt="non-virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>memoryBuffer</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_renderer_1a26ee591c64a23e15f34037e1083e13f8" prot="private" virt="non-virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>memoryBufferSize</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af3590480070e2cf91580976f322d2c5e" prot="public" virt="virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>moveRelative</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aadc5abfad4d2fcc331cf8de8713dc00e" prot="public" virt="virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>moveTo</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0da4a00c3fbdea5740e52c7e04316c65" prot="protected" virt="non-virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>nextSibling</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_renderer_1a82d156f119ebad69c589458625e7431b" prot="private" virt="non-virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>outlineBuffer</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_renderer_1a68cb5efd89c9b33a2dbbcf3474bcb46e" prot="private" virt="non-virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>outlineBufferSize</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ab77c13cde2b01107dcbc5c2b584d422f" prot="protected" virt="non-virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>parent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2a955ddc316d002f566598f340eb2af9" prot="protected" virt="non-virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>rect</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_renderer_1ad530b2c44730aebf6c1d228029805c3a" prot="private" virt="non-virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>scanlineCounts</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_renderer_1aa48bfd219cad32e37c92dd05314973f0" prot="private" virt="non-virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>scanlineCovers</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_renderer_1ab857f81cfef7193e5a86c1f6cda3270a" prot="private" virt="non-virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>scanlineSize</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_renderer_1a8428b437e3baf845a3b7fde5f9c3b33d" prot="private" virt="non-virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>scanlineStartIndices</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_renderer_1a177ebf6fdb73b6688fccc6c299f852ab" prot="private" virt="non-virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>scanlineWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a47a6312407603de99247bb802dbd8a48" prot="public" virt="virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>setHeight</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac218c371450d8ad2bed3e1b07965a41a" prot="public" virt="virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>setPosition</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae4c38eadb852b153850ea7ded1f50a19" prot="public" virt="non-virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>setTouchable</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_renderer_1a44620941d83aef66febd70b354184bbf" prot="public" virt="non-virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>setupBuffer</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a71639c6634c5dcf6d1bb21b8b1b61f5b" prot="public" virt="non-virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>setVisible</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae74a37f71d23440fc8b0466ad8ecfe4b" prot="public" virt="virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>setWidth</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_renderer_1a3fec0ac3b067e7e45a622620204dc032" prot="public" virt="non-virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>setWriteMemoryUsageReport</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9f6db7f34a74e991fc446fffb5703a53" prot="public" virt="virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>setX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6c86659dc1e7355c207e9c0aa18af167" prot="public" virt="virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>setXY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1b08d48e7e23a046f09e63089bc82bc1" prot="public" virt="virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>setY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0d014de134cb9b9c1c361fcd726a5f34" prot="protected" virt="non-virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>touchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a48c1d14ac943dbfa4935ea39db950608" prot="public" virt="virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>translateRectToAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa54a57ae048476d840caf6d4d2c47aa3" prot="protected" virt="non-virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>visible</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_renderer_1a71ffed8e9bcdc8c20a2b874a90bd4c7f" prot="private" virt="non-virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>writeReport</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6bb040a11ffc2bd641283cc0bc0d1346" prot="public" virt="virtual"><scope>touchgfx::CanvasWidgetRenderer</scope><name>~Drawable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

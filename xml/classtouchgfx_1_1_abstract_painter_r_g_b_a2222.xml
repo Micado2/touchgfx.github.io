@@ -1,0 +1,498 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_abstract_painter_r_g_b_a2222" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>touchgfx::AbstractPainterRGBA2222</compoundname>
+    <basecompoundref refid="classtouchgfx_1_1_abstract_painter" prot="public" virt="non-virtual">AbstractPainter</basecompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_painter_r_g_b_a2222" prot="public" virt="non-virtual">PainterRGBA2222</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_painter_r_g_b_a2222_bitmap" prot="public" virt="non-virtual">PainterRGBA2222Bitmap</derivedcompoundref>
+    <includes local="no">AbstractPainterRGBA2222.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_abstract_painter_r_g_b_a2222_1a64f7b27f87296e4ca5cc2d60ee3303b0" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int currentX</definition>
+        <argsstring></argsstring>
+        <name>currentX</name>
+        <briefdescription>
+<para>Current x coordinate relative to the widget. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/AbstractPainterRGBA2222.hpp" line="77" column="1" bodyfile="touchgfx/widgets/canvas/AbstractPainterRGBA2222.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_abstract_painter_r_g_b_a2222_1af649605bffa9661bfdf81cb40fcbccbd" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int currentY</definition>
+        <argsstring></argsstring>
+        <name>currentY</name>
+        <briefdescription>
+<para>Current y coordinate relative to the widget. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/AbstractPainterRGBA2222.hpp" line="78" column="1" bodyfile="touchgfx/widgets/canvas/AbstractPainterRGBA2222.hpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_painter_r_g_b_a2222_1a59762642cd13e848875d5cc0bdf3432c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AbstractPainterRGBA2222</definition>
+        <argsstring>()</argsstring>
+        <name>AbstractPainterRGBA2222</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/AbstractPainterRGBA2222.hpp" line="26" column="1" bodyfile="touchgfx/widgets/canvas/AbstractPainterRGBA2222.hpp" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_painter_r_g_b_a2222_1a7f74f016de617471a03f48ec357dfcbc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>FORCE_INLINE_FUNCTION uint8_t</type>
+        <definition>FORCE_INLINE_FUNCTION uint8_t mixColors</definition>
+        <argsstring>(uint8_t newpix, uint8_t bufpix, uint8_t alpha)</argsstring>
+        <name>mixColors</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>newpix</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>bufpix</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+<para>Mix colors from a new pixel and a buffer pixel with the given alpha applied to the new pixel, and the inverse alpha applied to the buffer pixel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newpix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new pixel value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bufpix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The buffer pixel value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alpha to apply to the new pixel.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The result of blending the two colors into a new color. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/AbstractPainterRGBA2222.hpp" line="36" column="1" bodyfile="touchgfx/widgets/canvas/AbstractPainterRGBA2222.hpp" bodystart="36" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_painter_r_g_b_a2222_1a7a1044374807c6f7f32b82e57b7f1212" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>FORCE_INLINE_FUNCTION uint8_t</type>
+        <definition>FORCE_INLINE_FUNCTION uint8_t mixColors</definition>
+        <argsstring>(uint8_t R, uint8_t G, uint8_t B, uint8_t bufpix, uint8_t alpha)</argsstring>
+        <name>mixColors</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>R</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>bufpix</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+<para>Mix colors from a new pixel and a buffer pixel with the given alpha applied to the new pixel, and the inverse alpha applied to the buffer pixel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>R</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The red color. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The green color. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The blue color. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bufpix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The buffer pixel value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alpha of the R,G,B.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The result of blending the two colors into a new color. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/AbstractPainterRGBA2222.hpp" line="46" column="1" bodyfile="touchgfx/widgets/canvas/AbstractPainterRGBA2222.hpp" bodystart="46" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_painter_r_g_b_a2222_1a8441245669080e102adac555a07830ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void render</definition>
+        <argsstring>(uint8_t *ptr, int x, int xAdjust, int y, unsigned count, const uint8_t *covers)</argsstring>
+        <name>render</name>
+        <reimplements refid="classtouchgfx_1_1_abstract_painter_1a57419543eb049dc2bc3fca0aea4a796f">render</reimplements>
+        <reimplementedby refid="classtouchgfx_1_1_painter_r_g_b_a2222_bitmap_1a8441245669080e102adac555a07830ea">render</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_painter_r_g_b_a2222_1a8441245669080e102adac555a07830ea">render</reimplementedby>
+        <param>
+          <type>uint8_t *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>xAdjust</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>covers</declname>
+        </param>
+        <briefdescription>
+<para>Paint a designated part of the RenderingBuffer with respect to the amount of coverage of each pixel given by the parameter covers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The cover is the alpha for each pixel, which is what makes it possible to have smooth anti-aliased edges on the shapes drawn with <ref refid="classtouchgfx_1_1_canvas_widget_renderer" kindref="compound">CanvasWidgetRenderer</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the row in the RenderingBuffer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xAdjust</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minor adjustment of x (used when a pixel is smaller than a byte to specify that the <emphasis>ptr</emphasis> should have been advanced &quot;xAdjust&quot; pixels futher into the byte). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of pixels to fill. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>covers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The coverage in of each pixel.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The implementation of <ref refid="classtouchgfx_1_1_abstract_painter_r_g_b_a2222_1a8441245669080e102adac555a07830ea" kindref="member">render()</ref> in the <ref refid="classtouchgfx_1_1_abstract_painter" kindref="compound">AbstractPainter</ref> classes is a generic (i.e. slow) implementation that should be completely implemented in subclasses of <ref refid="classtouchgfx_1_1_abstract_painter" kindref="compound">AbstractPainter</ref> for better performance. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/AbstractPainterRGBA2222.hpp" line="31" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_painter_r_g_b_a2222_1a51910f125f1da3e5e47a57708f0a932e" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool renderInit</definition>
+        <argsstring>()</argsstring>
+        <name>renderInit</name>
+        <reimplementedby refid="classtouchgfx_1_1_painter_r_g_b_a2222_bitmap_1a51910f125f1da3e5e47a57708f0a932e">renderInit</reimplementedby>
+        <briefdescription>
+<para>Initialize rendering of a single scan line of pixels for the render. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If renderInit returns false, the scanline will not be rendered.</para>
+<para><simplesect kind="return"><para>true if it succeeds, false if it fails. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/AbstractPainterRGBA2222.hpp" line="62" column="1" bodyfile="touchgfx/widgets/canvas/AbstractPainterRGBA2222.hpp" bodystart="62" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_painter_r_g_b_a2222_1a55afc07a1bb1885299785f1e0516885c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool renderNext</definition>
+        <argsstring>(uint8_t &amp;red, uint8_t &amp;green, uint8_t &amp;blue, uint8_t &amp;alpha)=0</argsstring>
+        <name>renderNext</name>
+        <reimplementedby refid="classtouchgfx_1_1_painter_r_g_b_a2222_bitmap_1a4c19bd631f876ccfea12d1b9e5b05778">renderNext</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_painter_r_g_b_a2222_1a4c19bd631f876ccfea12d1b9e5b05778">renderNext</reimplementedby>
+        <param>
+          <type>uint8_t &amp;</type>
+          <declname>red</declname>
+        </param>
+        <param>
+          <type>uint8_t &amp;</type>
+          <declname>green</declname>
+        </param>
+        <param>
+          <type>uint8_t &amp;</type>
+          <declname>blue</declname>
+        </param>
+        <param>
+          <type>uint8_t &amp;</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+<para>Get the color of the next pixel in the scan line to blend into the framebuffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">red</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The red. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">green</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The green. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">blue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The blue. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alpha.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the pixel should be painted, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/AbstractPainterRGBA2222.hpp" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_painter_r_g_b_a2222_1aa80373a9a53a7bf76cde8b231ba081ce" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void renderPixel</definition>
+        <argsstring>(uint8_t *p, uint8_t red, uint8_t green, uint8_t blue)</argsstring>
+        <name>renderPixel</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>red</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>green</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>blue</declname>
+        </param>
+        <briefdescription>
+<para>Renders (writes) the specified color into the framebuffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer into the framebuffer where the given color should be written. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>red</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The red color. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>green</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The green color. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>blue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The blue color. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/AbstractPainterRGBA2222.hpp" line="75" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classtouchgfx_1_1_abstract_painter_r_g_b_a2222" kindref="compound">AbstractPainterRGBA2222</ref> class is an abstract class for creating a painter to draw on a RGBA2222 display using <ref refid="classtouchgfx_1_1_canvas_widget_renderer" kindref="compound">CanvasWidgetRenderer</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_abstract_painter" kindref="compound">AbstractPainter</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="144">
+        <label>PainterRGBA2222</label>
+        <link refid="classtouchgfx_1_1_painter_r_g_b_a2222"/>
+        <childnode refid="142" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="143">
+        <label>AbstractPainter</label>
+        <link refid="classtouchgfx_1_1_abstract_painter"/>
+      </node>
+      <node id="145">
+        <label>PainterRGBA2222Bitmap</label>
+        <link refid="classtouchgfx_1_1_painter_r_g_b_a2222_bitmap"/>
+        <childnode refid="142" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="142">
+        <label>AbstractPainterRGBA2222</label>
+        <link refid="classtouchgfx_1_1_abstract_painter_r_g_b_a2222"/>
+        <childnode refid="143" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="147">
+        <label>AbstractPainter</label>
+        <link refid="classtouchgfx_1_1_abstract_painter"/>
+      </node>
+      <node id="146">
+        <label>AbstractPainterRGBA2222</label>
+        <link refid="classtouchgfx_1_1_abstract_painter_r_g_b_a2222"/>
+        <childnode refid="147" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/widgets/canvas/AbstractPainterRGBA2222.hpp" line="24" column="1" bodyfile="touchgfx/widgets/canvas/AbstractPainterRGBA2222.hpp" bodystart="23" bodyend="79"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_abstract_painter_1aa4f80084e6ff903500fe2febda5f2f41" prot="public" virt="non-virtual"><scope>touchgfx::AbstractPainterRGBA2222</scope><name>AbstractPainter</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_r_g_b_a2222_1a59762642cd13e848875d5cc0bdf3432c" prot="public" virt="non-virtual"><scope>touchgfx::AbstractPainterRGBA2222</scope><name>AbstractPainterRGBA2222</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_1a290754e533a9f126030de238db59494a" prot="protected" virt="non-virtual"><scope>touchgfx::AbstractPainterRGBA2222</scope><name>areaOffsetX</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_1aee5f795da3f83f1f63af9d0c0acb75d2" prot="protected" virt="non-virtual"><scope>touchgfx::AbstractPainterRGBA2222</scope><name>areaOffsetY</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_1a90f2b5c86d316ef720ac9c414caf7582" prot="protected" virt="non-virtual"><scope>touchgfx::AbstractPainterRGBA2222</scope><name>compatibleFramebuffer</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_r_g_b_a2222_1a64f7b27f87296e4ca5cc2d60ee3303b0" prot="protected" virt="non-virtual"><scope>touchgfx::AbstractPainterRGBA2222</scope><name>currentX</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_r_g_b_a2222_1af649605bffa9661bfdf81cb40fcbccbd" prot="protected" virt="non-virtual"><scope>touchgfx::AbstractPainterRGBA2222</scope><name>currentY</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_r_g_b_a2222_1a7f74f016de617471a03f48ec357dfcbc" prot="public" virt="non-virtual"><scope>touchgfx::AbstractPainterRGBA2222</scope><name>mixColors</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_r_g_b_a2222_1a7a1044374807c6f7f32b82e57b7f1212" prot="public" virt="non-virtual"><scope>touchgfx::AbstractPainterRGBA2222</scope><name>mixColors</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_r_g_b_a2222_1a8441245669080e102adac555a07830ea" prot="public" virt="virtual"><scope>touchgfx::AbstractPainterRGBA2222</scope><name>render</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_r_g_b_a2222_1a51910f125f1da3e5e47a57708f0a932e" prot="protected" virt="virtual"><scope>touchgfx::AbstractPainterRGBA2222</scope><name>renderInit</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_r_g_b_a2222_1a55afc07a1bb1885299785f1e0516885c" prot="protected" virt="pure-virtual"><scope>touchgfx::AbstractPainterRGBA2222</scope><name>renderNext</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_r_g_b_a2222_1aa80373a9a53a7bf76cde8b231ba081ce" prot="protected" virt="virtual"><scope>touchgfx::AbstractPainterRGBA2222</scope><name>renderPixel</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_1a5d2eaea5211939c699e009b61e4372af" prot="public" virt="non-virtual"><scope>touchgfx::AbstractPainterRGBA2222</scope><name>setOffset</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_1a03f9d48d2592bf9ef9644992ae82e545" prot="protected" virt="non-virtual"><scope>touchgfx::AbstractPainterRGBA2222</scope><name>setWidgetAlpha</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_1ac77f8cef6ca6a25c3fa9e7f6fb1274cb" prot="protected" virt="non-virtual"><scope>touchgfx::AbstractPainterRGBA2222</scope><name>widgetAlpha</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_1a212a3772cf31ed3710dca0baea1ae436" prot="public" virt="virtual"><scope>touchgfx::AbstractPainterRGBA2222</scope><name>~AbstractPainter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,314 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_text_area_with_one_wildcard" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::TextAreaWithOneWildcard</compoundname>
+    <basecompoundref refid="classtouchgfx_1_1_text_area" prot="public" virt="non-virtual">TextArea</basecompoundref>
+    <includes local="no">TextAreaWithWildcard.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_text_area_with_one_wildcard_1aa094ed5c7875eab08a176fe148d09d7d" prot="protected" static="no" mutable="no">
+        <type>const <ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref> *</type>
+        <definition>const Unicode::UnicodeChar* wildcard</definition>
+        <argsstring></argsstring>
+        <name>wildcard</name>
+        <briefdescription>
+<para>Pointer to the wildcard string. Must be null-terminated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TextAreaWithWildcard.hpp" line="69" column="1" bodyfile="touchgfx/widgets/TextAreaWithWildcard.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_text_area_with_one_wildcard_1ae97e6c021d3075099eb88a81b868b5c7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void draw</definition>
+        <argsstring>(const Rect &amp;area) const</argsstring>
+        <name>draw</name>
+        <reimplements refid="classtouchgfx_1_1_text_area_1ae97e6c021d3075099eb88a81b868b5c7">draw</reimplements>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>invalidatedArea</declname>
+        </param>
+        <briefdescription>
+<para>Draw this drawable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It is a requirement that the draw implementation does not draw outside the region specified by invalidatedArea.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>invalidatedArea</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sub-region of this drawable that needs to be redrawn, expressed in coordinates relative to its parent (e.g. for a complete redraw, invalidatedArea will be (0, 0, width, height). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TextAreaWithWildcard.hpp" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_text_area_with_one_wildcard_1a733d4fab88e4bf60c5cd7900a2796f41" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int16_t</type>
+        <definition>virtual int16_t getTextHeight</definition>
+        <argsstring>()</argsstring>
+        <name>getTextHeight</name>
+        <reimplements refid="classtouchgfx_1_1_text_area_1a733d4fab88e4bf60c5cd7900a2796f41">getTextHeight</reimplements>
+        <briefdescription>
+<para>Gets the total height needed by the text, taking number of lines and line spacing into consideration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the total height needed by the text. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TextAreaWithWildcard.hpp" line="32" column="1" bodyfile="touchgfx/widgets/TextAreaWithWildcard.hpp" bodystart="32" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_text_area_with_one_wildcard_1a47cb5b4519fe856a390ec95bbaa4c5b8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>uint16_t</type>
+        <definition>virtual uint16_t getTextWidth</definition>
+        <argsstring>() const</argsstring>
+        <name>getTextWidth</name>
+        <reimplements refid="classtouchgfx_1_1_text_area_1a47cb5b4519fe856a390ec95bbaa4c5b8">getTextWidth</reimplements>
+        <briefdescription>
+<para>Gets the width in pixels of the current associated text in the current selected language. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>In case of multi-lined text the width of the widest line is returned.</para>
+<para><simplesect kind="return"><para>The width in pixels of the current text. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TextAreaWithWildcard.hpp" line="63" column="1" bodyfile="touchgfx/widgets/TextAreaWithWildcard.hpp" bodystart="63" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_text_area_with_one_wildcard_1a86b3321d3a62912d5aa1f20168389889" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref> *</type>
+        <definition>const Unicode::UnicodeChar* getWildcard</definition>
+        <argsstring>() const</argsstring>
+        <name>getWildcard</name>
+        <briefdescription>
+<para>Gets the wildcard used in the <ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref> as previously set using <ref refid="classtouchgfx_1_1_text_area_with_one_wildcard_1a43aed159ec16278e3b9da7167bed8313" kindref="member">setWildcard()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The wildcard used in the text. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TextAreaWithWildcard.hpp" line="58" column="1" bodyfile="touchgfx/widgets/TextAreaWithWildcard.hpp" bodystart="58" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_text_area_with_one_wildcard_1a43aed159ec16278e3b9da7167bed8313" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setWildcard</definition>
+        <argsstring>(const Unicode::UnicodeChar *value)</argsstring>
+        <name>setWildcard</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref> *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Sets the wildcard used in the <ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref> where &lt;placeholder&gt; is placed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Wildcard string must be a null-terminated UnicodeChar array.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the UnicodeChar to set the wildcard to.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The pointer passed is saved, and must be accessible whenever <ref refid="classtouchgfx_1_1_text_area_with_one_wildcard" kindref="compound">TextAreaWithOneWildcard</ref> may need it. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TextAreaWithWildcard.hpp" line="48" column="1" bodyfile="touchgfx/widgets/TextAreaWithWildcard.hpp" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_text_area_with_one_wildcard_1afa60af02e3292dcd17da7b2ee552dc7f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TextAreaWithOneWildcard</definition>
+        <argsstring>()</argsstring>
+        <name>TextAreaWithOneWildcard</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TextAreaWithWildcard.hpp" line="27" column="1" bodyfile="touchgfx/widgets/TextAreaWithWildcard.hpp" bodystart="27" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classtouchgfx_1_1_text_area" kindref="compound">TextArea</ref> with one wildcard. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The format string (i.e. the <ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref> set in <ref refid="classtouchgfx_1_1_text_area_1aeac718ae52f2b1c83da1093e171e5d1b" kindref="member">setTypedText()</ref>) is expected to contain a wildcard &lt;placeholder&gt; from the text.</para>
+<para><simplesect kind="note"><para>the text converter tool converts the &lt;...&gt; to ascii value 2 which is then being replaced by a wildcard text. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1551">
+        <label>Widget</label>
+        <link refid="classtouchgfx_1_1_widget"/>
+        <childnode refid="1552" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1549">
+        <label>TextAreaWithOneWildcard</label>
+        <link refid="classtouchgfx_1_1_text_area_with_one_wildcard"/>
+        <childnode refid="1550" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1552">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+      </node>
+      <node id="1550">
+        <label>TextArea</label>
+        <link refid="classtouchgfx_1_1_text_area"/>
+        <childnode refid="1551" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1555">
+        <label>Widget</label>
+        <link refid="classtouchgfx_1_1_widget"/>
+        <childnode refid="1556" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1553">
+        <label>TextAreaWithOneWildcard</label>
+        <link refid="classtouchgfx_1_1_text_area_with_one_wildcard"/>
+        <childnode refid="1554" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1557">
+        <label>Rect</label>
+        <link refid="classtouchgfx_1_1_rect"/>
+      </node>
+      <node id="1558">
+        <label>TypedText</label>
+        <link refid="classtouchgfx_1_1_typed_text"/>
+      </node>
+      <node id="1556">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+        <childnode refid="1557" relation="usage">
+          <edgelabel>rect</edgelabel>
+        </childnode>
+        <childnode refid="1556" relation="usage">
+          <edgelabel>nextSibling</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="1554">
+        <label>TextArea</label>
+        <link refid="classtouchgfx_1_1_text_area"/>
+        <childnode refid="1555" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1558" relation="usage">
+          <edgelabel>typedText</edgelabel>
+        </childnode>
+        <childnode refid="1559" relation="usage">
+          <edgelabel>color</edgelabel>
+        </childnode>
+      </node>
+      <node id="1559">
+        <label>colortype</label>
+        <link refid="structtouchgfx_1_1colortype"/>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/widgets/TextAreaWithWildcard.hpp" line="25" column="1" bodyfile="touchgfx/widgets/TextAreaWithWildcard.hpp" bodystart="24" bodyend="70"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_text_area_1acf5bb76caa419c0fa231dbd66c881084" prot="protected" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>alpha</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1abb108f49dd3225ec7411ec9f286404f3" prot="public" virt="virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>calculateTextHeight</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae2d939b2a9c253f0fb3bae3ec7be4e2f" prot="public" virt="virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>childGeometryChanged</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1a4f5b95d48bc5f29034d5794ef85a5072" prot="protected" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>color</name></member>
+      <member refid="classtouchgfx_1_1_text_area_with_one_wildcard_1ae97e6c021d3075099eb88a81b868b5c7" prot="public" virt="virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>draw</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9cf3a85fa7554475fa42c97985bda6df" prot="public" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>Drawable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4a009ec2b654351679a0124e9055abdc" prot="public" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>drawToDynamicBitmap</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa7737d9d49d7f55ec9bde8f2c9751b1d" prot="public" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>getAbsoluteRect</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1a302926ead4ee8a161627575d2666a7f2" prot="public" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>getAlpha</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1aeac6531763a7b698f2c7e99c2466e384" prot="public" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>getColor</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ad00483821e06fe4d0d70222de4135d30" prot="public" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>getHeight</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1a7e01124c02070721f09c608e89e9b68d" prot="public" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>getIndentation</name></member>
+      <member refid="classtouchgfx_1_1_widget_1a6bc8e89dc7f879221e9862fb27dc726f" prot="public" virt="virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>getLastChild</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1aa7ccd759542a046bdeab600936fb7988" prot="public" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>getLinespacing</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a61c9b2bf703c49a6d238d354ddcaedb3" prot="public" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>getNextSibling</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a013e065d4d9a10dbfa0ddee9a35582a3" prot="public" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>getParent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af23a5bb7d473e16363a449c497586be3" prot="public" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>getRect</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1aedf2bb3f12e6bbc057537cb32e5ef3e4" prot="public" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>getRotation</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1a4dcdd780e93cc783a2ceeda00c6f3b51" prot="public" virt="virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>getSolidRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4783dfe657ff1b7a33261bda8c4b4266" prot="public" virt="virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>getSolidRectAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_text_area_with_one_wildcard_1a733d4fab88e4bf60c5cd7900a2796f41" prot="public" virt="virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>getTextHeight</name></member>
+      <member refid="classtouchgfx_1_1_text_area_with_one_wildcard_1a47cb5b4519fe856a390ec95bbaa4c5b8" prot="public" virt="virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>getTextWidth</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1a3601f0801df76443a2d9a5b5a1d9c502" prot="public" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>getTypedText</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a83b8847f583b63e60aa4bf778261ddd7" prot="public" virt="virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>getVisibleRect</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1a89d80545b311896f8a171219810b7ad0" prot="public" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>getWideTextAction</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1acae58162aaca6fc174416550f76668e7" prot="public" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>getWidth</name></member>
+      <member refid="classtouchgfx_1_1_text_area_with_one_wildcard_1a86b3321d3a62912d5aa1f20168389889" prot="public" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>getWildcard</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac071e9b7ccf37179df7d29c6778b664c" prot="public" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>getX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a26752e6cff4607d0eec8768ef6d9032a" prot="public" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>getY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a7f1524b90bc90e5f6cf7ee47aae12123" prot="public" virt="virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>handleClickEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a06ae1946b2124cc94e26cfe18728debf" prot="public" virt="virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>handleDragEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4db4945ecbc2303bf860e082409b8029" prot="public" virt="virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>handleGestureEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1af635cee0f186c3d0fcea60bac14355" prot="public" virt="virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>handleTickEvent</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1a7f173532f55bd02c1fed2cda6418587d" prot="protected" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>indentation</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2800b4c18c63e9e7b1f85a74ce6b80c3" prot="public" virt="virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>invalidate</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a130cf6e1bf2b9f04f48e659758fa75e2" prot="public" virt="virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>invalidateRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a01c717b9abc98d48673b79d691c2d28a" prot="public" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>isTouchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9d8a6cfb13917785c143e74d40e4e2be" prot="public" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>isVisible</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1ade26dbb806465aa47f618f41ac88c63f" prot="protected" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>linespace</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af3590480070e2cf91580976f322d2c5e" prot="public" virt="virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>moveRelative</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aadc5abfad4d2fcc331cf8de8713dc00e" prot="public" virt="virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>moveTo</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0da4a00c3fbdea5740e52c7e04316c65" prot="protected" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>nextSibling</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ab77c13cde2b01107dcbc5c2b584d422f" prot="protected" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>parent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2a955ddc316d002f566598f340eb2af9" prot="protected" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>rect</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1a1306189c0d4f590ffa813138ad0e6a8a" prot="public" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>resizeHeightToCurrentText</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1a9a00203c4155df0e31d70a6c5acaef08" prot="public" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>resizeToCurrentText</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1a7c97c49f6480b3b4760ae666d41dea49" prot="public" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>resizeToCurrentTextWithAlignment</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1ace2060689312248614d3cf147b03358e" prot="protected" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>rotation</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1a40b4eaf63ab7df1422b403a5a384a0b3" prot="public" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>setAlpha</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1a5afb6fcab0655e8c79bcc13d7a2c230b" prot="public" virt="virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>setBaselineY</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1a470d590a3be3d71093546fd6a74336b9" prot="public" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>setColor</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a47a6312407603de99247bb802dbd8a48" prot="public" virt="virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>setHeight</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1a371f930ee677c79033f7dfe938848ee8" prot="public" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>setIndentation</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1a43f2b92c15458408c9d7ad4ac16121b0" prot="public" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>setLinespacing</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac218c371450d8ad2bed3e1b07965a41a" prot="public" virt="virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>setPosition</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1ae77085d0bd76f4eeae23d9f24c567384" prot="public" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>setRotation</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae4c38eadb852b153850ea7ded1f50a19" prot="public" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>setTouchable</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1aeac718ae52f2b1c83da1093e171e5d1b" prot="public" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>setTypedText</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a71639c6634c5dcf6d1bb21b8b1b61f5b" prot="public" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>setVisible</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1a413057e715a3c18b900912b7e14ed4f8" prot="public" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>setWideTextAction</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae74a37f71d23440fc8b0466ad8ecfe4b" prot="public" virt="virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>setWidth</name></member>
+      <member refid="classtouchgfx_1_1_text_area_with_one_wildcard_1a43aed159ec16278e3b9da7167bed8313" prot="public" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>setWildcard</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9f6db7f34a74e991fc446fffb5703a53" prot="public" virt="virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>setX</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1ad3889b66e0adbc4f742dbd7ec442f841" prot="public" virt="virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>setXBaselineY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6c86659dc1e7355c207e9c0aa18af167" prot="public" virt="virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>setXY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1b08d48e7e23a046f09e63089bc82bc1" prot="public" virt="virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>setY</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1aeca16e72280691d3912581e4f4ee9b72" prot="public" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>TextArea</name></member>
+      <member refid="classtouchgfx_1_1_text_area_with_one_wildcard_1afa60af02e3292dcd17da7b2ee552dc7f" prot="public" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>TextAreaWithOneWildcard</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0d014de134cb9b9c1c361fcd726a5f34" prot="protected" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>touchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a48c1d14ac943dbfa4935ea39db950608" prot="public" virt="virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>translateRectToAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1a9d9a225af451ae961007a9843f5cbcf5" prot="protected" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>typedText</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa54a57ae048476d840caf6d4d2c47aa3" prot="protected" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>visible</name></member>
+      <member refid="classtouchgfx_1_1_text_area_1a88688b079c9e2a780ee710f09d35c751" prot="protected" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>wideTextAction</name></member>
+      <member refid="classtouchgfx_1_1_text_area_with_one_wildcard_1aa094ed5c7875eab08a176fe148d09d7d" prot="protected" virt="non-virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>wildcard</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6bb040a11ffc2bd641283cc0bc0d1346" prot="public" virt="virtual"><scope>touchgfx::TextAreaWithOneWildcard</scope><name>~Drawable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

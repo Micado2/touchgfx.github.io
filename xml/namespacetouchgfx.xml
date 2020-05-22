@@ -1,0 +1,3046 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="namespacetouchgfx" kind="namespace" language="C++">
+    <compoundname>touchgfx</compoundname>
+    <innerclass refid="classtouchgfx_1_1_abstract_button" prot="public">touchgfx::AbstractButton</innerclass>
+    <innerclass refid="classtouchgfx_1_1_abstract_button_container" prot="public">touchgfx::AbstractButtonContainer</innerclass>
+    <innerclass refid="classtouchgfx_1_1_abstract_clock" prot="public">touchgfx::AbstractClock</innerclass>
+    <innerclass refid="classtouchgfx_1_1_abstract_direction_progress" prot="public">touchgfx::AbstractDirectionProgress</innerclass>
+    <innerclass refid="classtouchgfx_1_1_abstract_painter" prot="public">touchgfx::AbstractPainter</innerclass>
+    <innerclass refid="classtouchgfx_1_1_abstract_painter_a_b_g_r2222" prot="public">touchgfx::AbstractPainterABGR2222</innerclass>
+    <innerclass refid="classtouchgfx_1_1_abstract_painter_a_r_g_b2222" prot="public">touchgfx::AbstractPainterARGB2222</innerclass>
+    <innerclass refid="classtouchgfx_1_1_abstract_painter_a_r_g_b8888" prot="public">touchgfx::AbstractPainterARGB8888</innerclass>
+    <innerclass refid="classtouchgfx_1_1_abstract_painter_b_g_r_a2222" prot="public">touchgfx::AbstractPainterBGRA2222</innerclass>
+    <innerclass refid="classtouchgfx_1_1_abstract_painter_b_w" prot="public">touchgfx::AbstractPainterBW</innerclass>
+    <innerclass refid="classtouchgfx_1_1_abstract_painter_g_r_a_y2" prot="public">touchgfx::AbstractPainterGRAY2</innerclass>
+    <innerclass refid="classtouchgfx_1_1_abstract_painter_g_r_a_y4" prot="public">touchgfx::AbstractPainterGRAY4</innerclass>
+    <innerclass refid="classtouchgfx_1_1_abstract_painter_r_g_b565" prot="public">touchgfx::AbstractPainterRGB565</innerclass>
+    <innerclass refid="classtouchgfx_1_1_abstract_painter_r_g_b888" prot="public">touchgfx::AbstractPainterRGB888</innerclass>
+    <innerclass refid="classtouchgfx_1_1_abstract_painter_r_g_b_a2222" prot="public">touchgfx::AbstractPainterRGBA2222</innerclass>
+    <innerclass refid="classtouchgfx_1_1_abstract_partition" prot="public">touchgfx::AbstractPartition</innerclass>
+    <innerclass refid="classtouchgfx_1_1_abstract_progress_indicator" prot="public">touchgfx::AbstractProgressIndicator</innerclass>
+    <innerclass refid="classtouchgfx_1_1_abstract_shape" prot="public">touchgfx::AbstractShape</innerclass>
+    <innerclass refid="classtouchgfx_1_1_analog_clock" prot="public">touchgfx::AnalogClock</innerclass>
+    <innerclass refid="classtouchgfx_1_1_animated_image" prot="public">touchgfx::AnimatedImage</innerclass>
+    <innerclass refid="classtouchgfx_1_1_animated_image_button_style" prot="public">touchgfx::AnimatedImageButtonStyle</innerclass>
+    <innerclass refid="classtouchgfx_1_1_animation_texture_mapper" prot="public">touchgfx::AnimationTextureMapper</innerclass>
+    <innerclass refid="classtouchgfx_1_1_application" prot="public">touchgfx::Application</innerclass>
+    <innerclass refid="classtouchgfx_1_1_bitmap" prot="public">touchgfx::Bitmap</innerclass>
+    <innerclass refid="structtouchgfx_1_1_blit_op" prot="public">touchgfx::BlitOp</innerclass>
+    <innerclass refid="classtouchgfx_1_1_box" prot="public">touchgfx::Box</innerclass>
+    <innerclass refid="classtouchgfx_1_1_box_progress" prot="public">touchgfx::BoxProgress</innerclass>
+    <innerclass refid="classtouchgfx_1_1_box_with_border" prot="public">touchgfx::BoxWithBorder</innerclass>
+    <innerclass refid="classtouchgfx_1_1_box_with_border_button_style" prot="public">touchgfx::BoxWithBorderButtonStyle</innerclass>
+    <innerclass refid="classtouchgfx_1_1_button" prot="public">touchgfx::Button</innerclass>
+    <innerclass refid="classtouchgfx_1_1_button_controller" prot="public">touchgfx::ButtonController</innerclass>
+    <innerclass refid="classtouchgfx_1_1_buttons" prot="public">touchgfx::Buttons</innerclass>
+    <innerclass refid="classtouchgfx_1_1_button_with_icon" prot="public">touchgfx::ButtonWithIcon</innerclass>
+    <innerclass refid="classtouchgfx_1_1_button_with_label" prot="public">touchgfx::ButtonWithLabel</innerclass>
+    <innerclass refid="classtouchgfx_1_1_cacheable_container" prot="public">touchgfx::CacheableContainer</innerclass>
+    <innerclass refid="structtouchgfx_1_1_callback" prot="public">touchgfx::Callback</innerclass>
+    <innerclass refid="structtouchgfx_1_1_callback_3_01dest__type_00_01_t1_00_01_t2_00_01void_01_4" prot="public">touchgfx::Callback&lt; dest_type, T1, T2, void &gt;</innerclass>
+    <innerclass refid="structtouchgfx_1_1_callback_3_01dest__type_00_01_t1_00_01void_00_01void_01_4" prot="public">touchgfx::Callback&lt; dest_type, T1, void, void &gt;</innerclass>
+    <innerclass refid="structtouchgfx_1_1_callback_3_01dest__type_00_01void_00_01void_00_01void_01_4" prot="public">touchgfx::Callback&lt; dest_type, void, void, void &gt;</innerclass>
+    <innerclass refid="classtouchgfx_1_1_canvas" prot="public">touchgfx::Canvas</innerclass>
+    <innerclass refid="classtouchgfx_1_1_canvas_widget" prot="public">touchgfx::CanvasWidget</innerclass>
+    <innerclass refid="classtouchgfx_1_1_canvas_widget_renderer" prot="public">touchgfx::CanvasWidgetRenderer</innerclass>
+    <innerclass refid="classtouchgfx_1_1_circle" prot="public">touchgfx::Circle</innerclass>
+    <innerclass refid="classtouchgfx_1_1_circle_progress" prot="public">touchgfx::CircleProgress</innerclass>
+    <innerclass refid="classtouchgfx_1_1_click_button_trigger" prot="public">touchgfx::ClickButtonTrigger</innerclass>
+    <innerclass refid="classtouchgfx_1_1_click_event" prot="public">touchgfx::ClickEvent</innerclass>
+    <innerclass refid="classtouchgfx_1_1_click_listener" prot="public">touchgfx::ClickListener</innerclass>
+    <innerclass refid="classtouchgfx_1_1_color" prot="public">touchgfx::Color</innerclass>
+    <innerclass refid="structtouchgfx_1_1colortype" prot="public">touchgfx::colortype</innerclass>
+    <innerclass refid="classtouchgfx_1_1_const_font" prot="public">touchgfx::ConstFont</innerclass>
+    <innerclass refid="classtouchgfx_1_1_container" prot="public">touchgfx::Container</innerclass>
+    <innerclass refid="classtouchgfx_1_1_cover_transition" prot="public">touchgfx::CoverTransition</innerclass>
+    <innerclass refid="structtouchgfx_1_1_c_w_r_util" prot="public">touchgfx::CWRUtil</innerclass>
+    <innerclass refid="classtouchgfx_1_1_debug_printer" prot="public">touchgfx::DebugPrinter</innerclass>
+    <innerclass refid="classtouchgfx_1_1_digital_clock" prot="public">touchgfx::DigitalClock</innerclass>
+    <innerclass refid="classtouchgfx_1_1_display_transformation" prot="public">touchgfx::DisplayTransformation</innerclass>
+    <innerclass refid="classtouchgfx_1_1_d_m_a___interface" prot="public">touchgfx::DMA_Interface</innerclass>
+    <innerclass refid="classtouchgfx_1_1_d_m_a___queue" prot="public">touchgfx::DMA_Queue</innerclass>
+    <innerclass refid="classtouchgfx_1_1_drag_event" prot="public">touchgfx::DragEvent</innerclass>
+    <innerclass refid="classtouchgfx_1_1_draggable" prot="public">touchgfx::Draggable</innerclass>
+    <innerclass refid="classtouchgfx_1_1_drawable" prot="public">touchgfx::Drawable</innerclass>
+    <innerclass refid="classtouchgfx_1_1_drawable_list" prot="public">touchgfx::DrawableList</innerclass>
+    <innerclass refid="classtouchgfx_1_1_drawable_list_items" prot="public">touchgfx::DrawableListItems</innerclass>
+    <innerclass refid="classtouchgfx_1_1_drawable_list_items_interface" prot="public">touchgfx::DrawableListItemsInterface</innerclass>
+    <innerclass refid="structtouchgfx_1_1_drawing_surface" prot="public">touchgfx::DrawingSurface</innerclass>
+    <innerclass refid="classtouchgfx_1_1_easing_equations" prot="public">touchgfx::EasingEquations</innerclass>
+    <innerclass refid="structtouchgfx_1_1_edge" prot="public">touchgfx::Edge</innerclass>
+    <innerclass refid="classtouchgfx_1_1_event" prot="public">touchgfx::Event</innerclass>
+    <innerclass refid="classtouchgfx_1_1_fade_animator" prot="public">touchgfx::FadeAnimator</innerclass>
+    <innerclass refid="classtouchgfx_1_1_flash_data_reader" prot="public">touchgfx::FlashDataReader</innerclass>
+    <innerclass refid="classtouchgfx_1_1_font" prot="public">touchgfx::Font</innerclass>
+    <innerclass refid="classtouchgfx_1_1_font_manager" prot="public">touchgfx::FontManager</innerclass>
+    <innerclass refid="classtouchgfx_1_1_font_provider" prot="public">touchgfx::FontProvider</innerclass>
+    <innerclass refid="classtouchgfx_1_1_frame_buffer_allocator" prot="public">touchgfx::FrameBufferAllocator</innerclass>
+    <innerclass refid="classtouchgfx_1_1_generic_callback" prot="public">touchgfx::GenericCallback</innerclass>
+    <innerclass refid="classtouchgfx_1_1_generic_callback_3_01_t1_00_01_t2_00_01void_01_4" prot="public">touchgfx::GenericCallback&lt; T1, T2, void &gt;</innerclass>
+    <innerclass refid="classtouchgfx_1_1_generic_callback_3_01_t1_00_01void_00_01void_01_4" prot="public">touchgfx::GenericCallback&lt; T1, void, void &gt;</innerclass>
+    <innerclass refid="classtouchgfx_1_1_generic_callback_3_01void_01_4" prot="public">touchgfx::GenericCallback&lt; void &gt;</innerclass>
+    <innerclass refid="classtouchgfx_1_1_gesture_event" prot="public">touchgfx::GestureEvent</innerclass>
+    <innerclass refid="classtouchgfx_1_1_gestures" prot="public">touchgfx::Gestures</innerclass>
+    <innerclass refid="structtouchgfx_1_1_glyph_node" prot="public">touchgfx::GlyphNode</innerclass>
+    <innerclass refid="classtouchgfx_1_1_g_p_i_o" prot="public">touchgfx::GPIO</innerclass>
+    <innerclass refid="structtouchgfx_1_1_gradients" prot="public">touchgfx::Gradients</innerclass>
+    <innerclass refid="classtouchgfx_1_1_h_a_l" prot="public">touchgfx::HAL</innerclass>
+    <innerclass refid="classtouchgfx_1_1_h_a_l_s_d_l2" prot="public">touchgfx::HALSDL2</innerclass>
+    <innerclass refid="classtouchgfx_1_1_i2_c" prot="public">touchgfx::I2C</innerclass>
+    <innerclass refid="classtouchgfx_1_1_i2_c_touch_controller" prot="public">touchgfx::I2CTouchController</innerclass>
+    <innerclass refid="classtouchgfx_1_1_icon_button_style" prot="public">touchgfx::IconButtonStyle</innerclass>
+    <innerclass refid="classtouchgfx_1_1_image" prot="public">touchgfx::Image</innerclass>
+    <innerclass refid="classtouchgfx_1_1_image_button_style" prot="public">touchgfx::ImageButtonStyle</innerclass>
+    <innerclass refid="classtouchgfx_1_1_image_progress" prot="public">touchgfx::ImageProgress</innerclass>
+    <innerclass refid="classtouchgfx_1_1_internal_flash_font" prot="public">touchgfx::InternalFlashFont</innerclass>
+    <innerclass refid="structtouchgfx_1_1_kerning_node" prot="public">touchgfx::KerningNode</innerclass>
+    <innerclass refid="classtouchgfx_1_1_keyboard" prot="public">touchgfx::Keyboard</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d" prot="public">touchgfx::LCD</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d16bpp" prot="public">touchgfx::LCD16bpp</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d16bpp_serial_flash" prot="public">touchgfx::LCD16bppSerialFlash</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d16_debug_printer" prot="public">touchgfx::LCD16DebugPrinter</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d1bpp" prot="public">touchgfx::LCD1bpp</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d1_debug_printer" prot="public">touchgfx::LCD1DebugPrinter</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d24bpp" prot="public">touchgfx::LCD24bpp</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d24_debug_printer" prot="public">touchgfx::LCD24DebugPrinter</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d2bpp" prot="public">touchgfx::LCD2bpp</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d2_debug_printer" prot="public">touchgfx::LCD2DebugPrinter</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d32bpp" prot="public">touchgfx::LCD32bpp</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d32_debug_printer" prot="public">touchgfx::LCD32DebugPrinter</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d4bpp" prot="public">touchgfx::LCD4bpp</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d4_debug_printer" prot="public">touchgfx::LCD4DebugPrinter</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d8_a_b_g_r2222_debug_printer" prot="public">touchgfx::LCD8ABGR2222DebugPrinter</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d8_a_r_g_b2222_debug_printer" prot="public">touchgfx::LCD8ARGB2222DebugPrinter</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d8_b_g_r_a2222_debug_printer" prot="public">touchgfx::LCD8BGRA2222DebugPrinter</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d8bpp___a_b_g_r2222" prot="public">touchgfx::LCD8bpp_ABGR2222</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d8bpp___a_r_g_b2222" prot="public">touchgfx::LCD8bpp_ARGB2222</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d8bpp___b_g_r_a2222" prot="public">touchgfx::LCD8bpp_BGRA2222</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d8bpp___r_g_b_a2222" prot="public">touchgfx::LCD8bpp_RGBA2222</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_c_d8_r_g_b_a2222_debug_printer" prot="public">touchgfx::LCD8RGBA2222DebugPrinter</innerclass>
+    <innerclass refid="classtouchgfx_1_1_l_e_d" prot="public">touchgfx::LED</innerclass>
+    <innerclass refid="classtouchgfx_1_1_line" prot="public">touchgfx::Line</innerclass>
+    <innerclass refid="classtouchgfx_1_1_line_progress" prot="public">touchgfx::LineProgress</innerclass>
+    <innerclass refid="classtouchgfx_1_1_list_layout" prot="public">touchgfx::ListLayout</innerclass>
+    <innerclass refid="classtouchgfx_1_1_lock_free_d_m_a___queue" prot="public">touchgfx::LockFreeDMA_Queue</innerclass>
+    <innerclass refid="classtouchgfx_1_1_many_block_allocator" prot="public">touchgfx::ManyBlockAllocator</innerclass>
+    <innerclass refid="classtouchgfx_1_1_matrix4x4" prot="public">touchgfx::Matrix4x4</innerclass>
+    <innerclass refid="classtouchgfx_1_1_m_c_u_instrumentation" prot="public">touchgfx::MCUInstrumentation</innerclass>
+    <innerclass refid="classtouchgfx_1_1_modal_window" prot="public">touchgfx::ModalWindow</innerclass>
+    <innerclass refid="classtouchgfx_1_1_move_animator" prot="public">touchgfx::MoveAnimator</innerclass>
+    <innerclass refid="classtouchgfx_1_1_m_v_p_application" prot="public">touchgfx::MVPApplication</innerclass>
+    <innerclass refid="classtouchgfx_1_1_m_v_p_heap" prot="public">touchgfx::MVPHeap</innerclass>
+    <innerclass refid="classtouchgfx_1_1_no_d_m_a" prot="public">touchgfx::NoDMA</innerclass>
+    <innerclass refid="classtouchgfx_1_1_no_touch_controller" prot="public">touchgfx::NoTouchController</innerclass>
+    <innerclass refid="classtouchgfx_1_1_no_transition" prot="public">touchgfx::NoTransition</innerclass>
+    <innerclass refid="classtouchgfx_1_1_o_s_wrappers" prot="public">touchgfx::OSWrappers</innerclass>
+    <innerclass refid="classtouchgfx_1_1_painter_a_b_g_r2222" prot="public">touchgfx::PainterABGR2222</innerclass>
+    <innerclass refid="classtouchgfx_1_1_painter_a_b_g_r2222_bitmap" prot="public">touchgfx::PainterABGR2222Bitmap</innerclass>
+    <innerclass refid="classtouchgfx_1_1_painter_a_r_g_b2222" prot="public">touchgfx::PainterARGB2222</innerclass>
+    <innerclass refid="classtouchgfx_1_1_painter_a_r_g_b2222_bitmap" prot="public">touchgfx::PainterARGB2222Bitmap</innerclass>
+    <innerclass refid="classtouchgfx_1_1_painter_a_r_g_b8888" prot="public">touchgfx::PainterARGB8888</innerclass>
+    <innerclass refid="classtouchgfx_1_1_painter_a_r_g_b8888_bitmap" prot="public">touchgfx::PainterARGB8888Bitmap</innerclass>
+    <innerclass refid="classtouchgfx_1_1_painter_a_r_g_b8888_l8_bitmap" prot="public">touchgfx::PainterARGB8888L8Bitmap</innerclass>
+    <innerclass refid="classtouchgfx_1_1_painter_b_g_r_a2222" prot="public">touchgfx::PainterBGRA2222</innerclass>
+    <innerclass refid="classtouchgfx_1_1_painter_b_g_r_a2222_bitmap" prot="public">touchgfx::PainterBGRA2222Bitmap</innerclass>
+    <innerclass refid="classtouchgfx_1_1_painter_b_w" prot="public">touchgfx::PainterBW</innerclass>
+    <innerclass refid="classtouchgfx_1_1_painter_b_w_bitmap" prot="public">touchgfx::PainterBWBitmap</innerclass>
+    <innerclass refid="classtouchgfx_1_1_painter_g_r_a_y2" prot="public">touchgfx::PainterGRAY2</innerclass>
+    <innerclass refid="classtouchgfx_1_1_painter_g_r_a_y2_bitmap" prot="public">touchgfx::PainterGRAY2Bitmap</innerclass>
+    <innerclass refid="classtouchgfx_1_1_painter_g_r_a_y4" prot="public">touchgfx::PainterGRAY4</innerclass>
+    <innerclass refid="classtouchgfx_1_1_painter_g_r_a_y4_bitmap" prot="public">touchgfx::PainterGRAY4Bitmap</innerclass>
+    <innerclass refid="classtouchgfx_1_1_painter_r_g_b565" prot="public">touchgfx::PainterRGB565</innerclass>
+    <innerclass refid="classtouchgfx_1_1_painter_r_g_b565_bitmap" prot="public">touchgfx::PainterRGB565Bitmap</innerclass>
+    <innerclass refid="classtouchgfx_1_1_painter_r_g_b565_l8_bitmap" prot="public">touchgfx::PainterRGB565L8Bitmap</innerclass>
+    <innerclass refid="classtouchgfx_1_1_painter_r_g_b888" prot="public">touchgfx::PainterRGB888</innerclass>
+    <innerclass refid="classtouchgfx_1_1_painter_r_g_b888_bitmap" prot="public">touchgfx::PainterRGB888Bitmap</innerclass>
+    <innerclass refid="classtouchgfx_1_1_painter_r_g_b888_l8_bitmap" prot="public">touchgfx::PainterRGB888L8Bitmap</innerclass>
+    <innerclass refid="classtouchgfx_1_1_painter_r_g_b_a2222" prot="public">touchgfx::PainterRGBA2222</innerclass>
+    <innerclass refid="classtouchgfx_1_1_painter_r_g_b_a2222_bitmap" prot="public">touchgfx::PainterRGBA2222Bitmap</innerclass>
+    <innerclass refid="structtouchgfx_1_1_pair" prot="public">touchgfx::Pair</innerclass>
+    <innerclass refid="classtouchgfx_1_1_partition" prot="public">touchgfx::Partition</innerclass>
+    <innerclass refid="classtouchgfx_1_1_pixel_data_widget" prot="public">touchgfx::PixelDataWidget</innerclass>
+    <innerclass refid="structtouchgfx_1_1_point" prot="public">touchgfx::Point</innerclass>
+    <innerclass refid="structtouchgfx_1_1_point3_d" prot="public">touchgfx::Point3D</innerclass>
+    <innerclass refid="classtouchgfx_1_1_point4" prot="public">touchgfx::Point4</innerclass>
+    <innerclass refid="classtouchgfx_1_1_pre_renderable" prot="public">touchgfx::PreRenderable</innerclass>
+    <innerclass refid="classtouchgfx_1_1_presenter" prot="public">touchgfx::Presenter</innerclass>
+    <innerclass refid="classtouchgfx_1_1_quadruple" prot="public">touchgfx::Quadruple</innerclass>
+    <innerclass refid="classtouchgfx_1_1_radio_button" prot="public">touchgfx::RadioButton</innerclass>
+    <innerclass refid="classtouchgfx_1_1_radio_button_group" prot="public">touchgfx::RadioButtonGroup</innerclass>
+    <innerclass refid="classtouchgfx_1_1_rect" prot="public">touchgfx::Rect</innerclass>
+    <innerclass refid="classtouchgfx_1_1_repeat_button" prot="public">touchgfx::RepeatButton</innerclass>
+    <innerclass refid="classtouchgfx_1_1_repeat_button_trigger" prot="public">touchgfx::RepeatButtonTrigger</innerclass>
+    <innerclass refid="classtouchgfx_1_1_scalable_image" prot="public">touchgfx::ScalableImage</innerclass>
+    <innerclass refid="classtouchgfx_1_1_screen" prot="public">touchgfx::Screen</innerclass>
+    <innerclass refid="classtouchgfx_1_1_scrollable_container" prot="public">touchgfx::ScrollableContainer</innerclass>
+    <innerclass refid="classtouchgfx_1_1_scroll_base" prot="public">touchgfx::ScrollBase</innerclass>
+    <innerclass refid="classtouchgfx_1_1_scroll_list" prot="public">touchgfx::ScrollList</innerclass>
+    <innerclass refid="classtouchgfx_1_1_scroll_wheel" prot="public">touchgfx::ScrollWheel</innerclass>
+    <innerclass refid="classtouchgfx_1_1_scroll_wheel_base" prot="public">touchgfx::ScrollWheelBase</innerclass>
+    <innerclass refid="classtouchgfx_1_1_scroll_wheel_with_selection_style" prot="public">touchgfx::ScrollWheelWithSelectionStyle</innerclass>
+    <innerclass refid="classtouchgfx_1_1_s_d_l2_touch_controller" prot="public">touchgfx::SDL2TouchController</innerclass>
+    <innerclass refid="classtouchgfx_1_1_s_d_l_touch_controller" prot="public">touchgfx::SDLTouchController</innerclass>
+    <innerclass refid="classtouchgfx_1_1_shape" prot="public">touchgfx::Shape</innerclass>
+    <innerclass refid="classtouchgfx_1_1_single_block_allocator" prot="public">touchgfx::SingleBlockAllocator</innerclass>
+    <innerclass refid="classtouchgfx_1_1_slide_menu" prot="public">touchgfx::SlideMenu</innerclass>
+    <innerclass refid="classtouchgfx_1_1_slider" prot="public">touchgfx::Slider</innerclass>
+    <innerclass refid="classtouchgfx_1_1_slide_transition" prot="public">touchgfx::SlideTransition</innerclass>
+    <innerclass refid="classtouchgfx_1_1_snapper" prot="public">touchgfx::Snapper</innerclass>
+    <innerclass refid="classtouchgfx_1_1_snapshot_widget" prot="public">touchgfx::SnapshotWidget</innerclass>
+    <innerclass refid="classtouchgfx_1_1_swipe_container" prot="public">touchgfx::SwipeContainer</innerclass>
+    <innerclass refid="classtouchgfx_1_1_text_area" prot="public">touchgfx::TextArea</innerclass>
+    <innerclass refid="classtouchgfx_1_1_text_area_with_one_wildcard" prot="public">touchgfx::TextAreaWithOneWildcard</innerclass>
+    <innerclass refid="classtouchgfx_1_1_text_area_with_two_wildcards" prot="public">touchgfx::TextAreaWithTwoWildcards</innerclass>
+    <innerclass refid="classtouchgfx_1_1_text_button_style" prot="public">touchgfx::TextButtonStyle</innerclass>
+    <innerclass refid="classtouchgfx_1_1_text_progress" prot="public">touchgfx::TextProgress</innerclass>
+    <innerclass refid="classtouchgfx_1_1_text_provider" prot="public">touchgfx::TextProvider</innerclass>
+    <innerclass refid="classtouchgfx_1_1_texts" prot="public">touchgfx::Texts</innerclass>
+    <innerclass refid="classtouchgfx_1_1_texture_mapper" prot="public">touchgfx::TextureMapper</innerclass>
+    <innerclass refid="structtouchgfx_1_1_texture_surface" prot="public">touchgfx::TextureSurface</innerclass>
+    <innerclass refid="classtouchgfx_1_1_tiled_image" prot="public">touchgfx::TiledImage</innerclass>
+    <innerclass refid="classtouchgfx_1_1_tiled_image_button_style" prot="public">touchgfx::TiledImageButtonStyle</innerclass>
+    <innerclass refid="classtouchgfx_1_1_toggle_button" prot="public">touchgfx::ToggleButton</innerclass>
+    <innerclass refid="classtouchgfx_1_1_toggle_button_trigger" prot="public">touchgfx::ToggleButtonTrigger</innerclass>
+    <innerclass refid="classtouchgfx_1_1_touch_area" prot="public">touchgfx::TouchArea</innerclass>
+    <innerclass refid="classtouchgfx_1_1_touch_button_trigger" prot="public">touchgfx::TouchButtonTrigger</innerclass>
+    <innerclass refid="classtouchgfx_1_1_touch_calibration" prot="public">touchgfx::TouchCalibration</innerclass>
+    <innerclass refid="classtouchgfx_1_1_touch_controller" prot="public">touchgfx::TouchController</innerclass>
+    <innerclass refid="classtouchgfx_1_1_transition" prot="public">touchgfx::Transition</innerclass>
+    <innerclass refid="classtouchgfx_1_1_two_wildcard_text_button_style" prot="public">touchgfx::TwoWildcardTextButtonStyle</innerclass>
+    <innerclass refid="classtouchgfx_1_1_typed_text" prot="public">touchgfx::TypedText</innerclass>
+    <innerclass refid="classtouchgfx_1_1_u_i_event_listener" prot="public">touchgfx::UIEventListener</innerclass>
+    <innerclass refid="classtouchgfx_1_1_unicode" prot="public">touchgfx::Unicode</innerclass>
+    <innerclass refid="classtouchgfx_1_1_vector" prot="public">touchgfx::Vector</innerclass>
+    <innerclass refid="classtouchgfx_1_1_vector4" prot="public">touchgfx::Vector4</innerclass>
+    <innerclass refid="classtouchgfx_1_1_view" prot="public">touchgfx::View</innerclass>
+    <innerclass refid="classtouchgfx_1_1_widget" prot="public">touchgfx::Widget</innerclass>
+    <innerclass refid="classtouchgfx_1_1_wildcard_text_button_style" prot="public">touchgfx::WildcardTextButtonStyle</innerclass>
+    <innerclass refid="classtouchgfx_1_1_zoom_animation_image" prot="public">touchgfx::ZoomAnimationImage</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacetouchgfx_1a5c99ff39743a4feaa2188efdc075ae8b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>BlitOperations</name>
+        <enumvalue id="namespacetouchgfx_1a5c99ff39743a4feaa2188efdc075ae8bab9dabc26b68b5f3478fc08c45f1a7c89" prot="public">
+          <name>BLIT_OP_COPY</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+<para>Copy the source to the destination. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetouchgfx_1a5c99ff39743a4feaa2188efdc075ae8ba0ef645bd86c854bb8729271b06cb5406" prot="public">
+          <name>BLIT_OP_FILL</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+<para>Fill the destination with color. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetouchgfx_1a5c99ff39743a4feaa2188efdc075ae8ba7c6af851cd2bf41539132a8448b787b2" prot="public">
+          <name>BLIT_OP_COPY_WITH_ALPHA</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+<para>Copy the source to the destination using the given alpha. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetouchgfx_1a5c99ff39743a4feaa2188efdc075ae8bad23475f9d71fa803cbd23d1cd9137028" prot="public">
+          <name>BLIT_OP_FILL_WITH_ALPHA</name>
+          <initializer>= 1 &lt;&lt; 3</initializer>
+          <briefdescription>
+<para>Fill the destination with color using the given alpha. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetouchgfx_1a5c99ff39743a4feaa2188efdc075ae8ba3d1bc2405d9d859be728e1fd492d480f" prot="public">
+          <name>BLIT_OP_COPY_WITH_TRANSPARENT_PIXELS</name>
+          <initializer>= 1 &lt;&lt; 4</initializer>
+          <briefdescription>
+<para>Deprecated, ignored. (Copy the source to the destination, but not the transparent pixels) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetouchgfx_1a5c99ff39743a4feaa2188efdc075ae8ba7e59067341c00a48cc48d058b05c17ee" prot="public">
+          <name>BLIT_OP_COPY_ARGB8888</name>
+          <initializer>= 1 &lt;&lt; 5</initializer>
+          <briefdescription>
+<para>Copy the source to the destination, performing per-pixel alpha blending. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetouchgfx_1a5c99ff39743a4feaa2188efdc075ae8ba39864829ef8d4b915f7ce1c98cb42b8a" prot="public">
+          <name>BLIT_OP_COPY_ARGB8888_WITH_ALPHA</name>
+          <initializer>= 1 &lt;&lt; 6</initializer>
+          <briefdescription>
+<para>Copy the source to the destination, performing per-pixel alpha blending and blending the result with an image-wide alpha. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetouchgfx_1a5c99ff39743a4feaa2188efdc075ae8ba2d18dd37bead1f100c78ff12e7decf46" prot="public">
+          <name>BLIT_OP_COPY_A4</name>
+          <initializer>= 1 &lt;&lt; 7</initializer>
+          <briefdescription>
+<para>Copy 4-bit source text to destination, performing per-pixel alpha blending. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetouchgfx_1a5c99ff39743a4feaa2188efdc075ae8ba7773db1b543e1dcaa7d7ad9e3f88e9b7" prot="public">
+          <name>BLIT_OP_COPY_A8</name>
+          <initializer>= 1 &lt;&lt; 8</initializer>
+          <briefdescription>
+<para>Copy 8-bit source text to destination, performing per-pixel alpha blending. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The Blit Operations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/BlitOp.hpp" line="15" column="1" bodyfile="touchgfx/hal/BlitOp.hpp" bodystart="14" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacetouchgfx_1a224b9163917ac32fc95a60d8c1eec3aa" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Direction</name>
+        <enumvalue id="namespacetouchgfx_1a224b9163917ac32fc95a60d8c1eec3aaad0611de6f28d4a9c9eac959f5344698e" prot="public">
+          <name>NORTH</name>
+          <briefdescription>
+<para>An enum constant representing the north option. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetouchgfx_1a224b9163917ac32fc95a60d8c1eec3aaa8ef5c0bce69283a9986011a63eea8a6b" prot="public">
+          <name>SOUTH</name>
+          <briefdescription>
+<para>An enum constant representing the south option. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetouchgfx_1a224b9163917ac32fc95a60d8c1eec3aaab5b3793b961949c817c7c0d99c05dad7" prot="public">
+          <name>EAST</name>
+          <briefdescription>
+<para>An enum constant representing the east option. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetouchgfx_1a224b9163917ac32fc95a60d8c1eec3aaae9449e8683a8199dad36b07a63b2f523" prot="public">
+          <name>WEST</name>
+          <briefdescription>
+<para>An enum constant representing the west option. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Values that represent directions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="569" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="568" bodyend="574"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacetouchgfx_1a38bd6ad994c4baaac737cf426fbf23ea" prot="public" static="no" strong="no">
+        <type></type>
+        <name>DisplayOrientation</name>
+        <enumvalue id="namespacetouchgfx_1a38bd6ad994c4baaac737cf426fbf23eaaeffaa8f11bafc4c40b434f3b941eb1bf" prot="public">
+          <name>ORIENTATION_LANDSCAPE</name>
+          <briefdescription>
+<para>The display has more pixels from left to right than from top to bottom. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetouchgfx_1a38bd6ad994c4baaac737cf426fbf23eaacd00a965397a558275015a84f2f22dd5" prot="public">
+          <name>ORIENTATION_PORTRAIT</name>
+          <briefdescription>
+<para>The display has more pixels from top to bottom than from right to left. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Values that represent display orientations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="611" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="610" bodyend="614"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacetouchgfx_1aaf854447c39c56bbaf8275faddd3476d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>DisplayRotation</name>
+        <enumvalue id="namespacetouchgfx_1aaf854447c39c56bbaf8275faddd3476da21cafed113f5ae767193f61c10efee6c" prot="public">
+          <name>rotate0</name>
+          <briefdescription>
+<para>The display is oriented like the framebuffer. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetouchgfx_1aaf854447c39c56bbaf8275faddd3476dafc36e6f095cc07c9aa1fa0de8dbefbfd" prot="public">
+          <name>rotate90</name>
+          <briefdescription>
+<para>The display is rotated 90 degrees compared to the framebuffer layout. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Values that represent display rotations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="604" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="603" bodyend="607"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacetouchgfx_1ac4182ff66044df30080851925c914fb0" prot="public" static="no" strong="no">
+        <type></type>
+        <name>DMAType</name>
+        <enumvalue id="namespacetouchgfx_1ac4182ff66044df30080851925c914fb0a6d1116478c022fb6d3594b54b9fc76cd" prot="public">
+          <name>DMA_TYPE_GENERIC</name>
+          <briefdescription>
+<para>Generic DMA Implementation. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetouchgfx_1ac4182ff66044df30080851925c914fb0ade63a0f7b2d999ad02b131ff115524d7" prot="public">
+          <name>DMA_TYPE_CHROMART</name>
+          <briefdescription>
+<para>ChromART hardware DMA Implementation. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Values that represent dma types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="738" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="737" bodyend="741"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacetouchgfx_1ab75cdf3b36517627dfe9b6029e00129d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>FrameBuffer</name>
+        <enumvalue id="namespacetouchgfx_1ab75cdf3b36517627dfe9b6029e00129dac8247a4ae09f822bd7304de91fb1f762" prot="public">
+          <name>FB_PRIMARY</name>
+          <briefdescription>
+<para>First framebuffer. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetouchgfx_1ab75cdf3b36517627dfe9b6029e00129daf60a20b8cb671954a6e1f63b9baab8b8" prot="public">
+          <name>FB_SECONDARY</name>
+          <briefdescription>
+<para>Second framebuffer. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetouchgfx_1ab75cdf3b36517627dfe9b6029e00129dad799661bd44818b664fea5e658c7b009" prot="public">
+          <name>FB_TERTIARY</name>
+          <briefdescription>
+<para>Third framebuffer. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Values that represent frame buffers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="589" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="588" bodyend="593"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacetouchgfx_1a6ac97d52baa691cf0e93defb8a82fcb6" prot="public" static="no" strong="no">
+        <type></type>
+        <name>GlyphFlags</name>
+        <enumvalue id="namespacetouchgfx_1a6ac97d52baa691cf0e93defb8a82fcb6a2d7ebb1554a307f16de2dc585e49358a" prot="public">
+          <name>GLYPH_DATA_KERNINGTABLEPOS_BIT8_10</name>
+          <initializer>= 0x07</initializer>
+          <briefdescription>
+<para>The 8th, 9th and 10th bit of the kerningTablePos. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetouchgfx_1a6ac97d52baa691cf0e93defb8a82fcb6a6e1623e0774d2f742f5e62fc4f60129b" prot="public">
+          <name>GLYPH_DATA_WIDTH_BIT8</name>
+          <initializer>= 0x08</initializer>
+          <briefdescription>
+<para>The 9th bit of &quot;width&quot;. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetouchgfx_1a6ac97d52baa691cf0e93defb8a82fcb6aa38b1bab3ec118865c3ed0b056c93f99" prot="public">
+          <name>GLYPH_DATA_HEIGHT_BIT8</name>
+          <initializer>= 0x10</initializer>
+          <briefdescription>
+<para>The 9th bit of &quot;height&quot;. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetouchgfx_1a6ac97d52baa691cf0e93defb8a82fcb6afbfc941be660b6f337721ea17b3d3a59" prot="public">
+          <name>GLYPH_DATA_TOP_BIT8</name>
+          <initializer>= 0x20</initializer>
+          <briefdescription>
+<para>The 9th bit of &quot;top&quot;. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetouchgfx_1a6ac97d52baa691cf0e93defb8a82fcb6ad5ea3c8472e43d215d75e7b82d075369" prot="public">
+          <name>GLYPH_DATA_TOP_BIT9</name>
+          <initializer>= 0x40</initializer>
+          <briefdescription>
+<para>The sign bit of &quot;top&quot;. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetouchgfx_1a6ac97d52baa691cf0e93defb8a82fcb6a8ff55e64e597f9173ea4037d45a9ba19" prot="public">
+          <name>GLYPH_DATA_ADVANCE_BIT8</name>
+          <initializer>= 0x80</initializer>
+          <briefdescription>
+<para>The 9th bit of &quot;advance&quot;. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Glyph flag definitions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Font.hpp" line="16" column="1" bodyfile="touchgfx/Font.hpp" bodystart="15" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacetouchgfx_1a2607cd0803e11139c60e1f53fc8e7606" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Gradient</name>
+        <enumvalue id="namespacetouchgfx_1a2607cd0803e11139c60e1f53fc8e7606a408c389eb020def4ad24099940714914" prot="public">
+          <name>GRADIENT_HORIZONTAL</name>
+          <briefdescription>
+<para>Horizontal gradient. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetouchgfx_1a2607cd0803e11139c60e1f53fc8e7606af2a6b598a6dc7b599e2a7e5d84f37bbf" prot="public">
+          <name>GRADIENT_VERTICAL</name>
+          <briefdescription>
+<para>Vertical gradient. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Values that represent gradients. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="597" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="596" bodyend="600"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacetouchgfx_1aa8b32c1e049cf804b50921f8c847866b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>TextRotation</name>
+        <enumvalue id="namespacetouchgfx_1aa8b32c1e049cf804b50921f8c847866baf309363c5d33ffac5c6a9c38363bf4ae" prot="public">
+          <name>TEXT_ROTATE_0</name>
+          <briefdescription>
+<para>Text is written from left to right. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetouchgfx_1aa8b32c1e049cf804b50921f8c847866ba2544b4a382ff1725257be3e35ca2b830" prot="public">
+          <name>TEXT_ROTATE_90</name>
+          <briefdescription>
+<para>Text is written from top to bottom. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetouchgfx_1aa8b32c1e049cf804b50921f8c847866bafe7a0b3ce378d766062ed7b4ae9ba7b4" prot="public">
+          <name>TEXT_ROTATE_180</name>
+          <briefdescription>
+<para>Text is written from right to left (upside down) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetouchgfx_1aa8b32c1e049cf804b50921f8c847866ba82cc15a1cc48fde40f673f5449dc0b43" prot="public">
+          <name>TEXT_ROTATE_270</name>
+          <briefdescription>
+<para>Text is written bottom to top. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Values that represent text rotations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="618" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="617" bodyend="623"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacetouchgfx_1ad7afabd7637aed4278f7e26434b860c7" prot="public" static="no" strong="no">
+        <type></type>
+        <name>WideTextAction</name>
+        <enumvalue id="namespacetouchgfx_1ad7afabd7637aed4278f7e26434b860c7a4ab21b4229a6cab17ff59a7dba101b45" prot="public">
+          <name>WIDE_TEXT_NONE</name>
+          <briefdescription>
+<para>Do nothing, simply cut the text in the middle of any character that extends beyond the width of the <ref refid="classtouchgfx_1_1_text_area" kindref="compound">TextArea</ref>. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetouchgfx_1ad7afabd7637aed4278f7e26434b860c7a83278ac423d8f7bf5dedd3f2e3d26502" prot="public">
+          <name>WIDE_TEXT_WORDWRAP</name>
+          <briefdescription>
+<para>Wrap between words, ellipsis anywhere &quot;Very long t...&quot;. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetouchgfx_1ad7afabd7637aed4278f7e26434b860c7add5c85bbb4f73c6b2174e0a21d4117ec" prot="public">
+          <name>WIDE_TEXT_WORDWRAP_ELLIPSIS_AFTER_SPACE</name>
+          <briefdescription>
+<para>Wrap between words, ellipsis anywhere only after space &quot;Very long ...&quot;. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetouchgfx_1ad7afabd7637aed4278f7e26434b860c7a37eb4cbb9006ef60d8fe2e6d9c69e4d4" prot="public">
+          <name>WIDE_TEXT_CHARWRAP</name>
+          <briefdescription>
+<para>Wrap between any two characters, ellipsis anywhere, as used in Chinese. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetouchgfx_1ad7afabd7637aed4278f7e26434b860c7aef22d7282edeff19be15a7915c225968" prot="public">
+          <name>WIDE_TEXT_CHARWRAP_DOUBLE_ELLIPSIS</name>
+          <briefdescription>
+<para>Wrap between any two characters, double ellipsis anywhere, as used in Chinese. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Values that represent wide text actions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="627" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="626" bodyend="633"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacetouchgfx_1ae1ec6d58a3c593e4801f352243506628" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t Alignment</definition>
+        <argsstring></argsstring>
+        <name>Alignment</name>
+        <briefdescription>
+<para>Defines an alignment type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="577" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="577" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1a16af254bb0b808c1eebf9191d5c57bc5" prot="public" static="no">
+        <type><ref refid="classtouchgfx_1_1_animated_image_button_style" kindref="compound">AnimatedImageButtonStyle</ref>&lt; <ref refid="classtouchgfx_1_1_click_button_trigger" kindref="compound">ClickButtonTrigger</ref> &gt;</type>
+        <definition>typedef AnimatedImageButtonStyle&lt;ClickButtonTrigger&gt; AnimatedImageClickButton</definition>
+        <argsstring></argsstring>
+        <name>AnimatedImageClickButton</name>
+        <briefdescription>
+<para>Defines an alias representing the animated image click button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/Buttons.hpp" line="122" column="1" bodyfile="touchgfx/containers/buttons/Buttons.hpp" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1a58000bdf1adf331c2b084aeb8dbf2ee9" prot="public" static="no">
+        <type><ref refid="classtouchgfx_1_1_animated_image_button_style" kindref="compound">AnimatedImageButtonStyle</ref>&lt; <ref refid="classtouchgfx_1_1_repeat_button_trigger" kindref="compound">RepeatButtonTrigger</ref> &gt;</type>
+        <definition>typedef AnimatedImageButtonStyle&lt;RepeatButtonTrigger&gt; AnimatedImageRepeatButton</definition>
+        <argsstring></argsstring>
+        <name>AnimatedImageRepeatButton</name>
+        <briefdescription>
+<para>Defines an alias representing the animated image repeat button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/Buttons.hpp" line="125" column="1" bodyfile="touchgfx/containers/buttons/Buttons.hpp" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1a520d4e1a9c641a32eabc0ac92658c32e" prot="public" static="no">
+        <type><ref refid="classtouchgfx_1_1_animated_image_button_style" kindref="compound">AnimatedImageButtonStyle</ref>&lt; <ref refid="classtouchgfx_1_1_toggle_button_trigger" kindref="compound">ToggleButtonTrigger</ref> &gt;</type>
+        <definition>typedef AnimatedImageButtonStyle&lt;ToggleButtonTrigger&gt; AnimatedImageToggleButton</definition>
+        <argsstring></argsstring>
+        <name>AnimatedImageToggleButton</name>
+        <briefdescription>
+<para>Defines an alias representing the animated image toggle button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/Buttons.hpp" line="131" column="1" bodyfile="touchgfx/containers/buttons/Buttons.hpp" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1a3fd42304667731a27ca28a407160347e" prot="public" static="no">
+        <type><ref refid="classtouchgfx_1_1_animated_image_button_style" kindref="compound">AnimatedImageButtonStyle</ref>&lt; <ref refid="classtouchgfx_1_1_touch_button_trigger" kindref="compound">TouchButtonTrigger</ref> &gt;</type>
+        <definition>typedef AnimatedImageButtonStyle&lt;TouchButtonTrigger&gt; AnimatedImageTouchButton</definition>
+        <argsstring></argsstring>
+        <name>AnimatedImageTouchButton</name>
+        <briefdescription>
+<para>Defines an alias representing the animated image touch button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/Buttons.hpp" line="128" column="1" bodyfile="touchgfx/containers/buttons/Buttons.hpp" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1a3923435f6df64396b2203d60ddfa89e4" prot="public" static="no">
+        <type>uint16_t</type>
+        <definition>typedef uint16_t BitmapId</definition>
+        <argsstring></argsstring>
+        <name>BitmapId</name>
+        <briefdescription>
+<para>This type shall be used by the application to define unique IDs for all bitmaps in the system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The application shall define bitmap IDs in the range [0, number of bitmaps - 1]. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Bitmap.hpp" line="24" column="1" bodyfile="touchgfx/Bitmap.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1a7db83f30e1e693a2e77fed7fd0852749" prot="public" static="no">
+        <type><ref refid="classtouchgfx_1_1_box_with_border_button_style" kindref="compound">BoxWithBorderButtonStyle</ref>&lt; <ref refid="classtouchgfx_1_1_click_button_trigger" kindref="compound">ClickButtonTrigger</ref> &gt;</type>
+        <definition>typedef BoxWithBorderButtonStyle&lt;ClickButtonTrigger&gt; BoxClickButton</definition>
+        <argsstring></argsstring>
+        <name>BoxClickButton</name>
+        <briefdescription>
+<para>Defines an alias representing the box click button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/Buttons.hpp" line="26" column="1" bodyfile="touchgfx/containers/buttons/Buttons.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1a2b88694b337747e66e928ea00a1803fb" prot="public" static="no">
+        <type><ref refid="classtouchgfx_1_1_box_with_border_button_style" kindref="compound">BoxWithBorderButtonStyle</ref>&lt; <ref refid="classtouchgfx_1_1_repeat_button_trigger" kindref="compound">RepeatButtonTrigger</ref> &gt;</type>
+        <definition>typedef BoxWithBorderButtonStyle&lt;RepeatButtonTrigger&gt; BoxRepeatButton</definition>
+        <argsstring></argsstring>
+        <name>BoxRepeatButton</name>
+        <briefdescription>
+<para>Defines an alias representing the box repeat button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/Buttons.hpp" line="29" column="1" bodyfile="touchgfx/containers/buttons/Buttons.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1a14305302809e62aa0c43e3eeecb737f0" prot="public" static="no">
+        <type><ref refid="classtouchgfx_1_1_box_with_border_button_style" kindref="compound">BoxWithBorderButtonStyle</ref>&lt; <ref refid="classtouchgfx_1_1_toggle_button_trigger" kindref="compound">ToggleButtonTrigger</ref> &gt;</type>
+        <definition>typedef BoxWithBorderButtonStyle&lt;ToggleButtonTrigger&gt; BoxToggleButton</definition>
+        <argsstring></argsstring>
+        <name>BoxToggleButton</name>
+        <briefdescription>
+<para>Defines an alias representing the box toggle button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/Buttons.hpp" line="32" column="1" bodyfile="touchgfx/containers/buttons/Buttons.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1a1ad0b3aa6628a79d66e81d64cc899c84" prot="public" static="no">
+        <type><ref refid="classtouchgfx_1_1_box_with_border_button_style" kindref="compound">BoxWithBorderButtonStyle</ref>&lt; <ref refid="classtouchgfx_1_1_touch_button_trigger" kindref="compound">TouchButtonTrigger</ref> &gt;</type>
+        <definition>typedef BoxWithBorderButtonStyle&lt;TouchButtonTrigger&gt; BoxTouchButton</definition>
+        <argsstring></argsstring>
+        <name>BoxTouchButton</name>
+        <briefdescription>
+<para>Defines an alias representing the box touch button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/Buttons.hpp" line="35" column="1" bodyfile="touchgfx/containers/buttons/Buttons.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1a067e5cd30b7258d54a37d6a0d1423d68" prot="public" static="no">
+        <type>int16_t(*</type>
+        <definition>typedef int16_t(* EasingEquation) (uint16_t, int16_t, int16_t, uint16_t)</definition>
+        <argsstring>)(uint16_t, int16_t, int16_t, uint16_t)</argsstring>
+        <name>EasingEquation</name>
+        <briefdescription>
+<para>This function pointer typedef matches the signature for all easing equations. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Thereby EasingEquation is a convenient shorthand for a pointer to any easing equation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/EasingEquations.hpp" line="17" column="1" bodyfile="touchgfx/EasingEquations.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1a62c78b672c5381c87b38200ab84a31f5" prot="public" static="no">
+        <type>int32_t</type>
+        <definition>typedef int32_t fixed16_16</definition>
+        <argsstring></argsstring>
+        <name>fixed16_16</name>
+        <briefdescription>
+<para>A fixed point value using 16 bits for the decimal part and 16 bits for the integral part. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="697" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="697" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1a8acb0f33dffbf1b6afbc9ba50789b73e" prot="public" static="no">
+        <type>int32_t</type>
+        <definition>typedef int32_t fixed28_4</definition>
+        <argsstring></argsstring>
+        <name>fixed28_4</name>
+        <briefdescription>
+<para>A fixed point value using 4 bits for the decimal part and 28 bits for the integral part. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="694" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="694" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1aca843a83bfa2b15fa1c762d27a87d294" prot="public" static="no">
+        <type>uint16_t</type>
+        <definition>typedef uint16_t FontId</definition>
+        <argsstring></argsstring>
+        <name>FontId</name>
+        <briefdescription>
+<para>Defines an alias representing a <ref refid="classtouchgfx_1_1_font" kindref="compound">Font</ref> ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Font.hpp" line="127" column="1" bodyfile="touchgfx/Font.hpp" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1a6148c804c507610bdf8cb15b98d476ce" prot="public" static="no">
+        <type><ref refid="classtouchgfx_1_1_icon_button_style" kindref="compound">IconButtonStyle</ref>&lt; <ref refid="classtouchgfx_1_1_click_button_trigger" kindref="compound">ClickButtonTrigger</ref> &gt;</type>
+        <definition>typedef IconButtonStyle&lt;ClickButtonTrigger&gt; IconClickButton</definition>
+        <argsstring></argsstring>
+        <name>IconClickButton</name>
+        <briefdescription>
+<para>Defines an alias representing the icon click button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/Buttons.hpp" line="50" column="1" bodyfile="touchgfx/containers/buttons/Buttons.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1a139f19ef698b0d2931460c134dd73328" prot="public" static="no">
+        <type><ref refid="classtouchgfx_1_1_image_button_style" kindref="compound">ImageButtonStyle</ref>&lt; <ref refid="classtouchgfx_1_1_icon_button_style" kindref="compound">IconButtonStyle</ref>&lt; <ref refid="classtouchgfx_1_1_click_button_trigger" kindref="compound">ClickButtonTrigger</ref> &gt; &gt;</type>
+        <definition>typedef ImageButtonStyle&lt;IconButtonStyle&lt;ClickButtonTrigger&gt; &gt; IconImageClickButton</definition>
+        <argsstring></argsstring>
+        <name>IconImageClickButton</name>
+        <briefdescription>
+<para>Defines an alias representing the icon image click button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/Buttons.hpp" line="62" column="1" bodyfile="touchgfx/containers/buttons/Buttons.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1a07b115ef98acaa8207a6894a7207b390" prot="public" static="no">
+        <type><ref refid="classtouchgfx_1_1_image_button_style" kindref="compound">ImageButtonStyle</ref>&lt; <ref refid="classtouchgfx_1_1_icon_button_style" kindref="compound">IconButtonStyle</ref>&lt; <ref refid="classtouchgfx_1_1_repeat_button_trigger" kindref="compound">RepeatButtonTrigger</ref> &gt; &gt;</type>
+        <definition>typedef ImageButtonStyle&lt;IconButtonStyle&lt;RepeatButtonTrigger&gt; &gt; IconImageRepeatButton</definition>
+        <argsstring></argsstring>
+        <name>IconImageRepeatButton</name>
+        <briefdescription>
+<para>Defines an alias representing the icon image repeat button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/Buttons.hpp" line="65" column="1" bodyfile="touchgfx/containers/buttons/Buttons.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1a85e42426903101415f4f46f92c366eaf" prot="public" static="no">
+        <type><ref refid="classtouchgfx_1_1_image_button_style" kindref="compound">ImageButtonStyle</ref>&lt; <ref refid="classtouchgfx_1_1_icon_button_style" kindref="compound">IconButtonStyle</ref>&lt; <ref refid="classtouchgfx_1_1_toggle_button_trigger" kindref="compound">ToggleButtonTrigger</ref> &gt; &gt;</type>
+        <definition>typedef ImageButtonStyle&lt;IconButtonStyle&lt;ToggleButtonTrigger&gt; &gt; IconImageToggleButton</definition>
+        <argsstring></argsstring>
+        <name>IconImageToggleButton</name>
+        <briefdescription>
+<para>Defines an alias representing the icon image toggle button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/Buttons.hpp" line="71" column="1" bodyfile="touchgfx/containers/buttons/Buttons.hpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1a2d800260689d38e33c04840ad6320fe4" prot="public" static="no">
+        <type><ref refid="classtouchgfx_1_1_image_button_style" kindref="compound">ImageButtonStyle</ref>&lt; <ref refid="classtouchgfx_1_1_icon_button_style" kindref="compound">IconButtonStyle</ref>&lt; <ref refid="classtouchgfx_1_1_touch_button_trigger" kindref="compound">TouchButtonTrigger</ref> &gt; &gt;</type>
+        <definition>typedef ImageButtonStyle&lt;IconButtonStyle&lt;TouchButtonTrigger&gt; &gt; IconImageTouchButton</definition>
+        <argsstring></argsstring>
+        <name>IconImageTouchButton</name>
+        <briefdescription>
+<para>Defines an alias representing the icon image touch button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/Buttons.hpp" line="68" column="1" bodyfile="touchgfx/containers/buttons/Buttons.hpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1a8144ec70c9df6d6429720babed4fdab4" prot="public" static="no">
+        <type><ref refid="classtouchgfx_1_1_icon_button_style" kindref="compound">IconButtonStyle</ref>&lt; <ref refid="classtouchgfx_1_1_repeat_button_trigger" kindref="compound">RepeatButtonTrigger</ref> &gt;</type>
+        <definition>typedef IconButtonStyle&lt;RepeatButtonTrigger&gt; IconRepeatButton</definition>
+        <argsstring></argsstring>
+        <name>IconRepeatButton</name>
+        <briefdescription>
+<para>Defines an alias representing the icon repeat button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/Buttons.hpp" line="53" column="1" bodyfile="touchgfx/containers/buttons/Buttons.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1a4a1aabcfac72725a6d3ac847e545c9ce" prot="public" static="no">
+        <type><ref refid="classtouchgfx_1_1_icon_button_style" kindref="compound">IconButtonStyle</ref>&lt; <ref refid="classtouchgfx_1_1_toggle_button_trigger" kindref="compound">ToggleButtonTrigger</ref> &gt;</type>
+        <definition>typedef IconButtonStyle&lt;ToggleButtonTrigger&gt; IconToggleButton</definition>
+        <argsstring></argsstring>
+        <name>IconToggleButton</name>
+        <briefdescription>
+<para>Defines an alias representing the icon toggle button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/Buttons.hpp" line="59" column="1" bodyfile="touchgfx/containers/buttons/Buttons.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1ac9ee7bb36ca4e9dd5990895873c8b80b" prot="public" static="no">
+        <type><ref refid="classtouchgfx_1_1_icon_button_style" kindref="compound">IconButtonStyle</ref>&lt; <ref refid="classtouchgfx_1_1_touch_button_trigger" kindref="compound">TouchButtonTrigger</ref> &gt;</type>
+        <definition>typedef IconButtonStyle&lt;TouchButtonTrigger&gt; IconTouchButton</definition>
+        <argsstring></argsstring>
+        <name>IconTouchButton</name>
+        <briefdescription>
+<para>Defines an alias representing the icon touch button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/Buttons.hpp" line="56" column="1" bodyfile="touchgfx/containers/buttons/Buttons.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1a2b5cd1e5d2f423cadbb7a907a306aef6" prot="public" static="no">
+        <type><ref refid="classtouchgfx_1_1_image_button_style" kindref="compound">ImageButtonStyle</ref>&lt; <ref refid="classtouchgfx_1_1_click_button_trigger" kindref="compound">ClickButtonTrigger</ref> &gt;</type>
+        <definition>typedef ImageButtonStyle&lt;ClickButtonTrigger&gt; ImageClickButton</definition>
+        <argsstring></argsstring>
+        <name>ImageClickButton</name>
+        <briefdescription>
+<para>Defines an alias representing the image click button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/Buttons.hpp" line="38" column="1" bodyfile="touchgfx/containers/buttons/Buttons.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1ac148a45982ed663e78f9a8eec71aa4c2" prot="public" static="no">
+        <type><ref refid="classtouchgfx_1_1_image_button_style" kindref="compound">ImageButtonStyle</ref>&lt; <ref refid="classtouchgfx_1_1_repeat_button_trigger" kindref="compound">RepeatButtonTrigger</ref> &gt;</type>
+        <definition>typedef ImageButtonStyle&lt;RepeatButtonTrigger&gt; ImageRepeatButton</definition>
+        <argsstring></argsstring>
+        <name>ImageRepeatButton</name>
+        <briefdescription>
+<para>Defines an alias representing the image repeat button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/Buttons.hpp" line="41" column="1" bodyfile="touchgfx/containers/buttons/Buttons.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1ae480764e8e6b170654c6da6ad0804db7" prot="public" static="no">
+        <type><ref refid="classtouchgfx_1_1_image_button_style" kindref="compound">ImageButtonStyle</ref>&lt; <ref refid="classtouchgfx_1_1_toggle_button_trigger" kindref="compound">ToggleButtonTrigger</ref> &gt;</type>
+        <definition>typedef ImageButtonStyle&lt;ToggleButtonTrigger&gt; ImageToggleButton</definition>
+        <argsstring></argsstring>
+        <name>ImageToggleButton</name>
+        <briefdescription>
+<para>Defines an alias representing the image toggle button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/Buttons.hpp" line="47" column="1" bodyfile="touchgfx/containers/buttons/Buttons.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1abea5346fd36ae4ee3e9ae0a6c4dd68a5" prot="public" static="no">
+        <type><ref refid="classtouchgfx_1_1_image_button_style" kindref="compound">ImageButtonStyle</ref>&lt; <ref refid="classtouchgfx_1_1_touch_button_trigger" kindref="compound">TouchButtonTrigger</ref> &gt;</type>
+        <definition>typedef ImageButtonStyle&lt;TouchButtonTrigger&gt; ImageTouchButton</definition>
+        <argsstring></argsstring>
+        <name>ImageTouchButton</name>
+        <briefdescription>
+<para>Defines an alias representing the image touch button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/Buttons.hpp" line="44" column="1" bodyfile="touchgfx/containers/buttons/Buttons.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1ab68d9f79fbeaa586465fedd5cef6e55d" prot="public" static="no">
+        <type>uint16_t</type>
+        <definition>typedef uint16_t LanguageId</definition>
+        <argsstring></argsstring>
+        <name>LanguageId</name>
+        <briefdescription>
+<para>Language IDs generated by the text converter are uint16_t typedef&apos;ed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Texts.hpp" line="14" column="1" bodyfile="touchgfx/Texts.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1ad59e90505ec56c2331c99dffd08b686c" prot="public" static="no">
+        <type>uint16_t</type>
+        <definition>typedef uint16_t RenderingVariant</definition>
+        <argsstring></argsstring>
+        <name>RenderingVariant</name>
+        <briefdescription>
+<para>Describes a combination of rendering algorithm, image format, and alpha information. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The lowest bit is 0 for &quot;Nearest neighbor&quot;, 1 for &quot;Bilinear&quot;. The next bit is &quot;0&quot; for &quot;no
+alpha&quot;, &quot;2&quot; for &quot;alpha&quot;. The rest is the Bitmap::Format shifted up by 2. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="686" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="686" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1a063c0f8a65eb979059af6d79f2784fa2" prot="public" static="no">
+        <type><ref refid="classtouchgfx_1_1_text_button_style" kindref="compound">TextButtonStyle</ref>&lt; <ref refid="classtouchgfx_1_1_click_button_trigger" kindref="compound">ClickButtonTrigger</ref> &gt;</type>
+        <definition>typedef TextButtonStyle&lt;ClickButtonTrigger&gt; TextClickButton</definition>
+        <argsstring></argsstring>
+        <name>TextClickButton</name>
+        <briefdescription>
+<para>Defines an alias representing the text click button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/Buttons.hpp" line="74" column="1" bodyfile="touchgfx/containers/buttons/Buttons.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1abe2c7387a9ed6f7c793179053f152743" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t TextDirection</definition>
+        <argsstring></argsstring>
+        <name>TextDirection</name>
+        <briefdescription>
+<para>Defines a the direction to write text. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="583" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="583" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1a7f84d8ce19e87bfc029a602f56e13503" prot="public" static="no">
+        <type><ref refid="classtouchgfx_1_1_text_button_style" kindref="compound">TextButtonStyle</ref>&lt; <ref refid="classtouchgfx_1_1_repeat_button_trigger" kindref="compound">RepeatButtonTrigger</ref> &gt;</type>
+        <definition>typedef TextButtonStyle&lt;RepeatButtonTrigger&gt; TextRepeatButton</definition>
+        <argsstring></argsstring>
+        <name>TextRepeatButton</name>
+        <briefdescription>
+<para>Defines an alias representing the text repeat button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/Buttons.hpp" line="77" column="1" bodyfile="touchgfx/containers/buttons/Buttons.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1af5d4cb1a8a9c07fcd4d6678c19330f00" prot="public" static="no">
+        <type><ref refid="classtouchgfx_1_1_text_button_style" kindref="compound">TextButtonStyle</ref>&lt; <ref refid="classtouchgfx_1_1_toggle_button_trigger" kindref="compound">ToggleButtonTrigger</ref> &gt;</type>
+        <definition>typedef TextButtonStyle&lt;ToggleButtonTrigger&gt; TextToggleButton</definition>
+        <argsstring></argsstring>
+        <name>TextToggleButton</name>
+        <briefdescription>
+<para>Defines an alias representing the text toggle button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/Buttons.hpp" line="83" column="1" bodyfile="touchgfx/containers/buttons/Buttons.hpp" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1afeebcac7e905c4dd74a8e836dbcba56d" prot="public" static="no">
+        <type><ref refid="classtouchgfx_1_1_text_button_style" kindref="compound">TextButtonStyle</ref>&lt; <ref refid="classtouchgfx_1_1_touch_button_trigger" kindref="compound">TouchButtonTrigger</ref> &gt;</type>
+        <definition>typedef TextButtonStyle&lt;TouchButtonTrigger&gt; TextTouchButton</definition>
+        <argsstring></argsstring>
+        <name>TextTouchButton</name>
+        <briefdescription>
+<para>Defines an alias representing the text touch button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/Buttons.hpp" line="80" column="1" bodyfile="touchgfx/containers/buttons/Buttons.hpp" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1aaf3d4ca7a5e1b33f09ed50b9a444a29c" prot="public" static="no">
+        <type><ref refid="classtouchgfx_1_1_tiled_image_button_style" kindref="compound">TiledImageButtonStyle</ref>&lt; <ref refid="classtouchgfx_1_1_click_button_trigger" kindref="compound">ClickButtonTrigger</ref> &gt;</type>
+        <definition>typedef TiledImageButtonStyle&lt;ClickButtonTrigger&gt; TiledImageClickButton</definition>
+        <argsstring></argsstring>
+        <name>TiledImageClickButton</name>
+        <briefdescription>
+<para>Defines an alias representing the tiled image click button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/Buttons.hpp" line="86" column="1" bodyfile="touchgfx/containers/buttons/Buttons.hpp" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1aabc6ff9f744574747231b9d7e9682bd0" prot="public" static="no">
+        <type><ref refid="classtouchgfx_1_1_tiled_image_button_style" kindref="compound">TiledImageButtonStyle</ref>&lt; <ref refid="classtouchgfx_1_1_repeat_button_trigger" kindref="compound">RepeatButtonTrigger</ref> &gt;</type>
+        <definition>typedef TiledImageButtonStyle&lt;RepeatButtonTrigger&gt; TiledImageRepeatButton</definition>
+        <argsstring></argsstring>
+        <name>TiledImageRepeatButton</name>
+        <briefdescription>
+<para>Defines an alias representing the tiled image repeat button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/Buttons.hpp" line="89" column="1" bodyfile="touchgfx/containers/buttons/Buttons.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1a7fedf869a4ce73b3b77b01cda46f5d0b" prot="public" static="no">
+        <type><ref refid="classtouchgfx_1_1_tiled_image_button_style" kindref="compound">TiledImageButtonStyle</ref>&lt; <ref refid="classtouchgfx_1_1_toggle_button_trigger" kindref="compound">ToggleButtonTrigger</ref> &gt;</type>
+        <definition>typedef TiledImageButtonStyle&lt;ToggleButtonTrigger&gt; TiledImageToggleButton</definition>
+        <argsstring></argsstring>
+        <name>TiledImageToggleButton</name>
+        <briefdescription>
+<para>Defines an alias representing the tiled image toggle button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/Buttons.hpp" line="95" column="1" bodyfile="touchgfx/containers/buttons/Buttons.hpp" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1abe09029718246fd48fd4a0e60bc3dd66" prot="public" static="no">
+        <type><ref refid="classtouchgfx_1_1_tiled_image_button_style" kindref="compound">TiledImageButtonStyle</ref>&lt; <ref refid="classtouchgfx_1_1_touch_button_trigger" kindref="compound">TouchButtonTrigger</ref> &gt;</type>
+        <definition>typedef TiledImageButtonStyle&lt;TouchButtonTrigger&gt; TiledImageTouchButton</definition>
+        <argsstring></argsstring>
+        <name>TiledImageTouchButton</name>
+        <briefdescription>
+<para>Defines an alias representing the tiled image touch button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/Buttons.hpp" line="92" column="1" bodyfile="touchgfx/containers/buttons/Buttons.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1a464ea5053e32813bb2a3c06e690655e7" prot="public" static="no">
+        <type><ref refid="classtouchgfx_1_1_two_wildcard_text_button_style" kindref="compound">TwoWildcardTextButtonStyle</ref>&lt; <ref refid="classtouchgfx_1_1_click_button_trigger" kindref="compound">ClickButtonTrigger</ref> &gt;</type>
+        <definition>typedef TwoWildcardTextButtonStyle&lt;ClickButtonTrigger&gt; TwoWildcardTextClickButton</definition>
+        <argsstring></argsstring>
+        <name>TwoWildcardTextClickButton</name>
+        <briefdescription>
+<para>Defines an alias representing the wildcard text click button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/Buttons.hpp" line="110" column="1" bodyfile="touchgfx/containers/buttons/Buttons.hpp" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1a4b0b6f0c36d3f9bd19f42e22ca05048f" prot="public" static="no">
+        <type><ref refid="classtouchgfx_1_1_two_wildcard_text_button_style" kindref="compound">TwoWildcardTextButtonStyle</ref>&lt; <ref refid="classtouchgfx_1_1_repeat_button_trigger" kindref="compound">RepeatButtonTrigger</ref> &gt;</type>
+        <definition>typedef TwoWildcardTextButtonStyle&lt;RepeatButtonTrigger&gt; TwoWildcardTextRepeatButton</definition>
+        <argsstring></argsstring>
+        <name>TwoWildcardTextRepeatButton</name>
+        <briefdescription>
+<para>Defines an alias representing the wildcard text repeat button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/Buttons.hpp" line="113" column="1" bodyfile="touchgfx/containers/buttons/Buttons.hpp" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1ad4af5d93a70d44bc89dc1f3ea8f52134" prot="public" static="no">
+        <type><ref refid="classtouchgfx_1_1_two_wildcard_text_button_style" kindref="compound">TwoWildcardTextButtonStyle</ref>&lt; <ref refid="classtouchgfx_1_1_toggle_button_trigger" kindref="compound">ToggleButtonTrigger</ref> &gt;</type>
+        <definition>typedef TwoWildcardTextButtonStyle&lt;ToggleButtonTrigger&gt; TwoWildcardTextToggleButton</definition>
+        <argsstring></argsstring>
+        <name>TwoWildcardTextToggleButton</name>
+        <briefdescription>
+<para>Defines an alias representing the wildcard text toggle button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/Buttons.hpp" line="119" column="1" bodyfile="touchgfx/containers/buttons/Buttons.hpp" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1a56e73ca1db6ed2bcbe778f10368c2c13" prot="public" static="no">
+        <type><ref refid="classtouchgfx_1_1_two_wildcard_text_button_style" kindref="compound">TwoWildcardTextButtonStyle</ref>&lt; <ref refid="classtouchgfx_1_1_touch_button_trigger" kindref="compound">TouchButtonTrigger</ref> &gt;</type>
+        <definition>typedef TwoWildcardTextButtonStyle&lt;TouchButtonTrigger&gt; TwoWildcardTextTouchButton</definition>
+        <argsstring></argsstring>
+        <name>TwoWildcardTextTouchButton</name>
+        <briefdescription>
+<para>Defines an alias representing the wildcard text touch button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/Buttons.hpp" line="116" column="1" bodyfile="touchgfx/containers/buttons/Buttons.hpp" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1a3fd2f86199cf8f66f782fbf71dd2412d" prot="public" static="no">
+        <type>uint16_t</type>
+        <definition>typedef uint16_t TypedTextId</definition>
+        <argsstring></argsstring>
+        <name>TypedTextId</name>
+        <briefdescription>
+<para>Text IDs as generated by the text converter are simple uint16_t typedefs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="734" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="734" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1a10766619db16e85d3688056de5e12c3c" prot="public" static="no">
+        <type><ref refid="classtouchgfx_1_1_wildcard_text_button_style" kindref="compound">WildcardTextButtonStyle</ref>&lt; <ref refid="classtouchgfx_1_1_click_button_trigger" kindref="compound">ClickButtonTrigger</ref> &gt;</type>
+        <definition>typedef WildcardTextButtonStyle&lt;ClickButtonTrigger&gt; WildcardTextClickButton</definition>
+        <argsstring></argsstring>
+        <name>WildcardTextClickButton</name>
+        <briefdescription>
+<para>Defines an alias representing the wildcard text click button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/Buttons.hpp" line="98" column="1" bodyfile="touchgfx/containers/buttons/Buttons.hpp" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1a6be18a993ceabd26c4ac696f311e990c" prot="public" static="no">
+        <type><ref refid="classtouchgfx_1_1_wildcard_text_button_style" kindref="compound">WildcardTextButtonStyle</ref>&lt; <ref refid="classtouchgfx_1_1_repeat_button_trigger" kindref="compound">RepeatButtonTrigger</ref> &gt;</type>
+        <definition>typedef WildcardTextButtonStyle&lt;RepeatButtonTrigger&gt; WildcardTextRepeatButton</definition>
+        <argsstring></argsstring>
+        <name>WildcardTextRepeatButton</name>
+        <briefdescription>
+<para>Defines an alias representing the wildcard text repeat button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/Buttons.hpp" line="101" column="1" bodyfile="touchgfx/containers/buttons/Buttons.hpp" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1ab264d15e137042e648c39b3267f1b58a" prot="public" static="no">
+        <type><ref refid="classtouchgfx_1_1_wildcard_text_button_style" kindref="compound">WildcardTextButtonStyle</ref>&lt; <ref refid="classtouchgfx_1_1_toggle_button_trigger" kindref="compound">ToggleButtonTrigger</ref> &gt;</type>
+        <definition>typedef WildcardTextButtonStyle&lt;ToggleButtonTrigger&gt; WildcardTextToggleButton</definition>
+        <argsstring></argsstring>
+        <name>WildcardTextToggleButton</name>
+        <briefdescription>
+<para>Defines an alias representing the wildcard text toggle button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/Buttons.hpp" line="107" column="1" bodyfile="touchgfx/containers/buttons/Buttons.hpp" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetouchgfx_1a62d0ba9e982019e6e6c362623fa8c0f5" prot="public" static="no">
+        <type><ref refid="classtouchgfx_1_1_wildcard_text_button_style" kindref="compound">WildcardTextButtonStyle</ref>&lt; <ref refid="classtouchgfx_1_1_touch_button_trigger" kindref="compound">TouchButtonTrigger</ref> &gt;</type>
+        <definition>typedef WildcardTextButtonStyle&lt;TouchButtonTrigger&gt; WildcardTextTouchButton</definition>
+        <argsstring></argsstring>
+        <name>WildcardTextTouchButton</name>
+        <briefdescription>
+<para>Defines an alias representing the wildcard text touch button. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/Buttons.hpp" line="104" column="1" bodyfile="touchgfx/containers/buttons/Buttons.hpp" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacetouchgfx_1a7c409435de8407b33db91d345bd1e2e1" prot="public" static="no" mutable="no">
+        <type>const <ref refid="namespacetouchgfx_1a3923435f6df64396b2203d60ddfa89e4" kindref="member">BitmapId</ref></type>
+        <definition>const BitmapId BITMAP_ANIMATION_STORAGE</definition>
+        <argsstring></argsstring>
+        <name>BITMAP_ANIMATION_STORAGE</name>
+        <initializer>= 0xFFFEU</initializer>
+        <briefdescription>
+<para>A virtual id representing animation storage. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Bitmap.hpp" line="26" column="1" bodyfile="touchgfx/Bitmap.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetouchgfx_1ad3c4ba097ae03087134eacd89fb7103a" prot="public" static="no" mutable="no">
+        <type>const <ref refid="namespacetouchgfx_1a3923435f6df64396b2203d60ddfa89e4" kindref="member">BitmapId</ref></type>
+        <definition>const BitmapId BITMAP_INVALID</definition>
+        <argsstring></argsstring>
+        <name>BITMAP_INVALID</name>
+        <initializer>= 0xFFFFU</initializer>
+        <briefdescription>
+<para>Define the bitmapId of an invalid bitmap. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Bitmap.hpp" line="27" column="1" bodyfile="touchgfx/Bitmap.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetouchgfx_1ab110ec2eabe5c2ad5f665d7f48370e53" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="namespacetouchgfx_1ae1ec6d58a3c593e4801f352243506628" kindref="member">Alignment</ref></type>
+        <definition>const Alignment CENTER</definition>
+        <argsstring></argsstring>
+        <name>CENTER</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+<para>Text is centered horizontally. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="579" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="579" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetouchgfx_1a4ffed82c6dd6a822dd52681b627f51ce" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="namespacetouchgfx_1ae1ec6d58a3c593e4801f352243506628" kindref="member">Alignment</ref></type>
+        <definition>const Alignment LEFT</definition>
+        <argsstring></argsstring>
+        <name>LEFT</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Text is left aligned. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="578" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="578" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetouchgfx_1aa08a577393243b86dfd2a97e61443673" prot="public" static="yes" mutable="no">
+        <type>const float</type>
+        <definition>const float PI</definition>
+        <argsstring></argsstring>
+        <name>PI</name>
+        <initializer>= 3.14159265358979323846f</initializer>
+        <briefdescription>
+<para>PI. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="56" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetouchgfx_1a3c9d3e2dd3e632832f9e4e37e392bf8e" prot="public" static="yes" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t RenderingVariant_Alpha</definition>
+        <argsstring></argsstring>
+        <name>RenderingVariant_Alpha</name>
+        <initializer>= 2</initializer>
+        <briefdescription>
+<para>The rendering variant alpha bit value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="690" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="690" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetouchgfx_1a690cf8e2326994e25e2a0a05f4a5312a" prot="public" static="yes" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t RenderingVariant_Bilinear</definition>
+        <argsstring></argsstring>
+        <name>RenderingVariant_Bilinear</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+<para>The rendering variant bilinear bit value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="688" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="688" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetouchgfx_1a51612bd8ebe029bdd953b1833734f0b1" prot="public" static="yes" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t RenderingVariant_FormatShift</definition>
+        <argsstring></argsstring>
+        <name>RenderingVariant_FormatShift</name>
+        <initializer>= 2</initializer>
+        <briefdescription>
+<para>The rendering variant format shift. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="691" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="691" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetouchgfx_1a00354a4b51770bf9f6169337679e32c9" prot="public" static="yes" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t RenderingVariant_NearestNeighbor</definition>
+        <argsstring></argsstring>
+        <name>RenderingVariant_NearestNeighbor</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>The rendering variant nearest neighbor bit value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="687" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="687" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetouchgfx_1a84b33f5f7d880271fc1945f3782bc73d" prot="public" static="yes" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t RenderingVariant_NoAlpha</definition>
+        <argsstring></argsstring>
+        <name>RenderingVariant_NoAlpha</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>The rendering variant no alpha bit value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="689" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="689" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetouchgfx_1ab3b7d9f870c0dfe80f74bd66e378a3da" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="namespacetouchgfx_1ae1ec6d58a3c593e4801f352243506628" kindref="member">Alignment</ref></type>
+        <definition>const Alignment RIGHT</definition>
+        <argsstring></argsstring>
+        <name>RIGHT</name>
+        <initializer>= 2</initializer>
+        <briefdescription>
+<para>Text is right aligned. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="580" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="580" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetouchgfx_1a4a83c2063e742f01f4d61b4df34f1737" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="namespacetouchgfx_1abe2c7387a9ed6f7c793179053f152743" kindref="member">TextDirection</ref></type>
+        <definition>const TextDirection TEXT_DIRECTION_LTR</definition>
+        <argsstring></argsstring>
+        <name>TEXT_DIRECTION_LTR</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Text is written Left-To-Right, e.g. English. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="584" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="584" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetouchgfx_1a8e8998014c95620c1205aac1294ccd3f" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="namespacetouchgfx_1abe2c7387a9ed6f7c793179053f152743" kindref="member">TextDirection</ref></type>
+        <definition>const TextDirection TEXT_DIRECTION_RTL</definition>
+        <argsstring></argsstring>
+        <name>TEXT_DIRECTION_RTL</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+<para>Text is written Right-To-Left, e.g. Hebrew. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/Types.hpp" line="585" column="1" bodyfile="touchgfx/hal/Types.hpp" bodystart="585" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetouchgfx_1afacec4ce50e46612f64f4d0906e95aca" prot="public" static="no" mutable="no">
+        <type>const <ref refid="namespacetouchgfx_1a3fd2f86199cf8f66f782fbf71dd2412d" kindref="member">TypedTextId</ref></type>
+        <definition>const TypedTextId TYPED_TEXT_INVALID</definition>
+        <argsstring></argsstring>
+        <name>TYPED_TEXT_INVALID</name>
+        <initializer>= 0xFFFFU</initializer>
+        <briefdescription>
+<para>The ID of an invalid text. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TypedText.hpp" line="16" column="1" bodyfile="touchgfx/TypedText.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacetouchgfx_1a869b95e7df114093b0cbb0056baedf9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T touchgfx::abs</definition>
+        <argsstring>(T d)</argsstring>
+        <name>abs</name>
+        <param>
+          <type>T</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Simple implementation of the standard abs function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type on which to perform the abs. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The entity on which to perform the abs.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The absolute (non-negative) value of d. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Utils.hpp" line="100" column="1" bodyfile="touchgfx/Utils.hpp" bodystart="100" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetouchgfx_1a7279e6708575e6ee6a0e8c033bcec19c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t touchgfx::ceil28_4</definition>
+        <argsstring>(fixed28_4 value)</argsstring>
+        <name>ceil28_4</name>
+        <param>
+          <type><ref refid="namespacetouchgfx_1a8acb0f33dffbf1b6afbc9ba50789b73e" kindref="member">fixed28_4</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Round up a fixed28_4 value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The fixed28_4 value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The ceil result. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TextureMapTypes.hpp" line="208" column="1" bodyfile="touchgfx/TextureMapTypes.hpp" bodystart="208" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetouchgfx_1ab91dc48422fd4abb18201e52e4c331d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t touchgfx::clz</definition>
+        <argsstring>(int32_t x)</argsstring>
+        <name>clz</name>
+        <param>
+          <type>int32_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Count leading zeros in the binary representation of absolute value of the given int32_t. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to count the number of leading zeros in.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of leading zeroes (from 0 to 31). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Utils.hpp" line="143" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetouchgfx_1ad3fbb265c17cf21007c1dc4d7a96707c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void touchgfx::finalizeTransition</definition>
+        <argsstring>(Screen *newScreen, Presenter *newPresenter, Transition *newTransition)</argsstring>
+        <name>finalizeTransition</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_screen" kindref="compound">Screen</ref> *</type>
+          <declname>newScreen</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_presenter" kindref="compound">Presenter</ref> *</type>
+          <declname>newPresenter</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_transition" kindref="compound">Transition</ref> *</type>
+          <declname>newTransition</declname>
+        </param>
+        <briefdescription>
+<para>Finalize screen transition. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Private helper function for makeTransition. Do not use.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">newScreen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If non-null, the new screen. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">newPresenter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If non-null, the new presenter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">newTransition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If non-null, the new transition. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mvp/MVPApplication.hpp" line="115" column="1" bodyfile="mvp/MVPApplication.hpp" bodystart="115" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetouchgfx_1a478144abfd043c15f79b6b2704fd23a4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetouchgfx_1a8acb0f33dffbf1b6afbc9ba50789b73e" kindref="member">fixed28_4</ref></type>
+        <definition>fixed28_4 touchgfx::fixed28_4Mul</definition>
+        <argsstring>(fixed28_4 a, fixed28_4 b)</argsstring>
+        <name>fixed28_4Mul</name>
+        <param>
+          <type><ref refid="namespacetouchgfx_1a8acb0f33dffbf1b6afbc9ba50789b73e" kindref="member">fixed28_4</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1a8acb0f33dffbf1b6afbc9ba50789b73e" kindref="member">fixed28_4</ref></type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Multiply two fixed28_4 numbers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The fixed28_4 to process. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The fixed28_4 to process.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the result. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TextureMapTypes.hpp" line="164" column="1" bodyfile="touchgfx/TextureMapTypes.hpp" bodystart="164" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetouchgfx_1a139c14620c3a071645d48a12faea065c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float touchgfx::fixed28_4ToFloat</definition>
+        <argsstring>(fixed28_4 value)</argsstring>
+        <name>fixed28_4ToFloat</name>
+        <param>
+          <type><ref refid="namespacetouchgfx_1a8acb0f33dffbf1b6afbc9ba50789b73e" kindref="member">fixed28_4</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Convert fixed28_4 to float. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The fixed28_4 value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The value as float. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TextureMapTypes.hpp" line="127" column="1" bodyfile="touchgfx/TextureMapTypes.hpp" bodystart="127" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetouchgfx_1a484d536eb36392a6ef3a0a6c1815439c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetouchgfx_1a62c78b672c5381c87b38200ab84a31f5" kindref="member">fixed16_16</ref></type>
+        <definition>fixed16_16 touchgfx::floatToFixed16_16</definition>
+        <argsstring>(float value)</argsstring>
+        <name>floatToFixed16_16</name>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Convert float to fixed16_16. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The float value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The value as fixed16_16. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TextureMapTypes.hpp" line="151" column="1" bodyfile="touchgfx/TextureMapTypes.hpp" bodystart="151" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetouchgfx_1a8f49ef0ce7627d5f9c8a7d7c226aaa9e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetouchgfx_1a8acb0f33dffbf1b6afbc9ba50789b73e" kindref="member">fixed28_4</ref></type>
+        <definition>fixed28_4 touchgfx::floatToFixed28_4</definition>
+        <argsstring>(float value)</argsstring>
+        <name>floatToFixed28_4</name>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Convert float to fixed28_4. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The float value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The value as fixed28_4. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TextureMapTypes.hpp" line="139" column="1" bodyfile="touchgfx/TextureMapTypes.hpp" bodystart="139" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetouchgfx_1aae9ce7ec13a9f3151ba78c1d4bd3d4a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void touchgfx::floorDivMod</definition>
+        <argsstring>(int32_t numerator, int32_t denominator, int32_t &amp;floor, int32_t &amp;mod)</argsstring>
+        <name>floorDivMod</name>
+        <param>
+          <type>int32_t</type>
+          <declname>numerator</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>denominator</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>floor</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+<para>Divides two fixed28_4 numbers and returns the result as well as the remainder. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numerator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The numerator. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>denominator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The denominator. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">floor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>numerator/denominator. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">mod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>numerator%denominator. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TextureMapTypes.hpp" line="233" column="1" bodyfile="touchgfx/TextureMapTypes.hpp" bodystart="233" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetouchgfx_1a619b0204855df173fed6712fa4c3bf84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void touchgfx::FrameBufferAllocatorSignalBlockDrawn</definition>
+        <argsstring>()</argsstring>
+        <name>FrameBufferAllocatorSignalBlockDrawn</name>
+        <briefdescription>
+<para>Called by <ref refid="classtouchgfx_1_1_frame_buffer_allocator" kindref="compound">FrameBufferAllocator</ref> when a block is drawn and therefore ready for transfer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The <ref refid="classtouchgfx_1_1_l_c_d" kindref="compound">LCD</ref> driver should use this method to start a transfer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/FrameBufferAllocator.hpp" line="24" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetouchgfx_1a7a3610743e1972c8f41084114a82389e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void touchgfx::FrameBufferAllocatorWaitOnTransfer</definition>
+        <argsstring>()</argsstring>
+        <name>FrameBufferAllocatorWaitOnTransfer</name>
+        <briefdescription>
+<para>Called by <ref refid="classtouchgfx_1_1_frame_buffer_allocator" kindref="compound">FrameBufferAllocator</ref> to wait for a <ref refid="classtouchgfx_1_1_l_c_d" kindref="compound">LCD</ref> Transfer, when the allocator has no free blocks. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The <ref refid="classtouchgfx_1_1_l_c_d" kindref="compound">LCD</ref> driver can use this function to synchronize the UI thread with the transfer logic. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/FrameBufferAllocator.hpp" line="18" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetouchgfx_1a59c06314a1c4a83698403edf6c3423e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T touchgfx::gcd</definition>
+        <argsstring>(T a, T b)</argsstring>
+        <name>gcd</name>
+        <param>
+          <type>T</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Find greatest common divisor of two given numbers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Generic type parameter. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first number. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second number.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The greatest common divisor. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Utils.hpp" line="119" column="1" bodyfile="touchgfx/Utils.hpp" bodystart="119" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetouchgfx_1a4bfdfb99638201cb3bc7a711992f4e65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void touchgfx::hw_init</definition>
+        <argsstring>()</argsstring>
+        <name>hw_init</name>
+        <briefdescription>
+<para>Function to perform generic hardware initialization of the board. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function prototype is only provided as a convention. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/BoardConfiguration.hpp" line="15" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetouchgfx_1ad7ac1ff1e5338aa31817d0eed8c38ae3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FORCE_INLINE_FUNCTION uint8_t</type>
+        <definition>FORCE_INLINE_FUNCTION uint8_t touchgfx::LCD2getPixel</definition>
+        <argsstring>(const uint8_t *addr, int offset)</argsstring>
+        <name>LCD2getPixel</name>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>Get pixel from buffer/image. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The address. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The offset.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The pixel value. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD2bpp.hpp" line="354" column="1" bodyfile="platform/driver/lcd/LCD2bpp.hpp" bodystart="354" bodyend="357"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetouchgfx_1aac57f51730bad6ebc3be8e2b86de7da7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FORCE_INLINE_FUNCTION uint8_t</type>
+        <definition>FORCE_INLINE_FUNCTION uint8_t touchgfx::LCD2getPixel</definition>
+        <argsstring>(const uint16_t *addr, int offset)</argsstring>
+        <name>LCD2getPixel</name>
+        <param>
+          <type>const uint16_t *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>Get pixel from buffer/image. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The address. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The offset.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The pixel value. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD2bpp.hpp" line="367" column="1" bodyfile="platform/driver/lcd/LCD2bpp.hpp" bodystart="367" bodyend="370"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetouchgfx_1a2d7c7dad74ee145a1cfef82814536003" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FORCE_INLINE_FUNCTION void</type>
+        <definition>FORCE_INLINE_FUNCTION void touchgfx::LCD2setPixel</definition>
+        <argsstring>(uint8_t *addr, int offset, uint8_t value)</argsstring>
+        <name>LCD2setPixel</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set pixel in buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The address. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The offset. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD2bpp.hpp" line="379" column="1" bodyfile="platform/driver/lcd/LCD2bpp.hpp" bodystart="379" bodyend="383"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetouchgfx_1a4d9c959af2c65d16f1bebf167c50cee0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FORCE_INLINE_FUNCTION void</type>
+        <definition>FORCE_INLINE_FUNCTION void touchgfx::LCD2setPixel</definition>
+        <argsstring>(uint16_t *addr, int offset, uint8_t value)</argsstring>
+        <name>LCD2setPixel</name>
+        <param>
+          <type>uint16_t *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set pixel in buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The address. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The offset. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD2bpp.hpp" line="392" column="1" bodyfile="platform/driver/lcd/LCD2bpp.hpp" bodystart="392" bodyend="395"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetouchgfx_1a4dd15f2f9a7e9d8026a5a2aa035765c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FORCE_INLINE_FUNCTION int</type>
+        <definition>FORCE_INLINE_FUNCTION int touchgfx::LCD2shiftVal</definition>
+        <argsstring>(int offset)</argsstring>
+        <name>LCD2shiftVal</name>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>Shift value to get the right pixel in a byte. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The offset.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The shift value. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD2bpp.hpp" line="337" column="1" bodyfile="platform/driver/lcd/LCD2bpp.hpp" bodystart="337" bodyend="344"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetouchgfx_1a18022299e9bf294f9cdda7a8a147459a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FORCE_INLINE_FUNCTION uint8_t</type>
+        <definition>FORCE_INLINE_FUNCTION uint8_t touchgfx::LCD4getPixel</definition>
+        <argsstring>(const uint8_t *addr, int offset)</argsstring>
+        <name>LCD4getPixel</name>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>Get pixel from buffer/image. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The address. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The offset.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The pixel value. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD4bpp.hpp" line="362" column="1" bodyfile="platform/driver/lcd/LCD4bpp.hpp" bodystart="362" bodyend="370"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetouchgfx_1a63b9572209d773921552207e013e9535" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FORCE_INLINE_FUNCTION uint8_t</type>
+        <definition>FORCE_INLINE_FUNCTION uint8_t touchgfx::LCD4getPixel</definition>
+        <argsstring>(const uint16_t *addr, int offset)</argsstring>
+        <name>LCD4getPixel</name>
+        <param>
+          <type>const uint16_t *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>Get pixel from buffer/image. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The address. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The offset.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The pixel value. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD4bpp.hpp" line="380" column="1" bodyfile="platform/driver/lcd/LCD4bpp.hpp" bodystart="380" bodyend="383"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetouchgfx_1ade3bbccf82f10ef0599552dd04d5a8c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FORCE_INLINE_FUNCTION void</type>
+        <definition>FORCE_INLINE_FUNCTION void touchgfx::LCD4setPixel</definition>
+        <argsstring>(uint8_t *addr, int offset, uint8_t value)</argsstring>
+        <name>LCD4setPixel</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set pixel in buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The address. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The offset. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD4bpp.hpp" line="392" column="1" bodyfile="platform/driver/lcd/LCD4bpp.hpp" bodystart="392" bodyend="400"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetouchgfx_1a1a3b7ab4520618654367b8ac7abff9f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FORCE_INLINE_FUNCTION void</type>
+        <definition>FORCE_INLINE_FUNCTION void touchgfx::LCD4setPixel</definition>
+        <argsstring>(uint16_t *addr, int offset, uint8_t value)</argsstring>
+        <name>LCD4setPixel</name>
+        <param>
+          <type>uint16_t *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set pixel in buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The address. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The offset. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD4bpp.hpp" line="409" column="1" bodyfile="platform/driver/lcd/LCD4bpp.hpp" bodystart="409" bodyend="412"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetouchgfx_1ab9fe3338e9a34bc45218c5fd202d29dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacetouchgfx_1ad59e90505ec56c2331c99dffd08b686c" kindref="member">RenderingVariant</ref></type>
+        <definition>RenderingVariant touchgfx::lookupBilinearRenderVariant</definition>
+        <argsstring>(const Bitmap &amp;bitmap)</argsstring>
+        <name>lookupBilinearRenderVariant</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> &amp;</type>
+          <declname>bitmap</declname>
+        </param>
+        <briefdescription>
+<para>Returns the associated bilinear render variant based on the bitmap format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is used for quick determination of the type of bitmap during <ref refid="classtouchgfx_1_1_texture_mapper" kindref="compound">TextureMapper</ref> drawing.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bitmap.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A RenderingVariant based on the bitmap format. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Utils.hpp" line="89" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetouchgfx_1a97c066a7eff2a0f94f0caa59b3c99774" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacetouchgfx_1ad59e90505ec56c2331c99dffd08b686c" kindref="member">RenderingVariant</ref></type>
+        <definition>RenderingVariant touchgfx::lookupNearestNeighborRenderVariant</definition>
+        <argsstring>(const Bitmap &amp;bitmap)</argsstring>
+        <name>lookupNearestNeighborRenderVariant</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> &amp;</type>
+          <declname>bitmap</declname>
+        </param>
+        <briefdescription>
+<para>Returns the associated nearest neighbor render variant based on the bitmap format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is used for quick determination of the type of bitmap during <ref refid="classtouchgfx_1_1_texture_mapper" kindref="compound">TextureMapper</ref> drawing.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bitmap.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A RenderingVariant based on the bitmap format. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Utils.hpp" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetouchgfx_1a5c5efcff26f3775392d3e615e10f32c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class ScreenType</type>
+          </param>
+          <param>
+            <type>class PresenterType</type>
+          </param>
+          <param>
+            <type>class TransType</type>
+          </param>
+          <param>
+            <type>class ModelType</type>
+          </param>
+        </templateparamlist>
+        <type>PresenterType *</type>
+        <definition>PresenterType* touchgfx::makeTransition</definition>
+        <argsstring>(Screen **currentScreen, Presenter **currentPresenter, MVPHeap &amp;heap, Transition **currentTrans, ModelType *model)</argsstring>
+        <name>makeTransition</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_screen" kindref="compound">Screen</ref> **</type>
+          <declname>currentScreen</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_presenter" kindref="compound">Presenter</ref> **</type>
+          <declname>currentPresenter</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_m_v_p_heap" kindref="compound">MVPHeap</ref> &amp;</type>
+          <declname>heap</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_transition" kindref="compound">Transition</ref> **</type>
+          <declname>currentTrans</declname>
+        </param>
+        <param>
+          <type>ModelType *</type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+<para>Function for effectuating a screen transition (i.e. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>makes the requested new presenter/view pair active). Once this function has returned, the new screen has been transitioned to. Due to the memory allocation strategy of using the same memory area for all screens, the old view/presenter will no longer exist when this function returns.</para>
+<para>Will properly clean up old screen (tearDownScreen, <ref refid="classtouchgfx_1_1_presenter_1a0b4b84b56b2df761be371988a39eff22" kindref="member">Presenter::deactivate</ref>) and call setupScreen/activate on new view/presenter pair. Will also make sure the view, presenter and model are correctly bound to each other.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>ScreenType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Class type for the <ref refid="classtouchgfx_1_1_view" kindref="compound">View</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>PresenterType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Class type for the <ref refid="classtouchgfx_1_1_presenter" kindref="compound">Presenter</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TransType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Class type for the <ref refid="classtouchgfx_1_1_transition" kindref="compound">Transition</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ModelType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Class type for the Model. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">currentScreen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to pointer to the current view. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">currentPresenter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to pointer to the current presenter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">heap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference to the heap containing the memory storage in which to allocate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">currentTrans</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to pointer to the current transition. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to model.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to the new <ref refid="classtouchgfx_1_1_presenter" kindref="compound">Presenter</ref> of the requested type. Incidentally it will be the same value as the old presenter due to memory reuse. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mvp/MVPApplication.hpp" line="150" column="1" bodyfile="mvp/MVPApplication.hpp" bodystart="150" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetouchgfx_1acf0eb29ab5799003b29406ae2ffa08ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void touchgfx::memset</definition>
+        <argsstring>(void *data, uint8_t c, uint32_t size)</argsstring>
+        <name>memset</name>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Simple implementation of the standard memset function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Will write the value of &apos;c&apos; in &apos;size&apos; consecutive bytes starting from &apos;data&apos;.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Address of data to set. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to set. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of bytes to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Utils.hpp" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetouchgfx_1a68ac725a2e6c1d44ee47ac8a672827c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t touchgfx::muldiv</definition>
+        <argsstring>(int32_t factor1, int32_t factor2, int32_t divisor, int32_t &amp;remainder)</argsstring>
+        <name>muldiv</name>
+        <param>
+          <type>int32_t</type>
+          <declname>factor1</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>factor2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>divisor</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>remainder</declname>
+        </param>
+        <briefdescription>
+<para>Multiply and divide without causing overflow. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Multiplying two large values and subsequently dividing the result with another large value might cause an overflow in the intermediate result. The function <ref refid="namespacetouchgfx_1a68ac725a2e6c1d44ee47ac8a672827c4" kindref="member">muldiv()</ref> will multiply factor1 and factor2 and divide the result by divisor without causing overflow (unless the final result would overflow). The remainder from the division is returned.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>factor1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first factor. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>factor2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second factor. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>divisor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The divisor. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">remainder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The remainder.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>(factor1 * factor2) / divisor. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Utils.hpp" line="159" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetouchgfx_1a6c882abe7534941829eae2d88333daca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtouchgfx_1_1_matrix4x4" kindref="compound">Matrix4x4</ref></type>
+        <definition>Matrix4x4 touchgfx::operator *</definition>
+        <argsstring>(const Matrix4x4 &amp;multiplicand, const Matrix4x4 &amp;multiplier)</argsstring>
+        <name>operator *</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_matrix4x4" kindref="compound">Matrix4x4</ref> &amp;</type>
+          <declname>multiplicand</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_matrix4x4" kindref="compound">Matrix4x4</ref> &amp;</type>
+          <declname>multiplier</declname>
+        </param>
+        <briefdescription>
+<para>Multiplication operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>multiplicand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first value to multiply. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>multiplier</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second value to multiply.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The result of the operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Math3D.hpp" line="24" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetouchgfx_1a7caf6503670fdd24cc3711ea0272e8e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtouchgfx_1_1_point4" kindref="compound">Point4</ref></type>
+        <definition>Point4 touchgfx::operator *</definition>
+        <argsstring>(const Matrix4x4 &amp;multiplicand, const Point4 &amp;multiplier)</argsstring>
+        <name>operator *</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_matrix4x4" kindref="compound">Matrix4x4</ref> &amp;</type>
+          <declname>multiplicand</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_point4" kindref="compound">Point4</ref> &amp;</type>
+          <declname>multiplier</declname>
+        </param>
+        <briefdescription>
+<para>Multiplication operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>multiplicand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first value to multiply. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>multiplier</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second value to multiply.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The result of the operation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Math3D.hpp" line="34" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetouchgfx_1a91ece3ecafb7f4bdca2bcdb4aafa8654" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void touchgfx::prepareTransition</definition>
+        <argsstring>(Screen **currentScreen, Presenter **currentPresenter, Transition **currentTrans)</argsstring>
+        <name>prepareTransition</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_screen" kindref="compound">Screen</ref> **</type>
+          <declname>currentScreen</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_presenter" kindref="compound">Presenter</ref> **</type>
+          <declname>currentPresenter</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_transition" kindref="compound">Transition</ref> **</type>
+          <declname>currentTrans</declname>
+        </param>
+        <briefdescription>
+<para>Prepare screen transition. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Private helper function for makeTransition. Do not use.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">currentScreen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If non-null, the current screen. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">currentPresenter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If non-null, the current presenter. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">currentTrans</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If non-null, the current transaction. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mvp/MVPApplication.hpp" line="78" column="1" bodyfile="mvp/MVPApplication.hpp" bodystart="78" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetouchgfx_1a4f372e97b2c0b3b33e33081640e41a1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void touchgfx::simulator_enable_stdio</definition>
+        <argsstring>()</argsstring>
+        <name>simulator_enable_stdio</name>
+        <briefdescription>
+<para>Simulator enable stdio. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/hal/simulator/sdl2/HALSDL2.hpp" line="18" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetouchgfx_1a36b0e75109040aa9f7defea5a142fc43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void touchgfx::simulator_printf</definition>
+        <argsstring>(const char *format, va_list pArg)</argsstring>
+        <name>simulator_printf</name>
+        <param>
+          <type>const char *</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>va_list</type>
+          <declname>pArg</declname>
+        </param>
+        <briefdescription>
+<para>Simulator printf. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Describes the format to use. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pArg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The argument list. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/hal/simulator/sdl2/HALSDL2.hpp" line="26" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetouchgfx_1ac9f45e65d261580744b315b168aa520c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class HALType</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classtouchgfx_1_1_h_a_l" kindref="compound">HAL</ref> &amp;</type>
+        <definition>HAL&amp; touchgfx::touchgfx_generic_init</definition>
+        <argsstring>(DMA_Interface &amp;dma, LCD &amp;display, TouchController &amp;tc, int16_t width, int16_t height, uint16_t *bitmapCache, uint32_t bitmapCacheSize, uint32_t numberOfDynamicBitmaps=0)</argsstring>
+        <name>touchgfx_generic_init</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_d_m_a___interface" kindref="compound">DMA_Interface</ref> &amp;</type>
+          <declname>dma</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_l_c_d" kindref="compound">LCD</ref> &amp;</type>
+          <declname>display</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_touch_controller" kindref="compound">TouchController</ref> &amp;</type>
+          <declname>tc</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>bitmapCache</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>bitmapCacheSize</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>numberOfDynamicBitmaps</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>TouchGFX generic initialize. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="global_1_global000001"><xreftitle>Functions</xreftitle><xrefdescription></xrefdescription></xrefsect></para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>HALType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The class type of the <ref refid="classtouchgfx_1_1_h_a_l" kindref="compound">HAL</ref> subclass used for this port. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dma</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference to the DMA implementation object to use. Can be of type <ref refid="classtouchgfx_1_1_no_d_m_a" kindref="compound">NoDMA</ref> to disable the use of DMA for rendering. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">display</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference to the <ref refid="classtouchgfx_1_1_l_c_d" kindref="compound">LCD</ref> renderer implementation (subclass of <ref refid="classtouchgfx_1_1_l_c_d" kindref="compound">LCD</ref>). Could be either <ref refid="classtouchgfx_1_1_l_c_d16bpp" kindref="compound">LCD16bpp</ref> for RGB565 UIs, or <ref refid="classtouchgfx_1_1_l_c_d1bpp" kindref="compound">LCD1bpp</ref> for monochrome UIs or <ref refid="classtouchgfx_1_1_l_c_d24bpp" kindref="compound">LCD24bpp</ref> for 24bit displays using RGB888 UIs. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">tc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference to the touch controller driver (or <ref refid="classtouchgfx_1_1_no_touch_controller" kindref="compound">NoTouchController</ref> to disable touch input). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <emphasis>native</emphasis> display width of the actual display, in pixels. This value is irrespective of whether the concrete UI should be portrait or landscape mode. It must match what the display itself is configured as. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <emphasis>native</emphasis> display height of the actual display, in pixels. This value is irrespective of whether the concrete UI should be portrait or landscape mode. It must match what the display itself is configured as. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">bitmapCache</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional pointer to starting address of a memory region in which to place the bitmap cache. Usually in external RAM. Pass 0 if bitmap caching is not used. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bitmapCacheSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of bitmap cache in bytes. Pass 0 if bitmap cache is not used. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>numberOfDynamicBitmaps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(Optional) Number of dynamic bitmaps.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A reference to the allocated (and initialized) <ref refid="classtouchgfx_1_1_h_a_l" kindref="compound">HAL</ref> object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="common/TouchGFXInit.hpp" line="71" column="1" bodyfile="common/TouchGFXInit.hpp" bodystart="71" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetouchgfx_1ab100d8cb927f986b9c7864d39f408e61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void touchgfx::touchgfx_init</definition>
+        <argsstring>()</argsstring>
+        <name>touchgfx_init</name>
+        <briefdescription>
+<para>Function to perform touchgfx initialization. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function prototype is only provided as a convention. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/hal/BoardConfiguration.hpp" line="21" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The global touchgfx namespace. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>All TouchGFX framework classes and global functions are placed in this namespace. </para>
+    </detaileddescription>
+    <location file="common/AbstractPartition.hpp" line="12" column="1"/>
+  </compounddef>
+</doxygen>

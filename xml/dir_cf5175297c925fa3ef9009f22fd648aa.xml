@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="dir_cf5175297c925fa3ef9009f22fd648aa" kind="dir">
+    <compoundname>touchgfx/transitions</compoundname>
+    <innerfile refid="_cover_transition_8hpp">CoverTransition.hpp</innerfile>
+    <innerfile refid="_no_transition_8hpp">NoTransition.hpp</innerfile>
+    <innerfile refid="_slide_transition_8hpp">SlideTransition.hpp</innerfile>
+    <innerfile refid="_transition_8hpp">Transition.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="touchgfx/transitions/"/>
+  </compounddef>
+</doxygen>

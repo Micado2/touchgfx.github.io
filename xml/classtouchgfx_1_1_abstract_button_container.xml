@@ -1,0 +1,389 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_abstract_button_container" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::AbstractButtonContainer</compoundname>
+    <basecompoundref refid="classtouchgfx_1_1_container" prot="public" virt="non-virtual">Container</basecompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_click_button_trigger" prot="public" virt="non-virtual">ClickButtonTrigger</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_repeat_button_trigger" prot="public" virt="non-virtual">RepeatButtonTrigger</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_toggle_button_trigger" prot="public" virt="non-virtual">ToggleButtonTrigger</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_touch_button_trigger" prot="public" virt="non-virtual">TouchButtonTrigger</derivedcompoundref>
+    <includes local="no">AbstractButtonContainer.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_abstract_button_container_1a584d081ad37eaf28cffe1eff3e9169a5" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_generic_callback" kindref="compound">GenericCallback</ref>&lt; const <ref refid="classtouchgfx_1_1_abstract_button_container" kindref="compound">AbstractButtonContainer</ref> &amp; &gt; *</type>
+        <definition>GenericCallback&lt;const AbstractButtonContainer&amp;&gt;* action</definition>
+        <argsstring></argsstring>
+        <name>action</name>
+        <briefdescription>
+<para>The action to be executed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/AbstractButtonContainer.hpp" line="82" column="1" bodyfile="touchgfx/containers/buttons/AbstractButtonContainer.hpp" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_abstract_button_container_1acf5bb76caa419c0fa231dbd66c881084" prot="protected" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t alpha</definition>
+        <argsstring></argsstring>
+        <name>alpha</name>
+        <briefdescription>
+<para>The current alpha value. 255 denotes solid, 0 denotes completely invisible. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/AbstractButtonContainer.hpp" line="80" column="1" bodyfile="touchgfx/containers/buttons/AbstractButtonContainer.hpp" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_abstract_button_container_1a132ba96da5ba28448b61e42c019312a9" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool pressed</definition>
+        <argsstring></argsstring>
+        <name>pressed</name>
+        <briefdescription>
+<para>True if pressed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/AbstractButtonContainer.hpp" line="79" column="1" bodyfile="touchgfx/containers/buttons/AbstractButtonContainer.hpp" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_button_container_1a584984067fd03754fac7c77f00ec9d28" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AbstractButtonContainer</definition>
+        <argsstring>()</argsstring>
+        <name>AbstractButtonContainer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/AbstractButtonContainer.hpp" line="23" column="1" bodyfile="touchgfx/containers/buttons/AbstractButtonContainer.hpp" bodystart="23" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_button_container_1a302926ead4ee8a161627575d2666a7f2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t getAlpha</definition>
+        <argsstring>() const</argsstring>
+        <name>getAlpha</name>
+        <briefdescription>
+<para>Gets the current alpha value of the widget. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The alpha value is in range 255 (solid) to 0 (invisible).</para>
+<para><simplesect kind="return"><para>The current alpha value.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_abstract_button_container_1a40b4eaf63ab7df1422b403a5a384a0b3" kindref="member">setAlpha</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/AbstractButtonContainer.hpp" line="63" column="1" bodyfile="touchgfx/containers/buttons/AbstractButtonContainer.hpp" bodystart="63" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_button_container_1ab7d6872788e19f02e57ee638694823cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool getPressed</definition>
+        <argsstring>()</argsstring>
+        <name>getPressed</name>
+        <briefdescription>
+<para>Gets the pressed state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if it succeeds, false if it fails.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_abstract_button_container_1a162a1f8b230b11e19ec52f0089d51343" kindref="member">setPressed</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/AbstractButtonContainer.hpp" line="50" column="1" bodyfile="touchgfx/containers/buttons/AbstractButtonContainer.hpp" bodystart="50" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_button_container_1a169d502e1f4c78465158b1454d1b9495" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setAction</definition>
+        <argsstring>(GenericCallback&lt; const AbstractButtonContainer &amp; &gt; &amp;callback)</argsstring>
+        <name>setAction</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_generic_callback" kindref="compound">GenericCallback</ref>&lt; const <ref refid="classtouchgfx_1_1_abstract_button_container" kindref="compound">AbstractButtonContainer</ref> &amp; &gt; &amp;</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>Sets an action callback to be executed by the subclass of AbstractContainerButton. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The callback. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/AbstractButtonContainer.hpp" line="73" column="1" bodyfile="touchgfx/containers/buttons/AbstractButtonContainer.hpp" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_button_container_1a40b4eaf63ab7df1422b403a5a384a0b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setAlpha</definition>
+        <argsstring>(uint8_t newAlpha)</argsstring>
+        <name>setAlpha</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>newAlpha</declname>
+        </param>
+        <briefdescription>
+<para>Sets the opacity (alpha value). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This can be used to fade it away by gradually decreasing the alpha value from 255 (solid) to 0 (invisible).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newAlpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new alpha value. 255=solid, 0=invisible.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_abstract_button_container_1a302926ead4ee8a161627575d2666a7f2" kindref="member">getAlpha</ref></para>
+</simplesect>
+<simplesect kind="note"><para>The user code must call <ref refid="classtouchgfx_1_1_drawable_1a2800b4c18c63e9e7b1f85a74ce6b80c3" kindref="member">invalidate()</ref> in order to update the display. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/AbstractButtonContainer.hpp" line="56" column="1" bodyfile="touchgfx/containers/buttons/AbstractButtonContainer.hpp" bodystart="56" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_button_container_1a162a1f8b230b11e19ec52f0089d51343" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setPressed</definition>
+        <argsstring>(bool isPressed)</argsstring>
+        <name>setPressed</name>
+        <param>
+          <type>bool</type>
+          <declname>isPressed</declname>
+        </param>
+        <briefdescription>
+<para>Sets the pressed state to the given state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A subclass of <ref refid="classtouchgfx_1_1_abstract_button_container" kindref="compound">AbstractButtonContainer</ref> should implement handlePressedUpdate() to handle the new pressed state.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>isPressed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True if is pressed, false if not.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_abstract_button_container_1ab7d6872788e19f02e57ee638694823cb" kindref="member">getPressed</ref>, <ref refid="classtouchgfx_1_1_abstract_button_container_1af6923b5d162d6c810eede74998f69928" kindref="member">handlePressedUpdated</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/AbstractButtonContainer.hpp" line="37" column="1" bodyfile="touchgfx/containers/buttons/AbstractButtonContainer.hpp" bodystart="37" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_button_container_1a0db52eec9b389e131e1cfe9b414e8401" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void handleAlphaUpdated</definition>
+        <argsstring>()</argsstring>
+        <name>handleAlphaUpdated</name>
+        <briefdescription>
+<para>Handles what should happen when the alpha is updated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/AbstractButtonContainer.hpp" line="90" column="1" bodyfile="touchgfx/containers/buttons/AbstractButtonContainer.hpp" bodystart="90" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_button_container_1af6923b5d162d6c810eede74998f69928" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void handlePressedUpdated</definition>
+        <argsstring>()</argsstring>
+        <name>handlePressedUpdated</name>
+        <briefdescription>
+<para>Handles what should happen when the pressed state is updated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/AbstractButtonContainer.hpp" line="85" column="1" bodyfile="touchgfx/containers/buttons/AbstractButtonContainer.hpp" bodystart="85" bodyend="87"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An abstract button container. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="classtouchgfx_1_1_abstract_button_container" kindref="compound">AbstractButtonContainer</ref> defines pressed/not pressed state, the alpha value, and the action <ref refid="structtouchgfx_1_1_callback" kindref="compound">Callback</ref> of a button. <ref refid="classtouchgfx_1_1_abstract_button_container" kindref="compound">AbstractButtonContainer</ref> is used as superclass for classes defining a specific button behavior.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_click_button_trigger" kindref="compound">ClickButtonTrigger</ref>, <ref refid="classtouchgfx_1_1_repeat_button_trigger" kindref="compound">RepeatButtonTrigger</ref>, <ref refid="classtouchgfx_1_1_toggle_button_trigger" kindref="compound">ToggleButtonTrigger</ref>, <ref refid="classtouchgfx_1_1_touch_button_trigger" kindref="compound">TouchButtonTrigger</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="19">
+        <label>RepeatButtonTrigger</label>
+        <link refid="classtouchgfx_1_1_repeat_button_trigger"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>Container</label>
+        <link refid="classtouchgfx_1_1_container"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>TouchButtonTrigger</label>
+        <link refid="classtouchgfx_1_1_touch_button_trigger"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>AbstractButtonContainer</label>
+        <link refid="classtouchgfx_1_1_abstract_button_container"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+      </node>
+      <node id="20">
+        <label>ToggleButtonTrigger</label>
+        <link refid="classtouchgfx_1_1_toggle_button_trigger"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>ClickButtonTrigger</label>
+        <link refid="classtouchgfx_1_1_click_button_trigger"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="23">
+        <label>Container</label>
+        <link refid="classtouchgfx_1_1_container"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>firstChild</edgelabel>
+        </childnode>
+      </node>
+      <node id="25">
+        <label>Rect</label>
+        <link refid="classtouchgfx_1_1_rect"/>
+      </node>
+      <node id="22">
+        <label>AbstractButtonContainer</label>
+        <link refid="classtouchgfx_1_1_abstract_button_container"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>action</edgelabel>
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+        <childnode refid="25" relation="usage">
+          <edgelabel>rect</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>nextSibling</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="26">
+        <label>GenericCallback&lt; const touchgfx::AbstractButtonContainer &amp; &gt;</label>
+        <link refid="classtouchgfx_1_1_generic_callback"/>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/containers/buttons/AbstractButtonContainer.hpp" line="21" column="1" bodyfile="touchgfx/containers/buttons/AbstractButtonContainer.hpp" bodystart="20" bodyend="93"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_abstract_button_container_1a584984067fd03754fac7c77f00ec9d28" prot="public" virt="non-virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>AbstractButtonContainer</name></member>
+      <member refid="classtouchgfx_1_1_abstract_button_container_1a584d081ad37eaf28cffe1eff3e9169a5" prot="protected" virt="non-virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>action</name></member>
+      <member refid="classtouchgfx_1_1_container_1a302ad1a4da6fe171eb249828bd8dc7ab" prot="public" virt="virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>add</name></member>
+      <member refid="classtouchgfx_1_1_abstract_button_container_1acf5bb76caa419c0fa231dbd66c881084" prot="protected" virt="non-virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>alpha</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae2d939b2a9c253f0fb3bae3ec7be4e2f" prot="public" virt="virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>childGeometryChanged</name></member>
+      <member refid="classtouchgfx_1_1_container_1ac92243515043dff4fd93c987b894b017" prot="public" virt="non-virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>Container</name></member>
+      <member refid="classtouchgfx_1_1_container_1a0109ca3d59d6ced431a24313fef18803" prot="public" virt="virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>contains</name></member>
+      <member refid="classtouchgfx_1_1_container_1a1277d4bddd51dbc604de265fb70ccbfd" prot="public" virt="virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>draw</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9cf3a85fa7554475fa42c97985bda6df" prot="public" virt="non-virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>Drawable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4a009ec2b654351679a0124e9055abdc" prot="public" virt="non-virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>drawToDynamicBitmap</name></member>
+      <member refid="classtouchgfx_1_1_container_1a15fc4ae5c33721f5f425b20640217f22" prot="protected" virt="non-virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>firstChild</name></member>
+      <member refid="classtouchgfx_1_1_container_1a2b224826cd4f0f674009c21d6821f525" prot="public" virt="virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>forEachChild</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa7737d9d49d7f55ec9bde8f2c9751b1d" prot="public" virt="non-virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>getAbsoluteRect</name></member>
+      <member refid="classtouchgfx_1_1_abstract_button_container_1a302926ead4ee8a161627575d2666a7f2" prot="public" virt="non-virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>getAlpha</name></member>
+      <member refid="classtouchgfx_1_1_container_1a47e8a844fa50b171656f8355fd8e313b" prot="protected" virt="virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>getContainedArea</name></member>
+      <member refid="classtouchgfx_1_1_container_1a35ae5c9547dd1861f70b5e4f0f9b94b3" prot="public" virt="non-virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>getFirstChild</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ad00483821e06fe4d0d70222de4135d30" prot="public" virt="non-virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>getHeight</name></member>
+      <member refid="classtouchgfx_1_1_container_1a6bc8e89dc7f879221e9862fb27dc726f" prot="public" virt="virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>getLastChild</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a61c9b2bf703c49a6d238d354ddcaedb3" prot="public" virt="non-virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>getNextSibling</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a013e065d4d9a10dbfa0ddee9a35582a3" prot="public" virt="non-virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>getParent</name></member>
+      <member refid="classtouchgfx_1_1_abstract_button_container_1ab7d6872788e19f02e57ee638694823cb" prot="public" virt="non-virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>getPressed</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af23a5bb7d473e16363a449c497586be3" prot="public" virt="non-virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>getRect</name></member>
+      <member refid="classtouchgfx_1_1_container_1a4dcdd780e93cc783a2ceeda00c6f3b51" prot="public" virt="virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>getSolidRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4783dfe657ff1b7a33261bda8c4b4266" prot="public" virt="virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>getSolidRectAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a83b8847f583b63e60aa4bf778261ddd7" prot="public" virt="virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>getVisibleRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1acae58162aaca6fc174416550f76668e7" prot="public" virt="non-virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>getWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac071e9b7ccf37179df7d29c6778b664c" prot="public" virt="non-virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>getX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a26752e6cff4607d0eec8768ef6d9032a" prot="public" virt="non-virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>getY</name></member>
+      <member refid="classtouchgfx_1_1_abstract_button_container_1a0db52eec9b389e131e1cfe9b414e8401" prot="protected" virt="virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>handleAlphaUpdated</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a7f1524b90bc90e5f6cf7ee47aae12123" prot="public" virt="virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>handleClickEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a06ae1946b2124cc94e26cfe18728debf" prot="public" virt="virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>handleDragEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4db4945ecbc2303bf860e082409b8029" prot="public" virt="virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>handleGestureEvent</name></member>
+      <member refid="classtouchgfx_1_1_abstract_button_container_1af6923b5d162d6c810eede74998f69928" prot="protected" virt="virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>handlePressedUpdated</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1af635cee0f186c3d0fcea60bac14355" prot="public" virt="virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>handleTickEvent</name></member>
+      <member refid="classtouchgfx_1_1_container_1aca896b17460628dceeac8b01553b6a00" prot="public" virt="virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>insert</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2800b4c18c63e9e7b1f85a74ce6b80c3" prot="public" virt="virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>invalidate</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a130cf6e1bf2b9f04f48e659758fa75e2" prot="public" virt="virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>invalidateRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a01c717b9abc98d48673b79d691c2d28a" prot="public" virt="non-virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>isTouchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9d8a6cfb13917785c143e74d40e4e2be" prot="public" virt="non-virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>isVisible</name></member>
+      <member refid="classtouchgfx_1_1_container_1add539b68574f09b364f0b4e6a312b9b0" prot="protected" virt="virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>moveChildrenRelative</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af3590480070e2cf91580976f322d2c5e" prot="public" virt="virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>moveRelative</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aadc5abfad4d2fcc331cf8de8713dc00e" prot="public" virt="virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>moveTo</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0da4a00c3fbdea5740e52c7e04316c65" prot="protected" virt="non-virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>nextSibling</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ab77c13cde2b01107dcbc5c2b584d422f" prot="protected" virt="non-virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>parent</name></member>
+      <member refid="classtouchgfx_1_1_abstract_button_container_1a132ba96da5ba28448b61e42c019312a9" prot="protected" virt="non-virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>pressed</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2a955ddc316d002f566598f340eb2af9" prot="protected" virt="non-virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>rect</name></member>
+      <member refid="classtouchgfx_1_1_container_1a4d9056af30ab3c61da25a71023a341f2" prot="public" virt="virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>remove</name></member>
+      <member refid="classtouchgfx_1_1_container_1a4e62c805a8478320f1e650e6a635b31a" prot="public" virt="virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>removeAll</name></member>
+      <member refid="classtouchgfx_1_1_abstract_button_container_1a169d502e1f4c78465158b1454d1b9495" prot="public" virt="non-virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>setAction</name></member>
+      <member refid="classtouchgfx_1_1_abstract_button_container_1a40b4eaf63ab7df1422b403a5a384a0b3" prot="public" virt="non-virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>setAlpha</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a47a6312407603de99247bb802dbd8a48" prot="public" virt="virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>setHeight</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac218c371450d8ad2bed3e1b07965a41a" prot="public" virt="virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>setPosition</name></member>
+      <member refid="classtouchgfx_1_1_abstract_button_container_1a162a1f8b230b11e19ec52f0089d51343" prot="public" virt="non-virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>setPressed</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae4c38eadb852b153850ea7ded1f50a19" prot="public" virt="non-virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>setTouchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a71639c6634c5dcf6d1bb21b8b1b61f5b" prot="public" virt="non-virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>setVisible</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae74a37f71d23440fc8b0466ad8ecfe4b" prot="public" virt="virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>setWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9f6db7f34a74e991fc446fffb5703a53" prot="public" virt="virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>setX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6c86659dc1e7355c207e9c0aa18af167" prot="public" virt="virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>setXY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1b08d48e7e23a046f09e63089bc82bc1" prot="public" virt="virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>setY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0d014de134cb9b9c1c361fcd726a5f34" prot="protected" virt="non-virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>touchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a48c1d14ac943dbfa4935ea39db950608" prot="public" virt="virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>translateRectToAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_container_1a23f8fdbaba5449e55efb7a14a96b657d" prot="public" virt="virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>unlink</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa54a57ae048476d840caf6d4d2c47aa3" prot="protected" virt="non-virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>visible</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6bb040a11ffc2bd641283cc0bc0d1346" prot="public" virt="virtual"><scope>touchgfx::AbstractButtonContainer</scope><name>~Drawable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structtouchgfx_1_1_abstract_shape_1_1_shape_point" kind="struct" language="C++" prot="public">
+    <compoundname>touchgfx::AbstractShape::ShapePoint</compoundname>
+    <includes local="no">AbstractShape.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtouchgfx_1_1_abstract_shape_1_1_shape_point_1a9a4f74af87a76a4c3dcb729cb0e68f8d" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+<para>The x coordinate of the points. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/AbstractShape.hpp" line="38" column="1" bodyfile="touchgfx/widgets/canvas/AbstractShape.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_abstract_shape_1_1_shape_point_1a1cb2b5ea04251d543e49356ef54eb853" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+<para>The y coordinate of the points. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/AbstractShape.hpp" line="39" column="1" bodyfile="touchgfx/widgets/canvas/AbstractShape.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines an alias for a single point. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Users of the <ref refid="classtouchgfx_1_1_abstract_shape" kindref="compound">AbstractShape</ref> can chose to store the coordinates as int or float depending on the needs. This will help setting up the abstractShape very easily using setAbstractShape().</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Generic type parameter, either int or float.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_abstract_shape_1aefddb8fd2fcc875f5c5a096ff68119f0" kindref="member">setShape</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="touchgfx/widgets/canvas/AbstractShape.hpp" line="37" column="1" bodyfile="touchgfx/widgets/canvas/AbstractShape.hpp" bodystart="36" bodyend="40"/>
+    <listofallmembers>
+      <member refid="structtouchgfx_1_1_abstract_shape_1_1_shape_point_1a9a4f74af87a76a4c3dcb729cb0e68f8d" prot="public" virt="non-virtual"><scope>touchgfx::AbstractShape::ShapePoint</scope><name>x</name></member>
+      <member refid="structtouchgfx_1_1_abstract_shape_1_1_shape_point_1a1cb2b5ea04251d543e49356ef54eb853" prot="public" virt="non-virtual"><scope>touchgfx::AbstractShape::ShapePoint</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

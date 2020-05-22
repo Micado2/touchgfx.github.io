@@ -1,0 +1,532 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_two_wildcard_text_button_style" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::TwoWildcardTextButtonStyle</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">T</basecompoundref>
+    <includes local="no">TwoWildcardTextButtonStyle.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_two_wildcard_text_button_style_1a9b92ab3a023aff21da63d43442fe6d8b" prot="protected" static="no" mutable="no">
+        <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+        <definition>colortype colorPressed</definition>
+        <argsstring></argsstring>
+        <name>colorPressed</name>
+        <briefdescription>
+<para>The color pressed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp" line="151" column="1" bodyfile="touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_two_wildcard_text_button_style_1aba695edf072fae0ffc664a25f48503d7" prot="protected" static="no" mutable="no">
+        <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+        <definition>colortype colorReleased</definition>
+        <argsstring></argsstring>
+        <name>colorReleased</name>
+        <briefdescription>
+<para>The color released. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp" line="150" column="1" bodyfile="touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_two_wildcard_text_button_style_1ab1facd7b1bf007b38d8b5faa81d99d75" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_text_area_with_two_wildcards" kindref="compound">TextAreaWithTwoWildcards</ref></type>
+        <definition>TextAreaWithTwoWildcards twoWildcardText</definition>
+        <argsstring></argsstring>
+        <name>twoWildcardText</name>
+        <briefdescription>
+<para>The wildcard text. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp" line="149" column="1" bodyfile="touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_two_wildcard_text_button_style_1aa7cd69b618b884df881768eb85e1572b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setTwoWildcardText</definition>
+        <argsstring>(TypedText t)</argsstring>
+        <name>setTwoWildcardText</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref></type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Sets wildcard text. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A <ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref> to process. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp" line="52" column="1" bodyfile="touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp" bodystart="52" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_two_wildcard_text_button_style_1abc2eb47b523cc6c3bfa23bd32b9e2c32" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setTwoWildcardTextColors</definition>
+        <argsstring>(colortype newColorReleased, colortype newColorPressed)</argsstring>
+        <name>setTwoWildcardTextColors</name>
+        <param>
+          <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+          <declname>newColorReleased</declname>
+        </param>
+        <param>
+          <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+          <declname>newColorPressed</declname>
+        </param>
+        <briefdescription>
+<para>Sets wild card text colors. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newColorReleased</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new color released. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>newColorPressed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new color pressed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp" line="140" column="1" bodyfile="touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp" bodystart="140" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_two_wildcard_text_button_style_1adb789116c1e78f991782f8859ee05838" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setTwoWildcardTextPosition</definition>
+        <argsstring>(int16_t x, int16_t y, int16_t width, int16_t height)</argsstring>
+        <name>setTwoWildcardTextPosition</name>
+        <param>
+          <type>int16_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+<para>Sets text position and dimensions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The width of the text. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The height of the text. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp" line="99" column="1" bodyfile="touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp" bodystart="99" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_two_wildcard_text_button_style_1aaef59132ad4ee75b37ea65d4c25c7722" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setTwoWildcardTextRotation</definition>
+        <argsstring>(TextRotation rotation)</argsstring>
+        <name>setTwoWildcardTextRotation</name>
+        <param>
+          <type><ref refid="namespacetouchgfx_1aa8b32c1e049cf804b50921f8c847866b" kindref="member">TextRotation</ref></type>
+          <declname>rotation</declname>
+        </param>
+        <briefdescription>
+<para>Sets wildcard text rotation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rotation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp" line="109" column="1" bodyfile="touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp" bodystart="109" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_two_wildcard_text_button_style_1a928abe0a9dbb4c2950759bcd2765b380" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setTwoWildcardTextX</definition>
+        <argsstring>(int16_t x)</argsstring>
+        <name>setTwoWildcardTextX</name>
+        <param>
+          <type>int16_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Sets wildcard text x coordinate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp" line="64" column="1" bodyfile="touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp" bodystart="64" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_two_wildcard_text_button_style_1aeeca9add16d149b49b22833a5f26bf63" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setTwoWildcardTextXY</definition>
+        <argsstring>(int16_t x, int16_t y)</argsstring>
+        <name>setTwoWildcardTextXY</name>
+        <param>
+          <type>int16_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Sets wildcard text position. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp" line="85" column="1" bodyfile="touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp" bodystart="85" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_two_wildcard_text_button_style_1ac9cd83be7f0bb605aab04d823aa55047" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setTwoWildcardTextY</definition>
+        <argsstring>(int16_t y)</argsstring>
+        <name>setTwoWildcardTextY</name>
+        <param>
+          <type>int16_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Sets wildcard text y coordinate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp" line="74" column="1" bodyfile="touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp" bodystart="74" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_two_wildcard_text_button_style_1a9a5fc5802294c8d20cad29f8fd5c4c74" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setWildcardTextBuffer1</definition>
+        <argsstring>(const Unicode::UnicodeChar *value)</argsstring>
+        <name>setWildcardTextBuffer1</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref> *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Sets the first wildcard in the text. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Must be a null-terminated UnicodeChar array.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the UnicodeChar to set the wildcard to. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp" line="119" column="1" bodyfile="touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp" bodystart="119" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_two_wildcard_text_button_style_1a11f7b31c286b73139e699d8506a3b0fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setWildcardTextBuffer2</definition>
+        <argsstring>(const Unicode::UnicodeChar *value)</argsstring>
+        <name>setWildcardTextBuffer2</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref> *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Sets the second wildcard in the text. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Must be a null-terminated UnicodeChar array.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the UnicodeChar to set the wildcard to. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp" line="129" column="1" bodyfile="touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp" bodystart="129" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_two_wildcard_text_button_style_1a8c8f34b0ec788e08de3e3475444a4d37" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TwoWildcardTextButtonStyle</definition>
+        <argsstring>()</argsstring>
+        <name>TwoWildcardTextButtonStyle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp" line="41" column="1" bodyfile="touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp" bodystart="41" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_two_wildcard_text_button_style_1a0db52eec9b389e131e1cfe9b414e8401" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void handleAlphaUpdated</definition>
+        <argsstring>()</argsstring>
+        <name>handleAlphaUpdated</name>
+        <briefdescription>
+<para>Handles what should happen when the alpha is updated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp" line="161" column="1" bodyfile="touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp" bodystart="161" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_two_wildcard_text_button_style_1af6923b5d162d6c810eede74998f69928" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void handlePressedUpdated</definition>
+        <argsstring>()</argsstring>
+        <name>handlePressedUpdated</name>
+        <briefdescription>
+<para>Handles what should happen when the pressed state is updated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp" line="154" column="1" bodyfile="touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp" bodystart="154" bodyend="158"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A wildcard text button style. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>An wildcard text button style. This class is supposed to be used with one of the ButtonTrigger classes to create a functional button. This class will show a text with a wildcard in one of two colors depending on the state of the button (pressed or released).</para>
+<para>The <ref refid="classtouchgfx_1_1_two_wildcard_text_button_style" kindref="compound">TwoWildcardTextButtonStyle</ref> does not set the size of the enclosing container (normally <ref refid="classtouchgfx_1_1_abstract_button_container" kindref="compound">AbstractButtonContainer</ref>). The size must be set manually.</para>
+<para>To get a background behind the text, use <ref refid="classtouchgfx_1_1_two_wildcard_text_button_style" kindref="compound">TwoWildcardTextButtonStyle</ref> together with e.g. <ref refid="classtouchgfx_1_1_image_button_style" kindref="compound">ImageButtonStyle</ref>: <programlisting><codeline><highlight class="normal">TwoWildcardTextButtonStyle&lt;ImageButtonStyle&lt;ClickButtonTrigger&gt;<sp/>&gt;<sp/>myButton;</highlight></codeline>
+</programlisting></para>
+<para>The position of the text can be adjusted with setTwoWildcardTextXY (default is centered).</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Generic type parameter. Typically a <ref refid="classtouchgfx_1_1_abstract_button_container" kindref="compound">AbstractButtonContainer</ref> subclass.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_abstract_button_container" kindref="compound">AbstractButtonContainer</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2580">
+        <label>T</label>
+      </node>
+      <node id="2579">
+        <label>TwoWildcardTextButtonStyle&lt; T &gt;</label>
+        <link refid="classtouchgfx_1_1_two_wildcard_text_button_style"/>
+        <childnode refid="2580" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2582">
+        <label>T</label>
+      </node>
+      <node id="2586">
+        <label>Widget</label>
+        <link refid="classtouchgfx_1_1_widget"/>
+        <childnode refid="2587" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2588">
+        <label>Rect</label>
+        <link refid="classtouchgfx_1_1_rect"/>
+      </node>
+      <node id="2584">
+        <label>TextAreaWithTwoWildcards</label>
+        <link refid="classtouchgfx_1_1_text_area_with_two_wildcards"/>
+        <childnode refid="2585" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2589">
+        <label>TypedText</label>
+        <link refid="classtouchgfx_1_1_typed_text"/>
+      </node>
+      <node id="2587">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+        <childnode refid="2588" relation="usage">
+          <edgelabel>rect</edgelabel>
+        </childnode>
+        <childnode refid="2587" relation="usage">
+          <edgelabel>nextSibling</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="2585">
+        <label>TextArea</label>
+        <link refid="classtouchgfx_1_1_text_area"/>
+        <childnode refid="2586" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2589" relation="usage">
+          <edgelabel>typedText</edgelabel>
+        </childnode>
+        <childnode refid="2583" relation="usage">
+          <edgelabel>color</edgelabel>
+        </childnode>
+      </node>
+      <node id="2581">
+        <label>TwoWildcardTextButtonStyle&lt; T &gt;</label>
+        <link refid="classtouchgfx_1_1_two_wildcard_text_button_style"/>
+        <childnode refid="2582" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2583" relation="usage">
+          <edgelabel>colorReleased</edgelabel>
+          <edgelabel>colorPressed</edgelabel>
+        </childnode>
+        <childnode refid="2584" relation="usage">
+          <edgelabel>twoWildcardText</edgelabel>
+        </childnode>
+      </node>
+      <node id="2583">
+        <label>colortype</label>
+        <link refid="structtouchgfx_1_1colortype"/>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp" line="39" column="1" bodyfile="touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp" bodystart="38" bodyend="166"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_two_wildcard_text_button_style_1a9b92ab3a023aff21da63d43442fe6d8b" prot="protected" virt="non-virtual"><scope>touchgfx::TwoWildcardTextButtonStyle</scope><name>colorPressed</name></member>
+      <member refid="classtouchgfx_1_1_two_wildcard_text_button_style_1aba695edf072fae0ffc664a25f48503d7" prot="protected" virt="non-virtual"><scope>touchgfx::TwoWildcardTextButtonStyle</scope><name>colorReleased</name></member>
+      <member refid="classtouchgfx_1_1_two_wildcard_text_button_style_1a0db52eec9b389e131e1cfe9b414e8401" prot="protected" virt="virtual"><scope>touchgfx::TwoWildcardTextButtonStyle</scope><name>handleAlphaUpdated</name></member>
+      <member refid="classtouchgfx_1_1_two_wildcard_text_button_style_1af6923b5d162d6c810eede74998f69928" prot="protected" virt="virtual"><scope>touchgfx::TwoWildcardTextButtonStyle</scope><name>handlePressedUpdated</name></member>
+      <member refid="classtouchgfx_1_1_two_wildcard_text_button_style_1aa7cd69b618b884df881768eb85e1572b" prot="public" virt="non-virtual"><scope>touchgfx::TwoWildcardTextButtonStyle</scope><name>setTwoWildcardText</name></member>
+      <member refid="classtouchgfx_1_1_two_wildcard_text_button_style_1abc2eb47b523cc6c3bfa23bd32b9e2c32" prot="public" virt="non-virtual"><scope>touchgfx::TwoWildcardTextButtonStyle</scope><name>setTwoWildcardTextColors</name></member>
+      <member refid="classtouchgfx_1_1_two_wildcard_text_button_style_1adb789116c1e78f991782f8859ee05838" prot="public" virt="non-virtual"><scope>touchgfx::TwoWildcardTextButtonStyle</scope><name>setTwoWildcardTextPosition</name></member>
+      <member refid="classtouchgfx_1_1_two_wildcard_text_button_style_1aaef59132ad4ee75b37ea65d4c25c7722" prot="public" virt="non-virtual"><scope>touchgfx::TwoWildcardTextButtonStyle</scope><name>setTwoWildcardTextRotation</name></member>
+      <member refid="classtouchgfx_1_1_two_wildcard_text_button_style_1a928abe0a9dbb4c2950759bcd2765b380" prot="public" virt="non-virtual"><scope>touchgfx::TwoWildcardTextButtonStyle</scope><name>setTwoWildcardTextX</name></member>
+      <member refid="classtouchgfx_1_1_two_wildcard_text_button_style_1aeeca9add16d149b49b22833a5f26bf63" prot="public" virt="non-virtual"><scope>touchgfx::TwoWildcardTextButtonStyle</scope><name>setTwoWildcardTextXY</name></member>
+      <member refid="classtouchgfx_1_1_two_wildcard_text_button_style_1ac9cd83be7f0bb605aab04d823aa55047" prot="public" virt="non-virtual"><scope>touchgfx::TwoWildcardTextButtonStyle</scope><name>setTwoWildcardTextY</name></member>
+      <member refid="classtouchgfx_1_1_two_wildcard_text_button_style_1a9a5fc5802294c8d20cad29f8fd5c4c74" prot="public" virt="non-virtual"><scope>touchgfx::TwoWildcardTextButtonStyle</scope><name>setWildcardTextBuffer1</name></member>
+      <member refid="classtouchgfx_1_1_two_wildcard_text_button_style_1a11f7b31c286b73139e699d8506a3b0fd" prot="public" virt="non-virtual"><scope>touchgfx::TwoWildcardTextButtonStyle</scope><name>setWildcardTextBuffer2</name></member>
+      <member refid="classtouchgfx_1_1_two_wildcard_text_button_style_1ab1facd7b1bf007b38d8b5faa81d99d75" prot="protected" virt="non-virtual"><scope>touchgfx::TwoWildcardTextButtonStyle</scope><name>twoWildcardText</name></member>
+      <member refid="classtouchgfx_1_1_two_wildcard_text_button_style_1a8c8f34b0ec788e08de3e3475444a4d37" prot="public" virt="non-virtual"><scope>touchgfx::TwoWildcardTextButtonStyle</scope><name>TwoWildcardTextButtonStyle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

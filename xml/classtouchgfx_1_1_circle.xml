@@ -1,0 +1,1664 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_circle" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::Circle</compoundname>
+    <basecompoundref refid="classtouchgfx_1_1_canvas_widget" prot="public" virt="non-virtual">CanvasWidget</basecompoundref>
+    <includes local="no">Circle.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_circle_1a222cf0f646ccd2d5cecbe2793ac9e8c9" prot="private" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref></type>
+        <definition>CWRUtil::Q5 circleArcAngleEnd</definition>
+        <argsstring></argsstring>
+        <name>circleArcAngleEnd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="550" column="1" bodyfile="touchgfx/widgets/canvas/Circle.hpp" bodystart="550" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_circle_1a93a3b2b780c7d0d921e7bf0b6fb3da17" prot="private" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref></type>
+        <definition>CWRUtil::Q5 circleArcAngleStart</definition>
+        <argsstring></argsstring>
+        <name>circleArcAngleStart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="549" column="1" bodyfile="touchgfx/widgets/canvas/Circle.hpp" bodystart="549" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_circle_1aaea4faa52580d0f988cba4d26a1c0ff2" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t circleArcIncrement</definition>
+        <argsstring></argsstring>
+        <name>circleArcIncrement</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="552" column="1" bodyfile="touchgfx/widgets/canvas/Circle.hpp" bodystart="552" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_circle_1a8cd4b5be132d92c9344e3a9f2e9c86c7" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t circleCapArcIncrement</definition>
+        <argsstring></argsstring>
+        <name>circleCapArcIncrement</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="553" column="1" bodyfile="touchgfx/widgets/canvas/Circle.hpp" bodystart="553" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_circle_1a842de482d2ab2483faad3459e39fc495" prot="private" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref></type>
+        <definition>CWRUtil::Q5 circleCenterX</definition>
+        <argsstring></argsstring>
+        <name>circleCenterX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="546" column="1" bodyfile="touchgfx/widgets/canvas/Circle.hpp" bodystart="546" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_circle_1a0beba84f5493802fab32efd11d2163e2" prot="private" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref></type>
+        <definition>CWRUtil::Q5 circleCenterY</definition>
+        <argsstring></argsstring>
+        <name>circleCenterY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="547" column="1" bodyfile="touchgfx/widgets/canvas/Circle.hpp" bodystart="547" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_circle_1a3c96b070f57a9402f6135ac400c19d26" prot="private" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref></type>
+        <definition>CWRUtil::Q5 circleLineWidth</definition>
+        <argsstring></argsstring>
+        <name>circleLineWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="551" column="1" bodyfile="touchgfx/widgets/canvas/Circle.hpp" bodystart="551" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_circle_1a1fe3d19525f31a98254c90912ab43f52" prot="private" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref></type>
+        <definition>CWRUtil::Q5 circleRadius</definition>
+        <argsstring></argsstring>
+        <name>circleRadius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="548" column="1" bodyfile="touchgfx/widgets/canvas/Circle.hpp" bodystart="548" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_circle_1ae813ce1ba3e11cb77e796941a3089223" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Circle</definition>
+        <argsstring>()</argsstring>
+        <name>Circle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_circle_1a9810af8a9edc3d97104a9a0ddfcd08fb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool drawCanvasWidget</definition>
+        <argsstring>(const Rect &amp;invalidatedArea) const</argsstring>
+        <name>drawCanvasWidget</name>
+        <reimplements refid="classtouchgfx_1_1_canvas_widget_1a6d4ac4ab61d1c68a5907c83177bd5e68">drawCanvasWidget</reimplements>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>invalidatedArea</declname>
+        </param>
+        <briefdescription>
+<para>Draw canvas widget for the given invalidated area. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Similar to <ref refid="classtouchgfx_1_1_canvas_widget_1a1277d4bddd51dbc604de265fb70ccbfd" kindref="member">draw()</ref>, but might be invoked several times with increasingly smaller areas to due to memory constraints from the underlying <ref refid="classtouchgfx_1_1_canvas_widget_renderer" kindref="compound">CanvasWidgetRenderer</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>invalidatedArea</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The invalidated area.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the widget was drawn properly, false if not.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_canvas_widget_1a1277d4bddd51dbc604de265fb70ccbfd" kindref="member">draw</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="521" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_circle_1a729401831c0c72e429c9d32012232121" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void getArc</definition>
+        <argsstring>(T &amp;startAngle, T &amp;endAngle) const</argsstring>
+        <name>getArc</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>startAngle</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>endAngle</declname>
+        </param>
+        <briefdescription>
+<para>Gets the start and end angles in degrees for the circle arc. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Generic type parameter, either int or float. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">startAngle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The start angle rounded down to the precision of T. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">endAngle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The end angle rounded down to the precision of T.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_circle_1a9e7d6517907f0d48494d23850a018db0" kindref="member">setArc</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="203" column="1" bodyfile="touchgfx/widgets/canvas/Circle.hpp" bodystart="203" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_circle_1abb55a89ec182ad42cb4a3b8ef81e0450" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t getArcEnd</definition>
+        <argsstring>() const</argsstring>
+        <name>getArcEnd</name>
+        <briefdescription>
+<para>Gets the end angle in degrees for the arc. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The end angle for the arc rounded down to an integer.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_circle_1a729401831c0c72e429c9d32012232121" kindref="member">getArc</ref>, <ref refid="classtouchgfx_1_1_circle_1a9e7d6517907f0d48494d23850a018db0" kindref="member">setArc</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="242" column="1" bodyfile="touchgfx/widgets/canvas/Circle.hpp" bodystart="242" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_circle_1ad0b1543896a341a7e65d0253fe364212" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void getArcEnd</definition>
+        <argsstring>(T &amp;angle) const</argsstring>
+        <name>getArcEnd</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+<para>Gets the end angle in degrees for the arc. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Generic type parameter, either int or float. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The end angle rounded down to the precision of T. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="254" column="1" bodyfile="touchgfx/widgets/canvas/Circle.hpp" bodystart="254" bodyend="257"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_circle_1af728bddc7f842e702303ba0745485d04" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t getArcStart</definition>
+        <argsstring>() const</argsstring>
+        <name>getArcStart</name>
+        <briefdescription>
+<para>Gets the start angle in degrees for the arc. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The starting angle for the arc rounded down to an integer.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_circle_1a729401831c0c72e429c9d32012232121" kindref="member">getArc</ref>, <ref refid="classtouchgfx_1_1_circle_1a9e7d6517907f0d48494d23850a018db0" kindref="member">setArc</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="216" column="1" bodyfile="touchgfx/widgets/canvas/Circle.hpp" bodystart="216" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_circle_1a556b8ddfa79f02b2d3d8ad5653ea0ba3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void getArcStart</definition>
+        <argsstring>(T &amp;angle) const</argsstring>
+        <name>getArcStart</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+<para>Gets the start angle in degrees for the arc. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Generic type parameter, either int or float. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The starting angle rounded down to the precision of T.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_circle_1a729401831c0c72e429c9d32012232121" kindref="member">getArc</ref>, <ref refid="classtouchgfx_1_1_circle_1a9e7d6517907f0d48494d23850a018db0" kindref="member">setArc</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="230" column="1" bodyfile="touchgfx/widgets/canvas/Circle.hpp" bodystart="230" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_circle_1aaf89cff25e26e9c5e2b32791e7c7fdb6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int getCapPrecision</definition>
+        <argsstring>() const</argsstring>
+        <name>getCapPrecision</name>
+        <briefdescription>
+<para>Gets the precision of the ends of the <ref refid="classtouchgfx_1_1_circle" kindref="compound">Circle</ref> arc. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The cap precision in degrees.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_circle_1aaf89cff25e26e9c5e2b32791e7c7fdb6" kindref="member">getCapPrecision</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="519" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_circle_1a125279609030add0ed6752dddfe5e923" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void getCenter</definition>
+        <argsstring>(T &amp;x, T &amp;y) const</argsstring>
+        <name>getCenter</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Gets the center coordinates of the <ref refid="classtouchgfx_1_1_circle" kindref="compound">Circle</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Generic type parameter, either int or float. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate of the center rounded down to the precision of T. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate of the center rounded down to the precision of T.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_circle_1aacdb73639398ab0c85a27aaec3736f49" kindref="member">setCenter</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="122" column="1" bodyfile="touchgfx/widgets/canvas/Circle.hpp" bodystart="122" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_circle_1abd5f0c482f68dfe75571a26f20b995ef" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void getLineWidth</definition>
+        <argsstring>(T &amp;width) const</argsstring>
+        <name>getLineWidth</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+<para>Gets line width. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Generic type parameter, either int or float. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The line width rounded down to the precision of T.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_circle_1aca8b666665b8b28d7ccac07d782a024f" kindref="member">setLineWidth</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="468" column="1" bodyfile="touchgfx/widgets/canvas/Circle.hpp" bodystart="468" bodyend="471"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_circle_1a6299071924e9fb87464b952392a623b9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref></type>
+        <definition>virtual Rect getMinimalRect</definition>
+        <argsstring>() const</argsstring>
+        <name>getMinimalRect</name>
+        <reimplements refid="classtouchgfx_1_1_canvas_widget_1a6299071924e9fb87464b952392a623b9">getMinimalRect</reimplements>
+        <briefdescription>
+<para>Gets minimal rectangle containing the shape drawn by this widget. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Default implementation returns the size of the entire widget, but this function should be overwritten in subclasses and return the minimal rectangle containing the shape. See classes such as <ref refid="classtouchgfx_1_1_circle" kindref="compound">Circle</ref> for example implementations.</para>
+<para><simplesect kind="return"><para>The minimal rectangle containing the shape drawn. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="523" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_circle_1aa81f826f02878cc7a98da863236b5185" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref></type>
+        <definition>Rect getMinimalRect</definition>
+        <argsstring>(int16_t arcStart, int16_t arcEnd) const</argsstring>
+        <name>getMinimalRect</name>
+        <param>
+          <type>int16_t</type>
+          <declname>arcStart</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>arcEnd</declname>
+        </param>
+        <briefdescription>
+<para>Gets minimal rectangle containing a given circle arc using the set line width. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>arcStart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The arc start. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arcEnd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The arc end.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The minimal rectangle. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="533" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_circle_1a249c17c125df1a285865bab94eb55dc5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref></type>
+        <definition>Rect getMinimalRect</definition>
+        <argsstring>(CWRUtil::Q5 arcStart, CWRUtil::Q5 arcEnd) const</argsstring>
+        <name>getMinimalRect</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref></type>
+          <declname>arcStart</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref></type>
+          <declname>arcEnd</declname>
+        </param>
+        <briefdescription>
+<para>Gets minimal rectangle containing a given circle arc using the set line width. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>arcStart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The arc start. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arcEnd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The arc end.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The minimal rectangle. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="543" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_circle_1a189b1b9f48f8ad634be157cfe8de613e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int getPrecision</definition>
+        <argsstring>() const</argsstring>
+        <name>getPrecision</name>
+        <briefdescription>
+<para>Gets the precision of the circle drawing function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The precision is the number of degrees used as step counter when drawing smaller line fragments around the circumference of the circle, the default being 5.</para>
+<para><simplesect kind="return"><para>The precision.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_circle_1a679b80c3b83770afbb67ca024bcd3cef" kindref="member">setPrecision</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="496" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_circle_1abeaf36f36482c2fa59d1199830c811d5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void getRadius</definition>
+        <argsstring>(T &amp;r) const</argsstring>
+        <name>getRadius</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+<para>Gets the radius of the <ref refid="classtouchgfx_1_1_circle" kindref="compound">Circle</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Generic type parameter, either int or float. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The radius rounded down to the precision of T. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="151" column="1" bodyfile="touchgfx/widgets/canvas/Circle.hpp" bodystart="151" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_circle_1a9e7d6517907f0d48494d23850a018db0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void setArc</definition>
+        <argsstring>(const T startAngle, const T endAngle)</argsstring>
+        <name>setArc</name>
+        <param>
+          <type>const T</type>
+          <declname>startAngle</declname>
+        </param>
+        <param>
+          <type>const T</type>
+          <declname>endAngle</declname>
+        </param>
+        <briefdescription>
+<para>Sets the start and end angles in degrees of the <ref refid="classtouchgfx_1_1_circle" kindref="compound">Circle</ref> arc. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>0 degrees is straight up (12 o&apos;clock) and 90 degrees is to the left (3 o&apos;clock). Any positive or negative degrees can be used to specify the part of the <ref refid="classtouchgfx_1_1_circle" kindref="compound">Circle</ref> to draw.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Generic type parameter, either int or float. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>startAngle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The start degrees. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>endAngle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The end degrees.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_circle_1a729401831c0c72e429c9d32012232121" kindref="member">getArc</ref>, <ref refid="classtouchgfx_1_1_circle_1a90a54acea724be2b5fe562ffb42aa3d4" kindref="member">updateArcStart</ref>, <ref refid="classtouchgfx_1_1_circle_1ab9bb18babea5e6f437d8f51c5adf62ba" kindref="member">updateArcEnd</ref>, <ref refid="classtouchgfx_1_1_circle_1a428858a9082ae767870c20e2b9b0331d" kindref="member">updateArc</ref></para>
+</simplesect>
+<simplesect kind="note"><para>The area containing the <ref refid="classtouchgfx_1_1_circle" kindref="compound">Circle</ref> is not invalidated. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="170" column="1" bodyfile="touchgfx/widgets/canvas/Circle.hpp" bodystart="170" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_circle_1a6d9163b7d384b792f53e9efa3fc22080" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setArc</definition>
+        <argsstring>(const int16_t startAngle, const int16_t endAngle)</argsstring>
+        <name>setArc</name>
+        <param>
+          <type>const int16_t</type>
+          <declname>startAngle</declname>
+        </param>
+        <param>
+          <type>const int16_t</type>
+          <declname>endAngle</declname>
+        </param>
+        <briefdescription>
+<para>Sets the start and end angles in degrees of the <ref refid="classtouchgfx_1_1_circle" kindref="compound">Circle</ref> arc. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>0 degrees is straight up (12 o&apos;clock) and 90 degrees is to the left (3 o&apos;clock). Any positive or negative degrees can be used to specify the part of the <ref refid="classtouchgfx_1_1_circle" kindref="compound">Circle</ref> to draw.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>startAngle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The start degrees. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>endAngle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The end degrees.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_circle_1a729401831c0c72e429c9d32012232121" kindref="member">getArc</ref>, <ref refid="classtouchgfx_1_1_circle_1a90a54acea724be2b5fe562ffb42aa3d4" kindref="member">updateArcStart</ref>, <ref refid="classtouchgfx_1_1_circle_1ab9bb18babea5e6f437d8f51c5adf62ba" kindref="member">updateArcEnd</ref>, <ref refid="classtouchgfx_1_1_circle_1a428858a9082ae767870c20e2b9b0331d" kindref="member">updateArc</ref></para>
+</simplesect>
+<simplesect kind="note"><para>The area containing the <ref refid="classtouchgfx_1_1_circle" kindref="compound">Circle</ref> is not invalidated. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="188" column="1" bodyfile="touchgfx/widgets/canvas/Circle.hpp" bodystart="188" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_circle_1a3979eaf1526fc3f7719ccd6b514bdb10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setCapPrecision</definition>
+        <argsstring>(const int precision)</argsstring>
+        <name>setCapPrecision</name>
+        <param>
+          <type>const int</type>
+          <declname>precision</declname>
+        </param>
+        <briefdescription>
+<para>Sets the precision of the ends of the <ref refid="classtouchgfx_1_1_circle" kindref="compound">Circle</ref> arc. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The precision is given in degrees where 180 is the default which results in a square ended arc (aka &quot;butt cap&quot;). 90 will draw &quot;an arrow head&quot; and smaller values gives a round cap. Larger values of precision results in faster rendering of the circle.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>precision</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new cap precision.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The circle is not invalidated. </para>
+</simplesect>
+<simplesect kind="note"><para>The cap precision is not used if the circle is filled (if line width is zero) or when a full circle is drawn. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="510" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_circle_1aacdb73639398ab0c85a27aaec3736f49" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void setCenter</definition>
+        <argsstring>(const T x, const T y)</argsstring>
+        <name>setCenter</name>
+        <param>
+          <type>const T</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const T</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Sets the center of the <ref refid="classtouchgfx_1_1_circle" kindref="compound">Circle</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Generic type parameter, either int or float. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate of center. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate of center.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_circle_1a2b4281e22ddfa3b3105567a51fa36a01" kindref="member">setRadius</ref>, <ref refid="classtouchgfx_1_1_circle_1aa03faa39a83f26d52a78afe33180b1ae" kindref="member">setCircle</ref>, <ref refid="classtouchgfx_1_1_circle_1a125279609030add0ed6752dddfe5e923" kindref="member">getCenter</ref></para>
+</simplesect>
+<simplesect kind="note"><para>The area containing the <ref refid="classtouchgfx_1_1_circle" kindref="compound">Circle</ref> is not invalidated. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="91" column="1" bodyfile="touchgfx/widgets/canvas/Circle.hpp" bodystart="91" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_circle_1a9a480c50555915f0a308bc7175e0c385" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setCenter</definition>
+        <argsstring>(const int16_t x, const int16_t y)</argsstring>
+        <name>setCenter</name>
+        <param>
+          <type>const int16_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const int16_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Sets the center of the <ref refid="classtouchgfx_1_1_circle" kindref="compound">Circle</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate of center. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate of center.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_circle_1a2b4281e22ddfa3b3105567a51fa36a01" kindref="member">setRadius</ref>, <ref refid="classtouchgfx_1_1_circle_1aa03faa39a83f26d52a78afe33180b1ae" kindref="member">setCircle</ref>, <ref refid="classtouchgfx_1_1_circle_1a125279609030add0ed6752dddfe5e923" kindref="member">getCenter</ref></para>
+</simplesect>
+<simplesect kind="note"><para>The area containing the <ref refid="classtouchgfx_1_1_circle" kindref="compound">Circle</ref> is not invalidated. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="107" column="1" bodyfile="touchgfx/widgets/canvas/Circle.hpp" bodystart="107" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_circle_1aa03faa39a83f26d52a78afe33180b1ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void setCircle</definition>
+        <argsstring>(const T x, const T y, const T r)</argsstring>
+        <name>setCircle</name>
+        <param>
+          <type>const T</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const T</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const T</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+<para>Sets the center and radius of the <ref refid="classtouchgfx_1_1_circle" kindref="compound">Circle</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Generic type parameter, either int or float. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate of center. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate of center. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The radius.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_circle_1aacdb73639398ab0c85a27aaec3736f49" kindref="member">setCenter</ref>, <ref refid="classtouchgfx_1_1_circle_1a2b4281e22ddfa3b3105567a51fa36a01" kindref="member">setRadius</ref></para>
+</simplesect>
+<simplesect kind="note"><para>The area containing the <ref refid="classtouchgfx_1_1_circle" kindref="compound">Circle</ref> is not invalidated. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="57" column="1" bodyfile="touchgfx/widgets/canvas/Circle.hpp" bodystart="57" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_circle_1a72db597c4adc31f33dae13da24da4ff6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setCircle</definition>
+        <argsstring>(const int16_t x, const int16_t y, const int16_t r)</argsstring>
+        <name>setCircle</name>
+        <param>
+          <type>const int16_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const int16_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const int16_t</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+<para>Sets the center and radius of the <ref refid="classtouchgfx_1_1_circle" kindref="compound">Circle</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate of center. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate of center. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The radius.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_circle_1aacdb73639398ab0c85a27aaec3736f49" kindref="member">setCenter</ref>, <ref refid="classtouchgfx_1_1_circle_1a2b4281e22ddfa3b3105567a51fa36a01" kindref="member">setRadius</ref></para>
+</simplesect>
+<simplesect kind="note"><para>The area containing the <ref refid="classtouchgfx_1_1_circle" kindref="compound">Circle</ref> is not invalidated. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="74" column="1" bodyfile="touchgfx/widgets/canvas/Circle.hpp" bodystart="74" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_circle_1aca8b666665b8b28d7ccac07d782a024f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void setLineWidth</definition>
+        <argsstring>(const T width)</argsstring>
+        <name>setLineWidth</name>
+        <param>
+          <type>const T</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+<para>Sets the line width for this <ref refid="classtouchgfx_1_1_circle" kindref="compound">Circle</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the line width is set to zero, the circle will be filled.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Generic type parameter, either int or float. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The width of the line measured in pixels.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The area containing the <ref refid="classtouchgfx_1_1_circle" kindref="compound">Circle</ref> is not invalidated. </para>
+</simplesect>
+<simplesect kind="note"><para>if the new line with is smaller than the old width, the circle should be invalidated before updating the width to ensure that the old circle is completely erased. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="454" column="1" bodyfile="touchgfx/widgets/canvas/Circle.hpp" bodystart="454" bodyend="457"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_circle_1a679b80c3b83770afbb67ca024bcd3cef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setPrecision</definition>
+        <argsstring>(const int precision)</argsstring>
+        <name>setPrecision</name>
+        <param>
+          <type>const int</type>
+          <declname>precision</declname>
+        </param>
+        <briefdescription>
+<para>Sets precision of the <ref refid="classtouchgfx_1_1_circle" kindref="compound">Circle</ref> drawing function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The number given as precision is the number of degrees used as step counter when drawing the line fragments around the circumference of the circle, five being a reasonable value. Higher values results in less nice circles but faster rendering and possibly sufficient for very small circles. Large circles might require a precision smaller than five to make the edge of the circle look nice and smooth.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>precision</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The precision measured in degrees.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The circle is not invalidated. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="485" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_circle_1a2b4281e22ddfa3b3105567a51fa36a01" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void setRadius</definition>
+        <argsstring>(const T r)</argsstring>
+        <name>setRadius</name>
+        <param>
+          <type>const T</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+<para>Sets the radius of the <ref refid="classtouchgfx_1_1_circle" kindref="compound">Circle</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Generic type parameter, either int or float. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The radius.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_circle_1aa03faa39a83f26d52a78afe33180b1ae" kindref="member">setCircle</ref>, <ref refid="classtouchgfx_1_1_circle_1aacdb73639398ab0c85a27aaec3736f49" kindref="member">setCenter</ref>, <ref refid="classtouchgfx_1_1_circle_1abeaf36f36482c2fa59d1199830c811d5" kindref="member">getRadius</ref></para>
+</simplesect>
+<simplesect kind="note"><para>The area containing the <ref refid="classtouchgfx_1_1_circle" kindref="compound">Circle</ref> is not invalidated. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="139" column="1" bodyfile="touchgfx/widgets/canvas/Circle.hpp" bodystart="139" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_circle_1a428858a9082ae767870c20e2b9b0331d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void updateArc</definition>
+        <argsstring>(const T startAngle, const T endAngle)</argsstring>
+        <name>updateArc</name>
+        <param>
+          <type>const T</type>
+          <declname>startAngle</declname>
+        </param>
+        <param>
+          <type>const T</type>
+          <declname>endAngle</declname>
+        </param>
+        <briefdescription>
+<para>Updates the start and end angle in degrees for this <ref refid="classtouchgfx_1_1_circle" kindref="compound">Circle</ref> arc. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Generic type parameter, either int or float. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>startAngle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new start angle in degrees. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>endAngle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new end angle in degrees.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_circle_1a9e7d6517907f0d48494d23850a018db0" kindref="member">setArc</ref>, <ref refid="classtouchgfx_1_1_circle_1a729401831c0c72e429c9d32012232121" kindref="member">getArc</ref>, <ref refid="classtouchgfx_1_1_circle_1a90a54acea724be2b5fe562ffb42aa3d4" kindref="member">updateArcStart</ref>, <ref refid="classtouchgfx_1_1_circle_1ab9bb18babea5e6f437d8f51c5adf62ba" kindref="member">updateArcEnd</ref></para>
+</simplesect>
+<simplesect kind="note"><para>The areas containing the updated <ref refid="classtouchgfx_1_1_circle" kindref="compound">Circle</ref> arcs are invalidated. As little as possible will be invalidated for best performance. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="324" column="1" bodyfile="touchgfx/widgets/canvas/Circle.hpp" bodystart="324" bodyend="440"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_circle_1ab9bb18babea5e6f437d8f51c5adf62ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void updateArcEnd</definition>
+        <argsstring>(const T endAngle)</argsstring>
+        <name>updateArcEnd</name>
+        <param>
+          <type>const T</type>
+          <declname>endAngle</declname>
+        </param>
+        <briefdescription>
+<para>Updates the end angle in degrees for this <ref refid="classtouchgfx_1_1_circle" kindref="compound">Circle</ref> arc. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Generic type parameter, either int or float. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>endAngle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The end angle in degrees.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_circle_1a9e7d6517907f0d48494d23850a018db0" kindref="member">setArc</ref>, <ref refid="classtouchgfx_1_1_circle_1a90a54acea724be2b5fe562ffb42aa3d4" kindref="member">updateArcStart</ref>, <ref refid="classtouchgfx_1_1_circle_1a428858a9082ae767870c20e2b9b0331d" kindref="member">updateArc</ref></para>
+</simplesect>
+<simplesect kind="note"><para>The area containing the updated <ref refid="classtouchgfx_1_1_circle" kindref="compound">Circle</ref> arc is invalidated. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="296" column="1" bodyfile="touchgfx/widgets/canvas/Circle.hpp" bodystart="296" bodyend="309"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_circle_1a90a54acea724be2b5fe562ffb42aa3d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void updateArcStart</definition>
+        <argsstring>(const T startAngle)</argsstring>
+        <name>updateArcStart</name>
+        <param>
+          <type>const T</type>
+          <declname>startAngle</declname>
+        </param>
+        <briefdescription>
+<para>Updates the start angle in degrees for this <ref refid="classtouchgfx_1_1_circle" kindref="compound">Circle</ref> arc. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Generic type parameter, either int or float. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>startAngle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The start angle in degrees.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_circle_1a9e7d6517907f0d48494d23850a018db0" kindref="member">setArc</ref>, <ref refid="classtouchgfx_1_1_circle_1ab9bb18babea5e6f437d8f51c5adf62ba" kindref="member">updateArcEnd</ref>, <ref refid="classtouchgfx_1_1_circle_1a428858a9082ae767870c20e2b9b0331d" kindref="member">updateArc</ref></para>
+</simplesect>
+<simplesect kind="note"><para>The area containing the updated <ref refid="classtouchgfx_1_1_circle" kindref="compound">Circle</ref> arc is invalidated. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="270" column="1" bodyfile="touchgfx/widgets/canvas/Circle.hpp" bodystart="270" bodyend="283"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_circle_1a2ef09c2ece19ba78ca7011eddc638ba9" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void calculateMinimalRect</definition>
+        <argsstring>(CWRUtil::Q5 arcStart, CWRUtil::Q5 arcEnd, CWRUtil::Q5 &amp;xMin, CWRUtil::Q5 &amp;xMax, CWRUtil::Q5 &amp;yMin, CWRUtil::Q5 &amp;yMax) const</argsstring>
+        <name>calculateMinimalRect</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref></type>
+          <declname>arcStart</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref></type>
+          <declname>arcEnd</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref> &amp;</type>
+          <declname>xMin</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref> &amp;</type>
+          <declname>xMax</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref> &amp;</type>
+          <declname>yMin</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref> &amp;</type>
+          <declname>yMax</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="560" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_circle_1aa915b139d513d5648f9096ea55ec069a" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref></type>
+        <definition>Rect getMinimalRectForUpdatedEndAngle</definition>
+        <argsstring>(const CWRUtil::Q5 &amp;endAngleQ5) const</argsstring>
+        <name>getMinimalRectForUpdatedEndAngle</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref> &amp;</type>
+          <declname>endAngleQ5</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="562" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_circle_1aba77b56d556b39f9a43d72b50f1c24b0" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref></type>
+        <definition>Rect getMinimalRectForUpdatedStartAngle</definition>
+        <argsstring>(const CWRUtil::Q5 &amp;startAngleQ5) const</argsstring>
+        <name>getMinimalRectForUpdatedStartAngle</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref> &amp;</type>
+          <declname>startAngleQ5</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="561" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_circle_1abfaf1e0b67001f811e6e978f6b7da42d" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lineToAR2</definition>
+        <argsstring>(Canvas &amp;canvas, const CWRUtil::Q5 &amp;angle, const CWRUtil::Q5 &amp;r2) const</argsstring>
+        <name>lineToAR2</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_canvas" kindref="compound">Canvas</ref> &amp;</type>
+          <declname>canvas</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref> &amp;</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref> &amp;</type>
+          <declname>r2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="556" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_circle_1ad4f70e00334cfde0c47470f9c3440fd3" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lineToXYAR2</definition>
+        <argsstring>(Canvas &amp;canvas, const CWRUtil::Q5 &amp;x, const CWRUtil::Q5 &amp;y, const CWRUtil::Q5 &amp;angle, const CWRUtil::Q5 &amp;r2) const</argsstring>
+        <name>lineToXYAR2</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_canvas" kindref="compound">Canvas</ref> &amp;</type>
+          <declname>canvas</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref> &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref> &amp;</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref> &amp;</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref> &amp;</type>
+          <declname>r2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="557" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_circle_1a77696bccc93778c1e4a76d4ffa9f6da1" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void moveToAR2</definition>
+        <argsstring>(Canvas &amp;canvas, const CWRUtil::Q5 &amp;angle, const CWRUtil::Q5 &amp;r2) const</argsstring>
+        <name>moveToAR2</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_canvas" kindref="compound">Canvas</ref> &amp;</type>
+          <declname>canvas</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref> &amp;</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref> &amp;</type>
+          <declname>r2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="555" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_circle_1aa76fa6e3e680979abea9b7c3bc48ec3e" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void updateMinMaxAR</definition>
+        <argsstring>(const CWRUtil::Q5 &amp;a, const CWRUtil::Q5 &amp;r2, CWRUtil::Q5 &amp;xMin, CWRUtil::Q5 &amp;xMax, CWRUtil::Q5 &amp;yMin, CWRUtil::Q5 &amp;yMax) const</argsstring>
+        <name>updateMinMaxAR</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref> &amp;</type>
+          <declname>r2</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref> &amp;</type>
+          <declname>xMin</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref> &amp;</type>
+          <declname>xMax</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref> &amp;</type>
+          <declname>yMin</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref> &amp;</type>
+          <declname>yMax</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="558" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_circle_1a2a0bf32ebc76177c2a5b860b21a56cbb" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void updateMinMaxXY</definition>
+        <argsstring>(const CWRUtil::Q5 &amp;xNew, const CWRUtil::Q5 &amp;yNew, CWRUtil::Q5 &amp;xMin, CWRUtil::Q5 &amp;xMax, CWRUtil::Q5 &amp;yMin, CWRUtil::Q5 &amp;yMax) const</argsstring>
+        <name>updateMinMaxXY</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref> &amp;</type>
+          <declname>xNew</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref> &amp;</type>
+          <declname>yNew</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref> &amp;</type>
+          <declname>xMin</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref> &amp;</type>
+          <declname>xMax</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref> &amp;</type>
+          <declname>yMin</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref> &amp;</type>
+          <declname>yMax</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/Circle.hpp" line="559" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Simple widget capable of drawing a circle, or part of a circle (an arc). </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="classtouchgfx_1_1_circle" kindref="compound">Circle</ref> can be filled or be drawn as a simple line along the circumference of the circle. Several parameters of the circle can be changed: Center, radius, line width, line cap, start angle and end angle.</para>
+<para><simplesect kind="note"><para>Since the underlying CanwasWidgetRenderer only supports straight lines, the circle is drawn using many small straight lines segments. The granularity can be adjusted to match the requirements - large circles need more line segments, small circles need fewer line segments, to look smooth and round. </para>
+</simplesect>
+<simplesect kind="note"><para>All circle parameters are internally handled as <ref refid="classtouchgfx_1_1_c_w_r_util_1_1_q5" kindref="compound">CWRUtil::Q5</ref> which means that floating point values are rounded down to a fixed number of binary digits, for example: <programlisting><codeline><highlight class="normal">Circle<sp/>circle;</highlight></codeline>
+<codeline><highlight class="normal">circle.setCircle(1.1f,<sp/>1.1f,<sp/>0.9);<sp/>//<sp/>Will<sp/>use<sp/>(35/32,<sp/>35/32,<sp/>28/32)<sp/>=<sp/>(1.09375f,<sp/>1.09375f,<sp/>0.875f)</highlight></codeline>
+<codeline><highlight class="normal">int<sp/>x,<sp/>y,<sp/>r;</highlight></codeline>
+<codeline><highlight class="normal">circle.getCenter(&amp;amp;x,<sp/>&amp;amp;y);<sp/>//<sp/>Will<sp/>return<sp/>(1,<sp/>1)</highlight></codeline>
+<codeline><highlight class="normal">circle.getRadius(&amp;amp;r);<sp/>//<sp/>Will<sp/>return<sp/>0</highlight></codeline>
+</programlisting>. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="393">
+        <label>Widget</label>
+        <link refid="classtouchgfx_1_1_widget"/>
+        <childnode refid="394" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="391">
+        <label>Circle</label>
+        <link refid="classtouchgfx_1_1_circle"/>
+        <childnode refid="392" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="394">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+      </node>
+      <node id="392">
+        <label>CanvasWidget</label>
+        <link refid="classtouchgfx_1_1_canvas_widget"/>
+        <childnode refid="393" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="397">
+        <label>Widget</label>
+        <link refid="classtouchgfx_1_1_widget"/>
+        <childnode refid="398" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="399">
+        <label>Rect</label>
+        <link refid="classtouchgfx_1_1_rect"/>
+      </node>
+      <node id="395">
+        <label>Circle</label>
+        <link refid="classtouchgfx_1_1_circle"/>
+        <childnode refid="396" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="398">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+        <childnode refid="399" relation="usage">
+          <edgelabel>rect</edgelabel>
+        </childnode>
+        <childnode refid="398" relation="usage">
+          <edgelabel>nextSibling</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="396">
+        <label>CanvasWidget</label>
+        <link refid="classtouchgfx_1_1_canvas_widget"/>
+        <childnode refid="397" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/widgets/canvas/Circle.hpp" line="40" column="1" bodyfile="touchgfx/widgets/canvas/Circle.hpp" bodystart="39" bodyend="563"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_circle_1a2ef09c2ece19ba78ca7011eddc638ba9" prot="private" virt="non-virtual"><scope>touchgfx::Circle</scope><name>calculateMinimalRect</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_1ae9e5d44779b5ee8498ba456e26e74bb3" prot="public" virt="non-virtual"><scope>touchgfx::Circle</scope><name>CanvasWidget</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae2d939b2a9c253f0fb3bae3ec7be4e2f" prot="public" virt="virtual"><scope>touchgfx::Circle</scope><name>childGeometryChanged</name></member>
+      <member refid="classtouchgfx_1_1_circle_1ae813ce1ba3e11cb77e796941a3089223" prot="public" virt="non-virtual"><scope>touchgfx::Circle</scope><name>Circle</name></member>
+      <member refid="classtouchgfx_1_1_circle_1a222cf0f646ccd2d5cecbe2793ac9e8c9" prot="private" virt="non-virtual"><scope>touchgfx::Circle</scope><name>circleArcAngleEnd</name></member>
+      <member refid="classtouchgfx_1_1_circle_1a93a3b2b780c7d0d921e7bf0b6fb3da17" prot="private" virt="non-virtual"><scope>touchgfx::Circle</scope><name>circleArcAngleStart</name></member>
+      <member refid="classtouchgfx_1_1_circle_1aaea4faa52580d0f988cba4d26a1c0ff2" prot="private" virt="non-virtual"><scope>touchgfx::Circle</scope><name>circleArcIncrement</name></member>
+      <member refid="classtouchgfx_1_1_circle_1a8cd4b5be132d92c9344e3a9f2e9c86c7" prot="private" virt="non-virtual"><scope>touchgfx::Circle</scope><name>circleCapArcIncrement</name></member>
+      <member refid="classtouchgfx_1_1_circle_1a842de482d2ab2483faad3459e39fc495" prot="private" virt="non-virtual"><scope>touchgfx::Circle</scope><name>circleCenterX</name></member>
+      <member refid="classtouchgfx_1_1_circle_1a0beba84f5493802fab32efd11d2163e2" prot="private" virt="non-virtual"><scope>touchgfx::Circle</scope><name>circleCenterY</name></member>
+      <member refid="classtouchgfx_1_1_circle_1a3c96b070f57a9402f6135ac400c19d26" prot="private" virt="non-virtual"><scope>touchgfx::Circle</scope><name>circleLineWidth</name></member>
+      <member refid="classtouchgfx_1_1_circle_1a1fe3d19525f31a98254c90912ab43f52" prot="private" virt="non-virtual"><scope>touchgfx::Circle</scope><name>circleRadius</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_1a1277d4bddd51dbc604de265fb70ccbfd" prot="public" virt="virtual"><scope>touchgfx::Circle</scope><name>draw</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9cf3a85fa7554475fa42c97985bda6df" prot="public" virt="non-virtual"><scope>touchgfx::Circle</scope><name>Drawable</name></member>
+      <member refid="classtouchgfx_1_1_circle_1a9810af8a9edc3d97104a9a0ddfcd08fb" prot="public" virt="virtual"><scope>touchgfx::Circle</scope><name>drawCanvasWidget</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4a009ec2b654351679a0124e9055abdc" prot="public" virt="non-virtual"><scope>touchgfx::Circle</scope><name>drawToDynamicBitmap</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa7737d9d49d7f55ec9bde8f2c9751b1d" prot="public" virt="non-virtual"><scope>touchgfx::Circle</scope><name>getAbsoluteRect</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_1a48b27ff9c2eafcd202482b45abc86ff7" prot="public" virt="virtual"><scope>touchgfx::Circle</scope><name>getAlpha</name></member>
+      <member refid="classtouchgfx_1_1_circle_1a729401831c0c72e429c9d32012232121" prot="public" virt="non-virtual"><scope>touchgfx::Circle</scope><name>getArc</name></member>
+      <member refid="classtouchgfx_1_1_circle_1abb55a89ec182ad42cb4a3b8ef81e0450" prot="public" virt="non-virtual"><scope>touchgfx::Circle</scope><name>getArcEnd</name></member>
+      <member refid="classtouchgfx_1_1_circle_1ad0b1543896a341a7e65d0253fe364212" prot="public" virt="non-virtual"><scope>touchgfx::Circle</scope><name>getArcEnd</name></member>
+      <member refid="classtouchgfx_1_1_circle_1af728bddc7f842e702303ba0745485d04" prot="public" virt="non-virtual"><scope>touchgfx::Circle</scope><name>getArcStart</name></member>
+      <member refid="classtouchgfx_1_1_circle_1a556b8ddfa79f02b2d3d8ad5653ea0ba3" prot="public" virt="non-virtual"><scope>touchgfx::Circle</scope><name>getArcStart</name></member>
+      <member refid="classtouchgfx_1_1_circle_1aaf89cff25e26e9c5e2b32791e7c7fdb6" prot="public" virt="non-virtual"><scope>touchgfx::Circle</scope><name>getCapPrecision</name></member>
+      <member refid="classtouchgfx_1_1_circle_1a125279609030add0ed6752dddfe5e923" prot="public" virt="non-virtual"><scope>touchgfx::Circle</scope><name>getCenter</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ad00483821e06fe4d0d70222de4135d30" prot="public" virt="non-virtual"><scope>touchgfx::Circle</scope><name>getHeight</name></member>
+      <member refid="classtouchgfx_1_1_widget_1a6bc8e89dc7f879221e9862fb27dc726f" prot="public" virt="virtual"><scope>touchgfx::Circle</scope><name>getLastChild</name></member>
+      <member refid="classtouchgfx_1_1_circle_1abd5f0c482f68dfe75571a26f20b995ef" prot="public" virt="non-virtual"><scope>touchgfx::Circle</scope><name>getLineWidth</name></member>
+      <member refid="classtouchgfx_1_1_circle_1a6299071924e9fb87464b952392a623b9" prot="public" virt="virtual"><scope>touchgfx::Circle</scope><name>getMinimalRect</name></member>
+      <member refid="classtouchgfx_1_1_circle_1aa81f826f02878cc7a98da863236b5185" prot="public" virt="non-virtual"><scope>touchgfx::Circle</scope><name>getMinimalRect</name></member>
+      <member refid="classtouchgfx_1_1_circle_1a249c17c125df1a285865bab94eb55dc5" prot="public" virt="non-virtual"><scope>touchgfx::Circle</scope><name>getMinimalRect</name></member>
+      <member refid="classtouchgfx_1_1_circle_1aa915b139d513d5648f9096ea55ec069a" prot="private" virt="non-virtual"><scope>touchgfx::Circle</scope><name>getMinimalRectForUpdatedEndAngle</name></member>
+      <member refid="classtouchgfx_1_1_circle_1aba77b56d556b39f9a43d72b50f1c24b0" prot="private" virt="non-virtual"><scope>touchgfx::Circle</scope><name>getMinimalRectForUpdatedStartAngle</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a61c9b2bf703c49a6d238d354ddcaedb3" prot="public" virt="non-virtual"><scope>touchgfx::Circle</scope><name>getNextSibling</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_1adc65631e781ab7b6a7984ae58f74cbeb" prot="public" virt="virtual"><scope>touchgfx::Circle</scope><name>getPainter</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a013e065d4d9a10dbfa0ddee9a35582a3" prot="public" virt="non-virtual"><scope>touchgfx::Circle</scope><name>getParent</name></member>
+      <member refid="classtouchgfx_1_1_circle_1a189b1b9f48f8ad634be157cfe8de613e" prot="public" virt="non-virtual"><scope>touchgfx::Circle</scope><name>getPrecision</name></member>
+      <member refid="classtouchgfx_1_1_circle_1abeaf36f36482c2fa59d1199830c811d5" prot="public" virt="non-virtual"><scope>touchgfx::Circle</scope><name>getRadius</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af23a5bb7d473e16363a449c497586be3" prot="public" virt="non-virtual"><scope>touchgfx::Circle</scope><name>getRect</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_1a4dcdd780e93cc783a2ceeda00c6f3b51" prot="public" virt="virtual"><scope>touchgfx::Circle</scope><name>getSolidRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4783dfe657ff1b7a33261bda8c4b4266" prot="public" virt="virtual"><scope>touchgfx::Circle</scope><name>getSolidRectAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a83b8847f583b63e60aa4bf778261ddd7" prot="public" virt="virtual"><scope>touchgfx::Circle</scope><name>getVisibleRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1acae58162aaca6fc174416550f76668e7" prot="public" virt="non-virtual"><scope>touchgfx::Circle</scope><name>getWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac071e9b7ccf37179df7d29c6778b664c" prot="public" virt="non-virtual"><scope>touchgfx::Circle</scope><name>getX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a26752e6cff4607d0eec8768ef6d9032a" prot="public" virt="non-virtual"><scope>touchgfx::Circle</scope><name>getY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a7f1524b90bc90e5f6cf7ee47aae12123" prot="public" virt="virtual"><scope>touchgfx::Circle</scope><name>handleClickEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a06ae1946b2124cc94e26cfe18728debf" prot="public" virt="virtual"><scope>touchgfx::Circle</scope><name>handleDragEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4db4945ecbc2303bf860e082409b8029" prot="public" virt="virtual"><scope>touchgfx::Circle</scope><name>handleGestureEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1af635cee0f186c3d0fcea60bac14355" prot="public" virt="virtual"><scope>touchgfx::Circle</scope><name>handleTickEvent</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_1a2800b4c18c63e9e7b1f85a74ce6b80c3" prot="public" virt="virtual"><scope>touchgfx::Circle</scope><name>invalidate</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a130cf6e1bf2b9f04f48e659758fa75e2" prot="public" virt="virtual"><scope>touchgfx::Circle</scope><name>invalidateRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a01c717b9abc98d48673b79d691c2d28a" prot="public" virt="non-virtual"><scope>touchgfx::Circle</scope><name>isTouchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9d8a6cfb13917785c143e74d40e4e2be" prot="public" virt="non-virtual"><scope>touchgfx::Circle</scope><name>isVisible</name></member>
+      <member refid="classtouchgfx_1_1_circle_1abfaf1e0b67001f811e6e978f6b7da42d" prot="private" virt="non-virtual"><scope>touchgfx::Circle</scope><name>lineToAR2</name></member>
+      <member refid="classtouchgfx_1_1_circle_1ad4f70e00334cfde0c47470f9c3440fd3" prot="private" virt="non-virtual"><scope>touchgfx::Circle</scope><name>lineToXYAR2</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af3590480070e2cf91580976f322d2c5e" prot="public" virt="virtual"><scope>touchgfx::Circle</scope><name>moveRelative</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aadc5abfad4d2fcc331cf8de8713dc00e" prot="public" virt="virtual"><scope>touchgfx::Circle</scope><name>moveTo</name></member>
+      <member refid="classtouchgfx_1_1_circle_1a77696bccc93778c1e4a76d4ffa9f6da1" prot="private" virt="non-virtual"><scope>touchgfx::Circle</scope><name>moveToAR2</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0da4a00c3fbdea5740e52c7e04316c65" prot="protected" virt="non-virtual"><scope>touchgfx::Circle</scope><name>nextSibling</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ab77c13cde2b01107dcbc5c2b584d422f" prot="protected" virt="non-virtual"><scope>touchgfx::Circle</scope><name>parent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2a955ddc316d002f566598f340eb2af9" prot="protected" virt="non-virtual"><scope>touchgfx::Circle</scope><name>rect</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_1a79e090d34b93e9d637d01bc9b5639681" prot="public" virt="virtual"><scope>touchgfx::Circle</scope><name>setAlpha</name></member>
+      <member refid="classtouchgfx_1_1_circle_1a9e7d6517907f0d48494d23850a018db0" prot="public" virt="non-virtual"><scope>touchgfx::Circle</scope><name>setArc</name></member>
+      <member refid="classtouchgfx_1_1_circle_1a6d9163b7d384b792f53e9efa3fc22080" prot="public" virt="non-virtual"><scope>touchgfx::Circle</scope><name>setArc</name></member>
+      <member refid="classtouchgfx_1_1_circle_1a3979eaf1526fc3f7719ccd6b514bdb10" prot="public" virt="non-virtual"><scope>touchgfx::Circle</scope><name>setCapPrecision</name></member>
+      <member refid="classtouchgfx_1_1_circle_1aacdb73639398ab0c85a27aaec3736f49" prot="public" virt="non-virtual"><scope>touchgfx::Circle</scope><name>setCenter</name></member>
+      <member refid="classtouchgfx_1_1_circle_1a9a480c50555915f0a308bc7175e0c385" prot="public" virt="non-virtual"><scope>touchgfx::Circle</scope><name>setCenter</name></member>
+      <member refid="classtouchgfx_1_1_circle_1aa03faa39a83f26d52a78afe33180b1ae" prot="public" virt="non-virtual"><scope>touchgfx::Circle</scope><name>setCircle</name></member>
+      <member refid="classtouchgfx_1_1_circle_1a72db597c4adc31f33dae13da24da4ff6" prot="public" virt="non-virtual"><scope>touchgfx::Circle</scope><name>setCircle</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a47a6312407603de99247bb802dbd8a48" prot="public" virt="virtual"><scope>touchgfx::Circle</scope><name>setHeight</name></member>
+      <member refid="classtouchgfx_1_1_circle_1aca8b666665b8b28d7ccac07d782a024f" prot="public" virt="non-virtual"><scope>touchgfx::Circle</scope><name>setLineWidth</name></member>
+      <member refid="classtouchgfx_1_1_canvas_widget_1a2648b3c4e043a31c240657cab344610f" prot="public" virt="virtual"><scope>touchgfx::Circle</scope><name>setPainter</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac218c371450d8ad2bed3e1b07965a41a" prot="public" virt="virtual"><scope>touchgfx::Circle</scope><name>setPosition</name></member>
+      <member refid="classtouchgfx_1_1_circle_1a679b80c3b83770afbb67ca024bcd3cef" prot="public" virt="non-virtual"><scope>touchgfx::Circle</scope><name>setPrecision</name></member>
+      <member refid="classtouchgfx_1_1_circle_1a2b4281e22ddfa3b3105567a51fa36a01" prot="public" virt="non-virtual"><scope>touchgfx::Circle</scope><name>setRadius</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae4c38eadb852b153850ea7ded1f50a19" prot="public" virt="non-virtual"><scope>touchgfx::Circle</scope><name>setTouchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a71639c6634c5dcf6d1bb21b8b1b61f5b" prot="public" virt="non-virtual"><scope>touchgfx::Circle</scope><name>setVisible</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae74a37f71d23440fc8b0466ad8ecfe4b" prot="public" virt="virtual"><scope>touchgfx::Circle</scope><name>setWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9f6db7f34a74e991fc446fffb5703a53" prot="public" virt="virtual"><scope>touchgfx::Circle</scope><name>setX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6c86659dc1e7355c207e9c0aa18af167" prot="public" virt="virtual"><scope>touchgfx::Circle</scope><name>setXY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1b08d48e7e23a046f09e63089bc82bc1" prot="public" virt="virtual"><scope>touchgfx::Circle</scope><name>setY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0d014de134cb9b9c1c361fcd726a5f34" prot="protected" virt="non-virtual"><scope>touchgfx::Circle</scope><name>touchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a48c1d14ac943dbfa4935ea39db950608" prot="public" virt="virtual"><scope>touchgfx::Circle</scope><name>translateRectToAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_circle_1a428858a9082ae767870c20e2b9b0331d" prot="public" virt="non-virtual"><scope>touchgfx::Circle</scope><name>updateArc</name></member>
+      <member refid="classtouchgfx_1_1_circle_1ab9bb18babea5e6f437d8f51c5adf62ba" prot="public" virt="non-virtual"><scope>touchgfx::Circle</scope><name>updateArcEnd</name></member>
+      <member refid="classtouchgfx_1_1_circle_1a90a54acea724be2b5fe562ffb42aa3d4" prot="public" virt="non-virtual"><scope>touchgfx::Circle</scope><name>updateArcStart</name></member>
+      <member refid="classtouchgfx_1_1_circle_1aa76fa6e3e680979abea9b7c3bc48ec3e" prot="private" virt="non-virtual"><scope>touchgfx::Circle</scope><name>updateMinMaxAR</name></member>
+      <member refid="classtouchgfx_1_1_circle_1a2a0bf32ebc76177c2a5b860b21a56cbb" prot="private" virt="non-virtual"><scope>touchgfx::Circle</scope><name>updateMinMaxXY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa54a57ae048476d840caf6d4d2c47aa3" prot="protected" virt="non-virtual"><scope>touchgfx::Circle</scope><name>visible</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6bb040a11ffc2bd641283cc0bc0d1346" prot="public" virt="virtual"><scope>touchgfx::Circle</scope><name>~Drawable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

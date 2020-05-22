@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_draggable" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::Draggable</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">T</basecompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_snapper" prot="public" virt="non-virtual">Snapper&lt; T &gt;</derivedcompoundref>
+    <includes local="no">Draggable.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_draggable_1a9709d6befcf222dc85fe6ea690d584c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Draggable</definition>
+        <argsstring>()</argsstring>
+        <name>Draggable</name>
+        <briefdescription>
+<para>Initializes a new instance of the <ref refid="classtouchgfx_1_1_draggable" kindref="compound">Draggable</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Make the object touchable. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/mixins/Draggable.hpp" line="24" column="1" bodyfile="touchgfx/mixins/Draggable.hpp" bodystart="24" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_draggable_1a06ae1946b2124cc94e26cfe18728debf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void handleDragEvent</definition>
+        <argsstring>(const DragEvent &amp;evt)</argsstring>
+        <name>handleDragEvent</name>
+        <reimplementedby refid="classtouchgfx_1_1_snapper_1a06ae1946b2124cc94e26cfe18728debf">handleDragEvent</reimplementedby>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_drag_event" kindref="compound">DragEvent</ref> &amp;</type>
+          <declname>evt</declname>
+        </param>
+        <briefdescription>
+<para>Called when dragging the <ref refid="classtouchgfx_1_1_draggable" kindref="compound">Draggable</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The object is moved according to the drag event.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>evt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The drag event. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/mixins/Draggable.hpp" line="36" column="1" bodyfile="touchgfx/mixins/Draggable.hpp" bodystart="36" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Mix-in class that extends a class to become <ref refid="classtouchgfx_1_1_draggable" kindref="compound">Draggable</ref>, which means that the object on screen can be freely moved around using the touch screen. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies the type to extend with the <ref refid="classtouchgfx_1_1_draggable" kindref="compound">Draggable</ref> behavior. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="532">
+        <label>T</label>
+      </node>
+      <node id="533">
+        <label>Snapper&lt; T &gt;</label>
+        <link refid="classtouchgfx_1_1_snapper"/>
+        <childnode refid="531" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="531">
+        <label>Draggable&lt; T &gt;</label>
+        <link refid="classtouchgfx_1_1_draggable"/>
+        <childnode refid="532" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="535">
+        <label>T</label>
+      </node>
+      <node id="534">
+        <label>Draggable&lt; T &gt;</label>
+        <link refid="classtouchgfx_1_1_draggable"/>
+        <childnode refid="535" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/mixins/Draggable.hpp" line="21" column="1" bodyfile="touchgfx/mixins/Draggable.hpp" bodystart="20" bodyend="41"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_draggable_1a9709d6befcf222dc85fe6ea690d584c5" prot="public" virt="non-virtual"><scope>touchgfx::Draggable</scope><name>Draggable</name></member>
+      <member refid="classtouchgfx_1_1_draggable_1a06ae1946b2124cc94e26cfe18728debf" prot="public" virt="virtual"><scope>touchgfx::Draggable</scope><name>handleDragEvent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_l_c_d16bpp_1_1_draw_texture_map_scan_line_base16" kind="class" language="C++" prot="private">
+    <compoundname>touchgfx::LCD16bpp::DrawTextureMapScanLineBase16</compoundname>
+    <basecompoundref refid="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base" prot="public" virt="non-virtual">LCD::DrawTextureMapScanLineBase</basecompoundref>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_1_1_draw_texture_map_scan_line_base16_1a38edcbd3e6c790bf0989f5cba4d1f45c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FORCE_INLINE_FUNCTION bool</type>
+        <definition>FORCE_INLINE_FUNCTION bool overrunCheckBilinearInterpolation</definition>
+        <argsstring>(uint16_t *&amp;destBits, int &amp;pixelsToDraw, fixed16_16 &amp;U, fixed16_16 &amp;V, fixed16_16 deltaU, fixed16_16 deltaV, const int16_t maxWidth, const int16_t maxHeight)</argsstring>
+        <name>overrunCheckBilinearInterpolation</name>
+        <param>
+          <type>uint16_t *&amp;</type>
+          <declname>destBits</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>pixelsToDraw</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1a62c78b672c5381c87b38200ab84a31f5" kindref="member">fixed16_16</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1a62c78b672c5381c87b38200ab84a31f5" kindref="member">fixed16_16</ref> &amp;</type>
+          <declname>V</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1a62c78b672c5381c87b38200ab84a31f5" kindref="member">fixed16_16</ref></type>
+          <declname>deltaU</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1a62c78b672c5381c87b38200ab84a31f5" kindref="member">fixed16_16</ref></type>
+          <declname>deltaV</declname>
+        </param>
+        <param>
+          <type>const int16_t</type>
+          <declname>maxWidth</declname>
+        </param>
+        <param>
+          <type>const int16_t</type>
+          <declname>maxHeight</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bpp.hpp" line="578" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d16bpp_1_1_draw_texture_map_scan_line_base16_1af8eae24fd3db5a00151a795b15f57e54" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FORCE_INLINE_FUNCTION bool</type>
+        <definition>FORCE_INLINE_FUNCTION bool overrunCheckNearestNeighbor</definition>
+        <argsstring>(uint16_t *&amp;destBits, int &amp;pixelsToDraw, fixed16_16 &amp;U, fixed16_16 &amp;V, fixed16_16 deltaU, fixed16_16 deltaV, const int16_t maxWidth, const int16_t maxHeight)</argsstring>
+        <name>overrunCheckNearestNeighbor</name>
+        <param>
+          <type>uint16_t *&amp;</type>
+          <declname>destBits</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>pixelsToDraw</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1a62c78b672c5381c87b38200ab84a31f5" kindref="member">fixed16_16</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1a62c78b672c5381c87b38200ab84a31f5" kindref="member">fixed16_16</ref> &amp;</type>
+          <declname>V</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1a62c78b672c5381c87b38200ab84a31f5" kindref="member">fixed16_16</ref></type>
+          <declname>deltaU</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1a62c78b672c5381c87b38200ab84a31f5" kindref="member">fixed16_16</ref></type>
+          <declname>deltaV</declname>
+        </param>
+        <param>
+          <type>const int16_t</type>
+          <declname>maxWidth</declname>
+        </param>
+        <param>
+          <type>const int16_t</type>
+          <declname>maxHeight</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/lcd/LCD16bpp.hpp" line="577" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="631">
+        <label>LCD16bpp::DrawTextureMapScanLineBase16</label>
+        <childnode refid="632" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="632">
+        <label>DrawTextureMapScanLineBase</label>
+        <link refid="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="633">
+        <label>LCD16bpp::DrawTextureMapScanLineBase16</label>
+        <childnode refid="634" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="634">
+        <label>DrawTextureMapScanLineBase</label>
+        <link refid="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base"/>
+      </node>
+    </collaborationgraph>
+    <location file="platform/driver/lcd/LCD16bpp.hpp" line="575" column="1" bodyfile="platform/driver/lcd/LCD16bpp.hpp" bodystart="574" bodyend="579"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1add0589d9e887a57f8b687470a08d8266" prot="protected" virt="non-virtual"><scope>touchgfx::LCD16bpp::DrawTextureMapScanLineBase16</scope><name>drawTextureMapNextSubdivision</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1a466f24adfc48e860d620ee26f928ec84" prot="public" virt="pure-virtual"><scope>touchgfx::LCD16bpp::DrawTextureMapScanLineBase16</scope><name>drawTextureMapScanLineSubdivisions</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1adc2b8996624c05d3f30f27186185aa3c" prot="protected" virt="non-virtual"><scope>touchgfx::LCD16bpp::DrawTextureMapScanLineBase16</scope><name>half</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1a22c84c4c44c3ec0427c4dca43d111740" prot="protected" virt="non-virtual"><scope>touchgfx::LCD16bpp::DrawTextureMapScanLineBase16</scope><name>is1Inside</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1a67e23de90ee7c3d9096ae799c7da8e7c" prot="protected" virt="non-virtual"><scope>touchgfx::LCD16bpp::DrawTextureMapScanLineBase16</scope><name>is1x1Inside</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1acbb5432c44dc0aa4c4d033a45ad71ead" prot="protected" virt="non-virtual"><scope>touchgfx::LCD16bpp::DrawTextureMapScanLineBase16</scope><name>is2Inside</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1a465467b63215cdd985ba984c46fbd937" prot="protected" virt="non-virtual"><scope>touchgfx::LCD16bpp::DrawTextureMapScanLineBase16</scope><name>is2PartiallyInside</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1a7eb16f0232cb2658f9c3396888ef290f" prot="protected" virt="non-virtual"><scope>touchgfx::LCD16bpp::DrawTextureMapScanLineBase16</scope><name>is2x2Inside</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1a5628626873a5c12fd2aaa6471bb76330" prot="protected" virt="non-virtual"><scope>touchgfx::LCD16bpp::DrawTextureMapScanLineBase16</scope><name>is2x2PartiallyInside</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_1_1_draw_texture_map_scan_line_base16_1a38edcbd3e6c790bf0989f5cba4d1f45c" prot="protected" virt="non-virtual"><scope>touchgfx::LCD16bpp::DrawTextureMapScanLineBase16</scope><name>overrunCheckBilinearInterpolation</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d16bpp_1_1_draw_texture_map_scan_line_base16_1af8eae24fd3db5a00151a795b15f57e54" prot="protected" virt="non-virtual"><scope>touchgfx::LCD16bpp::DrawTextureMapScanLineBase16</scope><name>overrunCheckNearestNeighbor</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1abeeb40671ac8350ae2abbcee86f96609" prot="public" virt="virtual"><scope>touchgfx::LCD16bpp::DrawTextureMapScanLineBase16</scope><name>~DrawTextureMapScanLineBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

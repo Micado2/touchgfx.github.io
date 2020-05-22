@@ -1,0 +1,475 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_tiled_image" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::TiledImage</compoundname>
+    <basecompoundref refid="classtouchgfx_1_1_image" prot="public" virt="non-virtual">Image</basecompoundref>
+    <includes local="no">TiledImage.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_tiled_image_1a77759e52428db854b991e27540f74b14" prot="protected" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t xOffset</definition>
+        <argsstring></argsstring>
+        <name>xOffset</name>
+        <briefdescription>
+<para>The X offset into the bitmap to start drawing in range 0..bitmap.width-1. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TiledImage.hpp" line="110" column="1" bodyfile="touchgfx/widgets/TiledImage.hpp" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_tiled_image_1a23600e8e6b3b161da8636df0444080b1" prot="protected" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t yOffset</definition>
+        <argsstring></argsstring>
+        <name>yOffset</name>
+        <briefdescription>
+<para>The Y offset into the bitmap to start drawing in range 0..bitmap.height-1. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TiledImage.hpp" line="111" column="1" bodyfile="touchgfx/widgets/TiledImage.hpp" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_tiled_image_1a1277d4bddd51dbc604de265fb70ccbfd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void draw</definition>
+        <argsstring>(const Rect &amp;invalidatedArea) const</argsstring>
+        <name>draw</name>
+        <reimplements refid="classtouchgfx_1_1_image_1a1277d4bddd51dbc604de265fb70ccbfd">draw</reimplements>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>invalidatedArea</declname>
+        </param>
+        <briefdescription>
+<para>Draw this drawable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It is a requirement that the draw implementation does not draw outside the region specified by invalidatedArea.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>invalidatedArea</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sub-region of this drawable that needs to be redrawn, expressed in coordinates relative to its parent (e.g. for a complete redraw, invalidatedArea will be (0, 0, width, height). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TiledImage.hpp" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_tiled_image_1aea5ac0ef2e3dcd4ba41c460856dca48c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void getOffset</definition>
+        <argsstring>(int16_t &amp;x, int16_t &amp;y)</argsstring>
+        <name>getOffset</name>
+        <param>
+          <type>int16_t &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int16_t &amp;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Gets the offset into the bitmap where the tile drawing should start. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Please note that the offsets set using setOffset have been normalized so that x is in the range 0 to bitmap width - 1, and y is in the range 0 to bitmap height - 1.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x offset. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y offset.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_tiled_image_1aa2b43ae4636606bc6d9f26dd7b8f5c75" kindref="member">getXOffset</ref>, <ref refid="classtouchgfx_1_1_tiled_image_1a91c198a48a5d777766a215e5d5a68687" kindref="member">getYOffset</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TiledImage.hpp" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_tiled_image_1a4dcdd780e93cc783a2ceeda00c6f3b51" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref></type>
+        <definition>virtual Rect getSolidRect</definition>
+        <argsstring>() const</argsstring>
+        <name>getSolidRect</name>
+        <reimplements refid="classtouchgfx_1_1_image_1a4dcdd780e93cc783a2ceeda00c6f3b51">getSolidRect</reimplements>
+        <briefdescription>
+<para>Get (the largest possible) rectangle that is guaranteed to be solid (opaque). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This information is important, as any <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> underneath the solid area does not need to be drawn.</para>
+<para><simplesect kind="return"><para>The solid rectangle part of the <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref>.</para>
+</simplesect>
+<simplesect kind="note"><para>The rectangle returned must be relative to upper left corner of the <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref>, meaning that a completely solid widget should return the full size <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref>(0, 0, <ref refid="classtouchgfx_1_1_drawable_1acae58162aaca6fc174416550f76668e7" kindref="member">getWidth()</ref>, <ref refid="classtouchgfx_1_1_drawable_1ad00483821e06fe4d0d70222de4135d30" kindref="member">getHeight()</ref>). If no area can be guaranteed to be solid, an empty Rect(0, 0, 0, 0) must be returned. Failing to return the correct rectangle may result in errors on the display. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TiledImage.hpp" line="107" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_tiled_image_1aa2b43ae4636606bc6d9f26dd7b8f5c75" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int16_t</type>
+        <definition>virtual int16_t getXOffset</definition>
+        <argsstring>()</argsstring>
+        <name>getXOffset</name>
+        <briefdescription>
+<para>Get x offset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the value set using <ref refid="classtouchgfx_1_1_tiled_image_1a23ea2bf0315d4863f35af92e5c4577c5" kindref="member">setXOffset()</ref> (or <ref refid="classtouchgfx_1_1_tiled_image_1af0d4b608d2d4a7da4d7102c9f1e4ab8f" kindref="member">setOffset()</ref>) normalized to be in the range 0 to bitmap width - 1.</para>
+<para><simplesect kind="return"><para>The x offset.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_tiled_image_1a91c198a48a5d777766a215e5d5a68687" kindref="member">getYOffset</ref>, <ref refid="classtouchgfx_1_1_tiled_image_1aea5ac0ef2e3dcd4ba41c460856dca48c" kindref="member">getOffset</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TiledImage.hpp" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_tiled_image_1a91c198a48a5d777766a215e5d5a68687" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int16_t</type>
+        <definition>virtual int16_t getYOffset</definition>
+        <argsstring>()</argsstring>
+        <name>getYOffset</name>
+        <briefdescription>
+<para>Get y coordinate offset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the value set using <ref refid="classtouchgfx_1_1_tiled_image_1a58c26248ac934f900a96cbe65b2fa627" kindref="member">setYOffset()</ref> (or <ref refid="classtouchgfx_1_1_tiled_image_1af0d4b608d2d4a7da4d7102c9f1e4ab8f" kindref="member">setOffset()</ref>) normalized to be in the range 0 to bitmap height - 1.</para>
+<para><simplesect kind="return"><para>The y offset.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_tiled_image_1aa2b43ae4636606bc6d9f26dd7b8f5c75" kindref="member">getXOffset</ref>, <ref refid="classtouchgfx_1_1_tiled_image_1aea5ac0ef2e3dcd4ba41c460856dca48c" kindref="member">getOffset</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TiledImage.hpp" line="103" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_tiled_image_1a82000e29a2d9966dc76404b954233b0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setBitmap</definition>
+        <argsstring>(const Bitmap &amp;bmp)</argsstring>
+        <name>setBitmap</name>
+        <reimplements refid="classtouchgfx_1_1_image_1a82000e29a2d9966dc76404b954233b0e">setBitmap</reimplements>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> &amp;</type>
+          <declname>bmp</declname>
+        </param>
+        <briefdescription>
+<para>Sets the bitmap for this <ref refid="classtouchgfx_1_1_image" kindref="compound">Image</ref> and updates the width and height of this widget to match those of the <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bmp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bitmap instance. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The user code must call <ref refid="classtouchgfx_1_1_drawable_1a2800b4c18c63e9e7b1f85a74ce6b80c3" kindref="member">invalidate()</ref> in order to update the image on the display. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TiledImage.hpp" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_tiled_image_1af0d4b608d2d4a7da4d7102c9f1e4ab8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setOffset</definition>
+        <argsstring>(int16_t x, int16_t y)</argsstring>
+        <name>setOffset</name>
+        <param>
+          <type>int16_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Sets an offset into the bitmap where the tile drawing should start. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>By default the first image is aligned along the top and left, i.e. offset at (0, 0).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate offset. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate offset.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_tiled_image_1a23ea2bf0315d4863f35af92e5c4577c5" kindref="member">setXOffset</ref>, <ref refid="classtouchgfx_1_1_tiled_image_1a58c26248ac934f900a96cbe65b2fa627" kindref="member">setYOffset</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TiledImage.hpp" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_tiled_image_1a23ea2bf0315d4863f35af92e5c4577c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setXOffset</definition>
+        <argsstring>(int16_t x)</argsstring>
+        <name>setXOffset</name>
+        <param>
+          <type>int16_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Sets x offset into the bitmap where the tile drawing should start. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Setting the x offset to 1 will push all images one pixel to the left.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x offset.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_tiled_image_1a58c26248ac934f900a96cbe65b2fa627" kindref="member">setYOffset</ref>, <ref refid="classtouchgfx_1_1_tiled_image_1af0d4b608d2d4a7da4d7102c9f1e4ab8f" kindref="member">setOffset</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TiledImage.hpp" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_tiled_image_1a58c26248ac934f900a96cbe65b2fa627" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setYOffset</definition>
+        <argsstring>(int16_t y)</argsstring>
+        <name>setYOffset</name>
+        <param>
+          <type>int16_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Sets y offset into the bitmap where the tile drawing should start. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Setting the y offset to 1 will push all images one pixel up.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y offset.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_tiled_image_1a23ea2bf0315d4863f35af92e5c4577c5" kindref="member">setXOffset</ref>, <ref refid="classtouchgfx_1_1_tiled_image_1af0d4b608d2d4a7da4d7102c9f1e4ab8f" kindref="member">setOffset</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TiledImage.hpp" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_tiled_image_1ab71eb649603ba2668b02871a1e99d4e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TiledImage</definition>
+        <argsstring>(const Bitmap &amp;bmp=Bitmap())</argsstring>
+        <name>TiledImage</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> &amp;</type>
+          <declname>bmp</declname>
+          <defval><ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref>()</defval>
+        </param>
+        <briefdescription>
+<para>Constructs a new <ref refid="classtouchgfx_1_1_tiled_image" kindref="compound">TiledImage</ref> with a default alpha value of 255 (solid) and a default <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> (undefined) if none is specified. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If a <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> is passed to the constructor, the width and height of this widget is set to those of the bitmap.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bmp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(Optional) The bitmap to display.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_tiled_image_1a82000e29a2d9966dc76404b954233b0e" kindref="member">setBitmap</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/TiledImage.hpp" line="35" column="1" bodyfile="touchgfx/widgets/TiledImage.hpp" bodystart="35" bodyend="38"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Simple widget capable of showing a bitmap tiled indefinitely horizontally and vertically. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This means that when the <ref refid="classtouchgfx_1_1_tiled_image" kindref="compound">TiledImage</ref> <ref refid="classtouchgfx_1_1_widget" kindref="compound">Widget</ref> is larger than the provided <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref>, the <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> is repeated over and over horizontally and vertically. The bitmap can be alpha- blended with the background and have areas of transparency. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2502">
+        <label>Widget</label>
+        <link refid="classtouchgfx_1_1_widget"/>
+        <childnode refid="2503" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2501">
+        <label>Image</label>
+        <link refid="classtouchgfx_1_1_image"/>
+        <childnode refid="2502" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2503">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+      </node>
+      <node id="2500">
+        <label>TiledImage</label>
+        <link refid="classtouchgfx_1_1_tiled_image"/>
+        <childnode refid="2501" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2506">
+        <label>Widget</label>
+        <link refid="classtouchgfx_1_1_widget"/>
+        <childnode refid="2507" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2508">
+        <label>Rect</label>
+        <link refid="classtouchgfx_1_1_rect"/>
+      </node>
+      <node id="2505">
+        <label>Image</label>
+        <link refid="classtouchgfx_1_1_image"/>
+        <childnode refid="2506" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2509" relation="usage">
+          <edgelabel>bitmap</edgelabel>
+        </childnode>
+      </node>
+      <node id="2507">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+        <childnode refid="2508" relation="usage">
+          <edgelabel>rect</edgelabel>
+        </childnode>
+        <childnode refid="2507" relation="usage">
+          <edgelabel>nextSibling</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="2509">
+        <label>Bitmap</label>
+        <link refid="classtouchgfx_1_1_bitmap"/>
+      </node>
+      <node id="2504">
+        <label>TiledImage</label>
+        <link refid="classtouchgfx_1_1_tiled_image"/>
+        <childnode refid="2505" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/widgets/TiledImage.hpp" line="24" column="1" bodyfile="touchgfx/widgets/TiledImage.hpp" bodystart="23" bodyend="112"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_image_1acf5bb76caa419c0fa231dbd66c881084" prot="protected" virt="non-virtual"><scope>touchgfx::TiledImage</scope><name>alpha</name></member>
+      <member refid="classtouchgfx_1_1_image_1ab90f53fbe007c65f80d83ece2352f49a" prot="protected" virt="non-virtual"><scope>touchgfx::TiledImage</scope><name>bitmap</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae2d939b2a9c253f0fb3bae3ec7be4e2f" prot="public" virt="virtual"><scope>touchgfx::TiledImage</scope><name>childGeometryChanged</name></member>
+      <member refid="classtouchgfx_1_1_tiled_image_1a1277d4bddd51dbc604de265fb70ccbfd" prot="public" virt="virtual"><scope>touchgfx::TiledImage</scope><name>draw</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9cf3a85fa7554475fa42c97985bda6df" prot="public" virt="non-virtual"><scope>touchgfx::TiledImage</scope><name>Drawable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4a009ec2b654351679a0124e9055abdc" prot="public" virt="non-virtual"><scope>touchgfx::TiledImage</scope><name>drawToDynamicBitmap</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa7737d9d49d7f55ec9bde8f2c9751b1d" prot="public" virt="non-virtual"><scope>touchgfx::TiledImage</scope><name>getAbsoluteRect</name></member>
+      <member refid="classtouchgfx_1_1_image_1a302926ead4ee8a161627575d2666a7f2" prot="public" virt="non-virtual"><scope>touchgfx::TiledImage</scope><name>getAlpha</name></member>
+      <member refid="classtouchgfx_1_1_image_1a5b4af59b72a6b187cb1e04737d0c65e5" prot="public" virt="non-virtual"><scope>touchgfx::TiledImage</scope><name>getBitmap</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ad00483821e06fe4d0d70222de4135d30" prot="public" virt="non-virtual"><scope>touchgfx::TiledImage</scope><name>getHeight</name></member>
+      <member refid="classtouchgfx_1_1_widget_1a6bc8e89dc7f879221e9862fb27dc726f" prot="public" virt="virtual"><scope>touchgfx::TiledImage</scope><name>getLastChild</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a61c9b2bf703c49a6d238d354ddcaedb3" prot="public" virt="non-virtual"><scope>touchgfx::TiledImage</scope><name>getNextSibling</name></member>
+      <member refid="classtouchgfx_1_1_tiled_image_1aea5ac0ef2e3dcd4ba41c460856dca48c" prot="public" virt="virtual"><scope>touchgfx::TiledImage</scope><name>getOffset</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a013e065d4d9a10dbfa0ddee9a35582a3" prot="public" virt="non-virtual"><scope>touchgfx::TiledImage</scope><name>getParent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af23a5bb7d473e16363a449c497586be3" prot="public" virt="non-virtual"><scope>touchgfx::TiledImage</scope><name>getRect</name></member>
+      <member refid="classtouchgfx_1_1_tiled_image_1a4dcdd780e93cc783a2ceeda00c6f3b51" prot="public" virt="virtual"><scope>touchgfx::TiledImage</scope><name>getSolidRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4783dfe657ff1b7a33261bda8c4b4266" prot="public" virt="virtual"><scope>touchgfx::TiledImage</scope><name>getSolidRectAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a83b8847f583b63e60aa4bf778261ddd7" prot="public" virt="virtual"><scope>touchgfx::TiledImage</scope><name>getVisibleRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1acae58162aaca6fc174416550f76668e7" prot="public" virt="non-virtual"><scope>touchgfx::TiledImage</scope><name>getWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac071e9b7ccf37179df7d29c6778b664c" prot="public" virt="non-virtual"><scope>touchgfx::TiledImage</scope><name>getX</name></member>
+      <member refid="classtouchgfx_1_1_tiled_image_1aa2b43ae4636606bc6d9f26dd7b8f5c75" prot="public" virt="virtual"><scope>touchgfx::TiledImage</scope><name>getXOffset</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a26752e6cff4607d0eec8768ef6d9032a" prot="public" virt="non-virtual"><scope>touchgfx::TiledImage</scope><name>getY</name></member>
+      <member refid="classtouchgfx_1_1_tiled_image_1a91c198a48a5d777766a215e5d5a68687" prot="public" virt="virtual"><scope>touchgfx::TiledImage</scope><name>getYOffset</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a7f1524b90bc90e5f6cf7ee47aae12123" prot="public" virt="virtual"><scope>touchgfx::TiledImage</scope><name>handleClickEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a06ae1946b2124cc94e26cfe18728debf" prot="public" virt="virtual"><scope>touchgfx::TiledImage</scope><name>handleDragEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4db4945ecbc2303bf860e082409b8029" prot="public" virt="virtual"><scope>touchgfx::TiledImage</scope><name>handleGestureEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1af635cee0f186c3d0fcea60bac14355" prot="public" virt="virtual"><scope>touchgfx::TiledImage</scope><name>handleTickEvent</name></member>
+      <member refid="classtouchgfx_1_1_image_1a52a68a4210633b01427a40d071026e29" prot="protected" virt="non-virtual"><scope>touchgfx::TiledImage</scope><name>hasTransparentPixels</name></member>
+      <member refid="classtouchgfx_1_1_image_1aafe2a82267731414c0c23dbfe64101d0" prot="public" virt="non-virtual"><scope>touchgfx::TiledImage</scope><name>Image</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2800b4c18c63e9e7b1f85a74ce6b80c3" prot="public" virt="virtual"><scope>touchgfx::TiledImage</scope><name>invalidate</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a130cf6e1bf2b9f04f48e659758fa75e2" prot="public" virt="virtual"><scope>touchgfx::TiledImage</scope><name>invalidateRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a01c717b9abc98d48673b79d691c2d28a" prot="public" virt="non-virtual"><scope>touchgfx::TiledImage</scope><name>isTouchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9d8a6cfb13917785c143e74d40e4e2be" prot="public" virt="non-virtual"><scope>touchgfx::TiledImage</scope><name>isVisible</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af3590480070e2cf91580976f322d2c5e" prot="public" virt="virtual"><scope>touchgfx::TiledImage</scope><name>moveRelative</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aadc5abfad4d2fcc331cf8de8713dc00e" prot="public" virt="virtual"><scope>touchgfx::TiledImage</scope><name>moveTo</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0da4a00c3fbdea5740e52c7e04316c65" prot="protected" virt="non-virtual"><scope>touchgfx::TiledImage</scope><name>nextSibling</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ab77c13cde2b01107dcbc5c2b584d422f" prot="protected" virt="non-virtual"><scope>touchgfx::TiledImage</scope><name>parent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2a955ddc316d002f566598f340eb2af9" prot="protected" virt="non-virtual"><scope>touchgfx::TiledImage</scope><name>rect</name></member>
+      <member refid="classtouchgfx_1_1_image_1a40b4eaf63ab7df1422b403a5a384a0b3" prot="public" virt="non-virtual"><scope>touchgfx::TiledImage</scope><name>setAlpha</name></member>
+      <member refid="classtouchgfx_1_1_tiled_image_1a82000e29a2d9966dc76404b954233b0e" prot="public" virt="virtual"><scope>touchgfx::TiledImage</scope><name>setBitmap</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a47a6312407603de99247bb802dbd8a48" prot="public" virt="virtual"><scope>touchgfx::TiledImage</scope><name>setHeight</name></member>
+      <member refid="classtouchgfx_1_1_tiled_image_1af0d4b608d2d4a7da4d7102c9f1e4ab8f" prot="public" virt="virtual"><scope>touchgfx::TiledImage</scope><name>setOffset</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac218c371450d8ad2bed3e1b07965a41a" prot="public" virt="virtual"><scope>touchgfx::TiledImage</scope><name>setPosition</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae4c38eadb852b153850ea7ded1f50a19" prot="public" virt="non-virtual"><scope>touchgfx::TiledImage</scope><name>setTouchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a71639c6634c5dcf6d1bb21b8b1b61f5b" prot="public" virt="non-virtual"><scope>touchgfx::TiledImage</scope><name>setVisible</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae74a37f71d23440fc8b0466ad8ecfe4b" prot="public" virt="virtual"><scope>touchgfx::TiledImage</scope><name>setWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9f6db7f34a74e991fc446fffb5703a53" prot="public" virt="virtual"><scope>touchgfx::TiledImage</scope><name>setX</name></member>
+      <member refid="classtouchgfx_1_1_tiled_image_1a23ea2bf0315d4863f35af92e5c4577c5" prot="public" virt="virtual"><scope>touchgfx::TiledImage</scope><name>setXOffset</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6c86659dc1e7355c207e9c0aa18af167" prot="public" virt="virtual"><scope>touchgfx::TiledImage</scope><name>setXY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1b08d48e7e23a046f09e63089bc82bc1" prot="public" virt="virtual"><scope>touchgfx::TiledImage</scope><name>setY</name></member>
+      <member refid="classtouchgfx_1_1_tiled_image_1a58c26248ac934f900a96cbe65b2fa627" prot="public" virt="virtual"><scope>touchgfx::TiledImage</scope><name>setYOffset</name></member>
+      <member refid="classtouchgfx_1_1_tiled_image_1ab71eb649603ba2668b02871a1e99d4e1" prot="public" virt="non-virtual"><scope>touchgfx::TiledImage</scope><name>TiledImage</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0d014de134cb9b9c1c361fcd726a5f34" prot="protected" virt="non-virtual"><scope>touchgfx::TiledImage</scope><name>touchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a48c1d14ac943dbfa4935ea39db950608" prot="public" virt="virtual"><scope>touchgfx::TiledImage</scope><name>translateRectToAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa54a57ae048476d840caf6d4d2c47aa3" prot="protected" virt="non-virtual"><scope>touchgfx::TiledImage</scope><name>visible</name></member>
+      <member refid="classtouchgfx_1_1_tiled_image_1a77759e52428db854b991e27540f74b14" prot="protected" virt="non-virtual"><scope>touchgfx::TiledImage</scope><name>xOffset</name></member>
+      <member refid="classtouchgfx_1_1_tiled_image_1a23600e8e6b3b161da8636df0444080b1" prot="protected" virt="non-virtual"><scope>touchgfx::TiledImage</scope><name>yOffset</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6bb040a11ffc2bd641283cc0bc0d1346" prot="public" virt="virtual"><scope>touchgfx::TiledImage</scope><name>~Drawable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,369 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_typed_text" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::TypedText</compoundname>
+    <includes local="no">TypedText.hpp</includes>
+    <innerclass refid="structtouchgfx_1_1_typed_text_1_1_typed_text_data" prot="public">touchgfx::TypedText::TypedTextData</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_typed_text_1a734f05845f0e4b163ebfed40c112b475" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacetouchgfx_1a3fd2f86199cf8f66f782fbf71dd2412d" kindref="member">TypedTextId</ref></type>
+        <definition>TypedTextId typedTextId</definition>
+        <argsstring></argsstring>
+        <name>typedTextId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TypedText.hpp" line="166" column="1" bodyfile="touchgfx/TypedText.hpp" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_typed_text_1ad3fe550a04ad84fcdf711a2fefbfb501" prot="private" static="yes" mutable="no">
+        <type>const <ref refid="classtouchgfx_1_1_font" kindref="compound">Font</ref> *const  *</type>
+        <definition>const Font* const* fonts</definition>
+        <argsstring></argsstring>
+        <name>fonts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TypedText.hpp" line="170" column="1" bodyfile="touchgfx/TypedText.hpp" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_typed_text_1aba3416fad9815cff2cefbc196d32512d" prot="private" static="yes" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t numberOfTypedTexts</definition>
+        <argsstring></argsstring>
+        <name>numberOfTypedTexts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TypedText.hpp" line="171" column="1" bodyfile="touchgfx/TypedText.hpp" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_typed_text_1a056eaac868370c5f0bd3072cfe5fafd2" prot="private" static="yes" mutable="no">
+        <type>const <ref refid="classtouchgfx_1_1_texts" kindref="compound">Texts</ref> *</type>
+        <definition>const Texts* texts</definition>
+        <argsstring></argsstring>
+        <name>texts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TypedText.hpp" line="169" column="1" bodyfile="touchgfx/TypedText.hpp" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_typed_text_1a0fa15b942fb67896abd24c293e5ce050" prot="private" static="yes" mutable="no">
+        <type>const <ref refid="structtouchgfx_1_1_typed_text_1_1_typed_text_data" kindref="compound">TypedTextData</ref> *</type>
+        <definition>const TypedTextData* typedTexts</definition>
+        <argsstring></argsstring>
+        <name>typedTexts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TypedText.hpp" line="168" column="1" bodyfile="touchgfx/TypedText.hpp" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_typed_text_1a512d7ac58ed8923c698be0d050452692" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetouchgfx_1ae1ec6d58a3c593e4801f352243506628" kindref="member">Alignment</ref></type>
+        <definition>Alignment getAlignment</definition>
+        <argsstring>() const</argsstring>
+        <name>getAlignment</name>
+        <briefdescription>
+<para>Gets the alignment associated with this <ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The alignment. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TypedText.hpp" line="115" column="1" bodyfile="touchgfx/TypedText.hpp" bodystart="115" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_typed_text_1a25907ed052593bfd067c8c7fd2e28101" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classtouchgfx_1_1_font" kindref="compound">Font</ref> *</type>
+        <definition>const Font* getFont</definition>
+        <argsstring>() const</argsstring>
+        <name>getFont</name>
+        <briefdescription>
+<para>Gets the font associated with this <ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The font. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TypedText.hpp" line="93" column="1" bodyfile="touchgfx/TypedText.hpp" bodystart="93" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_typed_text_1abf765a8055e036ea21a8bc58b349f480" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetouchgfx_1aca843a83bfa2b15fa1c762d27a87d294" kindref="member">FontId</ref></type>
+        <definition>FontId getFontId</definition>
+        <argsstring>() const</argsstring>
+        <name>getFontId</name>
+        <briefdescription>
+<para>Gets the font ID associated with this <ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The font. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TypedText.hpp" line="104" column="1" bodyfile="touchgfx/TypedText.hpp" bodystart="104" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_typed_text_1a9bcef23875edd64a2a5bf92d60bf7dde" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetouchgfx_1a3fd2f86199cf8f66f782fbf71dd2412d" kindref="member">TypedTextId</ref></type>
+        <definition>TypedTextId getId</definition>
+        <argsstring>() const</argsstring>
+        <name>getId</name>
+        <briefdescription>
+<para>Gets the id of the typed text. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The id. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TypedText.hpp" line="62" column="1" bodyfile="touchgfx/TypedText.hpp" bodystart="62" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_typed_text_1a21720d7ddc86f34aa5639fcd170f0571" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref> *</type>
+        <definition>const Unicode::UnicodeChar* getText</definition>
+        <argsstring>() const</argsstring>
+        <name>getText</name>
+        <briefdescription>
+<para>Gets the text associated with this <ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The text. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TypedText.hpp" line="82" column="1" bodyfile="touchgfx/TypedText.hpp" bodystart="82" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_typed_text_1a8fd5b7aa1b2152fd7a910e890dfdd492" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetouchgfx_1abe2c7387a9ed6f7c793179053f152743" kindref="member">TextDirection</ref></type>
+        <definition>TextDirection getTextDirection</definition>
+        <argsstring>() const</argsstring>
+        <name>getTextDirection</name>
+        <briefdescription>
+<para>Gets the text direction associated with this <ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The alignment. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TypedText.hpp" line="126" column="1" bodyfile="touchgfx/TypedText.hpp" bodystart="126" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_typed_text_1ad82dbf18c541c73a3b6d2b7d602f8b59" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool hasValidId</definition>
+        <argsstring>() const</argsstring>
+        <name>hasValidId</name>
+        <briefdescription>
+<para>Has the <ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref> been set to a proper value? </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Is the id valid. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TypedText.hpp" line="72" column="1" bodyfile="touchgfx/TypedText.hpp" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_typed_text_1a12e83f9b3994cfa4e329f23413c61cbd" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TypedText</definition>
+        <argsstring>(const TypedTextId id=TYPED_TEXT_INVALID)</argsstring>
+        <name>TypedText</name>
+        <param>
+          <type>const <ref refid="namespacetouchgfx_1a3fd2f86199cf8f66f782fbf71dd2412d" kindref="member">TypedTextId</ref></type>
+          <declname>id</declname>
+          <defval><ref refid="namespacetouchgfx_1afacec4ce50e46612f64f4d0906e95aca" kindref="member">TYPED_TEXT_INVALID</ref></defval>
+        </param>
+        <briefdescription>
+<para>Initializes a new instance of the <ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(Optional) The identifier. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TypedText.hpp" line="47" column="1" bodyfile="touchgfx/TypedText.hpp" bodystart="47" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_typed_text_1afce03ba782f9caba5a346fee160c7166" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~TypedText</definition>
+        <argsstring>()</argsstring>
+        <name>~TypedText</name>
+        <briefdescription>
+<para>Finalizes an instance of the <ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TypedText.hpp" line="53" column="1" bodyfile="touchgfx/TypedText.hpp" bodystart="53" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_typed_text_1aab0cd47f3779192fce2add3d449b3660" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void registerTexts</definition>
+        <argsstring>(const Texts *t)</argsstring>
+        <name>registerTexts</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_texts" kindref="compound">Texts</ref> *</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Registers an array of texts. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is called automatically from <ref refid="namespacetouchgfx_1ac9f45e65d261580744b315b168aa520c" kindref="member">touchgfx_generic_init()</ref>. Should not be called under normal circumstances.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The array of texts. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TypedText.hpp" line="154" column="1" bodyfile="touchgfx/TypedText.hpp" bodystart="154" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_typed_text_1a444668920641ec0730a3fde0e69dd7e0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void registerTypedTextDatabase</definition>
+        <argsstring>(const TypedTextData *data, const Font *const *f, const uint16_t n)</argsstring>
+        <name>registerTypedTextDatabase</name>
+        <param>
+          <type>const <ref refid="structtouchgfx_1_1_typed_text_1_1_typed_text_data" kindref="compound">TypedTextData</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_font" kindref="compound">Font</ref> *const *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>const uint16_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Registers an array of typed texts. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>All typed text instances are bound to this database. This function is called automatically when setting a new language. Use <ref refid="classtouchgfx_1_1_texts_1a52adaa19145e3ffaa48197a2ec245584" kindref="member">Texts::setLanguage()</ref> instead of calling this function directly.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference to the <ref refid="structtouchgfx_1_1_typed_text_1_1_typed_text_data" kindref="compound">TypedTextData</ref> storage array. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The fonts associated with the array. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of typed texts in the array. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TypedText.hpp" line="141" column="1" bodyfile="touchgfx/TypedText.hpp" bodystart="141" bodyend="146"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_typed_text_1af7c76d7e3c18b0d96aa7cad6171046b1" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void assertValid</definition>
+        <argsstring>() const</argsstring>
+        <name>assertValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/TypedText.hpp" line="160" column="1" bodyfile="touchgfx/TypedText.hpp" bodystart="160" bodyend="164"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref> represents text (for characters) and typography (for font and alignment). </para>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref> provides methods for adjusting the text, font and alignment.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_text_area" kindref="compound">TextArea</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="touchgfx/TypedText.hpp" line="30" column="1" bodyfile="touchgfx/TypedText.hpp" bodystart="29" bodyend="172"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_typed_text_1af7c76d7e3c18b0d96aa7cad6171046b1" prot="private" virt="non-virtual"><scope>touchgfx::TypedText</scope><name>assertValid</name></member>
+      <member refid="classtouchgfx_1_1_typed_text_1ad3fe550a04ad84fcdf711a2fefbfb501" prot="private" virt="non-virtual"><scope>touchgfx::TypedText</scope><name>fonts</name></member>
+      <member refid="classtouchgfx_1_1_typed_text_1a512d7ac58ed8923c698be0d050452692" prot="public" virt="non-virtual"><scope>touchgfx::TypedText</scope><name>getAlignment</name></member>
+      <member refid="classtouchgfx_1_1_typed_text_1a25907ed052593bfd067c8c7fd2e28101" prot="public" virt="non-virtual"><scope>touchgfx::TypedText</scope><name>getFont</name></member>
+      <member refid="classtouchgfx_1_1_typed_text_1abf765a8055e036ea21a8bc58b349f480" prot="public" virt="non-virtual"><scope>touchgfx::TypedText</scope><name>getFontId</name></member>
+      <member refid="classtouchgfx_1_1_typed_text_1a9bcef23875edd64a2a5bf92d60bf7dde" prot="public" virt="non-virtual"><scope>touchgfx::TypedText</scope><name>getId</name></member>
+      <member refid="classtouchgfx_1_1_typed_text_1a21720d7ddc86f34aa5639fcd170f0571" prot="public" virt="non-virtual"><scope>touchgfx::TypedText</scope><name>getText</name></member>
+      <member refid="classtouchgfx_1_1_typed_text_1a8fd5b7aa1b2152fd7a910e890dfdd492" prot="public" virt="non-virtual"><scope>touchgfx::TypedText</scope><name>getTextDirection</name></member>
+      <member refid="classtouchgfx_1_1_typed_text_1ad82dbf18c541c73a3b6d2b7d602f8b59" prot="public" virt="non-virtual"><scope>touchgfx::TypedText</scope><name>hasValidId</name></member>
+      <member refid="classtouchgfx_1_1_typed_text_1aba3416fad9815cff2cefbc196d32512d" prot="private" virt="non-virtual"><scope>touchgfx::TypedText</scope><name>numberOfTypedTexts</name></member>
+      <member refid="classtouchgfx_1_1_typed_text_1aab0cd47f3779192fce2add3d449b3660" prot="public" virt="non-virtual"><scope>touchgfx::TypedText</scope><name>registerTexts</name></member>
+      <member refid="classtouchgfx_1_1_typed_text_1a444668920641ec0730a3fde0e69dd7e0" prot="public" virt="non-virtual"><scope>touchgfx::TypedText</scope><name>registerTypedTextDatabase</name></member>
+      <member refid="classtouchgfx_1_1_typed_text_1a056eaac868370c5f0bd3072cfe5fafd2" prot="private" virt="non-virtual"><scope>touchgfx::TypedText</scope><name>texts</name></member>
+      <member refid="classtouchgfx_1_1_typed_text_1a12e83f9b3994cfa4e329f23413c61cbd" prot="public" virt="non-virtual"><scope>touchgfx::TypedText</scope><name>TypedText</name></member>
+      <member refid="classtouchgfx_1_1_typed_text_1a734f05845f0e4b163ebfed40c112b475" prot="private" virt="non-virtual"><scope>touchgfx::TypedText</scope><name>typedTextId</name></member>
+      <member refid="classtouchgfx_1_1_typed_text_1a0fa15b942fb67896abd24c293e5ce050" prot="private" virt="non-virtual"><scope>touchgfx::TypedText</scope><name>typedTexts</name></member>
+      <member refid="classtouchgfx_1_1_typed_text_1afce03ba782f9caba5a346fee160c7166" prot="public" virt="virtual"><scope>touchgfx::TypedText</scope><name>~TypedText</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

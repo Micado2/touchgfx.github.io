@@ -1,0 +1,447 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_debug_printer" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>touchgfx::DebugPrinter</compoundname>
+    <derivedcompoundref refid="classtouchgfx_1_1_l_c_d16_debug_printer" prot="public" virt="non-virtual">LCD16DebugPrinter</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_l_c_d1_debug_printer" prot="public" virt="non-virtual">LCD1DebugPrinter</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_l_c_d24_debug_printer" prot="public" virt="non-virtual">LCD24DebugPrinter</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_l_c_d2_debug_printer" prot="public" virt="non-virtual">LCD2DebugPrinter</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_l_c_d32_debug_printer" prot="public" virt="non-virtual">LCD32DebugPrinter</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_l_c_d4_debug_printer" prot="public" virt="non-virtual">LCD4DebugPrinter</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_l_c_d8_a_b_g_r2222_debug_printer" prot="public" virt="non-virtual">LCD8ABGR2222DebugPrinter</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_l_c_d8_a_r_g_b2222_debug_printer" prot="public" virt="non-virtual">LCD8ARGB2222DebugPrinter</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_l_c_d8_b_g_r_a2222_debug_printer" prot="public" virt="non-virtual">LCD8BGRA2222DebugPrinter</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_l_c_d8_r_g_b_a2222_debug_printer" prot="public" virt="non-virtual">LCD8RGBA2222DebugPrinter</derivedcompoundref>
+    <includes local="no">LCD.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_debug_printer_1a88661c8eb3b441bc9472f11853003cfe" prot="protected" static="no" mutable="no">
+        <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+        <definition>colortype debugForegroundColor</definition>
+        <argsstring></argsstring>
+        <name>debugForegroundColor</name>
+        <briefdescription>
+<para><ref refid="classtouchgfx_1_1_font" kindref="compound">Font</ref> color to use when displaying the debug string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="1156" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="1156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_debug_printer_1a94a98b2832a23ae7fe9ef00da2d6b0c1" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref></type>
+        <definition>Rect debugRegion</definition>
+        <argsstring></argsstring>
+        <name>debugRegion</name>
+        <briefdescription>
+<para>Region onscreen where the debug message is displayed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="1155" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="1155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_debug_printer_1abf7e29dd7eb3b3c2597f4d12325a77da" prot="protected" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t debugScale</definition>
+        <argsstring></argsstring>
+        <name>debugScale</name>
+        <briefdescription>
+<para><ref refid="classtouchgfx_1_1_font" kindref="compound">Font</ref> scaling factor to use when displaying the debug string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="1157" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="1157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_debug_printer_1adb587c539c181cecc3be305d5b437e6f" prot="protected" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* debugString</definition>
+        <argsstring></argsstring>
+        <name>debugString</name>
+        <briefdescription>
+<para>Debug string to be displayed onscreen. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="1154" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="1154" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_debug_printer_1a7a61b7c193030b895bb9a2e83d9d6415" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>DebugPrinter</definition>
+        <argsstring>()</argsstring>
+        <name>DebugPrinter</name>
+        <briefdescription>
+<para>Initializes a new instance of the <ref refid="classtouchgfx_1_1_debug_printer" kindref="compound">DebugPrinter</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="1045" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="1045" bodyend="1048"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_debug_printer_1aa79feb642328453fb0ced82edea47e60" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void draw</definition>
+        <argsstring>(const Rect &amp;rect) const =0</argsstring>
+        <name>draw</name>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d1_debug_printer_1a1dc23f01b12284a9148d54e7ceb27645">draw</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d2_debug_printer_1a1dc23f01b12284a9148d54e7ceb27645">draw</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d4_debug_printer_1a1dc23f01b12284a9148d54e7ceb27645">draw</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8_r_g_b_a2222_debug_printer_1a1dc23f01b12284a9148d54e7ceb27645">draw</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8_a_r_g_b2222_debug_printer_1a1dc23f01b12284a9148d54e7ceb27645">draw</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8_a_b_g_r2222_debug_printer_1a1dc23f01b12284a9148d54e7ceb27645">draw</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d8_b_g_r_a2222_debug_printer_1a1dc23f01b12284a9148d54e7ceb27645">draw</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d24_debug_printer_1a1dc23f01b12284a9148d54e7ceb27645">draw</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d16_debug_printer_1a1dc23f01b12284a9148d54e7ceb27645">draw</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_l_c_d32_debug_printer_1a1dc23f01b12284a9148d54e7ceb27645">draw</reimplementedby>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>rect</declname>
+        </param>
+        <briefdescription>
+<para>Draws the debug string on top of the framebuffer content. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">rect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rect to draw inside. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="1108" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_debug_printer_1a46a43d27eb2566f0ed150fb98b57d3d6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+        <definition>const Rect&amp; getRegion</definition>
+        <argsstring>() const</argsstring>
+        <name>getRegion</name>
+        <briefdescription>
+<para>Returns the region where the debug string is displayed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> The debug string region. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="1115" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="1115" bodyend="1118"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_debug_printer_1ae60d6f2a87821a6da5ce0fbebe07eb58" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setColor</definition>
+        <argsstring>(colortype fg)</argsstring>
+        <name>setColor</name>
+        <param>
+          <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+          <declname>fg</declname>
+        </param>
+        <briefdescription>
+<para>Sets the foreground color of the debug string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The foreground color of the debug string. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="1098" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="1098" bodyend="1101"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_debug_printer_1a2579955a9563fc7a77361884e04f8653" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setPosition</definition>
+        <argsstring>(uint16_t x, uint16_t y, uint16_t w, uint16_t h)</argsstring>
+        <name>setPosition</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+<para>Sets the position onscreen where the debug string will be displayed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The coordinate of the region where the debug string is displayed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The coordinate of the region where the debug string is displayed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">w</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The width of the region where the debug string is displayed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The height of the region where the debug string is displayed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="1073" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="1073" bodyend="1076"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_debug_printer_1a3aa36bdce508c9464dc1c61ee24e427e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setScale</definition>
+        <argsstring>(uint8_t scale)</argsstring>
+        <name>setScale</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>scale</declname>
+        </param>
+        <briefdescription>
+<para>Sets the font scale of the debug string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The font scale of the debug string. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="1083" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="1083" bodyend="1091"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_debug_printer_1a666790bd659108d5bc623718fbfb44ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setString</definition>
+        <argsstring>(const char *string)</argsstring>
+        <name>setString</name>
+        <param>
+          <type>const char *</type>
+          <declname>string</declname>
+        </param>
+        <briefdescription>
+<para>Sets the debug string to be displayed on top of the framebuffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string to be displayed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="1060" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="1060" bodyend="1063"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_debug_printer_1af8194938732f7530746a2162921352f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~DebugPrinter</definition>
+        <argsstring>()</argsstring>
+        <name>~DebugPrinter</name>
+        <briefdescription>
+<para>Finalizes an instance of the <ref refid="classtouchgfx_1_1_debug_printer" kindref="compound">DebugPrinter</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="1051" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="1051" bodyend="1053"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_debug_printer_1adfd8e4cd36e223102a456ec4c367dd1f" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t getGlyph</definition>
+        <argsstring>(uint8_t c) const</argsstring>
+        <name>getGlyph</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Gets a glyph (15 bits) arranged with 3 bits wide, 5 bits high in a single uint16_t value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The character to get a glyph for.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The glyph. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="1129" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="1129" bodyend="1152"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The class <ref refid="classtouchgfx_1_1_debug_printer" kindref="compound">DebugPrinter</ref> defines the interface for printing debug messages on top of the framebuffer. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="493">
+        <label>LCD24DebugPrinter</label>
+        <link refid="classtouchgfx_1_1_l_c_d24_debug_printer"/>
+        <childnode refid="490" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="495">
+        <label>LCD32DebugPrinter</label>
+        <link refid="classtouchgfx_1_1_l_c_d32_debug_printer"/>
+        <childnode refid="490" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="500">
+        <label>LCD8RGBA2222DebugPrinter</label>
+        <link refid="classtouchgfx_1_1_l_c_d8_r_g_b_a2222_debug_printer"/>
+        <childnode refid="490" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="496">
+        <label>LCD4DebugPrinter</label>
+        <link refid="classtouchgfx_1_1_l_c_d4_debug_printer"/>
+        <childnode refid="490" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="494">
+        <label>LCD2DebugPrinter</label>
+        <link refid="classtouchgfx_1_1_l_c_d2_debug_printer"/>
+        <childnode refid="490" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="498">
+        <label>LCD8ARGB2222DebugPrinter</label>
+        <link refid="classtouchgfx_1_1_l_c_d8_a_r_g_b2222_debug_printer"/>
+        <childnode refid="490" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="497">
+        <label>LCD8ABGR2222DebugPrinter</label>
+        <link refid="classtouchgfx_1_1_l_c_d8_a_b_g_r2222_debug_printer"/>
+        <childnode refid="490" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="492">
+        <label>LCD1DebugPrinter</label>
+        <link refid="classtouchgfx_1_1_l_c_d1_debug_printer"/>
+        <childnode refid="490" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="490">
+        <label>DebugPrinter</label>
+        <link refid="classtouchgfx_1_1_debug_printer"/>
+      </node>
+      <node id="491">
+        <label>LCD16DebugPrinter</label>
+        <link refid="classtouchgfx_1_1_l_c_d16_debug_printer"/>
+        <childnode refid="490" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="499">
+        <label>LCD8BGRA2222DebugPrinter</label>
+        <link refid="classtouchgfx_1_1_l_c_d8_b_g_r_a2222_debug_printer"/>
+        <childnode refid="490" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="502">
+        <label>Rect</label>
+        <link refid="classtouchgfx_1_1_rect"/>
+      </node>
+      <node id="501">
+        <label>DebugPrinter</label>
+        <link refid="classtouchgfx_1_1_debug_printer"/>
+        <childnode refid="502" relation="usage">
+          <edgelabel>debugRegion</edgelabel>
+        </childnode>
+        <childnode refid="503" relation="usage">
+          <edgelabel>debugForegroundColor</edgelabel>
+        </childnode>
+      </node>
+      <node id="503">
+        <label>colortype</label>
+        <link refid="structtouchgfx_1_1colortype"/>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/lcd/LCD.hpp" line="1042" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="1041" bodyend="1158"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_debug_printer_1a88661c8eb3b441bc9472f11853003cfe" prot="protected" virt="non-virtual"><scope>touchgfx::DebugPrinter</scope><name>debugForegroundColor</name></member>
+      <member refid="classtouchgfx_1_1_debug_printer_1a7a61b7c193030b895bb9a2e83d9d6415" prot="public" virt="non-virtual"><scope>touchgfx::DebugPrinter</scope><name>DebugPrinter</name></member>
+      <member refid="classtouchgfx_1_1_debug_printer_1a94a98b2832a23ae7fe9ef00da2d6b0c1" prot="protected" virt="non-virtual"><scope>touchgfx::DebugPrinter</scope><name>debugRegion</name></member>
+      <member refid="classtouchgfx_1_1_debug_printer_1abf7e29dd7eb3b3c2597f4d12325a77da" prot="protected" virt="non-virtual"><scope>touchgfx::DebugPrinter</scope><name>debugScale</name></member>
+      <member refid="classtouchgfx_1_1_debug_printer_1adb587c539c181cecc3be305d5b437e6f" prot="protected" virt="non-virtual"><scope>touchgfx::DebugPrinter</scope><name>debugString</name></member>
+      <member refid="classtouchgfx_1_1_debug_printer_1aa79feb642328453fb0ced82edea47e60" prot="public" virt="pure-virtual"><scope>touchgfx::DebugPrinter</scope><name>draw</name></member>
+      <member refid="classtouchgfx_1_1_debug_printer_1adfd8e4cd36e223102a456ec4c367dd1f" prot="protected" virt="non-virtual"><scope>touchgfx::DebugPrinter</scope><name>getGlyph</name></member>
+      <member refid="classtouchgfx_1_1_debug_printer_1a46a43d27eb2566f0ed150fb98b57d3d6" prot="public" virt="non-virtual"><scope>touchgfx::DebugPrinter</scope><name>getRegion</name></member>
+      <member refid="classtouchgfx_1_1_debug_printer_1ae60d6f2a87821a6da5ce0fbebe07eb58" prot="public" virt="non-virtual"><scope>touchgfx::DebugPrinter</scope><name>setColor</name></member>
+      <member refid="classtouchgfx_1_1_debug_printer_1a2579955a9563fc7a77361884e04f8653" prot="public" virt="non-virtual"><scope>touchgfx::DebugPrinter</scope><name>setPosition</name></member>
+      <member refid="classtouchgfx_1_1_debug_printer_1a3aa36bdce508c9464dc1c61ee24e427e" prot="public" virt="non-virtual"><scope>touchgfx::DebugPrinter</scope><name>setScale</name></member>
+      <member refid="classtouchgfx_1_1_debug_printer_1a666790bd659108d5bc623718fbfb44ca" prot="public" virt="non-virtual"><scope>touchgfx::DebugPrinter</scope><name>setString</name></member>
+      <member refid="classtouchgfx_1_1_debug_printer_1af8194938732f7530746a2162921352f0" prot="public" virt="virtual"><scope>touchgfx::DebugPrinter</scope><name>~DebugPrinter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

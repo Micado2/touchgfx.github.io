@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_touch_calibration" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::TouchCalibration</compoundname>
+    <includes local="no">TouchCalibration.hpp</includes>
+    <innerclass refid="structtouchgfx_1_1_touch_calibration_1_1_matrix" prot="private">touchgfx::TouchCalibration::Matrix</innerclass>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classtouchgfx_1_1_touch_calibration_1a9570374e3dbc873595100dae1e584459" prot="private" static="no">
+        <type>struct Matrix</type>
+        <definition>typedef struct Matrix Matrix</definition>
+        <argsstring></argsstring>
+        <name>Matrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transforms/TouchCalibration.hpp" line="41" column="1" bodyfile="touchgfx/transforms/TouchCalibration.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_touch_calibration_1a7814aac028b9f4cf5548d4658015f62a" prot="private" static="yes" mutable="no">
+        <type>Matrix</type>
+        <definition>Matrix matrix</definition>
+        <argsstring></argsstring>
+        <name>matrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transforms/TouchCalibration.hpp" line="59" column="1" bodyfile="touchgfx/transforms/TouchCalibration.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_touch_calibration_1abfada6f5dd981efffaae0208e5b1c981" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void setCalibrationMatrix</definition>
+        <argsstring>(const Point *ref, const Point *scr)</argsstring>
+        <name>setCalibrationMatrix</name>
+        <param>
+          <type>const <ref refid="structtouchgfx_1_1_point" kindref="compound">Point</ref> *</type>
+          <declname>ref</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structtouchgfx_1_1_point" kindref="compound">Point</ref> *</type>
+          <declname>scr</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the calibration matrix based on reference and measured values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ref</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to array of three reference points. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to array of three measured points. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transforms/TouchCalibration.hpp" line="28" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_touch_calibration_1aa0050dd6d242ccd29311a9b9d035eebf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void translatePoint</definition>
+        <argsstring>(Point &amp;p)</argsstring>
+        <name>translatePoint</name>
+        <param>
+          <type><ref refid="structtouchgfx_1_1_point" kindref="compound">Point</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Translates the specified point using the matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If matrix has not been initialized, p is not modified.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The point to translate. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transforms/TouchCalibration.hpp" line="36" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_touch_calibration_1a2e107f084167d6291ff26d7531197084" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t clz</definition>
+        <argsstring>(int32_t x)</argsstring>
+        <name>clz</name>
+        <param>
+          <type>int32_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transforms/TouchCalibration.hpp" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_touch_calibration_1a50962f5ef64e8fc69dd400c55723b6e4" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t muldiv</definition>
+        <argsstring>(int32_t factor1, int32_t mls, int32_t mls_result, int32_t mls_remainder, int32_t factor2, int32_t divisor, int32_t &amp;remainder)</argsstring>
+        <name>muldiv</name>
+        <param>
+          <type>int32_t</type>
+          <declname>factor1</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>mls</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>mls_result</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>mls_remainder</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>factor2</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>divisor</declname>
+        </param>
+        <param>
+          <type>int32_t &amp;</type>
+          <declname>remainder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transforms/TouchCalibration.hpp" line="39" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Calibrates a touch coordinate. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Class TouchCalibraiton is responsible for translating coordinates (<ref refid="structtouchgfx_1_1_point" kindref="compound">Point</ref>) based on matrix of calibration values. </para>
+    </detaileddescription>
+    <location file="touchgfx/transforms/TouchCalibration.hpp" line="20" column="1" bodyfile="touchgfx/transforms/TouchCalibration.hpp" bodystart="19" bodyend="60"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_touch_calibration_1a2e107f084167d6291ff26d7531197084" prot="private" virt="non-virtual"><scope>touchgfx::TouchCalibration</scope><name>clz</name></member>
+      <member refid="classtouchgfx_1_1_touch_calibration_1a7814aac028b9f4cf5548d4658015f62a" prot="private" virt="non-virtual"><scope>touchgfx::TouchCalibration</scope><name>matrix</name></member>
+      <member refid="classtouchgfx_1_1_touch_calibration_1a9570374e3dbc873595100dae1e584459" prot="private" virt="non-virtual"><scope>touchgfx::TouchCalibration</scope><name>Matrix</name></member>
+      <member refid="classtouchgfx_1_1_touch_calibration_1a50962f5ef64e8fc69dd400c55723b6e4" prot="private" virt="non-virtual"><scope>touchgfx::TouchCalibration</scope><name>muldiv</name></member>
+      <member refid="classtouchgfx_1_1_touch_calibration_1abfada6f5dd981efffaae0208e5b1c981" prot="public" virt="non-virtual"><scope>touchgfx::TouchCalibration</scope><name>setCalibrationMatrix</name></member>
+      <member refid="classtouchgfx_1_1_touch_calibration_1aa0050dd6d242ccd29311a9b9d035eebf" prot="public" virt="non-virtual"><scope>touchgfx::TouchCalibration</scope><name>translatePoint</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

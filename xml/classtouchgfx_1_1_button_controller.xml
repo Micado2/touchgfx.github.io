@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_button_controller" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>touchgfx::ButtonController</compoundname>
+    <includes local="no">ButtonController.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_button_controller_1ab5be7e5a13ea77d59aac45d21dceb6a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void init</definition>
+        <argsstring>()=0</argsstring>
+        <name>init</name>
+        <briefdescription>
+<para>Initializes button controller. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/button/ButtonController.hpp" line="23" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_button_controller_1a7b0e029102ad38f4b814c6523aedb53d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+<para>Resets button controller. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Does nothing in the default implementation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/button/ButtonController.hpp" line="36" column="1" bodyfile="platform/driver/button/ButtonController.hpp" bodystart="36" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_button_controller_1a1c0f359b396f2b0b2b8445c9a1b5f8be" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool sample</definition>
+        <argsstring>(uint8_t &amp;key)=0</argsstring>
+        <name>sample</name>
+        <param>
+          <type>uint8_t &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Sample external key events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output parameter that will be set to the key value if a keypress was detected.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if a keypress was detected and the &quot;key&quot; parameter is set to a value. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/button/ButtonController.hpp" line="33" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_button_controller_1acc8d1b822e8decfd15b33fdd19146f3b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~ButtonController</definition>
+        <argsstring>()</argsstring>
+        <name>~ButtonController</name>
+        <briefdescription>
+<para>Finalizes an instance of the <ref refid="classtouchgfx_1_1_button_controller" kindref="compound">ButtonController</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="platform/driver/button/ButtonController.hpp" line="18" column="1" bodyfile="platform/driver/button/ButtonController.hpp" bodystart="18" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Interface for sampling external key events. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="platform/driver/button/ButtonController.hpp" line="15" column="1" bodyfile="platform/driver/button/ButtonController.hpp" bodystart="14" bodyend="39"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_button_controller_1ab5be7e5a13ea77d59aac45d21dceb6a0" prot="public" virt="pure-virtual"><scope>touchgfx::ButtonController</scope><name>init</name></member>
+      <member refid="classtouchgfx_1_1_button_controller_1a7b0e029102ad38f4b814c6523aedb53d" prot="public" virt="virtual"><scope>touchgfx::ButtonController</scope><name>reset</name></member>
+      <member refid="classtouchgfx_1_1_button_controller_1a1c0f359b396f2b0b2b8445c9a1b5f8be" prot="public" virt="pure-virtual"><scope>touchgfx::ButtonController</scope><name>sample</name></member>
+      <member refid="classtouchgfx_1_1_button_controller_1acc8d1b822e8decfd15b33fdd19146f3b" prot="public" virt="virtual"><scope>touchgfx::ButtonController</scope><name>~ButtonController</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

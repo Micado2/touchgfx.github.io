@@ -1,0 +1,318 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_painter_b_w" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::PainterBW</compoundname>
+    <basecompoundref refid="classtouchgfx_1_1_abstract_painter_b_w" prot="public" virt="non-virtual">AbstractPainterBW</basecompoundref>
+    <includes local="no">PainterBW.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_painter_b_w_1a4fe840cd9252b8b7c6d01d13133587e6" prot="protected" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t painterColor</definition>
+        <argsstring></argsstring>
+        <name>painterColor</name>
+        <briefdescription>
+<para>The color to use when painting. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/PainterBW.hpp" line="55" column="1" bodyfile="touchgfx/widgets/canvas/PainterBW.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_painter_b_w_1a9c8c44d8ff2b45176a8d7b32b46bfd4f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>static unsigned bw</definition>
+        <argsstring>(unsigned red, unsigned green, unsigned blue)</argsstring>
+        <name>bw</name>
+        <param>
+          <type>unsigned</type>
+          <declname>red</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>green</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>blue</declname>
+        </param>
+        <briefdescription>
+<para>Converts the selected color to either white (1) or black (0) depending on the gray representation of the RGB color. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>red</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The red color. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>green</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The green color. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>blue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The blue color.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 (white) if the brightness of the RGB color is above 50% and 0 (black) otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/PainterBW.hpp" line="34" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_painter_b_w_1aeac6531763a7b698f2c7e99c2466e384" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+        <definition>colortype getColor</definition>
+        <argsstring>() const</argsstring>
+        <name>getColor</name>
+        <briefdescription>
+<para>Gets the current color. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The color. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/PainterBW.hpp" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_painter_b_w_1a8441245669080e102adac555a07830ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void render</definition>
+        <argsstring>(uint8_t *ptr, int x, int xAdjust, int y, unsigned count, const uint8_t *covers)</argsstring>
+        <name>render</name>
+        <reimplements refid="classtouchgfx_1_1_abstract_painter_b_w_1a8441245669080e102adac555a07830ea">render</reimplements>
+        <param>
+          <type>uint8_t *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>xAdjust</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>covers</declname>
+        </param>
+        <briefdescription>
+<para>Paint a designated part of the RenderingBuffer with respect to the amount of coverage of each pixel given by the parameter covers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The cover is the alpha for each pixel, which is what makes it possible to have smooth anti-aliased edges on the shapes drawn with <ref refid="classtouchgfx_1_1_canvas_widget_renderer" kindref="compound">CanvasWidgetRenderer</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the row in the RenderingBuffer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xAdjust</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minor adjustment of x (used when a pixel is smaller than a byte to specify that the <emphasis>ptr</emphasis> should have been advanced &quot;xAdjust&quot; pixels futher into the byte). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of pixels to fill. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>covers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The coverage in of each pixel.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The implementation of <ref refid="classtouchgfx_1_1_painter_b_w_1a8441245669080e102adac555a07830ea" kindref="member">render()</ref> in the <ref refid="classtouchgfx_1_1_abstract_painter" kindref="compound">AbstractPainter</ref> classes is a generic (i.e. slow) implementation that should be completely implemented in subclasses of <ref refid="classtouchgfx_1_1_abstract_painter" kindref="compound">AbstractPainter</ref> for better performance. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/PainterBW.hpp" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_painter_b_w_1a470d590a3be3d71093546fd6a74336b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setColor</definition>
+        <argsstring>(colortype color)</argsstring>
+        <name>setColor</name>
+        <param>
+          <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Sets color to use when drawing the <ref refid="classtouchgfx_1_1_canvas_widget" kindref="compound">CanvasWidget</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color, 0=black, otherwise white. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/PainterBW.hpp" line="41" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_painter_b_w_1afe0d0054708dd5f5fe202ed115b78be5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool renderNext</definition>
+        <argsstring>(uint8_t &amp;color)</argsstring>
+        <name>renderNext</name>
+        <reimplements refid="classtouchgfx_1_1_abstract_painter_b_w_1a9fc29bd51ecca12e1a11093f937f6bca">renderNext</reimplements>
+        <param>
+          <type>uint8_t &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Get the color of the next pixel in the scan line to blend into the framebuffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color (0 or 1).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the pixel should be painted, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/PainterBW.hpp" line="53" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classtouchgfx_1_1_painter_b_w" kindref="compound">PainterBW</ref> is used for drawing one 1bpp displays. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The color is either on or off No transparency is supported.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_abstract_painter" kindref="compound">AbstractPainter</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1168">
+        <label>PainterBW</label>
+        <link refid="classtouchgfx_1_1_painter_b_w"/>
+        <childnode refid="1169" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1170">
+        <label>AbstractPainter</label>
+        <link refid="classtouchgfx_1_1_abstract_painter"/>
+      </node>
+      <node id="1169">
+        <label>AbstractPainterBW</label>
+        <link refid="classtouchgfx_1_1_abstract_painter_b_w"/>
+        <childnode refid="1170" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1171">
+        <label>PainterBW</label>
+        <link refid="classtouchgfx_1_1_painter_b_w"/>
+        <childnode refid="1172" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1173">
+        <label>AbstractPainter</label>
+        <link refid="classtouchgfx_1_1_abstract_painter"/>
+      </node>
+      <node id="1172">
+        <label>AbstractPainterBW</label>
+        <link refid="classtouchgfx_1_1_abstract_painter_b_w"/>
+        <childnode refid="1173" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/widgets/canvas/PainterBW.hpp" line="21" column="1" bodyfile="touchgfx/widgets/canvas/PainterBW.hpp" bodystart="20" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_abstract_painter_1aa4f80084e6ff903500fe2febda5f2f41" prot="public" virt="non-virtual"><scope>touchgfx::PainterBW</scope><name>AbstractPainter</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_b_w_1a3bb1edbecc5d7a3cc89229771f3e2408" prot="public" virt="non-virtual"><scope>touchgfx::PainterBW</scope><name>AbstractPainterBW</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_1a290754e533a9f126030de238db59494a" prot="protected" virt="non-virtual"><scope>touchgfx::PainterBW</scope><name>areaOffsetX</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_1aee5f795da3f83f1f63af9d0c0acb75d2" prot="protected" virt="non-virtual"><scope>touchgfx::PainterBW</scope><name>areaOffsetY</name></member>
+      <member refid="classtouchgfx_1_1_painter_b_w_1a9c8c44d8ff2b45176a8d7b32b46bfd4f" prot="public" virt="non-virtual"><scope>touchgfx::PainterBW</scope><name>bw</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_1a90f2b5c86d316ef720ac9c414caf7582" prot="protected" virt="non-virtual"><scope>touchgfx::PainterBW</scope><name>compatibleFramebuffer</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_b_w_1a74824964ce2f93a40355cb4ff92fe93f" prot="protected" virt="non-virtual"><scope>touchgfx::PainterBW</scope><name>currentX</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_b_w_1ac9494fae6d646273c7bb2cab162049e2" prot="protected" virt="non-virtual"><scope>touchgfx::PainterBW</scope><name>currentY</name></member>
+      <member refid="classtouchgfx_1_1_painter_b_w_1aeac6531763a7b698f2c7e99c2466e384" prot="public" virt="non-virtual"><scope>touchgfx::PainterBW</scope><name>getColor</name></member>
+      <member refid="classtouchgfx_1_1_painter_b_w_1a4fe840cd9252b8b7c6d01d13133587e6" prot="protected" virt="non-virtual"><scope>touchgfx::PainterBW</scope><name>painterColor</name></member>
+      <member refid="classtouchgfx_1_1_painter_b_w_1a8441245669080e102adac555a07830ea" prot="public" virt="virtual"><scope>touchgfx::PainterBW</scope><name>render</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_b_w_1a51910f125f1da3e5e47a57708f0a932e" prot="protected" virt="virtual"><scope>touchgfx::PainterBW</scope><name>renderInit</name></member>
+      <member refid="classtouchgfx_1_1_painter_b_w_1afe0d0054708dd5f5fe202ed115b78be5" prot="protected" virt="virtual"><scope>touchgfx::PainterBW</scope><name>renderNext</name></member>
+      <member refid="classtouchgfx_1_1_painter_b_w_1a470d590a3be3d71093546fd6a74336b9" prot="public" virt="non-virtual"><scope>touchgfx::PainterBW</scope><name>setColor</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_1a5d2eaea5211939c699e009b61e4372af" prot="public" virt="non-virtual"><scope>touchgfx::PainterBW</scope><name>setOffset</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_1a03f9d48d2592bf9ef9644992ae82e545" prot="protected" virt="non-virtual"><scope>touchgfx::PainterBW</scope><name>setWidgetAlpha</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_1ac77f8cef6ca6a25c3fa9e7f6fb1274cb" prot="protected" virt="non-virtual"><scope>touchgfx::PainterBW</scope><name>widgetAlpha</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_1a212a3772cf31ed3710dca0baea1ae436" prot="public" virt="virtual"><scope>touchgfx::PainterBW</scope><name>~AbstractPainter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

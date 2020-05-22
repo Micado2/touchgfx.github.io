@@ -1,0 +1,423 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_scalable_image" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::ScalableImage</compoundname>
+    <basecompoundref refid="classtouchgfx_1_1_widget" prot="public" virt="non-virtual">Widget</basecompoundref>
+    <includes local="no">ScalableImage.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classtouchgfx_1_1_scalable_image_1a1397613edd6bbf60ba96b2db6d2aba8a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ScalingAlgorithm</name>
+        <enumvalue id="classtouchgfx_1_1_scalable_image_1a1397613edd6bbf60ba96b2db6d2aba8aa3b787f423a63d2c7ff7de527946806c7" prot="public">
+          <name>NEAREST_NEIGHBOR</name>
+          <briefdescription>
+<para>Fast but not a very good image quality. Good for fast animations. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtouchgfx_1_1_scalable_image_1a1397613edd6bbf60ba96b2db6d2aba8aa77696f7072bd3d1b5661146f6a839a1e" prot="public">
+          <name>BILINEAR_INTERPOLATION</name>
+          <briefdescription>
+<para>Slower but better image quality. Good for static representation of a scaled image. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Rendering algorithm to use when scaling the bitmap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Nearest neighbor simply finds the closest pixel in the source bitmap. Bilinear interpolation averages 4 pixels to find a much better pixel representation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/ScalableImage.hpp" line="31" column="1" bodyfile="touchgfx/widgets/ScalableImage.hpp" bodystart="30" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_scalable_image_1acf5bb76caa419c0fa231dbd66c881084" prot="protected" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t alpha</definition>
+        <argsstring></argsstring>
+        <name>alpha</name>
+        <briefdescription>
+<para>An alpha value that is applied to the entire image. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/ScalableImage.hpp" line="104" column="1" bodyfile="touchgfx/widgets/ScalableImage.hpp" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_scalable_image_1ab90f53fbe007c65f80d83ece2352f49a" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref></type>
+        <definition>Bitmap bitmap</definition>
+        <argsstring></argsstring>
+        <name>bitmap</name>
+        <briefdescription>
+<para>The bitmap to scale and display. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/ScalableImage.hpp" line="103" column="1" bodyfile="touchgfx/widgets/ScalableImage.hpp" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_scalable_image_1acada6c883d160b373d38735e165dba89" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_scalable_image_1a1397613edd6bbf60ba96b2db6d2aba8a" kindref="member">ScalingAlgorithm</ref></type>
+        <definition>ScalingAlgorithm currentScalingAlgorithm</definition>
+        <argsstring></argsstring>
+        <name>currentScalingAlgorithm</name>
+        <briefdescription>
+<para>The current scaling algorithm. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/ScalableImage.hpp" line="102" column="1" bodyfile="touchgfx/widgets/ScalableImage.hpp" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_scalable_image_1a1277d4bddd51dbc604de265fb70ccbfd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void draw</definition>
+        <argsstring>(const Rect &amp;invalidatedArea) const</argsstring>
+        <name>draw</name>
+        <reimplements refid="classtouchgfx_1_1_drawable_1a7e4c58d8817f4119459b70ec52c38ef4">draw</reimplements>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>invalidatedArea</declname>
+        </param>
+        <briefdescription>
+<para>Draw this drawable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It is a requirement that the draw implementation does not draw outside the region specified by invalidatedArea.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>invalidatedArea</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sub-region of this drawable that needs to be redrawn, expressed in coordinates relative to its parent (e.g. for a complete redraw, invalidatedArea will be (0, 0, width, height). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/ScalableImage.hpp" line="97" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_scalable_image_1a48b27ff9c2eafcd202482b45abc86ff7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>uint8_t</type>
+        <definition>virtual uint8_t getAlpha</definition>
+        <argsstring>() const</argsstring>
+        <name>getAlpha</name>
+        <briefdescription>
+<para>Gets the current alpha value of the widget. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The alpha value is in range 255 (solid) to 0 (invisible).</para>
+<para><simplesect kind="return"><para>The current alpha value.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_scalable_image_1a89b6c75ec0c8d536fb61b146eb420b4e" kindref="member">setAlpha</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/ScalableImage.hpp" line="73" column="1" bodyfile="touchgfx/widgets/ScalableImage.hpp" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_scalable_image_1a9a733cf76e2cdfe30f54f9d031f1e9a0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref></type>
+        <definition>Bitmap getBitmap</definition>
+        <argsstring>() const</argsstring>
+        <name>getBitmap</name>
+        <briefdescription>
+<para>Gets the <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> currently being used by the ScaleableImage widget. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> of the widget.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_scalable_image_1a82000e29a2d9966dc76404b954233b0e" kindref="member">setBitmap</ref></para>
+</simplesect>
+<simplesect kind="note"><para>The returned bitmap is the original, unscaled, bitmap. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/ScalableImage.hpp" line="57" column="1" bodyfile="touchgfx/widgets/ScalableImage.hpp" bodystart="57" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_scalable_image_1a7044ca63c77de1c9d8bd619ead09213a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classtouchgfx_1_1_scalable_image_1a1397613edd6bbf60ba96b2db6d2aba8a" kindref="member">ScalingAlgorithm</ref></type>
+        <definition>virtual ScalingAlgorithm getScalingAlgorithm</definition>
+        <argsstring>()</argsstring>
+        <name>getScalingAlgorithm</name>
+        <briefdescription>
+<para>Gets the algorithm used when rendering. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The algorithm used when rendering.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_scalable_image_1a1397613edd6bbf60ba96b2db6d2aba8a" kindref="member">ScalingAlgorithm</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/ScalableImage.hpp" line="95" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_scalable_image_1a4dcdd780e93cc783a2ceeda00c6f3b51" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref></type>
+        <definition>virtual Rect getSolidRect</definition>
+        <argsstring>() const</argsstring>
+        <name>getSolidRect</name>
+        <reimplements refid="classtouchgfx_1_1_drawable_1ae7cd27bb574d3b85bd0ce5ce99e555ba">getSolidRect</reimplements>
+        <briefdescription>
+<para>Get (the largest possible) rectangle that is guaranteed to be solid (opaque). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This information is important, as any <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> underneath the solid area does not need to be drawn.</para>
+<para><simplesect kind="return"><para>The solid rectangle part of the <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref>.</para>
+</simplesect>
+<simplesect kind="note"><para>The rectangle returned must be relative to upper left corner of the <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref>, meaning that a completely solid widget should return the full size <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref>(0, 0, <ref refid="classtouchgfx_1_1_drawable_1acae58162aaca6fc174416550f76668e7" kindref="member">getWidth()</ref>, <ref refid="classtouchgfx_1_1_drawable_1ad00483821e06fe4d0d70222de4135d30" kindref="member">getHeight()</ref>). If no area can be guaranteed to be solid, an empty Rect(0, 0, 0, 0) must be returned. Failing to return the correct rectangle may result in errors on the display. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/ScalableImage.hpp" line="99" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_scalable_image_1a62f2a08aa9ada28a8bd34ec78e04256b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ScalableImage</definition>
+        <argsstring>()</argsstring>
+        <name>ScalableImage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/ScalableImage.hpp" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_scalable_image_1a89b6c75ec0c8d536fb61b146eb420b4e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setAlpha</definition>
+        <argsstring>(uint8_t newAlpha)</argsstring>
+        <name>setAlpha</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>newAlpha</declname>
+        </param>
+        <briefdescription>
+<para>Sets the opacity (alpha value). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This can be used to fade it away by gradually decreasing the alpha value from 255 (solid) to 0 (invisible).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newAlpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new alpha value. 255=solid, 0=invisible.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_scalable_image_1a48b27ff9c2eafcd202482b45abc86ff7" kindref="member">getAlpha</ref></para>
+</simplesect>
+<simplesect kind="note"><para>The user code must call <ref refid="classtouchgfx_1_1_drawable_1a2800b4c18c63e9e7b1f85a74ce6b80c3" kindref="member">invalidate()</ref> in order to update the display. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/ScalableImage.hpp" line="65" column="1" bodyfile="touchgfx/widgets/ScalableImage.hpp" bodystart="65" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_scalable_image_1a82000e29a2d9966dc76404b954233b0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setBitmap</definition>
+        <argsstring>(const Bitmap &amp;bmp)</argsstring>
+        <name>setBitmap</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> &amp;</type>
+          <declname>bmp</declname>
+        </param>
+        <briefdescription>
+<para>Sets the bitmap for this <ref refid="classtouchgfx_1_1_image" kindref="compound">Image</ref> and updates the width and height of this widget to match those of the <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bmp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bitmap instance.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The user code must call <ref refid="classtouchgfx_1_1_drawable_1a2800b4c18c63e9e7b1f85a74ce6b80c3" kindref="member">invalidate()</ref> in order to update the image on the display. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/ScalableImage.hpp" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_scalable_image_1a6bd7a80e49d3496a48fca3fcac87e4ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setScalingAlgorithm</definition>
+        <argsstring>(ScalingAlgorithm algorithm)</argsstring>
+        <name>setScalingAlgorithm</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_scalable_image_1a1397613edd6bbf60ba96b2db6d2aba8a" kindref="member">ScalingAlgorithm</ref></type>
+          <declname>algorithm</declname>
+        </param>
+        <briefdescription>
+<para>Sets the algorithm to be used. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>In short, there is currently a value for fast (nearest neighbor) and a value for slow (bilinear interpolation).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>algorithm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The algorithm to use when rendering.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_scalable_image_1a1397613edd6bbf60ba96b2db6d2aba8a" kindref="member">ScalingAlgorithm</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/ScalableImage.hpp" line="86" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classtouchgfx_1_1_widget" kindref="compound">Widget</ref> for representing a scaled version of a bitmap. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Simply change the width/height of the widget to resize the image. The quality of the scaled image depends of the rendering algorithm used. The rendering algorithm can be changed dynamically. Please note that scaling images is done at runtime and may require a lot of calculations.</para>
+<para><simplesect kind="note"><para>Note that this widget does not support 1 bit per pixel color depth. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1354">
+        <label>Widget</label>
+        <link refid="classtouchgfx_1_1_widget"/>
+        <childnode refid="1355" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1355">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+      </node>
+      <node id="1353">
+        <label>ScalableImage</label>
+        <link refid="classtouchgfx_1_1_scalable_image"/>
+        <childnode refid="1354" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1357">
+        <label>Widget</label>
+        <link refid="classtouchgfx_1_1_widget"/>
+        <childnode refid="1358" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1359">
+        <label>Rect</label>
+        <link refid="classtouchgfx_1_1_rect"/>
+      </node>
+      <node id="1358">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+        <childnode refid="1359" relation="usage">
+          <edgelabel>rect</edgelabel>
+        </childnode>
+        <childnode refid="1358" relation="usage">
+          <edgelabel>nextSibling</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="1360">
+        <label>Bitmap</label>
+        <link refid="classtouchgfx_1_1_bitmap"/>
+      </node>
+      <node id="1356">
+        <label>ScalableImage</label>
+        <link refid="classtouchgfx_1_1_scalable_image"/>
+        <childnode refid="1357" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1360" relation="usage">
+          <edgelabel>bitmap</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/widgets/ScalableImage.hpp" line="23" column="1" bodyfile="touchgfx/widgets/ScalableImage.hpp" bodystart="22" bodyend="131"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_scalable_image_1acf5bb76caa419c0fa231dbd66c881084" prot="protected" virt="non-virtual"><scope>touchgfx::ScalableImage</scope><name>alpha</name></member>
+      <member refid="classtouchgfx_1_1_scalable_image_1a1397613edd6bbf60ba96b2db6d2aba8aa77696f7072bd3d1b5661146f6a839a1e" prot="public" virt="non-virtual"><scope>touchgfx::ScalableImage</scope><name>BILINEAR_INTERPOLATION</name></member>
+      <member refid="classtouchgfx_1_1_scalable_image_1ab90f53fbe007c65f80d83ece2352f49a" prot="protected" virt="non-virtual"><scope>touchgfx::ScalableImage</scope><name>bitmap</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae2d939b2a9c253f0fb3bae3ec7be4e2f" prot="public" virt="virtual"><scope>touchgfx::ScalableImage</scope><name>childGeometryChanged</name></member>
+      <member refid="classtouchgfx_1_1_scalable_image_1acada6c883d160b373d38735e165dba89" prot="protected" virt="non-virtual"><scope>touchgfx::ScalableImage</scope><name>currentScalingAlgorithm</name></member>
+      <member refid="classtouchgfx_1_1_scalable_image_1a1277d4bddd51dbc604de265fb70ccbfd" prot="public" virt="virtual"><scope>touchgfx::ScalableImage</scope><name>draw</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9cf3a85fa7554475fa42c97985bda6df" prot="public" virt="non-virtual"><scope>touchgfx::ScalableImage</scope><name>Drawable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4a009ec2b654351679a0124e9055abdc" prot="public" virt="non-virtual"><scope>touchgfx::ScalableImage</scope><name>drawToDynamicBitmap</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa7737d9d49d7f55ec9bde8f2c9751b1d" prot="public" virt="non-virtual"><scope>touchgfx::ScalableImage</scope><name>getAbsoluteRect</name></member>
+      <member refid="classtouchgfx_1_1_scalable_image_1a48b27ff9c2eafcd202482b45abc86ff7" prot="public" virt="virtual"><scope>touchgfx::ScalableImage</scope><name>getAlpha</name></member>
+      <member refid="classtouchgfx_1_1_scalable_image_1a9a733cf76e2cdfe30f54f9d031f1e9a0" prot="public" virt="non-virtual"><scope>touchgfx::ScalableImage</scope><name>getBitmap</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ad00483821e06fe4d0d70222de4135d30" prot="public" virt="non-virtual"><scope>touchgfx::ScalableImage</scope><name>getHeight</name></member>
+      <member refid="classtouchgfx_1_1_widget_1a6bc8e89dc7f879221e9862fb27dc726f" prot="public" virt="virtual"><scope>touchgfx::ScalableImage</scope><name>getLastChild</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a61c9b2bf703c49a6d238d354ddcaedb3" prot="public" virt="non-virtual"><scope>touchgfx::ScalableImage</scope><name>getNextSibling</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a013e065d4d9a10dbfa0ddee9a35582a3" prot="public" virt="non-virtual"><scope>touchgfx::ScalableImage</scope><name>getParent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af23a5bb7d473e16363a449c497586be3" prot="public" virt="non-virtual"><scope>touchgfx::ScalableImage</scope><name>getRect</name></member>
+      <member refid="classtouchgfx_1_1_scalable_image_1a7044ca63c77de1c9d8bd619ead09213a" prot="public" virt="virtual"><scope>touchgfx::ScalableImage</scope><name>getScalingAlgorithm</name></member>
+      <member refid="classtouchgfx_1_1_scalable_image_1a4dcdd780e93cc783a2ceeda00c6f3b51" prot="public" virt="virtual"><scope>touchgfx::ScalableImage</scope><name>getSolidRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4783dfe657ff1b7a33261bda8c4b4266" prot="public" virt="virtual"><scope>touchgfx::ScalableImage</scope><name>getSolidRectAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a83b8847f583b63e60aa4bf778261ddd7" prot="public" virt="virtual"><scope>touchgfx::ScalableImage</scope><name>getVisibleRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1acae58162aaca6fc174416550f76668e7" prot="public" virt="non-virtual"><scope>touchgfx::ScalableImage</scope><name>getWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac071e9b7ccf37179df7d29c6778b664c" prot="public" virt="non-virtual"><scope>touchgfx::ScalableImage</scope><name>getX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a26752e6cff4607d0eec8768ef6d9032a" prot="public" virt="non-virtual"><scope>touchgfx::ScalableImage</scope><name>getY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a7f1524b90bc90e5f6cf7ee47aae12123" prot="public" virt="virtual"><scope>touchgfx::ScalableImage</scope><name>handleClickEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a06ae1946b2124cc94e26cfe18728debf" prot="public" virt="virtual"><scope>touchgfx::ScalableImage</scope><name>handleDragEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4db4945ecbc2303bf860e082409b8029" prot="public" virt="virtual"><scope>touchgfx::ScalableImage</scope><name>handleGestureEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1af635cee0f186c3d0fcea60bac14355" prot="public" virt="virtual"><scope>touchgfx::ScalableImage</scope><name>handleTickEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2800b4c18c63e9e7b1f85a74ce6b80c3" prot="public" virt="virtual"><scope>touchgfx::ScalableImage</scope><name>invalidate</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a130cf6e1bf2b9f04f48e659758fa75e2" prot="public" virt="virtual"><scope>touchgfx::ScalableImage</scope><name>invalidateRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a01c717b9abc98d48673b79d691c2d28a" prot="public" virt="non-virtual"><scope>touchgfx::ScalableImage</scope><name>isTouchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9d8a6cfb13917785c143e74d40e4e2be" prot="public" virt="non-virtual"><scope>touchgfx::ScalableImage</scope><name>isVisible</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af3590480070e2cf91580976f322d2c5e" prot="public" virt="virtual"><scope>touchgfx::ScalableImage</scope><name>moveRelative</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aadc5abfad4d2fcc331cf8de8713dc00e" prot="public" virt="virtual"><scope>touchgfx::ScalableImage</scope><name>moveTo</name></member>
+      <member refid="classtouchgfx_1_1_scalable_image_1a1397613edd6bbf60ba96b2db6d2aba8aa3b787f423a63d2c7ff7de527946806c7" prot="public" virt="non-virtual"><scope>touchgfx::ScalableImage</scope><name>NEAREST_NEIGHBOR</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0da4a00c3fbdea5740e52c7e04316c65" prot="protected" virt="non-virtual"><scope>touchgfx::ScalableImage</scope><name>nextSibling</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ab77c13cde2b01107dcbc5c2b584d422f" prot="protected" virt="non-virtual"><scope>touchgfx::ScalableImage</scope><name>parent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2a955ddc316d002f566598f340eb2af9" prot="protected" virt="non-virtual"><scope>touchgfx::ScalableImage</scope><name>rect</name></member>
+      <member refid="classtouchgfx_1_1_scalable_image_1a62f2a08aa9ada28a8bd34ec78e04256b" prot="public" virt="non-virtual"><scope>touchgfx::ScalableImage</scope><name>ScalableImage</name></member>
+      <member refid="classtouchgfx_1_1_scalable_image_1a1397613edd6bbf60ba96b2db6d2aba8a" prot="public" virt="non-virtual"><scope>touchgfx::ScalableImage</scope><name>ScalingAlgorithm</name></member>
+      <member refid="classtouchgfx_1_1_scalable_image_1a89b6c75ec0c8d536fb61b146eb420b4e" prot="public" virt="virtual"><scope>touchgfx::ScalableImage</scope><name>setAlpha</name></member>
+      <member refid="classtouchgfx_1_1_scalable_image_1a82000e29a2d9966dc76404b954233b0e" prot="public" virt="virtual"><scope>touchgfx::ScalableImage</scope><name>setBitmap</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a47a6312407603de99247bb802dbd8a48" prot="public" virt="virtual"><scope>touchgfx::ScalableImage</scope><name>setHeight</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac218c371450d8ad2bed3e1b07965a41a" prot="public" virt="virtual"><scope>touchgfx::ScalableImage</scope><name>setPosition</name></member>
+      <member refid="classtouchgfx_1_1_scalable_image_1a6bd7a80e49d3496a48fca3fcac87e4ae" prot="public" virt="virtual"><scope>touchgfx::ScalableImage</scope><name>setScalingAlgorithm</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae4c38eadb852b153850ea7ded1f50a19" prot="public" virt="non-virtual"><scope>touchgfx::ScalableImage</scope><name>setTouchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a71639c6634c5dcf6d1bb21b8b1b61f5b" prot="public" virt="non-virtual"><scope>touchgfx::ScalableImage</scope><name>setVisible</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae74a37f71d23440fc8b0466ad8ecfe4b" prot="public" virt="virtual"><scope>touchgfx::ScalableImage</scope><name>setWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9f6db7f34a74e991fc446fffb5703a53" prot="public" virt="virtual"><scope>touchgfx::ScalableImage</scope><name>setX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6c86659dc1e7355c207e9c0aa18af167" prot="public" virt="virtual"><scope>touchgfx::ScalableImage</scope><name>setXY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1b08d48e7e23a046f09e63089bc82bc1" prot="public" virt="virtual"><scope>touchgfx::ScalableImage</scope><name>setY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0d014de134cb9b9c1c361fcd726a5f34" prot="protected" virt="non-virtual"><scope>touchgfx::ScalableImage</scope><name>touchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a48c1d14ac943dbfa4935ea39db950608" prot="public" virt="virtual"><scope>touchgfx::ScalableImage</scope><name>translateRectToAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa54a57ae048476d840caf6d4d2c47aa3" prot="protected" virt="non-virtual"><scope>touchgfx::ScalableImage</scope><name>visible</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6bb040a11ffc2bd641283cc0bc0d1346" prot="public" virt="virtual"><scope>touchgfx::ScalableImage</scope><name>~Drawable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

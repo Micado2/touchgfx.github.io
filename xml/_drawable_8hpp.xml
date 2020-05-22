@@ -1,0 +1,263 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="_drawable_8hpp" kind="file" language="C++">
+    <compoundname>Drawable.hpp</compoundname>
+    <includes refid="_application_8hpp" local="no">touchgfx/Application.hpp</includes>
+    <includes refid="_callback_8hpp" local="no">touchgfx/Callback.hpp</includes>
+    <includes refid="_utils_8hpp" local="no">touchgfx/Utils.hpp</includes>
+    <includes refid="_click_event_8hpp" local="no">touchgfx/events/ClickEvent.hpp</includes>
+    <includes refid="_drag_event_8hpp" local="no">touchgfx/events/DragEvent.hpp</includes>
+    <includes refid="_gesture_event_8hpp" local="no">touchgfx/events/GestureEvent.hpp</includes>
+    <includes refid="_types_8hpp" local="no">touchgfx/hal/Types.hpp</includes>
+    <includedby refid="_container_8hpp" local="no">touchgfx/containers/Container.hpp</includedby>
+    <includedby refid="_h_a_l_8hpp" local="no">touchgfx/hal/HAL.hpp</includedby>
+    <includedby refid="_j_s_m_o_c_helper_8hpp" local="no">touchgfx/JSMOCHelper.hpp</includedby>
+    <includedby refid="_pre_renderable_8hpp" local="no">touchgfx/mixins/PreRenderable.hpp</includedby>
+    <includedby refid="_snapper_8hpp" local="no">touchgfx/mixins/Snapper.hpp</includedby>
+    <includedby refid="_widget_8hpp" local="no">touchgfx/widgets/Widget.hpp</includedby>
+    <innerclass refid="classtouchgfx_1_1_drawable" prot="public">touchgfx::Drawable</innerclass>
+    <innernamespace refid="namespacetouchgfx">touchgfx</innernamespace>
+    <briefdescription>
+<para>Declares the <ref refid="classtouchgfx_1_1_drawable" kindref="compound">touchgfx::Drawable</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>DRAWABLE_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DRAWABLE_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;touchgfx/Application.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;touchgfx/Callback.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;touchgfx/Utils.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;touchgfx/events/ClickEvent.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;touchgfx/events/DragEvent.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;touchgfx/events/GestureEvent.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;touchgfx/hal/Types.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetouchgfx" kindref="compound">touchgfx</ref></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34" refid="classtouchgfx_1_1_drawable" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_drawable_1a9cf3a85fa7554475fa42c97985bda6df" kindref="member">Drawable</ref>()</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classtouchgfx_1_1_drawable_1a2a955ddc316d002f566598f340eb2af9" kindref="member">rect</ref>(0,<sp/>0,<sp/>0,<sp/>0),</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_drawable_1ab77c13cde2b01107dcbc5c2b584d422f" kindref="member">parent</ref>(0),</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_drawable_1a0da4a00c3fbdea5740e52c7e04316c65" kindref="member">nextSibling</ref>(0),</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nextDrawChainElement(0),</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_drawable_1a0d014de134cb9b9c1c361fcd726a5f34" kindref="member">touchable</ref>(</highlight><highlight class="keyword">false</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_drawable_1aa54a57ae048476d840caf6d4d2c47aa3" kindref="member">visible</ref>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_1a6bb040a11ffc2bd641283cc0bc0d1346" kindref="member">~Drawable</ref>()</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_1a7e4c58d8817f4119459b70ec52c38ef4" kindref="member">draw</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref>&amp;<sp/>invalidatedArea)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref><sp/><ref refid="classtouchgfx_1_1_drawable_1ae7cd27bb574d3b85bd0ce5ce99e555ba" kindref="member">getSolidRect</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_1a130cf6e1bf2b9f04f48e659758fa75e2" kindref="member">invalidateRect</ref>(<ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref>&amp;<sp/>invalidatedArea)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_1a2800b4c18c63e9e7b1f85a74ce6b80c3" kindref="member">invalidate</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref>*<sp/><ref refid="classtouchgfx_1_1_drawable_1a61c9b2bf703c49a6d238d354ddcaedb3" kindref="member">getNextSibling</ref>()</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_1a0da4a00c3fbdea5740e52c7e04316c65" kindref="member">nextSibling</ref>;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref><sp/><ref refid="classtouchgfx_1_1_drawable_1a4783dfe657ff1b7a33261bda8c4b4266" kindref="member">getSolidRectAbsolute</ref>();</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_1a3266cb1860f0b267b67dd85685e720b0" kindref="member">getLastChild</ref>(int16_t<sp/>x,<sp/>int16_t<sp/>y,<sp/><ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref>**<sp/>last)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_1a83b8847f583b63e60aa4bf778261ddd7" kindref="member">getVisibleRect</ref>(<ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref>&amp;<sp/><ref refid="classtouchgfx_1_1_drawable_1a2a955ddc316d002f566598f340eb2af9" kindref="member">rect</ref>)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref>&amp;<sp/><ref refid="classtouchgfx_1_1_drawable_1af23a5bb7d473e16363a449c497586be3" kindref="member">getRect</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="160"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_1a2a955ddc316d002f566598f340eb2af9" kindref="member">rect</ref>;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref><sp/><ref refid="classtouchgfx_1_1_drawable_1aa7737d9d49d7f55ec9bde8f2c9751b1d" kindref="member">getAbsoluteRect</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_1a48c1d14ac943dbfa4935ea39db950608" kindref="member">translateRectToAbsolute</ref>(<ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref>&amp;<sp/>r)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_1ac218c371450d8ad2bed3e1b07965a41a" kindref="member">setPosition</ref>(int16_t<sp/>x,<sp/>int16_t<sp/>y,<sp/>int16_t<sp/>width,<sp/>int16_t<sp/>height)</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_drawable_1a6c86659dc1e7355c207e9c0aa18af167" kindref="member">setXY</ref>(x,<sp/>y);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_drawable_1ae74a37f71d23440fc8b0466ad8ecfe4b" kindref="member">setWidth</ref>(width);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_drawable_1a47a6312407603de99247bb802dbd8a48" kindref="member">setHeight</ref>(height);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="classtouchgfx_1_1_drawable_1ac071e9b7ccf37179df7d29c6778b664c" kindref="member">getX</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="205"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_1a2a955ddc316d002f566598f340eb2af9" kindref="member">rect</ref>.<ref refid="classtouchgfx_1_1_rect_1ae1c2d516777e6b42af0d281c9ecc7375" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="classtouchgfx_1_1_drawable_1a26752e6cff4607d0eec8768ef6d9032a" kindref="member">getY</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="215"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_1a2a955ddc316d002f566598f340eb2af9" kindref="member">rect</ref>.<ref refid="classtouchgfx_1_1_rect_1af77b1a54442f2443cf64a4766f916bcd" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="classtouchgfx_1_1_drawable_1acae58162aaca6fc174416550f76668e7" kindref="member">getWidth</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="225"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_1a2a955ddc316d002f566598f340eb2af9" kindref="member">rect</ref>.<ref refid="classtouchgfx_1_1_rect_1ae0ffb42440f0305b6d22a1c6106b6e6f" kindref="member">width</ref>;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="classtouchgfx_1_1_drawable_1ad00483821e06fe4d0d70222de4135d30" kindref="member">getHeight</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="235"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_1a2a955ddc316d002f566598f340eb2af9" kindref="member">rect</ref>.<ref refid="classtouchgfx_1_1_rect_1a777dd66f9609a587ee98ad50de301662" kindref="member">height</ref>;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_1a9f6db7f34a74e991fc446fffb5703a53" kindref="member">setX</ref>(int16_t<sp/>x)</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_drawable_1a2a955ddc316d002f566598f340eb2af9" kindref="member">rect</ref>.<ref refid="classtouchgfx_1_1_rect_1ae1c2d516777e6b42af0d281c9ecc7375" kindref="member">x</ref><sp/>=<sp/>x;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_1a1b08d48e7e23a046f09e63089bc82bc1" kindref="member">setY</ref>(int16_t<sp/>y)</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_drawable_1a2a955ddc316d002f566598f340eb2af9" kindref="member">rect</ref>.<ref refid="classtouchgfx_1_1_rect_1af77b1a54442f2443cf64a4766f916bcd" kindref="member">y</ref><sp/>=<sp/>y;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_1a6c86659dc1e7355c207e9c0aa18af167" kindref="member">setXY</ref>(int16_t<sp/>x,<sp/>int16_t<sp/>y)</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_drawable_1a9f6db7f34a74e991fc446fffb5703a53" kindref="member">setX</ref>(x);</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_drawable_1a1b08d48e7e23a046f09e63089bc82bc1" kindref="member">setY</ref>(y);</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_1ae74a37f71d23440fc8b0466ad8ecfe4b" kindref="member">setWidth</ref>(int16_t<sp/>width)</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_drawable_1a2a955ddc316d002f566598f340eb2af9" kindref="member">rect</ref>.<ref refid="classtouchgfx_1_1_rect_1ae0ffb42440f0305b6d22a1c6106b6e6f" kindref="member">width</ref><sp/>=<sp/>width;</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_1a47a6312407603de99247bb802dbd8a48" kindref="member">setHeight</ref>(int16_t<sp/>height)</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_drawable_1a2a955ddc316d002f566598f340eb2af9" kindref="member">rect</ref>.<ref refid="classtouchgfx_1_1_rect_1a777dd66f9609a587ee98ad50de301662" kindref="member">height</ref><sp/>=<sp/>height;</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_1ae2d939b2a9c253f0fb3bae3ec7be4e2f" kindref="member">childGeometryChanged</ref>()</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_1a7f1524b90bc90e5f6cf7ee47aae12123" kindref="member">handleClickEvent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_click_event" kindref="compound">ClickEvent</ref>&amp;<sp/>evt)</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_1a4db4945ecbc2303bf860e082409b8029" kindref="member">handleGestureEvent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_gesture_event" kindref="compound">GestureEvent</ref>&amp;<sp/>evt)</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_1a06ae1946b2124cc94e26cfe18728debf" kindref="member">handleDragEvent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drag_event" kindref="compound">DragEvent</ref>&amp;<sp/>evt)</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_1a1af635cee0f186c3d0fcea60bac14355" kindref="member">handleTickEvent</ref>()</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"></highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_1a71639c6634c5dcf6d1bb21b8b1b61f5b" kindref="member">setVisible</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>vis)</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_drawable_1aa54a57ae048476d840caf6d4d2c47aa3" kindref="member">visible</ref><sp/>=<sp/>vis;</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"></highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_1ae4c38eadb852b153850ea7ded1f50a19" kindref="member">setTouchable</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>touch)</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_drawable_1a0d014de134cb9b9c1c361fcd726a5f34" kindref="member">touchable</ref><sp/>=<sp/>touch;</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_1a9d8a6cfb13917785c143e74d40e4e2be" kindref="member">isVisible</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="386"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_1aa54a57ae048476d840caf6d4d2c47aa3" kindref="member">visible</ref>;</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"></highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_1a01c717b9abc98d48673b79d691c2d28a" kindref="member">isTouchable</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="398"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_1a0d014de134cb9b9c1c361fcd726a5f34" kindref="member">touchable</ref>;</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"></highlight></codeline>
+<codeline lineno="409"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref>*<sp/><ref refid="classtouchgfx_1_1_drawable_1a013e065d4d9a10dbfa0ddee9a35582a3" kindref="member">getParent</ref>()</highlight></codeline>
+<codeline lineno="410"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_1ab77c13cde2b01107dcbc5c2b584d422f" kindref="member">parent</ref>;</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"></highlight></codeline>
+<codeline lineno="424"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_1af3590480070e2cf91580976f322d2c5e" kindref="member">moveRelative</ref>(int16_t<sp/>x,<sp/>int16_t<sp/>y);</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"></highlight></codeline>
+<codeline lineno="436"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_1aadc5abfad4d2fcc331cf8de8713dc00e" kindref="member">moveTo</ref>(int16_t<sp/>x,<sp/>int16_t<sp/>y)</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_drawable_1af3590480070e2cf91580976f322d2c5e" kindref="member">moveRelative</ref>(x<sp/>-<sp/><ref refid="classtouchgfx_1_1_drawable_1a2a955ddc316d002f566598f340eb2af9" kindref="member">rect</ref>.<ref refid="classtouchgfx_1_1_rect_1ae1c2d516777e6b42af0d281c9ecc7375" kindref="member">x</ref>,<sp/>y<sp/>-<sp/><ref refid="classtouchgfx_1_1_drawable_1a2a955ddc316d002f566598f340eb2af9" kindref="member">rect</ref>.<ref refid="classtouchgfx_1_1_rect_1af77b1a54442f2443cf64a4766f916bcd" kindref="member">y</ref>);</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"></highlight></codeline>
+<codeline lineno="446"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_1a4a009ec2b654351679a0124e9055abdc" kindref="member">drawToDynamicBitmap</ref>(<ref refid="namespacetouchgfx_1a3923435f6df64396b2203d60ddfa89e4" kindref="member">BitmapId</ref><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"></highlight></codeline>
+<codeline lineno="448"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref><sp/><ref refid="classtouchgfx_1_1_drawable_1a2a955ddc316d002f566598f340eb2af9" kindref="member">rect</ref>;<sp/></highlight></codeline>
+<codeline lineno="450"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref><sp/>cachedVisibleRect;<sp/></highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref>*<sp/><ref refid="classtouchgfx_1_1_drawable_1ab77c13cde2b01107dcbc5c2b584d422f" kindref="member">parent</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="454"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref>*<sp/><ref refid="classtouchgfx_1_1_drawable_1a0da4a00c3fbdea5740e52c7e04316c65" kindref="member">nextSibling</ref>;<sp/></highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref>*<sp/>nextDrawChainElement;<sp/></highlight></codeline>
+<codeline lineno="457"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/>cachedAbsX;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/>cachedAbsY;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="459"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_1a0d014de134cb9b9c1c361fcd726a5f34" kindref="member">touchable</ref>;<sp/></highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_1aa54a57ae048476d840caf6d4d2c47aa3" kindref="member">visible</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="462"><highlight class="normal"></highlight></codeline>
+<codeline lineno="464"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int16_t<sp/>UNCACHED_INDICATOR<sp/>=<sp/>-1;<sp/></highlight></codeline>
+<codeline lineno="465"><highlight class="normal"></highlight></codeline>
+<codeline lineno="473"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>resetDrawChainCache()</highlight></codeline>
+<codeline lineno="474"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="475"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Resetting<sp/>the<sp/>cached<sp/>indicators</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="476"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cachedVisibleRect.<ref refid="classtouchgfx_1_1_rect_1ae1c2d516777e6b42af0d281c9ecc7375" kindref="member">x</ref><sp/>=<sp/>UNCACHED_INDICATOR;</highlight></codeline>
+<codeline lineno="477"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cachedAbsX<sp/>=<sp/>UNCACHED_INDICATOR;</highlight></codeline>
+<codeline lineno="478"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cachedAbsY<sp/>=<sp/>UNCACHED_INDICATOR;</highlight></codeline>
+<codeline lineno="479"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="480"><highlight class="normal"></highlight></codeline>
+<codeline lineno="490"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref>&amp;<sp/>getCachedVisibleRect()</highlight></codeline>
+<codeline lineno="491"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="492"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cachedVisibleRect.<ref refid="classtouchgfx_1_1_rect_1ae1c2d516777e6b42af0d281c9ecc7375" kindref="member">x</ref><sp/>==<sp/>UNCACHED_INDICATOR)</highlight></codeline>
+<codeline lineno="493"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="494"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref><sp/>visibleRect(0,<sp/>0,<sp/><ref refid="classtouchgfx_1_1_drawable_1acae58162aaca6fc174416550f76668e7" kindref="member">getWidth</ref>(),<sp/><ref refid="classtouchgfx_1_1_drawable_1ad00483821e06fe4d0d70222de4135d30" kindref="member">getHeight</ref>());</highlight></codeline>
+<codeline lineno="495"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_drawable_1a83b8847f583b63e60aa4bf778261ddd7" kindref="member">getVisibleRect</ref>(visibleRect);</highlight></codeline>
+<codeline lineno="496"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cachedVisibleRect<sp/>=<sp/>visibleRect;</highlight></codeline>
+<codeline lineno="497"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="498"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cachedVisibleRect;</highlight></codeline>
+<codeline lineno="499"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="500"><highlight class="normal"></highlight></codeline>
+<codeline lineno="510"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/>getCachedAbsX()</highlight></codeline>
+<codeline lineno="511"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="512"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cachedAbsX<sp/>==<sp/>UNCACHED_INDICATOR)</highlight></codeline>
+<codeline lineno="513"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="514"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref><sp/>absRect<sp/>=<sp/><ref refid="classtouchgfx_1_1_drawable_1aa7737d9d49d7f55ec9bde8f2c9751b1d" kindref="member">getAbsoluteRect</ref>();</highlight></codeline>
+<codeline lineno="515"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cachedAbsX<sp/>=<sp/>absRect.<ref refid="classtouchgfx_1_1_rect_1ae1c2d516777e6b42af0d281c9ecc7375" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="516"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cachedAbsY<sp/>=<sp/>absRect.<ref refid="classtouchgfx_1_1_rect_1af77b1a54442f2443cf64a4766f916bcd" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="517"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="518"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cachedAbsX;</highlight></codeline>
+<codeline lineno="519"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="520"><highlight class="normal"></highlight></codeline>
+<codeline lineno="530"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/>getCachedAbsY()</highlight></codeline>
+<codeline lineno="531"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="532"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cachedAbsY<sp/>==<sp/>UNCACHED_INDICATOR)</highlight></codeline>
+<codeline lineno="533"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="534"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref><sp/>absRect<sp/>=<sp/><ref refid="classtouchgfx_1_1_drawable_1aa7737d9d49d7f55ec9bde8f2c9751b1d" kindref="member">getAbsoluteRect</ref>();</highlight></codeline>
+<codeline lineno="535"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cachedAbsX<sp/>=<sp/>absRect.<ref refid="classtouchgfx_1_1_rect_1ae1c2d516777e6b42af0d281c9ecc7375" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="536"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cachedAbsY<sp/>=<sp/>absRect.<ref refid="classtouchgfx_1_1_rect_1af77b1a54442f2443cf64a4766f916bcd" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="537"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="538"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cachedAbsY;</highlight></codeline>
+<codeline lineno="539"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="540"><highlight class="normal"></highlight></codeline>
+<codeline lineno="551"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setupDrawChain(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref>&amp;<sp/>invalidatedArea,<sp/><ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref>**<sp/>nextPreviousElement)</highlight></codeline>
+<codeline lineno="552"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="553"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>resetDrawChainCache();</highlight></codeline>
+<codeline lineno="554"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nextDrawChainElement<sp/>=<sp/>*nextPreviousElement;</highlight></codeline>
+<codeline lineno="555"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*nextPreviousElement<sp/>=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="556"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="558"><highlight class="normal"></highlight></codeline>
+<codeline lineno="559"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtouchgfx_1_1_container" kindref="compound">Container</ref>;</highlight></codeline>
+<codeline lineno="560"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtouchgfx_1_1_screen" kindref="compound">Screen</ref>;</highlight></codeline>
+<codeline lineno="561"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="562"><highlight class="normal"></highlight></codeline>
+<codeline lineno="563"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>touchgfx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="564"><highlight class="normal"></highlight></codeline>
+<codeline lineno="565"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>DRAWABLE_HPP</highlight></codeline>
+    </programlisting>
+    <location file="touchgfx/Drawable.hpp"/>
+  </compounddef>
+</doxygen>

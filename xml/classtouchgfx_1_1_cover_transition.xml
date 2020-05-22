@@ -1,0 +1,345 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_cover_transition" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::CoverTransition</compoundname>
+    <basecompoundref refid="classtouchgfx_1_1_transition" prot="public" virt="non-virtual">Transition</basecompoundref>
+    <includes local="no">CoverTransition.hpp</includes>
+    <innerclass refid="classtouchgfx_1_1_cover_transition_1_1_full_solid_rect" prot="public">touchgfx::CoverTransition::FullSolidRect</innerclass>
+    <templateparamlist>
+      <param>
+        <type><ref refid="namespacetouchgfx_1a224b9163917ac32fc95a60d8c1eec3aa" kindref="member">Direction</ref></type>
+        <declname>templateDirection</declname>
+        <defname>templateDirection</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_cover_transition_1a5012e585088b0f60cd914b1d780c4e20" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t animationCounter</definition>
+        <argsstring></argsstring>
+        <name>animationCounter</name>
+        <briefdescription>
+<para>Current step in the transition animation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transitions/CoverTransition.hpp" line="248" column="1" bodyfile="touchgfx/transitions/CoverTransition.hpp" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_cover_transition_1a005a6d4c68b7ee403cd51b46f3333457" prot="private" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t animationSteps</definition>
+        <argsstring></argsstring>
+        <name>animationSteps</name>
+        <briefdescription>
+<para>Number of steps the transition should move per complete animation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transitions/CoverTransition.hpp" line="247" column="1" bodyfile="touchgfx/transitions/CoverTransition.hpp" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_cover_transition_1a5d671dd284112ffc3640ba1a4414bb38" prot="private" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t calculatedValue</definition>
+        <argsstring></argsstring>
+        <name>calculatedValue</name>
+        <briefdescription>
+<para>The calculated X or Y value to move the snapshot and the children. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transitions/CoverTransition.hpp" line="250" column="1" bodyfile="touchgfx/transitions/CoverTransition.hpp" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_cover_transition_1a53421c695d00016ab925777d423b4eb6" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacetouchgfx_1a224b9163917ac32fc95a60d8c1eec3aa" kindref="member">Direction</ref></type>
+        <definition>Direction direction</definition>
+        <argsstring></argsstring>
+        <name>direction</name>
+        <briefdescription>
+<para>The direction of the transition. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transitions/CoverTransition.hpp" line="246" column="1" bodyfile="touchgfx/transitions/CoverTransition.hpp" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_cover_transition_1a05e91208d12110e6b948c2e4f29445e3" prot="private" static="no" mutable="no">
+        <type><ref refid="structtouchgfx_1_1_callback" kindref="compound">Callback</ref>&lt; <ref refid="classtouchgfx_1_1_cover_transition" kindref="compound">CoverTransition</ref>, <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> &amp; &gt;</type>
+        <definition>Callback&lt;CoverTransition, Drawable&amp;&gt; handleTickCallback</definition>
+        <argsstring></argsstring>
+        <name>handleTickCallback</name>
+        <briefdescription>
+<para><ref refid="structtouchgfx_1_1_callback" kindref="compound">Callback</ref> used for <ref refid="classtouchgfx_1_1_cover_transition_1a83f41a8c9137475984f95aa3ab206d98" kindref="member">tickMoveDrawable()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transitions/CoverTransition.hpp" line="244" column="1" bodyfile="touchgfx/transitions/CoverTransition.hpp" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_cover_transition_1ad7945e19edb845a1d4ba7123d2d49509" prot="private" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t movedToPos</definition>
+        <argsstring></argsstring>
+        <name>movedToPos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transitions/CoverTransition.hpp" line="251" column="1" bodyfile="touchgfx/transitions/CoverTransition.hpp" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_cover_transition_1ab5cd99ec1a706ae2fa18c429f249cf25" prot="private" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_cover_transition_1_1_full_solid_rect" kindref="compound">FullSolidRect</ref></type>
+        <definition>FullSolidRect solid</definition>
+        <argsstring></argsstring>
+        <name>solid</name>
+        <briefdescription>
+<para>A solid rect that covers the entire screen to avoid copying elements outside. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transitions/CoverTransition.hpp" line="252" column="1" bodyfile="touchgfx/transitions/CoverTransition.hpp" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_cover_transition_1a77c5ebdb51f6d0560825b66d265647a1" prot="private" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t targetValue</definition>
+        <argsstring></argsstring>
+        <name>targetValue</name>
+        <briefdescription>
+<para>The target value for the transition animation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transitions/CoverTransition.hpp" line="249" column="1" bodyfile="touchgfx/transitions/CoverTransition.hpp" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_cover_transition_1a688383466d612838660d8d0f267dda4a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CoverTransition</definition>
+        <argsstring>(const uint8_t transitionSteps=20)</argsstring>
+        <name>CoverTransition</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>transitionSteps</declname>
+          <defval>20</defval>
+        </param>
+        <briefdescription>
+<para>Initializes a new instance of the <ref refid="classtouchgfx_1_1_cover_transition" kindref="compound">CoverTransition</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>transitionSteps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(Optional) Number of steps in the transition animation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transitions/CoverTransition.hpp" line="51" column="1" bodyfile="touchgfx/transitions/CoverTransition.hpp" bodystart="51" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_cover_transition_1a1af635cee0f186c3d0fcea60bac14355" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void handleTickEvent</definition>
+        <argsstring>()</argsstring>
+        <name>handleTickEvent</name>
+        <reimplements refid="classtouchgfx_1_1_transition_1a1af635cee0f186c3d0fcea60bac14355">handleTickEvent</reimplements>
+        <briefdescription>
+<para>Handles the tick event when transitioning. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It moves the contents of the <ref refid="classtouchgfx_1_1_screen" kindref="compound">Screen</ref>&apos;s container. The direction of the transition determines the direction the contents of the container moves. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transitions/CoverTransition.hpp" line="90" column="1" bodyfile="touchgfx/transitions/CoverTransition.hpp" bodystart="90" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_cover_transition_1a9339772ec5ac9fa929938109207f2863" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <reimplements refid="classtouchgfx_1_1_transition_1a9339772ec5ac9fa929938109207f2863">init</reimplements>
+        <briefdescription>
+<para>Initializes the transition. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called after the constructor is called, when the application changes the transition. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transitions/CoverTransition.hpp" line="182" column="1" bodyfile="touchgfx/transitions/CoverTransition.hpp" bodystart="182" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_cover_transition_1ae409c34c6767ff70d1e29a46fe41dfff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void tearDown</definition>
+        <argsstring>()</argsstring>
+        <name>tearDown</name>
+        <reimplements refid="classtouchgfx_1_1_transition_1ae409c34c6767ff70d1e29a46fe41dfff">tearDown</reimplements>
+        <briefdescription>
+<para>Tears down the Animation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Called before the destructor is called, when the application changes the transition. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transitions/CoverTransition.hpp" line="177" column="1" bodyfile="touchgfx/transitions/CoverTransition.hpp" bodystart="177" bodyend="180"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_cover_transition_1a0380f1063e516b12096062d44521a22f" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void initMoveDrawable</definition>
+        <argsstring>(Drawable &amp;d)</argsstring>
+        <name>initMoveDrawable</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> &amp;</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Moves the <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> to its initial position just outside of the visible area of the display. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> to move. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transitions/CoverTransition.hpp" line="197" column="1" bodyfile="touchgfx/transitions/CoverTransition.hpp" bodystart="197" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_cover_transition_1a83f41a8c9137475984f95aa3ab206d98" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void tickMoveDrawable</definition>
+        <argsstring>(Drawable &amp;d)</argsstring>
+        <name>tickMoveDrawable</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> &amp;</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Moves the <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> to the new position as calculated in <ref refid="classtouchgfx_1_1_cover_transition_1a1af635cee0f186c3d0fcea60bac14355" kindref="member">handleTickEvent()</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> to move. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/transitions/CoverTransition.hpp" line="224" column="1" bodyfile="touchgfx/transitions/CoverTransition.hpp" bodystart="224" bodyend="241"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A <ref refid="classtouchgfx_1_1_transition" kindref="compound">Transition</ref> that slides the new screen over the previous <emphasis>from</emphasis> the given direction. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="482">
+        <label>Transition</label>
+        <link refid="classtouchgfx_1_1_transition"/>
+      </node>
+      <node id="481">
+        <label>CoverTransition&lt; templateDirection &gt;</label>
+        <link refid="classtouchgfx_1_1_cover_transition"/>
+        <childnode refid="482" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="484">
+        <label>Transition</label>
+        <link refid="classtouchgfx_1_1_transition"/>
+        <childnode refid="485" relation="usage">
+          <edgelabel>screenContainer</edgelabel>
+        </childnode>
+      </node>
+      <node id="485">
+        <label>Container</label>
+        <link refid="classtouchgfx_1_1_container"/>
+        <childnode refid="486" relation="public-inheritance">
+        </childnode>
+        <childnode refid="486" relation="usage">
+          <edgelabel>firstChild</edgelabel>
+        </childnode>
+      </node>
+      <node id="487">
+        <label>Rect</label>
+        <link refid="classtouchgfx_1_1_rect"/>
+      </node>
+      <node id="483">
+        <label>CoverTransition&lt; templateDirection &gt;</label>
+        <link refid="classtouchgfx_1_1_cover_transition"/>
+        <childnode refid="484" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="486">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+        <childnode refid="487" relation="usage">
+          <edgelabel>rect</edgelabel>
+        </childnode>
+        <childnode refid="486" relation="usage">
+          <edgelabel>nextSibling</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/transitions/CoverTransition.hpp" line="26" column="1" bodyfile="touchgfx/transitions/CoverTransition.hpp" bodystart="25" bodyend="253"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_cover_transition_1a5012e585088b0f60cd914b1d780c4e20" prot="private" virt="non-virtual"><scope>touchgfx::CoverTransition</scope><name>animationCounter</name></member>
+      <member refid="classtouchgfx_1_1_cover_transition_1a005a6d4c68b7ee403cd51b46f3333457" prot="private" virt="non-virtual"><scope>touchgfx::CoverTransition</scope><name>animationSteps</name></member>
+      <member refid="classtouchgfx_1_1_cover_transition_1a5d671dd284112ffc3640ba1a4414bb38" prot="private" virt="non-virtual"><scope>touchgfx::CoverTransition</scope><name>calculatedValue</name></member>
+      <member refid="classtouchgfx_1_1_cover_transition_1a688383466d612838660d8d0f267dda4a" prot="public" virt="non-virtual"><scope>touchgfx::CoverTransition</scope><name>CoverTransition</name></member>
+      <member refid="classtouchgfx_1_1_cover_transition_1a53421c695d00016ab925777d423b4eb6" prot="private" virt="non-virtual"><scope>touchgfx::CoverTransition</scope><name>direction</name></member>
+      <member refid="classtouchgfx_1_1_transition_1a1d39aac66e12dae50a24cd7a9100ef33" prot="protected" virt="non-virtual"><scope>touchgfx::CoverTransition</scope><name>done</name></member>
+      <member refid="classtouchgfx_1_1_cover_transition_1a05e91208d12110e6b948c2e4f29445e3" prot="private" virt="non-virtual"><scope>touchgfx::CoverTransition</scope><name>handleTickCallback</name></member>
+      <member refid="classtouchgfx_1_1_cover_transition_1a1af635cee0f186c3d0fcea60bac14355" prot="public" virt="virtual"><scope>touchgfx::CoverTransition</scope><name>handleTickEvent</name></member>
+      <member refid="classtouchgfx_1_1_cover_transition_1a9339772ec5ac9fa929938109207f2863" prot="public" virt="virtual"><scope>touchgfx::CoverTransition</scope><name>init</name></member>
+      <member refid="classtouchgfx_1_1_cover_transition_1a0380f1063e516b12096062d44521a22f" prot="protected" virt="virtual"><scope>touchgfx::CoverTransition</scope><name>initMoveDrawable</name></member>
+      <member refid="classtouchgfx_1_1_transition_1a0fa3c9859f822fb382bf552628eb5ab6" prot="public" virt="non-virtual"><scope>touchgfx::CoverTransition</scope><name>isDone</name></member>
+      <member refid="classtouchgfx_1_1_cover_transition_1ad7945e19edb845a1d4ba7123d2d49509" prot="private" virt="non-virtual"><scope>touchgfx::CoverTransition</scope><name>movedToPos</name></member>
+      <member refid="classtouchgfx_1_1_transition_1a3e82472757e12af66d888eac45ca561c" prot="protected" virt="non-virtual"><scope>touchgfx::CoverTransition</scope><name>screenContainer</name></member>
+      <member refid="classtouchgfx_1_1_transition_1a71c8f06a828ab9b914af259996ff5ffe" prot="public" virt="virtual"><scope>touchgfx::CoverTransition</scope><name>setScreenContainer</name></member>
+      <member refid="classtouchgfx_1_1_cover_transition_1ab5cd99ec1a706ae2fa18c429f249cf25" prot="private" virt="non-virtual"><scope>touchgfx::CoverTransition</scope><name>solid</name></member>
+      <member refid="classtouchgfx_1_1_cover_transition_1a77c5ebdb51f6d0560825b66d265647a1" prot="private" virt="non-virtual"><scope>touchgfx::CoverTransition</scope><name>targetValue</name></member>
+      <member refid="classtouchgfx_1_1_cover_transition_1ae409c34c6767ff70d1e29a46fe41dfff" prot="public" virt="virtual"><scope>touchgfx::CoverTransition</scope><name>tearDown</name></member>
+      <member refid="classtouchgfx_1_1_cover_transition_1a83f41a8c9137475984f95aa3ab206d98" prot="protected" virt="virtual"><scope>touchgfx::CoverTransition</scope><name>tickMoveDrawable</name></member>
+      <member refid="classtouchgfx_1_1_transition_1a5cff3a67b77de17d053a190f241aa753" prot="public" virt="non-virtual"><scope>touchgfx::CoverTransition</scope><name>Transition</name></member>
+      <member refid="classtouchgfx_1_1_transition_1a30dcd531eb9e8a4735038bb2db58ae2a" prot="public" virt="virtual"><scope>touchgfx::CoverTransition</scope><name>~Transition</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

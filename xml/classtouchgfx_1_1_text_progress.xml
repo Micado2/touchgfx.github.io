@@ -1,0 +1,570 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_text_progress" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::TextProgress</compoundname>
+    <basecompoundref refid="classtouchgfx_1_1_abstract_progress_indicator" prot="public" virt="non-virtual">AbstractProgressIndicator</basecompoundref>
+    <includes local="no">TextProgress.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_text_progress_1a74b93e95b81a1195e21937d5f1e772c6" prot="protected" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t decimals</definition>
+        <argsstring></argsstring>
+        <name>decimals</name>
+        <briefdescription>
+<para>The number of decimals. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/TextProgress.hpp" line="118" column="1" bodyfile="touchgfx/containers/progress_indicators/TextProgress.hpp" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_text_progress_1a3880b8c95c5a3732e17176f36d952da2" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_text_area_with_one_wildcard" kindref="compound">TextAreaWithOneWildcard</ref></type>
+        <definition>TextAreaWithOneWildcard textArea</definition>
+        <argsstring></argsstring>
+        <name>textArea</name>
+        <briefdescription>
+<para>The text area. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/TextProgress.hpp" line="116" column="1" bodyfile="touchgfx/containers/progress_indicators/TextProgress.hpp" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_text_progress_1a521d249dc451e4b904c84073f27cf265" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref></type>
+        <definition>Unicode::UnicodeChar textBuffer[9]</definition>
+        <argsstring>[9]</argsstring>
+        <name>textBuffer</name>
+        <briefdescription>
+<para>Room for 100.0000. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/TextProgress.hpp" line="117" column="1" bodyfile="touchgfx/containers/progress_indicators/TextProgress.hpp" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_text_progress_1a48b27ff9c2eafcd202482b45abc86ff7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>uint8_t</type>
+        <definition>virtual uint8_t getAlpha</definition>
+        <argsstring>() const</argsstring>
+        <name>getAlpha</name>
+        <briefdescription>
+<para>Gets the alpha of the text area. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The alpha.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_text_progress_1a79e090d34b93e9d637d01bc9b5639681" kindref="member">setAlpha</ref>, <ref refid="classtouchgfx_1_1_text_area_1a302926ead4ee8a161627575d2666a7f2" kindref="member">TextArea::getAlpha</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/TextProgress.hpp" line="88" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_text_progress_1a4d7ad8bff36afdfc11d37de65cfc1d90" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+        <definition>virtual colortype getColor</definition>
+        <argsstring>() const</argsstring>
+        <name>getColor</name>
+        <briefdescription>
+<para>Gets the color of the text in the used text area. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The color. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/TextProgress.hpp" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_text_progress_1aff00c3ee26976bd884fc735d5a879d2e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>uint16_t</type>
+        <definition>virtual uint16_t getNumberOfDecimals</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumberOfDecimals</name>
+        <briefdescription>
+<para>Gets number of decimals. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The number of decimals.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_text_progress_1acb21ecdadf9563944f3154f912d3ac21" kindref="member">setNumberOfDecimals</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/TextProgress.hpp" line="113" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_text_progress_1a799562d268f9a031680d40b255371f91" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref></type>
+        <definition>virtual TypedText getTypedText</definition>
+        <argsstring>() const</argsstring>
+        <name>getTypedText</name>
+        <briefdescription>
+<para>Gets the typed text. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The typed text.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_text_progress_1a38821dd8c59d1bb0d49569762e20d89b" kindref="member">setTypedText</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/TextProgress.hpp" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_text_progress_1a79e090d34b93e9d637d01bc9b5639681" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setAlpha</definition>
+        <argsstring>(uint8_t alpha)</argsstring>
+        <name>setAlpha</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+<para>Sets the alpha of the text area. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alpha.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_text_progress_1a48b27ff9c2eafcd202482b45abc86ff7" kindref="member">getAlpha</ref>, <ref refid="classtouchgfx_1_1_text_area_1a40b4eaf63ab7df1422b403a5a384a0b3" kindref="member">TextArea::setAlpha</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/TextProgress.hpp" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_text_progress_1a77438b7f2f49188eecba3c8b31dcfaa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setColor</definition>
+        <argsstring>(colortype color)</argsstring>
+        <name>setColor</name>
+        <param>
+          <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Sets the color of the text in the used text area. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_text_progress_1a4d7ad8bff36afdfc11d37de65cfc1d90" kindref="member">getColor</ref>, <ref refid="classtouchgfx_1_1_text_area_1a470d590a3be3d71093546fd6a74336b9" kindref="member">TextArea::setColor</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/TextProgress.hpp" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_text_progress_1acb21ecdadf9563944f3154f912d3ac21" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setNumberOfDecimals</definition>
+        <argsstring>(uint16_t numberOfDecimals)</argsstring>
+        <name>setNumberOfDecimals</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>numberOfDecimals</declname>
+        </param>
+        <briefdescription>
+<para>Sets number of decimals when displaying progress. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numberOfDecimals</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of decimals. Only up to two decimals is supported.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_text_progress_1aff00c3ee26976bd884fc735d5a879d2e" kindref="member">getNumberOfDecimals</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/TextProgress.hpp" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_text_progress_1a7c302754c2026f0c61ddfb2a887644c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setProgressIndicatorPosition</definition>
+        <argsstring>(int16_t x, int16_t y, int16_t width, int16_t height)</argsstring>
+        <name>setProgressIndicatorPosition</name>
+        <reimplements refid="classtouchgfx_1_1_abstract_progress_indicator_1a7c302754c2026f0c61ddfb2a887644c6">setProgressIndicatorPosition</reimplements>
+        <param>
+          <type>int16_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+<para>Sets the position and dimensions of the text progress indicator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the position and dimensions of the text progress indicator relative to the background image.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The width of the text progress indicator. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The height of the text progress indicator. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/TextProgress.hpp" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_text_progress_1a38821dd8c59d1bb0d49569762e20d89b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setTypedText</definition>
+        <argsstring>(const TypedText &amp;t)</argsstring>
+        <name>setTypedText</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Sets the typed text. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The text should have exactly one wildcard and could for example look like this: &quot;&amp;lt;progress&amp;gt;\%&quot;.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref> to process.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_text_progress_1a799562d268f9a031680d40b255371f91" kindref="member">getTypedText</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/TextProgress.hpp" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_text_progress_1afd2ee022f13d24681ce6efbf09581807" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setValue</definition>
+        <argsstring>(int value)</argsstring>
+        <name>setValue</name>
+        <reimplements refid="classtouchgfx_1_1_abstract_progress_indicator_1afd2ee022f13d24681ce6efbf09581807">setValue</reimplements>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Sets the new value for the progress indicator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/TextProgress.hpp" line="95" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_text_progress_1a4fe2497a4fb9f1f825780a51bb9b2aa9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TextProgress</definition>
+        <argsstring>()</argsstring>
+        <name>TextProgress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/progress_indicators/TextProgress.hpp" line="22" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A text progress will display progress as a number with a given number of decimals. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>The implementation does not use floating point variables to calculate the progress. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1581">
+        <label>TextProgress</label>
+        <link refid="classtouchgfx_1_1_text_progress"/>
+        <childnode refid="1582" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1583">
+        <label>Container</label>
+        <link refid="classtouchgfx_1_1_container"/>
+        <childnode refid="1584" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1584">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+      </node>
+      <node id="1582">
+        <label>AbstractProgressIndicator</label>
+        <link refid="classtouchgfx_1_1_abstract_progress_indicator"/>
+        <childnode refid="1583" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1585">
+        <label>TextProgress</label>
+        <link refid="classtouchgfx_1_1_text_progress"/>
+        <childnode refid="1586" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1593" relation="usage">
+          <edgelabel>textArea</edgelabel>
+        </childnode>
+      </node>
+      <node id="1591">
+        <label>Widget</label>
+        <link refid="classtouchgfx_1_1_widget"/>
+        <childnode refid="1588" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1593">
+        <label>TextAreaWithOneWildcard</label>
+        <link refid="classtouchgfx_1_1_text_area_with_one_wildcard"/>
+        <childnode refid="1594" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1587">
+        <label>Container</label>
+        <link refid="classtouchgfx_1_1_container"/>
+        <childnode refid="1588" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1588" relation="usage">
+          <edgelabel>firstChild</edgelabel>
+        </childnode>
+      </node>
+      <node id="1589">
+        <label>Rect</label>
+        <link refid="classtouchgfx_1_1_rect"/>
+      </node>
+      <node id="1590">
+        <label>Image</label>
+        <link refid="classtouchgfx_1_1_image"/>
+        <childnode refid="1591" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1592" relation="usage">
+          <edgelabel>bitmap</edgelabel>
+        </childnode>
+      </node>
+      <node id="1595">
+        <label>TypedText</label>
+        <link refid="classtouchgfx_1_1_typed_text"/>
+      </node>
+      <node id="1588">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+        <childnode refid="1589" relation="usage">
+          <edgelabel>rect</edgelabel>
+        </childnode>
+        <childnode refid="1588" relation="usage">
+          <edgelabel>nextSibling</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="1594">
+        <label>TextArea</label>
+        <link refid="classtouchgfx_1_1_text_area"/>
+        <childnode refid="1591" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1595" relation="usage">
+          <edgelabel>typedText</edgelabel>
+        </childnode>
+        <childnode refid="1596" relation="usage">
+          <edgelabel>color</edgelabel>
+        </childnode>
+      </node>
+      <node id="1592">
+        <label>Bitmap</label>
+        <link refid="classtouchgfx_1_1_bitmap"/>
+      </node>
+      <node id="1586">
+        <label>AbstractProgressIndicator</label>
+        <link refid="classtouchgfx_1_1_abstract_progress_indicator"/>
+        <childnode refid="1587" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1587" relation="usage">
+          <edgelabel>progressIndicatorContainer</edgelabel>
+        </childnode>
+        <childnode refid="1590" relation="usage">
+          <edgelabel>background</edgelabel>
+        </childnode>
+      </node>
+      <node id="1596">
+        <label>colortype</label>
+        <link refid="structtouchgfx_1_1colortype"/>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/containers/progress_indicators/TextProgress.hpp" line="20" column="1" bodyfile="touchgfx/containers/progress_indicators/TextProgress.hpp" bodystart="19" bodyend="119"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1a088cf0717c3adb46df00038640925e84" prot="public" virt="non-virtual"><scope>touchgfx::TextProgress</scope><name>AbstractProgressIndicator</name></member>
+      <member refid="classtouchgfx_1_1_container_1a302ad1a4da6fe171eb249828bd8dc7ab" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>add</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1ac58c7595db571063cbbb5832998af4d4" prot="protected" virt="non-virtual"><scope>touchgfx::TextProgress</scope><name>background</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae2d939b2a9c253f0fb3bae3ec7be4e2f" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>childGeometryChanged</name></member>
+      <member refid="classtouchgfx_1_1_container_1ac92243515043dff4fd93c987b894b017" prot="public" virt="non-virtual"><scope>touchgfx::TextProgress</scope><name>Container</name></member>
+      <member refid="classtouchgfx_1_1_container_1a0109ca3d59d6ced431a24313fef18803" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>contains</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1aa9b3d6000cb8f075989733abced8253f" prot="protected" virt="non-virtual"><scope>touchgfx::TextProgress</scope><name>currentValue</name></member>
+      <member refid="classtouchgfx_1_1_text_progress_1a74b93e95b81a1195e21937d5f1e772c6" prot="protected" virt="non-virtual"><scope>touchgfx::TextProgress</scope><name>decimals</name></member>
+      <member refid="classtouchgfx_1_1_container_1a1277d4bddd51dbc604de265fb70ccbfd" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>draw</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9cf3a85fa7554475fa42c97985bda6df" prot="public" virt="non-virtual"><scope>touchgfx::TextProgress</scope><name>Drawable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4a009ec2b654351679a0124e9055abdc" prot="public" virt="non-virtual"><scope>touchgfx::TextProgress</scope><name>drawToDynamicBitmap</name></member>
+      <member refid="classtouchgfx_1_1_container_1a15fc4ae5c33721f5f425b20640217f22" prot="protected" virt="non-virtual"><scope>touchgfx::TextProgress</scope><name>firstChild</name></member>
+      <member refid="classtouchgfx_1_1_container_1a2b224826cd4f0f674009c21d6821f525" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>forEachChild</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa7737d9d49d7f55ec9bde8f2c9751b1d" prot="public" virt="non-virtual"><scope>touchgfx::TextProgress</scope><name>getAbsoluteRect</name></member>
+      <member refid="classtouchgfx_1_1_text_progress_1a48b27ff9c2eafcd202482b45abc86ff7" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>getAlpha</name></member>
+      <member refid="classtouchgfx_1_1_text_progress_1a4d7ad8bff36afdfc11d37de65cfc1d90" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>getColor</name></member>
+      <member refid="classtouchgfx_1_1_container_1a47e8a844fa50b171656f8355fd8e313b" prot="protected" virt="virtual"><scope>touchgfx::TextProgress</scope><name>getContainedArea</name></member>
+      <member refid="classtouchgfx_1_1_container_1a35ae5c9547dd1861f70b5e4f0f9b94b3" prot="public" virt="non-virtual"><scope>touchgfx::TextProgress</scope><name>getFirstChild</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ad00483821e06fe4d0d70222de4135d30" prot="public" virt="non-virtual"><scope>touchgfx::TextProgress</scope><name>getHeight</name></member>
+      <member refid="classtouchgfx_1_1_container_1a6bc8e89dc7f879221e9862fb27dc726f" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>getLastChild</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a61c9b2bf703c49a6d238d354ddcaedb3" prot="public" virt="non-virtual"><scope>touchgfx::TextProgress</scope><name>getNextSibling</name></member>
+      <member refid="classtouchgfx_1_1_text_progress_1aff00c3ee26976bd884fc735d5a879d2e" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>getNumberOfDecimals</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a013e065d4d9a10dbfa0ddee9a35582a3" prot="public" virt="non-virtual"><scope>touchgfx::TextProgress</scope><name>getParent</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1ad6acf445b3bf33efe1287db3c61bc8c7" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>getProgress</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1a3daf2010ab529f1e80a39e69c2a13370" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>getProgressIndicatorHeight</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1ac9bd8cf6bb9b77f5b5227bb3c2276942" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>getProgressIndicatorWidth</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1a014af24dbe00f2f1901e5efded0eac19" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>getProgressIndicatorX</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1a00d0bde08c61e6f8a396592586201296" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>getProgressIndicatorY</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1a52e91c5cb93b79054d8bb5a08a412096" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>getRange</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1a1a33f23352ce0b1142c5a42520ee26e4" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>getRange</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1a95519933a70cca93e020e46eb77a19c7" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>getRange</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af23a5bb7d473e16363a449c497586be3" prot="public" virt="non-virtual"><scope>touchgfx::TextProgress</scope><name>getRect</name></member>
+      <member refid="classtouchgfx_1_1_container_1a4dcdd780e93cc783a2ceeda00c6f3b51" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>getSolidRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4783dfe657ff1b7a33261bda8c4b4266" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>getSolidRectAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_text_progress_1a799562d268f9a031680d40b255371f91" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>getTypedText</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1abb46316a08c089763c5171d38e53fc6e" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>getValue</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a83b8847f583b63e60aa4bf778261ddd7" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>getVisibleRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1acae58162aaca6fc174416550f76668e7" prot="public" virt="non-virtual"><scope>touchgfx::TextProgress</scope><name>getWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac071e9b7ccf37179df7d29c6778b664c" prot="public" virt="non-virtual"><scope>touchgfx::TextProgress</scope><name>getX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a26752e6cff4607d0eec8768ef6d9032a" prot="public" virt="non-virtual"><scope>touchgfx::TextProgress</scope><name>getY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a7f1524b90bc90e5f6cf7ee47aae12123" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>handleClickEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a06ae1946b2124cc94e26cfe18728debf" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>handleDragEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4db4945ecbc2303bf860e082409b8029" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>handleGestureEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1af635cee0f186c3d0fcea60bac14355" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>handleTickEvent</name></member>
+      <member refid="classtouchgfx_1_1_container_1aca896b17460628dceeac8b01553b6a00" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>insert</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2800b4c18c63e9e7b1f85a74ce6b80c3" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>invalidate</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a130cf6e1bf2b9f04f48e659758fa75e2" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>invalidateRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a01c717b9abc98d48673b79d691c2d28a" prot="public" virt="non-virtual"><scope>touchgfx::TextProgress</scope><name>isTouchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9d8a6cfb13917785c143e74d40e4e2be" prot="public" virt="non-virtual"><scope>touchgfx::TextProgress</scope><name>isVisible</name></member>
+      <member refid="classtouchgfx_1_1_container_1add539b68574f09b364f0b4e6a312b9b0" prot="protected" virt="virtual"><scope>touchgfx::TextProgress</scope><name>moveChildrenRelative</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af3590480070e2cf91580976f322d2c5e" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>moveRelative</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aadc5abfad4d2fcc331cf8de8713dc00e" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>moveTo</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0da4a00c3fbdea5740e52c7e04316c65" prot="protected" virt="non-virtual"><scope>touchgfx::TextProgress</scope><name>nextSibling</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ab77c13cde2b01107dcbc5c2b584d422f" prot="protected" virt="non-virtual"><scope>touchgfx::TextProgress</scope><name>parent</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1a5bda8640109df5374342b63669b5f84b" prot="protected" virt="non-virtual"><scope>touchgfx::TextProgress</scope><name>progressIndicatorContainer</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1a5553b7a635fade12e38c22ac71243d6a" prot="protected" virt="non-virtual"><scope>touchgfx::TextProgress</scope><name>rangeMax</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1a35a6e5daec1e31c6e6090c9a377a5c43" prot="protected" virt="non-virtual"><scope>touchgfx::TextProgress</scope><name>rangeMin</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1a7de050eed4e279fd8c867b40e856c005" prot="protected" virt="non-virtual"><scope>touchgfx::TextProgress</scope><name>rangeSteps</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1a2e4193a2cd816fb8d23a4750b8823534" prot="protected" virt="non-virtual"><scope>touchgfx::TextProgress</scope><name>rangeStepsMin</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2a955ddc316d002f566598f340eb2af9" prot="protected" virt="non-virtual"><scope>touchgfx::TextProgress</scope><name>rect</name></member>
+      <member refid="classtouchgfx_1_1_container_1a4d9056af30ab3c61da25a71023a341f2" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>remove</name></member>
+      <member refid="classtouchgfx_1_1_container_1a4e62c805a8478320f1e650e6a635b31a" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>removeAll</name></member>
+      <member refid="classtouchgfx_1_1_text_progress_1a79e090d34b93e9d637d01bc9b5639681" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>setAlpha</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1af289e78e38dabff27c29cb8f3d704b72" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>setBackground</name></member>
+      <member refid="classtouchgfx_1_1_text_progress_1a77438b7f2f49188eecba3c8b31dcfaa5" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>setColor</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a47a6312407603de99247bb802dbd8a48" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>setHeight</name></member>
+      <member refid="classtouchgfx_1_1_text_progress_1acb21ecdadf9563944f3154f912d3ac21" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>setNumberOfDecimals</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac218c371450d8ad2bed3e1b07965a41a" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>setPosition</name></member>
+      <member refid="classtouchgfx_1_1_text_progress_1a7c302754c2026f0c61ddfb2a887644c6" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>setProgressIndicatorPosition</name></member>
+      <member refid="classtouchgfx_1_1_abstract_progress_indicator_1a02a45c40598be83aeebffbe70ea3c79c" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>setRange</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae4c38eadb852b153850ea7ded1f50a19" prot="public" virt="non-virtual"><scope>touchgfx::TextProgress</scope><name>setTouchable</name></member>
+      <member refid="classtouchgfx_1_1_text_progress_1a38821dd8c59d1bb0d49569762e20d89b" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>setTypedText</name></member>
+      <member refid="classtouchgfx_1_1_text_progress_1afd2ee022f13d24681ce6efbf09581807" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>setValue</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a71639c6634c5dcf6d1bb21b8b1b61f5b" prot="public" virt="non-virtual"><scope>touchgfx::TextProgress</scope><name>setVisible</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae74a37f71d23440fc8b0466ad8ecfe4b" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>setWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9f6db7f34a74e991fc446fffb5703a53" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>setX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6c86659dc1e7355c207e9c0aa18af167" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>setXY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1b08d48e7e23a046f09e63089bc82bc1" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>setY</name></member>
+      <member refid="classtouchgfx_1_1_text_progress_1a3880b8c95c5a3732e17176f36d952da2" prot="protected" virt="non-virtual"><scope>touchgfx::TextProgress</scope><name>textArea</name></member>
+      <member refid="classtouchgfx_1_1_text_progress_1a521d249dc451e4b904c84073f27cf265" prot="protected" virt="non-virtual"><scope>touchgfx::TextProgress</scope><name>textBuffer</name></member>
+      <member refid="classtouchgfx_1_1_text_progress_1a4fe2497a4fb9f1f825780a51bb9b2aa9" prot="public" virt="non-virtual"><scope>touchgfx::TextProgress</scope><name>TextProgress</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0d014de134cb9b9c1c361fcd726a5f34" prot="protected" virt="non-virtual"><scope>touchgfx::TextProgress</scope><name>touchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a48c1d14ac943dbfa4935ea39db950608" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>translateRectToAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_container_1a23f8fdbaba5449e55efb7a14a96b657d" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>unlink</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa54a57ae048476d840caf6d4d2c47aa3" prot="protected" virt="non-virtual"><scope>touchgfx::TextProgress</scope><name>visible</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6bb040a11ffc2bd641283cc0bc0d1346" prot="public" virt="virtual"><scope>touchgfx::TextProgress</scope><name>~Drawable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

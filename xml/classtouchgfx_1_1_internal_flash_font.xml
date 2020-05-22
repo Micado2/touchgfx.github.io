@@ -1,0 +1,388 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_internal_flash_font" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::InternalFlashFont</compoundname>
+    <basecompoundref refid="classtouchgfx_1_1_const_font" prot="public" virt="non-virtual">ConstFont</basecompoundref>
+    <includes local="no">InternalFlashFont.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_internal_flash_font_1aa15d7df327ba0825d6ce9828a6816ad6" prot="private" static="no" mutable="no">
+        <type>const uint8_t *</type>
+        <definition>const uint8_t* glyphData</definition>
+        <argsstring></argsstring>
+        <name>glyphData</name>
+        <briefdescription>
+<para>Information describing the glyph. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/InternalFlashFont.hpp" line="53" column="1" bodyfile="touchgfx/InternalFlashFont.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_internal_flash_font_1a23819c307750bc32c2f8f90213607ff5" prot="private" static="no" mutable="no">
+        <type>const <ref refid="structtouchgfx_1_1_kerning_node" kindref="compound">KerningNode</ref> *</type>
+        <definition>const KerningNode* kerningData</definition>
+        <argsstring></argsstring>
+        <name>kerningData</name>
+        <briefdescription>
+<para>Information describing the kerning. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/InternalFlashFont.hpp" line="54" column="1" bodyfile="touchgfx/InternalFlashFont.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_internal_flash_font_1aa552c0dc1d691b40a06601a497a9b486" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int8_t</type>
+        <definition>virtual int8_t getKerning</definition>
+        <argsstring>(Unicode::UnicodeChar prevChar, const GlyphNode *glyph) const</argsstring>
+        <name>getKerning</name>
+        <reimplements refid="classtouchgfx_1_1_const_font_1aa2fa0eae4be36312ca347d6c961100b4">getKerning</reimplements>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref></type>
+          <declname>prevChar</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structtouchgfx_1_1_glyph_node" kindref="compound">GlyphNode</ref> *</type>
+          <declname>glyph</declname>
+        </param>
+        <briefdescription>
+<para>Gets the kerning distance between two characters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>prevChar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classtouchgfx_1_1_unicode" kindref="compound">Unicode</ref> value of the previous character. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>glyph</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the glyph object for the current character.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The kerning distance between prevChar and glyph char. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/InternalFlashFont.hpp" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_internal_flash_font_1a9d75fd192cb6edeb04493fc44eed8819" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const uint8_t *</type>
+        <definition>virtual const uint8_t* getPixelData</definition>
+        <argsstring>(const GlyphNode *glyph) const</argsstring>
+        <name>getPixelData</name>
+        <reimplements refid="classtouchgfx_1_1_const_font_1ab2dd4180cb0d21b3e4798381ddb07708">getPixelData</reimplements>
+        <param>
+          <type>const <ref refid="structtouchgfx_1_1_glyph_node" kindref="compound">GlyphNode</ref> *</type>
+          <declname>glyph</declname>
+        </param>
+        <briefdescription>
+<para>Gets the pixel date associated with this glyph. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>glyph</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The glyph to get the pixels data from.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to the pixel data of this glyph. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/InternalFlashFont.hpp" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_internal_flash_font_1aa35da88802b3c2e998427614b35d7e40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>InternalFlashFont</definition>
+        <argsstring>(const GlyphNode *list, uint16_t size, uint16_t height, uint8_t pixBelowBase, uint8_t bitsPerPixel, uint8_t byteAlignRow, uint8_t maxLeft, uint8_t maxRight, const uint8_t *glyphDataInternalFlash, const KerningNode *kerningList, const Unicode::UnicodeChar fallbackChar, const Unicode::UnicodeChar ellipsisChar)</argsstring>
+        <name>InternalFlashFont</name>
+        <param>
+          <type>const <ref refid="structtouchgfx_1_1_glyph_node" kindref="compound">GlyphNode</ref> *</type>
+          <declname>list</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>pixBelowBase</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>bitsPerPixel</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>byteAlignRow</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>maxLeft</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>maxRight</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>glyphDataInternalFlash</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structtouchgfx_1_1_kerning_node" kindref="compound">KerningNode</ref> *</type>
+          <declname>kerningList</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref></type>
+          <declname>fallbackChar</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref></type>
+          <declname>ellipsisChar</declname>
+        </param>
+        <briefdescription>
+<para>Initializes a new instance of the <ref refid="classtouchgfx_1_1_internal_flash_font" kindref="compound">InternalFlashFont</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The array of glyphs known to this font. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of glyphs in list. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The height in pixels of the highest character in this font. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pixBelowBase</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum number of pixels that can be drawn below the baseline in this font. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bitsPerPixel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of bits per pixel in this font. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>byteAlignRow</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The glyphs are saved with each row byte aligned. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxLeft</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum a character extends to the left. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxRight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum a character extends to the right. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>glyphDataInternalFlash</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the glyph data for the font, placed in internal flash. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>kerningList</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the kerning data for the font, placed in internal flash. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fallbackChar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The fallback character for the typography in case no glyph is available. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ellipsisChar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ellipsis character used for truncating long texts. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/InternalFlashFont.hpp" line="42" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_internal_flash_font_1afd4d00c8af9b6a4d1d9b2179896b4a8f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>InternalFlashFont</definition>
+        <argsstring>()</argsstring>
+        <name>InternalFlashFont</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/InternalFlashFont.hpp" line="49" column="1" bodyfile="touchgfx/InternalFlashFont.hpp" bodystart="49" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An <ref refid="classtouchgfx_1_1_internal_flash_font" kindref="compound">InternalFlashFont</ref> has both glyph table and glyph data placed in a flash which supports random access read (i.e. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>not a NAND flash)</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_font" kindref="compound">Font</ref>, <ref refid="classtouchgfx_1_1_const_font" kindref="compound">ConstFont</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="805">
+        <label>Font</label>
+        <link refid="classtouchgfx_1_1_font"/>
+      </node>
+      <node id="804">
+        <label>ConstFont</label>
+        <link refid="classtouchgfx_1_1_const_font"/>
+        <childnode refid="805" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="803">
+        <label>InternalFlashFont</label>
+        <link refid="classtouchgfx_1_1_internal_flash_font"/>
+        <childnode refid="804" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="808">
+        <label>Font</label>
+        <link refid="classtouchgfx_1_1_font"/>
+      </node>
+      <node id="807">
+        <label>ConstFont</label>
+        <link refid="classtouchgfx_1_1_const_font"/>
+        <childnode refid="808" relation="public-inheritance">
+        </childnode>
+        <childnode refid="809" relation="usage">
+          <edgelabel>glyphList</edgelabel>
+        </childnode>
+      </node>
+      <node id="806">
+        <label>InternalFlashFont</label>
+        <link refid="classtouchgfx_1_1_internal_flash_font"/>
+        <childnode refid="807" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="809">
+        <label>GlyphNode</label>
+        <link refid="structtouchgfx_1_1_glyph_node"/>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/InternalFlashFont.hpp" line="20" column="1" bodyfile="touchgfx/InternalFlashFont.hpp" bodystart="19" bodyend="55"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_font_1a46915ccbd0b1d72e15e480b2c22115ff" prot="protected" virt="non-virtual"><scope>touchgfx::InternalFlashFont</scope><name>bAlignRow</name></member>
+      <member refid="classtouchgfx_1_1_font_1ac72ce3f2a48b0465b46e6246eb4f5afb" prot="protected" virt="non-virtual"><scope>touchgfx::InternalFlashFont</scope><name>bPerPixel</name></member>
+      <member refid="classtouchgfx_1_1_const_font_1af4f302f95c191b4d581440efaf6b7c77" prot="public" virt="non-virtual"><scope>touchgfx::InternalFlashFont</scope><name>ConstFont</name></member>
+      <member refid="classtouchgfx_1_1_font_1a21bd162221278e7a9d71e4c0cd870f35" prot="protected" virt="non-virtual"><scope>touchgfx::InternalFlashFont</scope><name>ellipsisCharacter</name></member>
+      <member refid="classtouchgfx_1_1_font_1acc415780ee67bcabd7483e42e89f55cc" prot="protected" virt="non-virtual"><scope>touchgfx::InternalFlashFont</scope><name>falllbackCharacter</name></member>
+      <member refid="classtouchgfx_1_1_const_font_1a566eac807b4ecc8430a2a1bc32d3eba6" prot="public" virt="non-virtual"><scope>touchgfx::InternalFlashFont</scope><name>find</name></member>
+      <member refid="classtouchgfx_1_1_font_1a4127850b06335348410b2ed452557548" prot="protected" virt="non-virtual"><scope>touchgfx::InternalFlashFont</scope><name>Font</name></member>
+      <member refid="classtouchgfx_1_1_font_1a0368f14498012c2ea12c72b0eea75d92" prot="protected" virt="non-virtual"><scope>touchgfx::InternalFlashFont</scope><name>fontHeight</name></member>
+      <member refid="classtouchgfx_1_1_font_1a61c34e4c0206a76e75013915fca18bbd" prot="public" virt="virtual"><scope>touchgfx::InternalFlashFont</scope><name>getBitsPerPixel</name></member>
+      <member refid="classtouchgfx_1_1_font_1a9718660c78bc43231736440cd5496d70" prot="public" virt="virtual"><scope>touchgfx::InternalFlashFont</scope><name>getByteAlignRow</name></member>
+      <member refid="classtouchgfx_1_1_font_1a15cf2ef9de10ad984d0eb5d67cbe172f" prot="public" virt="virtual"><scope>touchgfx::InternalFlashFont</scope><name>getCharWidth</name></member>
+      <member refid="classtouchgfx_1_1_font_1a6db0bda82a726d472c608536f1f14e9f" prot="public" virt="virtual"><scope>touchgfx::InternalFlashFont</scope><name>getEllipsisChar</name></member>
+      <member refid="classtouchgfx_1_1_font_1a8b9b82348bfe7c8f383c246cfdb949db" prot="public" virt="virtual"><scope>touchgfx::InternalFlashFont</scope><name>getFallbackChar</name></member>
+      <member refid="classtouchgfx_1_1_font_1a8c23ad7cd9a8c60d93650bd70b784b01" prot="public" virt="virtual"><scope>touchgfx::InternalFlashFont</scope><name>getFontHeight</name></member>
+      <member refid="classtouchgfx_1_1_const_font_1a64e7df23a7d1b3b8b97c44ea6cef0df7" prot="public" virt="virtual"><scope>touchgfx::InternalFlashFont</scope><name>getGlyph</name></member>
+      <member refid="classtouchgfx_1_1_const_font_1aa2f9fd2a3cde56f898a7c23a0c416dfb" prot="public" virt="non-virtual"><scope>touchgfx::InternalFlashFont</scope><name>getGlyph</name></member>
+      <member refid="classtouchgfx_1_1_const_font_1a29dd3cdff7e63fb8b5147874bd042f8c" prot="public" virt="non-virtual"><scope>touchgfx::InternalFlashFont</scope><name>getGlyph</name></member>
+      <member refid="classtouchgfx_1_1_font_1a29dd3cdff7e63fb8b5147874bd042f8c" prot="public" virt="virtual" ambiguityscope="touchgfx::Font::"><scope>touchgfx::InternalFlashFont</scope><name>getGlyph</name></member>
+      <member refid="classtouchgfx_1_1_font_1a1b7655ad510ecc9156ba1c0ecd897f37" prot="public" virt="virtual"><scope>touchgfx::InternalFlashFont</scope><name>getGSUBTable</name></member>
+      <member refid="classtouchgfx_1_1_internal_flash_font_1aa552c0dc1d691b40a06601a497a9b486" prot="public" virt="virtual"><scope>touchgfx::InternalFlashFont</scope><name>getKerning</name></member>
+      <member refid="classtouchgfx_1_1_font_1a8bb07da3aa08b111b2b10a0ac94b6c51" prot="public" virt="non-virtual"><scope>touchgfx::InternalFlashFont</scope><name>getMaxPixelsLeft</name></member>
+      <member refid="classtouchgfx_1_1_font_1a3a54d1df18f81900c86342666e0c1655" prot="public" virt="non-virtual"><scope>touchgfx::InternalFlashFont</scope><name>getMaxPixelsRight</name></member>
+      <member refid="classtouchgfx_1_1_font_1a91a17ca7d030f5d82aeeafddca7bd5c5" prot="public" virt="virtual"><scope>touchgfx::InternalFlashFont</scope><name>getMaxTextHeight</name></member>
+      <member refid="classtouchgfx_1_1_font_1a7cf8c8194b68aa26a9c4b0cabf825cec" prot="public" virt="virtual"><scope>touchgfx::InternalFlashFont</scope><name>getMinimumTextHeight</name></member>
+      <member refid="classtouchgfx_1_1_font_1a13ea7e6a2dd61e749976e9c20b83dd29" prot="public" virt="virtual"><scope>touchgfx::InternalFlashFont</scope><name>getNumberOfLines</name></member>
+      <member refid="classtouchgfx_1_1_internal_flash_font_1a9d75fd192cb6edeb04493fc44eed8819" prot="public" virt="virtual"><scope>touchgfx::InternalFlashFont</scope><name>getPixelData</name></member>
+      <member refid="classtouchgfx_1_1_font_1a732182d715f61bbed8bab6d41bbae5f5" prot="public" virt="virtual"><scope>touchgfx::InternalFlashFont</scope><name>getSpacingAbove</name></member>
+      <member refid="classtouchgfx_1_1_font_1a124c51d29589a4cc3e043884835c0585" prot="public" virt="virtual"><scope>touchgfx::InternalFlashFont</scope><name>getStringWidth</name></member>
+      <member refid="classtouchgfx_1_1_font_1a2cb8c37cc9824f6d612e83749029d12a" prot="public" virt="virtual"><scope>touchgfx::InternalFlashFont</scope><name>getStringWidth</name></member>
+      <member refid="classtouchgfx_1_1_font_1ae1fc9d24bacca2806544c13bc09f0631" prot="protected" virt="non-virtual"><scope>touchgfx::InternalFlashFont</scope><name>getStringWidthFunction</name></member>
+      <member refid="classtouchgfx_1_1_font_1abfb0a2585cef365e078162c4e6a41350" prot="protected" virt="non-virtual"><scope>touchgfx::InternalFlashFont</scope><name>getStringWidthLTR</name></member>
+      <member refid="classtouchgfx_1_1_font_1a1ee6c0bfe29c7410e2eb1fed8a2867d4" prot="protected" virt="non-virtual"><scope>touchgfx::InternalFlashFont</scope><name>getStringWidthRTL</name></member>
+      <member refid="classtouchgfx_1_1_internal_flash_font_1aa15d7df327ba0825d6ce9828a6816ad6" prot="private" virt="non-virtual"><scope>touchgfx::InternalFlashFont</scope><name>glyphData</name></member>
+      <member refid="classtouchgfx_1_1_const_font_1a929dd8edb14cb9e9cc31891329e33932" prot="protected" virt="non-virtual"><scope>touchgfx::InternalFlashFont</scope><name>glyphList</name></member>
+      <member refid="classtouchgfx_1_1_internal_flash_font_1aa35da88802b3c2e998427614b35d7e40" prot="public" virt="non-virtual"><scope>touchgfx::InternalFlashFont</scope><name>InternalFlashFont</name></member>
+      <member refid="classtouchgfx_1_1_internal_flash_font_1afd4d00c8af9b6a4d1d9b2179896b4a8f" prot="private" virt="non-virtual"><scope>touchgfx::InternalFlashFont</scope><name>InternalFlashFont</name></member>
+      <member refid="classtouchgfx_1_1_font_1ad233c932c2d4607418339dd5ae0a61fe" prot="public" virt="non-virtual"><scope>touchgfx::InternalFlashFont</scope><name>isInvisibleZeroWidth</name></member>
+      <member refid="classtouchgfx_1_1_internal_flash_font_1a23819c307750bc32c2f8f90213607ff5" prot="private" virt="non-virtual"><scope>touchgfx::InternalFlashFont</scope><name>kerningData</name></member>
+      <member refid="classtouchgfx_1_1_const_font_1a60f9a22af87569955fbf2d544a0738f2" prot="protected" virt="non-virtual"><scope>touchgfx::InternalFlashFont</scope><name>listSize</name></member>
+      <member refid="classtouchgfx_1_1_font_1a540a5126bac1e6e6f308ed6f26dfc684" prot="protected" virt="non-virtual"><scope>touchgfx::InternalFlashFont</scope><name>maxPixelsLeft</name></member>
+      <member refid="classtouchgfx_1_1_font_1a5bfb5d6065d7ae0271a7f0dba73fd453" prot="protected" virt="non-virtual"><scope>touchgfx::InternalFlashFont</scope><name>maxPixelsRight</name></member>
+      <member refid="classtouchgfx_1_1_font_1a65fa1ce4370c34b6d3cf6fed911e47ad" prot="protected" virt="non-virtual"><scope>touchgfx::InternalFlashFont</scope><name>pixelsBelowBaseline</name></member>
+      <member refid="classtouchgfx_1_1_font_1a52d57144a793f8543aa1933c59781f26" prot="protected" virt="non-virtual"><scope>touchgfx::InternalFlashFont</scope><name>StringWidthFunctionPointer</name></member>
+      <member refid="classtouchgfx_1_1_font_1a87d5c596daaff6d7f1488f47f0150e30" prot="public" virt="virtual"><scope>touchgfx::InternalFlashFont</scope><name>~Font</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

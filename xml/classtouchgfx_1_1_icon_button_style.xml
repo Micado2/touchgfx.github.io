@@ -1,0 +1,380 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_icon_button_style" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::IconButtonStyle</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">T</basecompoundref>
+    <includes local="no">IconButtonStyle.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_icon_button_style_1aaf09bab3c93293b40825cb4bbee9c179" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_image" kindref="compound">Image</ref></type>
+        <definition>Image iconImage</definition>
+        <argsstring></argsstring>
+        <name>iconImage</name>
+        <briefdescription>
+<para>The icon image. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/IconButtonStyle.hpp" line="120" column="1" bodyfile="touchgfx/containers/buttons/IconButtonStyle.hpp" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_icon_button_style_1a91b948b079c0f71b61682a4988601be3" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref></type>
+        <definition>Bitmap iconPressed</definition>
+        <argsstring></argsstring>
+        <name>iconPressed</name>
+        <briefdescription>
+<para>Icon to display when button is pressed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/IconButtonStyle.hpp" line="119" column="1" bodyfile="touchgfx/containers/buttons/IconButtonStyle.hpp" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_icon_button_style_1adffa3e7316252b183c38d099f1c661ac" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref></type>
+        <definition>Bitmap iconReleased</definition>
+        <argsstring></argsstring>
+        <name>iconReleased</name>
+        <briefdescription>
+<para>Icon to display when button is not pressed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/IconButtonStyle.hpp" line="118" column="1" bodyfile="touchgfx/containers/buttons/IconButtonStyle.hpp" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_icon_button_style_1a5cad9be8f60f7b2ec355c95fde55c097" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref></type>
+        <definition>Bitmap getCurrentlyDisplayedIcon</definition>
+        <argsstring>() const</argsstring>
+        <name>getCurrentlyDisplayedIcon</name>
+        <briefdescription>
+<para>Gets currently displayed icon. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The currently displayed icon. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/IconButtonStyle.hpp" line="92" column="1" bodyfile="touchgfx/containers/buttons/IconButtonStyle.hpp" bodystart="92" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_icon_button_style_1a82763fa5f23c1bfa1e7dc0e3487497dd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t getIconX</definition>
+        <argsstring>() const</argsstring>
+        <name>getIconX</name>
+        <briefdescription>
+<para>Gets icon x coordinate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The icon x coordinate. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/IconButtonStyle.hpp" line="102" column="1" bodyfile="touchgfx/containers/buttons/IconButtonStyle.hpp" bodystart="102" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_icon_button_style_1ac1ba8df203915d4d9154a4801189200f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t getIconY</definition>
+        <argsstring>() const</argsstring>
+        <name>getIconY</name>
+        <briefdescription>
+<para>Gets icon y coordinate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The icon y coordinate. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/IconButtonStyle.hpp" line="112" column="1" bodyfile="touchgfx/containers/buttons/IconButtonStyle.hpp" bodystart="112" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_icon_button_style_1a7a8b91f926eff22f600a7d03402b6066" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IconButtonStyle</definition>
+        <argsstring>()</argsstring>
+        <name>IconButtonStyle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/IconButtonStyle.hpp" line="33" column="1" bodyfile="touchgfx/containers/buttons/IconButtonStyle.hpp" bodystart="33" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_icon_button_style_1a5655f5cb7b947d8bf2281dbfff0aed94" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setIconBitmaps</definition>
+        <argsstring>(const Bitmap &amp;newIconReleased, const Bitmap &amp;newIconPressed)</argsstring>
+        <name>setIconBitmaps</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> &amp;</type>
+          <declname>newIconReleased</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> &amp;</type>
+          <declname>newIconPressed</declname>
+        </param>
+        <briefdescription>
+<para>Sets icon bitmaps. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newIconReleased</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new icon released. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>newIconPressed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new icon pressed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/IconButtonStyle.hpp" line="45" column="1" bodyfile="touchgfx/containers/buttons/IconButtonStyle.hpp" bodystart="45" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_icon_button_style_1a40471efd6d29173012da268ac88f751f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setIconX</definition>
+        <argsstring>(int16_t x)</argsstring>
+        <name>setIconX</name>
+        <param>
+          <type>int16_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Sets icon x coordinate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/IconButtonStyle.hpp" line="60" column="1" bodyfile="touchgfx/containers/buttons/IconButtonStyle.hpp" bodystart="60" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_icon_button_style_1a51d1b744e803d650f92c4a501c51d1e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setIconXY</definition>
+        <argsstring>(int16_t x, int16_t y)</argsstring>
+        <name>setIconXY</name>
+        <param>
+          <type>int16_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Sets the position of the icon. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/IconButtonStyle.hpp" line="81" column="1" bodyfile="touchgfx/containers/buttons/IconButtonStyle.hpp" bodystart="81" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_icon_button_style_1a424759d73c0ad5a39a359b92c723ca82" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setIconY</definition>
+        <argsstring>(int16_t y)</argsstring>
+        <name>setIconY</name>
+        <param>
+          <type>int16_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Sets icon y coordinate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/IconButtonStyle.hpp" line="70" column="1" bodyfile="touchgfx/containers/buttons/IconButtonStyle.hpp" bodystart="70" bodyend="73"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_icon_button_style_1a0db52eec9b389e131e1cfe9b414e8401" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void handleAlphaUpdated</definition>
+        <argsstring>()</argsstring>
+        <name>handleAlphaUpdated</name>
+        <briefdescription>
+<para>Handles what should happen when the alpha is updated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/IconButtonStyle.hpp" line="130" column="1" bodyfile="touchgfx/containers/buttons/IconButtonStyle.hpp" bodystart="130" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_icon_button_style_1af6923b5d162d6c810eede74998f69928" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void handlePressedUpdated</definition>
+        <argsstring>()</argsstring>
+        <name>handlePressedUpdated</name>
+        <briefdescription>
+<para>Handles what should happen when the pressed state is updated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/buttons/IconButtonStyle.hpp" line="123" column="1" bodyfile="touchgfx/containers/buttons/IconButtonStyle.hpp" bodystart="123" bodyend="127"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An icon button style. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class is supposed to be used with one of the ButtonTrigger classes to create a functional button. This class will show one of two icons depending on the state of the button (pressed or released).</para>
+<para>To get a background behind the icon, use <ref refid="classtouchgfx_1_1_icon_button_style" kindref="compound">IconButtonStyle</ref> together with e.g. <ref refid="classtouchgfx_1_1_image_button_style" kindref="compound">ImageButtonStyle</ref>: <ref refid="classtouchgfx_1_1_icon_button_style" kindref="compound">IconButtonStyle</ref>&lt;ImageButtonStyle&lt;ClickButtonTrigger&gt; &gt; myButton;</para>
+<para>The <ref refid="classtouchgfx_1_1_icon_button_style" kindref="compound">IconButtonStyle</ref> will center the icon on the enclosing container (normally <ref refid="classtouchgfx_1_1_abstract_button_container" kindref="compound">AbstractButtonContainer</ref>). Set the size of the button before setting the icons.</para>
+<para>The position of the icon can be adjusted with setIconXY.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_abstract_button_container" kindref="compound">AbstractButtonContainer</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="761">
+        <label>T</label>
+      </node>
+      <node id="760">
+        <label>IconButtonStyle&lt; T &gt;</label>
+        <link refid="classtouchgfx_1_1_icon_button_style"/>
+        <childnode refid="761" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="763">
+        <label>T</label>
+      </node>
+      <node id="766">
+        <label>Widget</label>
+        <link refid="classtouchgfx_1_1_widget"/>
+        <childnode refid="767" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="768">
+        <label>Rect</label>
+        <link refid="classtouchgfx_1_1_rect"/>
+      </node>
+      <node id="765">
+        <label>Image</label>
+        <link refid="classtouchgfx_1_1_image"/>
+        <childnode refid="766" relation="public-inheritance">
+        </childnode>
+        <childnode refid="764" relation="usage">
+          <edgelabel>bitmap</edgelabel>
+        </childnode>
+      </node>
+      <node id="762">
+        <label>IconButtonStyle&lt; T &gt;</label>
+        <link refid="classtouchgfx_1_1_icon_button_style"/>
+        <childnode refid="763" relation="public-inheritance">
+        </childnode>
+        <childnode refid="764" relation="usage">
+          <edgelabel>iconPressed</edgelabel>
+          <edgelabel>iconReleased</edgelabel>
+        </childnode>
+        <childnode refid="765" relation="usage">
+          <edgelabel>iconImage</edgelabel>
+        </childnode>
+      </node>
+      <node id="767">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+        <childnode refid="768" relation="usage">
+          <edgelabel>rect</edgelabel>
+        </childnode>
+        <childnode refid="767" relation="usage">
+          <edgelabel>nextSibling</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="764">
+        <label>Bitmap</label>
+        <link refid="classtouchgfx_1_1_bitmap"/>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/containers/buttons/IconButtonStyle.hpp" line="31" column="1" bodyfile="touchgfx/containers/buttons/IconButtonStyle.hpp" bodystart="30" bodyend="135"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_icon_button_style_1a5cad9be8f60f7b2ec355c95fde55c097" prot="public" virt="non-virtual"><scope>touchgfx::IconButtonStyle</scope><name>getCurrentlyDisplayedIcon</name></member>
+      <member refid="classtouchgfx_1_1_icon_button_style_1a82763fa5f23c1bfa1e7dc0e3487497dd" prot="public" virt="non-virtual"><scope>touchgfx::IconButtonStyle</scope><name>getIconX</name></member>
+      <member refid="classtouchgfx_1_1_icon_button_style_1ac1ba8df203915d4d9154a4801189200f" prot="public" virt="non-virtual"><scope>touchgfx::IconButtonStyle</scope><name>getIconY</name></member>
+      <member refid="classtouchgfx_1_1_icon_button_style_1a0db52eec9b389e131e1cfe9b414e8401" prot="protected" virt="virtual"><scope>touchgfx::IconButtonStyle</scope><name>handleAlphaUpdated</name></member>
+      <member refid="classtouchgfx_1_1_icon_button_style_1af6923b5d162d6c810eede74998f69928" prot="protected" virt="virtual"><scope>touchgfx::IconButtonStyle</scope><name>handlePressedUpdated</name></member>
+      <member refid="classtouchgfx_1_1_icon_button_style_1a7a8b91f926eff22f600a7d03402b6066" prot="public" virt="non-virtual"><scope>touchgfx::IconButtonStyle</scope><name>IconButtonStyle</name></member>
+      <member refid="classtouchgfx_1_1_icon_button_style_1aaf09bab3c93293b40825cb4bbee9c179" prot="protected" virt="non-virtual"><scope>touchgfx::IconButtonStyle</scope><name>iconImage</name></member>
+      <member refid="classtouchgfx_1_1_icon_button_style_1a91b948b079c0f71b61682a4988601be3" prot="protected" virt="non-virtual"><scope>touchgfx::IconButtonStyle</scope><name>iconPressed</name></member>
+      <member refid="classtouchgfx_1_1_icon_button_style_1adffa3e7316252b183c38d099f1c661ac" prot="protected" virt="non-virtual"><scope>touchgfx::IconButtonStyle</scope><name>iconReleased</name></member>
+      <member refid="classtouchgfx_1_1_icon_button_style_1a5655f5cb7b947d8bf2281dbfff0aed94" prot="public" virt="virtual"><scope>touchgfx::IconButtonStyle</scope><name>setIconBitmaps</name></member>
+      <member refid="classtouchgfx_1_1_icon_button_style_1a40471efd6d29173012da268ac88f751f" prot="public" virt="non-virtual"><scope>touchgfx::IconButtonStyle</scope><name>setIconX</name></member>
+      <member refid="classtouchgfx_1_1_icon_button_style_1a51d1b744e803d650f92c4a501c51d1e2" prot="public" virt="non-virtual"><scope>touchgfx::IconButtonStyle</scope><name>setIconXY</name></member>
+      <member refid="classtouchgfx_1_1_icon_button_style_1a424759d73c0ad5a39a359b92c723ca82" prot="public" virt="non-virtual"><scope>touchgfx::IconButtonStyle</scope><name>setIconY</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

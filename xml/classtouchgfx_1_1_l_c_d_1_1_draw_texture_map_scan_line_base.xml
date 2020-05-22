@@ -1,0 +1,920 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base" kind="class" language="C++" prot="protected" abstract="yes">
+    <compoundname>touchgfx::LCD::DrawTextureMapScanLineBase</compoundname>
+    <includes local="no">LCD.hpp</includes>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1adc2b8996624c05d3f30f27186185aa3c" prot="protected" static="yes" mutable="no">
+        <type>const <ref refid="namespacetouchgfx_1a62c78b672c5381c87b38200ab84a31f5" kindref="member">fixed16_16</ref></type>
+        <definition>const fixed16_16 half</definition>
+        <argsstring></argsstring>
+        <name>half</name>
+        <initializer>= 0x8000</initializer>
+        <briefdescription>
+<para>1/2 in fixed16_16 format </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="506" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="506" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1a466f24adfc48e860d620ee26f928ec84" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void drawTextureMapScanLineSubdivisions</definition>
+        <argsstring>(int subdivisions, const int widthModLength, int pixelsToDraw, const int affineLength, float oneOverZRight, float UOverZRight, float VOverZRight, fixed16_16 U, fixed16_16 V, fixed16_16 deltaU, fixed16_16 deltaV, float ULeft, float VLeft, float URight, float VRight, float ZRight, const DrawingSurface &amp;dest, const int destX, const int destY, const int16_t bitmapWidth, const int16_t bitmapHeight, const TextureSurface &amp;texture, uint8_t alpha, const float dOneOverZdXAff, const float dUOverZdXAff, const float dVOverZdXAff)=0</argsstring>
+        <name>drawTextureMapScanLineSubdivisions</name>
+        <param>
+          <type>int</type>
+          <declname>subdivisions</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>widthModLength</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pixelsToDraw</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>affineLength</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>oneOverZRight</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>UOverZRight</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>VOverZRight</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1a62c78b672c5381c87b38200ab84a31f5" kindref="member">fixed16_16</ref></type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1a62c78b672c5381c87b38200ab84a31f5" kindref="member">fixed16_16</ref></type>
+          <declname>V</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1a62c78b672c5381c87b38200ab84a31f5" kindref="member">fixed16_16</ref></type>
+          <declname>deltaU</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1a62c78b672c5381c87b38200ab84a31f5" kindref="member">fixed16_16</ref></type>
+          <declname>deltaV</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ULeft</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>VLeft</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>URight</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>VRight</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ZRight</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structtouchgfx_1_1_drawing_surface" kindref="compound">DrawingSurface</ref> &amp;</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>destX</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>destY</declname>
+        </param>
+        <param>
+          <type>const int16_t</type>
+          <declname>bitmapWidth</declname>
+        </param>
+        <param>
+          <type>const int16_t</type>
+          <declname>bitmapHeight</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structtouchgfx_1_1_texture_surface" kindref="compound">TextureSurface</ref> &amp;</type>
+          <declname>texture</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>dOneOverZdXAff</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>dUOverZdXAff</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>dVOverZdXAff</declname>
+        </param>
+        <briefdescription>
+<para>Draw texture map scan line subdivisions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>subdivisions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of subdivisions. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>widthModLength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Remainder of length (after subdivisions). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pixelsToDraw</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pixels to draw. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>affineLength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of one subdivision. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>oneOverZRight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>1/Z right. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>UOverZRight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>U/Z right. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>VOverZRight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>V/Z right. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>U</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>U Coordinate in fixed16_16 notation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>V</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>V Coordinate in fixed16_16 notation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>deltaU</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>U delta to get to next pixel coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>deltaV</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>V delta to get to next pixel coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ULeft</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The left U. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>VLeft</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The left V. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>URight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The right U. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>VRight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The right V. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ZRight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The right Z. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dest</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination drawing surface. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>destX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination x coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>destY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Destination y coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bitmapWidth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Width of the bitmap. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bitmapHeight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Height of the bitmap. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>texture</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The texture. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The global alpha. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dOneOverZdXAff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>1/ZdX affine. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dUOverZdXAff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>U/ZdX affine. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dVOverZdXAff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>V/ZdX affine. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="503" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1abeeb40671ac8350ae2abbcee86f96609" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~DrawTextureMapScanLineBase</definition>
+        <argsstring>()</argsstring>
+        <name>~DrawTextureMapScanLineBase</name>
+        <briefdescription>
+<para>Finalizes an instance of the <ref refid="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base" kindref="compound">DrawTextureMapScanLineBase</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="469" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="469" bodyend="471"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1add0589d9e887a57f8b687470a08d8266" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>FORCE_INLINE_FUNCTION void</type>
+        <definition>FORCE_INLINE_FUNCTION void drawTextureMapNextSubdivision</definition>
+        <argsstring>(float &amp;ULeft, float &amp;VLeft, float &amp;ZRight, float &amp;URight, float &amp;VRight, float &amp;oneOverZRight, const float dOneOverZdXAff, float &amp;UOverZRight, const float dUOverZdXAff, float &amp;VOverZRight, const float dVOverZdXAff, const int affineLength, fixed16_16 &amp;U, fixed16_16 &amp;V, fixed16_16 &amp;deltaU, fixed16_16 &amp;deltaV)</argsstring>
+        <name>drawTextureMapNextSubdivision</name>
+        <param>
+          <type>float &amp;</type>
+          <declname>ULeft</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>VLeft</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>ZRight</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>URight</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>VRight</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>oneOverZRight</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>dOneOverZdXAff</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>UOverZRight</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>dUOverZdXAff</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>VOverZRight</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>dVOverZdXAff</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>affineLength</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1a62c78b672c5381c87b38200ab84a31f5" kindref="member">fixed16_16</ref> &amp;</type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1a62c78b672c5381c87b38200ab84a31f5" kindref="member">fixed16_16</ref> &amp;</type>
+          <declname>V</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1a62c78b672c5381c87b38200ab84a31f5" kindref="member">fixed16_16</ref> &amp;</type>
+          <declname>deltaU</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetouchgfx_1a62c78b672c5381c87b38200ab84a31f5" kindref="member">fixed16_16</ref> &amp;</type>
+          <declname>deltaV</declname>
+        </param>
+        <briefdescription>
+<para>Draw texture map next subdivision. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">ULeft</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>U left. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">VLeft</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>V left. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">ZRight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Z right. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">URight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>U right. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">VRight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>V right. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">oneOverZRight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>1/Z right. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dOneOverZdXAff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>d1/ZdX affine. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">UOverZRight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>U/Z right. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dUOverZdXAff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dU/ZdX affine. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">VOverZRight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>V/Z right. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dVOverZdXAff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dV/ZdX affine. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>affineLength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of the affine. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">U</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> X in fixed16_16. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">V</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> Y in fixed16_16. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">deltaU</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>U delta. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">deltaV</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>V delta. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="528" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="528" bodyend="545"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1a22c84c4c44c3ec0427c4dca43d111740" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>FORCE_INLINE_FUNCTION bool</type>
+        <definition>FORCE_INLINE_FUNCTION bool is1Inside</definition>
+        <argsstring>(int value, int limit)</argsstring>
+        <name>is1Inside</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>limit</declname>
+        </param>
+        <briefdescription>
+<para>Check if value is inside [0..limit[. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to check. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">limit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Upper limit.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if value is inside given limit. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="555" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="555" bodyend="558"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1a67e23de90ee7c3d9096ae799c7da8e7c" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>FORCE_INLINE_FUNCTION bool</type>
+        <definition>FORCE_INLINE_FUNCTION bool is1x1Inside</definition>
+        <argsstring>(int x, int y, int width, int height)</argsstring>
+        <name>is1x1Inside</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+<para>Check if (x,y) is inside ([0..width[, [0..height[) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>X coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Y coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>X limit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Y limit.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if (x,y) is inside given limits. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="570" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="570" bodyend="573"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1acbb5432c44dc0aa4c4d033a45ad71ead" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>FORCE_INLINE_FUNCTION bool</type>
+        <definition>FORCE_INLINE_FUNCTION bool is2Inside</definition>
+        <argsstring>(int value, int limit)</argsstring>
+        <name>is2Inside</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>limit</declname>
+        </param>
+        <briefdescription>
+<para>Check if both value and value+1 are inside [0..limit[. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to check. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">limit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Upper limit.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if value and value+1 are inside given limit. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="583" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="583" bodyend="586"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1a465467b63215cdd985ba984c46fbd937" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>FORCE_INLINE_FUNCTION bool</type>
+        <definition>FORCE_INLINE_FUNCTION bool is2PartiallyInside</definition>
+        <argsstring>(int value, int limit)</argsstring>
+        <name>is2PartiallyInside</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>limit</declname>
+        </param>
+        <briefdescription>
+<para>Check if either value or value+1 is inside [0..limit[. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to check. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">limit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Upper limit.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if either value or value+1 is inside given limit. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="611" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="611" bodyend="614"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1a7eb16f0232cb2658f9c3396888ef290f" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>FORCE_INLINE_FUNCTION bool</type>
+        <definition>FORCE_INLINE_FUNCTION bool is2x2Inside</definition>
+        <argsstring>(int x, int y, int width, int height)</argsstring>
+        <name>is2x2Inside</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+<para>Check if both (x,y) and (x+1,y+1) are inside ([0..width[,[0..height[) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>X coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Y coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>X limit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Y limit.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if (x,y) and (x+1,y+1) are inside given limits. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="598" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="598" bodyend="601"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1a5628626873a5c12fd2aaa6471bb76330" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>FORCE_INLINE_FUNCTION bool</type>
+        <definition>FORCE_INLINE_FUNCTION bool is2x2PartiallyInside</definition>
+        <argsstring>(int x, int y, int width, int height)</argsstring>
+        <name>is2x2PartiallyInside</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+<para>Check if either (x,y) or (x+1,y+1) is inside ([0..width[,[0..height[) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>X coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Y coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>X limit. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Y limit.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if either (x,y) or (x+1,y+1) is inside given limits. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/lcd/LCD.hpp" line="626" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="626" bodyend="629"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class for drawing scanline by the texture mapper. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="touchgfx/lcd/LCD.hpp" line="466" column="1" bodyfile="touchgfx/lcd/LCD.hpp" bodystart="465" bodyend="630"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1add0589d9e887a57f8b687470a08d8266" prot="protected" virt="non-virtual"><scope>touchgfx::LCD::DrawTextureMapScanLineBase</scope><name>drawTextureMapNextSubdivision</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1a466f24adfc48e860d620ee26f928ec84" prot="public" virt="pure-virtual"><scope>touchgfx::LCD::DrawTextureMapScanLineBase</scope><name>drawTextureMapScanLineSubdivisions</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1adc2b8996624c05d3f30f27186185aa3c" prot="protected" virt="non-virtual"><scope>touchgfx::LCD::DrawTextureMapScanLineBase</scope><name>half</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1a22c84c4c44c3ec0427c4dca43d111740" prot="protected" virt="non-virtual"><scope>touchgfx::LCD::DrawTextureMapScanLineBase</scope><name>is1Inside</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1a67e23de90ee7c3d9096ae799c7da8e7c" prot="protected" virt="non-virtual"><scope>touchgfx::LCD::DrawTextureMapScanLineBase</scope><name>is1x1Inside</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1acbb5432c44dc0aa4c4d033a45ad71ead" prot="protected" virt="non-virtual"><scope>touchgfx::LCD::DrawTextureMapScanLineBase</scope><name>is2Inside</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1a465467b63215cdd985ba984c46fbd937" prot="protected" virt="non-virtual"><scope>touchgfx::LCD::DrawTextureMapScanLineBase</scope><name>is2PartiallyInside</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1a7eb16f0232cb2658f9c3396888ef290f" prot="protected" virt="non-virtual"><scope>touchgfx::LCD::DrawTextureMapScanLineBase</scope><name>is2x2Inside</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1a5628626873a5c12fd2aaa6471bb76330" prot="protected" virt="non-virtual"><scope>touchgfx::LCD::DrawTextureMapScanLineBase</scope><name>is2x2PartiallyInside</name></member>
+      <member refid="classtouchgfx_1_1_l_c_d_1_1_draw_texture_map_scan_line_base_1abeeb40671ac8350ae2abbcee86f96609" prot="public" virt="virtual"><scope>touchgfx::LCD::DrawTextureMapScanLineBase</scope><name>~DrawTextureMapScanLineBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

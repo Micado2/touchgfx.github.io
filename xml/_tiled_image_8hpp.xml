@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="_tiled_image_8hpp" kind="file" language="C++">
+    <compoundname>TiledImage.hpp</compoundname>
+    <includes refid="_bitmap_8hpp" local="no">touchgfx/Bitmap.hpp</includes>
+    <includes refid="_types_8hpp" local="no">touchgfx/hal/Types.hpp</includes>
+    <includes refid="_l_c_d_8hpp" local="no">touchgfx/lcd/LCD.hpp</includes>
+    <includes refid="_image_8hpp" local="no">touchgfx/widgets/Image.hpp</includes>
+    <includes refid="_widget_8hpp" local="no">touchgfx/widgets/Widget.hpp</includes>
+    <includedby refid="_tiled_image_button_style_8hpp" local="no">touchgfx/containers/buttons/TiledImageButtonStyle.hpp</includedby>
+    <includedby refid="_image_progress_8hpp" local="no">touchgfx/containers/progress_indicators/ImageProgress.hpp</includedby>
+    <includedby refid="_swipe_container_8hpp" local="no">touchgfx/containers/SwipeContainer.hpp</includedby>
+    <innerclass refid="classtouchgfx_1_1_tiled_image" prot="public">touchgfx::TiledImage</innerclass>
+    <innernamespace refid="namespacetouchgfx">touchgfx</innernamespace>
+    <briefdescription>
+<para>Declares the <ref refid="classtouchgfx_1_1_tiled_image" kindref="compound">touchgfx::TiledImage</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>TILEDIMAGE_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TILEDIMAGE_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;touchgfx/Bitmap.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;touchgfx/hal/Types.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;touchgfx/lcd/LCD.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;touchgfx/widgets/Image.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;touchgfx/widgets/Widget.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetouchgfx" kindref="compound">touchgfx</ref></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23" refid="classtouchgfx_1_1_tiled_image" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtouchgfx_1_1_tiled_image" kindref="compound">TiledImage</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_image" kindref="compound">Image</ref></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_tiled_image_1ab71eb649603ba2668b02871a1e99d4e1" kindref="member">TiledImage</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref>&amp;<sp/>bmp<sp/>=<sp/><ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref>())</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classtouchgfx_1_1_image_1aafe2a82267731414c0c23dbfe64101d0" kindref="member">Image</ref>(bmp),<sp/><ref refid="classtouchgfx_1_1_tiled_image_1a77759e52428db854b991e27540f74b14" kindref="member">xOffset</ref>(0),<sp/><ref refid="classtouchgfx_1_1_tiled_image_1a23600e8e6b3b161da8636df0444080b1" kindref="member">yOffset</ref>(0)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_tiled_image_1a82000e29a2d9966dc76404b954233b0e" kindref="member">setBitmap</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref>&amp;<sp/>bmp);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_tiled_image_1af0d4b608d2d4a7da4d7102c9f1e4ab8f" kindref="member">setOffset</ref>(int16_t<sp/>x,<sp/>int16_t<sp/>y);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_tiled_image_1a23ea2bf0315d4863f35af92e5c4577c5" kindref="member">setXOffset</ref>(int16_t<sp/>x);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_tiled_image_1a58c26248ac934f900a96cbe65b2fa627" kindref="member">setYOffset</ref>(int16_t<sp/>y);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_tiled_image_1aea5ac0ef2e3dcd4ba41c460856dca48c" kindref="member">getOffset</ref>(int16_t&amp;<sp/>x,<sp/>int16_t&amp;<sp/>y);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>int16_t<sp/><ref refid="classtouchgfx_1_1_tiled_image_1aa2b43ae4636606bc6d9f26dd7b8f5c75" kindref="member">getXOffset</ref>();</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>int16_t<sp/><ref refid="classtouchgfx_1_1_tiled_image_1a91c198a48a5d777766a215e5d5a68687" kindref="member">getYOffset</ref>();</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_tiled_image_1a1277d4bddd51dbc604de265fb70ccbfd" kindref="member">draw</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref>&amp;<sp/>invalidatedArea)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref><sp/><ref refid="classtouchgfx_1_1_tiled_image_1a4dcdd780e93cc783a2ceeda00c6f3b51" kindref="member">getSolidRect</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="classtouchgfx_1_1_tiled_image_1a77759e52428db854b991e27540f74b14" kindref="member">xOffset</ref>;<sp/></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="classtouchgfx_1_1_tiled_image_1a23600e8e6b3b161da8636df0444080b1" kindref="member">yOffset</ref>;<sp/></highlight></codeline>
+<codeline lineno="112"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>touchgfx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>TILEDIMAGE_HPP</highlight></codeline>
+    </programlisting>
+    <location file="touchgfx/widgets/TiledImage.hpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,760 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_container" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::Container</compoundname>
+    <basecompoundref refid="classtouchgfx_1_1_drawable" prot="public" virt="non-virtual">Drawable</basecompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_move_animator" prot="public" virt="non-virtual">MoveAnimator&lt; touchgfx::Container &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_abstract_button_container" prot="public" virt="non-virtual">AbstractButtonContainer</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_abstract_clock" prot="public" virt="non-virtual">AbstractClock</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_abstract_progress_indicator" prot="public" virt="non-virtual">AbstractProgressIndicator</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_cacheable_container" prot="public" virt="non-virtual">CacheableContainer</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_drawable_list" prot="public" virt="non-virtual">DrawableList</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_keyboard" prot="public" virt="non-virtual">Keyboard</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_list_layout" prot="public" virt="non-virtual">ListLayout</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_modal_window" prot="public" virt="non-virtual">ModalWindow</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_scrollable_container" prot="public" virt="non-virtual">ScrollableContainer</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_scroll_base" prot="public" virt="non-virtual">ScrollBase</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_slide_menu" prot="public" virt="non-virtual">SlideMenu</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_slider" prot="public" virt="non-virtual">Slider</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_swipe_container" prot="public" virt="non-virtual">SwipeContainer</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_zoom_animation_image" prot="public" virt="non-virtual">ZoomAnimationImage</derivedcompoundref>
+    <includes local="no">Container.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_container_1a15fc4ae5c33721f5f425b20640217f22" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> *</type>
+        <definition>Drawable* firstChild</definition>
+        <argsstring></argsstring>
+        <name>firstChild</name>
+        <briefdescription>
+<para>Pointer to the first child of this container. Subsequent children can be found through firstChild&apos;s nextSibling. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Container.hpp" line="160" column="1" bodyfile="touchgfx/containers/Container.hpp" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classtouchgfx_1_1_container_1a8d160591d071092304c2ed571901f8bb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Screen</definition>
+        <argsstring></argsstring>
+        <name>Screen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Container.hpp" line="162" column="1" bodyfile="touchgfx/containers/Container.hpp" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_container_1a302ad1a4da6fe171eb249828bd8dc7ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void add</definition>
+        <argsstring>(Drawable &amp;d)</argsstring>
+        <name>add</name>
+        <reimplementedby refid="classtouchgfx_1_1_swipe_container_1ad731fe04f38ffd88e6f33fd5a0e5d9d1">add</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_list_layout_1a302ad1a4da6fe171eb249828bd8dc7ab">add</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_modal_window_1a302ad1a4da6fe171eb249828bd8dc7ab">add</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_scrollable_container_1a302ad1a4da6fe171eb249828bd8dc7ab">add</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_slide_menu_1a302ad1a4da6fe171eb249828bd8dc7ab">add</reimplementedby>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> &amp;</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Adds a <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> instance as child to this <ref refid="classtouchgfx_1_1_container" kindref="compound">Container</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> added will be placed as the element to be drawn last, and thus appear on top of all previously added drawables in the <ref refid="classtouchgfx_1_1_container" kindref="compound">Container</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> to add.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Never add a drawable more than once! </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Container.hpp" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_container_1ac92243515043dff4fd93c987b894b017" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Container</definition>
+        <argsstring>()</argsstring>
+        <name>Container</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Container.hpp" line="30" column="1" bodyfile="touchgfx/containers/Container.hpp" bodystart="30" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_container_1a0109ca3d59d6ced431a24313fef18803" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool contains</definition>
+        <argsstring>(const Drawable &amp;d)</argsstring>
+        <name>contains</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> &amp;</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Query if a given <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> has been added directly to this <ref refid="classtouchgfx_1_1_container" kindref="compound">Container</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The search is not done recursively.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> to look for.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the specified <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> instance is direct child of this container, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Container.hpp" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_container_1a1277d4bddd51dbc604de265fb70ccbfd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void draw</definition>
+        <argsstring>(const Rect &amp;invalidatedArea) const</argsstring>
+        <name>draw</name>
+        <reimplements refid="classtouchgfx_1_1_drawable_1a7e4c58d8817f4119459b70ec52c38ef4">draw</reimplements>
+        <reimplementedby refid="classtouchgfx_1_1_keyboard_1a1277d4bddd51dbc604de265fb70ccbfd">draw</reimplementedby>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>invalidatedArea</declname>
+        </param>
+        <briefdescription>
+<para>Draw this drawable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It is a requirement that the draw implementation does not draw outside the region specified by invalidatedArea.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>invalidatedArea</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sub-region of this drawable that needs to be redrawn, expressed in coordinates relative to its parent (e.g. for a complete redraw, invalidatedArea will be (0, 0, width, height). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Container.hpp" line="116" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_container_1a2b224826cd4f0f674009c21d6821f525" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void forEachChild</definition>
+        <argsstring>(GenericCallback&lt; Drawable &amp; &gt; *function)</argsstring>
+        <name>forEachChild</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_generic_callback" kindref="compound">GenericCallback</ref>&lt; <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> &amp; &gt; *</type>
+          <declname>function</declname>
+        </param>
+        <briefdescription>
+<para>Executes the specified callback function for each child in the <ref refid="classtouchgfx_1_1_container" kindref="compound">Container</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The callback to execute must have the following prototype: void T::func(<ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref>&amp;)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">function</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The function to be executed for each child. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Container.hpp" line="126" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_container_1a35ae5c9547dd1861f70b5e4f0f9b94b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> *</type>
+        <definition>Drawable* getFirstChild</definition>
+        <argsstring>()</argsstring>
+        <name>getFirstChild</name>
+        <briefdescription>
+<para>Obtain a pointer to the first child of this container. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The first child is the <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> drawn first, and therefore the <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> <emphasis>behind</emphasis> all other children of this <ref refid="classtouchgfx_1_1_container" kindref="compound">Container</ref>. Useful if you want to manually iterate the children added to this container.</para>
+<para><simplesect kind="return"><para>Pointer to the first drawable added to this container. If nothing has been added return zero.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_drawable_1a61c9b2bf703c49a6d238d354ddcaedb3" kindref="member">getNextSibling</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Container.hpp" line="139" column="1" bodyfile="touchgfx/containers/Container.hpp" bodystart="139" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_container_1a6bc8e89dc7f879221e9862fb27dc726f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void getLastChild</definition>
+        <argsstring>(int16_t x, int16_t y, Drawable **last)</argsstring>
+        <name>getLastChild</name>
+        <reimplements refid="classtouchgfx_1_1_drawable_1a3266cb1860f0b267b67dd85685e720b0">getLastChild</reimplements>
+        <reimplementedby refid="classtouchgfx_1_1_scrollable_container_1a6bc8e89dc7f879221e9862fb27dc726f">getLastChild</reimplementedby>
+        <param>
+          <type>int16_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> **</type>
+          <declname>last</declname>
+        </param>
+        <briefdescription>
+<para>Gets the last child in the list of children in this <ref refid="classtouchgfx_1_1_container" kindref="compound">Container</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If this <ref refid="classtouchgfx_1_1_container" kindref="compound">Container</ref> is touchable (<ref refid="classtouchgfx_1_1_drawable_1a01c717b9abc98d48673b79d691c2d28a" kindref="member">isTouchable()</ref>), it will be passed back as the result. Otherwise all <emphasis>visible</emphasis> children are traversed recursively to find the <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> that intersects with the given coordinate.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate of the intersection. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate of the intersection. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">last</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>out parameter in which the result is placed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_drawable_1a9d8a6cfb13917785c143e74d40e4e2be" kindref="member">isVisible</ref>, <ref refid="classtouchgfx_1_1_drawable_1a01c717b9abc98d48673b79d691c2d28a" kindref="member">isTouchable</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Container.hpp" line="114" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_container_1a4dcdd780e93cc783a2ceeda00c6f3b51" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref></type>
+        <definition>virtual Rect getSolidRect</definition>
+        <argsstring>() const</argsstring>
+        <name>getSolidRect</name>
+        <reimplements refid="classtouchgfx_1_1_drawable_1ae7cd27bb574d3b85bd0ce5ce99e555ba">getSolidRect</reimplements>
+        <briefdescription>
+<para>Get (the largest possible) rectangle that is guaranteed to be solid (opaque). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This information is important, as any <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> underneath the solid area does not need to be drawn.</para>
+<para><simplesect kind="return"><para>The solid rectangle part of the <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref>.</para>
+</simplesect>
+<simplesect kind="note"><para>The rectangle returned must be relative to upper left corner of the <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref>, meaning that a completely solid widget should return the full size <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref>(0, 0, <ref refid="classtouchgfx_1_1_drawable_1acae58162aaca6fc174416550f76668e7" kindref="member">getWidth()</ref>, <ref refid="classtouchgfx_1_1_drawable_1ad00483821e06fe4d0d70222de4135d30" kindref="member">getHeight()</ref>). If no area can be guaranteed to be solid, an empty Rect(0, 0, 0, 0) must be returned. Failing to return the correct rectangle may result in errors on the display. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Container.hpp" line="118" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_container_1aca896b17460628dceeac8b01553b6a00" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void insert</definition>
+        <argsstring>(Drawable *previous, Drawable &amp;d)</argsstring>
+        <name>insert</name>
+        <reimplementedby refid="classtouchgfx_1_1_list_layout_1aca896b17460628dceeac8b01553b6a00">insert</reimplementedby>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> *</type>
+          <declname>previous</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> &amp;</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Inserts a <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> after a specific child node. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If previous child node is 0, the drawable will be inserted as the first element in the list. The first element in the list of children is the element drawn first, so this makes it possible to insert a <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> <emphasis>behind</emphasis> all previously added children.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">previous</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> to insert after. If null, insert as header. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> to insert.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>As with add, do not add the same drawable twice. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Container.hpp" line="100" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_container_1a4d9056af30ab3c61da25a71023a341f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void remove</definition>
+        <argsstring>(Drawable &amp;d)</argsstring>
+        <name>remove</name>
+        <reimplementedby refid="classtouchgfx_1_1_swipe_container_1a0da696c82638b980a479c326ececa061">remove</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_modal_window_1a4d9056af30ab3c61da25a71023a341f2">remove</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_list_layout_1a4d9056af30ab3c61da25a71023a341f2">remove</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_slide_menu_1a4d9056af30ab3c61da25a71023a341f2">remove</reimplementedby>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> &amp;</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Removes a <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> from the container by removing it from the linked list of children. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> is not in the list of children, nothing happens. It is possible to remove an element from whichever <ref refid="classtouchgfx_1_1_container" kindref="compound">Container</ref> it is a member of using: <programlisting><codeline><highlight class="normal">if<sp/>(d.getParent())<sp/>d.getParent()-&gt;remove(d);</highlight></codeline>
+</programlisting> The <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> will have the parent and next sibling cleared, but is otherwise left unaltered.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> to remove.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This is safe to call even if d is not a child of this <ref refid="classtouchgfx_1_1_container" kindref="compound">Container</ref> (in which case nothing happens). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Container.hpp" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_container_1a4e62c805a8478320f1e650e6a635b31a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void removeAll</definition>
+        <argsstring>()</argsstring>
+        <name>removeAll</name>
+        <reimplementedby refid="classtouchgfx_1_1_list_layout_1a4e62c805a8478320f1e650e6a635b31a">removeAll</reimplementedby>
+        <briefdescription>
+<para>Removes all children in the <ref refid="classtouchgfx_1_1_container" kindref="compound">Container</ref> by resetting their parent and sibling pointers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Please note that this is not done recursively, so any child which is itself a <ref refid="classtouchgfx_1_1_container" kindref="compound">Container</ref> is not emptied. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Container.hpp" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_container_1a23f8fdbaba5449e55efb7a14a96b657d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void unlink</definition>
+        <argsstring>()</argsstring>
+        <name>unlink</name>
+        <briefdescription>
+<para>Removes all children by unlinking the first child. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The parent and sibling pointers of the children are not reset.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_container_1a35ae5c9547dd1861f70b5e4f0f9b94b3" kindref="member">getFirstChild</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Container.hpp" line="76" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_container_1a47e8a844fa50b171656f8355fd8e313b" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref></type>
+        <definition>virtual Rect getContainedArea</definition>
+        <argsstring>() const</argsstring>
+        <name>getContainedArea</name>
+        <reimplementedby refid="classtouchgfx_1_1_scrollable_container_1a47e8a844fa50b171656f8355fd8e313b">getContainedArea</reimplementedby>
+        <briefdescription>
+<para>Gets a rectangle describing the total area covered by the children of this container. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Rectangle covering all children. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Container.hpp" line="150" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_container_1add539b68574f09b364f0b4e6a312b9b0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void moveChildrenRelative</definition>
+        <argsstring>(int16_t deltaX, int16_t deltaY)</argsstring>
+        <name>moveChildrenRelative</name>
+        <reimplementedby refid="classtouchgfx_1_1_scrollable_container_1add539b68574f09b364f0b4e6a312b9b0">moveChildrenRelative</reimplementedby>
+        <param>
+          <type>int16_t</type>
+          <declname>deltaX</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>deltaY</declname>
+        </param>
+        <briefdescription>
+<para>Calls moveRelative on all children. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>deltaX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Horizontal displacement. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>deltaY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vertical displacement. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/Container.hpp" line="158" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A <ref refid="classtouchgfx_1_1_container" kindref="compound">Container</ref> is a <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> that can have child nodes. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The z-order of children is determined by the order in which Drawables are added to the container - the <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> added last will be front-most on the screen.</para>
+<para>This class overrides a few functions in <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> in order to traverse child nodes.</para>
+<para>Note that containers act as view ports - that is, only the parts of children that intersect with the geometry of the container will be visible (e.g. setting a container&apos;s width to 0 will render all children invisible).</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="473">
+        <label>ScrollWheelWithSelectionStyle</label>
+        <link refid="classtouchgfx_1_1_scroll_wheel_with_selection_style"/>
+        <childnode refid="471" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="460">
+        <label>CircleProgress</label>
+        <link refid="classtouchgfx_1_1_circle_progress"/>
+        <childnode refid="456" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="450">
+        <label>RepeatButtonTrigger</label>
+        <link refid="classtouchgfx_1_1_repeat_button_trigger"/>
+        <childnode refid="448" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="461">
+        <label>LineProgress</label>
+        <link refid="classtouchgfx_1_1_line_progress"/>
+        <childnode refid="456" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="471">
+        <label>ScrollWheelBase</label>
+        <link refid="classtouchgfx_1_1_scroll_wheel_base"/>
+        <childnode refid="469" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="470">
+        <label>ScrollList</label>
+        <link refid="classtouchgfx_1_1_scroll_list"/>
+        <childnode refid="469" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="462">
+        <label>TextProgress</label>
+        <link refid="classtouchgfx_1_1_text_progress"/>
+        <childnode refid="456" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="463">
+        <label>CacheableContainer</label>
+        <link refid="classtouchgfx_1_1_cacheable_container"/>
+        <childnode refid="445" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="445">
+        <label>Container</label>
+        <link refid="classtouchgfx_1_1_container"/>
+        <childnode refid="446" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="452">
+        <label>TouchButtonTrigger</label>
+        <link refid="classtouchgfx_1_1_touch_button_trigger"/>
+        <childnode refid="448" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="474">
+        <label>SlideMenu</label>
+        <link refid="classtouchgfx_1_1_slide_menu"/>
+        <childnode refid="445" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="455">
+        <label>DigitalClock</label>
+        <link refid="classtouchgfx_1_1_digital_clock"/>
+        <childnode refid="453" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="458">
+        <label>BoxProgress</label>
+        <link refid="classtouchgfx_1_1_box_progress"/>
+        <childnode refid="457" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="467">
+        <label>ModalWindow</label>
+        <link refid="classtouchgfx_1_1_modal_window"/>
+        <childnode refid="445" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="466">
+        <label>ListLayout</label>
+        <link refid="classtouchgfx_1_1_list_layout"/>
+        <childnode refid="445" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="472">
+        <label>ScrollWheel</label>
+        <link refid="classtouchgfx_1_1_scroll_wheel"/>
+        <childnode refid="471" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="469">
+        <label>ScrollBase</label>
+        <link refid="classtouchgfx_1_1_scroll_base"/>
+        <childnode refid="445" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="464">
+        <label>DrawableList</label>
+        <link refid="classtouchgfx_1_1_drawable_list"/>
+        <childnode refid="445" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="465">
+        <label>Keyboard</label>
+        <link refid="classtouchgfx_1_1_keyboard"/>
+        <childnode refid="445" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="453">
+        <label>AbstractClock</label>
+        <link refid="classtouchgfx_1_1_abstract_clock"/>
+        <childnode refid="445" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="447">
+        <label>MoveAnimator&lt; touchgfx::Container &gt;</label>
+        <link refid="classtouchgfx_1_1_move_animator"/>
+        <childnode refid="445" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="448">
+        <label>AbstractButtonContainer</label>
+        <link refid="classtouchgfx_1_1_abstract_button_container"/>
+        <childnode refid="445" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="446">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+      </node>
+      <node id="476">
+        <label>SwipeContainer</label>
+        <link refid="classtouchgfx_1_1_swipe_container"/>
+        <childnode refid="445" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="475">
+        <label>Slider</label>
+        <link refid="classtouchgfx_1_1_slider"/>
+        <childnode refid="445" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="457">
+        <label>AbstractDirectionProgress</label>
+        <link refid="classtouchgfx_1_1_abstract_direction_progress"/>
+        <childnode refid="456" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="451">
+        <label>ToggleButtonTrigger</label>
+        <link refid="classtouchgfx_1_1_toggle_button_trigger"/>
+        <childnode refid="448" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="468">
+        <label>ScrollableContainer</label>
+        <link refid="classtouchgfx_1_1_scrollable_container"/>
+        <childnode refid="445" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="477">
+        <label>ZoomAnimationImage</label>
+        <link refid="classtouchgfx_1_1_zoom_animation_image"/>
+        <childnode refid="445" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="449">
+        <label>ClickButtonTrigger</label>
+        <link refid="classtouchgfx_1_1_click_button_trigger"/>
+        <childnode refid="448" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="456">
+        <label>AbstractProgressIndicator</label>
+        <link refid="classtouchgfx_1_1_abstract_progress_indicator"/>
+        <childnode refid="445" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="459">
+        <label>ImageProgress</label>
+        <link refid="classtouchgfx_1_1_image_progress"/>
+        <childnode refid="457" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="454">
+        <label>AnalogClock</label>
+        <link refid="classtouchgfx_1_1_analog_clock"/>
+        <childnode refid="453" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="478">
+        <label>Container</label>
+        <link refid="classtouchgfx_1_1_container"/>
+        <childnode refid="479" relation="public-inheritance">
+        </childnode>
+        <childnode refid="479" relation="usage">
+          <edgelabel>firstChild</edgelabel>
+        </childnode>
+      </node>
+      <node id="480">
+        <label>Rect</label>
+        <link refid="classtouchgfx_1_1_rect"/>
+      </node>
+      <node id="479">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+        <childnode refid="480" relation="usage">
+          <edgelabel>rect</edgelabel>
+        </childnode>
+        <childnode refid="479" relation="usage">
+          <edgelabel>nextSibling</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/containers/Container.hpp" line="28" column="1" bodyfile="touchgfx/containers/Container.hpp" bodystart="27" bodyend="166"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_container_1a302ad1a4da6fe171eb249828bd8dc7ab" prot="public" virt="virtual"><scope>touchgfx::Container</scope><name>add</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae2d939b2a9c253f0fb3bae3ec7be4e2f" prot="public" virt="virtual"><scope>touchgfx::Container</scope><name>childGeometryChanged</name></member>
+      <member refid="classtouchgfx_1_1_container_1ac92243515043dff4fd93c987b894b017" prot="public" virt="non-virtual"><scope>touchgfx::Container</scope><name>Container</name></member>
+      <member refid="classtouchgfx_1_1_container_1a0109ca3d59d6ced431a24313fef18803" prot="public" virt="virtual"><scope>touchgfx::Container</scope><name>contains</name></member>
+      <member refid="classtouchgfx_1_1_container_1a1277d4bddd51dbc604de265fb70ccbfd" prot="public" virt="virtual"><scope>touchgfx::Container</scope><name>draw</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9cf3a85fa7554475fa42c97985bda6df" prot="public" virt="non-virtual"><scope>touchgfx::Container</scope><name>Drawable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4a009ec2b654351679a0124e9055abdc" prot="public" virt="non-virtual"><scope>touchgfx::Container</scope><name>drawToDynamicBitmap</name></member>
+      <member refid="classtouchgfx_1_1_container_1a15fc4ae5c33721f5f425b20640217f22" prot="protected" virt="non-virtual"><scope>touchgfx::Container</scope><name>firstChild</name></member>
+      <member refid="classtouchgfx_1_1_container_1a2b224826cd4f0f674009c21d6821f525" prot="public" virt="virtual"><scope>touchgfx::Container</scope><name>forEachChild</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa7737d9d49d7f55ec9bde8f2c9751b1d" prot="public" virt="non-virtual"><scope>touchgfx::Container</scope><name>getAbsoluteRect</name></member>
+      <member refid="classtouchgfx_1_1_container_1a47e8a844fa50b171656f8355fd8e313b" prot="protected" virt="virtual"><scope>touchgfx::Container</scope><name>getContainedArea</name></member>
+      <member refid="classtouchgfx_1_1_container_1a35ae5c9547dd1861f70b5e4f0f9b94b3" prot="public" virt="non-virtual"><scope>touchgfx::Container</scope><name>getFirstChild</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ad00483821e06fe4d0d70222de4135d30" prot="public" virt="non-virtual"><scope>touchgfx::Container</scope><name>getHeight</name></member>
+      <member refid="classtouchgfx_1_1_container_1a6bc8e89dc7f879221e9862fb27dc726f" prot="public" virt="virtual"><scope>touchgfx::Container</scope><name>getLastChild</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a61c9b2bf703c49a6d238d354ddcaedb3" prot="public" virt="non-virtual"><scope>touchgfx::Container</scope><name>getNextSibling</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a013e065d4d9a10dbfa0ddee9a35582a3" prot="public" virt="non-virtual"><scope>touchgfx::Container</scope><name>getParent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af23a5bb7d473e16363a449c497586be3" prot="public" virt="non-virtual"><scope>touchgfx::Container</scope><name>getRect</name></member>
+      <member refid="classtouchgfx_1_1_container_1a4dcdd780e93cc783a2ceeda00c6f3b51" prot="public" virt="virtual"><scope>touchgfx::Container</scope><name>getSolidRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4783dfe657ff1b7a33261bda8c4b4266" prot="public" virt="virtual"><scope>touchgfx::Container</scope><name>getSolidRectAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a83b8847f583b63e60aa4bf778261ddd7" prot="public" virt="virtual"><scope>touchgfx::Container</scope><name>getVisibleRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1acae58162aaca6fc174416550f76668e7" prot="public" virt="non-virtual"><scope>touchgfx::Container</scope><name>getWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac071e9b7ccf37179df7d29c6778b664c" prot="public" virt="non-virtual"><scope>touchgfx::Container</scope><name>getX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a26752e6cff4607d0eec8768ef6d9032a" prot="public" virt="non-virtual"><scope>touchgfx::Container</scope><name>getY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a7f1524b90bc90e5f6cf7ee47aae12123" prot="public" virt="virtual"><scope>touchgfx::Container</scope><name>handleClickEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a06ae1946b2124cc94e26cfe18728debf" prot="public" virt="virtual"><scope>touchgfx::Container</scope><name>handleDragEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4db4945ecbc2303bf860e082409b8029" prot="public" virt="virtual"><scope>touchgfx::Container</scope><name>handleGestureEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1af635cee0f186c3d0fcea60bac14355" prot="public" virt="virtual"><scope>touchgfx::Container</scope><name>handleTickEvent</name></member>
+      <member refid="classtouchgfx_1_1_container_1aca896b17460628dceeac8b01553b6a00" prot="public" virt="virtual"><scope>touchgfx::Container</scope><name>insert</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2800b4c18c63e9e7b1f85a74ce6b80c3" prot="public" virt="virtual"><scope>touchgfx::Container</scope><name>invalidate</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a130cf6e1bf2b9f04f48e659758fa75e2" prot="public" virt="virtual"><scope>touchgfx::Container</scope><name>invalidateRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a01c717b9abc98d48673b79d691c2d28a" prot="public" virt="non-virtual"><scope>touchgfx::Container</scope><name>isTouchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9d8a6cfb13917785c143e74d40e4e2be" prot="public" virt="non-virtual"><scope>touchgfx::Container</scope><name>isVisible</name></member>
+      <member refid="classtouchgfx_1_1_container_1add539b68574f09b364f0b4e6a312b9b0" prot="protected" virt="virtual"><scope>touchgfx::Container</scope><name>moveChildrenRelative</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af3590480070e2cf91580976f322d2c5e" prot="public" virt="virtual"><scope>touchgfx::Container</scope><name>moveRelative</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aadc5abfad4d2fcc331cf8de8713dc00e" prot="public" virt="virtual"><scope>touchgfx::Container</scope><name>moveTo</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0da4a00c3fbdea5740e52c7e04316c65" prot="protected" virt="non-virtual"><scope>touchgfx::Container</scope><name>nextSibling</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ab77c13cde2b01107dcbc5c2b584d422f" prot="protected" virt="non-virtual"><scope>touchgfx::Container</scope><name>parent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2a955ddc316d002f566598f340eb2af9" prot="protected" virt="non-virtual"><scope>touchgfx::Container</scope><name>rect</name></member>
+      <member refid="classtouchgfx_1_1_container_1a4d9056af30ab3c61da25a71023a341f2" prot="public" virt="virtual"><scope>touchgfx::Container</scope><name>remove</name></member>
+      <member refid="classtouchgfx_1_1_container_1a4e62c805a8478320f1e650e6a635b31a" prot="public" virt="virtual"><scope>touchgfx::Container</scope><name>removeAll</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a47a6312407603de99247bb802dbd8a48" prot="public" virt="virtual"><scope>touchgfx::Container</scope><name>setHeight</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac218c371450d8ad2bed3e1b07965a41a" prot="public" virt="virtual"><scope>touchgfx::Container</scope><name>setPosition</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae4c38eadb852b153850ea7ded1f50a19" prot="public" virt="non-virtual"><scope>touchgfx::Container</scope><name>setTouchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a71639c6634c5dcf6d1bb21b8b1b61f5b" prot="public" virt="non-virtual"><scope>touchgfx::Container</scope><name>setVisible</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae74a37f71d23440fc8b0466ad8ecfe4b" prot="public" virt="virtual"><scope>touchgfx::Container</scope><name>setWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9f6db7f34a74e991fc446fffb5703a53" prot="public" virt="virtual"><scope>touchgfx::Container</scope><name>setX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6c86659dc1e7355c207e9c0aa18af167" prot="public" virt="virtual"><scope>touchgfx::Container</scope><name>setXY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1b08d48e7e23a046f09e63089bc82bc1" prot="public" virt="virtual"><scope>touchgfx::Container</scope><name>setY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0d014de134cb9b9c1c361fcd726a5f34" prot="protected" virt="non-virtual"><scope>touchgfx::Container</scope><name>touchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a48c1d14ac943dbfa4935ea39db950608" prot="public" virt="virtual"><scope>touchgfx::Container</scope><name>translateRectToAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_container_1a23f8fdbaba5449e55efb7a14a96b657d" prot="public" virt="virtual"><scope>touchgfx::Container</scope><name>unlink</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa54a57ae048476d840caf6d4d2c47aa3" prot="protected" virt="non-virtual"><scope>touchgfx::Container</scope><name>visible</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6bb040a11ffc2bd641283cc0bc0d1346" prot="public" virt="virtual"><scope>touchgfx::Container</scope><name>~Drawable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

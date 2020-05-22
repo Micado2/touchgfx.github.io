@@ -1,0 +1,1058 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_font" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>touchgfx::Font</compoundname>
+    <derivedcompoundref refid="classtouchgfx_1_1_const_font" prot="public" virt="non-virtual">ConstFont</derivedcompoundref>
+    <includes local="no">Font.hpp</includes>
+      <sectiondef kind="protected-type">
+      <memberdef kind="typedef" id="classtouchgfx_1_1_font_1a52d57144a793f8543aa1933c59781f26" prot="protected" static="no">
+        <type>uint16_t(Font::*</type>
+        <definition>typedef uint16_t(Font::* StringWidthFunctionPointer) (TextDirection textDirection, const Unicode::UnicodeChar *text, va_list pArg) const</definition>
+        <argsstring>)(TextDirection textDirection, const Unicode::UnicodeChar *text, va_list pArg) const</argsstring>
+        <name>StringWidthFunctionPointer</name>
+        <briefdescription>
+<para>Function type for getting string width. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Font.hpp" line="428" column="1" bodyfile="touchgfx/Font.hpp" bodystart="428" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_font_1ae1fc9d24bacca2806544c13bc09f0631" prot="protected" static="yes" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_font_1a52d57144a793f8543aa1933c59781f26" kindref="member">StringWidthFunctionPointer</ref></type>
+        <definition>StringWidthFunctionPointer getStringWidthFunction</definition>
+        <argsstring></argsstring>
+        <name>getStringWidthFunction</name>
+        <briefdescription>
+<para>The getStringWidth function, either LTR (supporting LTR only) or RTL (supporting RTL and LTR) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Font.hpp" line="430" column="1" bodyfile="touchgfx/Font.hpp" bodystart="430" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_font_1a46915ccbd0b1d72e15e480b2c22115ff" prot="protected" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t bAlignRow</definition>
+        <argsstring></argsstring>
+        <name>bAlignRow</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+<para>The glyphs are saved with each row byte aligned. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Font.hpp" line="460" column="1" bodyfile="touchgfx/Font.hpp" bodystart="460" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_font_1ac72ce3f2a48b0465b46e6246eb4f5afb" prot="protected" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t bPerPixel</definition>
+        <argsstring></argsstring>
+        <name>bPerPixel</name>
+        <bitfield> 7</bitfield>
+        <briefdescription>
+<para>The number of bits per pixel. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Font.hpp" line="459" column="1" bodyfile="touchgfx/Font.hpp" bodystart="459" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_font_1a21bd162221278e7a9d71e4c0cd870f35" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref></type>
+        <definition>Unicode::UnicodeChar ellipsisCharacter</definition>
+        <argsstring></argsstring>
+        <name>ellipsisCharacter</name>
+        <briefdescription>
+<para>The ellipsis character used for truncating long texts. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Font.hpp" line="464" column="1" bodyfile="touchgfx/Font.hpp" bodystart="464" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_font_1acc415780ee67bcabd7483e42e89f55cc" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref></type>
+        <definition>Unicode::UnicodeChar falllbackCharacter</definition>
+        <argsstring></argsstring>
+        <name>falllbackCharacter</name>
+        <briefdescription>
+<para>The fallback character to use when no glyph exists for the wanted character. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Font.hpp" line="463" column="1" bodyfile="touchgfx/Font.hpp" bodystart="463" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_font_1a0368f14498012c2ea12c72b0eea75d92" prot="protected" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t fontHeight</definition>
+        <argsstring></argsstring>
+        <name>fontHeight</name>
+        <briefdescription>
+<para>The font height in pixels. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Font.hpp" line="457" column="1" bodyfile="touchgfx/Font.hpp" bodystart="457" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_font_1a540a5126bac1e6e6f308ed6f26dfc684" prot="protected" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t maxPixelsLeft</definition>
+        <argsstring></argsstring>
+        <name>maxPixelsLeft</name>
+        <briefdescription>
+<para>The maximum number of pixels a glyph extends to the left. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Font.hpp" line="461" column="1" bodyfile="touchgfx/Font.hpp" bodystart="461" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_font_1a5bfb5d6065d7ae0271a7f0dba73fd453" prot="protected" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t maxPixelsRight</definition>
+        <argsstring></argsstring>
+        <name>maxPixelsRight</name>
+        <briefdescription>
+<para>The maximum number of pixels a glyph extends to the right. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Font.hpp" line="462" column="1" bodyfile="touchgfx/Font.hpp" bodystart="462" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_font_1a65fa1ce4370c34b6d3cf6fed911e47ad" prot="protected" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t pixelsBelowBaseline</definition>
+        <argsstring></argsstring>
+        <name>pixelsBelowBaseline</name>
+        <briefdescription>
+<para>The number of pixels below the base line. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Font.hpp" line="458" column="1" bodyfile="touchgfx/Font.hpp" bodystart="458" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_font_1a61c34e4c0206a76e75013915fca18bbd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>uint8_t</type>
+        <definition>virtual uint8_t getBitsPerPixel</definition>
+        <argsstring>() const</argsstring>
+        <name>getBitsPerPixel</name>
+        <briefdescription>
+<para>Gets bits per pixel for this font. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The number of bits used per pixel in this font. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Font.hpp" line="307" column="1" bodyfile="touchgfx/Font.hpp" bodystart="307" bodyend="310"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_font_1a9718660c78bc43231736440cd5496d70" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>uint8_t</type>
+        <definition>virtual uint8_t getByteAlignRow</definition>
+        <argsstring>() const</argsstring>
+        <name>getByteAlignRow</name>
+        <briefdescription>
+<para>Are the glyphs saved with each glyph row byte aligned? </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if each glyph row is stored byte aligned, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Font.hpp" line="317" column="1" bodyfile="touchgfx/Font.hpp" bodystart="317" bodyend="320"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_font_1a15cf2ef9de10ad984d0eb5d67cbe172f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>uint16_t</type>
+        <definition>virtual uint16_t getCharWidth</definition>
+        <argsstring>(const Unicode::UnicodeChar c) const</argsstring>
+        <name>getCharWidth</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Gets the width in pixels of the specified character. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classtouchgfx_1_1_unicode" kindref="compound">Unicode</ref> character.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The width in pixels of the specified character. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Font.hpp" line="251" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_font_1a6db0bda82a726d472c608536f1f14e9f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref></type>
+        <definition>virtual Unicode::UnicodeChar getEllipsisChar</definition>
+        <argsstring>() const</argsstring>
+        <name>getEllipsisChar</name>
+        <briefdescription>
+<para>Gets ellipsis character for the given font. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the character which is used when truncating long lines.</para>
+<para><simplesect kind="return"><para>The ellipsis character for the typography.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_text_area_1a413057e715a3c18b900912b7e14ed4f8" kindref="member">TextArea::setWideTextAction</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Font.hpp" line="196" column="1" bodyfile="touchgfx/Font.hpp" bodystart="196" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_font_1a8b9b82348bfe7c8f383c246cfdb949db" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref></type>
+        <definition>virtual Unicode::UnicodeChar getFallbackChar</definition>
+        <argsstring>() const</argsstring>
+        <name>getFallbackChar</name>
+        <briefdescription>
+<para>Gets fallback character for the given font. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The fallback character is the character used when no glyph is available for some character. If 0 (zero) is returned, there is no default character.</para>
+<para><simplesect kind="return"><para>The default character for the typography in case no glyph is available. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Font.hpp" line="183" column="1" bodyfile="touchgfx/Font.hpp" bodystart="183" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_font_1a8c23ad7cd9a8c60d93650bd70b784b01" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>uint16_t</type>
+        <definition>virtual uint16_t getFontHeight</definition>
+        <argsstring>() const</argsstring>
+        <name>getFontHeight</name>
+        <briefdescription>
+<para>Returns the height in pixels of this font. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The returned value corresponds to the maximum height occupied by a character in the font.</para>
+<para><simplesect kind="return"><para>The height in pixels of this font.</para>
+</simplesect>
+<simplesect kind="note"><para>It is not sufficient to allocate text areas with this height. Use getMinimumTextHeight for this. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Font.hpp" line="285" column="1" bodyfile="touchgfx/Font.hpp" bodystart="285" bodyend="288"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_font_1a5f7aec9358d43d39cc9a54b6a294d148" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>const <ref refid="structtouchgfx_1_1_glyph_node" kindref="compound">GlyphNode</ref> *</type>
+        <definition>virtual const GlyphNode* getGlyph</definition>
+        <argsstring>(Unicode::UnicodeChar unicode, const uint8_t *&amp;pixelData, uint8_t &amp;bitsPerPixel) const =0</argsstring>
+        <name>getGlyph</name>
+        <reimplementedby refid="classtouchgfx_1_1_const_font_1a64e7df23a7d1b3b8b97c44ea6cef0df7">getGlyph</reimplementedby>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref></type>
+          <declname>unicode</declname>
+        </param>
+        <param>
+          <type>const uint8_t *&amp;</type>
+          <declname>pixelData</declname>
+        </param>
+        <param>
+          <type>uint8_t &amp;</type>
+          <declname>bitsPerPixel</declname>
+        </param>
+        <briefdescription>
+<para>Gets the glyph data associated with the specified <ref refid="classtouchgfx_1_1_unicode" kindref="compound">Unicode</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Please note that in case of Thai letters and Arabic letters where diacritics can be placed relative to the previous character(s), please use <ref refid="classtouchgfx_1_1_text_provider_1ab36ea3eb2e53cc0058da800ed3f6d666" kindref="member">TextProvider::getNextLigature()</ref> instead as it will create a temporary <ref refid="structtouchgfx_1_1_glyph_node" kindref="compound">GlyphNode</ref> that will be adjusted with respect to X/Y position.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unicode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The character to look up. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pixelData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the pixel data for the glyph if the glyph is found. This is set by this method. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">bitsPerPixel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference where to place the number of bits per pixel.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pointer to the glyph node or null if the glyph was not found. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Font.hpp" line="154" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_font_1a29dd3cdff7e63fb8b5147874bd042f8c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const <ref refid="structtouchgfx_1_1_glyph_node" kindref="compound">GlyphNode</ref> *</type>
+        <definition>virtual const GlyphNode* getGlyph</definition>
+        <argsstring>(Unicode::UnicodeChar unicode) const</argsstring>
+        <name>getGlyph</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref></type>
+          <declname>unicode</declname>
+        </param>
+        <briefdescription>
+<para>Gets the glyph data associated with the specified <ref refid="classtouchgfx_1_1_unicode" kindref="compound">Unicode</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Please note that in case of Thai letters and Arabic letters where diacritics can be placed relative to the previous character(s), please use <ref refid="classtouchgfx_1_1_text_provider_1ab36ea3eb2e53cc0058da800ed3f6d666" kindref="member">TextProvider::getNextLigature()</ref> instead as it will create a temporary <ref refid="structtouchgfx_1_1_glyph_node" kindref="compound">GlyphNode</ref> that will be adjusted with respect to X/Y position.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unicode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The character to look up.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pointer to the glyph node or null if the glyph was not found.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_text_provider_1ab36ea3eb2e53cc0058da800ed3f6d666" kindref="member">TextProvider::getNextLigature</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Font.hpp" line="168" column="1" bodyfile="touchgfx/Font.hpp" bodystart="168" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_font_1a1b7655ad510ecc9156ba1c0ecd897f37" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const uint16_t *</type>
+        <definition>virtual const uint16_t* getGSUBTable</definition>
+        <argsstring>() const</argsstring>
+        <name>getGSUBTable</name>
+        <briefdescription>
+<para>Gets GSUB table. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Currently only used for Devanagari fonts.</para>
+<para><simplesect kind="return"><para>The GSUB table or null if font has GSUB no table. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Font.hpp" line="374" column="1" bodyfile="touchgfx/Font.hpp" bodystart="374" bodyend="377"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_font_1aa552c0dc1d691b40a06601a497a9b486" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>int8_t</type>
+        <definition>virtual int8_t getKerning</definition>
+        <argsstring>(Unicode::UnicodeChar prevChar, const GlyphNode *glyph) const</argsstring>
+        <name>getKerning</name>
+        <reimplementedby refid="classtouchgfx_1_1_internal_flash_font_1aa552c0dc1d691b40a06601a497a9b486">getKerning</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_const_font_1aa2fa0eae4be36312ca347d6c961100b4">getKerning</reimplementedby>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref></type>
+          <declname>prevChar</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structtouchgfx_1_1_glyph_node" kindref="compound">GlyphNode</ref> *</type>
+          <declname>glyph</declname>
+        </param>
+        <briefdescription>
+<para>Gets the kerning distance between two characters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>prevChar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classtouchgfx_1_1_unicode" kindref="compound">Unicode</ref> value of the previous character. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>glyph</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the glyph object for the current character.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The kerning distance between prevChar and glyph char. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Font.hpp" line="354" column="1" bodyfile="touchgfx/Font.hpp" bodystart="354" bodyend="357"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_font_1a8bb07da3aa08b111b2b10a0ac94b6c51" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t getMaxPixelsLeft</definition>
+        <argsstring>() const</argsstring>
+        <name>getMaxPixelsLeft</name>
+        <briefdescription>
+<para>Gets maximum pixels left of any glyph in the font. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the max value of &quot;left&quot; for all glyphs. The value is negated so if a &quot;g&quot; has left=-6 maxPixelsLeft is 6. This value is calculated by the font converter.</para>
+<para><simplesect kind="return"><para>The maximum pixels left. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Font.hpp" line="329" column="1" bodyfile="touchgfx/Font.hpp" bodystart="329" bodyend="332"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_font_1a3a54d1df18f81900c86342666e0c1655" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t getMaxPixelsRight</definition>
+        <argsstring>() const</argsstring>
+        <name>getMaxPixelsRight</name>
+        <briefdescription>
+<para>Gets maximum pixels right of any glyph in the font. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the max value of &quot;width+left-advance&quot; for all glyphs. The is the number of pixels a glyph reaches to the right of its normal area. This value is calculated by the font converter.</para>
+<para><simplesect kind="return"><para>The maximum pixels right. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Font.hpp" line="341" column="1" bodyfile="touchgfx/Font.hpp" bodystart="341" bodyend="344"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_font_1a91a17ca7d030f5d82aeeafddca7bd5c5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>uint16_t</type>
+        <definition>virtual uint16_t getMaxTextHeight</definition>
+        <argsstring>(const Unicode::UnicodeChar *text,...) const</argsstring>
+        <name>getMaxTextHeight</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref> *</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Gets the height of the highest character in a given string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The height includes the spacing above the text which is included in the font.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A null-terminated <ref refid="classtouchgfx_1_1_unicode" kindref="compound">Unicode</ref> string. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>...</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variable arguments providing additional information inserted at wildcard placeholders.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The height if the given text. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Font.hpp" line="274" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_font_1a7cf8c8194b68aa26a9c4b0cabf825cec" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>uint16_t</type>
+        <definition>virtual uint16_t getMinimumTextHeight</definition>
+        <argsstring>() const</argsstring>
+        <name>getMinimumTextHeight</name>
+        <briefdescription>
+<para>Returns the minimum height needed for a text field that uses this font. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Takes into account that certain characters (eg &apos;g&apos;) have pixels below the baseline, thus making the text height larger than the font height.</para>
+<para><simplesect kind="return"><para>The minimum height needed for a text field that uses this font. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Font.hpp" line="297" column="1" bodyfile="touchgfx/Font.hpp" bodystart="297" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_font_1a13ea7e6a2dd61e749976e9c20b83dd29" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>uint16_t</type>
+        <definition>virtual uint16_t getNumberOfLines</definition>
+        <argsstring>(const Unicode::UnicodeChar *text,...) const</argsstring>
+        <name>getNumberOfLines</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref> *</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Count the number of lines in a given text. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The text. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>...</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variable arguments providing additional information.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of lines. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Font.hpp" line="367" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_font_1a732182d715f61bbed8bab6d41bbae5f5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>uint8_t</type>
+        <definition>virtual uint8_t getSpacingAbove</definition>
+        <argsstring>(const Unicode::UnicodeChar *text,...) const</argsstring>
+        <name>getSpacingAbove</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref> *</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Gets the number of blank pixels at the top of the given text. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A null-terminated <ref refid="classtouchgfx_1_1_unicode" kindref="compound">Unicode</ref> string. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>...</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variable arguments providing additional information inserted at wildcard placeholders.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of blank pixels above the text. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Font.hpp" line="262" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_font_1a124c51d29589a4cc3e043884835c0585" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>uint16_t</type>
+        <definition>virtual uint16_t getStringWidth</definition>
+        <argsstring>(const Unicode::UnicodeChar *text,...) const</argsstring>
+        <name>getStringWidth</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref> *</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Gets the width in pixels of the specified string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the string contains multiple lines, the width of the widest line is found. Please note that the correct number of arguments must be given if the text contains wildcards.</para>
+<para>It is recommended to use the <ref refid="classtouchgfx_1_1_font_1a124c51d29589a4cc3e043884835c0585" kindref="member">getStringWidth()</ref> implementation with the TextDirection parameter to ensure correct calculation of the width. Kerning could result in different results depending on the TextDirection. This method assumes TextDirection to be TEXT_DIRECTION_LTR.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A null-terminated <ref refid="classtouchgfx_1_1_unicode" kindref="compound">Unicode</ref> string with arguments to insert if the text contains wildcards. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>...</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variable arguments providing additional information inserted at wildcard placeholders.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The width in pixels of the longest line of the specified string. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Font.hpp" line="218" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_font_1a2cb8c37cc9824f6d612e83749029d12a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>uint16_t</type>
+        <definition>virtual uint16_t getStringWidth</definition>
+        <argsstring>(TextDirection textDirection, const Unicode::UnicodeChar *text,...) const</argsstring>
+        <name>getStringWidth</name>
+        <param>
+          <type><ref refid="namespacetouchgfx_1abe2c7387a9ed6f7c793179053f152743" kindref="member">TextDirection</ref></type>
+          <declname>textDirection</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref> *</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Gets the width in pixels of the specified string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the string contains multiple lines, the width of the widest line is found. Please note that the correct number of arguments must be given if the text contains wildcards.</para>
+<para>The TextDirection should be set correctly for the text supplied. For example the string &quot;10 20 30&quot; will be calculated differently depending on the TextDirection. If TextDirection is TEXT_DIRECTION_LTR the width is calculated as the with of &quot;10
+20 30&quot; (with kerning between all characters) but for TEXT_DIRECTION_RTL it is calculated as &quot;10&quot;+&quot; &quot;+&quot;20&quot;+&quot; &quot;+&quot;30&quot; (with kerning only between characters in the substrings and not between substrings). For most fonts there might not be a difference between the two calculations, but some fonts might cause slightly different results.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>textDirection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The text direction. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A null-terminated <ref refid="classtouchgfx_1_1_unicode" kindref="compound">Unicode</ref> string with arguments to insert if the text contains wildcards. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>...</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variable arguments providing additional information inserted at wildcard placeholders.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The width in pixels of the longest line of the specified string. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Font.hpp" line="242" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_font_1a87d5c596daaff6d7f1488f47f0150e30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ~Font</definition>
+        <argsstring>()</argsstring>
+        <name>~Font</name>
+        <briefdescription>
+<para>Finalizes an instance of the <ref refid="classtouchgfx_1_1_font" kindref="compound">Font</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Font.hpp" line="137" column="1" bodyfile="touchgfx/Font.hpp" bodystart="137" bodyend="139"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_font_1ad233c932c2d4607418339dd5ae0a61fe" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool isInvisibleZeroWidth</definition>
+        <argsstring>(Unicode::UnicodeChar character)</argsstring>
+        <name>isInvisibleZeroWidth</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref></type>
+          <declname>character</declname>
+        </param>
+        <briefdescription>
+<para>Query if &apos;character&apos; is invisible, zero width. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>character</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The character.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if invisible, zero width, false if not. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Font.hpp" line="386" column="1" bodyfile="touchgfx/Font.hpp" bodystart="386" bodyend="389"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_font_1a4127850b06335348410b2ed452557548" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Font</definition>
+        <argsstring>(uint16_t height, uint8_t pixBelowBase, uint8_t bitsPerPixel, uint8_t byteAlignRow, uint8_t maxLeft, uint8_t maxRight, const Unicode::UnicodeChar fallbackChar, const Unicode::UnicodeChar ellipsisChar)</argsstring>
+        <name>Font</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>pixBelowBase</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>bitsPerPixel</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>byteAlignRow</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>maxLeft</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>maxRight</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref></type>
+          <declname>fallbackChar</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref></type>
+          <declname>ellipsisChar</declname>
+        </param>
+        <briefdescription>
+<para>Initializes a new instance of the <ref refid="classtouchgfx_1_1_font" kindref="compound">Font</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The protected constructor of a <ref refid="classtouchgfx_1_1_font" kindref="compound">Font</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The font height in pixels. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pixBelowBase</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of pixels below the base line. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bitsPerPixel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of bits per pixel. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>byteAlignRow</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The glyphs are saved with each row byte aligned. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxLeft</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum left extend for a glyph in the font. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxRight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum right extend for a glyph in the font. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fallbackChar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The fallback character for the typography in case no glyph is available. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ellipsisChar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ellipsis character used for truncating long texts. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Font.hpp" line="445" column="1" bodyfile="touchgfx/Font.hpp" bodystart="445" bodyend="455"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_font_1abfb0a2585cef365e078162c4e6a41350" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t getStringWidthLTR</definition>
+        <argsstring>(TextDirection textDirection, const Unicode::UnicodeChar *text, va_list pArg) const</argsstring>
+        <name>getStringWidthLTR</name>
+        <param>
+          <type><ref refid="namespacetouchgfx_1abe2c7387a9ed6f7c793179053f152743" kindref="member">TextDirection</ref></type>
+          <declname>textDirection</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref> *</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>va_list</type>
+          <declname>pArg</declname>
+        </param>
+        <briefdescription>
+<para>Gets the width in pixels of the specified string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the string contains multiple lines, the width of the widest line is found. Please note that the correct number of arguments must be given if the text contains wildcards.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>textDirection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The text direction. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A null-terminated <ref refid="classtouchgfx_1_1_unicode" kindref="compound">Unicode</ref> string with arguments to insert if the text contains wildcards. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pArg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variable arguments providing additional information inserted at wildcard placeholders.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The width in pixels of the longest line of the specified string.</para>
+</simplesect>
+<simplesect kind="note"><para>The string is assumed to be purely left-to-right. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Font.hpp" line="407" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_font_1a1ee6c0bfe29c7410e2eb1fed8a2867d4" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t getStringWidthRTL</definition>
+        <argsstring>(TextDirection textDirection, const Unicode::UnicodeChar *text, va_list pArg) const</argsstring>
+        <name>getStringWidthRTL</name>
+        <param>
+          <type><ref refid="namespacetouchgfx_1abe2c7387a9ed6f7c793179053f152743" kindref="member">TextDirection</ref></type>
+          <declname>textDirection</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref> *</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>va_list</type>
+          <declname>pArg</declname>
+        </param>
+        <briefdescription>
+<para>Gets the width in pixels of the specified string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the string contains multiple lines, the width of the widest line is found. Please note that the correct number of arguments must be given if the text contains wildcards.</para>
+<para>The string is handled as a right-to-left string and subdivided into smaller text strings to correctly handle mixing of left-to-right and right-to-left strings.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>textDirection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The text direction. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A null-terminated <ref refid="classtouchgfx_1_1_unicode" kindref="compound">Unicode</ref> string with arguments to insert if the text contains wildcards. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pArg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variable arguments providing additional information inserted at wildcard placeholders.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The string width RTL. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Font.hpp" line="425" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_font_1a7fb4ba0abb874db57efa797b9b977968" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Font</definition>
+        <argsstring>()</argsstring>
+        <name>Font</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Font.hpp" line="467" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The font base class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class is abstract and requires the implementation of getGlyph. It provides utility functions such as obtaining string width and font height. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="686">
+        <label>Font</label>
+        <link refid="classtouchgfx_1_1_font"/>
+      </node>
+      <node id="687">
+        <label>ConstFont</label>
+        <link refid="classtouchgfx_1_1_const_font"/>
+        <childnode refid="686" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="688">
+        <label>InternalFlashFont</label>
+        <link refid="classtouchgfx_1_1_internal_flash_font"/>
+        <childnode refid="687" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="touchgfx/Font.hpp" line="134" column="1" bodyfile="touchgfx/Font.hpp" bodystart="133" bodyend="468"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_font_1a46915ccbd0b1d72e15e480b2c22115ff" prot="protected" virt="non-virtual"><scope>touchgfx::Font</scope><name>bAlignRow</name></member>
+      <member refid="classtouchgfx_1_1_font_1ac72ce3f2a48b0465b46e6246eb4f5afb" prot="protected" virt="non-virtual"><scope>touchgfx::Font</scope><name>bPerPixel</name></member>
+      <member refid="classtouchgfx_1_1_font_1a21bd162221278e7a9d71e4c0cd870f35" prot="protected" virt="non-virtual"><scope>touchgfx::Font</scope><name>ellipsisCharacter</name></member>
+      <member refid="classtouchgfx_1_1_font_1acc415780ee67bcabd7483e42e89f55cc" prot="protected" virt="non-virtual"><scope>touchgfx::Font</scope><name>falllbackCharacter</name></member>
+      <member refid="classtouchgfx_1_1_font_1a4127850b06335348410b2ed452557548" prot="protected" virt="non-virtual"><scope>touchgfx::Font</scope><name>Font</name></member>
+      <member refid="classtouchgfx_1_1_font_1a7fb4ba0abb874db57efa797b9b977968" prot="private" virt="non-virtual"><scope>touchgfx::Font</scope><name>Font</name></member>
+      <member refid="classtouchgfx_1_1_font_1a0368f14498012c2ea12c72b0eea75d92" prot="protected" virt="non-virtual"><scope>touchgfx::Font</scope><name>fontHeight</name></member>
+      <member refid="classtouchgfx_1_1_font_1a61c34e4c0206a76e75013915fca18bbd" prot="public" virt="virtual"><scope>touchgfx::Font</scope><name>getBitsPerPixel</name></member>
+      <member refid="classtouchgfx_1_1_font_1a9718660c78bc43231736440cd5496d70" prot="public" virt="virtual"><scope>touchgfx::Font</scope><name>getByteAlignRow</name></member>
+      <member refid="classtouchgfx_1_1_font_1a15cf2ef9de10ad984d0eb5d67cbe172f" prot="public" virt="virtual"><scope>touchgfx::Font</scope><name>getCharWidth</name></member>
+      <member refid="classtouchgfx_1_1_font_1a6db0bda82a726d472c608536f1f14e9f" prot="public" virt="virtual"><scope>touchgfx::Font</scope><name>getEllipsisChar</name></member>
+      <member refid="classtouchgfx_1_1_font_1a8b9b82348bfe7c8f383c246cfdb949db" prot="public" virt="virtual"><scope>touchgfx::Font</scope><name>getFallbackChar</name></member>
+      <member refid="classtouchgfx_1_1_font_1a8c23ad7cd9a8c60d93650bd70b784b01" prot="public" virt="virtual"><scope>touchgfx::Font</scope><name>getFontHeight</name></member>
+      <member refid="classtouchgfx_1_1_font_1a5f7aec9358d43d39cc9a54b6a294d148" prot="public" virt="pure-virtual"><scope>touchgfx::Font</scope><name>getGlyph</name></member>
+      <member refid="classtouchgfx_1_1_font_1a29dd3cdff7e63fb8b5147874bd042f8c" prot="public" virt="virtual"><scope>touchgfx::Font</scope><name>getGlyph</name></member>
+      <member refid="classtouchgfx_1_1_font_1a1b7655ad510ecc9156ba1c0ecd897f37" prot="public" virt="virtual"><scope>touchgfx::Font</scope><name>getGSUBTable</name></member>
+      <member refid="classtouchgfx_1_1_font_1aa552c0dc1d691b40a06601a497a9b486" prot="public" virt="virtual"><scope>touchgfx::Font</scope><name>getKerning</name></member>
+      <member refid="classtouchgfx_1_1_font_1a8bb07da3aa08b111b2b10a0ac94b6c51" prot="public" virt="non-virtual"><scope>touchgfx::Font</scope><name>getMaxPixelsLeft</name></member>
+      <member refid="classtouchgfx_1_1_font_1a3a54d1df18f81900c86342666e0c1655" prot="public" virt="non-virtual"><scope>touchgfx::Font</scope><name>getMaxPixelsRight</name></member>
+      <member refid="classtouchgfx_1_1_font_1a91a17ca7d030f5d82aeeafddca7bd5c5" prot="public" virt="virtual"><scope>touchgfx::Font</scope><name>getMaxTextHeight</name></member>
+      <member refid="classtouchgfx_1_1_font_1a7cf8c8194b68aa26a9c4b0cabf825cec" prot="public" virt="virtual"><scope>touchgfx::Font</scope><name>getMinimumTextHeight</name></member>
+      <member refid="classtouchgfx_1_1_font_1a13ea7e6a2dd61e749976e9c20b83dd29" prot="public" virt="virtual"><scope>touchgfx::Font</scope><name>getNumberOfLines</name></member>
+      <member refid="classtouchgfx_1_1_font_1a732182d715f61bbed8bab6d41bbae5f5" prot="public" virt="virtual"><scope>touchgfx::Font</scope><name>getSpacingAbove</name></member>
+      <member refid="classtouchgfx_1_1_font_1a124c51d29589a4cc3e043884835c0585" prot="public" virt="virtual"><scope>touchgfx::Font</scope><name>getStringWidth</name></member>
+      <member refid="classtouchgfx_1_1_font_1a2cb8c37cc9824f6d612e83749029d12a" prot="public" virt="virtual"><scope>touchgfx::Font</scope><name>getStringWidth</name></member>
+      <member refid="classtouchgfx_1_1_font_1ae1fc9d24bacca2806544c13bc09f0631" prot="protected" virt="non-virtual"><scope>touchgfx::Font</scope><name>getStringWidthFunction</name></member>
+      <member refid="classtouchgfx_1_1_font_1abfb0a2585cef365e078162c4e6a41350" prot="protected" virt="non-virtual"><scope>touchgfx::Font</scope><name>getStringWidthLTR</name></member>
+      <member refid="classtouchgfx_1_1_font_1a1ee6c0bfe29c7410e2eb1fed8a2867d4" prot="protected" virt="non-virtual"><scope>touchgfx::Font</scope><name>getStringWidthRTL</name></member>
+      <member refid="classtouchgfx_1_1_font_1ad233c932c2d4607418339dd5ae0a61fe" prot="public" virt="non-virtual"><scope>touchgfx::Font</scope><name>isInvisibleZeroWidth</name></member>
+      <member refid="classtouchgfx_1_1_font_1a540a5126bac1e6e6f308ed6f26dfc684" prot="protected" virt="non-virtual"><scope>touchgfx::Font</scope><name>maxPixelsLeft</name></member>
+      <member refid="classtouchgfx_1_1_font_1a5bfb5d6065d7ae0271a7f0dba73fd453" prot="protected" virt="non-virtual"><scope>touchgfx::Font</scope><name>maxPixelsRight</name></member>
+      <member refid="classtouchgfx_1_1_font_1a65fa1ce4370c34b6d3cf6fed911e47ad" prot="protected" virt="non-virtual"><scope>touchgfx::Font</scope><name>pixelsBelowBaseline</name></member>
+      <member refid="classtouchgfx_1_1_font_1a52d57144a793f8543aa1933c59781f26" prot="protected" virt="non-virtual"><scope>touchgfx::Font</scope><name>StringWidthFunctionPointer</name></member>
+      <member refid="classtouchgfx_1_1_font_1a87d5c596daaff6d7f1488f47f0150e30" prot="public" virt="virtual"><scope>touchgfx::Font</scope><name>~Font</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

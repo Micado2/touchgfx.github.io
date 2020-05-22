@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structtouchgfx_1_1_partition_1_1_block" kind="struct" language="C++" prot="private">
+    <compoundname>touchgfx::Partition::Block</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtouchgfx_1_1_partition_1_1_block_1add874c9d5fedf03299f7a149e1b03ba2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int filler[INTS_PR_ELEMENT]</definition>
+        <argsstring>[INTS_PR_ELEMENT]</argsstring>
+        <name>filler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="common/Partition.hpp" line="102" column="1" bodyfile="common/Partition.hpp" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Internal type used for storage, in order to ensure &quot;natural&quot; alignment of elements. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="common/Partition.hpp" line="101" column="1" bodyfile="common/Partition.hpp" bodystart="100" bodyend="103"/>
+    <listofallmembers>
+      <member refid="structtouchgfx_1_1_partition_1_1_block_1add874c9d5fedf03299f7a149e1b03ba2" prot="public" virt="non-virtual"><scope>touchgfx::Partition::Block</scope><name>filler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

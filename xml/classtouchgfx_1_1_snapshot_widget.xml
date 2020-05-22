@@ -1,0 +1,308 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_snapshot_widget" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::SnapshotWidget</compoundname>
+    <basecompoundref refid="classtouchgfx_1_1_widget" prot="public" virt="non-virtual">Widget</basecompoundref>
+    <includes local="no">SnapshotWidget.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_snapshot_widget_1acf5bb76caa419c0fa231dbd66c881084" prot="protected" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t alpha</definition>
+        <argsstring></argsstring>
+        <name>alpha</name>
+        <briefdescription>
+<para>The alpha with which to draw this snapshot. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/SnapshotWidget.hpp" line="65" column="1" bodyfile="touchgfx/widgets/SnapshotWidget.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_snapshot_widget_1ac2f4b81bf02533ef2903efadadeadac2" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacetouchgfx_1a3923435f6df64396b2203d60ddfa89e4" kindref="member">BitmapId</ref></type>
+        <definition>BitmapId bitmapId</definition>
+        <argsstring></argsstring>
+        <name>bitmapId</name>
+        <briefdescription>
+<para>BitmapId where copy is stored s copied to. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/SnapshotWidget.hpp" line="64" column="1" bodyfile="touchgfx/widgets/SnapshotWidget.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_snapshot_widget_1a1277d4bddd51dbc604de265fb70ccbfd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void draw</definition>
+        <argsstring>(const Rect &amp;invalidatedArea) const</argsstring>
+        <name>draw</name>
+        <reimplements refid="classtouchgfx_1_1_drawable_1a7e4c58d8817f4119459b70ec52c38ef4">draw</reimplements>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>invalidatedArea</declname>
+        </param>
+        <briefdescription>
+<para>Draw this drawable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It is a requirement that the draw implementation does not draw outside the region specified by invalidatedArea.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>invalidatedArea</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sub-region of this drawable that needs to be redrawn, expressed in coordinates relative to its parent (e.g. for a complete redraw, invalidatedArea will be (0, 0, width, height). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/SnapshotWidget.hpp" line="24" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_snapshot_widget_1a302926ead4ee8a161627575d2666a7f2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t getAlpha</definition>
+        <argsstring>() const</argsstring>
+        <name>getAlpha</name>
+        <briefdescription>
+<para>Gets the current alpha value of the widget. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The alpha value is in range 255 (solid) to 0 (invisible).</para>
+<para><simplesect kind="return"><para>The current alpha value.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_snapshot_widget_1a41d949c5c86c0c8a3b022a62edcf6b80" kindref="member">setAlpha</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/SnapshotWidget.hpp" line="58" column="1" bodyfile="touchgfx/widgets/SnapshotWidget.hpp" bodystart="58" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_snapshot_widget_1a4dcdd780e93cc783a2ceeda00c6f3b51" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref></type>
+        <definition>virtual Rect getSolidRect</definition>
+        <argsstring>() const</argsstring>
+        <name>getSolidRect</name>
+        <reimplements refid="classtouchgfx_1_1_drawable_1ae7cd27bb574d3b85bd0ce5ce99e555ba">getSolidRect</reimplements>
+        <briefdescription>
+<para>Get (the largest possible) rectangle that is guaranteed to be solid (opaque). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This information is important, as any <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> underneath the solid area does not need to be drawn.</para>
+<para><simplesect kind="return"><para>The solid rectangle part of the <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref>.</para>
+</simplesect>
+<simplesect kind="note"><para>The rectangle returned must be relative to upper left corner of the <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref>, meaning that a completely solid widget should return the full size <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref>(0, 0, <ref refid="classtouchgfx_1_1_drawable_1acae58162aaca6fc174416550f76668e7" kindref="member">getWidth()</ref>, <ref refid="classtouchgfx_1_1_drawable_1ad00483821e06fe4d0d70222de4135d30" kindref="member">getHeight()</ref>). If no area can be guaranteed to be solid, an empty Rect(0, 0, 0, 0) must be returned. Failing to return the correct rectangle may result in errors on the display. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/SnapshotWidget.hpp" line="26" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_snapshot_widget_1aed9b9b5a6b00e41dd5675b3ef6031622" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void makeSnapshot</definition>
+        <argsstring>()</argsstring>
+        <name>makeSnapshot</name>
+        <briefdescription>
+<para>Makes a snapshot of the area the <ref refid="classtouchgfx_1_1_snapshot_widget" kindref="compound">SnapshotWidget</ref> currently covers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This area is defined by setting the dimensions and the position of the <ref refid="classtouchgfx_1_1_snapshot_widget" kindref="compound">SnapshotWidget</ref>. The snapshot is stored in Animation Storage.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_drawable_1ac218c371450d8ad2bed3e1b07965a41a" kindref="member">setPosition</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/SnapshotWidget.hpp" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_snapshot_widget_1a31b0f1b9429103c3693f737b54c19d2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void makeSnapshot</definition>
+        <argsstring>(const BitmapId bmp)</argsstring>
+        <name>makeSnapshot</name>
+        <param>
+          <type>const <ref refid="namespacetouchgfx_1a3923435f6df64396b2203d60ddfa89e4" kindref="member">BitmapId</ref></type>
+          <declname>bmp</declname>
+        </param>
+        <briefdescription>
+<para>Makes a snapshot of the area the <ref refid="classtouchgfx_1_1_snapshot_widget" kindref="compound">SnapshotWidget</ref> currently covers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This area is defined by setting the dimensions and the position of the <ref refid="classtouchgfx_1_1_snapshot_widget" kindref="compound">SnapshotWidget</ref>. The snapshot is stored in the provided dynamic bitmap. The format of the <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> must match the format of the display.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bmp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The target dynamic bitmap. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/SnapshotWidget.hpp" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_snapshot_widget_1a41d949c5c86c0c8a3b022a62edcf6b80" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setAlpha</definition>
+        <argsstring>(const uint8_t newAlpha)</argsstring>
+        <name>setAlpha</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>newAlpha</declname>
+        </param>
+        <briefdescription>
+<para>Sets the opacity (alpha value). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This can be used to fade it away by gradually decreasing the alpha value from 255 (solid) to 0 (invisible).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newAlpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new alpha value. 255=solid, 0=invisible.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_snapshot_widget_1a302926ead4ee8a161627575d2666a7f2" kindref="member">getAlpha</ref></para>
+</simplesect>
+<simplesect kind="note"><para>The user code must call <ref refid="classtouchgfx_1_1_drawable_1a2800b4c18c63e9e7b1f85a74ce6b80c3" kindref="member">invalidate()</ref> in order to update the display. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/SnapshotWidget.hpp" line="50" column="1" bodyfile="touchgfx/widgets/SnapshotWidget.hpp" bodystart="50" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_snapshot_widget_1ae2752a61ce01b2f7d1b7c38a04b1ad95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SnapshotWidget</definition>
+        <argsstring>()</argsstring>
+        <name>SnapshotWidget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/SnapshotWidget.hpp" line="22" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A widget that is able to make a snapshot of the area the <ref refid="classtouchgfx_1_1_snapshot_widget" kindref="compound">SnapshotWidget</ref> covers into either a <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> or into animation storage (if this available). </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Once the snapshot has been taken using SnapshowWidget::makeSnapshot(), the <ref refid="classtouchgfx_1_1_snapshot_widget" kindref="compound">SnapshotWidget</ref> will show the captured snapshot when it is subsequently drawn. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1521">
+        <label>Widget</label>
+        <link refid="classtouchgfx_1_1_widget"/>
+        <childnode refid="1522" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1520">
+        <label>SnapshotWidget</label>
+        <link refid="classtouchgfx_1_1_snapshot_widget"/>
+        <childnode refid="1521" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1522">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1524">
+        <label>Widget</label>
+        <link refid="classtouchgfx_1_1_widget"/>
+        <childnode refid="1525" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1526">
+        <label>Rect</label>
+        <link refid="classtouchgfx_1_1_rect"/>
+      </node>
+      <node id="1523">
+        <label>SnapshotWidget</label>
+        <link refid="classtouchgfx_1_1_snapshot_widget"/>
+        <childnode refid="1524" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1525">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+        <childnode refid="1526" relation="usage">
+          <edgelabel>rect</edgelabel>
+        </childnode>
+        <childnode refid="1525" relation="usage">
+          <edgelabel>nextSibling</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/widgets/SnapshotWidget.hpp" line="20" column="1" bodyfile="touchgfx/widgets/SnapshotWidget.hpp" bodystart="19" bodyend="66"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_snapshot_widget_1acf5bb76caa419c0fa231dbd66c881084" prot="protected" virt="non-virtual"><scope>touchgfx::SnapshotWidget</scope><name>alpha</name></member>
+      <member refid="classtouchgfx_1_1_snapshot_widget_1ac2f4b81bf02533ef2903efadadeadac2" prot="protected" virt="non-virtual"><scope>touchgfx::SnapshotWidget</scope><name>bitmapId</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae2d939b2a9c253f0fb3bae3ec7be4e2f" prot="public" virt="virtual"><scope>touchgfx::SnapshotWidget</scope><name>childGeometryChanged</name></member>
+      <member refid="classtouchgfx_1_1_snapshot_widget_1a1277d4bddd51dbc604de265fb70ccbfd" prot="public" virt="virtual"><scope>touchgfx::SnapshotWidget</scope><name>draw</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9cf3a85fa7554475fa42c97985bda6df" prot="public" virt="non-virtual"><scope>touchgfx::SnapshotWidget</scope><name>Drawable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4a009ec2b654351679a0124e9055abdc" prot="public" virt="non-virtual"><scope>touchgfx::SnapshotWidget</scope><name>drawToDynamicBitmap</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa7737d9d49d7f55ec9bde8f2c9751b1d" prot="public" virt="non-virtual"><scope>touchgfx::SnapshotWidget</scope><name>getAbsoluteRect</name></member>
+      <member refid="classtouchgfx_1_1_snapshot_widget_1a302926ead4ee8a161627575d2666a7f2" prot="public" virt="non-virtual"><scope>touchgfx::SnapshotWidget</scope><name>getAlpha</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ad00483821e06fe4d0d70222de4135d30" prot="public" virt="non-virtual"><scope>touchgfx::SnapshotWidget</scope><name>getHeight</name></member>
+      <member refid="classtouchgfx_1_1_widget_1a6bc8e89dc7f879221e9862fb27dc726f" prot="public" virt="virtual"><scope>touchgfx::SnapshotWidget</scope><name>getLastChild</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a61c9b2bf703c49a6d238d354ddcaedb3" prot="public" virt="non-virtual"><scope>touchgfx::SnapshotWidget</scope><name>getNextSibling</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a013e065d4d9a10dbfa0ddee9a35582a3" prot="public" virt="non-virtual"><scope>touchgfx::SnapshotWidget</scope><name>getParent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af23a5bb7d473e16363a449c497586be3" prot="public" virt="non-virtual"><scope>touchgfx::SnapshotWidget</scope><name>getRect</name></member>
+      <member refid="classtouchgfx_1_1_snapshot_widget_1a4dcdd780e93cc783a2ceeda00c6f3b51" prot="public" virt="virtual"><scope>touchgfx::SnapshotWidget</scope><name>getSolidRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4783dfe657ff1b7a33261bda8c4b4266" prot="public" virt="virtual"><scope>touchgfx::SnapshotWidget</scope><name>getSolidRectAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a83b8847f583b63e60aa4bf778261ddd7" prot="public" virt="virtual"><scope>touchgfx::SnapshotWidget</scope><name>getVisibleRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1acae58162aaca6fc174416550f76668e7" prot="public" virt="non-virtual"><scope>touchgfx::SnapshotWidget</scope><name>getWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac071e9b7ccf37179df7d29c6778b664c" prot="public" virt="non-virtual"><scope>touchgfx::SnapshotWidget</scope><name>getX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a26752e6cff4607d0eec8768ef6d9032a" prot="public" virt="non-virtual"><scope>touchgfx::SnapshotWidget</scope><name>getY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a7f1524b90bc90e5f6cf7ee47aae12123" prot="public" virt="virtual"><scope>touchgfx::SnapshotWidget</scope><name>handleClickEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a06ae1946b2124cc94e26cfe18728debf" prot="public" virt="virtual"><scope>touchgfx::SnapshotWidget</scope><name>handleDragEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4db4945ecbc2303bf860e082409b8029" prot="public" virt="virtual"><scope>touchgfx::SnapshotWidget</scope><name>handleGestureEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1af635cee0f186c3d0fcea60bac14355" prot="public" virt="virtual"><scope>touchgfx::SnapshotWidget</scope><name>handleTickEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2800b4c18c63e9e7b1f85a74ce6b80c3" prot="public" virt="virtual"><scope>touchgfx::SnapshotWidget</scope><name>invalidate</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a130cf6e1bf2b9f04f48e659758fa75e2" prot="public" virt="virtual"><scope>touchgfx::SnapshotWidget</scope><name>invalidateRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a01c717b9abc98d48673b79d691c2d28a" prot="public" virt="non-virtual"><scope>touchgfx::SnapshotWidget</scope><name>isTouchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9d8a6cfb13917785c143e74d40e4e2be" prot="public" virt="non-virtual"><scope>touchgfx::SnapshotWidget</scope><name>isVisible</name></member>
+      <member refid="classtouchgfx_1_1_snapshot_widget_1aed9b9b5a6b00e41dd5675b3ef6031622" prot="public" virt="virtual"><scope>touchgfx::SnapshotWidget</scope><name>makeSnapshot</name></member>
+      <member refid="classtouchgfx_1_1_snapshot_widget_1a31b0f1b9429103c3693f737b54c19d2e" prot="public" virt="virtual"><scope>touchgfx::SnapshotWidget</scope><name>makeSnapshot</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af3590480070e2cf91580976f322d2c5e" prot="public" virt="virtual"><scope>touchgfx::SnapshotWidget</scope><name>moveRelative</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aadc5abfad4d2fcc331cf8de8713dc00e" prot="public" virt="virtual"><scope>touchgfx::SnapshotWidget</scope><name>moveTo</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0da4a00c3fbdea5740e52c7e04316c65" prot="protected" virt="non-virtual"><scope>touchgfx::SnapshotWidget</scope><name>nextSibling</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ab77c13cde2b01107dcbc5c2b584d422f" prot="protected" virt="non-virtual"><scope>touchgfx::SnapshotWidget</scope><name>parent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2a955ddc316d002f566598f340eb2af9" prot="protected" virt="non-virtual"><scope>touchgfx::SnapshotWidget</scope><name>rect</name></member>
+      <member refid="classtouchgfx_1_1_snapshot_widget_1a41d949c5c86c0c8a3b022a62edcf6b80" prot="public" virt="non-virtual"><scope>touchgfx::SnapshotWidget</scope><name>setAlpha</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a47a6312407603de99247bb802dbd8a48" prot="public" virt="virtual"><scope>touchgfx::SnapshotWidget</scope><name>setHeight</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac218c371450d8ad2bed3e1b07965a41a" prot="public" virt="virtual"><scope>touchgfx::SnapshotWidget</scope><name>setPosition</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae4c38eadb852b153850ea7ded1f50a19" prot="public" virt="non-virtual"><scope>touchgfx::SnapshotWidget</scope><name>setTouchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a71639c6634c5dcf6d1bb21b8b1b61f5b" prot="public" virt="non-virtual"><scope>touchgfx::SnapshotWidget</scope><name>setVisible</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae74a37f71d23440fc8b0466ad8ecfe4b" prot="public" virt="virtual"><scope>touchgfx::SnapshotWidget</scope><name>setWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9f6db7f34a74e991fc446fffb5703a53" prot="public" virt="virtual"><scope>touchgfx::SnapshotWidget</scope><name>setX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6c86659dc1e7355c207e9c0aa18af167" prot="public" virt="virtual"><scope>touchgfx::SnapshotWidget</scope><name>setXY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1b08d48e7e23a046f09e63089bc82bc1" prot="public" virt="virtual"><scope>touchgfx::SnapshotWidget</scope><name>setY</name></member>
+      <member refid="classtouchgfx_1_1_snapshot_widget_1ae2752a61ce01b2f7d1b7c38a04b1ad95" prot="public" virt="non-virtual"><scope>touchgfx::SnapshotWidget</scope><name>SnapshotWidget</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0d014de134cb9b9c1c361fcd726a5f34" prot="protected" virt="non-virtual"><scope>touchgfx::SnapshotWidget</scope><name>touchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a48c1d14ac943dbfa4935ea39db950608" prot="public" virt="virtual"><scope>touchgfx::SnapshotWidget</scope><name>translateRectToAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa54a57ae048476d840caf6d4d2c47aa3" prot="protected" virt="non-virtual"><scope>touchgfx::SnapshotWidget</scope><name>visible</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6bb040a11ffc2bd641283cc0bc0d1346" prot="public" virt="virtual"><scope>touchgfx::SnapshotWidget</scope><name>~Drawable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="_keyboard_8hpp" kind="file" language="C++">
+    <compoundname>Keyboard.hpp</compoundname>
+    <includes refid="_callback_8hpp" local="no">touchgfx/Callback.hpp</includes>
+    <includes refid="_color_8hpp" local="no">touchgfx/Color.hpp</includes>
+    <includes refid="_font_8hpp" local="no">touchgfx/Font.hpp</includes>
+    <includes refid="_font_manager_8hpp" local="no">touchgfx/FontManager.hpp</includes>
+    <includes refid="_unicode_8hpp" local="no">touchgfx/Unicode.hpp</includes>
+    <includes refid="_container_8hpp" local="no">touchgfx/containers/Container.hpp</includes>
+    <includes refid="_click_event_8hpp" local="no">touchgfx/events/ClickEvent.hpp</includes>
+    <includes refid="_types_8hpp" local="no">touchgfx/hal/Types.hpp</includes>
+    <includes refid="_l_c_d_8hpp" local="no">touchgfx/lcd/LCD.hpp</includes>
+    <includes refid="_image_8hpp" local="no">touchgfx/widgets/Image.hpp</includes>
+    <includes refid="_text_area_with_wildcard_8hpp" local="no">touchgfx/widgets/TextAreaWithWildcard.hpp</includes>
+    <innerclass refid="structtouchgfx_1_1_keyboard_1_1_callback_area" prot="public">touchgfx::Keyboard::CallbackArea</innerclass>
+    <innerclass refid="structtouchgfx_1_1_keyboard_1_1_key" prot="public">touchgfx::Keyboard::Key</innerclass>
+    <innerclass refid="classtouchgfx_1_1_keyboard" prot="public">touchgfx::Keyboard</innerclass>
+    <innerclass refid="structtouchgfx_1_1_keyboard_1_1_key_mapping" prot="public">touchgfx::Keyboard::KeyMapping</innerclass>
+    <innerclass refid="structtouchgfx_1_1_keyboard_1_1_key_mapping_list" prot="public">touchgfx::Keyboard::KeyMappingList</innerclass>
+    <innerclass refid="structtouchgfx_1_1_keyboard_1_1_layout" prot="public">touchgfx::Keyboard::Layout</innerclass>
+    <innernamespace refid="namespacetouchgfx">touchgfx</innernamespace>
+    <briefdescription>
+<para>Declares the <ref refid="classtouchgfx_1_1_keyboard" kindref="compound">touchgfx::Keyboard</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>KEYBOARD_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KEYBOARD_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;touchgfx/Callback.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;touchgfx/Color.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;touchgfx/Font.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;touchgfx/FontManager.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;touchgfx/Unicode.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;touchgfx/containers/Container.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;touchgfx/events/ClickEvent.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;touchgfx/hal/Types.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;touchgfx/lcd/LCD.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;touchgfx/widgets/Image.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;touchgfx/widgets/TextAreaWithWildcard.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetouchgfx" kindref="compound">touchgfx</ref></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41" refid="classtouchgfx_1_1_keyboard" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtouchgfx_1_1_keyboard" kindref="compound">Keyboard</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_container" kindref="compound">Container</ref></highlight></codeline>
+<codeline lineno="42"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="45" refid="structtouchgfx_1_1_keyboard_1_1_key" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>keyId;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref><sp/>keyArea;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacetouchgfx_1a3923435f6df64396b2203d60ddfa89e4" kindref="member">BitmapId</ref><sp/>highlightBitmapId;<sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><ref refid="structtouchgfx_1_1_keyboard_1_1_key" kindref="compound">Key</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="structtouchgfx_1_1_keyboard_1_1_callback_area" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref><sp/>keyArea;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_generic_callback" kindref="compound">GenericCallback&lt;&gt;</ref>*<sp/>callback;<sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacetouchgfx_1a3923435f6df64396b2203d60ddfa89e4" kindref="member">BitmapId</ref><sp/>highlightBitmapId;<sp/><sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><ref refid="structtouchgfx_1_1_keyboard_1_1_callback_area" kindref="compound">CallbackArea</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="structtouchgfx_1_1_keyboard_1_1_layout" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacetouchgfx_1a3923435f6df64396b2203d60ddfa89e4" kindref="member">BitmapId</ref><sp/>bitmap;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtouchgfx_1_1_keyboard_1_1_key" kindref="compound">Key</ref>*<sp/>keyArray;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>numberOfKeys;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtouchgfx_1_1_keyboard_1_1_callback_area" kindref="compound">CallbackArea</ref>*<sp/>callbackAreaArray;<sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>numberOfCallbackAreas;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref><sp/>textAreaPosition;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_typed_text" kindref="compound">TypedText</ref><sp/>textAreaFont;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref><sp/>textAreaFontColor;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacetouchgfx_1aca843a83bfa2b15fa1c762d27a87d294" kindref="member">FontId</ref><sp/>keyFont;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref><sp/>keyFontColor;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><ref refid="structtouchgfx_1_1_keyboard_1_1_layout" kindref="compound">Layout</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="structtouchgfx_1_1_keyboard_1_1_key_mapping" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>keyId;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref><sp/>keyValue;<sp/></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><ref refid="structtouchgfx_1_1_keyboard_1_1_key_mapping" kindref="compound">KeyMapping</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="structtouchgfx_1_1_keyboard_1_1_key_mapping_list" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtouchgfx_1_1_keyboard_1_1_key_mapping" kindref="compound">KeyMapping</ref>*<sp/>keyMappingArray;<sp/></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>numberOfKeys;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><ref refid="structtouchgfx_1_1_keyboard_1_1_key_mapping_list" kindref="compound">KeyMappingList</ref>;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_keyboard" kindref="compound">Keyboard</ref>();</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_keyboard_1a00b4f472644b940ebde31fa6e8845b15" kindref="member">setBuffer</ref>(<ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref>*<sp/>newBuffer,<sp/>uint16_t<sp/>newBufferSize);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_keyboard_1a5b45bbc0cf7c9a84ec527f05deb332eb" kindref="member">setLayout</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtouchgfx_1_1_keyboard_1_1_layout" kindref="compound">Layout</ref>*<sp/>newLayout);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_keyboard_1a72e3e18b4e464a712a4c478087573748" kindref="member">setTextIndentation</ref>();</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtouchgfx_1_1_keyboard_1_1_layout" kindref="compound">Layout</ref>*<sp/><ref refid="classtouchgfx_1_1_keyboard_1a042134860872da5929cf8be301fc0d24" kindref="member">getLayout</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="134"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_keyboard_1a4c99d938faa124a3b4c58e3ddc9b610b" kindref="member">layout</ref>;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_keyboard_1a3de88732c98d6421c774bcaece7a042b" kindref="member">setKeymappingList</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>KeyMappingList*<sp/>newKeyMappingList);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>KeyMappingList*<sp/><ref refid="classtouchgfx_1_1_keyboard_1af7b073ae21bf6ccde27a850fea1d3b3c" kindref="member">getKeyMappingList</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="152"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_keyboard_1ad6b1c95cd7a312fb84dfc18a1c245608" kindref="member">keyMappingList</ref>;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_keyboard_1af9e417e884c95bc169852e8c0758d653" kindref="member">setBufferPosition</ref>(uint16_t<sp/>newPos);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="classtouchgfx_1_1_keyboard_1ac7bc29fa2c414ae285854dfb21f9f615" kindref="member">getBufferPosition</ref>()</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_keyboard_1a4e7af17ef6039d5e27411d7658c2bac0" kindref="member">bufferPosition</ref>;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref>*<sp/><ref refid="classtouchgfx_1_1_keyboard_1a25c4ed3fd357ec9cab171c4ba33122ad" kindref="member">getBuffer</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="190"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_keyboard_1aaa309fc7aea0ab102d04ff7d7fcfe336" kindref="member">buffer</ref>;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_keyboard_1a1277d4bddd51dbc604de265fb70ccbfd" kindref="member">draw</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Rect&amp;<sp/>invalidatedArea)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_keyboard_1a7f1524b90bc90e5f6cf7ee47aae12123" kindref="member">handleClickEvent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ClickEvent&amp;<sp/>evt);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_keyboard_1a06ae1946b2124cc94e26cfe18728debf" kindref="member">handleDragEvent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DragEvent&amp;<sp/>evt);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_keyboard_1a0bbd34242aa94939d20fa23e8f0f6197" kindref="member">setKeyListener</ref>(GenericCallback&lt;Unicode::UnicodeChar&gt;&amp;<sp/>callback)</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_keyboard_1ac254b9ee5f805371a5db9584046ab046" kindref="member">keyListener</ref><sp/>=<sp/>&amp;callback;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>GenericCallback&lt;Unicode::UnicodeChar&gt;*<sp/><ref refid="classtouchgfx_1_1_keyboard_1ac254b9ee5f805371a5db9584046ab046" kindref="member">keyListener</ref>;<sp/></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref>*<sp/><ref refid="classtouchgfx_1_1_keyboard_1aaa309fc7aea0ab102d04ff7d7fcfe336" kindref="member">buffer</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="classtouchgfx_1_1_keyboard_1ad1859b3438b8d5562f5c3c0ecbe760d4" kindref="member">bufferSize</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="classtouchgfx_1_1_keyboard_1a4e7af17ef6039d5e27411d7658c2bac0" kindref="member">bufferPosition</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/>Image<sp/><ref refid="classtouchgfx_1_1_keyboard_1af6057c173c211ff78c0f66fe3229899e" kindref="member">image</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>TextAreaWithOneWildcard<sp/><ref refid="classtouchgfx_1_1_keyboard_1a0d1799f9a7783272b1eb749f184b103a" kindref="member">enteredText</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Layout*<sp/><ref refid="classtouchgfx_1_1_keyboard_1a4c99d938faa124a3b4c58e3ddc9b610b" kindref="member">layout</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>KeyMappingList*<sp/><ref refid="classtouchgfx_1_1_keyboard_1ad6b1c95cd7a312fb84dfc18a1c245608" kindref="member">keyMappingList</ref>;<sp/></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/>Image<sp/><ref refid="classtouchgfx_1_1_keyboard_1a1c56977ef91b2a7c3ae565433e142368" kindref="member">highlightImage</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_keyboard_1a214b91c2ce9533497c181ab4ae7a41f6" kindref="member">cancelIsEmitted</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/>Key<sp/><ref refid="classtouchgfx_1_1_keyboard_1af0dfbad2227e050e889458cccdf9117f" kindref="member">getKeyForCoordinates</ref>(int16_t<sp/>x,<sp/>int16_t<sp/>y)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_unicode_1a8288baea3c463411f70776b30b04605d" kindref="member">Unicode::UnicodeChar</ref><sp/><ref refid="classtouchgfx_1_1_keyboard_1a0159a93864fa5f9574763629d127064b" kindref="member">getCharForKey</ref>(uint8_t<sp/>keyId)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/>CallbackArea<sp/><ref refid="classtouchgfx_1_1_keyboard_1a1d303af8a27affc1ee73f7bb09d7db20" kindref="member">getCallbackAreaForCoordinates</ref>(int16_t<sp/>x,<sp/>int16_t<sp/>y)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setupDrawChain(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Rect&amp;<sp/>invalidatedArea,<sp/><ref refid="classtouchgfx_1_1_drawable_1a9cf3a85fa7554475fa42c97985bda6df" kindref="member">Drawable</ref>**<sp/>nextPreviousElement);</highlight></codeline>
+<codeline lineno="289"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>touchgfx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>KEYBOARD_HPP</highlight></codeline>
+    </programlisting>
+    <location file="touchgfx/widgets/Keyboard.hpp"/>
+  </compounddef>
+</doxygen>

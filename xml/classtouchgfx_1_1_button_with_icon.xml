@@ -1,0 +1,508 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_button_with_icon" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::ButtonWithIcon</compoundname>
+    <basecompoundref refid="classtouchgfx_1_1_button" prot="public" virt="non-virtual">Button</basecompoundref>
+    <includes local="no">ButtonWithIcon.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_button_with_icon_1a91b948b079c0f71b61682a4988601be3" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref></type>
+        <definition>Bitmap iconPressed</definition>
+        <argsstring></argsstring>
+        <name>iconPressed</name>
+        <briefdescription>
+<para>Icon to display when button is pressed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/ButtonWithIcon.hpp" line="139" column="1" bodyfile="touchgfx/widgets/ButtonWithIcon.hpp" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_button_with_icon_1adffa3e7316252b183c38d099f1c661ac" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref></type>
+        <definition>Bitmap iconReleased</definition>
+        <argsstring></argsstring>
+        <name>iconReleased</name>
+        <briefdescription>
+<para>Icon to display when button is not pressed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/ButtonWithIcon.hpp" line="138" column="1" bodyfile="touchgfx/widgets/ButtonWithIcon.hpp" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_button_with_icon_1add6bb41f68660bc0b6d3f407171c7ac9" prot="protected" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t iconX</definition>
+        <argsstring></argsstring>
+        <name>iconX</name>
+        <briefdescription>
+<para>x coordinate offset for icon. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/ButtonWithIcon.hpp" line="140" column="1" bodyfile="touchgfx/widgets/ButtonWithIcon.hpp" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_button_with_icon_1ad9bf2a75bba59b176c6bc1dc9ed7ade9" prot="protected" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t iconY</definition>
+        <argsstring></argsstring>
+        <name>iconY</name>
+        <briefdescription>
+<para>y coordinate offset for icon. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/ButtonWithIcon.hpp" line="141" column="1" bodyfile="touchgfx/widgets/ButtonWithIcon.hpp" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_button_with_icon_1a77effd3c74aa4dd550107ab177cfb492" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ButtonWithIcon</definition>
+        <argsstring>()</argsstring>
+        <name>ButtonWithIcon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/ButtonWithIcon.hpp" line="24" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_button_with_icon_1a1277d4bddd51dbc604de265fb70ccbfd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void draw</definition>
+        <argsstring>(const Rect &amp;invalidatedArea) const</argsstring>
+        <name>draw</name>
+        <reimplements refid="classtouchgfx_1_1_button_1a1277d4bddd51dbc604de265fb70ccbfd">draw</reimplements>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>invalidatedArea</declname>
+        </param>
+        <briefdescription>
+<para>Draw this drawable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It is a requirement that the draw implementation does not draw outside the region specified by invalidatedArea.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>invalidatedArea</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sub-region of this drawable that needs to be redrawn, expressed in coordinates relative to its parent (e.g. for a complete redraw, invalidatedArea will be (0, 0, width, height). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/ButtonWithIcon.hpp" line="135" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_button_with_icon_1a5cad9be8f60f7b2ec355c95fde55c097" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref></type>
+        <definition>Bitmap getCurrentlyDisplayedIcon</definition>
+        <argsstring>() const</argsstring>
+        <name>getCurrentlyDisplayedIcon</name>
+        <briefdescription>
+<para>Gets currently displayed icon. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This depends on the current state of the button, released (normal) or pressed.</para>
+<para><simplesect kind="return"><para>The icon currently displayed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/ButtonWithIcon.hpp" line="110" column="1" bodyfile="touchgfx/widgets/ButtonWithIcon.hpp" bodystart="110" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_button_with_icon_1a82763fa5f23c1bfa1e7dc0e3487497dd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t getIconX</definition>
+        <argsstring>() const</argsstring>
+        <name>getIconX</name>
+        <briefdescription>
+<para>Gets the x coordinate of the icon bitmap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The x coordinate of the icon bitmap. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/ButtonWithIcon.hpp" line="120" column="1" bodyfile="touchgfx/widgets/ButtonWithIcon.hpp" bodystart="120" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_button_with_icon_1ac1ba8df203915d4d9154a4801189200f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t getIconY</definition>
+        <argsstring>() const</argsstring>
+        <name>getIconY</name>
+        <briefdescription>
+<para>Gets the y coordinate of the icon bitmap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The y coordinate of the icon bitmap. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/ButtonWithIcon.hpp" line="130" column="1" bodyfile="touchgfx/widgets/ButtonWithIcon.hpp" bodystart="130" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_button_with_icon_1a5eb61a0f97a5cfab42a96b1685332f0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setBitmaps</definition>
+        <argsstring>(const Bitmap &amp;newBackgroundReleased, const Bitmap &amp;newBackgroundPressed, const Bitmap &amp;newIconReleased, const Bitmap &amp;newIconPressed)</argsstring>
+        <name>setBitmaps</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> &amp;</type>
+          <declname>newBackgroundReleased</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> &amp;</type>
+          <declname>newBackgroundPressed</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> &amp;</type>
+          <declname>newIconReleased</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> &amp;</type>
+          <declname>newIconPressed</declname>
+        </param>
+        <briefdescription>
+<para>Sets the four bitmaps used by this button. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The last two bitmaps are drawn on top of the first two, again depending on the current state of the <ref refid="classtouchgfx_1_1_button" kindref="compound">Button</ref>. This means that when the button state is released (normal), the newIconReleased is drawn on top of the newBackgroundReleased, and when the button state is pressed, the newIconPressed is drawn on top of the newBackgroundPressed.</para>
+<para>The default position if the icons is set to the center of the bitmaps. The two icons are assumed to have the same dimensions. The size of the released icon is used to position the icons centered on the <ref refid="classtouchgfx_1_1_button" kindref="compound">Button</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newBackgroundReleased</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> to use when button is released. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>newBackgroundPressed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> to use when button is pressed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>newIconReleased</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bitmap for the icon in the released (normal) button state. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>newIconPressed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bitmap for the icon in the pressed button state.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The user code must call <ref refid="classtouchgfx_1_1_drawable_1a2800b4c18c63e9e7b1f85a74ce6b80c3" kindref="member">invalidate()</ref> in order to update the button on the display. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/ButtonWithIcon.hpp" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_button_with_icon_1a40471efd6d29173012da268ac88f751f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setIconX</definition>
+        <argsstring>(int16_t x)</argsstring>
+        <name>setIconX</name>
+        <param>
+          <type>int16_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Sets the x coordinate of the icon bitmaps. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The same x coordinate is used for both icons (released and pressed).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new x value, relative to the background bitmap. A negative value is allowed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The user code must call <ref refid="classtouchgfx_1_1_drawable_1a2800b4c18c63e9e7b1f85a74ce6b80c3" kindref="member">invalidate()</ref> in order to update the button on the display. </para>
+</simplesect>
+<simplesect kind="note"><para>The value set is overwritten on a subsequent call to setBitmaps. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/ButtonWithIcon.hpp" line="66" column="1" bodyfile="touchgfx/widgets/ButtonWithIcon.hpp" bodystart="66" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_button_with_icon_1a51d1b744e803d650f92c4a501c51d1e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setIconXY</definition>
+        <argsstring>(int16_t x, int16_t y)</argsstring>
+        <name>setIconXY</name>
+        <param>
+          <type>int16_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Sets the x and y coordinates of the icon bitmap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Same as calling setIconX and setIconY.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new x value, relative to the background bitmap. A negative value is allowed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new y value, relative to the background bitmap. A negative value is allowed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The user code must call <ref refid="classtouchgfx_1_1_drawable_1a2800b4c18c63e9e7b1f85a74ce6b80c3" kindref="member">invalidate()</ref> in order to update the button on the display. </para>
+</simplesect>
+<simplesect kind="note"><para>The values set are overwritten on a subsequent call to setBitmaps. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/ButtonWithIcon.hpp" line="98" column="1" bodyfile="touchgfx/widgets/ButtonWithIcon.hpp" bodystart="98" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_button_with_icon_1a424759d73c0ad5a39a359b92c723ca82" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setIconY</definition>
+        <argsstring>(int16_t y)</argsstring>
+        <name>setIconY</name>
+        <param>
+          <type>int16_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Sets the y coordinate of the icon bitmaps. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The same y coordinate is used for both icons (released and pressed).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new y value, relative to the background bitmap. A negative value is allowed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The user code must call <ref refid="classtouchgfx_1_1_drawable_1a2800b4c18c63e9e7b1f85a74ce6b80c3" kindref="member">invalidate()</ref> in order to update the button on the display. </para>
+</simplesect>
+<simplesect kind="note"><para>The value set is overwritten on a subsequent call to setBitmaps. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/ButtonWithIcon.hpp" line="81" column="1" bodyfile="touchgfx/widgets/ButtonWithIcon.hpp" bodystart="81" bodyend="84"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A <ref refid="classtouchgfx_1_1_button" kindref="compound">Button</ref> that has a bitmap with an icon on top of it. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>It is possible to have two different icons depending on the current state of the button (released or pressed).</para>
+<para>Typical use case could be a blue button with a released and a pressed image. Those images can be reused across several buttons. The <ref refid="classtouchgfx_1_1_button_with_icon" kindref="compound">ButtonWithIcon</ref> will then allow an image to superimposed on top of the blue button. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="312">
+        <label>ButtonWithIcon</label>
+        <link refid="classtouchgfx_1_1_button_with_icon"/>
+        <childnode refid="313" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="315">
+        <label>Widget</label>
+        <link refid="classtouchgfx_1_1_widget"/>
+        <childnode refid="316" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="313">
+        <label>Button</label>
+        <link refid="classtouchgfx_1_1_button"/>
+        <childnode refid="314" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="316">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+      </node>
+      <node id="314">
+        <label>AbstractButton</label>
+        <link refid="classtouchgfx_1_1_abstract_button"/>
+        <childnode refid="315" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="317">
+        <label>ButtonWithIcon</label>
+        <link refid="classtouchgfx_1_1_button_with_icon"/>
+        <childnode refid="318" relation="public-inheritance">
+        </childnode>
+        <childnode refid="324" relation="usage">
+          <edgelabel>iconPressed</edgelabel>
+          <edgelabel>iconReleased</edgelabel>
+        </childnode>
+      </node>
+      <node id="320">
+        <label>Widget</label>
+        <link refid="classtouchgfx_1_1_widget"/>
+        <childnode refid="321" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="322">
+        <label>Rect</label>
+        <link refid="classtouchgfx_1_1_rect"/>
+      </node>
+      <node id="323">
+        <label>GenericCallback&lt; const touchgfx::AbstractButton &amp; &gt;</label>
+        <link refid="classtouchgfx_1_1_generic_callback"/>
+      </node>
+      <node id="318">
+        <label>Button</label>
+        <link refid="classtouchgfx_1_1_button"/>
+        <childnode refid="319" relation="public-inheritance">
+        </childnode>
+        <childnode refid="324" relation="usage">
+          <edgelabel>down</edgelabel>
+          <edgelabel>up</edgelabel>
+        </childnode>
+      </node>
+      <node id="321">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+        <childnode refid="322" relation="usage">
+          <edgelabel>rect</edgelabel>
+        </childnode>
+        <childnode refid="321" relation="usage">
+          <edgelabel>nextSibling</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="319">
+        <label>AbstractButton</label>
+        <link refid="classtouchgfx_1_1_abstract_button"/>
+        <childnode refid="320" relation="public-inheritance">
+        </childnode>
+        <childnode refid="323" relation="usage">
+          <edgelabel>action</edgelabel>
+        </childnode>
+      </node>
+      <node id="324">
+        <label>Bitmap</label>
+        <link refid="classtouchgfx_1_1_bitmap"/>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/widgets/ButtonWithIcon.hpp" line="22" column="1" bodyfile="touchgfx/widgets/ButtonWithIcon.hpp" bodystart="21" bodyend="142"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_abstract_button_1a86ae63091156400cc1a67f247e54b188" prot="public" virt="non-virtual"><scope>touchgfx::ButtonWithIcon</scope><name>AbstractButton</name></member>
+      <member refid="classtouchgfx_1_1_abstract_button_1a73b48a5330f8681331529bdbeb311d4d" prot="protected" virt="non-virtual"><scope>touchgfx::ButtonWithIcon</scope><name>action</name></member>
+      <member refid="classtouchgfx_1_1_button_1acf5bb76caa419c0fa231dbd66c881084" prot="protected" virt="non-virtual"><scope>touchgfx::ButtonWithIcon</scope><name>alpha</name></member>
+      <member refid="classtouchgfx_1_1_button_1adf271b1be4c753b7f9ddf23e8f67c530" prot="public" virt="non-virtual"><scope>touchgfx::ButtonWithIcon</scope><name>Button</name></member>
+      <member refid="classtouchgfx_1_1_button_with_icon_1a77effd3c74aa4dd550107ab177cfb492" prot="public" virt="non-virtual"><scope>touchgfx::ButtonWithIcon</scope><name>ButtonWithIcon</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae2d939b2a9c253f0fb3bae3ec7be4e2f" prot="public" virt="virtual"><scope>touchgfx::ButtonWithIcon</scope><name>childGeometryChanged</name></member>
+      <member refid="classtouchgfx_1_1_button_1ae2dc7dbffc1e8513e4225501f1bbb819" prot="protected" virt="non-virtual"><scope>touchgfx::ButtonWithIcon</scope><name>down</name></member>
+      <member refid="classtouchgfx_1_1_button_with_icon_1a1277d4bddd51dbc604de265fb70ccbfd" prot="public" virt="virtual"><scope>touchgfx::ButtonWithIcon</scope><name>draw</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9cf3a85fa7554475fa42c97985bda6df" prot="public" virt="non-virtual"><scope>touchgfx::ButtonWithIcon</scope><name>Drawable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4a009ec2b654351679a0124e9055abdc" prot="public" virt="non-virtual"><scope>touchgfx::ButtonWithIcon</scope><name>drawToDynamicBitmap</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa7737d9d49d7f55ec9bde8f2c9751b1d" prot="public" virt="non-virtual"><scope>touchgfx::ButtonWithIcon</scope><name>getAbsoluteRect</name></member>
+      <member refid="classtouchgfx_1_1_button_1a302926ead4ee8a161627575d2666a7f2" prot="public" virt="non-virtual"><scope>touchgfx::ButtonWithIcon</scope><name>getAlpha</name></member>
+      <member refid="classtouchgfx_1_1_button_1a4a752ae0012401cabec57a890d02b5fe" prot="public" virt="non-virtual"><scope>touchgfx::ButtonWithIcon</scope><name>getCurrentlyDisplayedBitmap</name></member>
+      <member refid="classtouchgfx_1_1_button_with_icon_1a5cad9be8f60f7b2ec355c95fde55c097" prot="public" virt="non-virtual"><scope>touchgfx::ButtonWithIcon</scope><name>getCurrentlyDisplayedIcon</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ad00483821e06fe4d0d70222de4135d30" prot="public" virt="non-virtual"><scope>touchgfx::ButtonWithIcon</scope><name>getHeight</name></member>
+      <member refid="classtouchgfx_1_1_button_with_icon_1a82763fa5f23c1bfa1e7dc0e3487497dd" prot="public" virt="non-virtual"><scope>touchgfx::ButtonWithIcon</scope><name>getIconX</name></member>
+      <member refid="classtouchgfx_1_1_button_with_icon_1ac1ba8df203915d4d9154a4801189200f" prot="public" virt="non-virtual"><scope>touchgfx::ButtonWithIcon</scope><name>getIconY</name></member>
+      <member refid="classtouchgfx_1_1_widget_1a6bc8e89dc7f879221e9862fb27dc726f" prot="public" virt="virtual"><scope>touchgfx::ButtonWithIcon</scope><name>getLastChild</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a61c9b2bf703c49a6d238d354ddcaedb3" prot="public" virt="non-virtual"><scope>touchgfx::ButtonWithIcon</scope><name>getNextSibling</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a013e065d4d9a10dbfa0ddee9a35582a3" prot="public" virt="non-virtual"><scope>touchgfx::ButtonWithIcon</scope><name>getParent</name></member>
+      <member refid="classtouchgfx_1_1_abstract_button_1a8a2545f358d7a39c50b7c28830116cb8" prot="public" virt="virtual"><scope>touchgfx::ButtonWithIcon</scope><name>getPressedState</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af23a5bb7d473e16363a449c497586be3" prot="public" virt="non-virtual"><scope>touchgfx::ButtonWithIcon</scope><name>getRect</name></member>
+      <member refid="classtouchgfx_1_1_button_1a4dcdd780e93cc783a2ceeda00c6f3b51" prot="public" virt="virtual"><scope>touchgfx::ButtonWithIcon</scope><name>getSolidRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4783dfe657ff1b7a33261bda8c4b4266" prot="public" virt="virtual"><scope>touchgfx::ButtonWithIcon</scope><name>getSolidRectAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a83b8847f583b63e60aa4bf778261ddd7" prot="public" virt="virtual"><scope>touchgfx::ButtonWithIcon</scope><name>getVisibleRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1acae58162aaca6fc174416550f76668e7" prot="public" virt="non-virtual"><scope>touchgfx::ButtonWithIcon</scope><name>getWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac071e9b7ccf37179df7d29c6778b664c" prot="public" virt="non-virtual"><scope>touchgfx::ButtonWithIcon</scope><name>getX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a26752e6cff4607d0eec8768ef6d9032a" prot="public" virt="non-virtual"><scope>touchgfx::ButtonWithIcon</scope><name>getY</name></member>
+      <member refid="classtouchgfx_1_1_abstract_button_1a046dadb316d2687b1ce6b7ec081116ee" prot="public" virt="virtual"><scope>touchgfx::ButtonWithIcon</scope><name>handleClickEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a06ae1946b2124cc94e26cfe18728debf" prot="public" virt="virtual"><scope>touchgfx::ButtonWithIcon</scope><name>handleDragEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4db4945ecbc2303bf860e082409b8029" prot="public" virt="virtual"><scope>touchgfx::ButtonWithIcon</scope><name>handleGestureEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1af635cee0f186c3d0fcea60bac14355" prot="public" virt="virtual"><scope>touchgfx::ButtonWithIcon</scope><name>handleTickEvent</name></member>
+      <member refid="classtouchgfx_1_1_button_with_icon_1a91b948b079c0f71b61682a4988601be3" prot="protected" virt="non-virtual"><scope>touchgfx::ButtonWithIcon</scope><name>iconPressed</name></member>
+      <member refid="classtouchgfx_1_1_button_with_icon_1adffa3e7316252b183c38d099f1c661ac" prot="protected" virt="non-virtual"><scope>touchgfx::ButtonWithIcon</scope><name>iconReleased</name></member>
+      <member refid="classtouchgfx_1_1_button_with_icon_1add6bb41f68660bc0b6d3f407171c7ac9" prot="protected" virt="non-virtual"><scope>touchgfx::ButtonWithIcon</scope><name>iconX</name></member>
+      <member refid="classtouchgfx_1_1_button_with_icon_1ad9bf2a75bba59b176c6bc1dc9ed7ade9" prot="protected" virt="non-virtual"><scope>touchgfx::ButtonWithIcon</scope><name>iconY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2800b4c18c63e9e7b1f85a74ce6b80c3" prot="public" virt="virtual"><scope>touchgfx::ButtonWithIcon</scope><name>invalidate</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a130cf6e1bf2b9f04f48e659758fa75e2" prot="public" virt="virtual"><scope>touchgfx::ButtonWithIcon</scope><name>invalidateRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a01c717b9abc98d48673b79d691c2d28a" prot="public" virt="non-virtual"><scope>touchgfx::ButtonWithIcon</scope><name>isTouchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9d8a6cfb13917785c143e74d40e4e2be" prot="public" virt="non-virtual"><scope>touchgfx::ButtonWithIcon</scope><name>isVisible</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af3590480070e2cf91580976f322d2c5e" prot="public" virt="virtual"><scope>touchgfx::ButtonWithIcon</scope><name>moveRelative</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aadc5abfad4d2fcc331cf8de8713dc00e" prot="public" virt="virtual"><scope>touchgfx::ButtonWithIcon</scope><name>moveTo</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0da4a00c3fbdea5740e52c7e04316c65" prot="protected" virt="non-virtual"><scope>touchgfx::ButtonWithIcon</scope><name>nextSibling</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ab77c13cde2b01107dcbc5c2b584d422f" prot="protected" virt="non-virtual"><scope>touchgfx::ButtonWithIcon</scope><name>parent</name></member>
+      <member refid="classtouchgfx_1_1_abstract_button_1a132ba96da5ba28448b61e42c019312a9" prot="protected" virt="non-virtual"><scope>touchgfx::ButtonWithIcon</scope><name>pressed</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2a955ddc316d002f566598f340eb2af9" prot="protected" virt="non-virtual"><scope>touchgfx::ButtonWithIcon</scope><name>rect</name></member>
+      <member refid="classtouchgfx_1_1_abstract_button_1ad7737881bbfb9ceb7031e500dd6359eb" prot="public" virt="non-virtual"><scope>touchgfx::ButtonWithIcon</scope><name>setAction</name></member>
+      <member refid="classtouchgfx_1_1_button_1a40b4eaf63ab7df1422b403a5a384a0b3" prot="public" virt="non-virtual"><scope>touchgfx::ButtonWithIcon</scope><name>setAlpha</name></member>
+      <member refid="classtouchgfx_1_1_button_with_icon_1a5eb61a0f97a5cfab42a96b1685332f0d" prot="public" virt="virtual"><scope>touchgfx::ButtonWithIcon</scope><name>setBitmaps</name></member>
+      <member refid="classtouchgfx_1_1_button_1a1f9f9c6affd6003bc67f599cfb96b5a3" prot="public" virt="virtual" ambiguityscope="touchgfx::Button::"><scope>touchgfx::ButtonWithIcon</scope><name>setBitmaps</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a47a6312407603de99247bb802dbd8a48" prot="public" virt="virtual"><scope>touchgfx::ButtonWithIcon</scope><name>setHeight</name></member>
+      <member refid="classtouchgfx_1_1_button_with_icon_1a40471efd6d29173012da268ac88f751f" prot="public" virt="non-virtual"><scope>touchgfx::ButtonWithIcon</scope><name>setIconX</name></member>
+      <member refid="classtouchgfx_1_1_button_with_icon_1a51d1b744e803d650f92c4a501c51d1e2" prot="public" virt="non-virtual"><scope>touchgfx::ButtonWithIcon</scope><name>setIconXY</name></member>
+      <member refid="classtouchgfx_1_1_button_with_icon_1a424759d73c0ad5a39a359b92c723ca82" prot="public" virt="non-virtual"><scope>touchgfx::ButtonWithIcon</scope><name>setIconY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac218c371450d8ad2bed3e1b07965a41a" prot="public" virt="virtual"><scope>touchgfx::ButtonWithIcon</scope><name>setPosition</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae4c38eadb852b153850ea7ded1f50a19" prot="public" virt="non-virtual"><scope>touchgfx::ButtonWithIcon</scope><name>setTouchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a71639c6634c5dcf6d1bb21b8b1b61f5b" prot="public" virt="non-virtual"><scope>touchgfx::ButtonWithIcon</scope><name>setVisible</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae74a37f71d23440fc8b0466ad8ecfe4b" prot="public" virt="virtual"><scope>touchgfx::ButtonWithIcon</scope><name>setWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9f6db7f34a74e991fc446fffb5703a53" prot="public" virt="virtual"><scope>touchgfx::ButtonWithIcon</scope><name>setX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6c86659dc1e7355c207e9c0aa18af167" prot="public" virt="virtual"><scope>touchgfx::ButtonWithIcon</scope><name>setXY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1b08d48e7e23a046f09e63089bc82bc1" prot="public" virt="virtual"><scope>touchgfx::ButtonWithIcon</scope><name>setY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0d014de134cb9b9c1c361fcd726a5f34" prot="protected" virt="non-virtual"><scope>touchgfx::ButtonWithIcon</scope><name>touchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a48c1d14ac943dbfa4935ea39db950608" prot="public" virt="virtual"><scope>touchgfx::ButtonWithIcon</scope><name>translateRectToAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_button_1a2f10f4b2a849e6b9536cd1e50238ab43" prot="protected" virt="non-virtual"><scope>touchgfx::ButtonWithIcon</scope><name>up</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa54a57ae048476d840caf6d4d2c47aa3" prot="protected" virt="non-virtual"><scope>touchgfx::ButtonWithIcon</scope><name>visible</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6bb040a11ffc2bd641283cc0bc0d1346" prot="public" virt="virtual"><scope>touchgfx::ButtonWithIcon</scope><name>~Drawable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

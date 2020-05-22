@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_toggle_button" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::ToggleButton</compoundname>
+    <basecompoundref refid="classtouchgfx_1_1_button" prot="public" virt="non-virtual">Button</basecompoundref>
+    <includes local="no">ToggleButton.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_toggle_button_1a7464c402b3a415246067526cf76c0794" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref></type>
+        <definition>Bitmap originalPressed</definition>
+        <argsstring></argsstring>
+        <name>originalPressed</name>
+        <briefdescription>
+<para>Contains the bitmap that was originally being displayed when button is pressed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/ToggleButton.hpp" line="54" column="1" bodyfile="touchgfx/widgets/ToggleButton.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_toggle_button_1afc277ac0939dd6e3b364b017760b4394" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void forceState</definition>
+        <argsstring>(bool activeState)</argsstring>
+        <name>forceState</name>
+        <param>
+          <type>bool</type>
+          <declname>activeState</declname>
+        </param>
+        <briefdescription>
+<para>Allows the <ref refid="classtouchgfx_1_1_toggle_button" kindref="compound">ToggleButton</ref> to be forced into either the pressed state, or the normal state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>In the pressed state, the <ref refid="classtouchgfx_1_1_button" kindref="compound">Button</ref> will always be shown as pressed down (and shown as released when the user presses it). In the normal state, the <ref refid="classtouchgfx_1_1_button" kindref="compound">Button</ref> will be show as released or pressed depending on its actual state.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>activeState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, swap the images for released and pressed. If false display the <ref refid="classtouchgfx_1_1_button" kindref="compound">Button</ref> normally. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/ToggleButton.hpp" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_toggle_button_1a08078bc1b235f535287ad0bcb16d7dad" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool getState</definition>
+        <argsstring>() const</argsstring>
+        <name>getState</name>
+        <briefdescription>
+<para>Gets the state of the <ref refid="classtouchgfx_1_1_toggle_button" kindref="compound">ToggleButton</ref> as set with forceState. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if the button has been toggled, i.e. the pressed state is shown when the button is not pressed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/ToggleButton.hpp" line="46" column="1" bodyfile="touchgfx/widgets/ToggleButton.hpp" bodystart="46" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_toggle_button_1a046dadb316d2687b1ce6b7ec081116ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void handleClickEvent</definition>
+        <argsstring>(const ClickEvent &amp;event)</argsstring>
+        <name>handleClickEvent</name>
+        <reimplements refid="classtouchgfx_1_1_abstract_button_1a046dadb316d2687b1ce6b7ec081116ee">handleClickEvent</reimplements>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_click_event" kindref="compound">ClickEvent</ref> &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Updates the current state of the button. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The state can be either pressed or released, and if the new state is different from the current state, the button is also invalidated to force a redraw.</para>
+<para>If the button state is changed from <ref refid="classtouchgfx_1_1_click_event_1ac490bd373e5d33a5a257bf0c1fd443cba5ef9a100ac8b4b8d6dec477c377b7901" kindref="member">ClickEvent::PRESSED</ref> to <ref refid="classtouchgfx_1_1_click_event_1ac490bd373e5d33a5a257bf0c1fd443cbaa38d18fe73a7fc82c112b6917d0b5cd0" kindref="member">ClickEvent::RELEASED</ref>, the associated action (if any) is also executed.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Information about the click. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/ToggleButton.hpp" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_toggle_button_1a1f9f9c6affd6003bc67f599cfb96b5a3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setBitmaps</definition>
+        <argsstring>(const Bitmap &amp;bmpReleased, const Bitmap &amp;bmpPressed)</argsstring>
+        <name>setBitmaps</name>
+        <reimplements refid="classtouchgfx_1_1_button_1a1f9f9c6affd6003bc67f599cfb96b5a3">setBitmaps</reimplements>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> &amp;</type>
+          <declname>bmpReleased</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> &amp;</type>
+          <declname>bmpPressed</declname>
+        </param>
+        <briefdescription>
+<para>Sets the two bitmaps used by this button. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>One bitmap for the released (normal) state and one bitmap for the pressed state. The images are expected to be of the same dimensions, and the <ref refid="classtouchgfx_1_1_button" kindref="compound">Button</ref> is resized to the dimensions of the pressed <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bmpReleased</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> to use when button is released. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bmpPressed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> to use when button is pressed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>It is assumed that the dimensions of the bitmaps are the same. Unexpected (visual) behavior may be observed if the bitmaps are of different sizes. </para>
+</simplesect>
+<simplesect kind="note"><para>The user code must call <ref refid="classtouchgfx_1_1_drawable_1a2800b4c18c63e9e7b1f85a74ce6b80c3" kindref="member">invalidate()</ref> in order to update the button on the display. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/ToggleButton.hpp" line="23" column="1" bodyfile="touchgfx/widgets/ToggleButton.hpp" bodystart="23" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A <ref refid="classtouchgfx_1_1_toggle_button" kindref="compound">ToggleButton</ref> is a <ref refid="classtouchgfx_1_1_button" kindref="compound">Button</ref> specialization that swaps the two bitmaps when clicked, such that the previous &quot;pressed&quot; bitmap, now becomes the one displayed when button is not pressed. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This can by used to give the effect of a button that can be pressed in and when it is subsequently pressed, it will pop back out. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2523">
+        <label>Widget</label>
+        <link refid="classtouchgfx_1_1_widget"/>
+        <childnode refid="2524" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2521">
+        <label>Button</label>
+        <link refid="classtouchgfx_1_1_button"/>
+        <childnode refid="2522" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2524">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+      </node>
+      <node id="2520">
+        <label>ToggleButton</label>
+        <link refid="classtouchgfx_1_1_toggle_button"/>
+        <childnode refid="2521" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2522">
+        <label>AbstractButton</label>
+        <link refid="classtouchgfx_1_1_abstract_button"/>
+        <childnode refid="2523" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2528">
+        <label>Widget</label>
+        <link refid="classtouchgfx_1_1_widget"/>
+        <childnode refid="2529" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2530">
+        <label>Rect</label>
+        <link refid="classtouchgfx_1_1_rect"/>
+      </node>
+      <node id="2531">
+        <label>GenericCallback&lt; const touchgfx::AbstractButton &amp; &gt;</label>
+        <link refid="classtouchgfx_1_1_generic_callback"/>
+      </node>
+      <node id="2526">
+        <label>Button</label>
+        <link refid="classtouchgfx_1_1_button"/>
+        <childnode refid="2527" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2532" relation="usage">
+          <edgelabel>down</edgelabel>
+          <edgelabel>up</edgelabel>
+        </childnode>
+      </node>
+      <node id="2529">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+        <childnode refid="2530" relation="usage">
+          <edgelabel>rect</edgelabel>
+        </childnode>
+        <childnode refid="2529" relation="usage">
+          <edgelabel>nextSibling</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="2525">
+        <label>ToggleButton</label>
+        <link refid="classtouchgfx_1_1_toggle_button"/>
+        <childnode refid="2526" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2532" relation="usage">
+          <edgelabel>originalPressed</edgelabel>
+        </childnode>
+      </node>
+      <node id="2527">
+        <label>AbstractButton</label>
+        <link refid="classtouchgfx_1_1_abstract_button"/>
+        <childnode refid="2528" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2531" relation="usage">
+          <edgelabel>action</edgelabel>
+        </childnode>
+      </node>
+      <node id="2532">
+        <label>Bitmap</label>
+        <link refid="classtouchgfx_1_1_bitmap"/>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/widgets/ToggleButton.hpp" line="20" column="1" bodyfile="touchgfx/widgets/ToggleButton.hpp" bodystart="19" bodyend="55"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_abstract_button_1a86ae63091156400cc1a67f247e54b188" prot="public" virt="non-virtual"><scope>touchgfx::ToggleButton</scope><name>AbstractButton</name></member>
+      <member refid="classtouchgfx_1_1_abstract_button_1a73b48a5330f8681331529bdbeb311d4d" prot="protected" virt="non-virtual"><scope>touchgfx::ToggleButton</scope><name>action</name></member>
+      <member refid="classtouchgfx_1_1_button_1acf5bb76caa419c0fa231dbd66c881084" prot="protected" virt="non-virtual"><scope>touchgfx::ToggleButton</scope><name>alpha</name></member>
+      <member refid="classtouchgfx_1_1_button_1adf271b1be4c753b7f9ddf23e8f67c530" prot="public" virt="non-virtual"><scope>touchgfx::ToggleButton</scope><name>Button</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae2d939b2a9c253f0fb3bae3ec7be4e2f" prot="public" virt="virtual"><scope>touchgfx::ToggleButton</scope><name>childGeometryChanged</name></member>
+      <member refid="classtouchgfx_1_1_button_1ae2dc7dbffc1e8513e4225501f1bbb819" prot="protected" virt="non-virtual"><scope>touchgfx::ToggleButton</scope><name>down</name></member>
+      <member refid="classtouchgfx_1_1_button_1a1277d4bddd51dbc604de265fb70ccbfd" prot="public" virt="virtual"><scope>touchgfx::ToggleButton</scope><name>draw</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9cf3a85fa7554475fa42c97985bda6df" prot="public" virt="non-virtual"><scope>touchgfx::ToggleButton</scope><name>Drawable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4a009ec2b654351679a0124e9055abdc" prot="public" virt="non-virtual"><scope>touchgfx::ToggleButton</scope><name>drawToDynamicBitmap</name></member>
+      <member refid="classtouchgfx_1_1_toggle_button_1afc277ac0939dd6e3b364b017760b4394" prot="public" virt="non-virtual"><scope>touchgfx::ToggleButton</scope><name>forceState</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa7737d9d49d7f55ec9bde8f2c9751b1d" prot="public" virt="non-virtual"><scope>touchgfx::ToggleButton</scope><name>getAbsoluteRect</name></member>
+      <member refid="classtouchgfx_1_1_button_1a302926ead4ee8a161627575d2666a7f2" prot="public" virt="non-virtual"><scope>touchgfx::ToggleButton</scope><name>getAlpha</name></member>
+      <member refid="classtouchgfx_1_1_button_1a4a752ae0012401cabec57a890d02b5fe" prot="public" virt="non-virtual"><scope>touchgfx::ToggleButton</scope><name>getCurrentlyDisplayedBitmap</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ad00483821e06fe4d0d70222de4135d30" prot="public" virt="non-virtual"><scope>touchgfx::ToggleButton</scope><name>getHeight</name></member>
+      <member refid="classtouchgfx_1_1_widget_1a6bc8e89dc7f879221e9862fb27dc726f" prot="public" virt="virtual"><scope>touchgfx::ToggleButton</scope><name>getLastChild</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a61c9b2bf703c49a6d238d354ddcaedb3" prot="public" virt="non-virtual"><scope>touchgfx::ToggleButton</scope><name>getNextSibling</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a013e065d4d9a10dbfa0ddee9a35582a3" prot="public" virt="non-virtual"><scope>touchgfx::ToggleButton</scope><name>getParent</name></member>
+      <member refid="classtouchgfx_1_1_abstract_button_1a8a2545f358d7a39c50b7c28830116cb8" prot="public" virt="virtual"><scope>touchgfx::ToggleButton</scope><name>getPressedState</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af23a5bb7d473e16363a449c497586be3" prot="public" virt="non-virtual"><scope>touchgfx::ToggleButton</scope><name>getRect</name></member>
+      <member refid="classtouchgfx_1_1_button_1a4dcdd780e93cc783a2ceeda00c6f3b51" prot="public" virt="virtual"><scope>touchgfx::ToggleButton</scope><name>getSolidRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4783dfe657ff1b7a33261bda8c4b4266" prot="public" virt="virtual"><scope>touchgfx::ToggleButton</scope><name>getSolidRectAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_toggle_button_1a08078bc1b235f535287ad0bcb16d7dad" prot="public" virt="non-virtual"><scope>touchgfx::ToggleButton</scope><name>getState</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a83b8847f583b63e60aa4bf778261ddd7" prot="public" virt="virtual"><scope>touchgfx::ToggleButton</scope><name>getVisibleRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1acae58162aaca6fc174416550f76668e7" prot="public" virt="non-virtual"><scope>touchgfx::ToggleButton</scope><name>getWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac071e9b7ccf37179df7d29c6778b664c" prot="public" virt="non-virtual"><scope>touchgfx::ToggleButton</scope><name>getX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a26752e6cff4607d0eec8768ef6d9032a" prot="public" virt="non-virtual"><scope>touchgfx::ToggleButton</scope><name>getY</name></member>
+      <member refid="classtouchgfx_1_1_toggle_button_1a046dadb316d2687b1ce6b7ec081116ee" prot="public" virt="virtual"><scope>touchgfx::ToggleButton</scope><name>handleClickEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a06ae1946b2124cc94e26cfe18728debf" prot="public" virt="virtual"><scope>touchgfx::ToggleButton</scope><name>handleDragEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4db4945ecbc2303bf860e082409b8029" prot="public" virt="virtual"><scope>touchgfx::ToggleButton</scope><name>handleGestureEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1af635cee0f186c3d0fcea60bac14355" prot="public" virt="virtual"><scope>touchgfx::ToggleButton</scope><name>handleTickEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2800b4c18c63e9e7b1f85a74ce6b80c3" prot="public" virt="virtual"><scope>touchgfx::ToggleButton</scope><name>invalidate</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a130cf6e1bf2b9f04f48e659758fa75e2" prot="public" virt="virtual"><scope>touchgfx::ToggleButton</scope><name>invalidateRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a01c717b9abc98d48673b79d691c2d28a" prot="public" virt="non-virtual"><scope>touchgfx::ToggleButton</scope><name>isTouchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9d8a6cfb13917785c143e74d40e4e2be" prot="public" virt="non-virtual"><scope>touchgfx::ToggleButton</scope><name>isVisible</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af3590480070e2cf91580976f322d2c5e" prot="public" virt="virtual"><scope>touchgfx::ToggleButton</scope><name>moveRelative</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aadc5abfad4d2fcc331cf8de8713dc00e" prot="public" virt="virtual"><scope>touchgfx::ToggleButton</scope><name>moveTo</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0da4a00c3fbdea5740e52c7e04316c65" prot="protected" virt="non-virtual"><scope>touchgfx::ToggleButton</scope><name>nextSibling</name></member>
+      <member refid="classtouchgfx_1_1_toggle_button_1a7464c402b3a415246067526cf76c0794" prot="protected" virt="non-virtual"><scope>touchgfx::ToggleButton</scope><name>originalPressed</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ab77c13cde2b01107dcbc5c2b584d422f" prot="protected" virt="non-virtual"><scope>touchgfx::ToggleButton</scope><name>parent</name></member>
+      <member refid="classtouchgfx_1_1_abstract_button_1a132ba96da5ba28448b61e42c019312a9" prot="protected" virt="non-virtual"><scope>touchgfx::ToggleButton</scope><name>pressed</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2a955ddc316d002f566598f340eb2af9" prot="protected" virt="non-virtual"><scope>touchgfx::ToggleButton</scope><name>rect</name></member>
+      <member refid="classtouchgfx_1_1_abstract_button_1ad7737881bbfb9ceb7031e500dd6359eb" prot="public" virt="non-virtual"><scope>touchgfx::ToggleButton</scope><name>setAction</name></member>
+      <member refid="classtouchgfx_1_1_button_1a40b4eaf63ab7df1422b403a5a384a0b3" prot="public" virt="non-virtual"><scope>touchgfx::ToggleButton</scope><name>setAlpha</name></member>
+      <member refid="classtouchgfx_1_1_toggle_button_1a1f9f9c6affd6003bc67f599cfb96b5a3" prot="public" virt="virtual"><scope>touchgfx::ToggleButton</scope><name>setBitmaps</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a47a6312407603de99247bb802dbd8a48" prot="public" virt="virtual"><scope>touchgfx::ToggleButton</scope><name>setHeight</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac218c371450d8ad2bed3e1b07965a41a" prot="public" virt="virtual"><scope>touchgfx::ToggleButton</scope><name>setPosition</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae4c38eadb852b153850ea7ded1f50a19" prot="public" virt="non-virtual"><scope>touchgfx::ToggleButton</scope><name>setTouchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a71639c6634c5dcf6d1bb21b8b1b61f5b" prot="public" virt="non-virtual"><scope>touchgfx::ToggleButton</scope><name>setVisible</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae74a37f71d23440fc8b0466ad8ecfe4b" prot="public" virt="virtual"><scope>touchgfx::ToggleButton</scope><name>setWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9f6db7f34a74e991fc446fffb5703a53" prot="public" virt="virtual"><scope>touchgfx::ToggleButton</scope><name>setX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6c86659dc1e7355c207e9c0aa18af167" prot="public" virt="virtual"><scope>touchgfx::ToggleButton</scope><name>setXY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1b08d48e7e23a046f09e63089bc82bc1" prot="public" virt="virtual"><scope>touchgfx::ToggleButton</scope><name>setY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0d014de134cb9b9c1c361fcd726a5f34" prot="protected" virt="non-virtual"><scope>touchgfx::ToggleButton</scope><name>touchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a48c1d14ac943dbfa4935ea39db950608" prot="public" virt="virtual"><scope>touchgfx::ToggleButton</scope><name>translateRectToAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_button_1a2f10f4b2a849e6b9536cd1e50238ab43" prot="protected" virt="non-virtual"><scope>touchgfx::ToggleButton</scope><name>up</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa54a57ae048476d840caf6d4d2c47aa3" prot="protected" virt="non-virtual"><scope>touchgfx::ToggleButton</scope><name>visible</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6bb040a11ffc2bd641283cc0bc0d1346" prot="public" virt="virtual"><scope>touchgfx::ToggleButton</scope><name>~Drawable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

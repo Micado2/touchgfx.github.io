@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="structtouchgfx_1_1_callback_3_01dest__type_00_01_t1_00_01_t2_00_01void_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>touchgfx::Callback&lt; dest_type, T1, T2, void &gt;</compoundname>
+    <basecompoundref refid="classtouchgfx_1_1_generic_callback" prot="public" virt="non-virtual">GenericCallback&lt; T1, T2 &gt;</basecompoundref>
+    <includes local="no">Callback.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class dest_type</type>
+      </param>
+      <param>
+        <type>typename T1</type>
+      </param>
+      <param>
+        <type>typename T2</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="structtouchgfx_1_1_callback_3_01dest__type_00_01_t1_00_01_t2_00_01void_01_4_1ae75510f22855a2cbe00d99ecc58ef2d2" prot="private" static="no" mutable="no">
+        <type>void(dest_type::*</type>
+        <definition>void(dest_type::* pmemfun_2) (T1, T2)</definition>
+        <argsstring>)(T1, T2)</argsstring>
+        <name>pmemfun_2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Callback.hpp" line="325" column="1" bodyfile="touchgfx/Callback.hpp" bodystart="325" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtouchgfx_1_1_callback_3_01dest__type_00_01_t1_00_01_t2_00_01void_01_4_1a81a1373e822a9234934c2a5d80e5014a" prot="private" static="no" mutable="no">
+        <type>dest_type *</type>
+        <definition>dest_type* pobject</definition>
+        <argsstring></argsstring>
+        <name>pobject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Callback.hpp" line="324" column="1" bodyfile="touchgfx/Callback.hpp" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structtouchgfx_1_1_callback_3_01dest__type_00_01_t1_00_01_t2_00_01void_01_4_1ad41772d01c7dc962d82d392d04e3c5b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Callback</definition>
+        <argsstring>()</argsstring>
+        <name>Callback</name>
+        <briefdescription>
+<para>Initializes a new instance of the <ref refid="structtouchgfx_1_1_callback" kindref="compound">Callback</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Callback.hpp" line="282" column="1" bodyfile="touchgfx/Callback.hpp" bodystart="282" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="structtouchgfx_1_1_callback_3_01dest__type_00_01_t1_00_01_t2_00_01void_01_4_1af528861b25e2cb298263ade64ca68b71" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Callback</definition>
+        <argsstring>(dest_type *pobject, void(dest_type::*pmemfun_2)(T1, T2))</argsstring>
+        <name>Callback</name>
+        <param>
+          <type>dest_type *</type>
+          <declname>pobject</declname>
+        </param>
+        <param>
+          <type>void(dest_type::*)(T1, T2)</type>
+          <declname>pmemfun_2</declname>
+        </param>
+        <briefdescription>
+<para>Initializes a <ref refid="structtouchgfx_1_1_callback" kindref="compound">Callback</ref> with an object and a pointer to the member function in that object to call. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pobject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the object on which the function should be called. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pmemfun_2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Address of member function. This is the version where function takes two arguments. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Callback.hpp" line="295" column="1" bodyfile="touchgfx/Callback.hpp" bodystart="295" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="structtouchgfx_1_1_callback_3_01dest__type_00_01_t1_00_01_t2_00_01void_01_4_1aeb712da0553a173963994151c7cb7f90" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void execute</definition>
+        <argsstring>(T1 t1, T2 t2)</argsstring>
+        <name>execute</name>
+        <param>
+          <type>T1</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>T2</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+<para>Calls the member function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Do not call execute unless <ref refid="structtouchgfx_1_1_callback_3_01dest__type_00_01_t1_00_01_t2_00_01void_01_4_1a39663c885a33e68077c40e35140c205f" kindref="member">isValid()</ref> returns true (ie. a pointer to the object and the function has been set).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This value will be passed as the first argument in the function call. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This value will be passed as the second argument in the function call. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Callback.hpp" line="308" column="1" bodyfile="touchgfx/Callback.hpp" bodystart="308" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="function" id="structtouchgfx_1_1_callback_3_01dest__type_00_01_t1_00_01_t2_00_01void_01_4_1a39663c885a33e68077c40e35140c205f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool isValid</definition>
+        <argsstring>() const</argsstring>
+        <name>isValid</name>
+        <reimplements refid="classtouchgfx_1_1_generic_callback_1a84d80615491ecea423f99490445b73ae">isValid</reimplements>
+        <briefdescription>
+<para>Function to check whether the <ref refid="structtouchgfx_1_1_callback" kindref="compound">Callback</ref> has been initialized with values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true If the callback is valid (i.e. safe to call execute). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/Callback.hpp" line="318" column="1" bodyfile="touchgfx/Callback.hpp" bodystart="318" bodyend="321"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A <ref refid="structtouchgfx_1_1_callback" kindref="compound">Callback</ref> is basically a wrapper of a pointer-to-member-function. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>It is used for registering callbacks between widgets. For instance, a <ref refid="classtouchgfx_1_1_button" kindref="compound">Button</ref> can be configured to call a member function when it is clicked.</para>
+<para>The class is templated in order to provide the class type of the object in which the member function resides, and the argument types of the function to call.</para>
+<para>The <ref refid="structtouchgfx_1_1_callback" kindref="compound">Callback</ref> class exists in four versions, for supporting member functions with 0, 1, 2 or 3 arguments. The compiler will infer which type to use automatically.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>dest_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the class in which the member function resides. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>T1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the first argument in the member function, or void if none. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>T2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the second argument in the member function, or void if none.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The member function to call must return void. The function can have zero, one, two or three arguments of any type. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="355">
+        <label>Callback&lt; dest_type, T1, T2, void &gt;</label>
+        <link refid="structtouchgfx_1_1_callback_3_01dest__type_00_01_t1_00_01_t2_00_01void_01_4"/>
+        <childnode refid="356" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="356">
+        <label>GenericCallback&lt; T1, T2 &gt;</label>
+        <link refid="classtouchgfx_1_1_generic_callback"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="357">
+        <label>Callback&lt; dest_type, T1, T2, void &gt;</label>
+        <link refid="structtouchgfx_1_1_callback_3_01dest__type_00_01_t1_00_01_t2_00_01void_01_4"/>
+        <childnode refid="358" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="358">
+        <label>GenericCallback&lt; T1, T2 &gt;</label>
+        <link refid="classtouchgfx_1_1_generic_callback"/>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/Callback.hpp" line="280" column="1" bodyfile="touchgfx/Callback.hpp" bodystart="279" bodyend="326"/>
+    <listofallmembers>
+      <member refid="structtouchgfx_1_1_callback_3_01dest__type_00_01_t1_00_01_t2_00_01void_01_4_1ad41772d01c7dc962d82d392d04e3c5b5" prot="public" virt="non-virtual"><scope>touchgfx::Callback&lt; dest_type, T1, T2, void &gt;</scope><name>Callback</name></member>
+      <member refid="structtouchgfx_1_1_callback_3_01dest__type_00_01_t1_00_01_t2_00_01void_01_4_1af528861b25e2cb298263ade64ca68b71" prot="public" virt="non-virtual"><scope>touchgfx::Callback&lt; dest_type, T1, T2, void &gt;</scope><name>Callback</name></member>
+      <member refid="structtouchgfx_1_1_callback_3_01dest__type_00_01_t1_00_01_t2_00_01void_01_4_1aeb712da0553a173963994151c7cb7f90" prot="public" virt="virtual"><scope>touchgfx::Callback&lt; dest_type, T1, T2, void &gt;</scope><name>execute</name></member>
+      <member refid="classtouchgfx_1_1_generic_callback_1ad38d4f33764a05acff473fe7b45ad328" prot="public" virt="pure-virtual" ambiguityscope="GenericCallback&lt; T1, T2 &gt;::"><scope>touchgfx::Callback&lt; dest_type, T1, T2, void &gt;</scope><name>execute</name></member>
+      <member refid="structtouchgfx_1_1_callback_3_01dest__type_00_01_t1_00_01_t2_00_01void_01_4_1a39663c885a33e68077c40e35140c205f" prot="public" virt="virtual"><scope>touchgfx::Callback&lt; dest_type, T1, T2, void &gt;</scope><name>isValid</name></member>
+      <member refid="structtouchgfx_1_1_callback_3_01dest__type_00_01_t1_00_01_t2_00_01void_01_4_1ae75510f22855a2cbe00d99ecc58ef2d2" prot="private" virt="non-virtual"><scope>touchgfx::Callback&lt; dest_type, T1, T2, void &gt;</scope><name>pmemfun_2</name></member>
+      <member refid="structtouchgfx_1_1_callback_3_01dest__type_00_01_t1_00_01_t2_00_01void_01_4_1a81a1373e822a9234934c2a5d80e5014a" prot="private" virt="non-virtual"><scope>touchgfx::Callback&lt; dest_type, T1, T2, void &gt;</scope><name>pobject</name></member>
+      <member refid="classtouchgfx_1_1_generic_callback_1a415e22032e9f1abad04ac86ad1c6f615" prot="public" virt="virtual"><scope>touchgfx::Callback&lt; dest_type, T1, T2, void &gt;</scope><name>~GenericCallback</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

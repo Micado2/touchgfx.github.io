@@ -1,0 +1,641 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_radio_button" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::RadioButton</compoundname>
+    <basecompoundref refid="classtouchgfx_1_1_abstract_button" prot="public" virt="non-virtual">AbstractButton</basecompoundref>
+    <includes local="no">RadioButton.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_radio_button_1acf5bb76caa419c0fa231dbd66c881084" prot="protected" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t alpha</definition>
+        <argsstring></argsstring>
+        <name>alpha</name>
+        <briefdescription>
+<para>The current alpha value. 255=solid, 0=invisible. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/RadioButton.hpp" line="161" column="1" bodyfile="touchgfx/widgets/RadioButton.hpp" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_radio_button_1aa4c39d7736d287df17e3b099b1c38761" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref></type>
+        <definition>Bitmap bitmapSelected</definition>
+        <argsstring></argsstring>
+        <name>bitmapSelected</name>
+        <briefdescription>
+<para>The image to display when radio button selected and released. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/RadioButton.hpp" line="159" column="1" bodyfile="touchgfx/widgets/RadioButton.hpp" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_radio_button_1ad232a8f0036ff0a2d3b5bf6b4567b294" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref></type>
+        <definition>Bitmap bitmapSelectedPressed</definition>
+        <argsstring></argsstring>
+        <name>bitmapSelectedPressed</name>
+        <briefdescription>
+<para>The image to display when radio button selected and pressed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/RadioButton.hpp" line="160" column="1" bodyfile="touchgfx/widgets/RadioButton.hpp" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_radio_button_1a048daf3690e8476fddab2e1625066a13" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref></type>
+        <definition>Bitmap bitmapUnselected</definition>
+        <argsstring></argsstring>
+        <name>bitmapUnselected</name>
+        <briefdescription>
+<para>The image to display when radio button unselected and released. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/RadioButton.hpp" line="157" column="1" bodyfile="touchgfx/widgets/RadioButton.hpp" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_radio_button_1aba74474f8bc6bf4b4245e28698be56c2" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref></type>
+        <definition>Bitmap bitmapUnselectedPressed</definition>
+        <argsstring></argsstring>
+        <name>bitmapUnselectedPressed</name>
+        <briefdescription>
+<para>The image to display when radio button unselected and pressed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/RadioButton.hpp" line="158" column="1" bodyfile="touchgfx/widgets/RadioButton.hpp" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_radio_button_1aaebb7e0cc7e62f83ea633e79218207f4" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_generic_callback" kindref="compound">GenericCallback</ref>&lt; const <ref refid="classtouchgfx_1_1_abstract_button" kindref="compound">AbstractButton</ref> &amp; &gt; *</type>
+        <definition>GenericCallback&lt;const AbstractButton&amp;&gt;* deselectedAction</definition>
+        <argsstring></argsstring>
+        <name>deselectedAction</name>
+        <briefdescription>
+<para>The callback to be executed when this <ref refid="classtouchgfx_1_1_abstract_button" kindref="compound">AbstractButton</ref> is deselected. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/RadioButton.hpp" line="165" column="1" bodyfile="touchgfx/widgets/RadioButton.hpp" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_radio_button_1a6a1148008a2652bd685ca09dae3aba1f" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool deselectionEnabled</definition>
+        <argsstring></argsstring>
+        <name>deselectionEnabled</name>
+        <briefdescription>
+<para>Is it possible to deselect by pressing a selected <ref refid="classtouchgfx_1_1_radio_button" kindref="compound">RadioButton</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/RadioButton.hpp" line="163" column="1" bodyfile="touchgfx/widgets/RadioButton.hpp" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_radio_button_1a9ee682957ef18956fbe33afe9b6222fa" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool selected</definition>
+        <argsstring></argsstring>
+        <name>selected</name>
+        <briefdescription>
+<para>The current selected state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/RadioButton.hpp" line="162" column="1" bodyfile="touchgfx/widgets/RadioButton.hpp" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_radio_button_1a1277d4bddd51dbc604de265fb70ccbfd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void draw</definition>
+        <argsstring>(const Rect &amp;invalidatedArea) const</argsstring>
+        <name>draw</name>
+        <reimplements refid="classtouchgfx_1_1_drawable_1a7e4c58d8817f4119459b70ec52c38ef4">draw</reimplements>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>invalidatedArea</declname>
+        </param>
+        <briefdescription>
+<para>Draw this drawable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It is a requirement that the draw implementation does not draw outside the region specified by invalidatedArea.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>invalidatedArea</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sub-region of this drawable that needs to be redrawn, expressed in coordinates relative to its parent (e.g. for a complete redraw, invalidatedArea will be (0, 0, width, height). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/RadioButton.hpp" line="31" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_radio_button_1a302926ead4ee8a161627575d2666a7f2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t getAlpha</definition>
+        <argsstring>() const</argsstring>
+        <name>getAlpha</name>
+        <briefdescription>
+<para>Gets the current alpha value, as previously set using setAlpha. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default alpha value (if the alpha value has not been changed using setAlpha) is 255=solid.</para>
+<para><simplesect kind="return"><para>The current alpha value ranging from 255=solid to 0=invisible.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_radio_button_1a2e0420f68fa01ef7219a0bc2aa792169" kindref="member">setAlpha</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/RadioButton.hpp" line="86" column="1" bodyfile="touchgfx/widgets/RadioButton.hpp" bodystart="86" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_radio_button_1a4a752ae0012401cabec57a890d02b5fe" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref></type>
+        <definition>Bitmap getCurrentlyDisplayedBitmap</definition>
+        <argsstring>() const</argsstring>
+        <name>getCurrentlyDisplayedBitmap</name>
+        <briefdescription>
+<para>Gets currently displayed bitmap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This depends on whether the <ref refid="classtouchgfx_1_1_radio_button" kindref="compound">RadioButton</ref> is currently selected or not and whether it is being pressed or not, i.e. it depends on the radio button&apos;s pressed and selected state.</para>
+<para><simplesect kind="return"><para>The bitmap currently displayed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/RadioButton.hpp" line="151" column="1" bodyfile="touchgfx/widgets/RadioButton.hpp" bodystart="151" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_radio_button_1ac85b617f734ea8a0f8c5e8d3aceb890f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool getDeselectionEnabled</definition>
+        <argsstring>() const</argsstring>
+        <name>getDeselectionEnabled</name>
+        <briefdescription>
+<para>Gets the current deselectionEnabled state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current deselectionEnabled state.</para>
+</simplesect>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_radio_button_1ad296a41479352ca6ab0d2a5e4aa36fcc" kindref="member">setDeselectionEnabled</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/RadioButton.hpp" line="116" column="1" bodyfile="touchgfx/widgets/RadioButton.hpp" bodystart="116" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_radio_button_1a31dea984aad2d7d43860544fc54a8d40" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool getSelected</definition>
+        <argsstring>() const</argsstring>
+        <name>getSelected</name>
+        <briefdescription>
+<para>Gets the current selected state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current selected state. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/RadioButton.hpp" line="139" column="1" bodyfile="touchgfx/widgets/RadioButton.hpp" bodystart="139" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_radio_button_1a4dcdd780e93cc783a2ceeda00c6f3b51" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref></type>
+        <definition>virtual Rect getSolidRect</definition>
+        <argsstring>() const</argsstring>
+        <name>getSolidRect</name>
+        <reimplements refid="classtouchgfx_1_1_drawable_1ae7cd27bb574d3b85bd0ce5ce99e555ba">getSolidRect</reimplements>
+        <briefdescription>
+<para>Get (the largest possible) rectangle that is guaranteed to be solid (opaque). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This information is important, as any <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> underneath the solid area does not need to be drawn.</para>
+<para><simplesect kind="return"><para>The solid rectangle part of the <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref>.</para>
+</simplesect>
+<simplesect kind="note"><para>The rectangle returned must be relative to upper left corner of the <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref>, meaning that a completely solid widget should return the full size <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref>(0, 0, <ref refid="classtouchgfx_1_1_drawable_1acae58162aaca6fc174416550f76668e7" kindref="member">getWidth()</ref>, <ref refid="classtouchgfx_1_1_drawable_1ad00483821e06fe4d0d70222de4135d30" kindref="member">getHeight()</ref>). If no area can be guaranteed to be solid, an empty Rect(0, 0, 0, 0) must be returned. Failing to return the correct rectangle may result in errors on the display. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/RadioButton.hpp" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_radio_button_1a046dadb316d2687b1ce6b7ec081116ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void handleClickEvent</definition>
+        <argsstring>(const ClickEvent &amp;event)</argsstring>
+        <name>handleClickEvent</name>
+        <reimplements refid="classtouchgfx_1_1_abstract_button_1a046dadb316d2687b1ce6b7ec081116ee">handleClickEvent</reimplements>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_click_event" kindref="compound">ClickEvent</ref> &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Updates the current state of the button. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The state can be either pressed or released, and if the new state is different from the current state, the button is also invalidated to force a redraw.</para>
+<para>If the button state is changed from <ref refid="classtouchgfx_1_1_click_event_1ac490bd373e5d33a5a257bf0c1fd443cba5ef9a100ac8b4b8d6dec477c377b7901" kindref="member">ClickEvent::PRESSED</ref> to <ref refid="classtouchgfx_1_1_click_event_1ac490bd373e5d33a5a257bf0c1fd443cbaa38d18fe73a7fc82c112b6917d0b5cd0" kindref="member">ClickEvent::RELEASED</ref>, the associated action (if any) is also executed.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Information about the click. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/RadioButton.hpp" line="33" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_radio_button_1aaac7ed00011cdfb0ab48764c081c8d08" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RadioButton</definition>
+        <argsstring>()</argsstring>
+        <name>RadioButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/RadioButton.hpp" line="26" column="1" bodyfile="touchgfx/widgets/RadioButton.hpp" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_radio_button_1a2e0420f68fa01ef7219a0bc2aa792169" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setAlpha</definition>
+        <argsstring>(uint8_t alpha)</argsstring>
+        <name>setAlpha</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+<para>Sets the alpha channel for the <ref refid="classtouchgfx_1_1_radio_button" kindref="compound">RadioButton</ref>, i.e. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>all the images used. The default alpha value on a <ref refid="classtouchgfx_1_1_radio_button" kindref="compound">RadioButton</ref> is 255.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alpha value ranging from 255=solid to 0=invisible.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_radio_button_1a302926ead4ee8a161627575d2666a7f2" kindref="member">getAlpha</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/RadioButton.hpp" line="73" column="1" bodyfile="touchgfx/widgets/RadioButton.hpp" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_radio_button_1aa99deb3677b8ea6894cdcdae1cbdc048" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setBitmaps</definition>
+        <argsstring>(const Bitmap &amp;bmpUnselected, const Bitmap &amp;bmpUnselectedPressed, const Bitmap &amp;bmpSelected, const Bitmap &amp;bmpSelectedPressed)</argsstring>
+        <name>setBitmaps</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> &amp;</type>
+          <declname>bmpUnselected</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> &amp;</type>
+          <declname>bmpUnselectedPressed</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> &amp;</type>
+          <declname>bmpSelected</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> &amp;</type>
+          <declname>bmpSelectedPressed</declname>
+        </param>
+        <briefdescription>
+<para>Sets the four bitmaps used by this button. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The first two bitmaps must show the unselected <ref refid="classtouchgfx_1_1_button" kindref="compound">Button</ref> when it is released and pressed. The last two bitmaps must show the selected <ref refid="classtouchgfx_1_1_button" kindref="compound">Button</ref> when it is released and pressed.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bmpUnselected</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> to use when button is unselected and released. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bmpUnselectedPressed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> to use when button is unselected and pressed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bmpSelected</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> to use when button is selected and released. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bmpSelectedPressed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> to use when button is selected and pressed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>It is not uncommon to have the same bitmap for released (normal) and pressed state. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/RadioButton.hpp" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_radio_button_1a684583357d1358b2c063e1a2eead7010" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setDeselectedAction</definition>
+        <argsstring>(GenericCallback&lt; const AbstractButton &amp; &gt; &amp;callback)</argsstring>
+        <name>setDeselectedAction</name>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_generic_callback" kindref="compound">GenericCallback</ref>&lt; const <ref refid="classtouchgfx_1_1_abstract_button" kindref="compound">AbstractButton</ref> &amp; &gt; &amp;</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>Associates an action to be performed when the <ref refid="classtouchgfx_1_1_radio_button" kindref="compound">RadioButton</ref> is deselected. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The callback to be executed. The callback will be given a reference to the <ref refid="classtouchgfx_1_1_abstract_button" kindref="compound">AbstractButton</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The action performed when the <ref refid="classtouchgfx_1_1_radio_button" kindref="compound">RadioButton</ref> is selected, is set using <ref refid="classtouchgfx_1_1_abstract_button_1ad7737881bbfb9ceb7031e500dd6359eb" kindref="member">setAction()</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/RadioButton.hpp" line="58" column="1" bodyfile="touchgfx/widgets/RadioButton.hpp" bodystart="58" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_radio_button_1ad296a41479352ca6ab0d2a5e4aa36fcc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setDeselectionEnabled</definition>
+        <argsstring>(bool state)</argsstring>
+        <name>setDeselectionEnabled</name>
+        <param>
+          <type>bool</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>Sets whether or not it is possible to deselect the <ref refid="classtouchgfx_1_1_radio_button" kindref="compound">RadioButton</ref> by clicking it. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>By default it is not possible to deselect a <ref refid="classtouchgfx_1_1_radio_button" kindref="compound">RadioButton</ref>. The meaning of this is most clear when the <ref refid="classtouchgfx_1_1_radio_button" kindref="compound">RadioButton</ref> is used in a <ref refid="classtouchgfx_1_1_radio_button_group" kindref="compound">RadioButtonGroup</ref> where exactly one <ref refid="classtouchgfx_1_1_radio_button" kindref="compound">RadioButton</ref> should always be selected. Pressing the currently selected <ref refid="classtouchgfx_1_1_radio_button" kindref="compound">RadioButton</ref> should not deselect it, but rather select it again. This makes the button &quot;sticky&quot;, i.e. a button can only be deselected by selecting another <ref refid="classtouchgfx_1_1_radio_button" kindref="compound">RadioButton</ref> in the same <ref refid="classtouchgfx_1_1_radio_button_group" kindref="compound">RadioButtonGroup</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if it should be possible to deselect by click. Default is false.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_radio_button_1ac85b617f734ea8a0f8c5e8d3aceb890f" kindref="member">getDeselectionEnabled</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/RadioButton.hpp" line="104" column="1" bodyfile="touchgfx/widgets/RadioButton.hpp" bodystart="104" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_radio_button_1aac820f537483a9a28aab124f12fec21e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setSelected</definition>
+        <argsstring>(bool newSelected)</argsstring>
+        <name>setSelected</name>
+        <param>
+          <type>bool</type>
+          <declname>newSelected</declname>
+        </param>
+        <briefdescription>
+<para>Sets the radio buttons selected state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Note that the associated action is also performed.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newSelected</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new selected state.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_abstract_button_1ad7737881bbfb9ceb7031e500dd6359eb" kindref="member">setAction</ref>, <ref refid="classtouchgfx_1_1_radio_button_1a684583357d1358b2c063e1a2eead7010" kindref="member">setDeselectedAction</ref>, <ref refid="classtouchgfx_1_1_radio_button_group" kindref="compound">RadioButtonGroup</ref></para>
+</simplesect>
+<simplesect kind="note"><para>If the <ref refid="classtouchgfx_1_1_radio_button" kindref="compound">RadioButton</ref> is part of a <ref refid="classtouchgfx_1_1_radio_button_group" kindref="compound">RadioButtonGroup</ref>, setting the selected state of individual RadioButtons is not recommended. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/RadioButton.hpp" line="132" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Radio button with two states. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A <ref refid="classtouchgfx_1_1_radio_button" kindref="compound">RadioButton</ref> is a button that changes appearance (state) when it has been pushed. Pushing the <ref refid="classtouchgfx_1_1_radio_button" kindref="compound">RadioButton</ref> again will return the to original state.</para>
+<para>To make managing radio buttons much easier, they can be added to a <ref refid="classtouchgfx_1_1_radio_button_group" kindref="compound">RadioButtonGroup</ref> which then automates deselecting radio buttons when a new radio button is pressed.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_radio_button_group" kindref="compound">RadioButtonGroup</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1308">
+        <label>Widget</label>
+        <link refid="classtouchgfx_1_1_widget"/>
+        <childnode refid="1309" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1306">
+        <label>RadioButton</label>
+        <link refid="classtouchgfx_1_1_radio_button"/>
+        <childnode refid="1307" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1309">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+      </node>
+      <node id="1307">
+        <label>AbstractButton</label>
+        <link refid="classtouchgfx_1_1_abstract_button"/>
+        <childnode refid="1308" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1312">
+        <label>Widget</label>
+        <link refid="classtouchgfx_1_1_widget"/>
+        <childnode refid="1313" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1314">
+        <label>Rect</label>
+        <link refid="classtouchgfx_1_1_rect"/>
+      </node>
+      <node id="1315">
+        <label>GenericCallback&lt; const touchgfx::AbstractButton &amp; &gt;</label>
+        <link refid="classtouchgfx_1_1_generic_callback"/>
+      </node>
+      <node id="1310">
+        <label>RadioButton</label>
+        <link refid="classtouchgfx_1_1_radio_button"/>
+        <childnode refid="1311" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1315" relation="usage">
+          <edgelabel>deselectedAction</edgelabel>
+        </childnode>
+        <childnode refid="1316" relation="usage">
+          <edgelabel>bitmapSelectedPressed</edgelabel>
+          <edgelabel>bitmapUnselectedPressed</edgelabel>
+          <edgelabel>bitmapUnselected</edgelabel>
+          <edgelabel>bitmapSelected</edgelabel>
+        </childnode>
+      </node>
+      <node id="1313">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+        <childnode refid="1314" relation="usage">
+          <edgelabel>rect</edgelabel>
+        </childnode>
+        <childnode refid="1313" relation="usage">
+          <edgelabel>nextSibling</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="1311">
+        <label>AbstractButton</label>
+        <link refid="classtouchgfx_1_1_abstract_button"/>
+        <childnode refid="1312" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1315" relation="usage">
+          <edgelabel>action</edgelabel>
+        </childnode>
+      </node>
+      <node id="1316">
+        <label>Bitmap</label>
+        <link refid="classtouchgfx_1_1_bitmap"/>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/widgets/RadioButton.hpp" line="24" column="1" bodyfile="touchgfx/widgets/RadioButton.hpp" bodystart="23" bodyend="166"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_abstract_button_1a86ae63091156400cc1a67f247e54b188" prot="public" virt="non-virtual"><scope>touchgfx::RadioButton</scope><name>AbstractButton</name></member>
+      <member refid="classtouchgfx_1_1_abstract_button_1a73b48a5330f8681331529bdbeb311d4d" prot="protected" virt="non-virtual"><scope>touchgfx::RadioButton</scope><name>action</name></member>
+      <member refid="classtouchgfx_1_1_radio_button_1acf5bb76caa419c0fa231dbd66c881084" prot="protected" virt="non-virtual"><scope>touchgfx::RadioButton</scope><name>alpha</name></member>
+      <member refid="classtouchgfx_1_1_radio_button_1aa4c39d7736d287df17e3b099b1c38761" prot="protected" virt="non-virtual"><scope>touchgfx::RadioButton</scope><name>bitmapSelected</name></member>
+      <member refid="classtouchgfx_1_1_radio_button_1ad232a8f0036ff0a2d3b5bf6b4567b294" prot="protected" virt="non-virtual"><scope>touchgfx::RadioButton</scope><name>bitmapSelectedPressed</name></member>
+      <member refid="classtouchgfx_1_1_radio_button_1a048daf3690e8476fddab2e1625066a13" prot="protected" virt="non-virtual"><scope>touchgfx::RadioButton</scope><name>bitmapUnselected</name></member>
+      <member refid="classtouchgfx_1_1_radio_button_1aba74474f8bc6bf4b4245e28698be56c2" prot="protected" virt="non-virtual"><scope>touchgfx::RadioButton</scope><name>bitmapUnselectedPressed</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae2d939b2a9c253f0fb3bae3ec7be4e2f" prot="public" virt="virtual"><scope>touchgfx::RadioButton</scope><name>childGeometryChanged</name></member>
+      <member refid="classtouchgfx_1_1_radio_button_1aaebb7e0cc7e62f83ea633e79218207f4" prot="protected" virt="non-virtual"><scope>touchgfx::RadioButton</scope><name>deselectedAction</name></member>
+      <member refid="classtouchgfx_1_1_radio_button_1a6a1148008a2652bd685ca09dae3aba1f" prot="protected" virt="non-virtual"><scope>touchgfx::RadioButton</scope><name>deselectionEnabled</name></member>
+      <member refid="classtouchgfx_1_1_radio_button_1a1277d4bddd51dbc604de265fb70ccbfd" prot="public" virt="virtual"><scope>touchgfx::RadioButton</scope><name>draw</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9cf3a85fa7554475fa42c97985bda6df" prot="public" virt="non-virtual"><scope>touchgfx::RadioButton</scope><name>Drawable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4a009ec2b654351679a0124e9055abdc" prot="public" virt="non-virtual"><scope>touchgfx::RadioButton</scope><name>drawToDynamicBitmap</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa7737d9d49d7f55ec9bde8f2c9751b1d" prot="public" virt="non-virtual"><scope>touchgfx::RadioButton</scope><name>getAbsoluteRect</name></member>
+      <member refid="classtouchgfx_1_1_radio_button_1a302926ead4ee8a161627575d2666a7f2" prot="public" virt="non-virtual"><scope>touchgfx::RadioButton</scope><name>getAlpha</name></member>
+      <member refid="classtouchgfx_1_1_radio_button_1a4a752ae0012401cabec57a890d02b5fe" prot="public" virt="non-virtual"><scope>touchgfx::RadioButton</scope><name>getCurrentlyDisplayedBitmap</name></member>
+      <member refid="classtouchgfx_1_1_radio_button_1ac85b617f734ea8a0f8c5e8d3aceb890f" prot="public" virt="non-virtual"><scope>touchgfx::RadioButton</scope><name>getDeselectionEnabled</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ad00483821e06fe4d0d70222de4135d30" prot="public" virt="non-virtual"><scope>touchgfx::RadioButton</scope><name>getHeight</name></member>
+      <member refid="classtouchgfx_1_1_widget_1a6bc8e89dc7f879221e9862fb27dc726f" prot="public" virt="virtual"><scope>touchgfx::RadioButton</scope><name>getLastChild</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a61c9b2bf703c49a6d238d354ddcaedb3" prot="public" virt="non-virtual"><scope>touchgfx::RadioButton</scope><name>getNextSibling</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a013e065d4d9a10dbfa0ddee9a35582a3" prot="public" virt="non-virtual"><scope>touchgfx::RadioButton</scope><name>getParent</name></member>
+      <member refid="classtouchgfx_1_1_abstract_button_1a8a2545f358d7a39c50b7c28830116cb8" prot="public" virt="virtual"><scope>touchgfx::RadioButton</scope><name>getPressedState</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af23a5bb7d473e16363a449c497586be3" prot="public" virt="non-virtual"><scope>touchgfx::RadioButton</scope><name>getRect</name></member>
+      <member refid="classtouchgfx_1_1_radio_button_1a31dea984aad2d7d43860544fc54a8d40" prot="public" virt="non-virtual"><scope>touchgfx::RadioButton</scope><name>getSelected</name></member>
+      <member refid="classtouchgfx_1_1_radio_button_1a4dcdd780e93cc783a2ceeda00c6f3b51" prot="public" virt="virtual"><scope>touchgfx::RadioButton</scope><name>getSolidRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4783dfe657ff1b7a33261bda8c4b4266" prot="public" virt="virtual"><scope>touchgfx::RadioButton</scope><name>getSolidRectAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a83b8847f583b63e60aa4bf778261ddd7" prot="public" virt="virtual"><scope>touchgfx::RadioButton</scope><name>getVisibleRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1acae58162aaca6fc174416550f76668e7" prot="public" virt="non-virtual"><scope>touchgfx::RadioButton</scope><name>getWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac071e9b7ccf37179df7d29c6778b664c" prot="public" virt="non-virtual"><scope>touchgfx::RadioButton</scope><name>getX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a26752e6cff4607d0eec8768ef6d9032a" prot="public" virt="non-virtual"><scope>touchgfx::RadioButton</scope><name>getY</name></member>
+      <member refid="classtouchgfx_1_1_radio_button_1a046dadb316d2687b1ce6b7ec081116ee" prot="public" virt="virtual"><scope>touchgfx::RadioButton</scope><name>handleClickEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a06ae1946b2124cc94e26cfe18728debf" prot="public" virt="virtual"><scope>touchgfx::RadioButton</scope><name>handleDragEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4db4945ecbc2303bf860e082409b8029" prot="public" virt="virtual"><scope>touchgfx::RadioButton</scope><name>handleGestureEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1af635cee0f186c3d0fcea60bac14355" prot="public" virt="virtual"><scope>touchgfx::RadioButton</scope><name>handleTickEvent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2800b4c18c63e9e7b1f85a74ce6b80c3" prot="public" virt="virtual"><scope>touchgfx::RadioButton</scope><name>invalidate</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a130cf6e1bf2b9f04f48e659758fa75e2" prot="public" virt="virtual"><scope>touchgfx::RadioButton</scope><name>invalidateRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a01c717b9abc98d48673b79d691c2d28a" prot="public" virt="non-virtual"><scope>touchgfx::RadioButton</scope><name>isTouchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9d8a6cfb13917785c143e74d40e4e2be" prot="public" virt="non-virtual"><scope>touchgfx::RadioButton</scope><name>isVisible</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af3590480070e2cf91580976f322d2c5e" prot="public" virt="virtual"><scope>touchgfx::RadioButton</scope><name>moveRelative</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aadc5abfad4d2fcc331cf8de8713dc00e" prot="public" virt="virtual"><scope>touchgfx::RadioButton</scope><name>moveTo</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0da4a00c3fbdea5740e52c7e04316c65" prot="protected" virt="non-virtual"><scope>touchgfx::RadioButton</scope><name>nextSibling</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ab77c13cde2b01107dcbc5c2b584d422f" prot="protected" virt="non-virtual"><scope>touchgfx::RadioButton</scope><name>parent</name></member>
+      <member refid="classtouchgfx_1_1_abstract_button_1a132ba96da5ba28448b61e42c019312a9" prot="protected" virt="non-virtual"><scope>touchgfx::RadioButton</scope><name>pressed</name></member>
+      <member refid="classtouchgfx_1_1_radio_button_1aaac7ed00011cdfb0ab48764c081c8d08" prot="public" virt="non-virtual"><scope>touchgfx::RadioButton</scope><name>RadioButton</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2a955ddc316d002f566598f340eb2af9" prot="protected" virt="non-virtual"><scope>touchgfx::RadioButton</scope><name>rect</name></member>
+      <member refid="classtouchgfx_1_1_radio_button_1a9ee682957ef18956fbe33afe9b6222fa" prot="protected" virt="non-virtual"><scope>touchgfx::RadioButton</scope><name>selected</name></member>
+      <member refid="classtouchgfx_1_1_abstract_button_1ad7737881bbfb9ceb7031e500dd6359eb" prot="public" virt="non-virtual"><scope>touchgfx::RadioButton</scope><name>setAction</name></member>
+      <member refid="classtouchgfx_1_1_radio_button_1a2e0420f68fa01ef7219a0bc2aa792169" prot="public" virt="non-virtual"><scope>touchgfx::RadioButton</scope><name>setAlpha</name></member>
+      <member refid="classtouchgfx_1_1_radio_button_1aa99deb3677b8ea6894cdcdae1cbdc048" prot="public" virt="virtual"><scope>touchgfx::RadioButton</scope><name>setBitmaps</name></member>
+      <member refid="classtouchgfx_1_1_radio_button_1a684583357d1358b2c063e1a2eead7010" prot="public" virt="non-virtual"><scope>touchgfx::RadioButton</scope><name>setDeselectedAction</name></member>
+      <member refid="classtouchgfx_1_1_radio_button_1ad296a41479352ca6ab0d2a5e4aa36fcc" prot="public" virt="non-virtual"><scope>touchgfx::RadioButton</scope><name>setDeselectionEnabled</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a47a6312407603de99247bb802dbd8a48" prot="public" virt="virtual"><scope>touchgfx::RadioButton</scope><name>setHeight</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac218c371450d8ad2bed3e1b07965a41a" prot="public" virt="virtual"><scope>touchgfx::RadioButton</scope><name>setPosition</name></member>
+      <member refid="classtouchgfx_1_1_radio_button_1aac820f537483a9a28aab124f12fec21e" prot="public" virt="non-virtual"><scope>touchgfx::RadioButton</scope><name>setSelected</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae4c38eadb852b153850ea7ded1f50a19" prot="public" virt="non-virtual"><scope>touchgfx::RadioButton</scope><name>setTouchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a71639c6634c5dcf6d1bb21b8b1b61f5b" prot="public" virt="non-virtual"><scope>touchgfx::RadioButton</scope><name>setVisible</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae74a37f71d23440fc8b0466ad8ecfe4b" prot="public" virt="virtual"><scope>touchgfx::RadioButton</scope><name>setWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9f6db7f34a74e991fc446fffb5703a53" prot="public" virt="virtual"><scope>touchgfx::RadioButton</scope><name>setX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6c86659dc1e7355c207e9c0aa18af167" prot="public" virt="virtual"><scope>touchgfx::RadioButton</scope><name>setXY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1b08d48e7e23a046f09e63089bc82bc1" prot="public" virt="virtual"><scope>touchgfx::RadioButton</scope><name>setY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0d014de134cb9b9c1c361fcd726a5f34" prot="protected" virt="non-virtual"><scope>touchgfx::RadioButton</scope><name>touchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a48c1d14ac943dbfa4935ea39db950608" prot="public" virt="virtual"><scope>touchgfx::RadioButton</scope><name>translateRectToAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa54a57ae048476d840caf6d4d2c47aa3" prot="protected" virt="non-virtual"><scope>touchgfx::RadioButton</scope><name>visible</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6bb040a11ffc2bd641283cc0bc0d1346" prot="public" virt="virtual"><scope>touchgfx::RadioButton</scope><name>~Drawable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

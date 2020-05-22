@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="_drawable_list_8hpp" kind="file" language="C++">
+    <compoundname>DrawableList.hpp</compoundname>
+    <includes refid="_container_8hpp" local="no">touchgfx/containers/Container.hpp</includes>
+    <includedby refid="_scroll_base_8hpp" local="no">touchgfx/containers/scrollers/ScrollBase.hpp</includedby>
+    <includedby refid="_scroll_wheel_8hpp" local="no">touchgfx/containers/scrollers/ScrollWheel.hpp</includedby>
+    <includedby refid="_scroll_wheel_with_selection_style_8hpp" local="no">touchgfx/containers/scrollers/ScrollWheelWithSelectionStyle.hpp</includedby>
+    <innerclass refid="classtouchgfx_1_1_drawable_list" prot="public">touchgfx::DrawableList</innerclass>
+    <innerclass refid="classtouchgfx_1_1_drawable_list_items" prot="public">touchgfx::DrawableListItems</innerclass>
+    <innerclass refid="classtouchgfx_1_1_drawable_list_items_interface" prot="public">touchgfx::DrawableListItemsInterface</innerclass>
+    <innernamespace refid="namespacetouchgfx">touchgfx</innernamespace>
+    <briefdescription>
+<para>Declares the <ref refid="classtouchgfx_1_1_drawable_list_items_interface" kindref="compound">touchgfx::DrawableListItemsInterface</ref> (abstract), <ref refid="classtouchgfx_1_1_drawable_list_items" kindref="compound">touchgfx::DrawableListItems</ref> and <ref refid="classtouchgfx_1_1_drawable_list" kindref="compound">touchgfx::DrawableList</ref> classes. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="7"><highlight class="preprocessor">#ifndef<sp/>DRAWABLELIST_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DRAWABLELIST_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;touchgfx/containers/Container.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetouchgfx" kindref="compound">touchgfx</ref></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23" refid="classtouchgfx_1_1_drawable_list_items_interface" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtouchgfx_1_1_drawable_list_items_interface" kindref="compound">DrawableListItemsInterface</ref></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_list_items_interface_1a35f15c4ba45608d5649ed12485329ab8" kindref="member">~DrawableListItemsInterface</ref>()</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref>*<sp/><ref refid="classtouchgfx_1_1_drawable_list_items_interface_1a1533d6365f965cec71b34ff1682ffd2b" kindref="member">getDrawable</ref>(int16_t<sp/>index)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>int16_t<sp/><ref refid="classtouchgfx_1_1_drawable_list_items_interface_1a868d795d413a792620ea7573425bb166" kindref="member">getNumberOfDrawables</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>TYPE,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>SIZE&gt;</highlight></codeline>
+<codeline lineno="64" refid="classtouchgfx_1_1_drawable_list_items" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtouchgfx_1_1_drawable_list_items" kindref="compound">DrawableListItems</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_list_items_interface" kindref="compound">DrawableListItemsInterface</ref></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref>*<sp/><ref refid="classtouchgfx_1_1_drawable_list_items_1a407e19162cc9016785aede68c530690a" kindref="member">getDrawable</ref>(int16_t<sp/>index)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(index<sp/>&gt;=<sp/>0<sp/>&amp;&amp;<sp/>index<sp/>&lt;<sp/>SIZE);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;<ref refid="classtouchgfx_1_1_drawable_list_items_1a8bf98074a7f7a8462fec8bded4fdb10c" kindref="member">element</ref>[index];</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>TYPE&amp;<sp/><ref refid="classtouchgfx_1_1_drawable_list_items_1a03c9eeab67b288f722673279ba4d596a" kindref="member">operator[]</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index)</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(index<sp/>&gt;=<sp/>0<sp/>&amp;&amp;<sp/>index<sp/>&lt;<sp/>SIZE);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_list_items_1a8bf98074a7f7a8462fec8bded4fdb10c" kindref="member">element</ref>[index];</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>int16_t<sp/><ref refid="classtouchgfx_1_1_drawable_list_items_1a48084d5c5b2cdb963047aec26c0a0eb6" kindref="member">getNumberOfDrawables</ref>()</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SIZE;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>TYPE<sp/><ref refid="classtouchgfx_1_1_drawable_list_items_1a8bf98074a7f7a8462fec8bded4fdb10c" kindref="member">element</ref>[SIZE];<sp/></highlight></codeline>
+<codeline lineno="92"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="classtouchgfx_1_1_drawable_list" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtouchgfx_1_1_drawable_list" kindref="compound">DrawableList</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_container" kindref="compound">Container</ref></highlight></codeline>
+<codeline lineno="103"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_drawable_list" kindref="compound">DrawableList</ref>();</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_list_1ae74a37f71d23440fc8b0466ad8ecfe4b" kindref="member">setWidth</ref>(int16_t<sp/>width);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_list_1a47a6312407603de99247bb802dbd8a48" kindref="member">setHeight</ref>(int16_t<sp/>height);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_list_1a9b2bb39354bf3ea61b2b3bb97d9460e8" kindref="member">setHorizontal</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>horizontal);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_list_1a356552e43f78402504061f0e52046068" kindref="member">getHorizontal</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_list_1a34dac40f12e1f8b3fa4f49e4ddcdbaaf" kindref="member">setCircular</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>circular);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_list_1ae299a8effdc7c9e71c379cc5702d2dcb" kindref="member">getCircular</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_list_1a4e8b82f7d967d4fc41004941fa9f472b" kindref="member">setDrawableSize</ref>(int16_t<sp/>drawableSize,<sp/>int16_t<sp/>drawableMargin);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>int16_t<sp/><ref refid="classtouchgfx_1_1_drawable_list_1ab896278f28033bd9b090aca2a57edad4" kindref="member">getItemSize</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>int16_t<sp/><ref refid="classtouchgfx_1_1_drawable_list_1a7b09c5474988ad2db2b6c3aa6a81c884" kindref="member">getDrawableSize</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>int16_t<sp/><ref refid="classtouchgfx_1_1_drawable_list_1ad4bb43057c6efb10353f0c203c2a39a3" kindref="member">getDrawableMargin</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_list_1a7aea0784d9582ee4afc6147c5fbdb171" kindref="member">setDrawables</ref>(<ref refid="classtouchgfx_1_1_drawable_list_items_interface" kindref="compound">DrawableListItemsInterface</ref>&amp;<sp/>drawableListItems,</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int16_t<sp/>drawableItemIndexOffset,</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_generic_callback" kindref="compound">GenericCallback&lt;DrawableListItemsInterface*, int16_t, int16_t&gt;</ref>&amp;<sp/>updateDrawableCallback);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="classtouchgfx_1_1_drawable_list_1abcdcd8846354fed1a70b4e9fc1b7c6d6" kindref="member">getNumberOfDrawables</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_list_1a6e0ff9748981a9aaba53663d301b86df" kindref="member">setNumberOfItems</ref>(int16_t<sp/>numberOfItems);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="classtouchgfx_1_1_drawable_list_1a49169a178751ca32dc2d0c402135dd13" kindref="member">getNumberOfItems</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="classtouchgfx_1_1_drawable_list_1a6469d8ef17d8e3cccf2335e71d16ea3b" kindref="member">getRequiredNumberOfDrawables</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_list_1ad8e0526c2f012c36432e46369b549903" kindref="member">setOffset</ref>(int32_t<sp/>ofs);</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="classtouchgfx_1_1_drawable_list_1a14bbb5ea27e9166b508ab768a2df3d4e" kindref="member">getOffset</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="classtouchgfx_1_1_drawable_list_1ae352304dd4dd3bcbe7cdb8125c2917e9" kindref="member">getItemIndex</ref>(int16_t<sp/>drawableIndex)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="classtouchgfx_1_1_drawable_list_1a1a74efa0a69927ceb9509b005677ffd4" kindref="member">getDrawableIndices</ref>(int16_t<sp/>itemIndex,<sp/>int16_t*<sp/>drawableIndexArray,<sp/>int16_t<sp/>arraySize)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="classtouchgfx_1_1_drawable_list_1a01a5a49b4730463f7b158ce9b16fe0cc" kindref="member">getDrawableIndex</ref>(int16_t<sp/>itemIndex,<sp/>int16_t<sp/>prevDrawableIndex<sp/>=<sp/>-1)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_list_1a5c742278c8c2f0b2376d53c0f17fb404" kindref="member">refreshDrawables</ref>();</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"></highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_drawable_list_1a2a741cd1863529bae58c2664ffb63091" kindref="member">itemChanged</ref>(int16_t<sp/>itemIndex);</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"></highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isHorizontal;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isCircular;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>offset;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/>itemSize;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/>itemMargin;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/>numItems;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/>numDrawables;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/>firstItem;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/>firstDrawable;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>drawablesInitialized;<sp/></highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/>firstDrawableIndex;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_drawable_list_items_interface" kindref="compound">DrawableListItemsInterface</ref>*<sp/>drawableItems;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_generic_callback" kindref="compound">GenericCallback&lt;DrawableListItemsInterface*, int16_t, int16_t&gt;</ref>*<sp/>updateDrawable;<sp/></highlight></codeline>
+<codeline lineno="377"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"></highlight></codeline>
+<codeline lineno="379"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>touchgfx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="380"><highlight class="normal"></highlight></codeline>
+<codeline lineno="381"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>DRAWABLELIST_HPP</highlight></codeline>
+    </programlisting>
+    <location file="touchgfx/containers/scrollers/DrawableList.hpp"/>
+  </compounddef>
+</doxygen>

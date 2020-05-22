@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="_color_8hpp" kind="file" language="C++">
+    <compoundname>Color.hpp</compoundname>
+    <includes refid="_h_a_l_8hpp" local="no">touchgfx/hal/HAL.hpp</includes>
+    <includes refid="_types_8hpp" local="no">touchgfx/hal/Types.hpp</includes>
+    <includes refid="_l_c_d_8hpp" local="no">touchgfx/lcd/LCD.hpp</includes>
+    <includedby refid="_digital_clock_8hpp" local="no">touchgfx/containers/clock/DigitalClock.hpp</includedby>
+    <includedby refid="_keyboard_8hpp" local="no">touchgfx/widgets/Keyboard.hpp</includedby>
+    <innerclass refid="classtouchgfx_1_1_color" prot="public">touchgfx::Color</innerclass>
+    <innernamespace refid="namespacetouchgfx">touchgfx</innernamespace>
+    <briefdescription>
+<para>Declares the <ref refid="classtouchgfx_1_1_color" kindref="compound">touchgfx::Color</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>COLOR_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COLOR_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;touchgfx/hal/HAL.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;touchgfx/hal/Types.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;touchgfx/lcd/LCD.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetouchgfx" kindref="compound">touchgfx</ref></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16" refid="classtouchgfx_1_1_color" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtouchgfx_1_1_color" kindref="compound">Color</ref></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref><sp/><ref refid="classtouchgfx_1_1_color_1aa9c7e0454e1bfc7c73b8a42319b868ba" kindref="member">getColorFrom24BitRGB</ref>(uint8_t<sp/>red,<sp/>uint8_t<sp/>green,<sp/>uint8_t<sp/>blue)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assert(<ref refid="classtouchgfx_1_1_h_a_l_1ae4fa38f01133ea5a21e25449a0432d40" kindref="member">HAL::getInstance</ref>()<sp/>&amp;&amp;<sp/></highlight><highlight class="stringliteral">&quot;Cannot<sp/>set<sp/>color<sp/>before<sp/>HAL<sp/>is<sp/>initialized&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_h_a_l_1a649cc066d589492ce9b6198ec66d9654" kindref="member">HAL::lcd</ref>().<ref refid="classtouchgfx_1_1_l_c_d_1a7a4cf10b0b68239f9e0ab49f05df98ec" kindref="member">getColorFrom24BitRGB</ref>(red,<sp/>green,<sp/>blue);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="classtouchgfx_1_1_color_1ab634c209faf3547f2a8e5bf5e1361360" kindref="member">getRedColor</ref>(<ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref><sp/>color)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_h_a_l_1a649cc066d589492ce9b6198ec66d9654" kindref="member">HAL::lcd</ref>().<ref refid="classtouchgfx_1_1_l_c_d_1a7ead52bf45c6f3c1cb50718405f5123e" kindref="member">getRedColor</ref>(color);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="classtouchgfx_1_1_color_1a87490d0bf61d4c88fde957867e3ef1bf" kindref="member">getGreenColor</ref>(<ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref><sp/>color)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_h_a_l_1a649cc066d589492ce9b6198ec66d9654" kindref="member">HAL::lcd</ref>().<ref refid="classtouchgfx_1_1_l_c_d_1a2b8dffe98b2173b4009624e9c44e9709" kindref="member">getGreenColor</ref>(color);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="classtouchgfx_1_1_color_1ae058608414cce6559fbf01f28eaecbcc" kindref="member">getBlueColor</ref>(<ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref><sp/>color)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_h_a_l_1a649cc066d589492ce9b6198ec66d9654" kindref="member">HAL::lcd</ref>().<ref refid="classtouchgfx_1_1_l_c_d_1a0d36d0f505c5ee534b2794d06eb122a8" kindref="member">getBlueColor</ref>(color);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>touchgfx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>COLOR_HPP</highlight></codeline>
+    </programlisting>
+    <location file="touchgfx/Color.hpp"/>
+  </compounddef>
+</doxygen>

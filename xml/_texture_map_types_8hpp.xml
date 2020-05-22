@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="_texture_map_types_8hpp" kind="file" language="C++">
+    <compoundname>TextureMapTypes.hpp</compoundname>
+    <includes refid="_types_8hpp" local="no">touchgfx/hal/Types.hpp</includes>
+    <includedby refid="_l_c_d16bpp_8hpp" local="no">platform/driver/lcd/LCD16bpp.hpp</includedby>
+    <includedby refid="_l_c_d16bpp_serial_flash_8hpp" local="no">platform/driver/lcd/LCD16bppSerialFlash.hpp</includedby>
+    <includedby refid="_l_c_d24bpp_8hpp" local="no">platform/driver/lcd/LCD24bpp.hpp</includedby>
+    <includedby refid="_l_c_d2bpp_8hpp" local="no">platform/driver/lcd/LCD2bpp.hpp</includedby>
+    <includedby refid="_l_c_d32bpp_8hpp" local="no">platform/driver/lcd/LCD32bpp.hpp</includedby>
+    <includedby refid="_l_c_d4bpp_8hpp" local="no">platform/driver/lcd/LCD4bpp.hpp</includedby>
+    <includedby refid="_l_c_d8bpp___a_b_g_r2222_8hpp" local="no">platform/driver/lcd/LCD8bpp_ABGR2222.hpp</includedby>
+    <includedby refid="_l_c_d8bpp___a_r_g_b2222_8hpp" local="no">platform/driver/lcd/LCD8bpp_ARGB2222.hpp</includedby>
+    <includedby refid="_l_c_d8bpp___b_g_r_a2222_8hpp" local="no">platform/driver/lcd/LCD8bpp_BGRA2222.hpp</includedby>
+    <includedby refid="_l_c_d8bpp___r_g_b_a2222_8hpp" local="no">platform/driver/lcd/LCD8bpp_RGBA2222.hpp</includedby>
+    <includedby refid="_l_c_d_8hpp" local="no">touchgfx/lcd/LCD.hpp</includedby>
+    <innerclass refid="structtouchgfx_1_1_edge" prot="public">touchgfx::Edge</innerclass>
+    <innerclass refid="structtouchgfx_1_1_gradients" prot="public">touchgfx::Gradients</innerclass>
+    <innernamespace refid="namespacetouchgfx">touchgfx</innernamespace>
+    <briefdescription>
+<para>Declares the Gradients and Edge structs. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Also declares functions for handling touchgfx::float28_4 types. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>TEXTUREMAPTYPES_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TEXTUREMAPTYPES_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;touchgfx/hal/Types.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetouchgfx" kindref="compound">touchgfx</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17" refid="structtouchgfx_1_1_gradients" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtouchgfx_1_1_gradients" kindref="compound">Gradients</ref></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structtouchgfx_1_1_gradients_1a08c07e419d16fced37c6ed38ecc3a635" kindref="member">Gradients</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtouchgfx_1_1_point3_d" kindref="compound">Point3D</ref>*<sp/>vertices);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structtouchgfx_1_1_gradients_1ab21e0ca6ff3edfa21d68248bfd0bf1dd" kindref="member">oneOverZ</ref>[3];<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structtouchgfx_1_1_gradients_1aff40c16d4c16e0f2e0a962587bbc645a" kindref="member">UOverZ</ref>[3];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structtouchgfx_1_1_gradients_1aac350e3747bfd6fcd91ea453fb2d94d4" kindref="member">VOverZ</ref>[3];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structtouchgfx_1_1_gradients_1a800af7fc99033e792adf923df3b6cdda" kindref="member">dOneOverZdX</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structtouchgfx_1_1_gradients_1ae60d3feaca2ed777c5b0d774a5b51250" kindref="member">dOneOverZdY</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structtouchgfx_1_1_gradients_1a8ec8240634703f2b4416725ce4699cec" kindref="member">dUOverZdX</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structtouchgfx_1_1_gradients_1ad00b7bff1fded0418b8334c871587660" kindref="member">dUOverZdY</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structtouchgfx_1_1_gradients_1ac77adb0e5a5173238969adc2f694cbf3" kindref="member">dVOverZdX</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structtouchgfx_1_1_gradients_1a86aba16515e4f0d6d819a33d60e325a0" kindref="member">dVOverZdY</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacetouchgfx_1a62c78b672c5381c87b38200ab84a31f5" kindref="member">fixed16_16</ref><sp/><ref refid="structtouchgfx_1_1_gradients_1ae4ac9c4c219e6b492ea60ec4fa75b66e" kindref="member">dUdXModifier</ref>;<sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespacetouchgfx_1a62c78b672c5381c87b38200ab84a31f5" kindref="member">fixed16_16</ref><sp/><ref refid="structtouchgfx_1_1_gradients_1a68c8abf4e817f476baaf629230cf625b" kindref="member">dVdXModifier</ref>;<sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="structtouchgfx_1_1_edge" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtouchgfx_1_1_edge" kindref="compound">Edge</ref></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structtouchgfx_1_1_edge_1aa682b15251f2e7cb8f104b764790fbf6" kindref="member">Edge</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtouchgfx_1_1_gradients" kindref="compound">Gradients</ref>&amp;<sp/>gradients,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structtouchgfx_1_1_point3_d" kindref="compound">Point3D</ref>*<sp/>vertices,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>top,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bottom);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structtouchgfx_1_1_edge_1a6452a9d7c9fcabeb40bb5d8495300090" kindref="member">step</ref>()</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtouchgfx_1_1_edge_1a15a78e2c6057c34f33a3e3ba9d4a2655" kindref="member">X</ref><sp/>+=<sp/><ref refid="structtouchgfx_1_1_edge_1a4e0161437cec4cc6933717ebc7e9c3b3" kindref="member">XStep</ref>;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtouchgfx_1_1_edge_1aa482c4cc86a24474e4fb19b5b5978778" kindref="member">Y</ref>++;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtouchgfx_1_1_edge_1ad12fc34ce789bce6c8a05d8a17138534" kindref="member">height</ref>--;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtouchgfx_1_1_edge_1a99915b4fd8726bfa7cd9e8ed4aed2e3d" kindref="member">UOverZ</ref><sp/>+=<sp/><ref refid="structtouchgfx_1_1_edge_1aedb222596e655bc94c040314d81b982a" kindref="member">UOverZStep</ref>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtouchgfx_1_1_edge_1afe03df0d1c122bc9b663fcbd44754ce8" kindref="member">VOverZ</ref><sp/>+=<sp/><ref refid="structtouchgfx_1_1_edge_1a840ae128a85232f1cdfe4a0595ebe1b9" kindref="member">VOverZStep</ref>;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtouchgfx_1_1_edge_1a32fd6b40a76355d19186854c323905b2" kindref="member">oneOverZ</ref><sp/>+=<sp/><ref refid="structtouchgfx_1_1_edge_1a109720432c7300334475269607c65d96" kindref="member">oneOverZStep</ref>;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtouchgfx_1_1_edge_1ab6c9d47292a631ae554fe1d363e1b996" kindref="member">errorTerm</ref><sp/>+=<sp/><ref refid="structtouchgfx_1_1_edge_1af72aac6879b5b4384b6fa8c1b4852eb6" kindref="member">numerator</ref>;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="structtouchgfx_1_1_edge_1ab6c9d47292a631ae554fe1d363e1b996" kindref="member">errorTerm</ref><sp/>&gt;=<sp/><ref refid="structtouchgfx_1_1_edge_1abca868beb61d97cdaccf83c03409cfb4" kindref="member">denominator</ref>)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtouchgfx_1_1_edge_1a15a78e2c6057c34f33a3e3ba9d4a2655" kindref="member">X</ref>++;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtouchgfx_1_1_edge_1ab6c9d47292a631ae554fe1d363e1b996" kindref="member">errorTerm</ref><sp/>-=<sp/><ref refid="structtouchgfx_1_1_edge_1abca868beb61d97cdaccf83c03409cfb4" kindref="member">denominator</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtouchgfx_1_1_edge_1a32fd6b40a76355d19186854c323905b2" kindref="member">oneOverZ</ref><sp/>+=<sp/><ref refid="structtouchgfx_1_1_edge_1a2693615583d4ff4e35c83cff1f35c061" kindref="member">oneOverZStepExtra</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtouchgfx_1_1_edge_1a99915b4fd8726bfa7cd9e8ed4aed2e3d" kindref="member">UOverZ</ref><sp/>+=<sp/><ref refid="structtouchgfx_1_1_edge_1abe2fdd2e2e443e37393b5fe7cdd71562" kindref="member">UOverZStepExtra</ref>;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtouchgfx_1_1_edge_1afe03df0d1c122bc9b663fcbd44754ce8" kindref="member">VOverZ</ref><sp/>+=<sp/><ref refid="structtouchgfx_1_1_edge_1a893c72a5e882e61834931459a5b1090a" kindref="member">VOverZStepExtra</ref>;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structtouchgfx_1_1_edge_1ad12fc34ce789bce6c8a05d8a17138534" kindref="member">height</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structtouchgfx_1_1_edge_1a6452a9d7c9fcabeb40bb5d8495300090" kindref="member">step</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>steps)</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(steps--<sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structtouchgfx_1_1_edge_1a6452a9d7c9fcabeb40bb5d8495300090" kindref="member">step</ref>();</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structtouchgfx_1_1_edge_1ad12fc34ce789bce6c8a05d8a17138534" kindref="member">height</ref>;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="structtouchgfx_1_1_edge_1a15a78e2c6057c34f33a3e3ba9d4a2655" kindref="member">X</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="structtouchgfx_1_1_edge_1a4e0161437cec4cc6933717ebc7e9c3b3" kindref="member">XStep</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="structtouchgfx_1_1_edge_1af72aac6879b5b4384b6fa8c1b4852eb6" kindref="member">numerator</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="structtouchgfx_1_1_edge_1abca868beb61d97cdaccf83c03409cfb4" kindref="member">denominator</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="structtouchgfx_1_1_edge_1ab6c9d47292a631ae554fe1d363e1b996" kindref="member">errorTerm</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structtouchgfx_1_1_edge_1aa482c4cc86a24474e4fb19b5b5978778" kindref="member">Y</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structtouchgfx_1_1_edge_1ad12fc34ce789bce6c8a05d8a17138534" kindref="member">height</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structtouchgfx_1_1_edge_1a32fd6b40a76355d19186854c323905b2" kindref="member">oneOverZ</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structtouchgfx_1_1_edge_1a109720432c7300334475269607c65d96" kindref="member">oneOverZStep</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structtouchgfx_1_1_edge_1a2693615583d4ff4e35c83cff1f35c061" kindref="member">oneOverZStepExtra</ref>;<sp/></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structtouchgfx_1_1_edge_1a99915b4fd8726bfa7cd9e8ed4aed2e3d" kindref="member">UOverZ</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structtouchgfx_1_1_edge_1aedb222596e655bc94c040314d81b982a" kindref="member">UOverZStep</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structtouchgfx_1_1_edge_1abe2fdd2e2e443e37393b5fe7cdd71562" kindref="member">UOverZStepExtra</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structtouchgfx_1_1_edge_1afe03df0d1c122bc9b663fcbd44754ce8" kindref="member">VOverZ</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structtouchgfx_1_1_edge_1a840ae128a85232f1cdfe4a0595ebe1b9" kindref="member">VOverZStep</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structtouchgfx_1_1_edge_1a893c72a5e882e61834931459a5b1090a" kindref="member">VOverZStepExtra</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="118"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="namespacetouchgfx_1a139c14620c3a071645d48a12faea065c" kindref="member">fixed28_4ToFloat</ref>(<ref refid="namespacetouchgfx_1a8acb0f33dffbf1b6afbc9ba50789b73e" kindref="member">fixed28_4</ref><sp/>value)</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>value<sp/>/<sp/>16.0f;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespacetouchgfx_1a8acb0f33dffbf1b6afbc9ba50789b73e" kindref="member">fixed28_4</ref><sp/><ref refid="namespacetouchgfx_1a8f49ef0ce7627d5f9c8a7d7c226aaa9e" kindref="member">floatToFixed28_4</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>value)</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="namespacetouchgfx_1a8acb0f33dffbf1b6afbc9ba50789b73e" kindref="member">fixed28_4</ref>)(value<sp/>*<sp/>16);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespacetouchgfx_1a62c78b672c5381c87b38200ab84a31f5" kindref="member">fixed16_16</ref><sp/><ref refid="namespacetouchgfx_1a484d536eb36392a6ef3a0a6c1815439c" kindref="member">floatToFixed16_16</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>value)</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="namespacetouchgfx_1a62c78b672c5381c87b38200ab84a31f5" kindref="member">fixed16_16</ref>)(value<sp/>*<sp/>65536);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespacetouchgfx_1a8acb0f33dffbf1b6afbc9ba50789b73e" kindref="member">fixed28_4</ref><sp/><ref refid="namespacetouchgfx_1a478144abfd043c15f79b6b2704fd23a4" kindref="member">fixed28_4Mul</ref>(<ref refid="namespacetouchgfx_1a8acb0f33dffbf1b6afbc9ba50789b73e" kindref="member">fixed28_4</ref><sp/>a,<sp/><ref refid="namespacetouchgfx_1a8acb0f33dffbf1b6afbc9ba50789b73e" kindref="member">fixed28_4</ref><sp/>b)</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(a<sp/>==<sp/>0<sp/>||<sp/>b<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((a<sp/>*<sp/>b)<sp/>/<sp/>b<sp/>==<sp/>a)</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(a<sp/>*<sp/>b)<sp/>/<sp/>16;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Rewrite<sp/>&quot;b<sp/>=<sp/>max_b<sp/>*<sp/>num_max_b<sp/>+<sp/>rem_b&quot;<sp/>so<sp/>that<sp/>a<sp/>*<sp/>max_b<sp/>does<sp/>not<sp/>overflow.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sign<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(b<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sign<sp/>=<sp/>-sign;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>b<sp/>=<sp/>-b;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(a<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sign<sp/>=<sp/>-sign;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>a<sp/>=<sp/>-a;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(a<sp/>&lt;<sp/>b)</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacetouchgfx_1a8acb0f33dffbf1b6afbc9ba50789b73e" kindref="member">fixed28_4</ref><sp/>tmp<sp/>=<sp/>a;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>a<sp/>=<sp/>b;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>b<sp/>=<sp/>tmp;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>max_b<sp/>=<sp/>0x7FFFFFFF<sp/>/<sp/>a;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Max<sp/>b<sp/>value<sp/>that<sp/>can<sp/>be<sp/>multiplied<sp/>with<sp/>a<sp/>without<sp/>overflow</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>num_max_b<sp/>=<sp/>b<sp/>/<sp/>max_b;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>How<sp/>many<sp/>times<sp/>do<sp/>we<sp/>have<sp/>to<sp/>multiply<sp/>with<sp/>&quot;max_b&quot;<sp/>to<sp/>get<sp/>to<sp/>&quot;b&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>rem_b<sp/>=<sp/>b<sp/>-<sp/>max_b<sp/>*<sp/>num_max_b;<sp/></highlight><highlight class="comment">//<sp/>plus<sp/>some<sp/>remainder.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>max_prod<sp/>=<sp/>a<sp/>*<sp/>max_b;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>result<sp/>=<sp/>sign<sp/>*<sp/>(num_max_b<sp/>*<sp/>(max_prod<sp/>/<sp/>16)<sp/>+<sp/>(num_max_b<sp/>*<sp/>(max_prod<sp/>%<sp/>16)<sp/>+<sp/>rem_b<sp/>*<sp/>a)<sp/>/<sp/>16);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="namespacetouchgfx_1a7279e6708575e6ee6a0e8c033bcec19c" kindref="member">ceil28_4</ref>(<ref refid="namespacetouchgfx_1a8acb0f33dffbf1b6afbc9ba50789b73e" kindref="member">fixed28_4</ref><sp/>value)</highlight></codeline>
+<codeline lineno="209"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>returnValue;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/>numerator<sp/>=<sp/>value<sp/>-<sp/>1<sp/>+<sp/>16;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(numerator<sp/>&gt;=<sp/>0)</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>returnValue<sp/>=<sp/>numerator<sp/>/<sp/>16;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>deal<sp/>with<sp/>negative<sp/>numerators<sp/>correctly</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>returnValue<sp/>=<sp/>-((-numerator)<sp/>/<sp/>16);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>returnValue<sp/>-=<sp/>((-numerator)<sp/>%<sp/>16)<sp/>?<sp/>1<sp/>:<sp/>0;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>returnValue;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacetouchgfx_1aae9ce7ec13a9f3151ba78c1d4bd3d4a6" kindref="member">floorDivMod</ref>(int32_t<sp/>numerator,<sp/>int32_t<sp/>denominator,<sp/>int32_t&amp;<sp/>floor,<sp/>int32_t&amp;<sp/>mod)</highlight></codeline>
+<codeline lineno="234"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(denominator<sp/>&gt;<sp/>0);<sp/></highlight><highlight class="comment">//<sp/>we<sp/>assume<sp/>it&apos;s<sp/>positive</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(numerator<sp/>&gt;=<sp/>0)</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>positive<sp/>case,<sp/>C<sp/>is<sp/>okay</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>floor<sp/>=<sp/>numerator<sp/>/<sp/>denominator;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mod<sp/>=<sp/>numerator<sp/>%<sp/>denominator;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Numerator<sp/>is<sp/>negative,<sp/>do<sp/>the<sp/>right<sp/>thing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>floor<sp/>=<sp/>-((-numerator)<sp/>/<sp/>denominator);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mod<sp/>=<sp/>(-numerator)<sp/>%<sp/>denominator;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mod)</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>there<sp/>is<sp/>a<sp/>remainder</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>floor--;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mod<sp/>=<sp/>denominator<sp/>-<sp/>mod;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="254"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="255"><highlight class="normal">}<sp/></highlight><highlight class="comment">//namespace<sp/>touchgfx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>TEXTUREMAPTYPES_HPP</highlight></codeline>
+    </programlisting>
+    <location file="touchgfx/TextureMapTypes.hpp"/>
+  </compounddef>
+</doxygen>

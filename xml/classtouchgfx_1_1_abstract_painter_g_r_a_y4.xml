@@ -1,0 +1,328 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_abstract_painter_g_r_a_y4" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>touchgfx::AbstractPainterGRAY4</compoundname>
+    <basecompoundref refid="classtouchgfx_1_1_abstract_painter" prot="public" virt="non-virtual">AbstractPainter</basecompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_painter_g_r_a_y4" prot="public" virt="non-virtual">PainterGRAY4</derivedcompoundref>
+    <derivedcompoundref refid="classtouchgfx_1_1_painter_g_r_a_y4_bitmap" prot="public" virt="non-virtual">PainterGRAY4Bitmap</derivedcompoundref>
+    <includes local="no">AbstractPainterGRAY4.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_abstract_painter_g_r_a_y4_1a64f7b27f87296e4ca5cc2d60ee3303b0" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int currentX</definition>
+        <argsstring></argsstring>
+        <name>currentX</name>
+        <briefdescription>
+<para>Current x coordinate relative to the widget. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/AbstractPainterGRAY4.hpp" line="60" column="1" bodyfile="touchgfx/widgets/canvas/AbstractPainterGRAY4.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_abstract_painter_g_r_a_y4_1af649605bffa9661bfdf81cb40fcbccbd" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int currentY</definition>
+        <argsstring></argsstring>
+        <name>currentY</name>
+        <briefdescription>
+<para>Current y coordinate relative to the widget. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/AbstractPainterGRAY4.hpp" line="61" column="1" bodyfile="touchgfx/widgets/canvas/AbstractPainterGRAY4.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_painter_g_r_a_y4_1a76deb97df774dd86b264291f425f130b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>AbstractPainterGRAY4</definition>
+        <argsstring>()</argsstring>
+        <name>AbstractPainterGRAY4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/AbstractPainterGRAY4.hpp" line="25" column="1" bodyfile="touchgfx/widgets/canvas/AbstractPainterGRAY4.hpp" bodystart="25" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_painter_g_r_a_y4_1a8441245669080e102adac555a07830ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void render</definition>
+        <argsstring>(uint8_t *ptr, int x, int xAdjust, int y, unsigned count, const uint8_t *covers)</argsstring>
+        <name>render</name>
+        <reimplements refid="classtouchgfx_1_1_abstract_painter_1a57419543eb049dc2bc3fca0aea4a796f">render</reimplements>
+        <reimplementedby refid="classtouchgfx_1_1_painter_g_r_a_y4_bitmap_1a8441245669080e102adac555a07830ea">render</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_painter_g_r_a_y4_1a8441245669080e102adac555a07830ea">render</reimplementedby>
+        <param>
+          <type>uint8_t *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>xAdjust</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>covers</declname>
+        </param>
+        <briefdescription>
+<para>Paint a designated part of the RenderingBuffer with respect to the amount of coverage of each pixel given by the parameter covers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The cover is the alpha for each pixel, which is what makes it possible to have smooth anti-aliased edges on the shapes drawn with <ref refid="classtouchgfx_1_1_canvas_widget_renderer" kindref="compound">CanvasWidgetRenderer</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the row in the RenderingBuffer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xAdjust</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minor adjustment of x (used when a pixel is smaller than a byte to specify that the <emphasis>ptr</emphasis> should have been advanced &quot;xAdjust&quot; pixels futher into the byte). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of pixels to fill. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>covers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The coverage in of each pixel.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The implementation of <ref refid="classtouchgfx_1_1_abstract_painter_g_r_a_y4_1a8441245669080e102adac555a07830ea" kindref="member">render()</ref> in the <ref refid="classtouchgfx_1_1_abstract_painter" kindref="compound">AbstractPainter</ref> classes is a generic (i.e. slow) implementation that should be completely implemented in subclasses of <ref refid="classtouchgfx_1_1_abstract_painter" kindref="compound">AbstractPainter</ref> for better performance. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/AbstractPainterGRAY4.hpp" line="30" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_painter_g_r_a_y4_1a51910f125f1da3e5e47a57708f0a932e" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool renderInit</definition>
+        <argsstring>()</argsstring>
+        <name>renderInit</name>
+        <reimplementedby refid="classtouchgfx_1_1_painter_g_r_a_y4_bitmap_1a51910f125f1da3e5e47a57708f0a932e">renderInit</reimplementedby>
+        <briefdescription>
+<para>Initialize rendering of a single scan line of pixels for the render. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If renderInit returns false, the scanline will not be rendered.</para>
+<para><simplesect kind="return"><para>true if it succeeds, false if it fails. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/AbstractPainterGRAY4.hpp" line="36" column="1" bodyfile="touchgfx/widgets/canvas/AbstractPainterGRAY4.hpp" bodystart="36" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_painter_g_r_a_y4_1a1d835d5c124a608ac7b6073502ad5201" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool renderNext</definition>
+        <argsstring>(uint8_t &amp;gray, uint8_t &amp;alpha)=0</argsstring>
+        <name>renderNext</name>
+        <reimplementedby refid="classtouchgfx_1_1_painter_g_r_a_y4_bitmap_1a6b15552869521bdba4a51fbbce476de6">renderNext</reimplementedby>
+        <reimplementedby refid="classtouchgfx_1_1_painter_g_r_a_y4_1a6b15552869521bdba4a51fbbce476de6">renderNext</reimplementedby>
+        <param>
+          <type>uint8_t &amp;</type>
+          <declname>gray</declname>
+        </param>
+        <param>
+          <type>uint8_t &amp;</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+<para>Get the color of the next pixel in the scan line to blend into the framebuffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">gray</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The gray color (0-15). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alpha.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the pixel should be painted, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/AbstractPainterGRAY4.hpp" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_abstract_painter_g_r_a_y4_1a300ce6e9ffa06ba9e6fa6db020809d4f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void renderPixel</definition>
+        <argsstring>(uint8_t *p, uint16_t offset, uint8_t gray)</argsstring>
+        <name>renderPixel</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>gray</declname>
+        </param>
+        <briefdescription>
+<para>Renders (writes) the specified color into the framebuffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer into the framebuffer where the given color should be written. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The offset to the pixel from the given pointer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gray</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The gray color. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/AbstractPainterGRAY4.hpp" line="58" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classtouchgfx_1_1_abstract_painter_g_r_a_y4" kindref="compound">AbstractPainterGRAY4</ref> class is an abstract class for creating a painter to draw on a GRAY4 display using <ref refid="classtouchgfx_1_1_canvas_widget_renderer" kindref="compound">CanvasWidgetRenderer</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_abstract_painter" kindref="compound">AbstractPainter</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="122">
+        <label>AbstractPainterGRAY4</label>
+        <link refid="classtouchgfx_1_1_abstract_painter_g_r_a_y4"/>
+        <childnode refid="123" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="124">
+        <label>PainterGRAY4</label>
+        <link refid="classtouchgfx_1_1_painter_g_r_a_y4"/>
+        <childnode refid="122" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="125">
+        <label>PainterGRAY4Bitmap</label>
+        <link refid="classtouchgfx_1_1_painter_g_r_a_y4_bitmap"/>
+        <childnode refid="122" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="123">
+        <label>AbstractPainter</label>
+        <link refid="classtouchgfx_1_1_abstract_painter"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="126">
+        <label>AbstractPainterGRAY4</label>
+        <link refid="classtouchgfx_1_1_abstract_painter_g_r_a_y4"/>
+        <childnode refid="127" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="127">
+        <label>AbstractPainter</label>
+        <link refid="classtouchgfx_1_1_abstract_painter"/>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/widgets/canvas/AbstractPainterGRAY4.hpp" line="23" column="1" bodyfile="touchgfx/widgets/canvas/AbstractPainterGRAY4.hpp" bodystart="22" bodyend="62"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_abstract_painter_1aa4f80084e6ff903500fe2febda5f2f41" prot="public" virt="non-virtual"><scope>touchgfx::AbstractPainterGRAY4</scope><name>AbstractPainter</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_g_r_a_y4_1a76deb97df774dd86b264291f425f130b" prot="public" virt="non-virtual"><scope>touchgfx::AbstractPainterGRAY4</scope><name>AbstractPainterGRAY4</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_1a290754e533a9f126030de238db59494a" prot="protected" virt="non-virtual"><scope>touchgfx::AbstractPainterGRAY4</scope><name>areaOffsetX</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_1aee5f795da3f83f1f63af9d0c0acb75d2" prot="protected" virt="non-virtual"><scope>touchgfx::AbstractPainterGRAY4</scope><name>areaOffsetY</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_1a90f2b5c86d316ef720ac9c414caf7582" prot="protected" virt="non-virtual"><scope>touchgfx::AbstractPainterGRAY4</scope><name>compatibleFramebuffer</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_g_r_a_y4_1a64f7b27f87296e4ca5cc2d60ee3303b0" prot="protected" virt="non-virtual"><scope>touchgfx::AbstractPainterGRAY4</scope><name>currentX</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_g_r_a_y4_1af649605bffa9661bfdf81cb40fcbccbd" prot="protected" virt="non-virtual"><scope>touchgfx::AbstractPainterGRAY4</scope><name>currentY</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_g_r_a_y4_1a8441245669080e102adac555a07830ea" prot="public" virt="virtual"><scope>touchgfx::AbstractPainterGRAY4</scope><name>render</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_g_r_a_y4_1a51910f125f1da3e5e47a57708f0a932e" prot="protected" virt="virtual"><scope>touchgfx::AbstractPainterGRAY4</scope><name>renderInit</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_g_r_a_y4_1a1d835d5c124a608ac7b6073502ad5201" prot="protected" virt="pure-virtual"><scope>touchgfx::AbstractPainterGRAY4</scope><name>renderNext</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_g_r_a_y4_1a300ce6e9ffa06ba9e6fa6db020809d4f" prot="protected" virt="virtual"><scope>touchgfx::AbstractPainterGRAY4</scope><name>renderPixel</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_1a5d2eaea5211939c699e009b61e4372af" prot="public" virt="non-virtual"><scope>touchgfx::AbstractPainterGRAY4</scope><name>setOffset</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_1a03f9d48d2592bf9ef9644992ae82e545" prot="protected" virt="non-virtual"><scope>touchgfx::AbstractPainterGRAY4</scope><name>setWidgetAlpha</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_1ac77f8cef6ca6a25c3fa9e7f6fb1274cb" prot="protected" virt="non-virtual"><scope>touchgfx::AbstractPainterGRAY4</scope><name>widgetAlpha</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_1a212a3772cf31ed3710dca0baea1ae436" prot="public" virt="virtual"><scope>touchgfx::AbstractPainterGRAY4</scope><name>~AbstractPainter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1507 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_scrollable_container" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::ScrollableContainer</compoundname>
+    <basecompoundref refid="classtouchgfx_1_1_container" prot="public" virt="non-virtual">Container</basecompoundref>
+    <includes local="no">ScrollableContainer.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_scrollable_container_1a4d25f0e9e14e96903825c726c8f5a801" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_gesture_event_1a6030ba46894d6ebf8baaf401207475cb" kindref="member">GestureEvent::GestureEventType</ref></type>
+        <definition>GestureEvent::GestureEventType accelDirection</definition>
+        <argsstring></argsstring>
+        <name>accelDirection</name>
+        <briefdescription>
+<para>The current direction (horizontal or vertical) of scroll. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="295" column="1" bodyfile="touchgfx/containers/ScrollableContainer.hpp" bodystart="295" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_scrollable_container_1a547d731792813ec95c93ab4e30694bd7" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool animate</definition>
+        <argsstring></argsstring>
+        <name>animate</name>
+        <briefdescription>
+<para>Is scroll animation currently active. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="325" column="1" bodyfile="touchgfx/containers/ScrollableContainer.hpp" bodystart="325" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_scrollable_container_1a5b5a3753395a29a4904a93151aa4a24f" prot="protected" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t animationCounter</definition>
+        <argsstring></argsstring>
+        <name>animationCounter</name>
+        <briefdescription>
+<para>Current step/tick in scroll animation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="324" column="1" bodyfile="touchgfx/containers/ScrollableContainer.hpp" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_scrollable_container_1a85ade30258e6ce05253944d6efb45801" prot="protected" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t beginningValue</definition>
+        <argsstring></argsstring>
+        <name>beginningValue</name>
+        <briefdescription>
+<para>Initial X or Y for calculated values in scroll animation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="321" column="1" bodyfile="touchgfx/containers/ScrollableContainer.hpp" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_scrollable_container_1a230c2646bb296cf0008568e35fb7c0e6" prot="protected" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t fingerAdjustmentX</definition>
+        <argsstring></argsstring>
+        <name>fingerAdjustmentX</name>
+        <briefdescription>
+<para>How much should the finger be adjusted horizontally. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="327" column="1" bodyfile="touchgfx/containers/ScrollableContainer.hpp" bodystart="327" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_scrollable_container_1a808e130fc4fd0d84d02a3d38d78f8139" prot="protected" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t fingerAdjustmentY</definition>
+        <argsstring></argsstring>
+        <name>fingerAdjustmentY</name>
+        <briefdescription>
+<para>and how much vertically </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="328" column="1" bodyfile="touchgfx/containers/ScrollableContainer.hpp" bodystart="328" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_scrollable_container_1a2f1d1cc50db77f687164e49a1d53c045" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool hasIssuedCancelEvent</definition>
+        <argsstring></argsstring>
+        <name>hasIssuedCancelEvent</name>
+        <briefdescription>
+<para>true if the pressed drawable has received cancel event </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="330" column="1" bodyfile="touchgfx/containers/ScrollableContainer.hpp" bodystart="330" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_scrollable_container_1ab1351de5234bac2d378240bdfac6e90c" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool isPressed</definition>
+        <argsstring></argsstring>
+        <name>isPressed</name>
+        <briefdescription>
+<para>Is the container currently pressed (maybe show scrollbars) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="310" column="1" bodyfile="touchgfx/containers/ScrollableContainer.hpp" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_scrollable_container_1a516aa9225f4c4c2bfceb2e683edb1fd0" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool isScrolling</definition>
+        <argsstring></argsstring>
+        <name>isScrolling</name>
+        <briefdescription>
+<para>Is the container scrolling (i.e. has overcome the initial larger drag that is required to initiate a scroll). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="311" column="1" bodyfile="touchgfx/containers/ScrollableContainer.hpp" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_scrollable_container_1aab56e78b6c14659138d17662556c292e" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> *</type>
+        <definition>Drawable* lastDraggableChild</definition>
+        <argsstring></argsstring>
+        <name>lastDraggableChild</name>
+        <briefdescription>
+<para>The drawable child of this container which should receive drag events. Note that only drag events in directions which cannot be scrolled by this <ref refid="classtouchgfx_1_1_scrollable_container" kindref="compound">ScrollableContainer</ref> will be forwarded to children. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="301" column="1" bodyfile="touchgfx/containers/ScrollableContainer.hpp" bodystart="301" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_scrollable_container_1ab38449db163d2f11c2133de8aa93d1a2" prot="protected" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t maxVelocity</definition>
+        <argsstring></argsstring>
+        <name>maxVelocity</name>
+        <briefdescription>
+<para>The maximum velocity of a scroll (due to a swipe) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="240" column="1" bodyfile="touchgfx/containers/ScrollableContainer.hpp" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_scrollable_container_1a7c951aa975a3ee1e0c0897af47d1bf14" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> *</type>
+        <definition>Drawable* pressedDrawable</definition>
+        <argsstring></argsstring>
+        <name>pressedDrawable</name>
+        <briefdescription>
+<para>The drawable child of this container which received the last <ref refid="classtouchgfx_1_1_click_event_1ac490bd373e5d33a5a257bf0c1fd443cba5ef9a100ac8b4b8d6dec477c377b7901" kindref="member">ClickEvent::PRESSED</ref> notification. When scrolling, send this drawable a CANCEL event if the new x/y coords no longer matches this drawable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="300" column="1" bodyfile="touchgfx/containers/ScrollableContainer.hpp" bodystart="300" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_scrollable_container_1a068a907e0988fcaef395f4cf0ec25b85" prot="protected" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t pressedX</definition>
+        <argsstring></argsstring>
+        <name>pressedX</name>
+        <briefdescription>
+<para>The x coordinate where the last <ref refid="classtouchgfx_1_1_click_event_1ac490bd373e5d33a5a257bf0c1fd443cba5ef9a100ac8b4b8d6dec477c377b7901" kindref="member">ClickEvent::PRESSED</ref> was received. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="307" column="1" bodyfile="touchgfx/containers/ScrollableContainer.hpp" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_scrollable_container_1a58c7694b58b6c4202d45eaa309e7c5bc" prot="protected" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t pressedY</definition>
+        <argsstring></argsstring>
+        <name>pressedY</name>
+        <briefdescription>
+<para>The y coordinate where the last <ref refid="classtouchgfx_1_1_click_event_1ac490bd373e5d33a5a257bf0c1fd443cba5ef9a100ac8b4b8d6dec477c377b7901" kindref="member">ClickEvent::PRESSED</ref> was received. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="308" column="1" bodyfile="touchgfx/containers/ScrollableContainer.hpp" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_scrollable_container_1a2e32d80c1a53f939c8b6ec3e5688135e" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool scrollableX</definition>
+        <argsstring></argsstring>
+        <name>scrollableX</name>
+        <briefdescription>
+<para>Is the container scrollable in the horizontal direction. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="313" column="1" bodyfile="touchgfx/containers/ScrollableContainer.hpp" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_scrollable_container_1a4f7ef8de788763d8db91d7dc4faf0c45" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool scrollableY</definition>
+        <argsstring></argsstring>
+        <name>scrollableY</name>
+        <briefdescription>
+<para>Is the container scrollable in the vertical direction. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="314" column="1" bodyfile="touchgfx/containers/ScrollableContainer.hpp" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_scrollable_container_1a45c634cbb9979bad5f5514cc8a7b0c73" prot="protected" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t scrollbarAlpha</definition>
+        <argsstring></argsstring>
+        <name>scrollbarAlpha</name>
+        <briefdescription>
+<para>The scrollbar is semitransparent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="235" column="1" bodyfile="touchgfx/containers/ScrollableContainer.hpp" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_scrollable_container_1ad641d04efa1baad689423f7750ff745d" prot="protected" static="no" mutable="no">
+        <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+        <definition>colortype scrollbarColor</definition>
+        <argsstring></argsstring>
+        <name>scrollbarColor</name>
+        <briefdescription>
+<para>The color of the scrollbar. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="237" column="1" bodyfile="touchgfx/containers/ScrollableContainer.hpp" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_scrollable_container_1aa646e13c8f5a4b181d3dcee0c45be0f7" prot="protected" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t scrollbarPadding</definition>
+        <argsstring></argsstring>
+        <name>scrollbarPadding</name>
+        <briefdescription>
+<para>The amount of padding. The scrollbar will have a bit of space to the borders of the container. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="233" column="1" bodyfile="touchgfx/containers/ScrollableContainer.hpp" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_scrollable_container_1a97321fd1e935cd40d76cd3deb66e746a" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool scrollbarsPermanentlyVisible</definition>
+        <argsstring></argsstring>
+        <name>scrollbarsPermanentlyVisible</name>
+        <briefdescription>
+<para>Are scrollbars always visible. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="317" column="1" bodyfile="touchgfx/containers/ScrollableContainer.hpp" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_scrollable_container_1ad689eefe031af2de50ad80d91800fc55" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool scrollbarsVisible</definition>
+        <argsstring></argsstring>
+        <name>scrollbarsVisible</name>
+        <briefdescription>
+<para>Are scrollbars visible. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="316" column="1" bodyfile="touchgfx/containers/ScrollableContainer.hpp" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_scrollable_container_1aa7db99affa8a9f3b03ca5fb77e50b143" prot="protected" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t scrollbarWidth</definition>
+        <argsstring></argsstring>
+        <name>scrollbarWidth</name>
+        <briefdescription>
+<para>The width of the scrollbar. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="234" column="1" bodyfile="touchgfx/containers/ScrollableContainer.hpp" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_scrollable_container_1ab1d9a41d5c6b7cd94bd18cefa272e0e4" prot="protected" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t scrollDuration</definition>
+        <argsstring></argsstring>
+        <name>scrollDuration</name>
+        <briefdescription>
+<para>Number of ticks the scroll animation should use. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="319" column="1" bodyfile="touchgfx/containers/ScrollableContainer.hpp" bodystart="319" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_scrollable_container_1a3251228ad7e04cd223a811900ffddc73" prot="protected" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t scrolledXDistance</definition>
+        <argsstring></argsstring>
+        <name>scrolledXDistance</name>
+        <briefdescription>
+<para>The scrolled horizontal distance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="303" column="1" bodyfile="touchgfx/containers/ScrollableContainer.hpp" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_scrollable_container_1a4450673c64497c030349a495169d96cd" prot="protected" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t scrolledYDistance</definition>
+        <argsstring></argsstring>
+        <name>scrolledYDistance</name>
+        <briefdescription>
+<para>The scrolled vertical distance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="304" column="1" bodyfile="touchgfx/containers/ScrollableContainer.hpp" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_scrollable_container_1a000c43acc99664950e9e5571012d56bb" prot="protected" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t scrollThreshold</definition>
+        <argsstring></argsstring>
+        <name>scrollThreshold</name>
+        <briefdescription>
+<para>The threshold which the first drag event received must exceed before scrolling. Default is 5. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="305" column="1" bodyfile="touchgfx/containers/ScrollableContainer.hpp" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_scrollable_container_1a77c5ebdb51f6d0560825b66d265647a1" prot="protected" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t targetValue</definition>
+        <argsstring></argsstring>
+        <name>targetValue</name>
+        <briefdescription>
+<para>Target X or Y value for scroll animation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="322" column="1" bodyfile="touchgfx/containers/ScrollableContainer.hpp" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_scrollable_container_1ae6b40638a11183cab7ac7202dc58fa24" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_box" kindref="compound">Box</ref></type>
+        <definition>Box xSlider</definition>
+        <argsstring></argsstring>
+        <name>xSlider</name>
+        <briefdescription>
+<para>The horizontal scrollbar drawable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="297" column="1" bodyfile="touchgfx/containers/ScrollableContainer.hpp" bodystart="297" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_scrollable_container_1a1be3e054964846f1b28c006e0f6f867d" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_box" kindref="compound">Box</ref></type>
+        <definition>Box ySlider</definition>
+        <argsstring></argsstring>
+        <name>ySlider</name>
+        <briefdescription>
+<para>The vertical scrollbar drawable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="298" column="1" bodyfile="touchgfx/containers/ScrollableContainer.hpp" bodystart="298" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_scrollable_container_1a53b5b4485da2ec9992df8a1545b94cc9" prot="protected" static="yes" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t SCROLLBAR_LINE</definition>
+        <argsstring></argsstring>
+        <name>SCROLLBAR_LINE</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>The scrollbar line. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="236" column="1" bodyfile="touchgfx/containers/ScrollableContainer.hpp" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_scrollable_container_1ad501b399be0e51c2f345433daa5fba89" prot="protected" static="yes" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t SCROLLBAR_MAX_VELOCITY</definition>
+        <argsstring></argsstring>
+        <name>SCROLLBAR_MAX_VELOCITY</name>
+        <initializer>= 17</initializer>
+        <briefdescription>
+<para>The (default) maximum velocity of a scroll due to a swipe. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="239" column="1" bodyfile="touchgfx/containers/ScrollableContainer.hpp" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_scrollable_container_1ae1c85b1487c98a02bc7bbd1f83323c94" prot="protected" static="yes" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t SCROLLBAR_MIN_VELOCITY</definition>
+        <argsstring></argsstring>
+        <name>SCROLLBAR_MIN_VELOCITY</name>
+        <initializer>= 5</initializer>
+        <briefdescription>
+<para>The minimum velocity of a scroll due to a swipe. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="238" column="1" bodyfile="touchgfx/containers/ScrollableContainer.hpp" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_scrollable_container_1a302ad1a4da6fe171eb249828bd8dc7ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void add</definition>
+        <argsstring>(Drawable &amp;d)</argsstring>
+        <name>add</name>
+        <reimplements refid="classtouchgfx_1_1_container_1a302ad1a4da6fe171eb249828bd8dc7ab">add</reimplements>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> &amp;</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Adds a <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> instance as child to this <ref refid="classtouchgfx_1_1_container" kindref="compound">Container</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> added will be placed as the element to be drawn last, and thus appear on top of all previously added drawables in the <ref refid="classtouchgfx_1_1_container" kindref="compound">Container</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> to add.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Never add a drawable more than once! </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="108" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_scrollable_container_1ae2d939b2a9c253f0fb3bae3ec7be4e2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void childGeometryChanged</definition>
+        <argsstring>()</argsstring>
+        <name>childGeometryChanged</name>
+        <reimplements refid="classtouchgfx_1_1_drawable_1ae2d939b2a9c253f0fb3bae3ec7be4e2f">childGeometryChanged</reimplements>
+        <briefdescription>
+<para>Used to signal that the size or position of one or more children have changed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function can be called on parent nodes to signal that the size of one or more of its children have changed. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="146" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_scrollable_container_1a1cf7067c03ae7ac30976b3982e170f98" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void enableHorizontalScroll</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>enableHorizontalScroll</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>Enables horizontal scrolling. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>By default, scrolling in either direction is enabled, provided that the content is larger than the size of the <ref refid="classtouchgfx_1_1_scrollable_container" kindref="compound">ScrollableContainer</ref>. This function can be used to explicitly (dis)allow horizontal scrolling, even if the content is larger than the container.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true (default), horizontal scrolling is enabled. If false, horizontal scrolling is disabled.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_scrollable_container_1a6cda78163027dbfbb9946e085ad83f5a" kindref="member">enableVerticalScroll</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="47" column="1" bodyfile="touchgfx/containers/ScrollableContainer.hpp" bodystart="47" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_scrollable_container_1a6cda78163027dbfbb9946e085ad83f5a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void enableVerticalScroll</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>enableVerticalScroll</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>Enables vertical scrolling. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>By default, scrolling in either direction is enabled, provided that the content is larger than the size of the <ref refid="classtouchgfx_1_1_scrollable_container" kindref="compound">ScrollableContainer</ref>. This function can be used to explicitly (dis)allow vertical scrolling, even if the content is larger than the container.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true (default), vertical scrolling is enabled. If false, vertical scrolling is disabled.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_scrollable_container_1a1cf7067c03ae7ac30976b3982e170f98" kindref="member">enableHorizontalScroll</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="63" column="1" bodyfile="touchgfx/containers/ScrollableContainer.hpp" bodystart="63" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_scrollable_container_1a47e8a844fa50b171656f8355fd8e313b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref></type>
+        <definition>virtual Rect getContainedArea</definition>
+        <argsstring>() const</argsstring>
+        <name>getContainedArea</name>
+        <reimplements refid="classtouchgfx_1_1_container_1a47e8a844fa50b171656f8355fd8e313b">getContainedArea</reimplements>
+        <briefdescription>
+<para>Gets the area that contains all children added to the <ref refid="classtouchgfx_1_1_scrollable_container" kindref="compound">ScrollableContainer</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The scrollbars are not considered in this operation.</para>
+<para><simplesect kind="return"><para>The contained area. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="139" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_scrollable_container_1a6bc8e89dc7f879221e9862fb27dc726f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void getLastChild</definition>
+        <argsstring>(int16_t x, int16_t y, Drawable **last)</argsstring>
+        <name>getLastChild</name>
+        <reimplements refid="classtouchgfx_1_1_container_1a6bc8e89dc7f879221e9862fb27dc726f">getLastChild</reimplements>
+        <param>
+          <type>int16_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type><ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> **</type>
+          <declname>last</declname>
+        </param>
+        <briefdescription>
+<para>Gets the last child in the list of children in this <ref refid="classtouchgfx_1_1_container" kindref="compound">Container</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If this <ref refid="classtouchgfx_1_1_container" kindref="compound">Container</ref> is touchable (<ref refid="classtouchgfx_1_1_drawable_1a01c717b9abc98d48673b79d691c2d28a" kindref="member">isTouchable()</ref>), it will be passed back as the result. Otherwise all <emphasis>visible</emphasis> children are traversed recursively to find the <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> that intersects with the given coordinate.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate of the intersection. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate of the intersection. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">last</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>out parameter in which the result is placed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_drawable_1a9d8a6cfb13917785c143e74d40e4e2be" kindref="member">isVisible</ref>, <ref refid="classtouchgfx_1_1_drawable_1a01c717b9abc98d48673b79d691c2d28a" kindref="member">isTouchable</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="110" column="1" bodyfile="touchgfx/containers/ScrollableContainer.hpp" bodystart="110" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_scrollable_container_1a1dcbae8564fb1bd69ccdd9e2f2f20e79" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t getScrolledX</definition>
+        <argsstring>() const</argsstring>
+        <name>getScrolledX</name>
+        <briefdescription>
+<para>Gets the distance scrolled for the x-axis. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the distance scrolled for the x-axis. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="223" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_scrollable_container_1ac3828b48dd65e21232304d7a88c148b5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t getScrolledY</definition>
+        <argsstring>() const</argsstring>
+        <name>getScrolledY</name>
+        <briefdescription>
+<para>Gets the distance scrolled for the y-axis. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the distance scrolled for the y-axis. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="230" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_scrollable_container_1a7f1524b90bc90e5f6cf7ee47aae12123" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void handleClickEvent</definition>
+        <argsstring>(const ClickEvent &amp;evt)</argsstring>
+        <name>handleClickEvent</name>
+        <reimplements refid="classtouchgfx_1_1_drawable_1a7f1524b90bc90e5f6cf7ee47aae12123">handleClickEvent</reimplements>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_click_event" kindref="compound">ClickEvent</ref> &amp;</type>
+          <declname>evt</declname>
+        </param>
+        <briefdescription>
+<para>Defines the event handler interface for ClickEvents. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default implementation ignores the event. The event is only received if the <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> is touchable and visible.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>evt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classtouchgfx_1_1_click_event" kindref="compound">ClickEvent</ref> received from the <ref refid="classtouchgfx_1_1_h_a_l" kindref="compound">HAL</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="125" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_scrollable_container_1a06ae1946b2124cc94e26cfe18728debf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void handleDragEvent</definition>
+        <argsstring>(const DragEvent &amp;evt)</argsstring>
+        <name>handleDragEvent</name>
+        <reimplements refid="classtouchgfx_1_1_drawable_1a06ae1946b2124cc94e26cfe18728debf">handleDragEvent</reimplements>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_drag_event" kindref="compound">DragEvent</ref> &amp;</type>
+          <declname>evt</declname>
+        </param>
+        <briefdescription>
+<para>Defines the event handler interface for DragEvents. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default implementation ignores the event. The event is only received if the drawable is touchable and visible.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>evt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classtouchgfx_1_1_drag_event" kindref="compound">DragEvent</ref> received from the <ref refid="classtouchgfx_1_1_h_a_l" kindref="compound">HAL</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="127" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_scrollable_container_1a4db4945ecbc2303bf860e082409b8029" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void handleGestureEvent</definition>
+        <argsstring>(const GestureEvent &amp;evt)</argsstring>
+        <name>handleGestureEvent</name>
+        <reimplements refid="classtouchgfx_1_1_drawable_1a4db4945ecbc2303bf860e082409b8029">handleGestureEvent</reimplements>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_gesture_event" kindref="compound">GestureEvent</ref> &amp;</type>
+          <declname>evt</declname>
+        </param>
+        <briefdescription>
+<para>Defines the event handler interface for GestureEvents. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default implementation ignores the event. The event is only received if the <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> is touchable and visible.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>evt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classtouchgfx_1_1_gesture_event" kindref="compound">GestureEvent</ref> received from the <ref refid="classtouchgfx_1_1_h_a_l" kindref="compound">HAL</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="129" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_scrollable_container_1a1af635cee0f186c3d0fcea60bac14355" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void handleTickEvent</definition>
+        <argsstring>()</argsstring>
+        <name>handleTickEvent</name>
+        <reimplements refid="classtouchgfx_1_1_drawable_1a1af635cee0f186c3d0fcea60bac14355">handleTickEvent</reimplements>
+        <briefdescription>
+<para>Called periodically by the framework if the <ref refid="classtouchgfx_1_1_drawable" kindref="compound">Drawable</ref> instance has subscribed to timer ticks. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_application_1a5c54374756338ccf158b197f64470345" kindref="member">Application::registerTimerWidget</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="131" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_scrollable_container_1ad4c9fa8c171f171a0521b12332030ed4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void isScrollableXY</definition>
+        <argsstring>(bool &amp;scrollX, bool &amp;scrollY)</argsstring>
+        <name>isScrollableXY</name>
+        <param>
+          <type>bool &amp;</type>
+          <declname>scrollX</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>scrollY</declname>
+        </param>
+        <briefdescription>
+<para>Is the ClickableContainer scrollable in either direction? Takes the width of the contained elements into account and also checks to see if horizontal or vertical scrolling is allowed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">scrollX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True if the container is able to scroll horizontally. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">scrollY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True if the container is able to scroll vertically.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_scrollable_container_1a1cf7067c03ae7ac30976b3982e170f98" kindref="member">enableHorizontalScroll</ref>, <ref refid="classtouchgfx_1_1_scrollable_container_1a6cda78163027dbfbb9946e085ad83f5a" kindref="member">enableVerticalScroll</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="78" column="1" bodyfile="touchgfx/containers/ScrollableContainer.hpp" bodystart="78" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_scrollable_container_1add539b68574f09b364f0b4e6a312b9b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void moveChildrenRelative</definition>
+        <argsstring>(int16_t deltaX, int16_t deltaY)</argsstring>
+        <name>moveChildrenRelative</name>
+        <reimplements refid="classtouchgfx_1_1_container_1add539b68574f09b364f0b4e6a312b9b0">moveChildrenRelative</reimplements>
+        <param>
+          <type>int16_t</type>
+          <declname>deltaX</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>deltaY</declname>
+        </param>
+        <briefdescription>
+<para>Calls moveRelative on all children. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>deltaX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Horizontal displacement. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>deltaY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vertical displacement.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Takes care not to move the scrollbars, which are also children. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="160" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_scrollable_container_1ad20897c5c8bd47f5d4005989bead0e55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+<para>Resets the <ref refid="classtouchgfx_1_1_scrollable_container" kindref="compound">ScrollableContainer</ref> to its original state, before the user started dragging the contents. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This reset the x/y coordinates of children to the position they were in before the first drag event was received. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="153" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_scrollable_container_1a4bf447ca4072d11d0da607d4bb347750" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ScrollableContainer</definition>
+        <argsstring>()</argsstring>
+        <name>ScrollableContainer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="34" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_scrollable_container_1a015a272ab4476123b6f53c2e322281d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setMaxVelocity</definition>
+        <argsstring>(uint16_t max)</argsstring>
+        <name>setMaxVelocity</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+<para>Sets the maximum velocity of a scroll due to a swipe. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This can be used to force smooth scrolling by limiting the speed of any swipe gesture.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum velocity of the scroll.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_gesture_event_1a2aa733ae7e8b12dbd8ea35d7b7382f2d" kindref="member">GestureEvent::getVelocity</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="170" column="1" bodyfile="touchgfx/containers/ScrollableContainer.hpp" bodystart="170" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_scrollable_container_1a5bb045bf6fc251ce83b4023daeabc047" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setScrollbarPadding</definition>
+        <argsstring>(uint8_t padding)</argsstring>
+        <name>setScrollbarPadding</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>padding</declname>
+        </param>
+        <briefdescription>
+<para>Sets the amount of space between the scrollbar and the edge of the <ref refid="classtouchgfx_1_1_scrollable_container" kindref="compound">ScrollableContainer</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>padding</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The padding. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="209" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_scrollable_container_1a45440a40a6eb5eb4717dbe44cec63a7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setScrollbarsAlpha</definition>
+        <argsstring>(uint8_t alpha)</argsstring>
+        <name>setScrollbarsAlpha</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+<para>Sets the alpha value (transparency) of the scrollbars. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The alpha value. 255 being completely solid, 0 being completely invisible. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="202" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_scrollable_container_1a2ac6a0706ccd83705d10e4af4d84ec52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setScrollbarsColor</definition>
+        <argsstring>(colortype color)</argsstring>
+        <name>setScrollbarsColor</name>
+        <param>
+          <type><ref refid="structtouchgfx_1_1colortype" kindref="compound">colortype</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Sets the color of the scrollbars. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color of the box. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="195" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_scrollable_container_1a97e194d675dbdece75c4c8bea2d58e7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setScrollbarsPermanentlyVisible</definition>
+        <argsstring>()</argsstring>
+        <name>setScrollbarsPermanentlyVisible</name>
+        <briefdescription>
+<para>Make scrollbars permanently visible regardless of the size and position of the children of the <ref refid="classtouchgfx_1_1_scrollable_container" kindref="compound">ScrollableContainer</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Normally the scrollbars are hidden and only shown when dragging the contents of the <ref refid="classtouchgfx_1_1_scrollable_container" kindref="compound">ScrollableContainer</ref> (unless prohibited using <ref refid="classtouchgfx_1_1_scrollable_container_1a5428064a66af0f11a91c3aa70febe173" kindref="member">setScrollbarsVisible()</ref>).</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_scrollable_container_1a5428064a66af0f11a91c3aa70febe173" kindref="member">setScrollbarsVisible</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="106" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_scrollable_container_1a5428064a66af0f11a91c3aa70febe173" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setScrollbarsVisible</definition>
+        <argsstring>(bool newVisible)</argsstring>
+        <name>setScrollbarsVisible</name>
+        <param>
+          <type>bool</type>
+          <declname>newVisible</declname>
+        </param>
+        <briefdescription>
+<para>Sets the visibility of the scrollbars, when the scrollable area is pressed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>By default the scrollbars are hidden, but shown when the contents of the <ref refid="classtouchgfx_1_1_scrollable_container" kindref="compound">ScrollableContainer</ref> is being dragged around. Using setScrollbarsVisible, it is possble to hide the scrollbars when dragging the contents.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newVisible</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true (default), the scrollbars are visible when scrollable area is pressed. If false, scrollbars are always hidden.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtouchgfx_1_1_scrollable_container_1a97e194d675dbdece75c4c8bea2d58e7e" kindref="member">setScrollbarsPermanentlyVisible</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="96" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_scrollable_container_1a5bd3862598f3efeb1aaf4c2ebb433126" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setScrollbarWidth</definition>
+        <argsstring>(uint8_t width)</argsstring>
+        <name>setScrollbarWidth</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+<para>Sets the width of the scrollbar measured in pixels. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The width of the scrollbar. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="216" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_scrollable_container_1a66a03f1d3d775b47d8a4ba4d29433569" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setScrollThreshold</definition>
+        <argsstring>(int16_t t)</argsstring>
+        <name>setScrollThreshold</name>
+        <param>
+          <type>int16_t</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Change the threshold which the first drag event received must exceed before initiating a scroll. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This can be used to avoid touching the screen and moving the finger only a few pixels resulting in the contents being scrolled.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new threshold value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>All subsequent scrolls will be processed regardless of threshold value until a <ref refid="classtouchgfx_1_1_click_event_1ac490bd373e5d33a5a257bf0c1fd443cbaa38d18fe73a7fc82c112b6917d0b5cd0" kindref="member">ClickEvent::RELEASED</ref> is received. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="185" column="1" bodyfile="touchgfx/containers/ScrollableContainer.hpp" bodystart="185" bodyend="188"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_scrollable_container_1a8c6387d37e571c102564a6de06b2fd0b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool doScroll</definition>
+        <argsstring>(int16_t deltaX, int16_t deltaY)</argsstring>
+        <name>doScroll</name>
+        <param>
+          <type>int16_t</type>
+          <declname>deltaX</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>deltaY</declname>
+        </param>
+        <briefdescription>
+<para>Method to actually scroll the container. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Passing negative values will scroll the items in the <ref refid="classtouchgfx_1_1_scrollable_container" kindref="compound">ScrollableContainer</ref> up / left, whereas positive values will scroll items down / right.</para>
+<para>If the distance is larger than allowed, the deltas are adjusted down to make sure the contained items stay inside view.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>deltaX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The horizontal amount to scroll. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>deltaY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The vertical amount to scroll.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>did the container actually scroll. The call doScroll(0,0) will always return false. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="293" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_scrollable_container_1a0648fe9a5eb13ca47ca97339db68afe8" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref></type>
+        <definition>Rect getXBorder</definition>
+        <argsstring>(const Rect &amp;xBar, const Rect &amp;yBar) const</argsstring>
+        <name>getXBorder</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>xBar</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>yBar</declname>
+        </param>
+        <briefdescription>
+<para>Gets the area where the horizontal scrollbar can move. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xBar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current horizontal scrollbar, supplied for caching reasons. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>yBar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current vertical scrollbar, supplied for caching reasons.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The area. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="264" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_scrollable_container_1ab4c58f13c4a5324b7cfe4b98e8f8a4fd" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref></type>
+        <definition>Rect getXScrollbar</definition>
+        <argsstring>() const</argsstring>
+        <name>getXScrollbar</name>
+        <briefdescription>
+<para>Gets x coordinate of the scrollbar. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The horizontal scrollbar area. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="247" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_scrollable_container_1a858c31388aac4ea833ee64b47ffaaf2a" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref></type>
+        <definition>Rect getYBorder</definition>
+        <argsstring>(const Rect &amp;xBar, const Rect &amp;yBar) const</argsstring>
+        <name>getYBorder</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>xBar</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref> &amp;</type>
+          <declname>yBar</declname>
+        </param>
+        <briefdescription>
+<para>Gets the area where the vertical scrollbar can move. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xBar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current horizontal scrollbar, supplied for caching reasons. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>yBar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current vertical scrollbar, supplied for caching reasons.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The area. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="274" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_scrollable_container_1aaec87b8abab36ef542f2a668f4426c0e" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref></type>
+        <definition>Rect getYScrollbar</definition>
+        <argsstring>() const</argsstring>
+        <name>getYScrollbar</name>
+        <briefdescription>
+<para>Gets y coordinate of the scrollbar. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The vertical scrollbar area. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="254" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_scrollable_container_1af331d941a384e12eab5834e5bb65293d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void invalidateScrollbars</definition>
+        <argsstring>()</argsstring>
+        <name>invalidateScrollbars</name>
+        <briefdescription>
+<para>Invalidate the scrollbars. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/containers/ScrollableContainer.hpp" line="277" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A <ref refid="classtouchgfx_1_1_scrollable_container" kindref="compound">ScrollableContainer</ref> is a container that allows its contents to be scrolled. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>It will intercept drag operations and move child nodes accordingly.</para>
+<para>A standard <ref refid="classtouchgfx_1_1_container" kindref="compound">Container</ref> will simply clip children that are either larger than the container itself, or children that extend beyond the borders of the container or children that are placed outside the borders of the container. A <ref refid="classtouchgfx_1_1_scrollable_container" kindref="compound">ScrollableContainer</ref> behaves much like a <ref refid="classtouchgfx_1_1_container" kindref="compound">Container</ref>, except it enables the user to scroll the children and thereby act like a viewport. When the contents of the <ref refid="classtouchgfx_1_1_scrollable_container" kindref="compound">ScrollableContainer</ref> is scrollable, scrollbars can be seen near the edge of the <ref refid="classtouchgfx_1_1_scrollable_container" kindref="compound">ScrollableContainer</ref>.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_container" kindref="compound">Container</ref></para>
+</simplesect>
+<simplesect kind="note"><para>The <ref refid="classtouchgfx_1_1_scrollable_container" kindref="compound">ScrollableContainer</ref> will consume all DragEvents in the area covered by the container. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1368">
+        <label>Container</label>
+        <link refid="classtouchgfx_1_1_container"/>
+        <childnode refid="1369" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1369">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+      </node>
+      <node id="1367">
+        <label>ScrollableContainer</label>
+        <link refid="classtouchgfx_1_1_scrollable_container"/>
+        <childnode refid="1368" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1375">
+        <label>Widget</label>
+        <link refid="classtouchgfx_1_1_widget"/>
+        <childnode refid="1372" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1371">
+        <label>Container</label>
+        <link refid="classtouchgfx_1_1_container"/>
+        <childnode refid="1372" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1372" relation="usage">
+          <edgelabel>firstChild</edgelabel>
+        </childnode>
+      </node>
+      <node id="1373">
+        <label>Rect</label>
+        <link refid="classtouchgfx_1_1_rect"/>
+      </node>
+      <node id="1372">
+        <label>Drawable</label>
+        <link refid="classtouchgfx_1_1_drawable"/>
+        <childnode refid="1373" relation="usage">
+          <edgelabel>rect</edgelabel>
+        </childnode>
+        <childnode refid="1372" relation="usage">
+          <edgelabel>nextSibling</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="1374">
+        <label>Box</label>
+        <link refid="classtouchgfx_1_1_box"/>
+        <childnode refid="1375" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1376" relation="usage">
+          <edgelabel>color</edgelabel>
+        </childnode>
+      </node>
+      <node id="1370">
+        <label>ScrollableContainer</label>
+        <link refid="classtouchgfx_1_1_scrollable_container"/>
+        <childnode refid="1371" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1372" relation="usage">
+          <edgelabel>lastDraggableChild</edgelabel>
+          <edgelabel>pressedDrawable</edgelabel>
+        </childnode>
+        <childnode refid="1374" relation="usage">
+          <edgelabel>xSlider</edgelabel>
+          <edgelabel>ySlider</edgelabel>
+        </childnode>
+        <childnode refid="1376" relation="usage">
+          <edgelabel>scrollbarColor</edgelabel>
+        </childnode>
+      </node>
+      <node id="1376">
+        <label>colortype</label>
+        <link refid="structtouchgfx_1_1colortype"/>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/containers/ScrollableContainer.hpp" line="32" column="1" bodyfile="touchgfx/containers/ScrollableContainer.hpp" bodystart="31" bodyend="331"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a4d25f0e9e14e96903825c726c8f5a801" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>accelDirection</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a302ad1a4da6fe171eb249828bd8dc7ab" prot="public" virt="virtual"><scope>touchgfx::ScrollableContainer</scope><name>add</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a547d731792813ec95c93ab4e30694bd7" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>animate</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a5b5a3753395a29a4904a93151aa4a24f" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>animationCounter</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a85ade30258e6ce05253944d6efb45801" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>beginningValue</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1ae2d939b2a9c253f0fb3bae3ec7be4e2f" prot="public" virt="virtual"><scope>touchgfx::ScrollableContainer</scope><name>childGeometryChanged</name></member>
+      <member refid="classtouchgfx_1_1_container_1ac92243515043dff4fd93c987b894b017" prot="public" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>Container</name></member>
+      <member refid="classtouchgfx_1_1_container_1a0109ca3d59d6ced431a24313fef18803" prot="public" virt="virtual"><scope>touchgfx::ScrollableContainer</scope><name>contains</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a8c6387d37e571c102564a6de06b2fd0b" prot="protected" virt="virtual"><scope>touchgfx::ScrollableContainer</scope><name>doScroll</name></member>
+      <member refid="classtouchgfx_1_1_container_1a1277d4bddd51dbc604de265fb70ccbfd" prot="public" virt="virtual"><scope>touchgfx::ScrollableContainer</scope><name>draw</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9cf3a85fa7554475fa42c97985bda6df" prot="public" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>Drawable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4a009ec2b654351679a0124e9055abdc" prot="public" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>drawToDynamicBitmap</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a1cf7067c03ae7ac30976b3982e170f98" prot="public" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>enableHorizontalScroll</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a6cda78163027dbfbb9946e085ad83f5a" prot="public" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>enableVerticalScroll</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a230c2646bb296cf0008568e35fb7c0e6" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>fingerAdjustmentX</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a808e130fc4fd0d84d02a3d38d78f8139" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>fingerAdjustmentY</name></member>
+      <member refid="classtouchgfx_1_1_container_1a15fc4ae5c33721f5f425b20640217f22" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>firstChild</name></member>
+      <member refid="classtouchgfx_1_1_container_1a2b224826cd4f0f674009c21d6821f525" prot="public" virt="virtual"><scope>touchgfx::ScrollableContainer</scope><name>forEachChild</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa7737d9d49d7f55ec9bde8f2c9751b1d" prot="public" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>getAbsoluteRect</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a47e8a844fa50b171656f8355fd8e313b" prot="public" virt="virtual"><scope>touchgfx::ScrollableContainer</scope><name>getContainedArea</name></member>
+      <member refid="classtouchgfx_1_1_container_1a35ae5c9547dd1861f70b5e4f0f9b94b3" prot="public" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>getFirstChild</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ad00483821e06fe4d0d70222de4135d30" prot="public" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>getHeight</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a6bc8e89dc7f879221e9862fb27dc726f" prot="public" virt="virtual"><scope>touchgfx::ScrollableContainer</scope><name>getLastChild</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a61c9b2bf703c49a6d238d354ddcaedb3" prot="public" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>getNextSibling</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a013e065d4d9a10dbfa0ddee9a35582a3" prot="public" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>getParent</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af23a5bb7d473e16363a449c497586be3" prot="public" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>getRect</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a1dcbae8564fb1bd69ccdd9e2f2f20e79" prot="public" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>getScrolledX</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1ac3828b48dd65e21232304d7a88c148b5" prot="public" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>getScrolledY</name></member>
+      <member refid="classtouchgfx_1_1_container_1a4dcdd780e93cc783a2ceeda00c6f3b51" prot="public" virt="virtual"><scope>touchgfx::ScrollableContainer</scope><name>getSolidRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a4783dfe657ff1b7a33261bda8c4b4266" prot="public" virt="virtual"><scope>touchgfx::ScrollableContainer</scope><name>getSolidRectAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a83b8847f583b63e60aa4bf778261ddd7" prot="public" virt="virtual"><scope>touchgfx::ScrollableContainer</scope><name>getVisibleRect</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1acae58162aaca6fc174416550f76668e7" prot="public" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>getWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac071e9b7ccf37179df7d29c6778b664c" prot="public" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>getX</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a0648fe9a5eb13ca47ca97339db68afe8" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>getXBorder</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1ab4c58f13c4a5324b7cfe4b98e8f8a4fd" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>getXScrollbar</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a26752e6cff4607d0eec8768ef6d9032a" prot="public" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>getY</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a858c31388aac4ea833ee64b47ffaaf2a" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>getYBorder</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1aaec87b8abab36ef542f2a668f4426c0e" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>getYScrollbar</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a7f1524b90bc90e5f6cf7ee47aae12123" prot="public" virt="virtual"><scope>touchgfx::ScrollableContainer</scope><name>handleClickEvent</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a06ae1946b2124cc94e26cfe18728debf" prot="public" virt="virtual"><scope>touchgfx::ScrollableContainer</scope><name>handleDragEvent</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a4db4945ecbc2303bf860e082409b8029" prot="public" virt="virtual"><scope>touchgfx::ScrollableContainer</scope><name>handleGestureEvent</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a1af635cee0f186c3d0fcea60bac14355" prot="public" virt="virtual"><scope>touchgfx::ScrollableContainer</scope><name>handleTickEvent</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a2f1d1cc50db77f687164e49a1d53c045" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>hasIssuedCancelEvent</name></member>
+      <member refid="classtouchgfx_1_1_container_1aca896b17460628dceeac8b01553b6a00" prot="public" virt="virtual"><scope>touchgfx::ScrollableContainer</scope><name>insert</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2800b4c18c63e9e7b1f85a74ce6b80c3" prot="public" virt="virtual"><scope>touchgfx::ScrollableContainer</scope><name>invalidate</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a130cf6e1bf2b9f04f48e659758fa75e2" prot="public" virt="virtual"><scope>touchgfx::ScrollableContainer</scope><name>invalidateRect</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1af331d941a384e12eab5834e5bb65293d" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>invalidateScrollbars</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1ab1351de5234bac2d378240bdfac6e90c" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>isPressed</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1ad4c9fa8c171f171a0521b12332030ed4" prot="public" virt="virtual"><scope>touchgfx::ScrollableContainer</scope><name>isScrollableXY</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a516aa9225f4c4c2bfceb2e683edb1fd0" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>isScrolling</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a01c717b9abc98d48673b79d691c2d28a" prot="public" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>isTouchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9d8a6cfb13917785c143e74d40e4e2be" prot="public" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>isVisible</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1aab56e78b6c14659138d17662556c292e" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>lastDraggableChild</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1ab38449db163d2f11c2133de8aa93d1a2" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>maxVelocity</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1add539b68574f09b364f0b4e6a312b9b0" prot="public" virt="virtual"><scope>touchgfx::ScrollableContainer</scope><name>moveChildrenRelative</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1af3590480070e2cf91580976f322d2c5e" prot="public" virt="virtual"><scope>touchgfx::ScrollableContainer</scope><name>moveRelative</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aadc5abfad4d2fcc331cf8de8713dc00e" prot="public" virt="virtual"><scope>touchgfx::ScrollableContainer</scope><name>moveTo</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0da4a00c3fbdea5740e52c7e04316c65" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>nextSibling</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ab77c13cde2b01107dcbc5c2b584d422f" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>parent</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a7c951aa975a3ee1e0c0897af47d1bf14" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>pressedDrawable</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a068a907e0988fcaef395f4cf0ec25b85" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>pressedX</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a58c7694b58b6c4202d45eaa309e7c5bc" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>pressedY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a2a955ddc316d002f566598f340eb2af9" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>rect</name></member>
+      <member refid="classtouchgfx_1_1_container_1a4d9056af30ab3c61da25a71023a341f2" prot="public" virt="virtual"><scope>touchgfx::ScrollableContainer</scope><name>remove</name></member>
+      <member refid="classtouchgfx_1_1_container_1a4e62c805a8478320f1e650e6a635b31a" prot="public" virt="virtual"><scope>touchgfx::ScrollableContainer</scope><name>removeAll</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1ad20897c5c8bd47f5d4005989bead0e55" prot="public" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>reset</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a4bf447ca4072d11d0da607d4bb347750" prot="public" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>ScrollableContainer</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a2e32d80c1a53f939c8b6ec3e5688135e" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>scrollableX</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a4f7ef8de788763d8db91d7dc4faf0c45" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>scrollableY</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a53b5b4485da2ec9992df8a1545b94cc9" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>SCROLLBAR_LINE</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1ad501b399be0e51c2f345433daa5fba89" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>SCROLLBAR_MAX_VELOCITY</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1ae1c85b1487c98a02bc7bbd1f83323c94" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>SCROLLBAR_MIN_VELOCITY</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a45c634cbb9979bad5f5514cc8a7b0c73" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>scrollbarAlpha</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1ad641d04efa1baad689423f7750ff745d" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>scrollbarColor</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1aa646e13c8f5a4b181d3dcee0c45be0f7" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>scrollbarPadding</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a97321fd1e935cd40d76cd3deb66e746a" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>scrollbarsPermanentlyVisible</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1ad689eefe031af2de50ad80d91800fc55" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>scrollbarsVisible</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1aa7db99affa8a9f3b03ca5fb77e50b143" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>scrollbarWidth</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1ab1d9a41d5c6b7cd94bd18cefa272e0e4" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>scrollDuration</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a3251228ad7e04cd223a811900ffddc73" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>scrolledXDistance</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a4450673c64497c030349a495169d96cd" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>scrolledYDistance</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a000c43acc99664950e9e5571012d56bb" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>scrollThreshold</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a47a6312407603de99247bb802dbd8a48" prot="public" virt="virtual"><scope>touchgfx::ScrollableContainer</scope><name>setHeight</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a015a272ab4476123b6f53c2e322281d5" prot="public" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>setMaxVelocity</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ac218c371450d8ad2bed3e1b07965a41a" prot="public" virt="virtual"><scope>touchgfx::ScrollableContainer</scope><name>setPosition</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a5bb045bf6fc251ce83b4023daeabc047" prot="public" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>setScrollbarPadding</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a45440a40a6eb5eb4717dbe44cec63a7d" prot="public" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>setScrollbarsAlpha</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a2ac6a0706ccd83705d10e4af4d84ec52" prot="public" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>setScrollbarsColor</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a97e194d675dbdece75c4c8bea2d58e7e" prot="public" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>setScrollbarsPermanentlyVisible</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a5428064a66af0f11a91c3aa70febe173" prot="public" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>setScrollbarsVisible</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a5bd3862598f3efeb1aaf4c2ebb433126" prot="public" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>setScrollbarWidth</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a66a03f1d3d775b47d8a4ba4d29433569" prot="public" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>setScrollThreshold</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae4c38eadb852b153850ea7ded1f50a19" prot="public" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>setTouchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a71639c6634c5dcf6d1bb21b8b1b61f5b" prot="public" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>setVisible</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1ae74a37f71d23440fc8b0466ad8ecfe4b" prot="public" virt="virtual"><scope>touchgfx::ScrollableContainer</scope><name>setWidth</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a9f6db7f34a74e991fc446fffb5703a53" prot="public" virt="virtual"><scope>touchgfx::ScrollableContainer</scope><name>setX</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6c86659dc1e7355c207e9c0aa18af167" prot="public" virt="virtual"><scope>touchgfx::ScrollableContainer</scope><name>setXY</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a1b08d48e7e23a046f09e63089bc82bc1" prot="public" virt="virtual"><scope>touchgfx::ScrollableContainer</scope><name>setY</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a77c5ebdb51f6d0560825b66d265647a1" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>targetValue</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a0d014de134cb9b9c1c361fcd726a5f34" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>touchable</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a48c1d14ac943dbfa4935ea39db950608" prot="public" virt="virtual"><scope>touchgfx::ScrollableContainer</scope><name>translateRectToAbsolute</name></member>
+      <member refid="classtouchgfx_1_1_container_1a23f8fdbaba5449e55efb7a14a96b657d" prot="public" virt="virtual"><scope>touchgfx::ScrollableContainer</scope><name>unlink</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1aa54a57ae048476d840caf6d4d2c47aa3" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>visible</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1ae6b40638a11183cab7ac7202dc58fa24" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>xSlider</name></member>
+      <member refid="classtouchgfx_1_1_scrollable_container_1a1be3e054964846f1b28c006e0f6f867d" prot="protected" virt="non-virtual"><scope>touchgfx::ScrollableContainer</scope><name>ySlider</name></member>
+      <member refid="classtouchgfx_1_1_drawable_1a6bb040a11ffc2bd641283cc0bc0d1346" prot="public" virt="virtual"><scope>touchgfx::ScrollableContainer</scope><name>~Drawable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

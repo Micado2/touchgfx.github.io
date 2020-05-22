@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="_i2_c_touch_controller_8hpp" kind="file" language="C++">
+    <compoundname>I2CTouchController.hpp</compoundname>
+    <includes refid="_i2_c_8hpp" local="no">platform/driver/i2c/I2C.hpp</includes>
+    <includes refid="_touch_controller_8hpp" local="no">platform/driver/touch/TouchController.hpp</includes>
+    <includes refid="_types_8hpp" local="no">touchgfx/hal/Types.hpp</includes>
+    <innerclass refid="classtouchgfx_1_1_i2_c_touch_controller" prot="public">touchgfx::I2CTouchController</innerclass>
+    <innernamespace refid="namespacetouchgfx">touchgfx</innernamespace>
+    <briefdescription>
+<para>Declares the <ref refid="classtouchgfx_1_1_i2_c_touch_controller" kindref="compound">touchgfx::I2CTouchController</ref> interface class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#ifndef<sp/>I2CTOUCHCONTROLLER_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I2CTOUCHCONTROLLER_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;platform/driver/i2c/I2C.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;platform/driver/touch/TouchController.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;touchgfx/hal/Types.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetouchgfx" kindref="compound">touchgfx</ref></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20" refid="classtouchgfx_1_1_i2_c_touch_controller" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtouchgfx_1_1_i2_c_touch_controller" kindref="compound">I2CTouchController</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_touch_controller" kindref="compound">TouchController</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_i2_c_touch_controller_1a67c5c786557391dd86af4bc8ef128a8a" kindref="member">I2CTouchController</ref>(<ref refid="classtouchgfx_1_1_i2_c" kindref="compound">I2C</ref>&amp;<sp/><ref refid="classtouchgfx_1_1_i2_c_touch_controller_1ac38dc98645bdb68842905366d243117e" kindref="member">i2c</ref>)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classtouchgfx_1_1_i2_c_touch_controller_1ac38dc98645bdb68842905366d243117e" kindref="member">i2c</ref>(<ref refid="classtouchgfx_1_1_i2_c_touch_controller_1ac38dc98645bdb68842905366d243117e" kindref="member">i2c</ref>)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_i2_c_touch_controller_1ac38dc98645bdb68842905366d243117e" kindref="member">i2c</ref>.<ref refid="classtouchgfx_1_1_i2_c_1ab5be7e5a13ea77d59aac45d21dceb6a0" kindref="member">init</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classtouchgfx_1_1_i2_c_touch_controller" kindref="compound">I2CTouchController</ref>()</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_i2_c_touch_controller_1ab5be7e5a13ea77d59aac45d21dceb6a0" kindref="member">init</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtouchgfx_1_1_i2_c_touch_controller_1a00dca370ad49694702428e4d96007522" kindref="member">sampleTouch</ref>(int32_t&amp;<sp/>x,<sp/>int32_t&amp;<sp/>y)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtouchgfx_1_1_i2_c" kindref="compound">I2C</ref>&amp;<sp/><ref refid="classtouchgfx_1_1_i2_c_touch_controller_1ac38dc98645bdb68842905366d243117e" kindref="member">i2c</ref>;<sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>touchgfx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>I2CTOUCHCONTROLLER_HPP</highlight></codeline>
+    </programlisting>
+    <location file="platform/driver/touch/I2CTouchController.hpp"/>
+  </compounddef>
+</doxygen>

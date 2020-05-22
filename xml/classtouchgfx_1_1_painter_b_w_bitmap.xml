@@ -1,0 +1,357 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="classtouchgfx_1_1_painter_b_w_bitmap" kind="class" language="C++" prot="public">
+    <compoundname>touchgfx::PainterBWBitmap</compoundname>
+    <basecompoundref refid="classtouchgfx_1_1_abstract_painter_b_w" prot="public" virt="non-virtual">AbstractPainterBW</basecompoundref>
+    <includes local="no">PainterBWBitmap.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classtouchgfx_1_1_painter_b_w_bitmap_1ab90f53fbe007c65f80d83ece2352f49a" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref></type>
+        <definition>Bitmap bitmap</definition>
+        <argsstring></argsstring>
+        <name>bitmap</name>
+        <briefdescription>
+<para>The bitmap to be used when painting. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/PainterBWBitmap.hpp" line="52" column="1" bodyfile="touchgfx/widgets/canvas/PainterBWBitmap.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_painter_b_w_bitmap_1af2d5202b435646966d50733a1a190566" prot="protected" static="no" mutable="no">
+        <type>const uint8_t *</type>
+        <definition>const uint8_t* bitmapBWPointer</definition>
+        <argsstring></argsstring>
+        <name>bitmapBWPointer</name>
+        <briefdescription>
+<para>Pointer to the bitmap (BW) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/PainterBWBitmap.hpp" line="49" column="1" bodyfile="touchgfx/widgets/canvas/PainterBWBitmap.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_painter_b_w_bitmap_1a6177842f1cf981c4df6200da3c68980b" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtouchgfx_1_1_rect" kindref="compound">Rect</ref></type>
+        <definition>Rect bitmapRectToFrameBuffer</definition>
+        <argsstring></argsstring>
+        <name>bitmapRectToFrameBuffer</name>
+        <briefdescription>
+<para><ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> rectangle translated to framebuffer coordinates. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/PainterBWBitmap.hpp" line="53" column="1" bodyfile="touchgfx/widgets/canvas/PainterBWBitmap.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtouchgfx_1_1_painter_b_w_bitmap_1a51fee3e9005bfd5480a84b00d19163c2" prot="protected" static="no" mutable="no">
+        <type>LCD1bpp::bwRLEdata</type>
+        <definition>LCD1bpp::bwRLEdata bw_rle</definition>
+        <argsstring></argsstring>
+        <name>bw_rle</name>
+        <briefdescription>
+<para>Pointer to class for walking through bw_rle image. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/PainterBWBitmap.hpp" line="50" column="1" bodyfile="touchgfx/widgets/canvas/PainterBWBitmap.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_painter_b_w_bitmap_1abcc28aa75d0209f509cc573d1c0b9ba4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PainterBWBitmap</definition>
+        <argsstring>(const Bitmap &amp;bmp=Bitmap(BITMAP_INVALID))</argsstring>
+        <name>PainterBWBitmap</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> &amp;</type>
+          <declname>bmp</declname>
+          <defval><ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref>(<ref refid="namespacetouchgfx_1ad3c4ba097ae03087134eacd89fb7103a" kindref="member">BITMAP_INVALID</ref>)</defval>
+        </param>
+        <briefdescription>
+<para>Initializes a new instance of the <ref refid="classtouchgfx_1_1_painter_b_w_bitmap" kindref="compound">PainterBWBitmap</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bmp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(Optional) The bitmap, default is <ref refid="namespacetouchgfx_1ad3c4ba097ae03087134eacd89fb7103a" kindref="member">BITMAP_INVALID</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/PainterBWBitmap.hpp" line="33" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_painter_b_w_bitmap_1a8441245669080e102adac555a07830ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void render</definition>
+        <argsstring>(uint8_t *ptr, int x, int xAdjust, int y, unsigned count, const uint8_t *covers)</argsstring>
+        <name>render</name>
+        <reimplements refid="classtouchgfx_1_1_abstract_painter_b_w_1a8441245669080e102adac555a07830ea">render</reimplements>
+        <param>
+          <type>uint8_t *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>xAdjust</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>covers</declname>
+        </param>
+        <briefdescription>
+<para>Paint a designated part of the RenderingBuffer with respect to the amount of coverage of each pixel given by the parameter covers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The cover is the alpha for each pixel, which is what makes it possible to have smooth anti-aliased edges on the shapes drawn with <ref refid="classtouchgfx_1_1_canvas_widget_renderer" kindref="compound">CanvasWidgetRenderer</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the row in the RenderingBuffer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xAdjust</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minor adjustment of x (used when a pixel is smaller than a byte to specify that the <emphasis>ptr</emphasis> should have been advanced &quot;xAdjust&quot; pixels futher into the byte). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y coordinate. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of pixels to fill. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>covers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The coverage in of each pixel.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The implementation of <ref refid="classtouchgfx_1_1_painter_b_w_bitmap_1a8441245669080e102adac555a07830ea" kindref="member">render()</ref> in the <ref refid="classtouchgfx_1_1_abstract_painter" kindref="compound">AbstractPainter</ref> classes is a generic (i.e. slow) implementation that should be completely implemented in subclasses of <ref refid="classtouchgfx_1_1_abstract_painter" kindref="compound">AbstractPainter</ref> for better performance. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/PainterBWBitmap.hpp" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_painter_b_w_bitmap_1aaa522381f576704a44f66c71f63a5c9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setBitmap</definition>
+        <argsstring>(const Bitmap &amp;bmp)</argsstring>
+        <name>setBitmap</name>
+        <param>
+          <type>const <ref refid="classtouchgfx_1_1_bitmap" kindref="compound">Bitmap</ref> &amp;</type>
+          <declname>bmp</declname>
+        </param>
+        <briefdescription>
+<para>Sets a bitmap to be used when drawing the <ref refid="classtouchgfx_1_1_canvas_widget" kindref="compound">CanvasWidget</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bmp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bitmap. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/PainterBWBitmap.hpp" line="40" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtouchgfx_1_1_painter_b_w_bitmap_1a51910f125f1da3e5e47a57708f0a932e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool renderInit</definition>
+        <argsstring>()</argsstring>
+        <name>renderInit</name>
+        <reimplements refid="classtouchgfx_1_1_abstract_painter_b_w_1a51910f125f1da3e5e47a57708f0a932e">renderInit</reimplements>
+        <briefdescription>
+<para>Initialize rendering of a single scan line of pixels for the render. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If renderInit returns false, the scanline will not be rendered.</para>
+<para><simplesect kind="return"><para>true if it succeeds, false if it fails. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/PainterBWBitmap.hpp" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtouchgfx_1_1_painter_b_w_bitmap_1afe0d0054708dd5f5fe202ed115b78be5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool renderNext</definition>
+        <argsstring>(uint8_t &amp;color)</argsstring>
+        <name>renderNext</name>
+        <reimplements refid="classtouchgfx_1_1_abstract_painter_b_w_1a9fc29bd51ecca12e1a11093f937f6bca">renderNext</reimplements>
+        <param>
+          <type>uint8_t &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Get the color of the next pixel in the scan line to blend into the framebuffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color (0 or 1).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the pixel should be painted, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="touchgfx/widgets/canvas/PainterBWBitmap.hpp" line="47" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classtouchgfx_1_1_painter_b_w_bitmap" kindref="compound">PainterBWBitmap</ref> will take the color for a given point in the shape from a bitmap. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Please be aware, the the bitmap is used by the <ref refid="classtouchgfx_1_1_canvas_widget_renderer" kindref="compound">CanvasWidgetRenderer</ref> (not <ref refid="classtouchgfx_1_1_shape" kindref="compound">Shape</ref>), so any rotation you might specify for a <ref refid="classtouchgfx_1_1_canvas" kindref="compound">Canvas</ref> <ref refid="classtouchgfx_1_1_widget" kindref="compound">Widget</ref> (e.g. <ref refid="classtouchgfx_1_1_shape" kindref="compound">Shape</ref>) is not applied to the bitmap as CWR is not aware of this rotation.</para>
+<para><simplesect kind="see"><para><ref refid="classtouchgfx_1_1_abstract_painter" kindref="compound">AbstractPainter</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1176">
+        <label>AbstractPainter</label>
+        <link refid="classtouchgfx_1_1_abstract_painter"/>
+      </node>
+      <node id="1175">
+        <label>AbstractPainterBW</label>
+        <link refid="classtouchgfx_1_1_abstract_painter_b_w"/>
+        <childnode refid="1176" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1174">
+        <label>PainterBWBitmap</label>
+        <link refid="classtouchgfx_1_1_painter_b_w_bitmap"/>
+        <childnode refid="1175" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1182">
+        <label>bwRLEdata</label>
+      </node>
+      <node id="1180">
+        <label>Rect</label>
+        <link refid="classtouchgfx_1_1_rect"/>
+      </node>
+      <node id="1179">
+        <label>AbstractPainter</label>
+        <link refid="classtouchgfx_1_1_abstract_painter"/>
+      </node>
+      <node id="1181">
+        <label>Bitmap</label>
+        <link refid="classtouchgfx_1_1_bitmap"/>
+      </node>
+      <node id="1178">
+        <label>AbstractPainterBW</label>
+        <link refid="classtouchgfx_1_1_abstract_painter_b_w"/>
+        <childnode refid="1179" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1177">
+        <label>PainterBWBitmap</label>
+        <link refid="classtouchgfx_1_1_painter_b_w_bitmap"/>
+        <childnode refid="1178" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1180" relation="usage">
+          <edgelabel>bitmapRectToFrameBuffer</edgelabel>
+        </childnode>
+        <childnode refid="1181" relation="usage">
+          <edgelabel>bitmap</edgelabel>
+        </childnode>
+        <childnode refid="1182" relation="usage">
+          <edgelabel>bw_rle</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="touchgfx/widgets/canvas/PainterBWBitmap.hpp" line="26" column="1" bodyfile="touchgfx/widgets/canvas/PainterBWBitmap.hpp" bodystart="25" bodyend="54"/>
+    <listofallmembers>
+      <member refid="classtouchgfx_1_1_abstract_painter_1aa4f80084e6ff903500fe2febda5f2f41" prot="public" virt="non-virtual"><scope>touchgfx::PainterBWBitmap</scope><name>AbstractPainter</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_b_w_1a3bb1edbecc5d7a3cc89229771f3e2408" prot="public" virt="non-virtual"><scope>touchgfx::PainterBWBitmap</scope><name>AbstractPainterBW</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_1a290754e533a9f126030de238db59494a" prot="protected" virt="non-virtual"><scope>touchgfx::PainterBWBitmap</scope><name>areaOffsetX</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_1aee5f795da3f83f1f63af9d0c0acb75d2" prot="protected" virt="non-virtual"><scope>touchgfx::PainterBWBitmap</scope><name>areaOffsetY</name></member>
+      <member refid="classtouchgfx_1_1_painter_b_w_bitmap_1ab90f53fbe007c65f80d83ece2352f49a" prot="protected" virt="non-virtual"><scope>touchgfx::PainterBWBitmap</scope><name>bitmap</name></member>
+      <member refid="classtouchgfx_1_1_painter_b_w_bitmap_1af2d5202b435646966d50733a1a190566" prot="protected" virt="non-virtual"><scope>touchgfx::PainterBWBitmap</scope><name>bitmapBWPointer</name></member>
+      <member refid="classtouchgfx_1_1_painter_b_w_bitmap_1a6177842f1cf981c4df6200da3c68980b" prot="protected" virt="non-virtual"><scope>touchgfx::PainterBWBitmap</scope><name>bitmapRectToFrameBuffer</name></member>
+      <member refid="classtouchgfx_1_1_painter_b_w_bitmap_1a51fee3e9005bfd5480a84b00d19163c2" prot="protected" virt="non-virtual"><scope>touchgfx::PainterBWBitmap</scope><name>bw_rle</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_1a90f2b5c86d316ef720ac9c414caf7582" prot="protected" virt="non-virtual"><scope>touchgfx::PainterBWBitmap</scope><name>compatibleFramebuffer</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_b_w_1a74824964ce2f93a40355cb4ff92fe93f" prot="protected" virt="non-virtual"><scope>touchgfx::PainterBWBitmap</scope><name>currentX</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_b_w_1ac9494fae6d646273c7bb2cab162049e2" prot="protected" virt="non-virtual"><scope>touchgfx::PainterBWBitmap</scope><name>currentY</name></member>
+      <member refid="classtouchgfx_1_1_painter_b_w_bitmap_1abcc28aa75d0209f509cc573d1c0b9ba4" prot="public" virt="non-virtual"><scope>touchgfx::PainterBWBitmap</scope><name>PainterBWBitmap</name></member>
+      <member refid="classtouchgfx_1_1_painter_b_w_bitmap_1a8441245669080e102adac555a07830ea" prot="public" virt="virtual"><scope>touchgfx::PainterBWBitmap</scope><name>render</name></member>
+      <member refid="classtouchgfx_1_1_painter_b_w_bitmap_1a51910f125f1da3e5e47a57708f0a932e" prot="protected" virt="virtual"><scope>touchgfx::PainterBWBitmap</scope><name>renderInit</name></member>
+      <member refid="classtouchgfx_1_1_painter_b_w_bitmap_1afe0d0054708dd5f5fe202ed115b78be5" prot="protected" virt="virtual"><scope>touchgfx::PainterBWBitmap</scope><name>renderNext</name></member>
+      <member refid="classtouchgfx_1_1_painter_b_w_bitmap_1aaa522381f576704a44f66c71f63a5c9b" prot="public" virt="non-virtual"><scope>touchgfx::PainterBWBitmap</scope><name>setBitmap</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_1a5d2eaea5211939c699e009b61e4372af" prot="public" virt="non-virtual"><scope>touchgfx::PainterBWBitmap</scope><name>setOffset</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_1a03f9d48d2592bf9ef9644992ae82e545" prot="protected" virt="non-virtual"><scope>touchgfx::PainterBWBitmap</scope><name>setWidgetAlpha</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_1ac77f8cef6ca6a25c3fa9e7f6fb1274cb" prot="protected" virt="non-virtual"><scope>touchgfx::PainterBWBitmap</scope><name>widgetAlpha</name></member>
+      <member refid="classtouchgfx_1_1_abstract_painter_1a212a3772cf31ed3710dca0baea1ae436" prot="public" virt="virtual"><scope>touchgfx::PainterBWBitmap</scope><name>~AbstractPainter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
